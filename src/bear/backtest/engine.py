@@ -330,17 +330,27 @@ class BacktestEngine:
         # ── 5. Anti-lookahead: shift signals by 1 bar ─────────────────
         #    Signal at bar t → position at bar t+1 open
         signal_cols = [f"signal_{sym}" for sym in cfg.short_symbols]
+        # Drop existing pos_ columns to avoid duplicates on re-run
+        pos_names = [f"pos_{sym}" for sym in cfg.short_symbols]
+        existing = set(wide.columns) & set(pos_names)
+        if existing:
+            wide = wide.drop(existing)
         wide = wide.with_columns([
             pl.col(c).shift(1).fill_null(0.0).alias(f"pos_{sym}")
-            for c in signal_cols
+            for c, sym in zip(signal_cols, cfg.short_symbols)
         ])
 
         position_cols = [f"pos_{sym}" for sym in cfg.short_symbols]
 
         # ── 6. Position changes (for fees and slippage) ───────────────
+        # Drop existing delta columns to avoid duplicates
+        delta_names = [f"delta_{sym}" for sym in cfg.short_symbols]
+        existing_d = set(wide.columns) & set(delta_names)
+        if existing_d:
+            wide = wide.drop(existing_d)
         wide = wide.with_columns([
             (pl.col(c).diff().fill_null(0.0).abs()).alias(f"delta_{sym}")
-            for c in position_cols
+            for c, sym in zip(position_cols, cfg.short_symbols)
         ])
 
         delta_cols = [f"delta_{sym}" for sym in cfg.short_symbols]
@@ -348,6 +358,11 @@ class BacktestEngine:
         # ── 7. Vectorized PnL ─────────────────────────────────────────
         #    short_pnl = Σ -position_sym * return_sym
         #    (short profits when price drops)
+        # Drop existing pnl columns to avoid duplicates
+        pnl_names = [f"pnl_{sym}" for sym in cfg.short_symbols]
+        existing_p = set(wide.columns) & set(pnl_names)
+        if existing_p:
+            wide = wide.drop(existing_p)
         wide = wide.with_columns([
             (-1.0 * pl.col(f"pos_{sym}") * pl.col(f"ret_{sym}")).alias(f"pnl_{sym}")
             for sym in cfg.short_symbols
