@@ -1,0 +1,86 @@
+# Sector taxonomy for Hyperliquid perps
+# Maps symbols to their primary sector
+
+sectors:
+  # Layer 1
+  layer1:
+    - BTC
+    - ETH
+    - SOL
+    - AVAX
+    - ADA
+    - DOT
+    - NEAR
+    - APT
+    - SUI
+    - SEI
+    - TIA
+
+  # DeFi
+  defi:
+    - UNI
+    - AAVE
+    - MKR
+    - LINK
+    - CRV
+    - SNX
+    - COMP
+    - DYDX
+    - JUP
+    - PENDLE
+
+  # AI / Data
+  ai:
+    - TAO
+    - FET
+    - RENDER
+    - AKT
+    - GRT
+    - OCEAN
+
+  # Meme / Culture
+  meme:
+    - DOGE
+    - SHIB
+    - PEPE
+    - WIF
+    - BONK
+    - FLOKI
+
+  # Infrastructure
+  infra:
+    - ARB
+    - OP
+    - MATIC
+    - BASE
+    - IMX
+
+  # Gaming / Metaverse
+  gaming:
+    - IMX
+    - SAND
+    - MANA
+    - AXS
+    - GALA
+
+  # Stablecoin-adjacent
+  stable:
+    - LDO
+    - RPL
+
+# Sector-level constraints for portfolio optimization
+sector_limits:
+  layer1: 0.50
+  defi: 0.40
+  ai: 0.35
+  meme: 0.15
+  infra: 0.25
+  gaming: 0.15
+  stable: 0.10
+
+# Correlated sector groups (for beta estimation)
+correlated_groups:
+  - [BTC, ETH, SOL, AVAX]
+  - [UNI, AAVE, MKR, CRV]
+  - [TAO, FET, RENDER, AKT]
+  - [ARB, OP, MATIC]

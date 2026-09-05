@@ -1,0 +1,82 @@
+# BEAR default configuration
+
+# ── Portfolio Optimization ──────────────────────────────────────────────────
+optimizer:
+  max_names: 5
+  max_name_weight: 0.35
+  min_short_gross_ratio: 0.40
+  max_short_gross_ratio: 1.25
+  l2_weight_penalty: 0.01
+  turnover_penalty: 0.01
+  expected_cost_penalty: 0.005
+  short_quality_penalty: 0.0
+  carry_penalty: 0.0
+
+# ── Execution Costs ────────────────────────────────────────────────────────
+costs:
+  maker_fee_bps: 1.0
+  taker_fee_bps: 3.5
+  default_slippage_bps: 2.0
+  impact_model: "square_root"
+  participation_limit: 0.10
+
+# ── Backtest ───────────────────────────────────────────────────────────────
+backtest:
+  initial_capital: 1000000
+  rebalance_freq: "1w"
+  fee_rate: 0.00035
+  slippage_bps: 2.0
+  walk_forward: true
+  train_months: 12
+  valid_months: 3
+  test_months: 3
+  enforce_point_in_time: true
+  handle_survivorship: true
+
+# ── Constraints ────────────────────────────────────────────────────────────
+constraints:
+  max_short_weight: 0.35
+  min_short_gross: 0.40
+  max_short_gross: 1.25
+  max_net_exposure: 1.0
+  min_net_exposure: -0.5
+  min_adv_usd: 100000
+  max_pct_of_adv: 0.05
+  max_squeeze_risk: 0.70
+  max_sector_weight: 0.50
+  max_daily_turnover: 0.50
+
+# ── Stress Regimes ─────────────────────────────────────────────────────────
+stress:
+  ordinary: 1.0
+  btc_bottom_quartile: 2.0
+  btc_bottom_decile: 4.0
+  crash: 6.0
+
+# ── Scoring Weights ────────────────────────────────────────────────────────
+scoring:
+  funding_rate_weight: 0.25
+  borrow_cost_weight: 0.20
+  correlation_weight: 0.20
+  liquidity_weight: 0.15
+  squeeze_risk_weight: 0.10
+  tokenomics_weight: 0.10
+
+# ── API Server ─────────────────────────────────────────────────────────────
+api:
+  host: "0.0.0.0"
+  port: 8800
+  log_level: "info"
+
+# ── CLI ────────────────────────────────────────────────────────────────────
+cli:
+  default_output_format: "table"
+  data_dir: "data"
+  config_dir: "config"
+
+# ── Funding ────────────────────────────────────────────────────────────────
+funding:
+  apply_at_actual_timestamps: true
+  funding_period_hours: 8
+  min_funding_for_entry: 0.0001
+  max_funding_for_entry: 0.01

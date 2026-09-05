@@ -1,0 +1,6 @@
+# Example long portfolio configuration
+# Weights should sum to 1.0
+
+longs:
+  TAO: 0.60
+  UNI: 0.40
