@@ -237,8 +237,8 @@ def write_data_json(data: dict) -> None:
 
 def regenerate_html(data: dict) -> None:
     """Replace the bear-data script tag in index.html with fresh data."""
-    # Use the template if our dashboard index.html doesn't exist yet
-    src = HTML_OUT if HTML_OUT.exists() else TEMPLATE_PATH
+    # Always use the template as source (it has the rendering JS)
+    src = TEMPLATE_PATH if TEMPLATE_PATH.exists() else HTML_OUT
     if not src.exists():
         print(f"Warning: no template found at {src}, skipping HTML regeneration")
         return
@@ -247,13 +247,15 @@ def regenerate_html(data: dict) -> None:
     data_json = json.dumps(data, default=str)
 
     # Replace or insert the bear-data script tag
-    tag = f'<script id="bear-data" type="application/json">{data_json}</script>'
+    tag = f'<script id="bear-data" type="application/json">\n{data_json}\n</script>'
     pattern = r'<script id="bear-data"[^>]*>.*?</script>'
 
-    if re.search(pattern, html):
-        html = re.sub(pattern, tag, html)
+    if re.search(pattern, html, re.DOTALL):
+        html = re.sub(pattern, tag, html, flags=re.DOTALL)
+    elif '{BEAR_DATA_PLACEHOLDER}' in html:
+        html = html.replace('{BEAR_DATA_PLACEHOLDER}', data_json)
     else:
-        # Insert after </body>
+        # Insert before </body>
         html = html.replace("</body>", f"{tag}\n</body>")
 
     HTML_OUT.parent.mkdir(parents=True, exist_ok=True)

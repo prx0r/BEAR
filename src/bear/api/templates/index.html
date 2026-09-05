@@ -3,273 +3,238 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BEAR — Hyperliquid Relative-Value Dashboard</title>
+<title>BEAR — Short Opportunity Engine</title>
 <style>
-  :root {
-    --bg: #0d1117; --surface: #161b22; --border: #30363d;
-    --text: #e6edf3; --text-dim: #8b949e; --text-bright: #f0f6fc;
-    --green: #3fb950; --red: #f85149; --blue: #58a6ff;
-    --yellow: #d29922; --purple: #bc8cff; --cyan: #39d2c0;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace; background: var(--bg); color: var(--text); line-height: 1.5; }
-  .container { max-width: 1400px; margin: 0 auto; padding: 16px; }
-  header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
-  header h1 { font-size: 20px; color: var(--text-bright); }
-  header h1 span { color: var(--green); }
-  .status { font-size: 12px; color: var(--text-dim); }
-  .status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
-  .dot.ok { background: var(--green); }
-  .dot.err { background: var(--red); }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
-  .grid.full { grid-template-columns: 1fr; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
-  .card h2 { font-size: 13px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 12px; }
-  th { text-align: left; color: var(--text-dim); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--border); }
-  td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
-  tr:hover td { background: rgba(88, 166, 255, 0.05); }
-  .num { text-align: right; font-variant-numeric: tabular-nums; }
-  .pos { color: var(--green); }
-  .neg { color: var(--red); }
-  .neutral { color: var(--text-dim); }
-  canvas { width: 100%; border-radius: 4px; background: var(--bg); }
-  .controls { display: flex; gap: 8px; margin-bottom: 12px; align-items: center; }
-  select, input, button {
-    font-family: inherit; font-size: 12px; background: var(--bg); color: var(--text);
-    border: 1px solid var(--border); border-radius: 4px; padding: 6px 10px;
-  }
-  button { cursor: pointer; background: var(--blue); color: #fff; border: none; font-weight: 600; }
-  button:hover { opacity: 0.85; }
-  .hedge-result { margin-top: 12px; padding: 12px; background: var(--bg); border-radius: 6px; font-size: 12px; }
-  .metric-row { display: flex; justify-content: space-between; padding: 4px 0; }
-  .metric-val { font-weight: 600; }
-  .section-title { font-size: 14px; color: var(--text-bright); margin: 20px 0 10px; }
-  #loading { text-align: center; padding: 40px; color: var(--text-dim); }
-  .tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; }
-  .tag.sector { background: rgba(88, 166, 255, 0.15); color: var(--blue); }
-  @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--dim:#8b949e;--bright:#f0f6fc;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--yellow:#d29922;--purple:#bc8cff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'SF Mono','Cascadia Code','Fira Code',monospace;background:var(--bg);color:var(--text);line-height:1.5;font-size:13px}
+.wrap{max-width:1400px;margin:0 auto;padding:12px}
+header{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);margin-bottom:12px}
+header h1{font-size:16px;color:var(--bright)} header h1 span{color:var(--green)}
+.status{font-size:11px;color:var(--dim)} .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.dot.ok{background:var(--green)} .dot.err{background:var(--red)}
+.stats{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:120px}
+.stat .label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.stat .val{font-size:18px;font-weight:700;color:var(--bright)}
+.stat .val.pos{color:var(--green)} .stat .val.neg{color:var(--red)}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:12px}
+.panel h2{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:var(--dim);font-weight:500;padding:5px 8px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none}
+th:hover{color:var(--text)} td{padding:5px 8px;border-bottom:1px solid var(--border)}
+.num{text-align:right} .pos{color:var(--green)} .neg{color:var(--red)}
+.search{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:4px 8px;color:var(--text);font-family:inherit;font-size:12px;width:200px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+.bar{height:6px;border-radius:3px;background:var(--border);margin:2px 0}
+.bar-fill{height:100%;border-radius:3px;transition:width .3s}
+.score{display:inline-block;min-width:32px;text-align:center;padding:1px 4px;border-radius:3px;font-size:11px;font-weight:600}
+.score.hi{background:rgba(248,81,73,.2);color:var(--red)}
+.score.md{background:rgba(210,153,34,.2);color:var(--yellow)}
+.score.lo{background:rgba(63,185,80,.2);color:var(--green)}
+.chat-box{display:flex;gap:6px;margin-top:8px}
+.chat-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:6px 10px;color:var(--text);font-family:inherit;font-size:12px}
+.chat-btn{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:6px 14px;cursor:pointer;font-family:inherit;font-size:12px}
+.chat-btn:hover{opacity:.8}
+.chat-log{max-height:200px;overflow-y:auto;margin-top:8px;font-size:12px}
+.chat-msg{margin:4px 0;padding:6px 10px;border-radius:6px;max-width:85%}
+.chat-msg.user{background:rgba(88,166,255,.15);margin-left:auto;text-align:right}
+.chat-msg.bot{background:var(--bg);white-space:pre-wrap}
+.ranked-row{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid var(--border)}
+.ranked-row:last-child{border:none}
+.rank-num{color:var(--dim);font-size:11px;min-width:20px}
+.rank-sym{font-weight:600;min-width:60px}
+.rank-bar{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+.rank-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--yellow),var(--red))}
+.rank-score{min-width:40px;text-align:right;font-weight:700}
+.rank-meta{font-size:10px;color:var(--dim);min-width:160px;text-align:right}
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1><span>BEAR</span> — Hyperliquid RV Engine</h1>
-    <div class="status">
-      <span class="dot" id="status-dot"></span>
-      <span id="status-text">Loading...</span>
-    </div>
-  </header>
+<div class="wrap">
+<header>
+  <h1><span>BEAR</span> — Short Opportunity Engine</h1>
+  <div class="status"><span class="dot ok" id="dot"></span><span id="ts">loading...</span></div>
+</header>
 
-  <div class="controls">
-    <select id="mode-select">
-      <option value="relative_value">Relative Value</option>
-      <option value="risk_hedge">Risk Hedge</option>
-      <option value="alpha_preserve">Alpha Preserve</option>
-    </select>
-    <input id="symbol-input" placeholder="Symbol (e.g. BTC)" style="width:120px" />
-    <button onclick="loadNeighbors()">Find Neighbors</button>
-    <button onclick="loadHedge()" style="background:var(--green)">Get Hedge</button>
-    <button onclick="refreshAll()" style="background:var(--surface);color:var(--text);border:1px solid var(--border)">Refresh</button>
-  </div>
+<div class="stats" id="stats"></div>
 
-  <div class="grid">
-    <div class="card">
-      <h2>Markets</h2>
-      <div style="max-height:400px;overflow:auto">
-        <table><thead><tr><th>Symbol</th><th>Sector</th><th class="num">Price</th><th class="num">Funding</th><th class="num">OI</th></tr></thead>
-        <tbody id="markets-body"><tr><td colspan="5" id="loading">Loading...</td></tr></tbody></table>
-      </div>
-    </div>
-    <div class="card">
-      <h2>Short Rankings</h2>
-      <div style="max-height:400px;overflow:auto">
-        <table><thead><tr><th>#</th><th>Symbol</th><th class="num">Score</th><th class="num">Carry</th><th class="num">Vol</th><th>Sector</th></tr></thead>
-        <tbody id="shorts-body"><tr><td colspan="6">Loading...</td></tr></tbody></table>
-      </div>
+<div class="panel">
+  <h2>Ranked Short Opportunities <span style="font-size:10px;color:var(--dim)" id="short-count"></span></h2>
+  <div style="margin-bottom:6px"><input class="search" id="search" placeholder="filter by symbol..." oninput="renderShorts()"></div>
+  <div id="shorts"></div>
+</div>
+
+<div class="grid2">
+  <div class="panel">
+    <h2>Market Overview <span style="font-size:10px;color:var(--dim)" id="mkt-count"></span></h2>
+    <div style="margin-bottom:6px"><input class="search" id="mkt-search" placeholder="filter..." oninput="renderMarkets()"></div>
+    <div style="max-height:400px;overflow-y:auto">
+      <table><thead><tr><th>Symbol</th><th class="num">Price</th><th class="num">Volume</th><th class="num">Funding</th><th class="num">OI</th></tr></thead>
+      <tbody id="mkt-body"></tbody></table>
     </div>
   </div>
-
-  <div class="grid full">
-    <div class="card">
-      <h2>Neighbor Graph</h2>
-      <canvas id="graph-canvas" height="350"></canvas>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h2>Hedge Recommendation</h2>
-      <div id="hedge-result" class="hedge-result">
-        <div class="neutral">Select a long symbol and click "Get Hedge"</div>
-      </div>
-    </div>
-    <div class="card">
-      <h2>Neighbors</h2>
-      <div id="neighbors-result" style="font-size:12px">
-        <div class="neutral">Click "Find Neighbors" to analyze</div>
-      </div>
+  <div class="panel">
+    <h2>Factor Breakdown — <span id="factor-sym" style="color:var(--blue)">click a short</span></h2>
+    <div id="factors" style="padding:8px 0"></div>
+    <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:8px">
+      <h2>Engine Status</h2>
+      <div id="engine-status" style="font-size:11px;color:var(--dim)"></div>
     </div>
   </div>
 </div>
 
+<div class="panel">
+  <h2>BEAR Chat</h2>
+  <div class="chat-log" id="chat-log"></div>
+  <div class="chat-box">
+    <input class="chat-input" id="chat-input" placeholder="ask about markets, shorts, factors..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-btn" onclick="sendChat()">Ask</button>
+  </div>
+</div>
+</div>
+
+<script id="bear-data" type="application/json">
+{BEAR_DATA_PLACEHOLDER}
+</script>
 <script>
-const API = '';
-let allNodes = [], allEdges = [];
+const API = location.port === '8877' ? '' : '';
+let DATA = null;
 
-async function fetchJSON(url) {
-  const r = await fetch(API + url);
-  if (!r.ok) throw new Error(`${r.status}: ${r.statusText}`);
-  return r.json();
-}
-
-function fmt(n, d=2) { return n != null ? Number(n).toFixed(d) : '-'; }
-function fmtPct(n) { return n != null ? (Number(n)*100).toFixed(2)+'%' : '-'; }
-function cls(n) { return n > 0 ? 'pos' : n < 0 ? 'neg' : 'neutral'; }
-
-async function loadMarkets() {
+function loadData() {
   try {
-    const data = await fetchJSON('/markets');
-    const tb = document.getElementById('markets-body');
-    tb.innerHTML = data.map(r => `<tr>
-      <td><strong>${r.name || r.market_id}</strong></td>
-      <td><span class="tag sector">${r.category || '?'}</span></td>
-      <td class="num">${fmt(r.mark_px || r.mid_px)}</td>
-      <td class="num ${cls(r.funding)}">${fmtPct(r.funding)}</td>
-      <td class="num">${fmt(r.open_interest, 0)}</td>
-    </tr>`).join('');
-  } catch(e) { document.getElementById('markets-body').innerHTML = `<tr><td colspan="5">${e.message}</td></tr>`; }
-}
-
-async function loadShorts() {
-  try {
-    const data = await fetchJSON('/shorts/ranking?top=15');
-    const tb = document.getElementById('shorts-body');
-    tb.innerHTML = data.map((r,i) => `<tr>
-      <td>${i+1}</td>
-      <td><strong>${r.symbol}</strong></td>
-      <td class="num">${fmt(r.structural_short_score)}</td>
-      <td class="num ${cls(r.carry)}">${fmtPct(r.carry)}</td>
-      <td class="num">${fmt(r.volatility, 4)}</td>
-      <td><span class="tag sector">${r.sector}</span></td>
-    </tr>`).join('');
-  } catch(e) { document.getElementById('shorts-body').innerHTML = `<tr><td colspan="6">${e.message}</td></tr>`; }
-}
-
-async function loadGraph() {
-  try {
-    const data = await fetchJSON('/graph?min_weight=0.15');
-    allNodes = data.nodes || [];
-    allEdges = data.edges || [];
-    drawGraph();
-  } catch(e) { console.error('Graph error:', e); }
-}
-
-function drawGraph() {
-  const canvas = document.getElementById('graph-canvas');
-  const ctx = canvas.getContext('2d');
-  const W = canvas.width = canvas.offsetWidth * 2;
-  const H = canvas.height = 700;
-  ctx.scale(1, 1);
-  ctx.clearRect(0, 0, W, H);
-
-  if (!allNodes.length) { ctx.fillStyle = '#8b949e'; ctx.font = '14px monospace'; ctx.fillText('No graph data', W/2-40, H/2); return; }
-
-  const sectorColors = { layer1: '#58a6ff', defi: '#3fb950', ai: '#bc8cff', meme: '#f85149', infra: '#d29922', gaming: '#39d2c0', other: '#8b949e' };
-  const cx = W / 2, cy = H / 2, R = Math.min(W, H) * 0.38;
-
-  // Position nodes in a circle grouped by sector
-  const sectors = [...new Set(allNodes.map(n => n.sector))];
-  const positions = {};
-  allNodes.forEach((n, i) => {
-    const si = sectors.indexOf(n.sector);
-    const angle = (si / sectors.length) * 2 * Math.PI + (i / allNodes.length) * (2 * Math.PI / sectors.length);
-    positions[n.id] = { x: cx + R * Math.cos(angle), y: cy + R * Math.sin(angle), sector: n.sector };
-  });
-
-  // Draw edges
-  allEdges.forEach(e => {
-    const a = positions[e.source], b = positions[e.target];
-    if (!a || !b) return;
-    ctx.beginPath();
-    ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
-    ctx.strokeStyle = `rgba(88,166,255,${Math.min(e.weight * 0.6, 0.4)})`;
-    ctx.lineWidth = e.weight * 3;
-    ctx.stroke();
-  });
-
-  // Draw nodes
-  allNodes.forEach(n => {
-    const p = positions[n.id]; if (!p) return;
-    const color = sectorColors[p.sector] || '#8b949e';
-    ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, 2 * Math.PI);
-    ctx.fillStyle = color; ctx.fill();
-    ctx.strokeStyle = '#0d1117'; ctx.lineWidth = 2; ctx.stroke();
-    ctx.fillStyle = '#e6edf3'; ctx.font = '10px monospace';
-    ctx.fillText(n.id, p.x + 10, p.y + 4);
-  });
-
-  // Legend
-  let lx = 10;
-  sectors.forEach(s => {
-    ctx.fillStyle = sectorColors[s] || '#8b949e';
-    ctx.fillRect(lx, 10, 10, 10);
-    ctx.fillStyle = '#8b949e'; ctx.font = '10px monospace';
-    ctx.fillText(s, lx + 14, 19);
-    lx += ctx.measureText(s).width + 24;
-  });
-}
-
-async function loadNeighbors() {
-  const sym = document.getElementById('symbol-input').value.trim().toUpperCase();
-  if (!sym) return;
-  const mode = document.getElementById('mode-select').value;
-  try {
-    const data = await fetchJSON(`/neighbors/${sym}?mode=${mode}&top=10`);
-    const el = document.getElementById('neighbors-result');
-    if (!data.length) { el.innerHTML = '<div class="neutral">No neighbors found</div>'; return; }
-    el.innerHTML = `<table><thead><tr><th>#</th><th>Symbol</th><th class="num">Score</th><th class="num">Corr</th><th class="num">Beta</th><th>Sector</th></tr></thead><tbody>` +
-      data.map(r => `<tr><td>${r.rank}</td><td><strong>${r.symbol}</strong></td><td class="num">${fmt(r.fit_score)}</td><td class="num">${fmt(r.correlation_score)}</td><td class="num">${fmt(r.beta_score)}</td><td><span class="tag sector">${r.sector}</span></td></tr>`).join('') +
-      '</tbody></table>';
-  } catch(e) { document.getElementById('neighbors-result').innerHTML = `<div class="neg">${e.message}</div>`; }
-}
-
-async function loadHedge() {
-  const sym = document.getElementById('symbol-input').value.trim().toUpperCase();
-  if (!sym) return;
-  const mode = document.getElementById('mode-select').value;
-  try {
-    const data = await fetchJSON(`/hedge/single?long=${sym}&mode=${mode}&top=5`, { method: 'POST' });
-    const el = document.getElementById('hedge-result');
-    const shorts = Object.entries(data.shorts || {}).map(([k,v]) => `<div class="metric-row"><span>${k}</span><span class="metric-val">${(v*100).toFixed(2)}%</span></div>`).join('');
-    el.innerHTML = `
-      <div class="metric-row"><span>Long</span><span class="metric-val">${data.long_symbol}</span></div>
-      <div class="metric-row"><span>Net Exposure</span><span class="metric-val ${cls(data.net_exposure - 0.5)}">${fmtPct(data.net_exposure)}</span></div>
-      <div class="metric-row"><span>Short Gross</span><span class="metric-val">${fmtPct(data.short_gross)}</span></div>
-      <div class="metric-row"><span>Hedge Efficiency</span><span class="metric-val pos">${fmtPct(data.estimated_hedge_efficiency)}</span></div>
-      <div class="metric-row"><span>Rebal Cost</span><span class="metric-val">${fmtPct(data.rebalance_cost)}</span></div>
-      <hr style="border-color:var(--border);margin:8px 0">
-      <div style="color:var(--text-dim);margin-bottom:4px">Short Basket:</div>
-      ${shorts || '<div class="neutral">No shorts allocated</div>'}
-    `;
-  } catch(e) { document.getElementById('hedge-result').innerHTML = `<div class="neg">${e.message}</div>`; }
-}
-
-async function refreshAll() {
-  const dot = document.getElementById('status-dot');
-  const txt = document.getElementById('status-text');
-  try {
-    await Promise.all([loadMarkets(), loadShorts(), loadGraph()]);
-    dot.className = 'dot ok';
-    txt.textContent = 'Connected — ' + new Date().toLocaleTimeString();
-  } catch(e) {
-    dot.className = 'dot err';
-    txt.textContent = 'Error: ' + e.message;
+    const el = document.getElementById('bear-data');
+    const txt = el.textContent.trim();
+    if (txt && txt !== '{BEAR_DATA_PLACEHOLDER}') {
+      DATA = JSON.parse(txt);
+    }
+  } catch(e) {}
+  if (!DATA || !DATA.markets) {
+    document.getElementById('dot').className = 'dot err';
+    document.getElementById('ts').textContent = 'No data — run export_data.py';
+    return;
   }
+  document.getElementById('dot').className = 'dot ok';
+  document.getElementById('ts').textContent = 'Updated: ' + (DATA.timestamp || 'unknown');
+  renderStats();
+  renderShorts();
+  renderMarkets();
+  renderEngineStatus();
 }
 
-refreshAll();
-setInterval(refreshAll, 60000);
+function renderStats() {
+  const s = DATA.stats || {};
+  const vol = s.total_24h_volume || 0;
+  const el = document.getElementById('stats');
+  el.innerHTML = `
+    <div class="stat"><div class="label">Markets</div><div class="val">${s.total_markets||0}</div></div>
+    <div class="stat"><div class="label">24h Volume</div><div class="val">$${fmtVol(vol)}</div></div>
+    <div class="stat"><div class="label">Avg Funding</div><div class="val">${((s.avg_funding||0)*100).toFixed(4)}%</div></div>
+    <div class="stat"><div class="label">Pos Funding</div><div class="val pos">${s.positive_funding_count||0}</div></div>
+    <div class="stat"><div class="label">Neg Funding</div><div class="val neg">${s.negative_funding_count||0}</div></div>
+  `;
+}
+
+function renderShorts() {
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let shorts = (DATA.short_rankings || []).filter(s => !q || s.symbol.toLowerCase().includes(q));
+  const el = document.getElementById('shorts');
+  document.getElementById('short-count').textContent = shorts.length + ' assets';
+  if (!shorts.length) { el.innerHTML = '<div style="color:var(--dim);padding:8px">No shorts found</div>'; return; }
+  el.innerHTML = shorts.map((s, i) => {
+    const score = s.total_score || 0;
+    const pct = score;
+    return `<div class="ranked-row" onclick="showFactor('${s.symbol}')" style="cursor:pointer">
+      <span class="rank-num">#${i+1}</span>
+      <span class="rank-sym">${s.symbol}</span>
+      <div class="rank-bar"><div class="rank-bar-fill" style="width:${pct}%"></div></div>
+      <span class="rank-score score ${score>=75?'hi':score>=50?'md':'lo'}">${score.toFixed(0)}</span>
+      <span class="rank-meta">vol $${fmtVol(s.mark_px*(s.oi_crowding||1e6))} | fund ${(s.funding*100).toFixed(4)}%</span>
+    </div>`;
+  }).join('');
+}
+
+function renderMarkets() {
+  const q = (document.getElementById('mkt-search').value || '').toLowerCase();
+  let mkts = (DATA.markets || []).filter(m => !q || m.symbol.toLowerCase().includes(q));
+  mkts.sort((a,b) => (b.day_volume||0) - (a.day_volume||0));
+  const el = document.getElementById('mkt-body');
+  document.getElementById('mkt-count').textContent = mkts.length + ' assets';
+  el.innerHTML = mkts.slice(0, 50).map(m => {
+    const chg = m.funding > 0 ? 'pos' : m.funding < 0 ? 'neg' : '';
+    return `<tr>
+      <td style="font-weight:600">${m.symbol}</td>
+      <td class="num">$${fmtPx(m.mark_px)}</td>
+      <td class="num">$${fmtVol(m.day_volume)}</td>
+      <td class="num ${chg}">${(m.funding*100).toFixed(4)}%</td>
+      <td class="num">$${fmtVol(m.open_interest)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function showFactor(sym) {
+  document.getElementById('factor-sym').textContent = sym;
+  const f = (DATA.factors || {})[sym];
+  if (!f) { document.getElementById('factors').innerHTML = '<div style="color:var(--dim)">No factor data for ' + sym + '</div>'; return; }
+  const factors = [
+    {name:'Dilution 8w', val:f.dilution||50},
+    {name:'Reversal 8w', val:f.reversal||50},
+    {name:'Unlock Pressure', val:f.unlock||50},
+    {name:'Value Badness', val:f.value||50},
+    {name:'Squeeze Risk', val:f.squeeze||50},
+    {name:'Funding Carry', val:f.carry||50},
+  ];
+  document.getElementById('factors').innerHTML = factors.map(fa => {
+    const color = fa.val >= 75 ? 'var(--red)' : fa.val >= 50 ? 'var(--yellow)' : 'var(--green)';
+    return `<div style="margin:4px 0">
+      <div style="display:flex;justify-content:space-between;font-size:11px">
+        <span>${fa.name}</span><span style="color:${color}">${fa.val.toFixed(0)}</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width:${fa.val}%;background:${color}"></div></div>
+    </div>`;
+  }).join('') + `<div style="margin-top:6px;font-size:10px;color:var(--dim)">Sector: ${f.sector||'?'}</div>`;
+}
+
+function renderEngineStatus() {
+  const el = document.getElementById('engine-status');
+  const shorts = DATA.short_rankings || [];
+  const hi = shorts.filter(s => s.total_score >= 75).length;
+  const md = shorts.filter(s => s.total_score >= 50 && s.total_score < 75).length;
+  el.innerHTML = `
+    <div>Factors active: dilution, reversal, unlock, value, squeeze, carry</div>
+    <div>High conviction shorts (≥75): <span class="neg">${hi}</span></div>
+    <div>Medium shorts (50-74): <span style="color:var(--yellow)">${md}</span></div>
+    <div>Data source: Hyperliquid API (live)</div>
+    <div>Backtest: 90d hourly, walk-forward</div>
+  `;
+}
+
+function fmtVol(v) { if (!v) return '0'; if (v >= 1e9) return (v/1e9).toFixed(1)+'B'; if (v >= 1e6) return (v/1e6).toFixed(1)+'M'; if (v >= 1e3) return (v/1e3).toFixed(1)+'K'; return v.toFixed(0); }
+function fmtPx(v) { if (!v) return '0'; if (v >= 1000) return v.toFixed(0); if (v >= 1) return v.toFixed(2); if (v >= 0.01) return v.toFixed(4); return v.toFixed(6); }
+
+async function sendChat() {
+  const input = document.getElementById('chat-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  const log = document.getElementById('chat-log');
+  log.innerHTML += `<div class="chat-msg user">${esc(msg)}</div>`;
+  log.scrollTop = log.scrollHeight;
+  try {
+    const r = await fetch(API + '/api/chat', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({message:msg})});
+    const d = await r.json();
+    log.innerHTML += `<div class="chat-msg bot">${esc(d.response || 'No response')}</div>`;
+  } catch(e) {
+    log.innerHTML += `<div class="chat-msg bot" style="color:var(--red)">Error: ${e.message}</div>`;
+  }
+  log.scrollTop = log.scrollHeight;
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+loadData();
+setInterval(() => { try { loadData(); } catch(e) {} }, 60000);
 </script>
 </body>
 </html>
