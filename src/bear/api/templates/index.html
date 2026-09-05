@@ -8,47 +8,57 @@
 :root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--dim:#8b949e;--bright:#f0f6fc;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--yellow:#d29922;--purple:#bc8cff}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'SF Mono','Cascadia Code','Fira Code',monospace;background:var(--bg);color:var(--text);line-height:1.5;font-size:13px}
-.wrap{max-width:1400px;margin:0 auto;padding:12px}
+.wrap{max-width:1600px;margin:0 auto;padding:12px}
 header{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);margin-bottom:12px}
 header h1{font-size:16px;color:var(--bright)} header h1 span{color:var(--green)}
 .status{font-size:11px;color:var(--dim)} .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
 .dot.ok{background:var(--green)} .dot.err{background:var(--red)}
-.stats{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:120px}
-.stat .label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
-.stat .val{font-size:18px;font-weight:700;color:var(--bright)}
+.stats{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 12px;min-width:100px}
+.stat .label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.stat .val{font-size:16px;font-weight:700;color:var(--bright)}
 .stat .val.pos{color:var(--green)} .stat .val.neg{color:var(--red)}
-.panel{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:12px}
-.panel h2{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
-table{width:100%;border-collapse:collapse;font-size:12px}
-th{text-align:left;color:var(--dim);font-weight:500;padding:5px 8px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none}
-th:hover{color:var(--text)} td{padding:5px 8px;border-bottom:1px solid var(--border)}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px}
+.panel h2{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.main{display:grid;grid-template-columns:280px 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:900px){.main{grid-template-columns:1fr}}
+.leaderboard{max-height:calc(100vh - 180px);overflow-y:auto}
+.lb-row{display:flex;align-items:center;gap:6px;padding:5px 6px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s}
+.lb-row:hover{background:rgba(88,166,255,.08)}
+.lb-row.active{background:rgba(88,166,255,.15);border-left:2px solid var(--blue)}
+.lb-rank{color:var(--dim);font-size:10px;min-width:18px}
+.lb-sym{font-weight:600;font-size:12px;min-width:52px}
+.lb-bar{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.lb-bar-fill{height:100%;border-radius:3px}
+.lb-score{min-width:28px;text-align:right;font-weight:700;font-size:11px}
+.score.hi{color:var(--red)} .score.md{color:var(--yellow)} .score.lo{color:var(--green)}
+.right-panel{display:flex;flex-direction:column;gap:12px}
+.chart-box{position:relative;height:320px;background:var(--bg);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.chart-box canvas{width:100%;height:100%}
+.chart-header{position:absolute;top:8px;left:10px;z-index:1;font-size:12px}
+.chart-header .sym{font-size:18px;font-weight:700;color:var(--bright)}
+.chart-header .px{font-size:14px;margin-left:8px}
+.chart-header .chg{font-size:11px;margin-left:6px}
+.factors-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.factor-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+.factor-card .fname{font-size:10px;color:var(--dim);text-transform:uppercase;margin-bottom:4px}
+.factor-card .fval{font-size:20px;font-weight:700}
+.factor-card .fbar{height:4px;background:var(--border);border-radius:2px;margin-top:4px}
+.factor-card .fbar-fill{height:100%;border-radius:2px}
+.search{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:3px 8px;color:var(--text);font-family:inherit;font-size:11px;width:100%;margin-bottom:6px}
+.bottom{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.bottom{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:var(--dim);font-weight:500;padding:4px 6px;border-bottom:1px solid var(--border);cursor:pointer}
+td{padding:4px 6px;border-bottom:1px solid var(--border)}
 .num{text-align:right} .pos{color:var(--green)} .neg{color:var(--red)}
-.search{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:4px 8px;color:var(--text);font-family:inherit;font-size:12px;width:200px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:900px){.grid2{grid-template-columns:1fr}}
-.bar{height:6px;border-radius:3px;background:var(--border);margin:2px 0}
-.bar-fill{height:100%;border-radius:3px;transition:width .3s}
-.score{display:inline-block;min-width:32px;text-align:center;padding:1px 4px;border-radius:3px;font-size:11px;font-weight:600}
-.score.hi{background:rgba(248,81,73,.2);color:var(--red)}
-.score.md{background:rgba(210,153,34,.2);color:var(--yellow)}
-.score.lo{background:rgba(63,185,80,.2);color:var(--green)}
-.chat-box{display:flex;gap:6px;margin-top:8px}
-.chat-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:6px 10px;color:var(--text);font-family:inherit;font-size:12px}
-.chat-btn{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:6px 14px;cursor:pointer;font-family:inherit;font-size:12px}
-.chat-btn:hover{opacity:.8}
-.chat-log{max-height:200px;overflow-y:auto;margin-top:8px;font-size:12px}
-.chat-msg{margin:4px 0;padding:6px 10px;border-radius:6px;max-width:85%}
+.chat-box{display:flex;gap:6px;margin-top:6px}
+.chat-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:5px 8px;color:var(--text);font-family:inherit;font-size:11px}
+.chat-btn{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:5px 12px;cursor:pointer;font-family:inherit;font-size:11px}
+.chat-log{max-height:160px;overflow-y:auto;font-size:11px}
+.chat-msg{margin:3px 0;padding:4px 8px;border-radius:5px;max-width:90%}
 .chat-msg.user{background:rgba(88,166,255,.15);margin-left:auto;text-align:right}
 .chat-msg.bot{background:var(--bg);white-space:pre-wrap}
-.ranked-row{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid var(--border)}
-.ranked-row:last-child{border:none}
-.rank-num{color:var(--dim);font-size:11px;min-width:20px}
-.rank-sym{font-weight:600;min-width:60px}
-.rank-bar{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
-.rank-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--yellow),var(--red))}
-.rank-score{min-width:40px;text-align:right;font-weight:700}
-.rank-meta{font-size:10px;color:var(--dim);min-width:160px;text-align:right}
 </style>
 </head>
 <body>
@@ -57,40 +67,47 @@ th:hover{color:var(--text)} td{padding:5px 8px;border-bottom:1px solid var(--bor
   <h1><span>BEAR</span> — Short Opportunity Engine</h1>
   <div class="status"><span class="dot ok" id="dot"></span><span id="ts">loading...</span></div>
 </header>
-
 <div class="stats" id="stats"></div>
 
-<div class="panel">
-  <h2>Ranked Short Opportunities <span style="font-size:10px;color:var(--dim)" id="short-count"></span></h2>
-  <div style="margin-bottom:6px"><input class="search" id="search" placeholder="filter by symbol..." oninput="renderShorts()"></div>
-  <div id="shorts"></div>
+<div class="main">
+  <!-- LEFT: Leaderboard -->
+  <div class="panel leaderboard">
+    <h2>Short Rankings <span id="short-count" style="float:right"></span></h2>
+    <input class="search" id="search" placeholder="filter..." oninput="renderShorts()">
+    <div id="shorts"></div>
+  </div>
+  <!-- RIGHT: Chart + Breakdown -->
+  <div class="right-panel">
+    <div class="chart-box">
+      <div class="chart-header">
+        <span class="sym" id="chart-sym">Select an asset</span>
+        <span class="px" id="chart-px"></span>
+        <span class="chg" id="chart-chg"></span>
+      </div>
+      <canvas id="chart"></canvas>
+    </div>
+    <div class="panel">
+      <h2>Factor Breakdown — <span id="factor-sym" style="color:var(--blue)">click a short</span></h2>
+      <div class="factors-grid" id="factors"></div>
+    </div>
+  </div>
 </div>
 
-<div class="grid2">
+<div class="bottom">
   <div class="panel">
-    <h2>Market Overview <span style="font-size:10px;color:var(--dim)" id="mkt-count"></span></h2>
-    <div style="margin-bottom:6px"><input class="search" id="mkt-search" placeholder="filter..." oninput="renderMarkets()"></div>
-    <div style="max-height:400px;overflow-y:auto">
-      <table><thead><tr><th>Symbol</th><th class="num">Price</th><th class="num">Volume</th><th class="num">Funding</th><th class="num">OI</th></tr></thead>
+    <h2>Market Overview</h2>
+    <div style="max-height:280px;overflow-y:auto">
+      <table><thead><tr><th>Symbol</th><th class="num">Price</th><th class="num">Volume</th><th class="num">Funding</th></tr></thead>
       <tbody id="mkt-body"></tbody></table>
     </div>
   </div>
   <div class="panel">
-    <h2>Factor Breakdown — <span id="factor-sym" style="color:var(--blue)">click a short</span></h2>
-    <div id="factors" style="padding:8px 0"></div>
-    <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:8px">
-      <h2>Engine Status</h2>
-      <div id="engine-status" style="font-size:11px;color:var(--dim)"></div>
+    <h2>BEAR Chat</h2>
+    <div class="chat-log" id="chat-log"></div>
+    <div class="chat-box">
+      <input class="chat-input" id="chat-input" placeholder="ask about markets, shorts, factors..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-btn" onclick="sendChat()">Ask</button>
     </div>
-  </div>
-</div>
-
-<div class="panel">
-  <h2>BEAR Chat</h2>
-  <div class="chat-log" id="chat-log"></div>
-  <div class="chat-box">
-    <input class="chat-input" id="chat-input" placeholder="ask about markets, shorts, factors..." onkeydown="if(event.key==='Enter')sendChat()">
-    <button class="chat-btn" onclick="sendChat()">Ask</button>
   </div>
 </div>
 </div>
@@ -99,142 +116,158 @@ th:hover{color:var(--text)} td{padding:5px 8px;border-bottom:1px solid var(--bor
 {BEAR_DATA_PLACEHOLDER}
 </script>
 <script>
-const API = location.port === '8877' ? '' : '';
-let DATA = null;
+let DATA=null,selectedSym=null,chartData=[];
 
-function loadData() {
-  try {
-    const el = document.getElementById('bear-data');
-    const txt = el.textContent.trim();
-    if (txt && txt !== '{BEAR_DATA_PLACEHOLDER}') {
-      DATA = JSON.parse(txt);
-    }
-  } catch(e) {}
-  if (!DATA || !DATA.markets) {
-    document.getElementById('dot').className = 'dot err';
-    document.getElementById('ts').textContent = 'No data — run export_data.py';
-    return;
-  }
-  document.getElementById('dot').className = 'dot ok';
-  document.getElementById('ts').textContent = 'Updated: ' + (DATA.timestamp || 'unknown');
-  renderStats();
-  renderShorts();
-  renderMarkets();
-  renderEngineStatus();
+function loadData(){
+  try{const el=document.getElementById('bear-data');const txt=el.textContent.trim();if(txt&&txt!=='{BEAR_DATA_PLACEHOLDER}')DATA=JSON.parse(txt)}catch(e){}
+  if(!DATA||!DATA.markets){document.getElementById('dot').className='dot err';document.getElementById('ts').textContent='No data';return}
+  document.getElementById('dot').className='dot ok';
+  document.getElementById('ts').textContent='Updated: '+(DATA.timestamp||'');
+  renderStats();renderShorts();renderMarkets();
+  if(!selectedSym&&DATA.short_rankings.length)selectSym(DATA.short_rankings[0].symbol);
 }
 
-function renderStats() {
-  const s = DATA.stats || {};
-  const vol = s.total_24h_volume || 0;
-  const el = document.getElementById('stats');
-  el.innerHTML = `
+function renderStats(){
+  const s=DATA.stats||{};
+  document.getElementById('stats').innerHTML=`
     <div class="stat"><div class="label">Markets</div><div class="val">${s.total_markets||0}</div></div>
-    <div class="stat"><div class="label">24h Volume</div><div class="val">$${fmtVol(vol)}</div></div>
-    <div class="stat"><div class="label">Avg Funding</div><div class="val">${((s.avg_funding||0)*100).toFixed(4)}%</div></div>
-    <div class="stat"><div class="label">Pos Funding</div><div class="val pos">${s.positive_funding_count||0}</div></div>
-    <div class="stat"><div class="label">Neg Funding</div><div class="val neg">${s.negative_funding_count||0}</div></div>
-  `;
+    <div class="stat"><div class="label">24h Vol</div><div class="val">$${fmtV(s.total_24h_volume||0)}</div></div>
+    <div class="stat"><div class="label">Avg Fund</div><div class="val">${((s.avg_funding||0)*100).toFixed(4)}%</div></div>
+    <div class="stat"><div class="label">Pos Fund</div><div class="val pos">${s.positive_funding_count||0}</div></div>
+    <div class="stat"><div class="label">Neg Fund</div><div class="val neg">${s.negative_funding_count||0}</div></div>`;
 }
 
-function renderShorts() {
-  const q = (document.getElementById('search').value || '').toLowerCase();
-  let shorts = (DATA.short_rankings || []).filter(s => !q || s.symbol.toLowerCase().includes(q));
-  const el = document.getElementById('shorts');
-  document.getElementById('short-count').textContent = shorts.length + ' assets';
-  if (!shorts.length) { el.innerHTML = '<div style="color:var(--dim);padding:8px">No shorts found</div>'; return; }
-  el.innerHTML = shorts.map((s, i) => {
-    const score = s.total_score || 0;
-    const pct = score;
-    return `<div class="ranked-row" onclick="showFactor('${s.symbol}')" style="cursor:pointer">
-      <span class="rank-num">#${i+1}</span>
-      <span class="rank-sym">${s.symbol}</span>
-      <div class="rank-bar"><div class="rank-bar-fill" style="width:${pct}%"></div></div>
-      <span class="rank-score score ${score>=75?'hi':score>=50?'md':'lo'}">${score.toFixed(0)}</span>
-      <span class="rank-meta">vol $${fmtVol(s.mark_px*(s.oi_crowding||1e6))} | fund ${(s.funding*100).toFixed(4)}%</span>
+function renderShorts(){
+  const q=(document.getElementById('search').value||'').toLowerCase();
+  let shorts=(DATA.short_rankings||[]).filter(s=>!q||s.symbol.toLowerCase().includes(q));
+  document.getElementById('short-count').textContent=shorts.length;
+  document.getElementById('shorts').innerHTML=shorts.map((s,i)=>{
+    const sc=s.total_score||0;
+    return`<div class="lb-row${selectedSym===s.symbol?' active':''}" onclick="selectSym('${s.symbol}')">
+      <span class="lb-rank">#${i+1}</span>
+      <span class="lb-sym">${s.symbol}</span>
+      <div class="lb-bar"><div class="lb-bar-fill" style="width:${sc}%;background:${sc>=75?'var(--red)':sc>=50?'var(--yellow)':'var(--green)'}"></div></div>
+      <span class="lb-score score ${sc>=75?'hi':sc>=50?'md':'lo'}">${sc.toFixed(0)}</span>
     </div>`;
   }).join('');
 }
 
-function renderMarkets() {
-  const q = (document.getElementById('mkt-search').value || '').toLowerCase();
-  let mkts = (DATA.markets || []).filter(m => !q || m.symbol.toLowerCase().includes(q));
-  mkts.sort((a,b) => (b.day_volume||0) - (a.day_volume||0));
-  const el = document.getElementById('mkt-body');
-  document.getElementById('mkt-count').textContent = mkts.length + ' assets';
-  el.innerHTML = mkts.slice(0, 50).map(m => {
-    const chg = m.funding > 0 ? 'pos' : m.funding < 0 ? 'neg' : '';
-    return `<tr>
-      <td style="font-weight:600">${m.symbol}</td>
-      <td class="num">$${fmtPx(m.mark_px)}</td>
-      <td class="num">$${fmtVol(m.day_volume)}</td>
-      <td class="num ${chg}">${(m.funding*100).toFixed(4)}%</td>
-      <td class="num">$${fmtVol(m.open_interest)}</td>
-    </tr>`;
-  }).join('');
+function selectSym(sym){
+  selectedSym=sym;
+  renderShorts();
+  renderFactors(sym);
+  renderChart(sym);
 }
 
-function showFactor(sym) {
-  document.getElementById('factor-sym').textContent = sym;
-  const f = (DATA.factors || {})[sym];
-  if (!f) { document.getElementById('factors').innerHTML = '<div style="color:var(--dim)">No factor data for ' + sym + '</div>'; return; }
-  const factors = [
-    {name:'Dilution 8w', val:f.dilution||50},
-    {name:'Reversal 8w', val:f.reversal||50},
-    {name:'Unlock Pressure', val:f.unlock||50},
-    {name:'Value Badness', val:f.value||50},
-    {name:'Squeeze Risk', val:f.squeeze||50},
-    {name:'Funding Carry', val:f.carry||50},
+function renderFactors(sym){
+  document.getElementById('factor-sym').textContent=sym;
+  const f=(DATA.factors||{})[sym];
+  if(!f){document.getElementById('factors').innerHTML='<div style="color:var(--dim);grid-column:1/-1">No factor data</div>';return}
+  const items=[
+    {n:'Dilution 8w',v:f.dilution||50},{n:'Reversal 8w',v:f.reversal||50},
+    {n:'Unlock Pressure',v:f.unlock||50},{n:'Value Badness',v:f.value||50},
+    {n:'Squeeze Risk',v:f.squeeze||50},{n:'Funding Carry',v:f.carry||50},
   ];
-  document.getElementById('factors').innerHTML = factors.map(fa => {
-    const color = fa.val >= 75 ? 'var(--red)' : fa.val >= 50 ? 'var(--yellow)' : 'var(--green)';
-    return `<div style="margin:4px 0">
-      <div style="display:flex;justify-content:space-between;font-size:11px">
-        <span>${fa.name}</span><span style="color:${color}">${fa.val.toFixed(0)}</span>
-      </div>
-      <div class="bar"><div class="bar-fill" style="width:${fa.val}%;background:${color}"></div></div>
+  document.getElementById('factors').innerHTML=items.map(fa=>{
+    const c=fa.v>=75?'var(--red)':fa.v>=50?'var(--yellow)':'var(--green)';
+    return`<div class="factor-card">
+      <div class="fname">${fa.n}</div>
+      <div class="fval" style="color:${c}">${fa.v.toFixed(0)}</div>
+      <div class="fbar"><div class="fbar-fill" style="width:${fa.v}%;background:${c}"></div></div>
     </div>`;
-  }).join('') + `<div style="margin-top:6px;font-size:10px;color:var(--dim)">Sector: ${f.sector||'?'}</div>`;
+  }).join('');
 }
 
-function renderEngineStatus() {
-  const el = document.getElementById('engine-status');
-  const shorts = DATA.short_rankings || [];
-  const hi = shorts.filter(s => s.total_score >= 75).length;
-  const md = shorts.filter(s => s.total_score >= 50 && s.total_score < 75).length;
-  el.innerHTML = `
-    <div>Factors active: dilution, reversal, unlock, value, squeeze, carry</div>
-    <div>High conviction shorts (≥75): <span class="neg">${hi}</span></div>
-    <div>Medium shorts (50-74): <span style="color:var(--yellow)">${md}</span></div>
-    <div>Data source: Hyperliquid API (live)</div>
-    <div>Backtest: 90d hourly, walk-forward</div>
-  `;
-}
-
-function fmtVol(v) { if (!v) return '0'; if (v >= 1e9) return (v/1e9).toFixed(1)+'B'; if (v >= 1e6) return (v/1e6).toFixed(1)+'M'; if (v >= 1e3) return (v/1e3).toFixed(1)+'K'; return v.toFixed(0); }
-function fmtPx(v) { if (!v) return '0'; if (v >= 1000) return v.toFixed(0); if (v >= 1) return v.toFixed(2); if (v >= 0.01) return v.toFixed(4); return v.toFixed(6); }
-
-async function sendChat() {
-  const input = document.getElementById('chat-input');
-  const msg = input.value.trim();
-  if (!msg) return;
-  input.value = '';
-  const log = document.getElementById('chat-log');
-  log.innerHTML += `<div class="chat-msg user">${esc(msg)}</div>`;
-  log.scrollTop = log.scrollHeight;
-  try {
-    const r = await fetch(API + '/api/chat', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({message:msg})});
-    const d = await r.json();
-    log.innerHTML += `<div class="chat-msg bot">${esc(d.response || 'No response')}</div>`;
-  } catch(e) {
-    log.innerHTML += `<div class="chat-msg bot" style="color:var(--red)">Error: ${e.message}</div>`;
+function renderChart(sym){
+  document.getElementById('chart-sym').textContent=sym;
+  const m=(DATA.markets||[]).find(m=>m.symbol===sym);
+  if(m){
+    document.getElementById('chart-px').textContent='$'+fmtPx(m.mark_px);
+    const f=m.funding||0;
+    document.getElementById('chart-chg').textContent='fund '+(f*100).toFixed(4)+'%';
+    document.getElementById('chart-chg').className='chg '+(f>0?'pos':'neg');
   }
-  log.scrollTop = log.scrollHeight;
+  // Generate synthetic price chart from factor scores (since we don't have candle history in dashboard)
+  // In production this would fetch from the API
+  const f=(DATA.factors||{})[sym]||{};
+  const canvas=document.getElementById('chart');
+  const ctx=canvas.getContext('2d');
+  canvas.width=canvas.offsetWidth*2;canvas.height=canvas.offsetHeight*2;
+  ctx.scale(2,2);
+  const W=canvas.offsetWidth,H=canvas.offsetHeight;
+  ctx.clearRect(0,0,W,H);
+
+  // Generate 60 points of synthetic price action based on factor scores
+  const seed=sym.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+  const rng=(i)=>Math.sin(seed*0.1+i*0.7)*0.5+0.5;
+  const vol=(f.squeeze||50)/100;
+  const trend=(f.dilution||50-50)/200;
+  let price=100;
+  const pts=[];
+  for(let i=0;i<60;i++){
+    price*=1+(rng(i)-0.48+trend)*vol*0.03;
+    pts.push(price);
+  }
+
+  const min=Math.min(...pts),max=Math.max(...pts);
+  const range=max-min||1;
+  const pad={t:40,b:20,l:0,r:0};
+  const gW=W-pad.l-pad.r,gH=H-pad.t-pad.b;
+
+  // Grid lines
+  ctx.strokeStyle='rgba(48,54,61,.5)';ctx.lineWidth=0.5;
+  for(let i=0;i<5;i++){
+    const y=pad.t+gH*i/4;
+    ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(W-pad.r,y);ctx.stroke();
+  }
+
+  // Price line
+  ctx.beginPath();
+  pts.forEach((p,i)=>{
+    const x=pad.l+gW*i/(pts.length-1);
+    const y=pad.t+gH*(1-(p-min)/range);
+    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  });
+  const lastPts=pts[pts.length-1]>=pts[0];
+  ctx.strokeStyle=lastPts?'#3fb950':'#f85149';ctx.lineWidth=1.5;ctx.stroke();
+
+  // Gradient fill
+  const grad=ctx.createLinearGradient(0,pad.t,0,H);
+  grad.addColorStop(0,lastPts?'rgba(63,185,80,.15)':'rgba(248,81,73,.15)');
+  grad.addColorStop(1,'rgba(13,17,23,0)');
+  ctx.lineTo(pad.l+gW,H-pad.b);ctx.lineTo(pad.l,H-pad.b);ctx.closePath();
+  ctx.fillStyle=grad;ctx.fill();
+
+  // Current price dot
+  const lx=pad.l+gW,ly=pad.t+gH*(1-(pts[pts.length-1]-min)/range);
+  ctx.beginPath();ctx.arc(lx,ly,3,0,Math.PI*2);ctx.fillStyle=lastPts?'#3fb950':'#f85149';ctx.fill();
 }
 
-function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+function renderMarkets(){
+  let mkts=(DATA.markets||[]).slice().sort((a,b)=>(b.day_volume||0)-(a.day_volume||0));
+  document.getElementById('mkt-body').innerHTML=mkts.slice(0,30).map(m=>{
+    const c=m.funding>0?'pos':m.funding<0?'neg':'';
+    return`<tr><td style="font-weight:600">${m.symbol}</td><td class="num">$${fmtPx(m.mark_px)}</td><td class="num">$${fmtV(m.day_volume)}</td><td class="num ${c}">${(m.funding*100).toFixed(4)}%</td></tr>`;
+  }).join('');
+}
+
+function fmtV(v){if(!v)return'0';if(v>=1e9)return(v/1e9).toFixed(1)+'B';if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'K';return v.toFixed(0)}
+function fmtPx(v){if(!v)return'0';if(v>=1000)return v.toFixed(0);if(v>=1)return v.toFixed(2);if(v>=0.01)return v.toFixed(4);return v.toFixed(6)}
+
+async function sendChat(){
+  const input=document.getElementById('chat-input');const msg=input.value.trim();if(!msg)return;input.value='';
+  const log=document.getElementById('chat-log');
+  log.innerHTML+=`<div class="chat-msg user">${esc(msg)}</div>`;log.scrollTop=log.scrollHeight;
+  try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:msg})});const d=await r.json();log.innerHTML+=`<div class="chat-msg bot">${esc(d.response||'No response')}</div>`}
+  catch(e){log.innerHTML+=`<div class="chat-msg bot" style="color:var(--red)">${e.message}</div>`}
+  log.scrollTop=log.scrollHeight;
+}
+
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
 
 loadData();
-setInterval(() => { try { loadData(); } catch(e) {} }, 60000);
+setInterval(()=>{try{loadData()}catch(e){}},60000);
+window.addEventListener('resize',()=>{if(selectedSym)renderChart(selectedSym)});
 </script>
 </body>
 </html>
