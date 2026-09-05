@@ -2,6 +2,9 @@
 
 All commands call into real engine modules: DataStore, managers, features,
 matching, and optimizer.
+
+⚠️  RESEARCH-ONLY SYSTEM — NO LIVE TRADING ⚠️
+This produces signals and dashboards. It does not place orders.
 """
 
 from __future__ import annotations

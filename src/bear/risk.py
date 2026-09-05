@@ -2,12 +2,50 @@
 
 Hard limits that cannot be overridden by config. Every order and portfolio
 state must pass through these checks before execution.
+
+THIS IS A RESEARCH-ONLY SYSTEM. NO LIVE TRADING. NO PAPER TRADING.
+SIGNALS AND DASHBOARDS ONLY.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
+
+# ── LIVE TRADING BLOCK ──────────────────────────────────────────────────
+# This system is research-only. Live trading is permanently disabled.
+# Do NOT remove this block. Do NOT add order submission code.
+# The address below is for monitoring/research reference only.
+
+LIVE_TRADING_ENABLED: bool = False
+PAPER_TRADING_ENABLED: bool = False
+WALLET_ADDRESS: str = "0xaee6516380e2c090998b050a962ad1e3daf6cdbe"
+
+def _block_live_trading(*args: Any, **kwargs: Any) -> None:
+    """Always raises. This system does not trade."""
+    raise RuntimeError(
+        "BEAR is a research-only system. Live trading is disabled. "
+        "This module produces signals and dashboards only. "
+        f"Reference wallet: {WALLET_ADDRESS}"
+    )
+
+# Block any future execution module from being imported
+import importlib
+_original_import = builtins_import = __builtins__.__import__ if hasattr(__builtins__, '__import__') else __import__
+
+def _guarded_import(name: str, *args: Any, **kwargs: Any):
+    forbidden = {"bear.execution", "bear.live_trader", "bear.order_manager"}
+    if name in forbidden:
+        raise RuntimeError(f"Module '{name}' is blocked. BEAR is research-only.")
+    return _original_import(name, *args, **kwargs)
+
+try:
+    import builtins
+    builtins._original_import = builtins.__import__
+    builtins.__import__ = _guarded_import
+except (AttributeError, TypeError):
+    pass  # non-standard builtins, skip guard
+# ── END LIVE TRADING BLOCK ──────────────────────────────────────────────
 
 
 @dataclass(frozen=True)
