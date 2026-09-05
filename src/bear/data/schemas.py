@@ -11,7 +11,7 @@ from datetime import datetime
 # ---------------------------------------------------------------------------
 
 CANDLES_SCHEMA: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "interval": pl.Utf8,
     "open_time": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "close_time": pl.Datetime(time_unit="ms", time_zone="UTC"),
@@ -25,7 +25,7 @@ CANDLES_SCHEMA: dict[str, pl.DataType] = {
 }
 
 CANDLES_DTYPES: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "interval": pl.Utf8,
     "open_time": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "close_time": pl.Datetime(time_unit="ms", time_zone="UTC"),
@@ -44,13 +44,13 @@ CANDLES_DTYPES: dict[str, pl.DataType] = {
 # ---------------------------------------------------------------------------
 
 FUNDING_SCHEMA: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "timestamp": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "rate": pl.Decimal(precision=18, scale=10),
 }
 
 FUNDING_DTYPES: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "timestamp": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "rate": pl.Float64,
 }
@@ -61,7 +61,7 @@ FUNDING_DTYPES: dict[str, pl.DataType] = {
 # ---------------------------------------------------------------------------
 
 ASSET_CONTEXTS_SCHEMA: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "timestamp": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "mark_px": pl.Decimal(precision=18, scale=8),
     "mid_px": pl.Decimal(precision=18, scale=8),
@@ -73,7 +73,7 @@ ASSET_CONTEXTS_SCHEMA: dict[str, pl.DataType] = {
 }
 
 ASSET_CONTEXTS_DTYPES: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "timestamp": pl.Datetime(time_unit="ms", time_zone="UTC"),
     "mark_px": pl.Float64,
     "mid_px": pl.Float64,
@@ -90,7 +90,7 @@ ASSET_CONTEXTS_DTYPES: dict[str, pl.DataType] = {
 # ---------------------------------------------------------------------------
 
 MARKETS_SCHEMA: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "name": pl.Utf8,
     "dex": pl.Utf8,
     "sz_decimals": pl.Int32,
@@ -101,7 +101,7 @@ MARKETS_SCHEMA: dict[str, pl.DataType] = {
 }
 
 MARKETS_DTYPES: dict[str, pl.DataType] = {
-    "market_id": pl.Utf8,
+    "symbol": pl.Utf8,
     "name": pl.Utf8,
     "dex": pl.Utf8,
     "sz_decimals": pl.Int32,

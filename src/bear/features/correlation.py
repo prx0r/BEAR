@@ -49,36 +49,62 @@ def compute_rolling_correlation(
 
     result_cols: list[pl.Expr] = [pl.col("timestamp")]
 
-    for w in windows:
-        if method == "spearman":
-            # Rank then Pearson
-            rank_a = pl.col(a_col).rank().over(
-                pl.lit(0).sort_by("timestamp").alias("dummy")
-            )
-            rank_b = pl.col(b_col).rank().over(
-                pl.lit(0).sort_by("timestamp").alias("dummy")
-            )
-            # Use rolling cov / rolling std for Spearman
-            expr = (
-                pl.cov_spearman(pl.col(a_col), pl.col(b_col), w)
-                if hasattr(pl, "cov_spearman")
-                else None
-            )
-            if expr is not None:
-                result_cols.append(expr.alias(f"corr_{a_col}_{b_col}_{w}d"))
-            else:
-                # Manual Spearman via rolling rank normalization
-                result_cols.append(
-                    pl.rolling_corr(pl.col(a_col), pl.col(b_col), w)
-                    .alias(f"corr_{a_col}_{b_col}_{w}d")
-                )
-        else:
-            result_cols.append(
-                pl.rolling_corr(pl.col(a_col), pl.col(b_col), w)
-                .alias(f"corr_{a_col}_{b_col}_{w}d")
-            )
+    # Pre-compute rolling correlations using numpy
+    a_vals = merged[a_col].to_numpy().astype(np.float64)
+    b_vals = merged[b_col].to_numpy().astype(np.float64)
+    n = len(a_vals)
 
-    return merged.select(result_cols)
+    for w in windows:
+        corr_values = []
+        for i in range(n):
+            start = max(0, i - w + 1)
+            a_win = a_vals[start: i + 1]
+            b_win = b_vals[start: i + 1]
+            mask = np.isfinite(a_win) & np.isfinite(b_win)
+            if mask.sum() < 3:
+                corr_values.append(np.nan)
+            else:
+                a_f, b_f = a_win[mask], b_win[mask]
+                if np.std(a_f) < 1e-15 or np.std(b_f) < 1e-15:
+                    corr_values.append(np.nan)
+                else:
+                    corr_values.append(float(np.corrcoef(a_f, b_f)[0, 1]))
+
+        corr_series = pl.Series(f"corr_{a_col}_{b_col}_{w}d", corr_values)
+        result_cols.append(pl.col("timestamp").alias("_dummy"))  # placeholder
+        merged = merged.with_columns(corr_series)
+
+    # Select timestamp + all corr columns
+    corr_names = [f"corr_{a_col}_{b_col}_{w}d" for w in windows]
+    return merged.select(["timestamp"] + corr_names)
+
+
+def _rolling_pearson(a: np.ndarray, b: np.ndarray, idx: int, window: int) -> float:
+    """Compute rolling Pearson correlation at index idx."""
+    start = max(0, idx - window + 1)
+    a_win = a[start:idx + 1]
+    b_win = b[start:idx + 1]
+    mask = np.isfinite(a_win) & np.isfinite(b_win)
+    if mask.sum() < 3:
+        return np.nan
+    a_f, b_f = a_win[mask], b_win[mask]
+    if np.std(a_f) < 1e-15 or np.std(b_f) < 1e-15:
+        return np.nan
+    return float(np.corrcoef(a_f, b_f)[0, 1])
+
+
+def _rolling_spearman(a: np.ndarray, b: np.ndarray, idx: int, window: int) -> float:
+    """Compute rolling Spearman correlation at index idx."""
+    start = max(0, idx - window + 1)
+    a_win = a[start:idx + 1]
+    b_win = b[start:idx + 1]
+    mask = np.isfinite(a_win) & np.isfinite(b_win)
+    if mask.sum() < 3:
+        return np.nan
+    a_f, b_f = a_win[mask], b_win[mask]
+    from scipy.stats import spearmanr
+    corr, _ = spearmanr(a_f, b_f)
+    return float(corr) if np.isfinite(corr) else np.nan
 
 
 def compute_cross_correlation_matrix(

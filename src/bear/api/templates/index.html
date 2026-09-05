@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEAR — Hyperliquid Relative-Value Dashboard</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #e6edf3; --text-dim: #8b949e; --text-bright: #f0f6fc;
+    --green: #3fb950; --red: #f85149; --blue: #58a6ff;
+    --yellow: #d29922; --purple: #bc8cff; --cyan: #39d2c0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace; background: var(--bg); color: var(--text); line-height: 1.5; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 16px; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+  header h1 { font-size: 20px; color: var(--text-bright); }
+  header h1 span { color: var(--green); }
+  .status { font-size: 12px; color: var(--text-dim); }
+  .status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .dot.ok { background: var(--green); }
+  .dot.err { background: var(--red); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .grid.full { grid-template-columns: 1fr; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+  .card h2 { font-size: 13px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; color: var(--text-dim); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  tr:hover td { background: rgba(88, 166, 255, 0.05); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .pos { color: var(--green); }
+  .neg { color: var(--red); }
+  .neutral { color: var(--text-dim); }
+  canvas { width: 100%; border-radius: 4px; background: var(--bg); }
+  .controls { display: flex; gap: 8px; margin-bottom: 12px; align-items: center; }
+  select, input, button {
+    font-family: inherit; font-size: 12px; background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 4px; padding: 6px 10px;
+  }
+  button { cursor: pointer; background: var(--blue); color: #fff; border: none; font-weight: 600; }
+  button:hover { opacity: 0.85; }
+  .hedge-result { margin-top: 12px; padding: 12px; background: var(--bg); border-radius: 6px; font-size: 12px; }
+  .metric-row { display: flex; justify-content: space-between; padding: 4px 0; }
+  .metric-val { font-weight: 600; }
+  .section-title { font-size: 14px; color: var(--text-bright); margin: 20px 0 10px; }
+  #loading { text-align: center; padding: 40px; color: var(--text-dim); }
+  .tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; }
+  .tag.sector { background: rgba(88, 166, 255, 0.15); color: var(--blue); }
+  @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1><span>BEAR</span> — Hyperliquid RV Engine</h1>
+    <div class="status">
+      <span class="dot" id="status-dot"></span>
+      <span id="status-text">Loading...</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <select id="mode-select">
+      <option value="relative_value">Relative Value</option>
+      <option value="risk_hedge">Risk Hedge</option>
+      <option value="alpha_preserve">Alpha Preserve</option>
+    </select>
+    <input id="symbol-input" placeholder="Symbol (e.g. BTC)" style="width:120px" />
+    <button onclick="loadNeighbors()">Find Neighbors</button>
+    <button onclick="loadHedge()" style="background:var(--green)">Get Hedge</button>
+    <button onclick="refreshAll()" style="background:var(--surface);color:var(--text);border:1px solid var(--border)">Refresh</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Markets</h2>
+      <div style="max-height:400px;overflow:auto">
+        <table><thead><tr><th>Symbol</th><th>Sector</th><th class="num">Price</th><th class="num">Funding</th><th class="num">OI</th></tr></thead>
+        <tbody id="markets-body"><tr><td colspan="5" id="loading">Loading...</td></tr></tbody></table>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Short Rankings</h2>
+      <div style="max-height:400px;overflow:auto">
+        <table><thead><tr><th>#</th><th>Symbol</th><th class="num">Score</th><th class="num">Carry</th><th class="num">Vol</th><th>Sector</th></tr></thead>
+        <tbody id="shorts-body"><tr><td colspan="6">Loading...</td></tr></tbody></table>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid full">
+    <div class="card">
+      <h2>Neighbor Graph</h2>
+      <canvas id="graph-canvas" height="350"></canvas>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Hedge Recommendation</h2>
+      <div id="hedge-result" class="hedge-result">
+        <div class="neutral">Select a long symbol and click "Get Hedge"</div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Neighbors</h2>
+      <div id="neighbors-result" style="font-size:12px">
+        <div class="neutral">Click "Find Neighbors" to analyze</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '';
+let allNodes = [], allEdges = [];
+
+async function fetchJSON(url) {
+  const r = await fetch(API + url);
+  if (!r.ok) throw new Error(`${r.status}: ${r.statusText}`);
+  return r.json();
+}
+
+function fmt(n, d=2) { return n != null ? Number(n).toFixed(d) : '-'; }
+function fmtPct(n) { return n != null ? (Number(n)*100).toFixed(2)+'%' : '-'; }
+function cls(n) { return n > 0 ? 'pos' : n < 0 ? 'neg' : 'neutral'; }
+
+async function loadMarkets() {
+  try {
+    const data = await fetchJSON('/markets');
+    const tb = document.getElementById('markets-body');
+    tb.innerHTML = data.map(r => `<tr>
+      <td><strong>${r.name || r.market_id}</strong></td>
+      <td><span class="tag sector">${r.category || '?'}</span></td>
+      <td class="num">${fmt(r.mark_px || r.mid_px)}</td>
+      <td class="num ${cls(r.funding)}">${fmtPct(r.funding)}</td>
+      <td class="num">${fmt(r.open_interest, 0)}</td>
+    </tr>`).join('');
+  } catch(e) { document.getElementById('markets-body').innerHTML = `<tr><td colspan="5">${e.message}</td></tr>`; }
+}
+
+async function loadShorts() {
+  try {
+    const data = await fetchJSON('/shorts/ranking?top=15');
+    const tb = document.getElementById('shorts-body');
+    tb.innerHTML = data.map((r,i) => `<tr>
+      <td>${i+1}</td>
+      <td><strong>${r.symbol}</strong></td>
+      <td class="num">${fmt(r.structural_short_score)}</td>
+      <td class="num ${cls(r.carry)}">${fmtPct(r.carry)}</td>
+      <td class="num">${fmt(r.volatility, 4)}</td>
+      <td><span class="tag sector">${r.sector}</span></td>
+    </tr>`).join('');
+  } catch(e) { document.getElementById('shorts-body').innerHTML = `<tr><td colspan="6">${e.message}</td></tr>`; }
+}
+
+async function loadGraph() {
+  try {
+    const data = await fetchJSON('/graph?min_weight=0.15');
+    allNodes = data.nodes || [];
+    allEdges = data.edges || [];
+    drawGraph();
+  } catch(e) { console.error('Graph error:', e); }
+}
+
+function drawGraph() {
+  const canvas = document.getElementById('graph-canvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width = canvas.offsetWidth * 2;
+  const H = canvas.height = 700;
+  ctx.scale(1, 1);
+  ctx.clearRect(0, 0, W, H);
+
+  if (!allNodes.length) { ctx.fillStyle = '#8b949e'; ctx.font = '14px monospace'; ctx.fillText('No graph data', W/2-40, H/2); return; }
+
+  const sectorColors = { layer1: '#58a6ff', defi: '#3fb950', ai: '#bc8cff', meme: '#f85149', infra: '#d29922', gaming: '#39d2c0', other: '#8b949e' };
+  const cx = W / 2, cy = H / 2, R = Math.min(W, H) * 0.38;
+
+  // Position nodes in a circle grouped by sector
+  const sectors = [...new Set(allNodes.map(n => n.sector))];
+  const positions = {};
+  allNodes.forEach((n, i) => {
+    const si = sectors.indexOf(n.sector);
+    const angle = (si / sectors.length) * 2 * Math.PI + (i / allNodes.length) * (2 * Math.PI / sectors.length);
+    positions[n.id] = { x: cx + R * Math.cos(angle), y: cy + R * Math.sin(angle), sector: n.sector };
+  });
+
+  // Draw edges
+  allEdges.forEach(e => {
+    const a = positions[e.source], b = positions[e.target];
+    if (!a || !b) return;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = `rgba(88,166,255,${Math.min(e.weight * 0.6, 0.4)})`;
+    ctx.lineWidth = e.weight * 3;
+    ctx.stroke();
+  });
+
+  // Draw nodes
+  allNodes.forEach(n => {
+    const p = positions[n.id]; if (!p) return;
+    const color = sectorColors[p.sector] || '#8b949e';
+    ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, 2 * Math.PI);
+    ctx.fillStyle = color; ctx.fill();
+    ctx.strokeStyle = '#0d1117'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = '#e6edf3'; ctx.font = '10px monospace';
+    ctx.fillText(n.id, p.x + 10, p.y + 4);
+  });
+
+  // Legend
+  let lx = 10;
+  sectors.forEach(s => {
+    ctx.fillStyle = sectorColors[s] || '#8b949e';
+    ctx.fillRect(lx, 10, 10, 10);
+    ctx.fillStyle = '#8b949e'; ctx.font = '10px monospace';
+    ctx.fillText(s, lx + 14, 19);
+    lx += ctx.measureText(s).width + 24;
+  });
+}
+
+async function loadNeighbors() {
+  const sym = document.getElementById('symbol-input').value.trim().toUpperCase();
+  if (!sym) return;
+  const mode = document.getElementById('mode-select').value;
+  try {
+    const data = await fetchJSON(`/neighbors/${sym}?mode=${mode}&top=10`);
+    const el = document.getElementById('neighbors-result');
+    if (!data.length) { el.innerHTML = '<div class="neutral">No neighbors found</div>'; return; }
+    el.innerHTML = `<table><thead><tr><th>#</th><th>Symbol</th><th class="num">Score</th><th class="num">Corr</th><th class="num">Beta</th><th>Sector</th></tr></thead><tbody>` +
+      data.map(r => `<tr><td>${r.rank}</td><td><strong>${r.symbol}</strong></td><td class="num">${fmt(r.fit_score)}</td><td class="num">${fmt(r.correlation_score)}</td><td class="num">${fmt(r.beta_score)}</td><td><span class="tag sector">${r.sector}</span></td></tr>`).join('') +
+      '</tbody></table>';
+  } catch(e) { document.getElementById('neighbors-result').innerHTML = `<div class="neg">${e.message}</div>`; }
+}
+
+async function loadHedge() {
+  const sym = document.getElementById('symbol-input').value.trim().toUpperCase();
+  if (!sym) return;
+  const mode = document.getElementById('mode-select').value;
+  try {
+    const data = await fetchJSON(`/hedge/single?long=${sym}&mode=${mode}&top=5`, { method: 'POST' });
+    const el = document.getElementById('hedge-result');
+    const shorts = Object.entries(data.shorts || {}).map(([k,v]) => `<div class="metric-row"><span>${k}</span><span class="metric-val">${(v*100).toFixed(2)}%</span></div>`).join('');
+    el.innerHTML = `
+      <div class="metric-row"><span>Long</span><span class="metric-val">${data.long_symbol}</span></div>
+      <div class="metric-row"><span>Net Exposure</span><span class="metric-val ${cls(data.net_exposure - 0.5)}">${fmtPct(data.net_exposure)}</span></div>
+      <div class="metric-row"><span>Short Gross</span><span class="metric-val">${fmtPct(data.short_gross)}</span></div>
+      <div class="metric-row"><span>Hedge Efficiency</span><span class="metric-val pos">${fmtPct(data.estimated_hedge_efficiency)}</span></div>
+      <div class="metric-row"><span>Rebal Cost</span><span class="metric-val">${fmtPct(data.rebalance_cost)}</span></div>
+      <hr style="border-color:var(--border);margin:8px 0">
+      <div style="color:var(--text-dim);margin-bottom:4px">Short Basket:</div>
+      ${shorts || '<div class="neutral">No shorts allocated</div>'}
+    `;
+  } catch(e) { document.getElementById('hedge-result').innerHTML = `<div class="neg">${e.message}</div>`; }
+}
+
+async function refreshAll() {
+  const dot = document.getElementById('status-dot');
+  const txt = document.getElementById('status-text');
+  try {
+    await Promise.all([loadMarkets(), loadShorts(), loadGraph()]);
+    dot.className = 'dot ok';
+    txt.textContent = 'Connected — ' + new Date().toLocaleTimeString();
+  } catch(e) {
+    dot.className = 'dot err';
+    txt.textContent = 'Error: ' + e.message;
+  }
+}
+
+refreshAll();
+setInterval(refreshAll, 60000);
+</script>
+</body>
+</html>

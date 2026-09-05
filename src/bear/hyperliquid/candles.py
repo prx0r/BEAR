@@ -189,7 +189,7 @@ class CandleManager:
         # Concat with existing
         if existing is not None and existing.height > 0:
             combined = pl.concat([existing, new_df]).unique(
-                subset=["market_id", "interval", "open_time"],
+                subset=["symbol", "interval", "open_time"],
                 keep="last",
             ).sort("open_time")
         else:
@@ -217,7 +217,7 @@ class CandleManager:
             open_time_ms = int(c.get("t", 0))
             close_time_ms = open_time_ms + INTERVAL_MS.get(interval, 3_600_000) - 1
             rows.append({
-                "market_id": coin.upper(),
+                "symbol": coin.upper(),
                 "interval": interval,
                 "open_time": datetime.fromtimestamp(open_time_ms / 1000, tz=timezone.utc),
                 "close_time": datetime.fromtimestamp(close_time_ms / 1000, tz=timezone.utc),

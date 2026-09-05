@@ -48,8 +48,6 @@ class DataStore:
     def conn(self) -> duckdb.DuckDBPyConnection:
         if self._conn is None:
             self._conn = duckdb.connect(str(self.db_path))
-            # Register polars support
-            self._conn.execute("INSTALL polars; LOAD polars;")
         return self._conn
 
     def close(self) -> None:
@@ -61,7 +59,7 @@ class DataStore:
         """Create tables if they don't exist."""
         self.conn.execute("""
             CREATE TABLE IF NOT EXISTS candles (
-                market_id VARCHAR,
+                symbol VARCHAR,
                 interval VARCHAR,
                 open_time TIMESTAMP,
                 close_time TIMESTAMP,
@@ -72,22 +70,23 @@ class DataStore:
                 volume DOUBLE,
                 trade_count BIGINT,
                 ingested_at TIMESTAMP,
-                PRIMARY KEY (market_id, interval, open_time)
+                PRIMARY KEY (symbol, interval, open_time)
             )
         """)
 
         self.conn.execute("""
             CREATE TABLE IF NOT EXISTS funding (
-                market_id VARCHAR,
+                symbol VARCHAR,
                 timestamp TIMESTAMP,
                 rate DOUBLE,
-                PRIMARY KEY (market_id, timestamp)
+                funding_rate DOUBLE,
+                PRIMARY KEY (symbol, timestamp)
             )
         """)
 
         self.conn.execute("""
             CREATE TABLE IF NOT EXISTS asset_contexts (
-                market_id VARCHAR,
+                symbol VARCHAR,
                 timestamp TIMESTAMP,
                 mark_px DOUBLE,
                 mid_px DOUBLE,
@@ -96,13 +95,13 @@ class DataStore:
                 premium DOUBLE,
                 open_interest DOUBLE,
                 day_volume DOUBLE,
-                PRIMARY KEY (market_id, timestamp)
+                PRIMARY KEY (symbol, timestamp)
             )
         """)
 
         self.conn.execute("""
             CREATE TABLE IF NOT EXISTS markets (
-                market_id VARCHAR PRIMARY KEY,
+                symbol VARCHAR PRIMARY KEY,
                 name VARCHAR,
                 dex VARCHAR,
                 sz_decimals INTEGER,
@@ -132,9 +131,14 @@ class DataStore:
         # Register as temporary view and upsert
         self.conn.register("_tmp_candles", df.to_arrow())
 
+        # Delete existing rows for same symbols, then insert
+        symbols = df["symbol"].unique().to_list()
+        for sym in symbols:
+            self.conn.execute(
+                "DELETE FROM candles WHERE symbol = ?", [sym]
+            )
         self.conn.execute("""
-            INSERT OR REPLACE INTO candles
-            SELECT * FROM _tmp_candles
+            INSERT INTO candles SELECT * FROM _tmp_candles
         """)
 
         rows = df.height
@@ -150,7 +154,7 @@ class DataStore:
         end: datetime | None = None,
     ) -> pl.DataFrame:
         """Load candles from DuckDB with optional time range filter."""
-        query = "SELECT * FROM candles WHERE market_id = ? AND interval = ?"
+        query = "SELECT * FROM candles WHERE symbol = ? AND interval = ?"
         params: list = [market_id, interval]
 
         if start:
@@ -176,9 +180,14 @@ class DataStore:
             return 0
 
         self.conn.register("_tmp_funding", df.to_arrow())
+        # Delete existing rows for this symbol, then insert
+        symbols = df["symbol"].unique().to_list()
+        for sym in symbols:
+            self.conn.execute(
+                "DELETE FROM funding WHERE symbol = ?", [sym]
+            )
         self.conn.execute("""
-            INSERT OR REPLACE INTO funding
-            SELECT * FROM _tmp_funding
+            INSERT INTO funding SELECT * FROM _tmp_funding
         """)
 
         rows = df.height
@@ -192,7 +201,7 @@ class DataStore:
         start: datetime | None = None,
     ) -> pl.DataFrame:
         """Load funding from DuckDB with optional start filter."""
-        query = "SELECT * FROM funding WHERE market_id = ?"
+        query = "SELECT * FROM funding WHERE symbol = ?"
         params: list = [market_id]
 
         if start:
@@ -215,9 +224,14 @@ class DataStore:
             return 0
 
         self.conn.register("_tmp_ctx", df.to_arrow())
+        # Delete by symbol, then insert all
+        symbols = df["symbol"].unique().to_list()
+        for sym in symbols:
+            self.conn.execute(
+                "DELETE FROM asset_contexts WHERE symbol = ?", [sym]
+            )
         self.conn.execute("""
-            INSERT OR REPLACE INTO asset_contexts
-            SELECT * FROM _tmp_ctx
+            INSERT INTO asset_contexts SELECT * FROM _tmp_ctx
         """)
 
         rows = df.height
@@ -231,7 +245,7 @@ class DataStore:
         start: datetime | None = None,
     ) -> pl.DataFrame:
         """Load asset contexts from DuckDB with optional start filter."""
-        query = "SELECT * FROM asset_contexts WHERE market_id = ?"
+        query = "SELECT * FROM asset_contexts WHERE symbol = ?"
         params: list = [market_id]
 
         if start:
@@ -254,9 +268,14 @@ class DataStore:
             return 0
 
         self.conn.register("_tmp_markets", df.to_arrow())
+        # Delete existing, then insert
+        symbols = df["symbol"].unique().to_list()
+        for sym in symbols:
+            self.conn.execute(
+                "DELETE FROM markets WHERE symbol = ?", [sym]
+            )
         self.conn.execute("""
-            INSERT OR REPLACE INTO markets
-            SELECT * FROM _tmp_markets
+            INSERT INTO markets SELECT * FROM _tmp_markets
         """)
 
         rows = df.height
@@ -266,7 +285,7 @@ class DataStore:
 
     def load_markets(self) -> pl.DataFrame:
         """Load all market metadata from DuckDB."""
-        result = self.conn.execute("SELECT * FROM markets ORDER BY market_id").fetchdf()
+        result = self.conn.execute("SELECT * FROM markets ORDER BY symbol").fetchdf()
         if result.empty:
             return pl.DataFrame(schema=MARKETS_SCHEMA)
 

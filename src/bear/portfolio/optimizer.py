@@ -207,14 +207,13 @@ def optimize_basket(
     })
 
     # Max per-name weight
-    def max_name_con(w, idx=i) -> float:
-        return constraints.max_name_weight - w[idx]
-
     for i in range(N_elig):
+        def _make_max_name_con(idx: int):
+            return lambda w: constraints.max_name_weight - w[idx]
+
         scipy_constraints.append({
             "type": "ineq",
-            "fun": max_name_con,
-            "args": (),
+            "fun": _make_max_name_con(i),
         })
 
     # Liquidity: w_i * portfolio_value <= max_pct_of_adv * adv_i
@@ -232,16 +231,6 @@ def optimize_basket(
     # Initial guess: equal weight among eligible
     w0 = np.ones(N_elig) / max(N_elig, 1) * min(constraints.max_name_weight, 1.0 / N_elig)
 
-    result = minimize(
-        objective,
-        w0,
-        method="SLSQP",
-        bounds=bounds,
-        options={"maxiter": 1000, "ftol": 1e-12},
-    )
-
-    # Add inequality constraints one-by-one (SLSQP handles them via constraints list)
-    # Rebuild with all constraints properly
     result = minimize(
         objective,
         w0,
@@ -273,13 +262,11 @@ def optimize_basket(
     weights_dict = {}
     for i, idx in enumerate(eligible_idx):
         if w_opt[i] > 1e-8:
-            name = f"candidate_{idx}"
+            name = str(idx)
             names.append(name)
             weights_dict[name] = float(w_opt[i])
 
     short_gross = float(np.sum(w_opt))
-    long_gross = float(np.sum(np.abs(long_returns))) / T if T > 0 else 0.0
-    # Normalize: long_gross = 1.0 (fully invested long)
     long_gross = 1.0
     net_exposure = long_gross - short_gross
 

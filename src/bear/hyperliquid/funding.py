@@ -151,7 +151,7 @@ class FundingManager:
 
         if existing is not None and existing.height > 0:
             combined = pl.concat([existing, new_df]).unique(
-                subset=["market_id", "timestamp"],
+                subset=["symbol", "timestamp"],
                 keep="last",
             ).sort("timestamp")
         else:
@@ -173,9 +173,10 @@ class FundingManager:
             ts_ms = int(entry.get("time", 0))
             rate = float(entry.get("rate", 0))
             rows.append({
-                "market_id": coin.upper(),
+                "symbol": coin.upper(),
                 "timestamp": datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc),
                 "rate": rate,
+                "funding_rate": rate,
             })
 
         if not rows:

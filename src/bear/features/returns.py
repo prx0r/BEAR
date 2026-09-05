@@ -30,7 +30,7 @@ def compute_log_returns(prices_df: pl.DataFrame) -> pl.DataFrame:
         shifted = pl.col(col).shift(1)
         result_cols.append(
             pl.when(shifted.is_not_null() & (shifted > 0) & pl.col(col).is_not_null() & (pl.col(col) > 0))
-            .then(pl.ln(pl.col(col) / shifted))
+            .then((pl.col(col) / shifted).log())
             .otherwise(pl.lit(None).cast(pl.Float64))
             .alias(col)
         )
@@ -86,7 +86,7 @@ def compute_returns_at_intervals(
                     & pl.col("close").is_not_null()
                     & (pl.col("close") > 0)
                 )
-                .then(pl.ln(pl.col("close") / shifted_close))
+                .then((pl.col("close") / shifted_close).log())
                 .otherwise(pl.lit(None).cast(pl.Float64))
                 .alias(col_name)
             )

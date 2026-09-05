@@ -126,8 +126,9 @@ def compute_metrics(
     cvar_95 = float(np.mean(returns[returns <= var_95])) if np.any(returns <= var_95) else var_95
 
     # Higher moments
-    skew = float(np.mean(returns ** 3) / max(np.std(returns) ** 3, 1e-10))
-    kurt = float(np.mean(returns ** 4) / max(np.std(returns) ** 4, 1e-10) - 3.0)
+    mean = np.mean(returns)
+    skew = float(np.mean((returns - mean) ** 3) / max(np.std(returns) ** 3, 1e-10))
+    kurt = float(np.mean((returns - mean) ** 4) / max(np.std(returns) ** 4, 1e-10) - 3.0)
 
     # Trade quality
     winners = returns[returns > 0]

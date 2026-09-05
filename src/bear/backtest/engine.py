@@ -17,6 +17,7 @@ from bear.backtest.costs import estimate_cost, estimate_rebalancing_cost
 from bear.backtest.funding import compute_funding_pnl_series
 from bear.backtest.metrics import PerformanceMetrics, compute_metrics
 from bear.portfolio.attribution import compute_attribution
+from bear.portfolio.optimizer import optimize_basket
 
 logger = logging.getLogger(__name__)
 
@@ -96,7 +97,7 @@ class BacktestEngine:
         cfg = self.config
 
         # Get unique dates
-        dates = prices.select("timestamp").unique().sort("timestamp").to_list()
+        dates = prices.select("timestamp").unique().sort("timestamp").get_column("timestamp").to_list()
         dates = [str(d) for d in dates]
         if not dates:
             raise ValueError("No data dates provided")
@@ -190,7 +191,7 @@ class BacktestEngine:
 
         for i, date in enumerate(test_dates):
             # Get prices for this date
-            day_prices = prices.filter(pl.col("timestamp") == date)
+            day_prices = prices.filter(pl.col("timestamp").cast(pl.Utf8) == str(date))
             if day_prices.is_empty():
                 equity_records.append({"timestamp": date, "equity": equity})
                 continue
@@ -206,7 +207,7 @@ class BacktestEngine:
             if i > 0:
                 prev_date = test_dates[i - 1]
                 prev_long = prices.filter(
-                    (pl.col("timestamp") == prev_date) & (pl.col("symbol") == cfg.long_symbol)
+                    (pl.col("timestamp").cast(pl.Utf8) == str(prev_date)) & (pl.col("symbol") == cfg.long_symbol)
                 )
                 if not prev_long.is_empty():
                     prev_price = float(prev_long["close"].item())
@@ -222,7 +223,7 @@ class BacktestEngine:
                 sym_price = float(sym_row["close"].item())
                 if i > 0:
                     prev_sym = prices.filter(
-                        (pl.col("timestamp") == prev_date) & (pl.col("symbol") == sym)
+                        (pl.col("timestamp").cast(pl.Utf8) == str(prev_date)) & (pl.col("symbol") == sym)
                     )
                     if not prev_sym.is_empty():
                         prev_p = float(prev_sym["close"].item())
@@ -236,7 +237,7 @@ class BacktestEngine:
             short_pnl = sum(-current_weights.get(s, 0) * short_returns.get(s, 0) for s in cfg.short_symbols)
 
             # Funding
-            fr_row = funding_rates.filter(pl.col("timestamp") == date)
+            fr_row = funding_rates.filter(pl.col("timestamp").cast(pl.Utf8) == str(date))
             funding_rate = 0.0
             if not fr_row.is_empty():
                 funding_rate = float(fr_row["funding_rate"].item())
@@ -255,6 +256,46 @@ class BacktestEngine:
                         slip = abs(current_weights[sym]) * cfg.slippage_bps / 10_000.0
                         fees += fee
                         slippage += slip
+
+                # Call optimizer to get new short weights
+                lookback = min(i + 1, 252)
+                start_idx = max(0, i - lookback + 1)
+                trail_dates = test_dates[start_idx:i + 1]
+
+                long_prices = prices.filter(
+                    (pl.col("symbol") == cfg.long_symbol)
+                    & pl.col("timestamp").is_in(trail_dates)
+                ).sort("timestamp")["close"].to_numpy()
+                long_rets = np.diff(long_prices) / np.maximum(long_prices[:-1], 1e-10) if len(long_prices) > 1 else np.zeros(1)
+
+                cand_rets_list = []
+                for sym in cfg.short_symbols:
+                    sp = prices.filter(
+                        (pl.col("symbol") == sym)
+                        & pl.col("timestamp").is_in(trail_dates)
+                    ).sort("timestamp")["close"].to_numpy()
+                    if len(sp) > 1:
+                        sr = np.diff(sp) / np.maximum(sp[:-1], 1e-10)
+                    else:
+                        sr = np.zeros(max(len(long_rets), 1))
+                    cand_rets_list.append(sr[:len(long_rets)])
+
+                if cand_rets_list:
+                    cand_rets = np.column_stack(cand_rets_list)
+                    scores = np.ones(len(cfg.short_symbols))
+                    prev_w = {str(j): current_weights.get(cfg.short_symbols[j], 0.0) for j in range(len(cfg.short_symbols))}
+                    try:
+                        opt_result = optimize_basket(
+                            long_returns=long_rets,
+                            candidate_returns=cand_rets,
+                            candidate_scores=scores,
+                            prev_weights=prev_w,
+                        )
+                        for j, sym in enumerate(cfg.short_symbols):
+                            key = str(j)
+                            current_weights[sym] = opt_result.weights.get(key, 0.0)
+                    except Exception:
+                        pass
 
             # Update equity
             portfolio_return = long_return + short_pnl + funding_pnl - fees - slippage

@@ -66,12 +66,12 @@ def _compute_funding_single(funding_df: pl.DataFrame) -> pl.DataFrame:
             / pl.col("funding_rate").rolling_std(window_90d)
         ).alias("funding_z_90d"),
 
-        # Annualized rate (8h periods -> 3 per day -> 365 days)
-        (pl.col("funding_rate") * 3 * 365).alias("funding_annualized"),
+        # Annualized rate (hourly periods -> 24 per day -> 365 days)
+        (pl.col("funding_rate") * 24 * 365).alias("funding_annualized"),
 
         # Carry for shorts: positive funding = long pays short = good for shorts
         # Carry = funding_rate (per period) * periods_per_year
-        (pl.col("funding_rate") * 3 * 365).alias("funding_carry"),
+        (pl.col("funding_rate") * 24 * 365).alias("funding_carry"),
     ])
 
     # If symbol column exists, preserve it
@@ -116,7 +116,7 @@ def compute_carry_score(
     ])
 
     # Annualize
-    carry_annualized = result["_carry_raw"] * 3 * 365
+    carry_annualized = result["_carry_raw"] * 24 * 365
     result = result.with_columns([
         carry_annualized.alias("carry_score"),
         pl.when(carry_annualized > 0.05)

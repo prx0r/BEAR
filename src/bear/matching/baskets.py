@@ -200,7 +200,7 @@ def compute_clone_gap(
     Returns:
         CLONE_GAP score (0-100). Higher = better opportunity.
     """
-    gap = abs(structural_short_candidate - structural_short_long)
+    gap = max(structural_short_candidate - structural_short_long, 0.0)
     # Scale by hedge fit: perfect hedge * max gap = 100
     clone_gap = (gap * hedge_fit) / 100.0
     return float(min(100.0, max(0.0, clone_gap)))

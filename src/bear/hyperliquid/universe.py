@@ -235,7 +235,7 @@ class UniverseManager:
         rows = []
         for a in self._snapshot.assets:
             rows.append({
-                "market_id": a.market_id,
+                "symbol": a.market_id,
                 "name": a.name,
                 "dex": a.market_id.split(":")[0] if ":" in a.market_id else "core",
                 "sz_decimals": a.sz_decimals,
