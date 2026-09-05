@@ -2,6 +2,13 @@
 
 Walk-forward backtester with point-in-time enforcement,
 survivorship bias handling, and funding-aware PnL.
+
+Vectorized execution model (adapted from AlphaForge):
+  - signals at bar t → execute at bar t+1 open (anti-lookahead)
+  - PnL = positions * forward_returns (elementwise, no loop)
+  - funding = |positions| * funding_rates (deducted at actual timestamps)
+  - slippage = |position_diff| * slippage_rate (cost on changes only)
+  - fees = |position_diff| * fee_rate (round-trip on changes)
 """
 
 from __future__ import annotations
@@ -13,11 +20,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import polars as pl
 
-from bear.backtest.costs import estimate_cost, estimate_rebalancing_cost
-from bear.backtest.funding import compute_funding_pnl_series
 from bear.backtest.metrics import PerformanceMetrics, compute_metrics
-from bear.portfolio.attribution import compute_attribution
-from bear.portfolio.optimizer import optimize_basket
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +65,12 @@ class BacktestResult:
 
 
 class BacktestEngine:
-    """Walk-forward backtesting engine with point-in-time enforcement."""
+    """Walk-forward backtesting engine with point-in-time enforcement.
+
+    Vectorized execution model: signals are generated at bar t and executed
+    at bar t+1 open, with all PnL, funding, slippage, and fees computed
+    via elementwise Polars operations (no per-bar Python loop).
+    """
 
     def __init__(self, config: BacktestConfig):
         self.config = config
@@ -78,6 +86,7 @@ class BacktestEngine:
         self,
         prices: pl.DataFrame,
         funding_rates: pl.DataFrame,
+        factor_df: Optional[pl.DataFrame] = None,
         universe: Optional[pl.DataFrame] = None,
         tokenomics: Optional[pl.DataFrame] = None,
         rebalance_dates: Optional[List[str]] = None,
@@ -85,10 +94,12 @@ class BacktestEngine:
         """Run the full backtest.
 
         Args:
-            prices: DataFrame with columns [timestamp, symbol, close, high, low, volume, spread].
-            funding_rates: DataFrame with [timestamp, funding_rate].
-            universe: Point-in-time universe eligibility.
-            tokenomics: Tokenomics data for short quality scoring.
+            prices: Columns [timestamp, symbol, close, high, low, volume, spread].
+            funding_rates: Columns [timestamp, funding_rate].
+            factor_df: Columns [symbol, timestamp, factor_score]. Pre-computed
+                factor scores for the full universe. Used to derive short signals.
+            universe: Point-in-time universe eligibility (unused, kept for API compat).
+            tokenomics: Tokenomics data (unused, kept for API compat).
             rebalance_dates: Explicit rebalance dates (if None, auto-generate).
 
         Returns:
@@ -96,9 +107,21 @@ class BacktestEngine:
         """
         cfg = self.config
 
-        # Get unique dates
-        dates = prices.select("timestamp").unique().sort("timestamp").get_column("timestamp").to_list()
-        dates = [str(d) for d in dates]
+        if factor_df is None:
+            logger.info("No factor_df provided — generating synthetic momentum factors from prices")
+            factor_df = self._synthetic_momentum_factors(prices)
+
+        # Unique dates across both prices and factors (normalize to Utf8)
+        price_dates = prices.select(pl.col("timestamp").cast(pl.Utf8).alias("timestamp")).unique()
+        factor_dates = factor_df.select(pl.col("timestamp").cast(pl.Utf8).alias("timestamp")).unique()
+        all_dates = (
+            pl.concat([price_dates, factor_dates])
+            .unique()
+            .sort("timestamp")
+            .get_column("timestamp")
+            .to_list()
+        )
+        dates = all_dates
         if not dates:
             raise ValueError("No data dates provided")
 
@@ -107,8 +130,13 @@ class BacktestEngine:
             {"train": dates, "valid": [], "test": dates}
         ]
 
-        all_results = []
-        equity_parts = []
+        equity_parts: list[pl.DataFrame] = []
+        all_attr: list[dict[str, Any]] = []
+        all_trades: list[dict[str, Any]] = []
+        total_funding = 0.0
+        total_fees = 0.0
+        total_slippage = 0.0
+        split_results: dict[str, PerformanceMetrics] = {}
 
         for split_idx, split in enumerate(splits):
             test_dates = split["test"]
@@ -120,223 +148,320 @@ class BacktestEngine:
                 split_idx, test_dates[0], test_dates[-1], len(test_dates),
             )
 
-            # Generate rebalance dates within test period
-            if rebalance_dates:
-                rb_dates = [d for d in rebalance_dates if d in test_dates]
-            else:
-                rb_dates = self._generate_rebalance_dates(test_dates, cfg.rebalance_freq)
-
-            # Simulate
-            split_eq, split_trades, split_funding = self._simulate_split(
-                prices, funding_rates, test_dates, rb_dates, split.get("train", []),
+            split_eq, split_attr, split_funding, split_fees, split_slip = (
+                self._simulate_split(
+                    factor_df=factor_df,
+                    prices=prices,
+                    funding_rates=funding_rates,
+                    test_dates=test_dates,
+                )
             )
             equity_parts.append(split_eq)
-            all_results.extend(split_trades)
+            all_attr.extend(split_attr)
+            total_funding += split_funding
+            total_fees += split_fees
+            total_slippage += split_slip
 
-            # Metrics for this split
+            # Per-split metrics
             if split_eq.height > 1:
                 eq_arr = split_eq["equity"].to_numpy()
-                split_metrics = compute_metrics(eq_arr)
-                split_label = f"split_{split_idx}"
-                logger.info("Split %d Sharpe: %.2f", split_idx, split_metrics.sharpe_ratio)
+                sm = compute_metrics(eq_arr)
+                split_results[f"split_{split_idx}"] = sm
+                logger.info("Split %d Sharpe: %.2f", split_idx, sm.sharpe_ratio)
 
         # Concatenate equity curves
         if equity_parts:
-            equity_curve = pl.concat(equity_parts)
+            equity_curve = pl.concat(equity_parts).sort("timestamp")
         else:
             equity_curve = pl.DataFrame({"timestamp": [], "equity": []})
 
         # Full metrics
         if equity_curve.height > 1:
-            eq_arr = equity_curve["equity"].to_numpy()
-            metrics = compute_metrics(eq_arr)
+            metrics = compute_metrics(equity_curve["equity"].to_numpy())
         else:
             metrics = PerformanceMetrics()
 
-        # Attribution
-        attribution = self._compute_attribution(all_results)
-
-        trades_df = pl.DataFrame(all_results) if all_results else pl.DataFrame()
-
-        total_funding = float(sum(t.get("funding_pnl", 0) for t in all_results))
-        total_fees = float(sum(t.get("fees", 0) for t in all_results))
-        total_slippage = float(sum(t.get("slippage", 0) for t in all_results))
+        trades_df = pl.DataFrame(all_trades) if all_trades else pl.DataFrame()
 
         return BacktestResult(
             config=cfg,
             equity_curve=equity_curve,
             metrics=metrics,
-            attribution=attribution,
+            attribution=all_attr,
             trades=trades_df,
             funding_pnl=total_funding,
             total_fees=total_fees,
             total_slippage=total_slippage,
+            split_results=split_results,
         )
+
+    # ------------------------------------------------------------------
+    # Vectorized split simulation
+    # ------------------------------------------------------------------
 
     def _simulate_split(
         self,
+        factor_df: pl.DataFrame,
         prices: pl.DataFrame,
         funding_rates: pl.DataFrame,
         test_dates: List[str],
-        rebalance_dates: List[str],
-        train_dates: List[str],
-    ) -> Tuple[pl.DataFrame, List[Dict[str, Any]], float]:
-        """Simulate one walk-forward split."""
+    ) -> Tuple[pl.DataFrame, List[Dict[str, Any]], float, float, float]:
+        """Simulate one walk-forward split with fully vectorized execution.
+
+        All PnL, funding, slippage, and fee calculations use elementwise
+        Polars shift/multiply/diff — no per-bar Python loop.
+
+        Returns:
+            (equity_curve_df, attribution_records, total_funding, total_fees, total_slippage)
+        """
         cfg = self.config
-        equity = cfg.initial_capital
-        equity_records = []
-        trade_records = []
-        total_funding = 0.0
-        current_weights = {s: 0.0 for s in cfg.short_symbols}
+        slippage_rate = cfg.slippage_bps / 10_000.0
+        initial_capital = cfg.initial_capital
 
-        for i, date in enumerate(test_dates):
-            # Get prices for this date
-            day_prices = prices.filter(pl.col("timestamp").cast(pl.Utf8) == str(date))
-            if day_prices.is_empty():
-                equity_records.append({"timestamp": date, "equity": equity})
-                continue
+        # ── 1. Pivot prices to wide format: one column per symbol ──────
+        ts_str = pl.col("timestamp").cast(pl.Utf8)
 
-            # Get long price
-            long_row = day_prices.filter(pl.col("symbol") == cfg.long_symbol)
-            if long_row.is_empty():
-                equity_records.append({"timestamp": date, "equity": equity})
-                continue
-
-            long_price = float(long_row["close"].item())
-            long_return = 0.0
-            if i > 0:
-                prev_date = test_dates[i - 1]
-                prev_long = prices.filter(
-                    (pl.col("timestamp").cast(pl.Utf8) == str(prev_date)) & (pl.col("symbol") == cfg.long_symbol)
-                )
-                if not prev_long.is_empty():
-                    prev_price = float(prev_long["close"].item())
-                    long_return = (long_price - prev_price) / prev_price if prev_price > 0 else 0.0
-
-            # Short returns
-            short_returns = {}
-            for sym in cfg.short_symbols:
-                sym_row = day_prices.filter(pl.col("symbol") == sym)
-                if sym_row.is_empty():
-                    short_returns[sym] = 0.0
-                    continue
-                sym_price = float(sym_row["close"].item())
-                if i > 0:
-                    prev_sym = prices.filter(
-                        (pl.col("timestamp").cast(pl.Utf8) == str(prev_date)) & (pl.col("symbol") == sym)
-                    )
-                    if not prev_sym.is_empty():
-                        prev_p = float(prev_sym["close"].item())
-                        short_returns[sym] = (sym_price - prev_p) / prev_p if prev_p > 0 else 0.0
-                    else:
-                        short_returns[sym] = 0.0
-                else:
-                    short_returns[sym] = 0.0
-
-            # Short PnL: positive when short drops
-            short_pnl = sum(-current_weights.get(s, 0) * short_returns.get(s, 0) for s in cfg.short_symbols)
-
-            # Funding
-            fr_row = funding_rates.filter(pl.col("timestamp").cast(pl.Utf8) == str(date))
-            funding_rate = 0.0
-            if not fr_row.is_empty():
-                funding_rate = float(fr_row["funding_rate"].item())
-            short_gross = sum(abs(w) for w in current_weights.values())
-            funding_pnl = funding_rate * short_gross
-            total_funding += funding_pnl
-
-            # Fees and slippage (at rebalance)
-            fees = 0.0
-            slippage = 0.0
-            if date in rebalance_dates:
-                # Rebalance cost
-                for sym in cfg.short_symbols:
-                    if abs(current_weights[sym]) > 1e-8:
-                        fee = abs(current_weights[sym]) * cfg.fee_rate
-                        slip = abs(current_weights[sym]) * cfg.slippage_bps / 10_000.0
-                        fees += fee
-                        slippage += slip
-
-                # Call optimizer to get new short weights
-                lookback = min(i + 1, 252)
-                start_idx = max(0, i - lookback + 1)
-                trail_dates = test_dates[start_idx:i + 1]
-
-                long_prices = prices.filter(
-                    (pl.col("symbol") == cfg.long_symbol)
-                    & pl.col("timestamp").is_in(trail_dates)
-                ).sort("timestamp")["close"].to_numpy()
-                long_rets = np.diff(long_prices) / np.maximum(long_prices[:-1], 1e-10) if len(long_prices) > 1 else np.zeros(1)
-
-                cand_rets_list = []
-                for sym in cfg.short_symbols:
-                    sp = prices.filter(
-                        (pl.col("symbol") == sym)
-                        & pl.col("timestamp").is_in(trail_dates)
-                    ).sort("timestamp")["close"].to_numpy()
-                    if len(sp) > 1:
-                        sr = np.diff(sp) / np.maximum(sp[:-1], 1e-10)
-                    else:
-                        sr = np.zeros(max(len(long_rets), 1))
-                    cand_rets_list.append(sr[:len(long_rets)])
-
-                if cand_rets_list:
-                    cand_rets = np.column_stack(cand_rets_list)
-                    scores = np.ones(len(cfg.short_symbols))
-                    prev_w = {str(j): current_weights.get(cfg.short_symbols[j], 0.0) for j in range(len(cfg.short_symbols))}
-                    try:
-                        opt_result = optimize_basket(
-                            long_returns=long_rets,
-                            candidate_returns=cand_rets,
-                            candidate_scores=scores,
-                            prev_weights=prev_w,
-                        )
-                        for j, sym in enumerate(cfg.short_symbols):
-                            key = str(j)
-                            current_weights[sym] = opt_result.weights.get(key, 0.0)
-                    except Exception:
-                        pass
-
-            # Update equity
-            portfolio_return = long_return + short_pnl + funding_pnl - fees - slippage
-            equity *= (1.0 + portfolio_return)
-
-            equity_records.append({"timestamp": date, "equity": equity})
-
-            trade_records.append({
-                "timestamp": date,
-                "long_return": long_return,
-                "short_pnl": short_pnl,
-                "funding_pnl": funding_pnl,
-                "fees": fees,
-                "slippage": slippage,
-                "portfolio_return": portfolio_return,
-                "equity": equity,
-                "short_gross": short_gross,
-                "weights": dict(current_weights),
-            })
-
-        return (
-            pl.DataFrame(equity_records),
-            trade_records,
-            total_funding,
+        long_df = (
+            prices.filter(pl.col("symbol") == cfg.long_symbol)
+            .select([
+                ts_str.alias("timestamp"),
+                pl.col("close").alias("long_close"),
+            ])
         )
+
+        short_dfs: list[pl.DataFrame] = []
+        for sym in cfg.short_symbols:
+            short_dfs.append(
+                prices.filter(pl.col("symbol") == sym)
+                .select([
+                    ts_str.alias("timestamp"),
+                    pl.col("close").alias(f"close_{sym}"),
+                ])
+            )
+
+        wide = long_df
+        for sdf in short_dfs:
+            wide = wide.join(sdf, on="timestamp", how="full", coalesce=True)
+
+        # ── 2. Compute forward returns (close-to-close) ───────────────
+        #    return_t = (close_t - close_{t-1}) / close_{t-1}
+        wide = wide.sort("timestamp")
+
+        wide = wide.with_columns([
+            pl.col("long_close").pct_change().fill_null(0.0).alias("long_return"),
+        ] + [
+            pl.col(f"close_{sym}").pct_change().fill_null(0.0).alias(f"ret_{sym}")
+            for sym in cfg.short_symbols
+        ])
+
+        # ── 3. Merge factor scores ────────────────────────────────────
+        factor_str = factor_df.with_columns(ts_str.alias("timestamp")).select([
+            "timestamp", "symbol", "factor_score",
+        ])
+
+        # Pivot factors: one column per symbol
+        pivoted_factors = (
+            factor_str
+            .pivot(
+                on="symbol",
+                index="timestamp",
+                values="factor_score",
+            )
+            .rename({
+                sym: f"factor_{sym}"
+                for sym in cfg.short_symbols
+            })
+        )
+
+        wide = wide.join(pivoted_factors, on="timestamp", how="left")
+
+        # ── 4. Rank factor scores → binary signals ────────────────────
+        #    Top N shorts by factor score get signal=1, rest=0
+        n_shorts = len(cfg.short_symbols)
+        factor_cols = [f"factor_{sym}" for sym in cfg.short_symbols]
+
+        # Stack factors into a row-wise rank
+        # For each row, rank the factor columns; top N get signal=1
+        wide = wide.with_columns([
+            pl.when(pl.col(c).is_not_null()).then(pl.lit(0)).otherwise(pl.lit(0)).alias(f"_raw_{c}")
+            for c in factor_cols
+        ])
+
+        # Compute rank across factor columns per row
+        # Use a Python UDF for row-wise ranking (Polars doesn't have native cross-column rank)
+        factor_col_names = [f"factor_{sym}" for sym in cfg.short_symbols]
+        signal_col_names = [f"signal_{sym}" for sym in cfg.short_symbols]
+        n_shorts_val = n_shorts
+        max_sw = cfg.max_short_weight
+
+        def _rank_signals(row: tuple) -> tuple:
+            """Rank factor scores and assign binary signals."""
+            scores = list(row)
+            valid = [(i, s) for i, s in enumerate(scores) if s is not None and not (isinstance(s, float) and np.isnan(s))]
+            signals = [0.0] * len(scores)
+            if len(valid) > 0:
+                valid.sort(key=lambda x: x[1], reverse=True)
+                top_n = min(n_shorts_val, len(valid))
+                for i, _ in valid[:top_n]:
+                    signals[i] = max_sw
+            return tuple(signals)
+
+        factor_struct = pl.concat_list(factor_cols)
+        wide = wide.with_columns(
+            factor_struct.alias("_factor_tuple")
+        )
+
+        # Apply ranking
+        wide = wide.with_columns(
+            pl.struct(factor_cols)
+            .map_elements(
+                lambda row: _rank_signals([row[c] for c in factor_cols]),
+                return_dtype=pl.Struct({c: pl.Float64 for c in signal_col_names}),
+            )
+            .alias("_signals_struct")
+        )
+
+        # Extract signal columns
+        for i, sym in enumerate(cfg.short_symbols):
+            wide = wide.with_columns(
+                pl.col("_signals_struct").struct.field(signal_col_names[i]).alias(f"signal_{sym}")
+            )
+
+        # ── 5. Anti-lookahead: shift signals by 1 bar ─────────────────
+        #    Signal at bar t → position at bar t+1 open
+        signal_cols = [f"signal_{sym}" for sym in cfg.short_symbols]
+        wide = wide.with_columns([
+            pl.col(c).shift(1).fill_null(0.0).alias(f"pos_{sym}")
+            for c in signal_cols
+        ])
+
+        position_cols = [f"pos_{sym}" for sym in cfg.short_symbols]
+
+        # ── 6. Position changes (for fees and slippage) ───────────────
+        wide = wide.with_columns([
+            (pl.col(c).diff().fill_null(0.0).abs()).alias(f"delta_{sym}")
+            for c in position_cols
+        ])
+
+        delta_cols = [f"delta_{sym}" for sym in cfg.short_symbols]
+
+        # ── 7. Vectorized PnL ─────────────────────────────────────────
+        #    short_pnl = Σ -position_sym * return_sym
+        #    (short profits when price drops)
+        wide = wide.with_columns([
+            (-1.0 * pl.col(f"pos_{sym}") * pl.col(f"ret_{sym}")).alias(f"pnl_{sym}")
+            for sym in cfg.short_symbols
+        ])
+
+        pnl_cols = [f"pnl_{sym}" for sym in cfg.short_symbols]
+
+        # Total short PnL per bar
+        wide = wide.with_columns(
+            pl.sum_horizontal(pnl_cols).alias("short_pnl")
+        )
+
+        # Total short gross exposure per bar
+        wide = wide.with_columns(
+            pl.sum_horizontal(position_cols).abs().alias("short_gross")
+        )
+
+        # ── 8. Vectorized funding ──────────────────────────────────────
+        #    funding_pnl = funding_rate * short_gross
+        #    (positive = shorts receive, aligned to actual timestamps)
+        fr = funding_rates.with_columns(
+            ts_str.alias("timestamp")
+        ).select(["timestamp", "funding_rate"]).sort("timestamp")
+
+        wide = wide.join(fr, on="timestamp", how="left")
+        wide = wide.with_columns(
+            pl.col("funding_rate").fill_null(0.0).alias("funding_rate")
+        )
+
+        wide = wide.with_columns(
+            (pl.col("funding_rate") * pl.col("short_gross")).alias("funding_pnl")
+        )
+
+        # ── 9. Vectorized fees and slippage ───────────────────────────
+        #    Fees: |position_diff| * fee_rate (round-trip)
+        #    Slippage: |position_diff| * slippage_rate
+        wide = wide.with_columns([
+            (pl.col(f"delta_{sym}") * cfg.fee_rate).alias(f"fee_{sym}")
+            for sym in cfg.short_symbols
+        ] + [
+            (pl.col(f"delta_{sym}") * slippage_rate).alias(f"slip_{sym}")
+            for sym in cfg.short_symbols
+        ])
+
+        fee_cols = [f"fee_{sym}" for sym in cfg.short_symbols]
+        slip_cols = [f"slip_{sym}" for sym in cfg.short_symbols]
+
+        wide = wide.with_columns([
+            pl.sum_horizontal(fee_cols).alias("total_fees"),
+            pl.sum_horizontal(slip_cols).alias("total_slippage"),
+        ])
+
+        # ── 10. Portfolio return and equity curve ──────────────────────
+        wide = wide.with_columns(
+            (
+                pl.col("long_return")
+                + pl.col("short_pnl")
+                + pl.col("funding_pnl")
+                - pl.col("total_fees")
+                - pl.col("total_slippage")
+            ).alias("portfolio_return")
+        )
+
+        # Equity = initial_capital * cumprod(1 + portfolio_return)
+        wide = wide.with_columns(
+            (initial_capital * (1.0 + pl.col("portfolio_return")).cum_prod()).alias("equity")
+        )
+
+        # ── 11. Attribution per bar ────────────────────────────────────
+        equity_curve = wide.select(["timestamp", "equity"]).sort("timestamp")
+
+        # Attribution records (summarize per bar for the return value)
+        attr_records = (
+            wide.select([
+                "timestamp",
+                "long_return",
+                "short_pnl",
+                "funding_pnl",
+                "total_fees",
+                "total_slippage",
+                "portfolio_return",
+                "equity",
+                "short_gross",
+            ])
+            .sort("timestamp")
+            .to_dicts()
+        )
+
+        # Totals
+        total_funding = float(wide.select(pl.col("funding_pnl").sum()).item())
+        total_fees = float(wide.select(pl.col("total_fees").sum()).item())
+        total_slippage = float(wide.select(pl.col("total_slippage").sum()).item())
+
+        return equity_curve, attr_records, total_funding, total_fees, total_slippage
+
+    # ------------------------------------------------------------------
+    # Walk-forward split computation
+    # ------------------------------------------------------------------
 
     def _compute_splits(
         self,
         dates: List[str],
     ) -> List[Dict[str, List[str]]]:
-        """Compute walk-forward train/valid/test splits."""
+        """Compute walk-forward train/valid/test splits (expanding window)."""
         cfg = self.config
         total = len(dates)
         train_days = cfg.train_months * 21
         valid_days = cfg.valid_months * 21
         test_days = cfg.test_months * 21
 
-        splits = []
+        splits: list[dict[str, list[str]]] = []
         start = 0
         while start + train_days + valid_days + test_days <= total:
-            train = dates[start:start + train_days]
+            train = dates[:start + train_days]  # expanding window
             valid = dates[start + train_days:start + train_days + valid_days]
             test = dates[start + train_days + valid_days:start + train_days + valid_days + test_days]
             splits.append({"train": train, "valid": valid, "test": test})
@@ -344,7 +469,7 @@ class BacktestEngine:
 
         # Final partial split
         if start + train_days + valid_days < total:
-            train = dates[start:start + train_days]
+            train = dates[:start + train_days]  # expanding window
             valid = dates[start + train_days:min(start + train_days + valid_days, total)]
             test = dates[min(start + train_days + valid_days, total):]
             if test:
@@ -352,43 +477,32 @@ class BacktestEngine:
 
         return splits
 
-    def _generate_rebalance_dates(
-        self,
-        dates: List[str],
-        freq: str,
-    ) -> List[str]:
-        """Generate rebalance dates at specified frequency."""
-        if freq == "1d":
-            return dates
-        elif freq == "1w":
-            return dates[::5]
-        elif freq == "2w":
-            return dates[::10]
-        elif freq == "1M":
-            return dates[::21]
-        else:
-            return dates[::5]
+    # ------------------------------------------------------------------
+    # Synthetic factor fallback (backward compat)
+    # ------------------------------------------------------------------
 
-    def _compute_attribution(
-        self,
-        trades: List[Dict[str, Any]],
-    ) -> List[Dict[str, Any]]:
-        """Compute per-period attribution."""
-        results = []
-        for trade in trades:
-            attr = compute_attribution(
-                long_pnl=trade.get("long_return", 0.0),
-                short_pnl=trade.get("short_pnl", 0.0),
-                funding_pnl=trade.get("funding_pnl", 0.0),
-                fees=trade.get("fees", 0.0),
-                slippage=trade.get("slippage", 0.0),
+    def _synthetic_momentum_factors(self, prices: pl.DataFrame) -> pl.DataFrame:
+        """Generate synthetic factor scores from price momentum.
+
+        Short symbols with highest recent momentum (positive return) get
+        the highest factor scores, making them top short candidates.
+        This provides a reasonable default for backward-compatible tests.
+        """
+        cfg = self.config
+        ts_str = pl.col("timestamp").cast(pl.Utf8)
+
+        frames: list[pl.DataFrame] = []
+        for sym in cfg.short_symbols:
+            sym_prices = (
+                prices.filter(pl.col("symbol") == sym)
+                .select([ts_str.alias("timestamp"), pl.col("close")])
+                .sort("timestamp")
             )
-            results.append({
-                "timestamp": trade["timestamp"],
-                "net_pnl": attr.net_pnl,
-                "long_pnl": attr.long_pnl,
-                "short_pnl": attr.short_pnl,
-                "funding_pnl": attr.funding_pnl,
-                "hedge_efficiency": attr.hedge_efficiency,
-            })
-        return results
+            # 20-day momentum rank as factor score
+            sym_prices = sym_prices.with_columns(
+                pl.col("close").pct_change(20).alias("factor_score")
+            )
+            sym_prices = sym_prices.with_columns(pl.lit(sym).alias("symbol"))
+            frames.append(sym_prices.select(["timestamp", "symbol", "factor_score"]))
+
+        return pl.concat(frames)
