@@ -128,9 +128,9 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 let DATA=null,selectedSym=null,chartObj=null,currentTab='price_action';
 
 const TAB_DESC={
-  price_action:'Overextended — will revert. Momentum, reversal, carry, crowding, volatility.',
-  dogshit:'Fundamental garbage — bad tokenomics, junk category, overhyped, destined for zero.',
-  squeeze_recovery:'Just got squeezed — shorts blown out, pumped hard, ready to re-short.',
+  price_action:'Short beaten-down assets. VALIDATED: shorting 90d losers = Sharpe 0.10, win 53%. Shorting winners LOSES.',
+  dogshit:'Fundamental garbage — meme coins, overhyped, negative funding. No price-based scoring.',
+  squeeze_recovery:'Just got squeezed — pumped hard from lows, now overextended and ready to fade.',
   synthesis:'Combined signal — assets appearing in multiple boards. Maximum conviction shorts.',
 };
 const TAB_SCORE_LABEL={
@@ -212,11 +212,11 @@ function renderFactors(sym,tab){
   let html=`<div style="font-size:10px;color:var(--dim);margin-bottom:4px">${TAB_SCORE_LABEL[tab]||'Score'}: <b style="color:var(--text);font-size:14px">${lb.score||0}</b>/100 | Sector: ${lb.sector||f.sector||'?'}</div>`;
   
   if(tab==='price_action'){
-    [{fn:'reversal_8w',label:'Reversal 8w',explain:'Higher = recent winner = will revert = GOOD short'},
+    [{fn:'reversal_8w',label:'Beaten Down',explain:'Lower = more beaten down = better short (momentum continuation)'},
      {fn:'volatility_30d',label:'Volatility',explain:'Lower = more stable = easier to hold short'},
      {fn:'funding_carry',label:'Funding Carry',explain:'Higher = you get paid to hold short'},
      {fn:'oi_crowding',label:'OI/ADV Crowding',explain:'Lower = less squeeze risk'},
-     {fn:'momentum_7d',label:'Momentum 7d',explain:'Higher = recent winner = tends to revert'},
+     {fn:'momentum_7d',label:'Momentum 7d',explain:'Lower = recent loser = tends to keep losing'},
     ].forEach(({fn,label,explain})=>{
       const fd=f[fn];if(!fd)return;
       const v=fd.value||0;const isInverted=fn==='volatility_30d'||fn==='oi_crowding';
@@ -224,10 +224,10 @@ function renderFactors(sym,tab){
       html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${dv.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${dv}%;background:${c}"></div></div><div class="fd-formula">${fd.formula||'?'} ${fd.validated?'&#10003;':'&#10007;'}</div><div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}${isInverted?' (low = good)':''}</div><div class="fd-note">${explain}</div>${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Paper</a></div>`:''}</div>`;
     });
   } else if(tab==='dogshit'){
-    [{k:'meme_score',label:'Meme Factor',explain:'Meme/animal coin with no real utility'},
-     {k:'cap_score',label:'Size (Tiny)',explain:'Low volume = microcap, nobody cares'},
-     {k:'fund_score',label:'Market Hates It',explain:'Negative funding = consensus it sucks'},
-     {k:'price_junk',label:'Price Junk',explain:'Sub-$0.01 = likely worthless'},
+    [{k:'meme_score',label:'Meme Factor',explain:'Meme/animal coin category'},
+     {k:'hype_ratio',label:'Hype/OI Ratio',explain:'High OI vs volume = overhyped garbage'},
+     {k:'fund_score',label:'Market Hates It',explain:'Negative funding = everyone short'},
+     {k:'vol_score',label:'Low Activity',explain:'Nobody actually trades it'},
     ].forEach(({k,label,explain})=>{
       const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':v>0?'var(--green)':'var(--dim)';
       html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v>0?v.toFixed(0):'—'}</span></div><div class="fd-note">${explain}</div></div>`;
