@@ -552,7 +552,12 @@ def generate_json_data() -> dict:
         if p.exists():
             try:
                 df = pl.read_parquet(p)
-                # Downsample to daily for dashboard (last 90 days)
+                # Convert epoch ms to datetime if needed
+                if df["open_time"].dtype == pl.Int64 or df["open_time"].dtype == pl.Int32:
+                    df = df.with_columns(
+                        pl.col("open_time").cast(pl.Datetime("ms")).alias("open_time")
+                    )
+                # Downsample to daily for dashboard
                 df = df.with_columns(pl.col("open_time").dt.date().alias("date"))
                 daily = df.group_by("date").agg([
                     pl.col("open").first(),
