@@ -6,23 +6,28 @@
 <title>BEAR — Short Opportunity Engine</title>
 <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 <style>
-:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--dim:#8b949e;--bright:#f0f6fc;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--yellow:#d29922}
+:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--dim:#8b949e;--bright:#f0f6fc;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--yellow:#d29922;--purple:#bc8cff}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'SF Mono','Cascadia Code','Fira Code',monospace;background:var(--bg);color:var(--text);line-height:1.5;font-size:13px}
 .wrap{max-width:1600px;margin:0 auto;padding:10px}
 header{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);margin-bottom:10px}
 header h1{font-size:15px;color:var(--bright)} header h1 span{color:var(--green)}
 .status{font-size:10px;color:var(--dim)} .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
-.dot.ok{background:var(--green)} .dot.err{background:var(--red)}
+.dot.ok{background:var(--green)}
 .stats{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:5px;padding:5px 10px}
 .stat .label{font-size:9px;color:var(--dim);text-transform:uppercase} .stat .val{font-size:14px;font-weight:700;color:var(--bright)}
 .stat .val.pos{color:var(--green)} .stat .val.neg{color:var(--red)}
 .papers{font-size:9px;color:var(--dim);margin-bottom:8px}
 .papers a{color:var(--blue);text-decoration:none;margin-right:10px}
-.main{display:grid;grid-template-columns:260px 1fr;gap:10px;margin-bottom:10px}
+.main{display:grid;grid-template-columns:280px 1fr;gap:10px;margin-bottom:10px}
 @media(max-width:900px){.main{grid-template-columns:1fr}}
-.lb{max-height:calc(100vh - 200px);overflow-y:auto}
+.tabs{display:flex;gap:2px;margin-bottom:6px}
+.tab{padding:5px 10px;background:var(--bg);border:1px solid var(--border);border-radius:4px 4px 0 0;cursor:pointer;font-size:11px;color:var(--dim);transition:all .15s}
+.tab:hover{color:var(--text)} .tab.active{background:var(--surface);color:var(--bright);border-bottom-color:var(--surface)}
+.tab-icon{margin-right:4px}
+.lb{max-height:calc(100vh - 220px);overflow-y:auto}
+.lb-header{font-size:10px;color:var(--dim);margin-bottom:4px;padding:0 4px}
 .lb-row{display:flex;align-items:center;gap:5px;padding:4px 5px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s;font-size:12px}
 .lb-row:hover{background:rgba(88,166,255,.08)} .lb-row.active{background:rgba(88,166,255,.15);border-left:2px solid var(--blue)}
 .lb-rank{color:var(--dim);font-size:10px;min-width:16px}
@@ -30,11 +35,12 @@ header h1{font-size:15px;color:var(--bright)} header h1 span{color:var(--green)}
 .lb-bar{flex:1;height:5px;background:var(--border);border-radius:3px;overflow:hidden}
 .lb-bar-fill{height:100%;border-radius:3px}
 .lb-score{min-width:26px;text-align:right;font-weight:700;font-size:11px}
+.lb-meta{font-size:9px;color:var(--dim);min-width:80px;text-align:right}
 .hi{color:var(--red)} .md{color:var(--yellow)} .lo{color:var(--green)}
 .panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px}
 .panel h2{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
 .search{background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:3px 6px;color:var(--text);font-family:inherit;font-size:11px;width:100%;margin-bottom:4px}
-#chart-container{height:320px;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+#chart-container{height:300px;border:1px solid var(--border);border-radius:6px;overflow:hidden}
 .factor-detail{background:var(--bg);border:1px solid var(--border);border-radius:5px;padding:6px 8px;margin:3px 0;font-size:11px}
 .factor-detail .fd-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
 .factor-detail .fd-name{font-weight:600} .factor-detail .fd-val{font-weight:700;font-size:14px}
@@ -47,7 +53,7 @@ header h1{font-size:15px;color:var(--bright)} header h1 span{color:var(--green)}
 .bottom{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:900px){.bottom{grid-template-columns:1fr}}
 table{width:100%;border-collapse:collapse;font-size:11px}
-th{text-align:left;color:var(--dim);font-weight:500;padding:3px 5px;border-bottom:1px solid var(--border);cursor:pointer}
+th{text-align:left;color:var(--dim);font-weight:500;padding:3px 5px;border-bottom:1px solid var(--border)}
 td{padding:3px 5px;border-bottom:1px solid var(--border)}
 .num{text-align:right} .pos{color:var(--green)} .neg{color:var(--red)}
 .chat-box{display:flex;gap:4px;margin-top:4px}
@@ -67,24 +73,28 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 </header>
 <div class="stats" id="stats"></div>
 <div class="papers">
-  &#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6703978" target="_blank">Reversal (Kiefer 2026)</a>
-  &#128218; <a href="https://doi.org/10.2139/ssrn.6636258" target="_blank">Dilution (Guo 2026)</a>
-  &#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6993978" target="_blank">Funding Carry (Lau 2026)</a>
-  &#128218; <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.05875" target="_blank">Value Factor (Mgmt Sci 2026)</a>
-  &#9989; <span id="valid-count">0</span>/<span id="total-count">0</span> validated
+  &#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6703978" target="_blank">Reversal</a>
+  &#128218; <a href="https://doi.org/10.2139/ssrn.6636258" target="_blank">Dilution</a>
+  &#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6993978" target="_blank">Funding Carry</a>
+  &#128218; <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.05875" target="_blank">Value Factor</a>
 </div>
 
 <div class="main">
   <div class="panel lb">
-    <h2>Best Short Targets <span id="short-count" style="float:right"></span></h2>
-    <input class="search" id="search" placeholder="filter..." oninput="renderShorts()">
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('price_action')"><span class="tab-icon">&#128200;</span>Price Action</div>
+      <div class="tab" onclick="switchTab('dogshit')"><span class="tab-icon">&#128148;</span>Dogshit</div>
+      <div class="tab" onclick="switchTab('squeeze_recovery')"><span class="tab-icon">&#9889;</span>Squeeze</div>
+    </div>
+    <div class="lb-header" id="lb-desc"></div>
+    <input class="search" id="search" placeholder="filter..." oninput="renderLeaderboard()">
     <div id="shorts"></div>
   </div>
   <div style="display:flex;flex-direction:column;gap:10px">
     <div id="chart-container"></div>
     <div class="panel">
       <h2>Score Breakdown — <span id="factor-sym" style="color:var(--blue)">click a short</span></h2>
-      <div id="factors" style="max-height:300px;overflow-y:auto"></div>
+      <div id="factors" style="max-height:280px;overflow-y:auto"></div>
     </div>
   </div>
 </div>
@@ -112,27 +122,37 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 {BEAR_DATA_PLACEHOLDER}
 </script>
 <script>
-let DATA=null,selectedSym=null,chartObj=null,mainSeries=null;
+let DATA=null,selectedSym=null,chartObj=null,currentTab='price_action';
+
+const TAB_DESC={
+  price_action:'Overextended — will revert. Based on momentum, reversal, carry, crowding, volatility.',
+  dogshit:'Fundamental garbage — bad tokenomics, junk category, overhyped relative to utility.',
+  squeeze_recovery:'Just got squeezed — shorts blown out, pumped hard, now overextended and ready to re-short.',
+};
+const TAB_SCORE_LABEL={
+  price_action:'Short Score',dogshit:'Garbage Score',squeeze_recovery:'Squeeze Score'
+};
 
 function loadData(){
   try{const el=document.getElementById('bear-data');const txt=el.textContent.trim();if(txt&&txt!=='{BEAR_DATA_PLACEHOLDER}')DATA=JSON.parse(txt)}catch(e){}
-  if(!DATA||!DATA.markets){document.getElementById('dot').className='dot err';document.getElementById('ts').textContent='No data';return}
+  if(!DATA||!DATA.markets){document.getElementById('dot').className='dot err';return}
   document.getElementById('dot').className='dot ok';
   document.getElementById('ts').textContent='Updated: '+(DATA.timestamp||'');
-  renderStats();renderShorts();renderMarkets();
-  if(!selectedSym&&DATA.short_rankings.length)selectSym(DATA.short_rankings[0].symbol);
+  renderStats();renderLeaderboard();renderMarkets();
+}
+
+function switchTab(tab){
+  currentTab=tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelector(`.tab[onclick="switchTab('${tab}')"]`).classList.add('active');
+  document.getElementById('lb-desc').textContent=TAB_DESC[tab]||'';
+  document.getElementById('search').value='';
+  selectedSym=null;
+  renderLeaderboard();
 }
 
 function renderStats(){
   const s=DATA.stats||{};
-  let valid=0,total=0;
-  Object.values(DATA.factors||{}).forEach(f=>{
-    ['reversal_8w','volatility_30d','funding_carry','oi_crowding','momentum_7d'].forEach(fn=>{
-      if(f[fn]){total++;if(f[fn].validated)valid++}
-    });
-  });
-  document.getElementById('valid-count').textContent=valid;
-  document.getElementById('total-count').textContent=total;
   document.getElementById('stats').innerHTML=`
     <div class="stat"><div class="label">Markets</div><div class="val">${s.total_markets||0}</div></div>
     <div class="stat"><div class="label">24h Vol</div><div class="val">$${fmtV(s.total_24h_volume||0)}</div></div>
@@ -141,87 +161,98 @@ function renderStats(){
     <div class="stat"><div class="label">Neg Fund</div><div class="val neg">${s.negative_funding_count||0}</div></div>`;
 }
 
-function renderShorts(){
+function renderLeaderboard(){
   const q=(document.getElementById('search').value||'').toLowerCase();
-  let shorts=(DATA.short_rankings||[]).filter(s=>!q||s.symbol.toLowerCase().includes(q));
-  document.getElementById('short-count').textContent=shorts.length;
-  document.getElementById('shorts').innerHTML=shorts.map((s,i)=>{
-    const sc=s.total_score||0;
-    return`<div class="lb-row${selectedSym===s.symbol?' active':''}" onclick="selectSym('${s.symbol}')">
+  const lb=(DATA.leaderboards||{})[currentTab]||[];
+  const filtered=lb.filter(s=>!q||s.symbol.toLowerCase().includes(q));
+  const label=TAB_SCORE_LABEL[currentTab]||'Score';
+  
+  document.getElementById('shorts').innerHTML=filtered.map((s,i)=>{
+    const sc=s.score||0;
+    let meta='';
+    if(currentTab==='price_action') meta=`rev=${(s.reversal||0).toFixed(0)} carry=${(s.carry||0).toFixed(0)}`;
+    else if(currentTab==='dogshit') meta=`px=${fmtPx(s.mark_px)} fund=${(s.funding*100).toFixed(4)}%`;
+    else if(currentTab==='squeeze_recovery') meta=`dd=${(s.drawdown_30d||0).toFixed(0)}% pump=+${(s.pump_from_low||0).toFixed(0)}%`;
+    
+    return`<div class="lb-row${selectedSym===s.symbol?' active':''}" onclick="selectSym('${s.symbol}','${currentTab}')">
       <span class="lb-rank">#${i+1}</span>
       <span class="lb-sym">${s.symbol}</span>
-      <div class="lb-bar"><div class="lb-bar-fill" style="width:${sc}%;background:${sc>=70?'var(--red)':sc>=50?'var(--yellow)':'var(--green)'}"></div></div>
+      <div class="lb-bar"><div class="lb-bar-fill" style="width:${Math.min(sc,100)}%;background:${sc>=70?'var(--red)':sc>=50?'var(--yellow)':'var(--green)'}"></div></div>
       <span class="lb-score ${sc>=70?'hi':sc>=50?'md':'lo'}">${sc.toFixed(0)}</span>
+      <span class="lb-meta">${meta}</span>
     </div>`;
-  }).join('');
+  }).join('')||'<div style="color:var(--dim);padding:8px">No matches</div>';
 }
 
-function selectSym(sym){
+function selectSym(sym,tab){
   selectedSym=sym;
-  renderShorts();
-  renderFactors(sym);
+  renderLeaderboard();
+  renderFactors(sym,tab);
   renderChart(sym);
 }
 
-function renderFactors(sym){
+function renderFactors(sym,tab){
   document.getElementById('factor-sym').textContent=sym;
-  const f=(DATA.factors||{})[sym];
-  if(!f){document.getElementById('factors').innerHTML='<div style="color:var(--dim)">No data</div>';return}
-  const meta=[
-    {fn:'reversal_8w',label:'Reversal 8w',explain:'Higher = recent winner = will revert = GOOD short'},
-    {fn:'volatility_30d',label:'Volatility 30d',explain:'Higher = more volatile = squeeze risk = BAD for short'},
-    {fn:'funding_carry',label:'Funding Carry',explain:'Higher = you get paid to hold short = GOOD'},
-    {fn:'oi_crowding',label:'OI/ADV Crowding',explain:'Higher = crowded position = squeeze risk = BAD'},
-    {fn:'momentum_7d',label:'Momentum 7d',explain:'Higher = recent winner = tends to revert = GOOD'},
-  ];
-  let html=`<div style="font-size:10px;color:var(--dim);margin-bottom:4px">Short Score: <b style="color:var(--text);font-size:14px">${f.total_score||0}</b>/100 | Confidence: ${f.confidence||0}% | Sector: ${f.sector||'?'}</div>`;
-  meta.forEach(({fn,label,explain})=>{
-    const fd=f[fn];if(!fd||typeof fd!=='object')return;
-    const v=fd.value||0;
-    // For vol and crowding, LOW is good for shorts (inverted)
-    const isInverted=fn==='volatility_30d'||fn==='oi_crowding';
-    const displayVal=isInverted?(100-v):v;
-    const c=displayVal>=70?'var(--red)':displayVal>=50?'var(--yellow)':'var(--green)';
-    const check=fd.validated?'&#10003;':'&#10007;';
-    html+=`<div class="factor-detail">
-      <div class="fd-head">
-        <span class="fd-name">${label}</span>
-        <span class="fd-val" style="color:${c}">${displayVal.toFixed(0)}</span>
-      </div>
-      <div class="fd-bar"><div class="fd-bar-fill" style="width:${displayVal}%;background:${c}"></div></div>
-      <div class="fd-formula">${fd.formula||'?'} ${check}</div>
-      <div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'} ${isInverted?'(inverted — low raw is good for shorts)':''}</div>
-      <div class="fd-note">${explain}</div>
-      ${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Source paper</a></div>`:''}
-    </div>`;
-  });
+  const f=(DATA.factors||{})[sym]||{};
+  const lb=((DATA.leaderboards||{})[tab]||[]).find(s=>s.symbol===sym)||{};
+  
+  let html=`<div style="font-size:10px;color:var(--dim);margin-bottom:4px">${TAB_SCORE_LABEL[tab]||'Score'}: <b style="color:var(--text);font-size:14px">${lb.score||0}</b>/100 | Sector: ${lb.sector||f.sector||'?'}</div>`;
+  
+  if(tab==='price_action'){
+    [{fn:'reversal_8w',label:'Reversal 8w',explain:'Higher = recent winner = will revert = GOOD short'},
+     {fn:'volatility_30d',label:'Volatility',explain:'Lower = more stable = easier to hold short'},
+     {fn:'funding_carry',label:'Funding Carry',explain:'Higher = you get paid to hold short'},
+     {fn:'oi_crowding',label:'OI/ADV Crowding',explain:'Lower = less squeeze risk'},
+     {fn:'momentum_7d',label:'Momentum 7d',explain:'Higher = recent winner = tends to revert'},
+    ].forEach(({fn,label,explain})=>{
+      const fd=f[fn];if(!fd)return;
+      const v=fd.value||0;const isInverted=fn==='volatility_30d'||fn==='oi_crowding';
+      const dv=isInverted?(100-v):v;const c=dv>=70?'var(--red)':dv>=50?'var(--yellow)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${dv.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${dv}%;background:${c}"></div></div><div class="fd-formula">${fd.formula||'?'} ${fd.validated?'&#10003;':'&#10007;'}</div><div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}${isInverted?' (low = good)':''}</div><div class="fd-note">${explain}</div>${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Paper</a></div>`:''}</div>`;
+    });
+  } else if(tab==='dogshit'){
+    [{k:'price_tier',label:'Price Tier',explain:'Lower price = more junk (microcap territory)'},
+     {k:'hype_ratio',label:'Hype/OI Ratio',explain:'High OI relative to volume = overhyped garbage'},
+     {k:'short_crowding',label:'Short Crowding',explain:'Negative funding = everyone knows it sucks'},
+     {k:'category_junk',label:'Category Junk',explain:'Meme/other = lower quality'},
+    ].forEach(({k,label,explain})=>{
+      const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${v}%;background:${c}"></div></div><div class="fd-note">${explain}</div></div>`;
+    });
+  } else if(tab==='squeeze_recovery'){
+    [{k:'drawdown_30d',label:'30d Drawdown',explain:'How far it fell before the squeeze'},
+     {k:'pump_from_low',label:'Pump from Low',explain:'How hard it bounced (the squeeze itself)'},
+     {k:'volume_spike',label:'Volume Spike',explain:'Volume surge during the squeeze'},
+    ].forEach(({k,label,explain})=>{
+      const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v.toFixed(0)}${k==='volume_spike'?'x':''}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${Math.min(v,100)}%;background:${c}"></div></div><div class="fd-note">${explain}</div></div>`;
+    });
+  }
+  
   document.getElementById('factors').innerHTML=html;
 }
 
 function renderChart(sym){
   const candles=(DATA.candles||{})[sym];
-  if(!candles||!candles.length)return;
+  if(!candles||!candles.length){
+    document.getElementById('chart-container').innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--dim)">No candle data for '+sym+'</div>';
+    return;
+  }
   const container=document.getElementById('chart-container');
   container.innerHTML='';
   chartObj=LightweightCharts.createChart(container,{
-    width:container.clientWidth,height:320,
+    width:container.clientWidth,height:300,
     layout:{background:{type:'solid',color:'#0d1117'},textStyle:{color:'#8b949e',fontSize:10}},
     grid:{vertLines:{color:'#1c2128'},horzLines:{color:'#1c2128'}},
     crosshair:{mode:0},
-    timeScale:{timeVisible:false,secondsVisible:false},
+    timeScale:{timeVisible:false},
     rightPriceScale:{borderColor:'#30363d'},
   });
-  mainSeries=chartObj.addSeries(LightweightCharts.CandlestickSeries,{
-    upColor:'#3fb950',downColor:'#f85149',borderVisible:false,
-    wickUpColor:'#3fb950',wickDownColor:'#f85149',
-  });
-  mainSeries.setData(candles.map(c=>({time:c.time,open:c.open,high:c.high,low:c.low,close:c.close})));
-  // Volume
-  const volSeries=chartObj.addSeries(LightweightCharts.HistogramSeries,{
-    priceFormat:{type:'volume'},priceScaleId:'vol',
-  });
-  volSeries.priceScale().applyOptions({scaleMargins:{top:0.8,bottom:0}});
-  volSeries.setData(candles.map(c=>({time:c.time,value:c.volume,color:c.close>=c.open?'rgba(63,185,80,.3)':'rgba(248,81,73,.3)'})));
+  const cs=chartObj.addSeries(LightweightCharts.CandlestickSeries,{upColor:'#3fb950',downColor:'#f85149',borderVisible:false,wickUpColor:'#3fb950',wickDownColor:'#f85149'});
+  cs.setData(candles.map(c=>({time:c.time,open:c.open,high:c.high,low:c.low,close:c.close})));
+  const vs=chartObj.addSeries(LightweightCharts.HistogramSeries,{priceFormat:{type:'volume'},priceScaleId:'vol'});
+  vs.priceScale().applyOptions({scaleMargins:{top:0.8,bottom:0}});
+  vs.setData(candles.map(c=>({time:c.time,value:c.volume,color:c.close>=c.open?'rgba(63,185,80,.3)':'rgba(248,81,73,.3)'})));
   chartObj.timeScale().fitContent();
 }
 

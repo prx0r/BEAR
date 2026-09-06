@@ -353,24 +353,119 @@ def generate_json_data() -> dict:
     stats = compute_stats(markets)
     factors = compute_factor_scores(markets)
 
-    # Build short rankings FROM transparent factor scores (sorted by total_score descending)
-    short_rankings = []
+    # ── Leaderboard 1: Price Action (best shorts based on momentum/reversal) ──
+    price_action = []
     for sym, f in factors.items():
         m = next((m for m in markets if m["symbol"] == sym), {})
-        short_rankings.append({
-            "symbol": sym,
-            "sector": f.get("sector", "other"),
-            "total_score": f["total_score"],
-            "confidence": f["confidence"],
-            "reversal_8w": f["reversal_8w"]["value"],
+        price_action.append({
+            "symbol": sym, "sector": f.get("sector", "other"),
+            "score": f["total_score"],
+            "reversal": f["reversal_8w"]["value"],
+            "carry": f["funding_carry"]["value"],
+            "momentum": f["momentum_7d"]["value"],
+            "crowding": f["oi_crowding"]["value"],
             "volatility": f["volatility_30d"]["value"],
-            "funding_carry": f["funding_carry"]["value"],
-            "oi_crowding": f["oi_crowding"]["value"],
-            "momentum_7d": f["momentum_7d"]["value"],
             "mark_px": m.get("mark_px", 0),
             "funding": m.get("funding", 0),
         })
-    short_rankings.sort(key=lambda x: x["total_score"], reverse=True)
+    price_action.sort(key=lambda x: x["score"], reverse=True)
+
+    # ── Leaderboard 2: Dogshit (fundamental garbage — destined for zero) ──
+    dogshit = []
+    for m in markets:
+        sym = m["symbol"]
+        f = factors.get(sym, {})
+        px = m.get("mark_px") or 0
+        vol = m.get("day_volume") or 0
+        oi = m.get("open_interest") or 0
+        fund = m.get("funding") or 0
+        cat = m.get("category", "other")
+
+        # Dogshit indicators (higher = worse fundamental quality)
+        # 1. Very low price (microcap territory)
+        price_score = 0
+        if px < 0.001: price_score = 100
+        elif px < 0.01: price_score = 80
+        elif px < 0.1: price_score = 60
+        elif px < 1: price_score = 40
+
+        # 2. High OI relative to volume (overhyped relative to actual use)
+        oi_vol = oi / vol if vol > 0 else 0
+        hype_score = min(100, oi_vol * 15)
+
+        # 3. Extreme negative funding (shorts paying = everyone knows it's bad)
+        fund_score = 0
+        if fund < -0.0001: fund_score = 90  # deeply negative = very crowded short
+        elif fund < -0.00001: fund_score = 70
+        elif fund < 0: fund_score = 50
+
+        # 4. Category penalty for meme/low-quality
+        cat_score = 0
+        if cat in ("meme", "other"): cat_score = 40
+        elif cat in ("gaming",): cat_score = 20
+
+        # 5. Low volume relative to OI (nobody actually trades it)
+        vol_quality = min(100, (1 / max(vol / 1e6, 0.01)) * 10) if vol > 0 else 50
+
+        dog_total = price_score * 0.25 + hype_score * 0.20 + fund_score * 0.20 + cat_score * 0.15 + vol_quality * 0.20
+        dogshit.append({
+            "symbol": sym, "sector": cat,
+            "score": round(dog_total, 1),
+            "price_tier": price_score, "hype_ratio": hype_score,
+            "short_crowding": fund_score, "category_junk": cat_score,
+            "mark_px": px, "funding": fund,
+        })
+    dogshit.sort(key=lambda x: x["score"], reverse=True)
+
+    # ── Leaderboard 3: Squeeze Recovery (just got blown out, now overextended) ──
+    squeeze_recovery = []
+    for p in CANDLE_DIR.iterdir():
+        if not p.is_dir():
+            continue
+        sym = p.name
+        try:
+            df = pl.read_parquet(p / "1h.parquet")
+            if df.height < 720:
+                continue
+            closes = df["close"].to_numpy()
+            volumes = df["volume"].to_numpy()
+
+            # 30-day drawdown
+            recent = closes[-720:]
+            peak_30d = max(recent)
+            trough_30d = min(recent)
+            dd_30d = (peak_30d - trough_30d) / peak_30d if peak_30d > 0 else 0
+
+            # 7-day pump from 30-day low
+            last_7d_high = max(closes[-168:])
+            pump_pct = (last_7d_high - trough_30d) / trough_30d if trough_30d > 0 else 0
+
+            # Volume spike (3-day avg vs 30-day avg)
+            vol_3d = float(sum(volumes[-72:])) / 72 if len(volumes) >= 72 else 0
+            vol_30d = float(sum(volumes[-720:])) / 720 if len(volumes) >= 720 else 0
+            vol_spike = vol_3d / vol_30d if vol_30d > 0 else 1
+
+            # Squeeze recovery score: big drawdown + big pump + volume spike = just got squeezed
+            # These are the best SHORT entries AFTER the squeeze
+            sq_score = (dd_30d * 100 * 0.4 + pump_pct * 100 * 0.4 + min(vol_spike, 5) * 20 * 0.2)
+
+            mkt = next((m for m in markets if m["symbol"] == sym), {})
+            squeeze_recovery.append({
+                "symbol": sym,
+                "sector": mkt.get("category", "other"),
+                "score": round(sq_score, 1),
+                "drawdown_30d": round(dd_30d * 100, 1),
+                "pump_from_low": round(pump_pct * 100, 1),
+                "volume_spike": round(vol_spike, 1),
+                "mark_px": mkt.get("mark_px", 0),
+                "funding": mkt.get("funding", 0),
+            })
+        except Exception:
+            pass
+    squeeze_recovery.sort(key=lambda x: x["score"], reverse=True)
+
+    # Also build old-format short_rankings for backward compat
+    short_rankings = price_action[:20]
 
     # Load candle data for top 20 short candidates (for chart rendering)
     candles = {}
@@ -414,6 +509,11 @@ def generate_json_data() -> dict:
         "stats": stats,
         "markets": markets,
         "short_rankings": short_rankings,
+        "leaderboards": {
+            "price_action": price_action[:20],
+            "dogshit": dogshit[:20],
+            "squeeze_recovery": squeeze_recovery[:20],
+        },
         "factors": factors,
         "candles": candles,
     }
