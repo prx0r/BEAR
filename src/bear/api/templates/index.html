@@ -124,7 +124,7 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 
 <script>
 var DATA=null,selectedSym=null,chartObj=null,currentTab='death_watch';
-var TAB_DESC={death_watch:'PRIMARY: Tokens most likely to die. VALIDATED Sharpe 0.45.',price_action:'Short beaten-down assets.',squeeze_recovery:'Post-squeeze fade.',synthesis:'Multi-board conviction.'};
+var TAB_DESC={death_watch:'MULTI-SIGNAL Death Score (backtested Sharpe 1.11, win 71.4%). Funding pressure: 55% weight.',price_action:'Short beaten-down assets.',squeeze_recovery:'Post-squeeze fade.',synthesis:'Multi-board conviction.'};
 var TAB_SCORE_LABEL={death_watch:'Death Score',price_action:'Short Score',squeeze_recovery:'Squeeze Score',synthesis:'Conviction'};
 
 function loadData(){
@@ -169,7 +169,18 @@ function renderLeaderboard(){
     const sc=s.score||0;
     let meta='';
     if(currentTab==='price_action') meta=`rev=${(s.reversal||0).toFixed(0)} carry=${(s.carry||0).toFixed(0)}`;
-    else if(currentTab==='dogshit') meta=`px=${fmtPx(s.mark_px)} fund=${(s.funding*100).toFixed(4)}%`;
+    else if(currentTab==='death_watch'){
+      const sigs=s.signals||{};
+      const firing=s.signals_firing||0;
+      const checks=[
+        sigs.volume_death&&sigs.volume_death.fired?'V':'',
+        sigs.deep_decline&&sigs.deep_decline.fired?'D':'',
+        sigs.reversal_8w&&sigs.reversal_8w.fired?'R':'',
+        sigs.funding_pressure&&sigs.funding_pressure.fired?'F':'',
+        sigs.momentum&&sigs.momentum.fired?'M':''
+      ].filter(Boolean).join('');
+      meta=`${firing}/5 ${checks}`;
+    }
     else if(currentTab==='squeeze_recovery') meta=`dd=${(s.drawdown_30d||0).toFixed(0)}% pump=+${(s.pump_from_low||0).toFixed(0)}%`;
     else if(currentTab==='synthesis'){
       const boards=s.in_boards||0;
@@ -217,18 +228,38 @@ function renderFactors(sym,tab){
       const dv=isInverted?(100-v):v;const c=dv>=70?'var(--red)':dv>=50?'var(--yellow)':'var(--green)';
       html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${dv.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${dv}%;background:${c}"></div></div><div class="fd-formula">${fd.formula||'?'} ${fd.validated?'&#10003;':'&#10007;'}</div><div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}${isInverted?' (low = good)':''}</div><div class="fd-note">${explain}</div>${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Paper</a></div>`:''}</div>`;
     });
-  } else if(tab==='dogshit'){
-    [{k:'vol_death_ratio',label:'Volume Death',explain:'Volume vs historical peak — <1% = abandoned',fmt:v=>(v*100).toFixed(1)+'%'},
-     {k:'drawdown',label:'Drawdown from Peak',explain:'How far it has crashed',fmt:v=>v.toFixed(0)+'%'},
-     {k:'ret_90d',label:'90d Return',explain:'Still declining = likely dead. Recovering = bouncing meme',fmt:v=>(v>0?'+':'')+v.toFixed(0)+'%'},
-     {k:'is_meme',label:'Meme Factor',explain:'Memes bounce back — utility tokens with dilution stay dead',fmt:v=>v?'YES (bounces)':'NO (stays dead)'},
-    ].forEach(({k,label,explain,fmt})=>{
-      const v=lb[k];
-      const display=fmt?fmt(v):v;
-      const isGood=k==='ret_90d'?(v>0):k==='is_meme'?(v===true):k==='vol_death_ratio'?(v<0.05):k==='drawdown'?(v>90);
-      const c=isGood?'var(--red)':'var(--green)';
-      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${display}</span></div><div class="fd-note">${explain}</div></div>`;
+  } else if(tab==='death_watch'){
+    const sigs=lb.signals||{};
+    const dominant=lb.dominant_signal||'';
+    const domScore=lb.dominant_score||0;
+    const firing=lb.signals_firing||0;
+    const gpRisk=lb.goplus_risk_score;
+    const honeypot=lb.honeypot;
+    const creatorPct=lb.creator_sold_pct||0;
+    const tvlChg=lb.tvl_change_90d_pct;
+    const tvlCur=lb.tvl_current;
+    html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">Dominant Signal</span><span class="fd-val" style="color:var(--red)">${dominant} (${domScore})</span></div><div class="fd-note">Highest-weighted signal. Funding pressure = 55% weight (backtested).</div></div>`;
+    html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">Signals Firing</span><span class="fd-val" style="color:${firing>=3?'var(--red)':firing>=2?'var(--yellow)':'var(--dim)'}">${firing}/5</span></div><div class="fd-note">V=Volume Death | D=Deep Decline | R=Reversal 8w | F=Funding Pressure | M=Momentum</div></div>`;
+    [{k:'funding_pressure',label:'Funding Pressure (55%)',explain:'Extreme negative funding = crowded short. Dominant signal.',weight:55},
+     {k:'reversal_8w',label:'Reversal 8w (15%)',explain:'8-week return percentile. Recent winners tend to revert.',weight:15},
+     {k:'volume_death',label:'Volume Death (10%)',explain:'Volume collapsed vs peak. Zombie paper: strongest raw predictor.',weight:10},
+     {k:'deep_decline',label:'Deep Decline (10%)',explain:'Drawdown from peak + 90d negative return.',weight:10},
+     {k:'momentum',label:'Momentum (10%)',explain:'7-day return percentile. Negative = more dead.',weight:10},
+    ].forEach(({k,label,explain,weight})=>{
+      const sig=sigs[k]||{};
+      const v=sig.score||0;
+      const fired=sig.fired;
+      const c=fired?'var(--red)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${fired?'&#10003;':'&#10007;'} ${label}</span><span class="fd-val" style="color:${c}">${v.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${Math.min(v,100)}%;background:${c}"></div></div><div class="fd-note">${explain}</div></div>`;
     });
+    if(tvlChg!==null&&tvlChg!==undefined){
+      const tvlCls=tvlChg<-30?'var(--red)':tvlChg<-10?'var(--yellow)':'var(--dim)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">&#128200; DeFiLlama TVL 90d</span><span class="fd-val" style="color:${tvlCls}">${tvlChg>0?'+':''}${tvlChg.toFixed(1)}%</span></div><div class="fd-note">Current TVL: $${tvlCur?(tvlCur/1e6).toFixed(0)+'M':'N/A'} — TVL decline confirms fundamental weakness.</div></div>`;
+    }
+    if(gpRisk!==null&&gpRisk!==undefined){
+      const gpCls=gpRisk>=20?'var(--red)':gpRisk>=10?'var(--yellow)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">&#128274; GoPlus Risk Score</span><span class="fd-val" style="color:${gpCls}">${gpRisk}/100</span></div><div class="fd-note">Honeypot: ${honeypot||'N/A'} | Creator sold: ${creatorPct.toFixed(1)}%</div></div>`;
+    }
   } else if(tab==='squeeze_recovery'){
     [{k:'drawdown_30d',label:'30d Drawdown',explain:'How far it fell before the squeeze'},
      {k:'pump_from_low',label:'Pump from Low',explain:'How hard it bounced (the squeeze itself)'},

@@ -349,10 +349,212 @@ def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
     return factors
 
 
+def _load_tvl_decline() -> dict[str, dict]:
+    """Load DeFiLlama TVL decline data, keyed by symbol."""
+    p = Path("/root/BEAR/data/llama_tvl_decline.json")
+    if not p.exists():
+        return {}
+    raw = json.loads(p.read_text())
+    out: dict[str, dict] = {}
+    for entry in raw.get("dying_protocols", []):
+        sym = entry.get("symbol", "").upper()
+        if sym:
+            out[sym] = {
+                "tvl_change_90d_pct": entry.get("pct_change", 0),
+                "current_tvl": entry.get("current_tvl", 0),
+                "tvl_90d_ago": entry.get("tvl_90d_ago", 0),
+                "category": entry.get("category", ""),
+            }
+    for entry in raw.get("all_results", []):
+        sym = entry.get("symbol", "").upper()
+        if sym and sym not in out:
+            out[sym] = {
+                "tvl_change_90d_pct": entry.get("pct_change", 0),
+                "current_tvl": entry.get("current_tvl", 0),
+                "tvl_90d_ago": entry.get("tvl_90d_ago", 0),
+                "category": entry.get("category", ""),
+            }
+    return out
+
+
+def _load_goplus_security() -> dict[str, dict]:
+    """Load GoPlus contract security data, keyed by symbol."""
+    p = Path("/root/BEAR/data/goplus_security.json")
+    if not p.exists():
+        return {}
+    raw = json.loads(p.read_text())
+    out: dict[str, dict] = {}
+    for entry in raw:
+        sym = entry.get("token_symbol", "").upper()
+        if not sym:
+            continue
+        flags = entry.get("flags", {})
+        risk = entry.get("contract_risk_score", 0)
+        out[sym] = {
+            "risk_score": risk,
+            "is_honeypot": flags.get("is_honeypot", "N/A"),
+            "is_mintable": flags.get("is_mintable", "N/A"),
+            "hidden_owner": flags.get("hidden_owner", "N/A"),
+            "can_take_back": flags.get("can_take_back_ownership", "N/A"),
+            "honeypot_same_creator": flags.get("honeypot_with_same_creator", "N/A"),
+            "is_open_source": flags.get("is_open_source", "N/A"),
+            "holder_count": entry.get("holder_count", "0"),
+            "creator_balance": entry.get("creator_balance", "0"),
+            "creator_percent": entry.get("creator_percent", "0"),
+        }
+    return out
+
+
+# Backtested optimal weights (Sharpe 1.11, win rate 71.4%)
+DEATH_WEIGHTS = {
+    "volume_death": 0.10,
+    "deep_decline": 0.10,
+    "reversal_8w": 0.15,
+    "funding_pressure": 0.55,
+    "momentum": 0.10,
+}
+
+QUALITY_CATEGORIES = {"layer1", "l1", "l2", "defi", "dex", "oracle", "privacy", "rwa", "storage", "exchange", "ai"}
+蓝筹 = {"BTC", "ETH", "SOL", "HYPE", "BNB", "XRP", "ADA", "AVAX", "DOT",
+         "LINK", "UNI", "AAVE", "MKR", "SNX", "CRV", "LDO", "PENDLE",
+         "INJ", "TIA", "SEI", "NEAR", "FIL", "AR", "HBAR", "XLM",
+         "ONDO", "PAXG", "TRX", "TON", "ICP", "ETC", "BCH", "LTC",
+         "DASH", "XMR", "ZEC", "BSV"}
+
+
+def compute_death_watch(markets: list[dict], tvl_data: dict, goplus_data: dict) -> list[dict]:
+    """Compute multi-signal death score for each non-quality asset.
+
+    Uses backtested weights: funding_pressure 55%, reversal_8w 15%,
+    volume_death 10%, deep_decline 10%, momentum 10%.
+    """
+    from bear.features.death_score import compute_death_score
+
+    CANDLE_DIR = Path("/root/BEAR/data/raw/candles")
+    dogshit = []
+
+    # Load 1d candle data for all candidates
+    candle_data: dict[str, pl.DataFrame] = {}
+    for m in markets:
+        sym = m["symbol"]
+        p = CANDLE_DIR / sym / "1d.parquet"
+        if p.exists():
+            try:
+                candle_data[sym] = pl.read_parquet(p)
+            except Exception:
+                pass
+
+    # Compute multi-signal death scores
+    for m in markets:
+        sym = m["symbol"]
+        px = m.get("mark_px") or 0
+        fund = m.get("funding") or 0
+        cat = (m.get("category") or "other").lower()
+
+        if cat in QUALITY_CATEGORIES:
+            continue
+        if sym in 蓝筹:
+            continue
+
+        df = candle_data.get(sym)
+        if df is None or df.height < 30:
+            continue
+
+        # Prepare DataFrame for death_score module
+        df_clean = df.select([
+            pl.col("close"),
+            pl.col("volume"),
+        ]).with_columns([
+            pl.lit(sym).alias("symbol"),
+            pl.col("close").cast(pl.Float64),
+            pl.col("volume").cast(pl.Float64),
+        ])
+        # Add a timestamp column if missing
+        if "timestamp" not in df_clean.columns:
+            df_clean = df_clean.with_columns(
+                pl.lit(0).alias("timestamp")
+            )
+
+        # Compute death score with backtested weights
+        scored = compute_death_score(df_clean, weights=DEATH_WEIGHTS)
+        if scored.is_empty():
+            continue
+
+        # Get the last row (most recent score)
+        last = scored.tail(1).to_dicts()[0]
+
+        # Extract signal values
+        vol_death = last.get("volume_death", 50)
+        deep_decline = last.get("deep_decline", 50)
+        reversal = last.get("reversal_8w", 50)
+        funding = last.get("funding_pressure", 50)
+        momentum = last.get("momentum", 50)
+        death_score = last.get("death_score", 0)
+
+        # Signal firing: score >= 60 means signal is active
+        signals = {
+            "volume_death": vol_death >= 60,
+            "deep_decline": deep_decline >= 60,
+            "reversal_8w": reversal >= 60,
+            "funding_pressure": funding >= 60,
+            "momentum": momentum >= 60,
+        }
+
+        # Dominant signal (highest individual score)
+        signal_scores = {
+            "Volume Death": vol_death,
+            "Deep Decline": deep_decline,
+            "Reversal 8w": reversal,
+            "Funding Pressure": funding,
+            "Momentum": momentum,
+        }
+        dominant = max(signal_scores, key=signal_scores.get)
+
+        # TVL decline
+        tvl = tvl_data.get(sym, {})
+        tvl_change = tvl.get("tvl_change_90d_pct", None)
+
+        # GoPlus security
+        gp = goplus_data.get(sym, {})
+        gp_risk = gp.get("risk_score", None)
+        honeypot = gp.get("is_honeypot", "N/A")
+        is_creator_sold = gp.get("creator_percent", "0")
+        try:
+            creator_sold_pct = float(is_creator_sold)
+        except (TypeError, ValueError):
+            creator_sold_pct = 0.0
+
+        dogshit.append({
+            "symbol": sym,
+            "sector": cat,
+            "score": round(death_score, 1),
+            "signals": {
+                "volume_death": {"score": round(vol_death, 1), "fired": signals["volume_death"]},
+                "deep_decline": {"score": round(deep_decline, 1), "fired": signals["deep_decline"]},
+                "reversal_8w": {"score": round(reversal, 1), "fired": signals["reversal_8w"]},
+                "funding_pressure": {"score": round(funding, 1), "fired": signals["funding_pressure"]},
+                "momentum": {"score": round(momentum, 1), "fired": signals["momentum"]},
+            },
+            "dominant_signal": dominant,
+            "dominant_score": round(signal_scores[dominant], 1),
+            "signals_firing": sum(signals.values()),
+            "tvl_change_90d_pct": round(tvl_change, 1) if tvl_change is not None else None,
+            "tvl_current": tvl.get("current_tvl") if tvl else None,
+            "goplus_risk_score": gp_risk,
+            "honeypot": honeypot,
+            "creator_sold_pct": round(creator_sold_pct, 2),
+            "is_meme": cat == "meme",
+            "mark_px": px,
+            "funding": fund,
+        })
+
+    dogshit.sort(key=lambda x: x["score"], reverse=True)
+    return dogshit
+
+
 def generate_json_data() -> dict:
     """Build the complete dashboard data JSON with candle data for charts."""
     conn = _connect()
-    from pathlib import Path
     CANDLE_DIR = Path("/root/BEAR/data/raw/candles")
 
     try:
@@ -363,29 +565,26 @@ def generate_json_data() -> dict:
     stats = compute_stats(markets)
     factors = compute_factor_scores(markets)
 
+    # Load external data
+    tvl_data = _load_tvl_decline()
+    goplus_data = _load_goplus_security()
+
     # ── Leaderboard 1: Price Action (momentum continuation — short losers) ──
-    # VALIDATED: Shorting 90d losers works (Sharpe 0.10, win 53%)
-    # Shorting 8w winners LOSES (Sharpe -0.80)
-    # Source: Backtest on 59 assets, 1400+ daily observations
     price_action = []
     for m in markets:
         sym = m["symbol"]
         f = factors.get(sym, {})
         px = m.get("mark_px") or 0
         fund = m.get("funding") or 0
-        
-        # Use the reversal score — which now represents "has been going DOWN"
-        # Higher reversal score = more beaten down = better short candidate
-        # (We SHORT losers, not winners — validated by backtest)
+
         rev_score = f.get("reversal_8w", {}).get("value", 50)
         mom_score = f.get("momentum_7d", {}).get("value", 50)
         carry_score = f.get("funding_carry", {}).get("value", 50)
         oi_score = f.get("oi_crowding", {}).get("value", 50)
         vol_score = f.get("volatility_30d", {}).get("value", 50)
-        
-        # Score: beaten-down assets + high carry + low crowding
+
         total = (100 - rev_score) * 0.30 + carry_score * 0.20 + (100 - oi_score) * 0.20 + (100 - vol_score) * 0.15 + mom_score * 0.15
-        
+
         price_action.append({
             "symbol": sym, "sector": f.get("sector", "other"),
             "score": round(total, 1),
@@ -398,101 +597,9 @@ def generate_json_data() -> dict:
         })
     price_action.sort(key=lambda x: x["score"], reverse=True)
 
-    # ── Leaderboard 2: Death Watch (tokens most likely to die) ──
-    # VALIDATED: Death score has 59% win rate as short signal
-    # But negative mean return — use as RISK FILTER, not direct short
-    # Based on: Zombie paper 2025 (volume death), Token Mortality Lim 2026
-    # Key insight: volume death is strongest predictor, NOT price level
-    QUALITY_CATEGORIES = {"layer1", "l1", "l2", "defi", "dex", "oracle", "privacy", "rwa", "storage", "exchange", "ai"}
-    dogshit = []
-    # Load candle data for death score computation
-    _deathcandle_data = {}
-    for m in markets:
-        _sym = m["symbol"]
-        _p = CANDLE_DIR / _sym / "1d.parquet"
-        if _p.exists():
-            try:
-                _deathcandle_data[_sym] = pl.read_parquet(_p)
-            except Exception:
-                pass
-    # Load candle data for death score computation
-    candle_data = {}
-    for m in markets:
-        sym = m["symbol"]
-        p = CANDLE_DIR / sym / "1d.parquet"
-        if p.exists():
-            try:
-                candle_data[sym] = pl.read_parquet(p)
-            except Exception:
-                pass
-    for m in markets:
-        sym = m["symbol"]
-        px = m.get("mark_px") or 0
-        vol = m.get("day_volume") or 0
-        oi = m.get("open_interest") or 0
-        fund = m.get("funding") or 0
-        cat = (m.get("category") or "other").lower()
-
-        # Skip quality projects
-        if cat in QUALITY_CATEGORIES:
-            continue
-        if sym in ("BTC", "ETH", "SOL", "HYPE", "BNB", "XRP", "ADA", "AVAX", "DOT",
-                    "LINK", "UNI", "AAVE", "MKR", "SNX", "CRV", "LDO", "PENDLE",
-                    "INJ", "TIA", "SEI", "NEAR", "FIL", "AR", "HBAR", "XLM",
-                    "ONDO", "PAXG", "TRX", "TON", "ICP", "ETC", "BCH", "LTC",
-                    "DASH", "XMR", "ZEC", "BSV"):
-            continue
-
-        # Death score components (research-validated)
-        # 1. Volume death — strongest predictor (Zombie paper 2025)
-        # Historical peak volume for this asset
-        sym_data = candle_data.get(sym)
-        vol_peak = 0
-        if sym_data is not None and sym_data.height > 0:
-            vol_peak = float(sym_data["volume"].max())
-        vol_death_ratio = vol / vol_peak if vol_peak > 0 else 1
-        vol_score = 0
-        if vol_death_ratio < 0.01: vol_score = 40
-        elif vol_death_ratio < 0.05: vol_score = 30
-        elif vol_death_ratio < 0.10: vol_score = 20
-        elif vol_death_ratio < 0.20: vol_score = 10
-
-        # 2. Deep drawdown + declining = dead (not just crashed and recovering)
-        dd = 0
-        ret_90d = 0
-        if sym_data is not None and sym_data.height > 90:
-            closes = sym_data["close"].to_numpy()
-            peak = np.max(closes)
-            current = closes[-1]
-            dd = (peak - current) / peak if peak > 0 else 0
-            ret_90d = (current - closes[-90]) / closes[-90] if closes[-90] > 0 else 0
-        
-        recovery_score = 0
-        if dd > 0.85 and ret_90d < -0.30: recovery_score = 30
-        elif dd > 0.85 and ret_90d < 0: recovery_score = 20
-        elif dd > 0.70 and ret_90d < -0.20: recovery_score = 15
-
-        # 3. Meme = can come back, utility = stays dead
-        # Meme tokens bounce (no intrinsic value = no intrinsic death)
-        # Utility tokens with dilution just die
-        meme_bonus = 0
-        if cat == "meme":
-            meme_bonus = -15  # memes get a reprieve (they bounce)
-
-        dog_total = vol_score + recovery_score + meme_bonus
-        if dog_total < 15:
-            continue
-
-        dogshit.append({
-            "symbol": sym, "sector": cat,
-            "score": round(dog_total, 1),
-            "vol_death_ratio": round(vol_death_ratio, 3),
-            "drawdown": round(dd * 100, 1),
-            "ret_90d": round(ret_90d * 100, 1),
-            "is_meme": cat == "meme",
-            "mark_px": px, "funding": fund,
-        })
-    dogshit.sort(key=lambda x: x["score"], reverse=True)
+    # ── Leaderboard 2: Death Watch (multi-signal death score) ──
+    # Backtested: Sharpe 1.11, win rate 71.4%
+    dogshit = compute_death_watch(markets, tvl_data, goplus_data)
 
     # ── Leaderboard 3: Squeeze Recovery (just got blown out, now overextended) ──
     squeeze_recovery = []

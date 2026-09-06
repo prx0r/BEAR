@@ -1,0 +1,762 @@
+{
+  "equal_weight_backtest": {
+    "sharpe": 0.4944,
+    "total_return": 22.79,
+    "win_rate": 61.9,
+    "mean_period_return": 2.0877,
+    "annualized_return": 25.4,
+    "n_trades": 251,
+    "n_periods": 21
+  },
+  "grid_search": {
+    "best_sharpe": 1.1062,
+    "best_weights": {
+      "volume_death": 0.1,
+      "deep_decline": 0.1,
+      "reversal": 0.15,
+      "funding_pressure": 0.55,
+      "momentum": 0.1
+    },
+    "best_result": {
+      "sharpe": 1.1062,
+      "total_return": 102.92,
+      "win_rate": 71.43,
+      "mean_period_return": 4.3419,
+      "annualized_return": 52.83,
+      "n_trades": 251,
+      "n_periods": 21
+    },
+    "top_10": [
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.1,
+          "reversal": 0.15,
+          "funding_pressure": 0.55,
+          "momentum": 0.1
+        },
+        "sharpe": 1.1062,
+        "total_return": 102.92,
+        "win_rate": 71.43,
+        "mean_period_return": 4.3419,
+        "annualized_return": 52.83,
+        "n_trades": 251,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.1,
+          "reversal": 0.25,
+          "funding_pressure": 0.4,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0939,
+        "total_return": 103.39,
+        "win_rate": 71.43,
+        "mean_period_return": 4.4027,
+        "annualized_return": 53.57,
+        "n_trades": 250,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.15,
+          "deep_decline": 0.1,
+          "reversal": 0.2,
+          "funding_pressure": 0.45,
+          "momentum": 0.1
+        },
+        "sharpe": 1.0804,
+        "total_return": 97.91,
+        "win_rate": 66.67,
+        "mean_period_return": 4.2,
+        "annualized_return": 51.1,
+        "n_trades": 251,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.1,
+          "reversal": 0.2,
+          "funding_pressure": 0.45,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0697,
+        "total_return": 96.54,
+        "win_rate": 71.43,
+        "mean_period_return": 4.1703,
+        "annualized_return": 50.74,
+        "n_trades": 250,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.1,
+          "reversal": 0.1,
+          "funding_pressure": 0.55,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0648,
+        "total_return": 98.96,
+        "win_rate": 66.67,
+        "mean_period_return": 4.2916,
+        "annualized_return": 52.21,
+        "n_trades": 251,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.15,
+          "deep_decline": 0.1,
+          "reversal": 0.2,
+          "funding_pressure": 0.4,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0643,
+        "total_return": 98.78,
+        "win_rate": 71.43,
+        "mean_period_return": 4.2897,
+        "annualized_return": 52.19,
+        "n_trades": 250,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.15,
+          "reversal": 0.15,
+          "funding_pressure": 0.5,
+          "momentum": 0.1
+        },
+        "sharpe": 1.0542,
+        "total_return": 96.01,
+        "win_rate": 57.14,
+        "mean_period_return": 4.1917,
+        "annualized_return": 51.0,
+        "n_trades": 251,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.1,
+          "reversal": 0.3,
+          "funding_pressure": 0.35,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0352,
+        "total_return": 94.55,
+        "win_rate": 71.43,
+        "mean_period_return": 4.1959,
+        "annualized_return": 51.05,
+        "n_trades": 250,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.1,
+          "deep_decline": 0.15,
+          "reversal": 0.3,
+          "funding_pressure": 0.3,
+          "momentum": 0.15
+        },
+        "sharpe": 1.0318,
+        "total_return": 94.9,
+        "win_rate": 71.43,
+        "mean_period_return": 4.226,
+        "annualized_return": 51.42,
+        "n_trades": 250,
+        "n_periods": 21
+      },
+      {
+        "weights": {
+          "volume_death": 0.15,
+          "deep_decline": 0.15,
+          "reversal": 0.25,
+          "funding_pressure": 0.35,
+          "momentum": 0.1
+        },
+        "sharpe": 1.0291,
+        "total_return": 92.1,
+        "win_rate": 71.43,
+        "mean_period_return": 4.1007,
+        "annualized_return": 49.89,
+        "n_trades": 250,
+        "n_periods": 21
+      }
+    ],
+    "total_combos": 400
+  },
+  "token_validation": [
+    {
+      "symbol": "WUSDT",
+      "decline_pct": -99.4,
+      "death_score_at_trough": 26.28,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 24.02
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 31.54
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 40.49
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 44.14
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 34.02
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "STRKUSDT",
+      "decline_pct": -99.1,
+      "death_score_at_trough": 35.73,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 32.23
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 40.56
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 56.4
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 32.71
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 20.98
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "TIAUSDT",
+      "decline_pct": -98.6,
+      "death_score_at_trough": 28.81,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 33.79
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 28.77
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 34.55
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 24.49
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 29.15
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "TNSRUSDT",
+      "decline_pct": -98.5,
+      "death_score_at_trough": 25.46,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 74.39
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 33.19
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 44.21
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 47.13
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 38.53
+        }
+      ],
+      "flagged_early": true
+    },
+    {
+      "symbol": "GALAUSDT",
+      "decline_pct": -98.3,
+      "death_score_at_trough": 18.49,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 31.21
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 27.52
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 46.03
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 26.31
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 23.59
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "OPUSDT",
+      "decline_pct": -98.3,
+      "death_score_at_trough": 24.44,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 23.32
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 37.05
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 41.65
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 34.7
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 23.64
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "DYDXUSDT",
+      "decline_pct": -98.2,
+      "death_score_at_trough": 17.64,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 38.38
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 34.31
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 29.26
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 31.55
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 25.5
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "WLDUSDT",
+      "decline_pct": -98.0,
+      "death_score_at_trough": 31.7,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 35.02
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 39.79
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 36.91
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 37.0
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 23.48
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "IMXUSDT",
+      "decline_pct": -97.3,
+      "death_score_at_trough": 19.34,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 42.24
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 37.59
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 25.75
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 37.54
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 40.42
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "decline_pct": -97.2,
+      "death_score_at_trough": 19.12,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 23.0
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 35.8
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 47.72
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 37.57
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 40.5
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "ZKUSDT",
+      "decline_pct": -97.2,
+      "death_score_at_trough": 38.38,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 38.17
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 35.86
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 35.35
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 37.34
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 22.72
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "APTUSDT",
+      "decline_pct": -97.1,
+      "death_score_at_trough": 18.12,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 31.17
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 31.06
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 32.83
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 30.96
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 21.59
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "WIFUSDT",
+      "decline_pct": -97.0,
+      "death_score_at_trough": 22.27,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 25.0
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 49.57
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 45.91
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 45.95
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 28.95
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "ARBUSDT",
+      "decline_pct": -96.8,
+      "death_score_at_trough": 25.13,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 34.41
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 39.48
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 36.87
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 22.74
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 25.76
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "ARUSDT",
+      "decline_pct": -96.8,
+      "death_score_at_trough": 21.42,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 32.45
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 37.33
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 64.65
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 30.85
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 23.38
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "FETUSDT",
+      "decline_pct": -96.3,
+      "death_score_at_trough": 18.47,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 47.46
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 37.19
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 18.87
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 38.9
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 39.52
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "SEIUSDT",
+      "decline_pct": -96.3,
+      "death_score_at_trough": 21.99,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 35.12
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 27.31
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 38.1
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 45.66
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 34.66
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "SNXUSDT",
+      "decline_pct": -96.3,
+      "death_score_at_trough": 43.23,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 41.7
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 24.38
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 48.83
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 37.54
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 35.34
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "SANDUSDT",
+      "decline_pct": -96.0,
+      "death_score_at_trough": 20.98,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 40.62
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 20.96
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 24.66
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 34.78
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 24.71
+        }
+      ],
+      "flagged_early": false
+    },
+    {
+      "symbol": "BONKUSDT",
+      "decline_pct": -95.8,
+      "death_score_at_trough": 20.31,
+      "pre_trough_scores": [
+        {
+          "days_before_trough": 180,
+          "death_score": 45.56
+        },
+        {
+          "days_before_trough": 120,
+          "death_score": 32.19
+        },
+        {
+          "days_before_trough": 90,
+          "death_score": 24.51
+        },
+        {
+          "days_before_trough": 60,
+          "death_score": 35.18
+        },
+        {
+          "days_before_trough": 30,
+          "death_score": 19.99
+        }
+      ],
+      "flagged_early": false
+    }
+  ],
+  "config": {
+    "lookback": 365,
+    "forward": 30,
+    "top_pct": 0.2,
+    "n_assets": 65,
+    "data_days": 1000
+  }
+}

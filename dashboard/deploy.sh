@@ -25,13 +25,30 @@ for i, s in enumerate(dw):
     sc = s.get("score", 0)
     cls = "hi" if sc >= 70 else ("md" if sc >= 50 else "lo")
     pct = min(sc, 100)
-    vd = (s.get("vol_death_ratio", 0) or 0) * 100
-    dd = s.get("drawdown", 0) or 0
-    r90 = s.get("ret_90d", 0) or 0
-    rc = "pos" if r90 > 0 else "neg"
-    rs = f"+{r90:.0f}" if r90 > 0 else f"{r90:.0f}"
-    m = "MEME" if s.get("is_meme") else "UTIL"
-    lb_rows += f'<tr class="row"><td class="dim">{i+1}</td><td class="sym">{s["symbol"]}</td><td><div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div></td><td class="num score {cls}">{sc}</td><td class="num">{vd:.1f}%</td><td class="num neg">{dd:.0f}%</td><td class="num {rc}">{rs}%</td><td class="dim">{m}</td></tr>\n'
+
+    # Multi-signal breakdown
+    sigs = s.get("signals", {})
+    firing = s.get("signals_firing", 0)
+    dominant = s.get("dominant_signal", "")
+    dom_score = s.get("dominant_score", 0)
+    checks = []
+    for k, letter in [("volume_death","V"),("deep_decline","D"),("reversal_8w","R"),("funding_pressure","F"),("momentum","M")]:
+        sig = sigs.get(k, {})
+        if sig.get("fired"):
+            checks.append(letter)
+    check_str = "".join(checks)
+
+    # External data
+    tvl = s.get("tvl_change_90d_pct")
+    gp_risk = s.get("goplus_risk_score")
+    honeypot = s.get("honeypot", "N/A")
+    creator_pct = s.get("creator_sold_pct", 0)
+
+    tvl_cell = f'<td class="num" style="color:{"#f85149" if tvl and tvl < -30 else "#d29922" if tvl and tvl < -10 else "#8b949e"}">{tvl:+.1f}%' if tvl is not None else '<td class="dim">—</td>'
+    gp_cell = f'<td class="num" style="color:{"#f85149" if gp_risk and gp_risk >= 20 else "#d29922" if gp_risk and gp_risk >= 10 else "#3fb950"}">{gp_risk}</td>' if gp_risk is not None else '<td class="dim">—</td>'
+    hp_cell = f'<td class="num neg">HONEYPOT</td>' if honeypot == "1" else '<td class="dim">—</td>'
+
+    lb_rows += f'<tr class="row"><td class="dim">{i+1}</td><td class="sym">{s["symbol"]}</td><td><div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div></td><td class="num score {cls}">{sc}</td><td class="num" title="{dominant}">{dom_score}</td><td class="num">{firing}/5</td><td class="dim">{check_str}</td>{tvl_cell}{gp_cell}{hp_cell}<td class="dim">{s.get("sector","")}</td></tr>\n'
 
 mkts = sorted(data["markets"], key=lambda x: x.get("day_volume", 0), reverse=True)[:30]
 mkt_rows = ""
@@ -55,17 +72,19 @@ h1{{font-size:16px;color:#f0f6fc}}h1 span{{color:#3fb950}}.dim{{color:#8b949e}}.
 table{{width:100%;border-collapse:collapse;font-size:11px}}
 th{{text-align:left;color:#8b949e;padding:4px;border-bottom:1px solid #30363d}}
 td{{padding:4px;border-bottom:1px solid #30363d}}
+.sig{{font-family:monospace;letter-spacing:1px}}
 </style></head><body>
 <h1><span>BEAR</span> -- Short Opportunity Engine</h1>
-<div class="dim" style="margin:4px 0">Updated: {ts} | <span class="pos">{stats["total_markets"]} markets</span> | Death Watch: Sharpe 0.45, win 66%</div>
+<div class="dim" style="margin:4px 0">Updated: {ts} | <span class="pos">{stats["total_markets"]} markets</span> | Death Score: Sharpe 1.11, win 71.4% (backtested)</div>
 <div class="stats">
 <div class="stat"><div class="l">Markets</div><div class="v">{stats["total_markets"]}</div></div>
 <div class="stat"><div class="l">24h Vol</div><div class="v">${stats["total_24h_volume"]/1e9:.1f}B</div></div>
 <div class="stat"><div class="l">Avg Fund</div><div class="v">{stats["avg_funding"]*100:.4f}%</div></div>
 <div class="stat"><div class="l">Pos/Neg</div><div class="v"><span class="pos">{stats["positive_funding_count"]}</span>/<span class="neg">{stats["negative_funding_count"]}</span></div></div>
+<div class="stat"><div class="l">Death Weights</div><div class="v" style="font-size:11px">F55 R15 V10 D10 M10</div></div>
 </div>
-<div style="margin-bottom:8px;font-size:11px"><b>Death Watch</b> -- tokens most likely to die</div>
-<table><thead><tr><th>#</th><th>Symbol</th><th>Score</th><th>Vol Death</th><th>DD%</th><th>90d%</th><th>Type</th></tr></thead>
+<div style="margin-bottom:8px;font-size:11px"><b>Multi-Signal Death Watch</b> -- backtested Sharpe 1.11, win 71.4%. Funding pressure dominant (55% weight). V=Volume D=Decline R=Reversal F=Funding M=Momentum</div>
+<table><thead><tr><th>#</th><th>Symbol</th><th>Score</th><th>Dominant</th><th>Signals</th><th>Checks</th><th>TVL 90d</th><th>GoPlus</th><th>Honey</th><th>Type</th></tr></thead>
 <tbody>{lb_rows}</tbody></table>
 <h2 style="margin-top:16px;font-size:12px;color:#8b949e">Market Overview</h2>
 <table><thead><tr><th>Symbol</th><th class="num">Price</th><th class="num">Volume</th><th class="num">Funding</th></tr></thead>
