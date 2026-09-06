@@ -619,6 +619,9 @@ def generate_json_data() -> dict:
                     pl.col("close").last(),
                     pl.col("volume").sum(),
                 ]).sort("date")
+                # Keep last 365 days only (reduce JSON size)
+                if daily.height > 365:
+                    daily = daily.tail(365)
                 candles[sym] = [
                     {"time": str(r["date"]), "open": round(r["open"],6),
                      "high": round(r["high"],6), "low": round(r["low"],6),
