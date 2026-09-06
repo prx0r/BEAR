@@ -277,9 +277,11 @@ def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
         mom_val = mom_raw.get(sym)
         mom_score = mom_ranks.get(sym, 50.0)
 
-        # Total: higher = worse short candidate
-        total = (rev_score * 0.25 + oi_adv_score * 0.25 + vol_score * 0.20 +
-                 carry_score * 0.15 + mom_score * 0.15)
+        # TOTAL SHORT SCORE: higher = BETTER short candidate
+        # Good for shorts: high reversal (recent winner), high carry (get paid), high momentum (will revert)
+        # Bad for shorts: high crowding (squeeze risk), high vol (squeeze risk)
+        total = (rev_score * 0.25 + carry_score * 0.20 + mom_score * 0.20
+                 + (100 - oi_adv_score) * 0.20 + (100 - vol_score) * 0.15)
 
         # Confidence: how many factors were real vs fallback
         real_count = sum(1 for v in [rev_val, vol_val, mom_val] if v is not None)
@@ -338,8 +340,10 @@ def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
 
 
 def generate_json_data() -> dict:
-    """Build the complete dashboard data JSON."""
+    """Build the complete dashboard data JSON with candle data for charts."""
     conn = _connect()
+    from pathlib import Path
+    CANDLE_DIR = Path("/root/BEAR/data/raw/candles")
 
     try:
         markets = load_markets(conn)
@@ -347,10 +351,52 @@ def generate_json_data() -> dict:
         markets = []
 
     stats = compute_stats(markets)
-    short_rankings = compute_structural_short_scores(markets)
     factors = compute_factor_scores(markets)
 
-    # Build short rankings with factor details from transparent calculations
+    # Build short rankings FROM transparent factor scores (sorted by total_score descending)
+    short_rankings = []
+    for sym, f in factors.items():
+        m = next((m for m in markets if m["symbol"] == sym), {})
+        short_rankings.append({
+            "symbol": sym,
+            "sector": f.get("sector", "other"),
+            "total_score": f["total_score"],
+            "confidence": f["confidence"],
+            "reversal_8w": f["reversal_8w"]["value"],
+            "volatility": f["volatility_30d"]["value"],
+            "funding_carry": f["funding_carry"]["value"],
+            "oi_crowding": f["oi_crowding"]["value"],
+            "momentum_7d": f["momentum_7d"]["value"],
+            "mark_px": m.get("mark_px", 0),
+            "funding": m.get("funding", 0),
+        })
+    short_rankings.sort(key=lambda x: x["total_score"], reverse=True)
+
+    # Load candle data for top 20 short candidates (for chart rendering)
+    candles = {}
+    top_shorts = [sr["symbol"] for sr in short_rankings[:20]]
+    for sym in top_shorts:
+        p = CANDLE_DIR / sym / "1h.parquet"
+        if p.exists():
+            try:
+                df = pl.read_parquet(p)
+                # Downsample to daily for dashboard (last 90 days)
+                df = df.with_columns(pl.col("open_time").dt.date().alias("date"))
+                daily = df.group_by("date").agg([
+                    pl.col("open").first(),
+                    pl.col("high").max(),
+                    pl.col("low").min(),
+                    pl.col("close").last(),
+                    pl.col("volume").sum(),
+                ]).sort("date")
+                candles[sym] = [
+                    {"time": str(r["date"]), "open": round(r["open"],6),
+                     "high": round(r["high"],6), "low": round(r["low"],6),
+                     "close": round(r["close"],6), "volume": round(r["volume"],0)}
+                    for r in daily.iter_rows(named=True)
+                ]
+            except Exception:
+                pass
     for sr in short_rankings:
         sym = sr["symbol"]
         if sym in factors:
@@ -369,6 +415,7 @@ def generate_json_data() -> dict:
         "markets": markets,
         "short_rankings": short_rankings,
         "factors": factors,
+        "candles": candles,
     }
 
     conn.close()
