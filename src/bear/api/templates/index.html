@@ -121,48 +121,24 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 </div>
 </div>
 
-<script id="bear-data" type="application/json">
-{BEAR_DATA_PLACEHOLDER}
-</script>
+
 <script>
-let DATA=null,selectedSym=null,chartObj=null,currentTab='death_watch';
+var DATA=null,selectedSym=null,chartObj=null,currentTab='death_watch';
+var TAB_DESC={death_watch:'PRIMARY: Tokens most likely to die. VALIDATED Sharpe 0.45.',price_action:'Short beaten-down assets.',squeeze_recovery:'Post-squeeze fade.',synthesis:'Multi-board conviction.'};
+var TAB_SCORE_LABEL={death_watch:'Death Score',price_action:'Short Score',squeeze_recovery:'Squeeze Score',synthesis:'Conviction'};
 
-const TAB_DESC={
-  death_watch:'PRIMARY: Tokens most likely to die. VALIDATED Sharpe 0.45, win 66%. Volume death + deep DD + no recovery.',
-  price_action:'Short beaten-down assets. Momentum continuation at 90d+ horizons.',
-  squeeze_recovery:'Just got squeezed — pumped hard from lows, now overextended and ready to fade.',
-  synthesis:'Combined signal — assets appearing in multiple boards. Maximum conviction shorts.',
-};
-const TAB_SCORE_LABEL={
-  death_watch:'Death Score',price_action:'Short Score',squeeze_recovery:'Squeeze Score',synthesis:'Conviction'
-};
-
-async function loadData(){
-  // Try inline first
+function loadData(){
   try{
-    const el=document.getElementById('bear-data');
-    const txt=(el.textContent||'').trim();
-    if(txt&&txt.length>100)DATA=JSON.parse(txt);
-  }catch(e){console.log('Inline parse error:',e)}
-  
-  // Fallback: fetch from API
-  if(!DATA||!DATA.markets){
-    try{
-      const r=await fetch('/data.json');
-      if(r.ok)DATA=await r.json();
-    }catch(e){console.log('API fetch error:',e)}
-  }
-  
-  if(!DATA||!DATA.markets){
-    document.getElementById('dot').className='dot err';
-    document.getElementById('ts').textContent='No data loaded';
-    return;
-  }
-  document.getElementById('dot').className='dot ok';
-  document.getElementById('ts').textContent='Updated: '+(DATA.timestamp||'');
+    var x=new XMLHttpRequest();
+    x.open("GET","data.json",false);
+    x.send();
+    if(x.status===200){DATA=JSON.parse(x.responseText);}
+  }catch(e){}
+  if(!DATA||!DATA.markets){document.getElementById("dot").className="dot err";document.getElementById("ts").textContent="Failed to load";return;}
+  document.getElementById("dot").className="dot ok";
+  document.getElementById("ts").textContent="Updated: "+(DATA.timestamp||"");
   renderStats();renderLeaderboard();renderMarkets();
 }
-
 function switchTab(tab){
   currentTab=tab;
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));

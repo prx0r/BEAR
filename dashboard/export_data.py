@@ -669,30 +669,13 @@ def write_data_json(data: dict) -> None:
 
 
 def regenerate_html(data: dict) -> None:
-    """Replace the bear-data script tag in index.html with fresh data."""
-    # Always use the template as source (it has the rendering JS)
+    """Copy template to dashboard. Data is fetched via API, not inline."""
     src = TEMPLATE_PATH if TEMPLATE_PATH.exists() else HTML_OUT
     if not src.exists():
         print(f"Warning: no template found at {src}, skipping HTML regeneration")
         return
 
     html = src.read_text()
-    data_json = json.dumps(data, default=str)
-
-    # Replace or insert the bear-data script tag (avoid regex for unicode safety)
-    data_json = json.dumps(data, default=str)
-    tag = f'<script id="bear-data" type="application/json">\n{data_json}\n</script>'
-    
-    # Simple string replacement instead of regex
-    if '<script id="bear-data"' in html:
-        start = html.find('<script id="bear-data"')
-        end = html.find('</script>', start) + len('</script>')
-        html = html[:start] + tag + html[end:]
-    elif '{BEAR_DATA_PLACEHOLDER}' in html:
-        html = html.replace('{BEAR_DATA_PLACEHOLDER}', data_json)
-    else:
-        html = html.replace("</body>", f"{tag}\n</body>")
-
     HTML_OUT.parent.mkdir(parents=True, exist_ok=True)
     HTML_OUT.write_text(html)
     print(f"Wrote {HTML_OUT} ({HTML_OUT.stat().st_size:,} bytes)")
