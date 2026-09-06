@@ -1,52 +1,160 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BEAR</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:monospace;background:#0d1117;color:#e6edf3;font-size:13px;padding:12px}
-h1{font-size:16px;color:#f0f6fc}h1 span{color:#3fb950}.dim{color:#8b949e}.pos{color:#3fb950}.neg{color:#f85149}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:monospace;background:#0d1117;color:#e6edf3;font-size:13px;padding:12px;max-width:1200px;margin:0 auto}
+h1{font-size:18px;color:#f0f6fc}h1 span{color:#3fb950}.dim{color:#8b949e}.pos{color:#3fb950}.neg{color:#f85149}
 .row{display:flex;align-items:center;gap:6px;padding:4px 0;border-bottom:1px solid #30363d}
-.sym{font-weight:600;min-width:60px}.num{text-align:right}
-.bar{height:5px;background:#30363d;border-radius:3px;flex:1;max-width:120px}
+.sym{font-weight:600;min-width:60px}.num{text-align:right;font-size:11px}
+.bar{height:5px;background:#30363d;border-radius:3px;flex:1;max-width:80px}
 .bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,#3fb950,#d29922,#f85149)}
-.score{font-weight:700;min-width:30px;text-align:right}.hi{color:#f85149}.md{color:#d29922}.lo{color:#3fb950}
+.score{font-weight:700;min-width:28px;text-align:right;font-size:11px}
+.hi{color:#f85149}.md{color:#d29922}.lo{color:#3fb950}
 .stats{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
 .stat{background:#161b22;border:1px solid #30363d;border-radius:5px;padding:6px 12px}
 .stat .l{font-size:9px;color:#8b949e;text-transform:uppercase}.stat .v{font-size:16px;font-weight:700}
 table{width:100%;border-collapse:collapse;font-size:11px}
-th{text-align:left;color:#8b949e;padding:4px;border-bottom:1px solid #30363d}
+th{text-align:left;color:#8b949e;padding:4px;border-bottom:1px solid #30363d;font-size:10px}
 td{padding:4px;border-bottom:1px solid #30363d}
+.board{margin-bottom:20px}
+.board h2{font-size:12px;color:#8b949e;margin-bottom:6px;border-bottom:1px solid #30363d;padding-bottom:4px}
+.board h2 span{color:#58a6ff;font-size:10px}
 </style></head><body>
 <h1><span>BEAR</span> -- Short Opportunity Engine</h1>
-<div class="dim" style="margin:4px 0">Updated: 2026-09-06T05:24:14Z | <span class="pos">177 markets</span> | Death Watch: Sharpe 0.45, win 66%</div>
+<div class="dim" style="margin:4px 0">Updated: 2026-09-06T05:32:32Z | <span class="pos">177 markets</span> | Death Watch: Sharpe 0.45 | Live data from ByKaranteli + Xoomar</div>
 <div class="stats">
 <div class="stat"><div class="l">Markets</div><div class="v">177</div></div>
 <div class="stat"><div class="l">24h Vol</div><div class="v">$2.8B</div></div>
 <div class="stat"><div class="l">Avg Fund</div><div class="v">0.0010%</div></div>
 <div class="stat"><div class="l">Pos/Neg</div><div class="v"><span class="pos">167</span>/<span class="neg">10</span></div></div>
 </div>
-<div style="margin-bottom:8px;font-size:11px"><b>Death Watch</b> -- tokens most likely to die</div>
-<table><thead><tr><th>#</th><th>Symbol</th><th>Score</th><th>Vol Death</th><th>DD%</th><th>90d%</th><th>Type</th></tr></thead>
-<tbody><tr class="row"><td class="dim">1</td><td class="sym">MOVE</td><td><div class="bar"><div class="bar-fill" style="width:70%"></div></div></td><td class="num score hi">70</td><td class="num">0.1%</td><td class="num neg">99%</td><td class="num neg">-36%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">2</td><td class="sym">FOGO</td><td><div class="bar"><div class="bar-fill" style="width:70%"></div></div></td><td class="num score hi">70</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-38%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">3</td><td class="sym">GALA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.0%</td><td class="num neg">98%</td><td class="num neg">-26%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">4</td><td class="sym">XAI</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.0%</td><td class="num neg">100%</td><td class="num neg">-2%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">5</td><td class="sym">ZETA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.2%</td><td class="num neg">99%</td><td class="num neg">-1%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">6</td><td class="sym">ZK</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-3%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">7</td><td class="sym">IOTA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.2%</td><td class="num neg">92%</td><td class="num neg">-8%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">8</td><td class="sym">2Z</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.1%</td><td class="num neg">91%</td><td class="num neg">-28%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">9</td><td class="sym">WLD</td><td><div class="bar"><div class="bar-fill" style="width:50%"></div></div></td><td class="num score md">50</td><td class="num">1.3%</td><td class="num neg">97%</td><td class="num neg">-21%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">10</td><td class="sym">BRETT</td><td><div class="bar"><div class="bar-fill" style="width:45%"></div></div></td><td class="num score lo">45</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-0%</td><td class="dim">MEME</td></tr>
-<tr class="row"><td class="dim">11</td><td class="sym">APE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.1%</td><td class="num neg">98%</td><td class="num pos">+19%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">12</td><td class="sym">CFX</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">90%</td><td class="num pos">+10%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">13</td><td class="sym">MINA</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.5%</td><td class="num neg">95%</td><td class="num pos">+81%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">14</td><td class="sym">RSR</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">94%</td><td class="num pos">+5%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">15</td><td class="sym">ACE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.6%</td><td class="num neg">99%</td><td class="num pos">+110%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">16</td><td class="sym">PEOPLE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">94%</td><td class="num pos">+60%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">17</td><td class="sym">ALT</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">99%</td><td class="num pos">+3%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">18</td><td class="sym">NOT</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">98%</td><td class="num pos">+21%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">19</td><td class="sym">TURBO</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">92%</td><td class="num pos">+20%</td><td class="dim">UTIL</td></tr>
-<tr class="row"><td class="dim">20</td><td class="sym">HMSTR</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">97%</td><td class="num pos">+5%</td><td class="dim">UTIL</td></tr>
-</tbody></table>
-<h2 style="margin-top:16px;font-size:12px;color:#8b949e">Market Overview</h2>
+
+<div class="board"><h2>Death Watch <span>PRIMARY -- tokens most likely to die (validated Sharpe 0.45)</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>Vol Death</th><th>DD%</th><th>90d%</th><th>Type</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">MOVE</td><td><div class="bar"><div class="bar-fill" style="width:70%"></div></div></td><td class="num score hi">70</td><td class="num">0.1%</td><td class="num neg">99%</td><td class="num neg">-36%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">FOGO</td><td><div class="bar"><div class="bar-fill" style="width:70%"></div></div></td><td class="num score hi">70</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-38%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">3</td><td class="sym">GALA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.0%</td><td class="num neg">98%</td><td class="num neg">-26%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">4</td><td class="sym">XAI</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.0%</td><td class="num neg">100%</td><td class="num neg">-2%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">5</td><td class="sym">ZETA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.2%</td><td class="num neg">99%</td><td class="num neg">-1%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">6</td><td class="sym">ZK</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-3%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">7</td><td class="sym">IOTA</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.2%</td><td class="num neg">92%</td><td class="num neg">-8%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">8</td><td class="sym">2Z</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td class="num score md">60</td><td class="num">0.1%</td><td class="num neg">91%</td><td class="num neg">-28%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">9</td><td class="sym">WLD</td><td><div class="bar"><div class="bar-fill" style="width:50%"></div></div></td><td class="num score md">50</td><td class="num">1.3%</td><td class="num neg">97%</td><td class="num neg">-21%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">10</td><td class="sym">BRETT</td><td><div class="bar"><div class="bar-fill" style="width:45%"></div></div></td><td class="num score lo">45</td><td class="num">0.1%</td><td class="num neg">97%</td><td class="num neg">-0%</td><td class="dim">True</td></tr>
+<tr class="row"><td class="dim">11</td><td class="sym">APE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.1%</td><td class="num neg">98%</td><td class="num pos">+19%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">12</td><td class="sym">CFX</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">90%</td><td class="num pos">+10%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">13</td><td class="sym">MINA</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.5%</td><td class="num neg">95%</td><td class="num pos">+81%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">14</td><td class="sym">RSR</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">94%</td><td class="num pos">+5%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">15</td><td class="sym">ACE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.6%</td><td class="num neg">99%</td><td class="num pos">+110%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">16</td><td class="sym">PEOPLE</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">94%</td><td class="num pos">+60%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">17</td><td class="sym">ALT</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">99%</td><td class="num pos">+3%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">18</td><td class="sym">NOT</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">98%</td><td class="num pos">+21%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">19</td><td class="sym">TURBO</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">92%</td><td class="num pos">+20%</td><td class="dim">False</td></tr>
+<tr class="row"><td class="dim">20</td><td class="sym">HMSTR</td><td><div class="bar"><div class="bar-fill" style="width:40%"></div></div></td><td class="num score lo">40</td><td class="num">0.0%</td><td class="num neg">97%</td><td class="num pos">+5%</td><td class="dim">False</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Squeeze Watch <span>dead tokens with squeeze pressure -- short after fade</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>Death</th><th>Pressure</th><th>Regime</th><th>Funding</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">WLD</td><td><div class="bar"><div class="bar-fill" style="width:35.2%"></div></div></td><td class="num score lo">35</td><td class="dim">50</td><td class="dim">13</td><td class="dim">LONG_CROWDED</td><td class="dim">0</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">RSR</td><td><div class="bar"><div class="bar-fill" style="width:29.2%"></div></div></td><td class="num score lo">29</td><td class="dim">40</td><td class="dim">13</td><td class="dim">LONG_CROWDED</td><td class="dim">0</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Funding Extremes <span>highest/lowest funding -- carry opportunities</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>Funding</th><th>Annualized</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">TRX</td><td><div class="bar"><div class="bar-fill" style="width:22.7%"></div></div></td><td class="num score lo">23</td><td class="num">0.0227%</td><td class="num">198.8</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">INJ</td><td><div class="bar"><div class="bar-fill" style="width:16.8%"></div></div></td><td class="num score lo">17</td><td class="num">0.0168%</td><td class="num">146.7</td></tr>
+<tr class="row"><td class="dim">3</td><td class="sym">SOL</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">4</td><td class="sym">DOGE</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">5</td><td class="sym">BNB</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">6</td><td class="sym">ADA</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">7</td><td class="sym">AVAX</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">8</td><td class="sym">LINK</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">9</td><td class="sym">SUI</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">10</td><td class="sym">ARB</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">11</td><td class="sym">OP</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">12</td><td class="sym">LTC</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">13</td><td class="sym">ATOM</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">14</td><td class="sym">UNI</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">15</td><td class="sym">APT</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">16</td><td class="sym">NEAR</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">17</td><td class="sym">FIL</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">18</td><td class="sym">PEPE</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">19</td><td class="sym">ETC</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+<tr class="row"><td class="dim">20</td><td class="sym">SEI</td><td><div class="bar"><div class="bar-fill" style="width:10.0%"></div></div></td><td class="num score lo">10</td><td class="num">0.0100%</td><td class="num">87.6</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Price Action <span>short beaten-down assets (momentum continuation)</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>Reversal</th><th>Carry</th><th>Momentum</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">ATOM</td><td><div class="bar"><div class="bar-fill" style="width:80.0%"></div></div></td><td class="num score hi">80</td><td class="num">21.5</td><td class="num">100.0</td><td class="num">47.7</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">BCH</td><td><div class="bar"><div class="bar-fill" style="width:78.5%"></div></div></td><td class="num score hi">78</td><td class="num">33.8</td><td class="num">100.0</td><td class="num">46.2</td></tr>
+<tr class="row"><td class="dim">3</td><td class="sym">LTC</td><td><div class="bar"><div class="bar-fill" style="width:76.6%"></div></div></td><td class="num score hi">77</td><td class="num">61.5</td><td class="num">100.0</td><td class="num">73.8</td></tr>
+<tr class="row"><td class="dim">4</td><td class="sym">COMP</td><td><div class="bar"><div class="bar-fill" style="width:75.5%"></div></div></td><td class="num score hi">76</td><td class="num">53.8</td><td class="num">100.0</td><td class="num">72.3</td></tr>
+<tr class="row"><td class="dim">5</td><td class="sym">PAXG</td><td><div class="bar"><div class="bar-fill" style="width:75.3%"></div></div></td><td class="num score hi">75</td><td class="num">36.9</td><td class="num">100.0</td><td class="num">10.8</td></tr>
+<tr class="row"><td class="dim">6</td><td class="sym">BNB</td><td><div class="bar"><div class="bar-fill" style="width:73.2%"></div></div></td><td class="num score hi">73</td><td class="num">69.2</td><td class="num">100.0</td><td class="num">64.6</td></tr>
+<tr class="row"><td class="dim">7</td><td class="sym">INJ</td><td><div class="bar"><div class="bar-fill" style="width:72.6%"></div></div></td><td class="num score hi">73</td><td class="num">27.7</td><td class="num">100.0</td><td class="num">18.5</td></tr>
+<tr class="row"><td class="dim">8</td><td class="sym">AVAX</td><td><div class="bar"><div class="bar-fill" style="width:70.7%"></div></div></td><td class="num score hi">71</td><td class="num">58.5</td><td class="num">100.0</td><td class="num">40.0</td></tr>
+<tr class="row"><td class="dim">9</td><td class="sym">TAO</td><td><div class="bar"><div class="bar-fill" style="width:69.8%"></div></div></td><td class="num score md">70</td><td class="num">44.6</td><td class="num">100.0</td><td class="num">20.0</td></tr>
+<tr class="row"><td class="dim">10</td><td class="sym">BTC</td><td><div class="bar"><div class="bar-fill" style="width:69.3%"></div></div></td><td class="num score md">69</td><td class="num">64.6</td><td class="num">100.0</td><td class="num">27.7</td></tr>
+<tr class="row"><td class="dim">11</td><td class="sym">CAKE</td><td><div class="bar"><div class="bar-fill" style="width:69.1%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">12</td><td class="sym">ETC</td><td><div class="bar"><div class="bar-fill" style="width:69.1%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">13</td><td class="sym">VVV</td><td><div class="bar"><div class="bar-fill" style="width:69.1%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">14</td><td class="sym">BANANA</td><td><div class="bar"><div class="bar-fill" style="width:69.0%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">15</td><td class="sym">GMX</td><td><div class="bar"><div class="bar-fill" style="width:68.9%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">16</td><td class="sym">ORDI</td><td><div class="bar"><div class="bar-fill" style="width:68.9%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">17</td><td class="sym">PONS</td><td><div class="bar"><div class="bar-fill" style="width:68.7%"></div></div></td><td class="num score md">69</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">18</td><td class="sym">LINK</td><td><div class="bar"><div class="bar-fill" style="width:68.3%"></div></div></td><td class="num score md">68</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">19</td><td class="sym">RENDER</td><td><div class="bar"><div class="bar-fill" style="width:68.3%"></div></div></td><td class="num score md">68</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+<tr class="row"><td class="dim">20</td><td class="sym">ICP</td><td><div class="bar"><div class="bar-fill" style="width:68.3%"></div></div></td><td class="num score md">68</td><td class="num">50.0</td><td class="num">100.0</td><td class="num">50.0</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Squeeze Recovery <span>pumped from lows -- ready to fade</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>DD%</th><th>Pump%</th><th>Vol Spike</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">SKR</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td><td class="num score hi">180</td><td class="num neg">78%</td><td class="num">362.3</td><td class="num">80.0%</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">HEMI</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td><td class="num score hi">172</td><td class="num neg">77%</td><td class="num">343.0</td><td class="num">90.0%</td></tr>
+<tr class="row"><td class="dim">3</td><td class="sym">ARB</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td><td class="num score hi">106</td><td class="num neg">63%</td><td class="num">167.3</td><td class="num">350.0%</td></tr>
+<tr class="row"><td class="dim">4</td><td class="sym">DASH</td><td><div class="bar"><div class="bar-fill" style="width:95.8%"></div></div></td><td class="num score hi">96</td><td class="num neg">59%</td><td class="num">142.8</td><td class="num">380.0%</td></tr>
+<tr class="row"><td class="dim">5</td><td class="sym">UNI</td><td><div class="bar"><div class="bar-fill" style="width:83.7%"></div></div></td><td class="num score hi">84</td><td class="num neg">57%</td><td class="num">132.4</td><td class="num">200.0%</td></tr>
+<tr class="row"><td class="dim">6</td><td class="sym">ZORA</td><td><div class="bar"><div class="bar-fill" style="width:80.3%"></div></div></td><td class="num score hi">80</td><td class="num neg">57%</td><td class="num">133.9</td><td class="num">100.0%</td></tr>
+<tr class="row"><td class="dim">7</td><td class="sym">ACE</td><td><div class="bar"><div class="bar-fill" style="width:79.3%"></div></div></td><td class="num score hi">79</td><td class="num neg">72%</td><td class="num">123.2</td><td class="num">30.0%</td></tr>
+<tr class="row"><td class="dim">8</td><td class="sym">ZEC</td><td><div class="bar"><div class="bar-fill" style="width:78.2%"></div></div></td><td class="num score hi">78</td><td class="num neg">56%</td><td class="num">127.8</td><td class="num">120.0%</td></tr>
+<tr class="row"><td class="dim">9</td><td class="sym">ZEN</td><td><div class="bar"><div class="bar-fill" style="width:77.2%"></div></div></td><td class="num score hi">77</td><td class="num neg">52%</td><td class="num">109.2</td><td class="num">320.0%</td></tr>
+<tr class="row"><td class="dim">10</td><td class="sym">ENA</td><td><div class="bar"><div class="bar-fill" style="width:76.9%"></div></div></td><td class="num score hi">77</td><td class="num neg">56%</td><td class="num">126.0</td><td class="num">100.0%</td></tr>
+<tr class="row"><td class="dim">11</td><td class="sym">LIT</td><td><div class="bar"><div class="bar-fill" style="width:76.3%"></div></div></td><td class="num score hi">76</td><td class="num neg">55%</td><td class="num">121.7</td><td class="num">140.0%</td></tr>
+<tr class="row"><td class="dim">12</td><td class="sym">PUMP</td><td><div class="bar"><div class="bar-fill" style="width:74.6%"></div></div></td><td class="num score hi">75</td><td class="num neg">58%</td><td class="num">120.5</td><td class="num">80.0%</td></tr>
+<tr class="row"><td class="dim">13</td><td class="sym">MINA</td><td><div class="bar"><div class="bar-fill" style="width:67.0%"></div></div></td><td class="num score md">67</td><td class="num neg">51%</td><td class="num">103.1</td><td class="num">140.0%</td></tr>
+<tr class="row"><td class="dim">14</td><td class="sym">AR</td><td><div class="bar"><div class="bar-fill" style="width:56.7%"></div></div></td><td class="num score md">57</td><td class="num neg">45%</td><td class="num">83.2</td><td class="num">130.0%</td></tr>
+<tr class="row"><td class="dim">15</td><td class="sym">BOME</td><td><div class="bar"><div class="bar-fill" style="width:53.8%"></div></div></td><td class="num score md">54</td><td class="num neg">61%</td><td class="num">68.1</td><td class="num">50.0%</td></tr>
+<tr class="row"><td class="dim">16</td><td class="sym">MOVE</td><td><div class="bar"><div class="bar-fill" style="width:45.8%"></div></div></td><td class="num score lo">46</td><td class="num neg">41%</td><td class="num">69.2</td><td class="num">40.0%</td></tr>
+<tr class="row"><td class="dim">17</td><td class="sym">AAVE</td><td><div class="bar"><div class="bar-fill" style="width:43.9%"></div></div></td><td class="num score lo">44</td><td class="num neg">41%</td><td class="num">63.3</td><td class="num">50.0%</td></tr>
+<tr class="row"><td class="dim">18</td><td class="sym">HYPE</td><td><div class="bar"><div class="bar-fill" style="width:43.5%"></div></div></td><td class="num score lo">44</td><td class="num neg">38%</td><td class="num">62.5</td><td class="num">80.0%</td></tr>
+<tr class="row"><td class="dim">19</td><td class="sym">WIF</td><td><div class="bar"><div class="bar-fill" style="width:42.9%"></div></div></td><td class="num score lo">43</td><td class="num neg">42%</td><td class="num">61.8</td><td class="num">30.0%</td></tr>
+<tr class="row"><td class="dim">20</td><td class="sym">ZRO</td><td><div class="bar"><div class="bar-fill" style="width:41.3%"></div></div></td><td class="num score lo">41</td><td class="num neg">43%</td><td class="num">51.3</td><td class="num">90.0%</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Synthesis <span>multi-board conviction</span></h2>
+<table><thead><tr><th>#</th><th>Symbol</th><th></th><th>Score</th><th>Boards</th><th>PA</th><th>DW</th><th>SQ</th></tr></thead>
+<tbody><tr class="row"><td class="dim">1</td><td class="sym">SKR</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td><td class="num score hi">100</td><td class="dim">3</td><td class="num">16.4</td><td class="dim">40</td><td class="num">179.6</td></tr>
+<tr class="row"><td class="dim">2</td><td class="sym">HEMI</td><td><div class="bar"><div class="bar-fill" style="width:99.4%"></div></div></td><td class="num score hi">99</td><td class="dim">3</td><td class="num">4.1</td><td class="dim">40</td><td class="num">171.9</td></tr>
+<tr class="row"><td class="dim">3</td><td class="sym">MOVE</td><td><div class="bar"><div class="bar-fill" style="width:93.6%"></div></div></td><td class="num score hi">94</td><td class="dim">3</td><td class="num">56.0</td><td class="dim">70</td><td class="num">45.8</td></tr>
+<tr class="row"><td class="dim">4</td><td class="sym">ZORA</td><td><div class="bar"><div class="bar-fill" style="width:91.0%"></div></div></td><td class="num score hi">91</td><td class="dim">3</td><td class="num">45.6</td><td class="dim">40</td><td class="num">80.3</td></tr>
+<tr class="row"><td class="dim">5</td><td class="sym">ZK</td><td><div class="bar"><div class="bar-fill" style="width:90.7%"></div></div></td><td class="num score hi">91</td><td class="dim">3</td><td class="num">62.7</td><td class="dim">60</td><td class="num">35.0</td></tr>
+<tr class="row"><td class="dim">6</td><td class="sym">GALA</td><td><div class="bar"><div class="bar-fill" style="width:89.6%"></div></div></td><td class="num score hi">90</td><td class="dim">3</td><td class="num">59.0</td><td class="dim">60</td><td class="num">36.0</td></tr>
+<tr class="row"><td class="dim">7</td><td class="sym">FOGO</td><td><div class="bar"><div class="bar-fill" style="width:88.3%"></div></div></td><td class="num score hi">88</td><td class="dim">3</td><td class="num">59.2</td><td class="dim">70</td><td class="num">20.3</td></tr>
+<tr class="row"><td class="dim">8</td><td class="sym">ZETA</td><td><div class="bar"><div class="bar-fill" style="width:88.2%"></div></div></td><td class="num score hi">88</td><td class="dim">3</td><td class="num">62.3</td><td class="dim">60</td><td class="num">25.7</td></tr>
+<tr class="row"><td class="dim">9</td><td class="sym">IOTA</td><td><div class="bar"><div class="bar-fill" style="width:87.2%"></div></div></td><td class="num score hi">87</td><td class="dim">3</td><td class="num">55.8</td><td class="dim">60</td><td class="num">30.6</td></tr>
+<tr class="row"><td class="dim">10</td><td class="sym">ATOM</td><td><div class="bar"><div class="bar-fill" style="width:86.2%"></div></div></td><td class="num score hi">86</td><td class="dim">3</td><td class="num">80.0</td><td class="dim">30</td><td class="num">22.7</td></tr>
+<tr class="row"><td class="dim">11</td><td class="sym">BRETT</td><td><div class="bar"><div class="bar-fill" style="width:85.2%"></div></div></td><td class="num score hi">85</td><td class="dim">3</td><td class="num">54.8</td><td class="dim">45</td><td class="num">38.9</td></tr>
+<tr class="row"><td class="dim">12</td><td class="sym">WLD</td><td><div class="bar"><div class="bar-fill" style="width:84.8%"></div></div></td><td class="num score hi">85</td><td class="dim">3</td><td class="num">55.5</td><td class="dim">50</td><td class="num">31.5</td></tr>
+<tr class="row"><td class="dim">13</td><td class="sym">ENA</td><td><div class="bar"><div class="bar-fill" style="width:84.0%"></div></div></td><td class="num score hi">84</td><td class="dim">3</td><td class="num">35.0</td><td class="dim">30</td><td class="num">76.9</td></tr>
+<tr class="row"><td class="dim">14</td><td class="sym">APE</td><td><div class="bar"><div class="bar-fill" style="width:82.8%"></div></div></td><td class="num score hi">83</td><td class="dim">3</td><td class="num">64.5</td><td class="dim">40</td><td class="num">20.9</td></tr>
+<tr class="row"><td class="dim">15</td><td class="sym">ANIME</td><td><div class="bar"><div class="bar-fill" style="width:82.7%"></div></div></td><td class="num score hi">83</td><td class="dim">3</td><td class="num">61.3</td><td class="dim">40</td><td class="num">25.0</td></tr>
+<tr class="row"><td class="dim">16</td><td class="sym">LINEA</td><td><div class="bar"><div class="bar-fill" style="width:82.1%"></div></div></td><td class="num score hi">82</td><td class="dim">3</td><td class="num">58.1</td><td class="dim">40</td><td class="num">26.9</td></tr>
+<tr class="row"><td class="dim">17</td><td class="sym">NOT</td><td><div class="bar"><div class="bar-fill" style="width:81.8%"></div></div></td><td class="num score hi">82</td><td class="dim">3</td><td class="num">51.8</td><td class="dim">40</td><td class="num">34.8</td></tr>
+<tr class="row"><td class="dim">18</td><td class="sym">ALT</td><td><div class="bar"><div class="bar-fill" style="width:81.5%"></div></div></td><td class="num score hi">82</td><td class="dim">3</td><td class="num">63.6</td><td class="dim">40</td><td class="num">17.1</td></tr>
+<tr class="row"><td class="dim">19</td><td class="sym">PUMP</td><td><div class="bar"><div class="bar-fill" style="width:81.3%"></div></div></td><td class="num score hi">81</td><td class="dim">3</td><td class="num">21.8</td><td class="dim">40</td><td class="num">74.6</td></tr>
+<tr class="row"><td class="dim">20</td><td class="sym">CFX</td><td><div class="bar"><div class="bar-fill" style="width:80.8%"></div></div></td><td class="num score hi">81</td><td class="dim">3</td><td class="num">58.1</td><td class="dim">40</td><td class="num">21.9</td></tr>
+</tbody></table></div>
+
+<div class="board"><h2>Market Overview</h2>
 <table><thead><tr><th>Symbol</th><th class="num">Price</th><th class="num">Volume</th><th class="num">Funding</th></tr></thead>
 <tbody><tr><td style="font-weight:600">BTC</td><td class="num">$79,806.00</td><td class="num">$787M</td><td class="num pos">0.0013%</td></tr>
 <tr><td style="font-weight:600">ETH</td><td class="num">$2,503.30</td><td class="num">$450M</td><td class="num pos">0.0013%</td></tr>
@@ -78,5 +186,6 @@ td{padding:4px;border-bottom:1px solid #30363d}
 <tr><td style="font-weight:600">CHIP</td><td class="num">$0.06</td><td class="num">$7M</td><td class="num pos">0.0112%</td></tr>
 <tr><td style="font-weight:600">TRUMP</td><td class="num">$2.37</td><td class="num">$7M</td><td class="num pos">0.0013%</td></tr>
 <tr><td style="font-weight:600">AAVE</td><td class="num">$135.60</td><td class="num">$7M</td><td class="num pos">0.0013%</td></tr>
-</tbody></table>
+</tbody></table></div>
+
 </body></html>
