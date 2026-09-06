@@ -278,19 +278,18 @@ def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
         mom_score = mom_ranks.get(sym, 50.0)
 
         # TOTAL SHORT SCORE: higher = BETTER short candidate
-        # Reversal/momentum must be ACTUALLY overextended (not just percentile)
-        # Require: 8w return > 10% AND 7d return > 3% to qualify as "overextended"
+        # Overextension: top 20% of cross-section by 8w return (validated: Kiefer 2026, CoinQuant 2026)
         rev_raw = reversal_raw.get(sym)
         mom_val = mom_raw.get(sym)
-        is_overextended = (rev_raw is not None and rev_raw > 0.10 and
-                          mom_val is not None and mom_val > 0.03)
+        rev_pct = reversal_ranks.get(sym, 50.0)  # percentile rank
+
+        # Overextended = top 20% of cross-section (80th percentile)
+        is_overextended = rev_pct >= 80
 
         if not is_overextended:
-            # Not overextended — low score regardless of carry/crowding
             total = rev_score * 0.3 + mom_score * 0.3 + carry_score * 0.2 + (100 - oi_adv_score) * 0.1 + (100 - vol_score) * 0.1
-            total = min(total, 45)  # cap at 45 if not actually overextended
+            total = min(total, 45)
         else:
-            # Overextended — full scoring
             total = (rev_score * 0.30 + carry_score * 0.15 + mom_score * 0.25
                      + (100 - oi_adv_score) * 0.15 + (100 - vol_score) * 0.15)
 
