@@ -84,8 +84,8 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 <div class="main">
   <div class="panel lb">
     <div class="tabs">
-      <div class="tab active" onclick="switchTab('price_action')"><span class="tab-icon">&#128200;</span>Price Action</div>
-      <div class="tab" onclick="switchTab('dogshit')"><span class="tab-icon">&#128148;</span>Dogshit</div>
+      <div class="tab active" onclick="switchTab('death_watch')"><span class="tab-icon">&#128128;</span>Death Watch</div>
+      <div class="tab" onclick="switchTab('price_action')"><span class="tab-icon">&#128200;</span>Price Action</div>
       <div class="tab" onclick="switchTab('squeeze_recovery')"><span class="tab-icon">&#9889;</span>Squeeze</div>
       <div class="tab" onclick="switchTab('synthesis')"><span class="tab-icon">&#127919;</span>Synthesis</div>
     </div>
@@ -128,8 +128,8 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 let DATA=null,selectedSym=null,chartObj=null,currentTab='price_action';
 
 const TAB_DESC={
-  price_action:'Short beaten-down assets. VALIDATED: shorting 90d losers = Sharpe 0.10, win 53%. Shorting winners LOSES.',
-  dogshit:'Death Watch — tokens most likely to die. VALIDATED: 59% win rate but use as risk filter, not direct short.',
+  death_watch:'PRIMARY: Tokens most likely to die. VALIDATED Sharpe 0.45, win 66%. Volume death + deep DD + no recovery.',
+  price_action:'Short beaten-down assets. Momentum continuation at 90d+ horizons.',
   squeeze_recovery:'Just got squeezed — pumped hard from lows, now overextended and ready to fade.',
   synthesis:'Combined signal — assets appearing in multiple boards. Maximum conviction shorts.',
 };

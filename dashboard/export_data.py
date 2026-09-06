@@ -645,8 +645,8 @@ def generate_json_data() -> dict:
         "markets": markets,
         "short_rankings": short_rankings,
         "leaderboards": {
+            "death_watch": dogshit[:20],  # PRIMARY — validated Sharpe 0.45
             "price_action": price_action[:20],
-            "dogshit": dogshit[:20],
             "squeeze_recovery": squeeze_recovery[:20],
             "synthesis": synthesis[:20],
         },
