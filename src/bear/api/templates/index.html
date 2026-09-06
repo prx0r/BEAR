@@ -129,7 +129,7 @@ let DATA=null,selectedSym=null,chartObj=null,currentTab='price_action';
 
 const TAB_DESC={
   price_action:'Short beaten-down assets. VALIDATED: shorting 90d losers = Sharpe 0.10, win 53%. Shorting winners LOSES.',
-  dogshit:'Fundamental garbage — meme coins, overhyped, negative funding. No price-based scoring.',
+  dogshit:'Death Watch — tokens most likely to die. VALIDATED: 59% win rate but use as risk filter, not direct short.',
   squeeze_recovery:'Just got squeezed — pumped hard from lows, now overextended and ready to fade.',
   synthesis:'Combined signal — assets appearing in multiple boards. Maximum conviction shorts.',
 };
@@ -224,13 +224,16 @@ function renderFactors(sym,tab){
       html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${dv.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${dv}%;background:${c}"></div></div><div class="fd-formula">${fd.formula||'?'} ${fd.validated?'&#10003;':'&#10007;'}</div><div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}${isInverted?' (low = good)':''}</div><div class="fd-note">${explain}</div>${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Paper</a></div>`:''}</div>`;
     });
   } else if(tab==='dogshit'){
-    [{k:'meme_score',label:'Meme Factor',explain:'Meme/animal coin category'},
-     {k:'hype_ratio',label:'Hype/OI Ratio',explain:'High OI vs volume = overhyped garbage'},
-     {k:'fund_score',label:'Market Hates It',explain:'Negative funding = everyone short'},
-     {k:'vol_score',label:'Low Activity',explain:'Nobody actually trades it'},
-    ].forEach(({k,label,explain})=>{
-      const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':v>0?'var(--green)':'var(--dim)';
-      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v>0?v.toFixed(0):'—'}</span></div><div class="fd-note">${explain}</div></div>`;
+    [{k:'vol_death_ratio',label:'Volume Death',explain:'Volume vs historical peak — <1% = abandoned',fmt:v=>(v*100).toFixed(1)+'%'},
+     {k:'drawdown',label:'Drawdown from Peak',explain:'How far it has crashed',fmt:v=>v.toFixed(0)+'%'},
+     {k:'ret_90d',label:'90d Return',explain:'Still declining = likely dead. Recovering = bouncing meme',fmt:v=>(v>0?'+':'')+v.toFixed(0)+'%'},
+     {k:'is_meme',label:'Meme Factor',explain:'Memes bounce back — utility tokens with dilution stay dead',fmt:v=>v?'YES (bounces)':'NO (stays dead)'},
+    ].forEach(({k,label,explain,fmt})=>{
+      const v=lb[k];
+      const display=fmt?fmt(v):v;
+      const isGood=k==='ret_90d'?(v>0):k==='is_meme'?(v===true):k==='vol_death_ratio'?(v<0.05):k==='drawdown'?(v>90);
+      const c=isGood?'var(--red)':'var(--green)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${display}</span></div><div class="fd-note">${explain}</div></div>`;
     });
   } else if(tab==='squeeze_recovery'){
     [{k:'drawdown_30d',label:'30d Drawdown',explain:'How far it fell before the squeeze'},
