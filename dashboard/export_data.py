@@ -278,10 +278,21 @@ def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
         mom_score = mom_ranks.get(sym, 50.0)
 
         # TOTAL SHORT SCORE: higher = BETTER short candidate
-        # Good for shorts: high reversal (recent winner), high carry (get paid), high momentum (will revert)
-        # Bad for shorts: high crowding (squeeze risk), high vol (squeeze risk)
-        total = (rev_score * 0.25 + carry_score * 0.20 + mom_score * 0.20
-                 + (100 - oi_adv_score) * 0.20 + (100 - vol_score) * 0.15)
+        # Reversal/momentum must be ACTUALLY overextended (not just percentile)
+        # Require: 8w return > 10% AND 7d return > 3% to qualify as "overextended"
+        rev_raw = reversal_raw.get(sym)
+        mom_val = mom_raw.get(sym)
+        is_overextended = (rev_raw is not None and rev_raw > 0.10 and
+                          mom_val is not None and mom_val > 0.03)
+
+        if not is_overextended:
+            # Not overextended — low score regardless of carry/crowding
+            total = rev_score * 0.3 + mom_score * 0.3 + carry_score * 0.2 + (100 - oi_adv_score) * 0.1 + (100 - vol_score) * 0.1
+            total = min(total, 45)  # cap at 45 if not actually overextended
+        else:
+            # Overextended — full scoring
+            total = (rev_score * 0.30 + carry_score * 0.15 + mom_score * 0.25
+                     + (100 - oi_adv_score) * 0.15 + (100 - vol_score) * 0.15)
 
         # Confidence: how many factors were real vs fallback
         real_count = sum(1 for v in [rev_val, vol_val, mom_val] if v is not None)
@@ -371,48 +382,62 @@ def generate_json_data() -> dict:
     price_action.sort(key=lambda x: x["score"], reverse=True)
 
     # ── Leaderboard 2: Dogshit (fundamental garbage — destined for zero) ──
+    # Only flags genuinely bad projects. Excludes real L1s, DEXs, established DeFi.
+    TRASH_CATEGORIES = {"meme"}  # Only true meme/animal coins are auto-flagged
+    QUALITY_CATEGORIES = {"layer1", "l1", "l2", "defi", "dex", "oracle", "privacy", "rwa", "storage", "exchange", "ai"}  # Never dogshit
     dogshit = []
     for m in markets:
         sym = m["symbol"]
-        f = factors.get(sym, {})
         px = m.get("mark_px") or 0
         vol = m.get("day_volume") or 0
         oi = m.get("open_interest") or 0
         fund = m.get("funding") or 0
-        cat = m.get("category", "other")
+        cat = (m.get("category") or "other").lower()
 
-        # Dogshit indicators (higher = worse fundamental quality)
-        # 1. Very low price (microcap territory)
-        price_score = 0
-        if px < 0.001: price_score = 100
-        elif px < 0.01: price_score = 80
-        elif px < 0.1: price_score = 60
-        elif px < 1: price_score = 40
+        # Skip quality projects entirely
+        if cat in QUALITY_CATEGORIES:
+            continue
+        # Skip well-known legitimate projects by name
+        if sym in ("BTC", "ETH", "SOL", "HYPE", "BNB", "XRP", "ADA", "AVAX", "DOT",
+                    "LINK", "UNI", "AAVE", "MKR", "SNX", "CRV", "LDO", "PENDLE",
+                    "INJ", "TIA", "SEI", "NEAR", "FIL", "AR", "HBAR", "XLM",
+                    "ONDO", "PAXG", "TRX", "TON", "ICP", "ETC", "BCH", "LTC",
+                    "DASH", "XMR", "ZEC", "BSV"):
+            continue
 
-        # 2. High OI relative to volume (overhyped relative to actual use)
-        oi_vol = oi / vol if vol > 0 else 0
-        hype_score = min(100, oi_vol * 15)
+        # Dogshit signals (higher = worse)
+        # 1. Meme category
+        meme_score = 80 if cat == "meme" else 20 if cat == "other" else 0
 
-        # 3. Extreme negative funding (shorts paying = everyone knows it's bad)
+        # 2. Very low price + small market cap = microcap junk
+        # Use volume as proxy for market cap (larger vol = larger mcap)
+        cap_score = 0
+        if vol < 50_000: cap_score = 90  # tiny volume = nobody cares
+        elif vol < 200_000: cap_score = 70
+        elif vol < 1_000_000: cap_score = 50
+        elif vol < 5_000_000: cap_score = 30
+
+        # 3. Negative funding = market consensus it's bad
         fund_score = 0
-        if fund < -0.0001: fund_score = 90  # deeply negative = very crowded short
-        elif fund < -0.00001: fund_score = 70
-        elif fund < 0: fund_score = 50
+        if fund < -0.0001: fund_score = 80
+        elif fund < -0.00001: fund_score = 60
+        elif fund < 0: fund_score = 40
 
-        # 4. Category penalty for meme/low-quality
-        cat_score = 0
-        if cat in ("meme", "other"): cat_score = 40
-        elif cat in ("gaming",): cat_score = 20
+        # 4. Price below $0.01 = likely junk
+        price_junk = 0
+        if px < 0.001: price_junk = 70
+        elif px < 0.01: price_junk = 50
+        elif px < 0.05: price_junk = 20
 
-        # 5. Low volume relative to OI (nobody actually trades it)
-        vol_quality = min(100, (1 / max(vol / 1e6, 0.01)) * 10) if vol > 0 else 50
+        dog_total = meme_score * 0.30 + cap_score * 0.25 + fund_score * 0.25 + price_junk * 0.20
+        if dog_total < 30:  # Don't show mediocre scores
+            continue
 
-        dog_total = price_score * 0.25 + hype_score * 0.20 + fund_score * 0.20 + cat_score * 0.15 + vol_quality * 0.20
         dogshit.append({
             "symbol": sym, "sector": cat,
             "score": round(dog_total, 1),
-            "price_tier": price_score, "hype_ratio": hype_score,
-            "short_crowding": fund_score, "category_junk": cat_score,
+            "meme_score": meme_score, "cap_score": cap_score,
+            "fund_score": fund_score, "price_junk": price_junk,
             "mark_px": px, "funding": fund,
         })
     dogshit.sort(key=lambda x: x["score"], reverse=True)

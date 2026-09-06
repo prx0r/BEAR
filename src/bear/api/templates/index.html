@@ -222,13 +222,13 @@ function renderFactors(sym,tab){
       html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${dv.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${dv}%;background:${c}"></div></div><div class="fd-formula">${fd.formula||'?'} ${fd.validated?'&#10003;':'&#10007;'}</div><div class="fd-raw">Raw: ${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}${isInverted?' (low = good)':''}</div><div class="fd-note">${explain}</div>${fd.paper_url?`<div class="fd-paper"><a href="${fd.paper_url}" target="_blank">&#128218; Paper</a></div>`:''}</div>`;
     });
   } else if(tab==='dogshit'){
-    [{k:'price_tier',label:'Price Tier',explain:'Lower price = more junk (microcap territory)'},
-     {k:'hype_ratio',label:'Hype/OI Ratio',explain:'High OI relative to volume = overhyped garbage'},
-     {k:'short_crowding',label:'Short Crowding',explain:'Negative funding = everyone knows it sucks'},
-     {k:'category_junk',label:'Category Junk',explain:'Meme/other = lower quality'},
+    [{k:'meme_score',label:'Meme Factor',explain:'Meme/animal coin with no real utility'},
+     {k:'cap_score',label:'Size (Tiny)',explain:'Low volume = microcap, nobody cares'},
+     {k:'fund_score',label:'Market Hates It',explain:'Negative funding = consensus it sucks'},
+     {k:'price_junk',label:'Price Junk',explain:'Sub-$0.01 = likely worthless'},
     ].forEach(({k,label,explain})=>{
-      const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':'var(--green)';
-      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v.toFixed(0)}</span></div><div class="fd-bar"><div class="fd-bar-fill" style="width:${v}%;background:${c}"></div></div><div class="fd-note">${explain}</div></div>`;
+      const v=lb[k]||0;const c=v>=70?'var(--red)':v>=50?'var(--yellow)':v>0?'var(--green)':'var(--dim)';
+      html+=`<div class="factor-detail"><div class="fd-head"><span class="fd-name">${label}</span><span class="fd-val" style="color:${c}">${v>0?v.toFixed(0):'—'}</span></div><div class="fd-note">${explain}</div></div>`;
     });
   } else if(tab==='squeeze_recovery'){
     [{k:'drawdown_30d',label:'30d Drawdown',explain:'How far it fell before the squeeze'},
