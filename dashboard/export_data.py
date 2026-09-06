@@ -541,23 +541,23 @@ def generate_json_data() -> dict:
     # Also build old-format short_rankings for backward compat
     short_rankings = price_action[:20]
 
-    # Load candle data for ALL symbols across all leaderboards
+    # Load candle data for ALL symbols — prefer daily (more history) over hourly
     candles = {}
     all_lb_syms = set()
     for lb in [price_action, dogshit, squeeze_recovery, synthesis]:
         for s in lb:
             all_lb_syms.add(s["symbol"])
     for sym in all_lb_syms:
-        p = CANDLE_DIR / sym / "1h.parquet"
-        if p.exists():
+        p1d = CANDLE_DIR / sym / "1d.parquet"
+        p1h = CANDLE_DIR / sym / "1h.parquet"
+        # Prefer daily for more history
+        pf = p1d if p1d.exists() else p1h
+        if pf.exists():
             try:
-                df = pl.read_parquet(p)
-                # Convert epoch ms to datetime if needed
-                if df["open_time"].dtype == pl.Int64 or df["open_time"].dtype == pl.Int32:
-                    df = df.with_columns(
-                        pl.col("open_time").cast(pl.Datetime("ms")).alias("open_time")
-                    )
-                # Downsample to daily for dashboard
+                df = pl.read_parquet(pf)
+                # Convert int64 timestamps to datetime if needed
+                if df["open_time"].dtype in (pl.Int64, pl.Int32):
+                    df = df.with_columns(pl.col("open_time").cast(pl.Datetime("ms")).alias("open_time"))
                 df = df.with_columns(pl.col("open_time").dt.date().alias("date"))
                 daily = df.group_by("date").agg([
                     pl.col("open").first(),
