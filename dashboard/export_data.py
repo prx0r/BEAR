@@ -541,10 +541,13 @@ def generate_json_data() -> dict:
     # Also build old-format short_rankings for backward compat
     short_rankings = price_action[:20]
 
-    # Load candle data for top 20 short candidates (for chart rendering)
+    # Load candle data for ALL symbols across all leaderboards
     candles = {}
-    top_shorts = [sr["symbol"] for sr in short_rankings[:20]]
-    for sym in top_shorts:
+    all_lb_syms = set()
+    for lb in [price_action, dogshit, squeeze_recovery, synthesis]:
+        for s in lb:
+            all_lb_syms.add(s["symbol"])
+    for sym in all_lb_syms:
         p = CANDLE_DIR / sym / "1h.parquet"
         if p.exists():
             try:
