@@ -125,7 +125,7 @@ td{padding:3px 5px;border-bottom:1px solid var(--border)}
 {BEAR_DATA_PLACEHOLDER}
 </script>
 <script>
-let DATA=null,selectedSym=null,chartObj=null,currentTab='price_action';
+let DATA=null,selectedSym=null,chartObj=null,currentTab='death_watch';
 
 const TAB_DESC={
   death_watch:'PRIMARY: Tokens most likely to die. VALIDATED Sharpe 0.45, win 66%. Volume death + deep DD + no recovery.',
@@ -134,12 +134,30 @@ const TAB_DESC={
   synthesis:'Combined signal — assets appearing in multiple boards. Maximum conviction shorts.',
 };
 const TAB_SCORE_LABEL={
-  price_action:'Short Score',dogshit:'Garbage Score',squeeze_recovery:'Squeeze Score'
+  death_watch:'Death Score',price_action:'Short Score',squeeze_recovery:'Squeeze Score',synthesis:'Conviction'
 };
 
-function loadData(){
-  try{const el=document.getElementById('bear-data');const txt=el.textContent.trim();if(txt&&txt!=='{BEAR_DATA_PLACEHOLDER}')DATA=JSON.parse(txt)}catch(e){}
-  if(!DATA||!DATA.markets){document.getElementById('dot').className='dot err';return}
+async function loadData(){
+  // Try inline first
+  try{
+    const el=document.getElementById('bear-data');
+    const txt=(el.textContent||'').trim();
+    if(txt&&txt.length>100)DATA=JSON.parse(txt);
+  }catch(e){console.log('Inline parse error:',e)}
+  
+  // Fallback: fetch from API
+  if(!DATA||!DATA.markets){
+    try{
+      const r=await fetch('/data.json');
+      if(r.ok)DATA=await r.json();
+    }catch(e){console.log('API fetch error:',e)}
+  }
+  
+  if(!DATA||!DATA.markets){
+    document.getElementById('dot').className='dot err';
+    document.getElementById('ts').textContent='No data loaded';
+    return;
+  }
   document.getElementById('dot').className='dot ok';
   document.getElementById('ts').textContent='Updated: '+(DATA.timestamp||'');
   renderStats();renderLeaderboard();renderMarkets();

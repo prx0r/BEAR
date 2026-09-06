@@ -51,6 +51,7 @@ PYTHONPATH=src python3 dashboard/export_data.py 2>&1
 echo "[$(date)] Deploying to Cloudflare Pages..."
 mkdir -p /tmp/bear-deploy
 cp dashboard/index.html /tmp/bear-deploy/
+cp dashboard/data.json /tmp/bear-deploy/
 
 cd /tmp/bear-deploy
 wrangler pages deploy . --project-name=bear-dashboard --branch=main --commit-dirty=true 2>&1
