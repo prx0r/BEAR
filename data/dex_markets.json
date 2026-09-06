@@ -1,0 +1,3965 @@
+{
+  "BTC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 79923.0,
+      "funding": 9.6927e-06,
+      "oi": 34965.9384599999,
+      "vol": 854718113.9337803
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ETH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2511.4,
+      "funding": 1.25e-05,
+      "oi": 903312.2891999997,
+      "vol": 508436834.96470004
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ATOM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.57,
+      "funding": 1.25e-05,
+      "oi": 1571263.46,
+      "vol": 825322.3158669999
+    }
+  ],
+  "MATIC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.37621,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "DYDX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.12102,
+      "funding": 1.25e-05,
+      "oi": 14685272.799999999,
+      "vol": 284800.2857370001
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SOL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 106.3,
+      "funding": 1.25e-05,
+      "oi": 5826617.860000002,
+      "vol": 139969282.22620043
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AVAX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.6881,
+      "funding": 1.25e-05,
+      "oi": 1822001.6,
+      "vol": 3147336.238834999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "BNB": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 762.67,
+      "funding": 1.25e-05,
+      "oi": 80331.5,
+      "vol": 50545356.11751999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "APE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.14275,
+      "funding": 1.25e-05,
+      "oi": 7485341.200000001,
+      "vol": 205846.2023609999
+    }
+  ],
+  "OP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1097,
+      "funding": -5.09474e-05,
+      "oi": 38114150.4,
+      "vol": 1800346.9390890002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "LTC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 54.319,
+      "funding": 1.93078e-05,
+      "oi": 434722.4200000001,
+      "vol": 13335517.93994
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ARB": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.19352,
+      "funding": 7.29428e-05,
+      "oi": 185156567.79999986,
+      "vol": 84746026.782453
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "DOGE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.09163,
+      "funding": 1.25e-05,
+      "oi": 869952488.0,
+      "vol": 29632872.444974996
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "INJ": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 5.113,
+      "funding": 1.25e-05,
+      "oi": 627138.4000000001,
+      "vol": 1907629.9191599996
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SUI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.79951,
+      "funding": 1.25e-05,
+      "oi": 44174523.800000004,
+      "vol": 11318042.602085996
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "kPEPE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.003655,
+      "funding": 1.25e-05,
+      "oi": 6171675094.0,
+      "vol": 7660068.604507
+    }
+  ],
+  "CRV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.37961,
+      "funding": 1.25e-05,
+      "oi": 49959205.19999998,
+      "vol": 6257424.215721001
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "LDO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.3961,
+      "funding": 1.25e-05,
+      "oi": 28262979.6,
+      "vol": 1897000.6451490007
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "LINK": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 12.303,
+      "funding": 4.33447e-05,
+      "oi": 7108354.800000001,
+      "vol": 8600000.218100002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "STX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.26722,
+      "funding": 1.25e-05,
+      "oi": 4609859.6,
+      "vol": 409201.847272
+    }
+  ],
+  "RNDR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 6.8952,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "CFX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.049639,
+      "funding": 1.25e-05,
+      "oi": 55210862.0,
+      "vol": 91212.934922
+    }
+  ],
+  "FTM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.71688,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "GMX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.8635,
+      "funding": 1.25e-05,
+      "oi": 110278.26,
+      "vol": 200456.132314
+    }
+  ],
+  "SNX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.22027,
+      "funding": 1.25e-05,
+      "oi": 2170363.6,
+      "vol": 420516.3945979999
+    }
+  ],
+  "XRP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.4251,
+      "funding": 1.25e-05,
+      "oi": 168379882.0,
+      "vol": 35413135.11670001
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "BCH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 262.17,
+      "funding": 1.25e-05,
+      "oi": 21641.192,
+      "vol": 2072902.9922600002
+    }
+  ],
+  "APT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.6165,
+      "funding": 1.25e-05,
+      "oi": 5262908.66,
+      "vol": 1344127.743759
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AAVE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 137.06,
+      "funding": 1.25e-05,
+      "oi": 613532.8200000001,
+      "vol": 7137842.231200002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "COMP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 20.5965,
+      "funding": 1.25e-05,
+      "oi": 41328.78,
+      "vol": 300102.4769900002
+    }
+  ],
+  "MKR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1831.5,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "WLD": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.40074,
+      "funding": 2.6531e-05,
+      "oi": 91714174.8,
+      "vol": 5220884.839485
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "FXS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.65538,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "HPOS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.041873,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "RLB": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.071,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "UNIBOT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.636,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "YGG": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.02407,
+      "funding": 1.25e-05,
+      "oi": 6526716.0,
+      "vol": 85523.123795
+    }
+  ],
+  "TRX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.33316,
+      "funding": -1.86539e-05,
+      "oi": 45495008.0,
+      "vol": 4131055.140259998
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "kSHIB": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.005495,
+      "funding": 1.25e-05,
+      "oi": 627149002.0,
+      "vol": 760363.1928340001
+    }
+  ],
+  "UNI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.0894,
+      "funding": 7.88669e-05,
+      "oi": 8612763.599999992,
+      "vol": 58960837.88154007
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SEI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.048233,
+      "funding": 1.25e-05,
+      "oi": 33296316.0,
+      "vol": 444719.409175
+    }
+  ],
+  "RUNE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.49064,
+      "funding": 1.25e-05,
+      "oi": 1876330.7999999998,
+      "vol": 87118.554224
+    }
+  ],
+  "OX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.007459,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "FRIEND": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4.72,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "SHIA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000621,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "CYBER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.0415,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "ZRO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.0703,
+      "funding": 1.25e-05,
+      "oi": 37293231.6,
+      "vol": 6052491.261980005
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "BLZ": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.070043,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "DOT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.93175,
+      "funding": 1.25e-05,
+      "oi": 5800040.2,
+      "vol": 1856108.1749179994
+    }
+  ],
+  "BANANA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4.17845,
+      "funding": 1.25e-05,
+      "oi": 43851.8,
+      "vol": 84748.06838
+    }
+  ],
+  "TRB": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 18.174,
+      "funding": 1.25e-05,
+      "oi": 26017.16,
+      "vol": 190069.9360699999
+    }
+  ],
+  "FTT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.32243,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "LOOM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.071161,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "OGN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.055683,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "RDNT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.018328,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "ARK": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.10667,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BNT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.38287,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "CANTO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.066,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "REQ": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.15473,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BIGTIME": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.006835,
+      "funding": 1.25e-05,
+      "oi": 29197318.0,
+      "vol": 62043.978481
+    }
+  ],
+  "KAS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.030656,
+      "funding": 0.0001052794,
+      "oi": 64766074.0,
+      "vol": 393473.7321260002
+    }
+  ],
+  "ORBS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01939,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BLUR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.016942,
+      "funding": 1.25e-05,
+      "oi": 71924634.0,
+      "vol": 121713.499016
+    }
+  ],
+  "TIA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.38412,
+      "funding": 1.25e-05,
+      "oi": 5313756.600000001,
+      "vol": 563310.1782600002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "BSV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 17.105,
+      "funding": 0.0001908789,
+      "oi": 30189.34,
+      "vol": 127041.6939700001
+    }
+  ],
+  "ADA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.221678,
+      "funding": 1.25e-05,
+      "oi": 143389128.0,
+      "vol": 4593347.286560002
+    }
+  ],
+  "TON": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.8014,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "MINA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.075633,
+      "funding": -8.55049e-05,
+      "oi": 33319836.0,
+      "vol": 301295.089062
+    }
+  ],
+  "POLYX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.036339,
+      "funding": 1.25e-05,
+      "oi": 2100066.0,
+      "vol": 95221.106298
+    }
+  ],
+  "GAS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.2371,
+      "funding": 1.25e-05,
+      "oi": 53093.2,
+      "vol": 44547.0725
+    }
+  ],
+  "PENDLE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.1205,
+      "funding": 2.27067e-05,
+      "oi": 4334024.0,
+      "vol": 2147790.4405000005
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "STG": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.15387,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "FET": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.16589,
+      "funding": 1.25e-05,
+      "oi": 40543438.0,
+      "vol": 1823338.3101699993
+    }
+  ],
+  "STRAX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.5829,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "NEAR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.2068,
+      "funding": 1.25e-05,
+      "oi": 56175443.59999999,
+      "vol": 37330470.24044999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MEME": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000562,
+      "funding": 1.25e-05,
+      "oi": 816987460.0,
+      "vol": 88744.07347
+    }
+  ],
+  "ORDI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4.2479,
+      "funding": 1.25e-05,
+      "oi": 114335.58,
+      "vol": 207321.316165
+    }
+  ],
+  "BADGER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.88823,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "NEO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.1538,
+      "funding": 1.25e-05,
+      "oi": 94266.66,
+      "vol": 54293.482739
+    }
+  ],
+  "ZEN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.6609,
+      "funding": 3.09911e-05,
+      "oi": 281612.2600000001,
+      "vol": 2803606.075283999
+    }
+  ],
+  "FIL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.80826,
+      "funding": -3.75251e-05,
+      "oi": 2724439.5999999996,
+      "vol": 1181155.133039001
+    }
+  ],
+  "PYTH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.055539,
+      "funding": 1.25e-05,
+      "oi": 46693366.0,
+      "vol": 376944.007412
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SUSHI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.24036,
+      "funding": 1.25e-05,
+      "oi": 2228317.8,
+      "vol": 2563239.0423440007
+    }
+  ],
+  "ILV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 12.118,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "IMX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.13445,
+      "funding": 1.25e-05,
+      "oi": 21989250.6,
+      "vol": 134014.722321
+    }
+  ],
+  "kBONK": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.003307,
+      "funding": 1.25e-05,
+      "oi": 2397679156.0,
+      "vol": 2815814.718440002
+    }
+  ],
+  "GMT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.007507,
+      "funding": 1.25e-05,
+      "oi": 15265778.0,
+      "vol": 43250.195704
+    }
+  ],
+  "SUPER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.11831,
+      "funding": 1.25e-05,
+      "oi": 2352610.0,
+      "vol": 83857.03292
+    }
+  ],
+  "USTC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.007534,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "NFTI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 6.5609,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "JUP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.23128,
+      "funding": 1.25e-05,
+      "oi": 41572164.0,
+      "vol": 5305433.404179998
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "kLUNC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.052627,
+      "funding": 1.25e-05,
+      "oi": 4477676.0,
+      "vol": 32207.290658
+    }
+  ],
+  "RSR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.001434,
+      "funding": 1.25e-05,
+      "oi": 175791022.0,
+      "vol": 87770.678663
+    }
+  ],
+  "GALA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.001889,
+      "funding": 1.25e-05,
+      "oi": 173803448.0,
+      "vol": 144535.89996
+    }
+  ],
+  "JTO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.43867,
+      "funding": 1.25e-05,
+      "oi": 12025016.0,
+      "vol": 2313642.090750001
+    }
+  ],
+  "NTRN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1238,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "ACE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1728,
+      "funding": -0.0007849719,
+      "oi": 5753980.06,
+      "vol": 599188.9207600001
+    }
+  ],
+  "MAV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.015456,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "WIF": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.21362,
+      "funding": 1.25e-05,
+      "oi": 24474140.0,
+      "vol": 413443.6583999999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "CAKE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.2589,
+      "funding": 1.25e-05,
+      "oi": 1425471.0,
+      "vol": 3079181.137309998
+    }
+  ],
+  "PEOPLE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.00845,
+      "funding": -0.0001084937,
+      "oi": 100104786.0,
+      "vol": 197749.328824
+    }
+  ],
+  "ENS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 6.1903,
+      "funding": 1.25e-05,
+      "oi": 439156.96,
+      "vol": 390323.5724759999
+    }
+  ],
+  "ETC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 7.81,
+      "funding": 1.25e-05,
+      "oi": 242704.78,
+      "vol": 529114.1449490001
+    }
+  ],
+  "XAI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.00765,
+      "funding": 1.25e-05,
+      "oi": 41547187.8,
+      "vol": 70229.4032209999
+    }
+  ],
+  "MANTA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.06163,
+      "funding": 1.25e-05,
+      "oi": 3711990.1999999997,
+      "vol": 64561.905184
+    }
+  ],
+  "UMA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.39818,
+      "funding": 1.25e-05,
+      "oi": 717709.0,
+      "vol": 109437.398298
+    }
+  ],
+  "ONDO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.37765,
+      "funding": 5.94638e-05,
+      "oi": 71975460.0,
+      "vol": 3911402.3378900005
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ALT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.006489,
+      "funding": 1.25e-05,
+      "oi": 134591516.0,
+      "vol": 63102.563121
+    }
+  ],
+  "ZETA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.03488,
+      "funding": 1.25e-05,
+      "oi": 35440312.6,
+      "vol": 95978.402094
+    }
+  ],
+  "DYM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01542,
+      "funding": 1.25e-05,
+      "oi": 19101375.0,
+      "vol": 62977.791194
+    }
+  ],
+  "MAVIA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.03725,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "W": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.0101,
+      "funding": 1.25e-05,
+      "oi": 201054902.0,
+      "vol": 236259.686755
+    }
+  ],
+  "PANDORA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 3026.3,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "STRK": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.0308,
+      "funding": 1.25e-05,
+      "oi": 151326317.39999998,
+      "vol": 2844394.354628001
+    }
+  ],
+  "PIXEL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.024027,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "AI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.12555,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "TAO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 238.27,
+      "funding": 1.25e-05,
+      "oi": 207789.4040000001,
+      "vol": 17894090.095459998
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.9881,
+      "funding": 1.25e-05,
+      "oi": 748417.5,
+      "vol": 753478.2882220002
+    }
+  ],
+  "MYRO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.015813,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "kFLOKI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.026465,
+      "funding": 1.25e-05,
+      "oi": 26478622.0,
+      "vol": 760349.8220049996
+    }
+  ],
+  "BOME": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000971,
+      "funding": 1.25e-05,
+      "oi": 3775112254.0,
+      "vol": 845042.0019820002
+    }
+  ],
+  "ETHFI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.58894,
+      "funding": 1.25e-05,
+      "oi": 28985908.2,
+      "vol": 1488949.3764689995
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ENA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.17586,
+      "funding": 5.42594e-05,
+      "oi": 400885978.0,
+      "vol": 25302059.560810007
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MNT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.58994,
+      "funding": 5.69564e-05,
+      "oi": 9973655.0,
+      "vol": 156263.827103
+    }
+  ],
+  "TNSR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.03658,
+      "funding": 1.25e-05,
+      "oi": 1461161.2000000002,
+      "vol": 12606.258863
+    }
+  ],
+  "SAGA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01552,
+      "funding": 1.25e-05,
+      "oi": 84606377.8,
+      "vol": 18440.183224
+    }
+  ],
+  "MERL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.022771,
+      "funding": 1.25e-05,
+      "oi": 16403462.0,
+      "vol": 104436.943971
+    }
+  ],
+  "HBAR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.081706,
+      "funding": 7.14067e-05,
+      "oi": 82660336.0,
+      "vol": 1509104.5445190002
+    }
+  ],
+  "POPCAT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.053783,
+      "funding": 1.25e-05,
+      "oi": 41703432.0,
+      "vol": 177425.268979
+    }
+  ],
+  "OMNI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4.1915,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "EIGEN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.208,
+      "funding": 1.25e-05,
+      "oi": 14478190.8,
+      "vol": 287843.383484
+    }
+  ],
+  "REZ": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.003122,
+      "funding": 1.25e-05,
+      "oi": 223647870.0,
+      "vol": 248375.2317590002
+    }
+  ],
+  "NOT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000457,
+      "funding": 1.25e-05,
+      "oi": 541144654.0,
+      "vol": 22082.812491
+    }
+  ],
+  "TURBO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.001012,
+      "funding": 1.25e-05,
+      "oi": 306827750.0,
+      "vol": 105438.673492
+    }
+  ],
+  "BRETT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.005657,
+      "funding": 1.25e-05,
+      "oi": 53823076.0,
+      "vol": 132888.591185
+    }
+  ],
+  "IO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1335,
+      "funding": 1.25e-05,
+      "oi": 6454370.4,
+      "vol": 219062.648626
+    }
+  ],
+  "ZK": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.010358,
+      "funding": 1.25e-05,
+      "oi": 65479358.0,
+      "vol": 417672.8791659999
+    }
+  ],
+  "BLAST": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000456,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "LISTA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.12466,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "MEW": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.00064,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "RENDER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.4835,
+      "funding": 1.25e-05,
+      "oi": 998953.7999999999,
+      "vol": 1156616.4797600002
+    }
+  ],
+  "kDOGS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.13659,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "POL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.098386,
+      "funding": 1.25e-05,
+      "oi": 37993226.0,
+      "vol": 626009.6069250002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "CATI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.082821,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "CELO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.080173,
+      "funding": 1.25e-05,
+      "oi": 2124756.0,
+      "vol": 87583.789028
+    }
+  ],
+  "HMSTR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.000181,
+      "funding": 1.25e-05,
+      "oi": 7552546684.0,
+      "vol": 38947.101689
+    }
+  ],
+  "SCR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.04737,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "NEIROETH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01808,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "kNEIRO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.08994,
+      "funding": 1.25e-05,
+      "oi": 1830827.2,
+      "vol": 145578.785426
+    }
+  ],
+  "GOAT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01654,
+      "funding": 5.75344e-05,
+      "oi": 12670768.0,
+      "vol": 476185.043425
+    }
+  ],
+  "MOODENG": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.045184,
+      "funding": 9.55348e-05,
+      "oi": 20200524.0,
+      "vol": 1227310.0838880003
+    }
+  ],
+  "GRASS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.33872,
+      "funding": 0.0001463456,
+      "oi": 26894833.8,
+      "vol": 685124.2022390005
+    }
+  ],
+  "PURR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1201,
+      "funding": 1.25e-05,
+      "oi": 95208562.0,
+      "vol": 990658.1770599994
+    }
+  ],
+  "PNUT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.0515,
+      "funding": 1.25e-05,
+      "oi": 24667033.6,
+      "vol": 192729.589501
+    }
+  ],
+  "XLM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.18774,
+      "funding": 1.25e-05,
+      "oi": 51887436.0,
+      "vol": 5620582.768490001
+    }
+  ],
+  "CHILLGUY": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.012699,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "SAND": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.040188,
+      "funding": -4.78211e-05,
+      "oi": 9691042.0,
+      "vol": 95169.789214
+    }
+  ],
+  "IOTA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.041492,
+      "funding": 1.25e-05,
+      "oi": 16965048.0,
+      "vol": 156650.71018
+    }
+  ],
+  "ALGO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.094953,
+      "funding": 1.25e-05,
+      "oi": 29319258.0,
+      "vol": 815232.2402299999
+    }
+  ],
+  "HYPE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 86.407,
+      "funding": 1.25e-05,
+      "oi": 23761713.280000027,
+      "vol": 230053525.46010923
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ME": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.06488,
+      "funding": 1.25e-05,
+      "oi": 2820045.4,
+      "vol": 56969.031646
+    }
+  ],
+  "MOVE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.009017,
+      "funding": 1.25e-05,
+      "oi": 28678952.0,
+      "vol": 160747.3486260001
+    }
+  ],
+  "VIRTUAL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.68611,
+      "funding": 1.25e-05,
+      "oi": 15720863.4,
+      "vol": 3910069.6127739996
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "PENGU": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.008795,
+      "funding": 1.25e-05,
+      "oi": 1210261744.0,
+      "vol": 3366121.5532559985
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "USUAL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01138,
+      "funding": 1.25e-05,
+      "oi": 28356793.0,
+      "vol": 87436.873993
+    }
+  ],
+  "FARTCOIN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.17621,
+      "funding": 4.19294e-05,
+      "oi": 200445294.79999998,
+      "vol": 15674777.452350002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AI16Z": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.06157,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "AIXBT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.02223,
+      "funding": 1.25e-05,
+      "oi": 23545664.0,
+      "vol": 385180.734324
+    }
+  ],
+  "ZEREBRO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.032083,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BIO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.027929,
+      "funding": 1.25e-05,
+      "oi": 26204682.0,
+      "vol": 140233.247013
+    }
+  ],
+  "GRIFFAIN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.012534,
+      "funding": 0.0001864833,
+      "oi": 69106100.0,
+      "vol": 29703.232705
+    }
+  ],
+  "SPX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.60751,
+      "funding": 1.25e-05,
+      "oi": 13207569.2,
+      "vol": 2533539.4302129997
+    }
+  ],
+  "S": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.030522,
+      "funding": 1.25e-05,
+      "oi": 22748692.0,
+      "vol": 182318.7193800001
+    }
+  ],
+  "MORPHO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.5758,
+      "funding": 1.25e-05,
+      "oi": 1975605.7999999998,
+      "vol": 1544109.2782199997
+    }
+  ],
+  "TRUMP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.3948,
+      "funding": 1.25e-05,
+      "oi": 6274082.399999999,
+      "vol": 7035761.252579997
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MELANIA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.11585,
+      "funding": 1.25e-05,
+      "oi": 17054607.599999998,
+      "vol": 411518.5661950001
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ANIME": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.002881,
+      "funding": 1.25e-05,
+      "oi": 71051718.0,
+      "vol": 84944.832704
+    }
+  ],
+  "VINE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.007518,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "VVV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 17.215,
+      "funding": 0.0001186386,
+      "oi": 1495360.6,
+      "vol": 3466720.18278
+    }
+  ],
+  "JELLY": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.037555,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BERA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.18634,
+      "funding": -1.18276e-05,
+      "oi": 9596181.800000003,
+      "vol": 487681.8662500002
+    }
+  ],
+  "TST": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.017491,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "LAYER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.070865,
+      "funding": 1.25e-05,
+      "oi": 8336258.0,
+      "vol": 69522.914298
+    }
+  ],
+  "IP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.31703,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "OM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.06527,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "KAITO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.30985,
+      "funding": 1.25e-05,
+      "oi": 6793774.0,
+      "vol": 338891.22182
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "NIL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.053219,
+      "funding": 1.25e-05,
+      "oi": 17508010.0,
+      "vol": 496185.6174309999
+    }
+  ],
+  "PAXG": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4430.9,
+      "funding": 1.25e-05,
+      "oi": 5132.788,
+      "vol": 444478.4398000002
+    }
+  ],
+  "PROMPT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.03661,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "BABY": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.011517,
+      "funding": 1.25e-05,
+      "oi": 12041884.0,
+      "vol": 63730.148911
+    }
+  ],
+  "WCT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.039725,
+      "funding": 1.25e-05,
+      "oi": 3622526.0,
+      "vol": 54796.002442
+    }
+  ],
+  "HYPER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.068973,
+      "funding": 1.25e-05,
+      "oi": 1705232.0,
+      "vol": 62377.444666
+    }
+  ],
+  "ZORA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.008653,
+      "funding": 1.25e-05,
+      "oi": 224934956.0,
+      "vol": 773924.3934250002
+    }
+  ],
+  "INIT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.066706,
+      "funding": 1.25e-05,
+      "oi": 4345194.0,
+      "vol": 191695.179275
+    }
+  ],
+  "DOOD": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.001412,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "LAUNCHCOIN": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.060367,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "NXPC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.20932,
+      "funding": 1.25e-05,
+      "oi": 1290668.0,
+      "vol": 47423.58517
+    }
+  ],
+  "SOPH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.004178,
+      "funding": 1.25e-05,
+      "oi": 30369214.0,
+      "vol": 443808.763142
+    }
+  ],
+  "RESOLV": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.018098,
+      "funding": 1.25e-05,
+      "oi": 40621178.0,
+      "vol": 71755.282742
+    }
+  ],
+  "SYRUP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.21251,
+      "funding": 3.16026e-05,
+      "oi": 17342196.0,
+      "vol": 738674.7852599999
+    }
+  ],
+  "PUMP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.003961,
+      "funding": 1.96469e-05,
+      "oi": 46903581558.0,
+      "vol": 119615014.47192599
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "PROVE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.18192,
+      "funding": 1.25e-05,
+      "oi": 586488.0,
+      "vol": 53413.3131
+    }
+  ],
+  "YZY": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.31107,
+      "funding": 0.0,
+      "oi": 0.0,
+      "vol": 0.0
+    }
+  ],
+  "XPL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.092237,
+      "funding": 1.25e-05,
+      "oi": 557432782.0,
+      "vol": 8482987.06736
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "WLFI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.05695,
+      "funding": 1.25e-05,
+      "oi": 199283558.0,
+      "vol": 365489.437177
+    }
+  ],
+  "LINEA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.002696,
+      "funding": 9.55394e-05,
+      "oi": 919698458.0,
+      "vol": 130032.951978
+    }
+  ],
+  "SKY": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.071006,
+      "funding": 1.25e-05,
+      "oi": 35613834.0,
+      "vol": 358898.7485930001
+    }
+  ],
+  "ASTER": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.79519,
+      "funding": 0.0001336069,
+      "oi": 46868824.0,
+      "vol": 39238568.902079955
+    }
+  ],
+  "AVNT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1078,
+      "funding": 1.25e-05,
+      "oi": 5324724.0,
+      "vol": 159244.09048
+    }
+  ],
+  "STBL": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.025684,
+      "funding": 1.25e-05,
+      "oi": 83386610.0,
+      "vol": 175988.338476
+    }
+  ],
+  "0G": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.1943,
+      "funding": 1.25e-05,
+      "oi": 2579044.0,
+      "vol": 185863.34599
+    }
+  ],
+  "HEMI": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.011311,
+      "funding": -0.0002368687,
+      "oi": 116679838.0,
+      "vol": 3209664.367762999
+    }
+  ],
+  "APEX": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.25768,
+      "funding": 0.000509186,
+      "oi": 11217700.0,
+      "vol": 153221.43392
+    }
+  ],
+  "2Z": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.051592,
+      "funding": -0.0001376439,
+      "oi": 16662068.0,
+      "vol": 277363.0490799999
+    }
+  ],
+  "ZEC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1162.2,
+      "funding": 1.25e-05,
+      "oi": 591392.540000001,
+      "vol": 268016691.5190002
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MON": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.025853,
+      "funding": 4.81773e-05,
+      "oi": 1471783384.0,
+      "vol": 7860384.873219999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MET": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.20541,
+      "funding": 1.25e-05,
+      "oi": 11608114.0,
+      "vol": 897303.6946400001
+    }
+  ],
+  "MEGA": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.039587,
+      "funding": 1.25e-05,
+      "oi": 92048314.0,
+      "vol": 282977.2880970001
+    }
+  ],
+  "CC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.109989,
+      "funding": 1.25e-05,
+      "oi": 38843432.0,
+      "vol": 1070765.81922
+    }
+  ],
+  "ICP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 2.6559,
+      "funding": 1.25e-05,
+      "oi": 1358139.8,
+      "vol": 1540276.8028999998
+    }
+  ],
+  "AERO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.54427,
+      "funding": 7.02996e-05,
+      "oi": 29545246.0,
+      "vol": 2324997.0280999998
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "STABLE": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.028377,
+      "funding": 1.25e-05,
+      "oi": 36187228.0,
+      "vol": 56011.804392
+    }
+  ],
+  "FOGO": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.007153,
+      "funding": 1.25e-05,
+      "oi": 38759576.0,
+      "vol": 88213.659747
+    }
+  ],
+  "LIT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 4.7318,
+      "funding": 5.15296e-05,
+      "oi": 43228070.0,
+      "vol": 42665411.33639999
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "XMR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 551.01,
+      "funding": 0.0001499784,
+      "oi": 181242.428,
+      "vol": 22744859.188949995
+    },
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AXS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.95591,
+      "funding": 1.25e-05,
+      "oi": 235593.6,
+      "vol": 116785.490011
+    }
+  ],
+  "DASH": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 74.218,
+      "funding": 3.79895e-05,
+      "oi": 81302.64,
+      "vol": 14188968.140419967
+    }
+  ],
+  "SKR": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.021739,
+      "funding": -0.0006784663,
+      "oi": 117143896.0,
+      "vol": 1788030.5720760003
+    }
+  ],
+  "AZTEC": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.01496,
+      "funding": 1.25e-05,
+      "oi": 41770858.0,
+      "vol": 434244.2396389999
+    }
+  ],
+  "CHIP": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.059024,
+      "funding": 3.47355e-05,
+      "oi": 279067122.0,
+      "vol": 7465161.031904001
+    }
+  ],
+  "GRAM": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 1.4255,
+      "funding": 8.63221e-05,
+      "oi": 21646766.0,
+      "vol": 3536980.0315
+    }
+  ],
+  "CASHCAT": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.24478,
+      "funding": 1.25e-05,
+      "oi": 219892660.0,
+      "vol": 20635571.006210014
+    }
+  ],
+  "PONS": [
+    {
+      "venue": "Hyperliquid",
+      "mark_px": 0.88759,
+      "funding": 1.25e-05,
+      "oi": 132543836.0,
+      "vol": 214143244.80872962
+    }
+  ],
+  "BTC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ETH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LINK-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MATIC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CRV-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SOL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ADA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AVAX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FIL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LTC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DOGE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ATOM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DOT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "UNI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BCH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TRX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NEAR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MKR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XLM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ETC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "COMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WLD-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "APE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "APT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ARB-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BLUR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LDO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "OP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PEPE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SEI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SHIB-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SUI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XRP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TIA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "EIGEN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "JUP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AAVE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BNB-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "JTO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ORDI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "EOS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ICP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DYM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "STRK-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FET-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WOO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PYTH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BONK-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AGIX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "RENDER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "STX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "INJ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "IMX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HBAR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ALGO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GRT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MANA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "RUNE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AXL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AEVO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ASTR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SNX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ARKM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DYDX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CHZ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WIF-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ETHFI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TON-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "W-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MOTHER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MOG-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GOAT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TREMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BODEN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZRO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZK-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TLOS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ONDO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ENA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "IO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KAS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NOT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ENS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FLOKI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TAO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FTM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SAFE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TAIKO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AKT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CAKE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BRETT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SATS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BLAST-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XMR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "THETA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ENJ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "1INCH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XTZ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "UMA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CVX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SUSHI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZRX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PENDLE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DEGEN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MNT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "JASMY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CORE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PEOPLE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GMX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "POPCAT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PRIME-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GALA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AXS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XAI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MEW-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BEAM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NEO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "EGLD-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ALT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PIXEL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TURBO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BOME-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TRB-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZEN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BICO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "OM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DMAIL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MAVIA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZERO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VRTX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MICHI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AURORA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FOXY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PAXG-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GME-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DRIFT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "EURC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "RETARDIO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DAI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "OSMO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NEIRO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HNT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TRY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SUNDOG-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LUCE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TRUMPWIN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CETUS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZBCN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "QTUM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ONT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "REN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PERP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "EUR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ORDER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WBTC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CLV-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "USDE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "POL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "RAY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PNUT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MOODENG-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ID-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XYO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZEC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KSM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GRASS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MAD,RAYDIUM,MADHPJRN6BD8T78RSY7NUSUNWWA2HU8BYPOBZPRHBHV-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SKL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ATH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GHST-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AMPL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HAWKTUAH,RAYDIUM,4GFE6MBDORSY5BLBIUMRGETR6PZCJYFXMDM5EHSGPUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AERO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PIRATE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "POWSCHE,RAYDIUM,8CKISHHJDHJV4LUOIRMLUHQG58CUKBYJRTCP4Z3MCXNF-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BCUT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VET-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "YFI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "G-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MOVE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FARTCOIN,RAYDIUM,9BB6NFECJBCTNNLFKO2FQVQBQ8HHM13KCYYCDQBGPUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "QNT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MOCA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "USUAL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "THE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PEAQ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BABYDOGE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GLMR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SCRT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZEREBRO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MORPHO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "COOKIE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VIRTUAL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CIG,RAYDIUM,EXRQAUXS967FDKYMNXO4EQZEQIHEUBSTBCXPXXWPUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AITECH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SAGA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TRUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PENGU-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AIXBT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AI16Z-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KOMA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "OCEAN,UNISWAP_V3_BASE,0X1D8148823C46B9C55B678CA84BEB82BC3523ADB1-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ORCA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NFT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MNRY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VVV-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NMR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SPX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VINE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BERA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KRL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ME-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LAYER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "B3-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PAIN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "IP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SDM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KAITO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KDA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SSV-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HYPE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "S-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "REZ-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BTRUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BANANA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ELX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GNO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MAJOR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "API3-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZETA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NIL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MELANIA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BADGER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GAS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FORTH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TROY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "STEEM-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "BABY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WCT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AERGO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "VOXEL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MAGIC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ALPACA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SKITTEN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SIGN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "IOTX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DINNER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "KERNEL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SOPH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WSTETH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LPT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TIBBIR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MASK-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DAKU-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SYRUP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "FLR-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "NEWT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PUMP-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ES-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ACX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ERA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ZORA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CRO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HUMA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "OMNI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PROVE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "USELESS-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WLFI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "SKY-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TSLAX-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LINEA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PROMPT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "HOLO-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "IOTA-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ASTER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XPL-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "AVNT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "GOONER-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "2Z-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DODGERSWIN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MET-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "TREE-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "MON-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "PIPPIN-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "ANIME-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "DASH-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LIT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "LUNC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XAUT-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "WTI-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XAG-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "XDC-USD": [
+    {
+      "venue": "dYdX"
+    }
+  ],
+  "CRCL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MU": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "CBRS": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SPY": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AXTI": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "QQQ": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "COPPER": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "NBIS": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SOXL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "INTC": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "COHR": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AMZN": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "WTIOIL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "1000PEPE": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MRVL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "NVDA": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "RKLB": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "TSM": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "USDJPY": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "OPENAI": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "PLTR": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SPCX": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "COIN": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "DRAM": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "META": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "PLATINUM": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "BE": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AAPL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "1000BONK": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "XAG": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MINIMAX": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MSFT": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "HOOD": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AEVO": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AMD": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ANTHROPIC": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "NFLX": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "XAU": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SKHX": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "TSLA": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "AAOI": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MSTR": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "GOOGL": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SNDK": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "LITE": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "SMSN": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "JITO": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "ZHIPU": [
+    {
+      "venue": "Aevo"
+    }
+  ],
+  "MESSAGE": [
+    {
+      "venue": "GMX"
+    }
+  ]
+}
