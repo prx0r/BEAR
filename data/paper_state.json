@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-09-06T08:14:33.737087+00:00",
+  "capital": 208.9633,
+  "positions": [],
+  "equity_curve_len": 635,
+  "trades_len": 104,
+  "current_regime": "SKIP",
+  "btc_30d_return": 0.2299,
+  "btc_30d_threshold": 0.1,
+  "current_scores_top10": [
+    {
+      "symbol": "GALA",
+      "score": 55.83,
+      "signals": {
+        "volume_death": 91.93,
+        "deep_decline": 43.26,
+        "reversal_8w": 63.39,
+        "funding_pressure": 44.32,
+        "momentum": 84.31
+      }
+    },
+    {
+      "symbol": "IMX",
+      "score": 46.18,
+      "signals": {
+        "volume_death": 93.57,
+        "deep_decline": 22.65,
+        "reversal_8w": 68.78,
+        "funding_pressure": 30.3,
+        "momentum": 75.75
+      }
+    },
+    {
+      "symbol": "SHIB",
+      "score": 45.95,
+      "signals": {
+        "volume_death": 91.52,
+        "deep_decline": 10.17,
+        "reversal_8w": 87.83,
+        "funding_pressure": 25.68,
+        "momentum": 84.81
+      }
+    },
+    {
+      "symbol": "ATOM",
+      "score": 42.89,
+      "signals": {
+        "volume_death": 80.16,
+        "deep_decline": 22.25,
+        "reversal_8w": 72.38,
+        "funding_pressure": 24.98,
+        "momentum": 80.58
+      }
+    },
+    {
+      "symbol": "FET",
+      "score": 42.2,
+      "signals": {
+        "volume_death": 69.9,
+        "deep_decline": 31.48,
+        "reversal_8w": 71.32,
+        "funding_pressure": 24.97,
+        "momentum": 76.36
+      }
+    },
+    {
+      "symbol": "WLD",
+      "score": 42.06,
+      "signals": {
+        "volume_death": 93.48,
+        "deep_decline": 33.3,
+        "reversal_8w": 64.23,
+        "funding_pressure": 21.4,
+        "momentum": 79.78
+      }
+    },
+    {
+      "symbol": "ARB",
+      "score": 41.54,
+      "signals": {
+        "volume_death": 34.31,
+        "deep_decline": 0.0,
+        "reversal_8w": 99.58,
+        "funding_pressure": 23.99,
+        "momentum": 99.8
+      }
+    },
+    {
+      "symbol": "SUSHI",
+      "score": 40.31,
+      "signals": {
+        "volume_death": 72.13,
+        "deep_decline": 3.91,
+        "reversal_8w": 90.48,
+        "funding_pressure": 17.55,
+        "momentum": 94.87
+      }
+    },
+    {
+      "symbol": "DYDX",
+      "score": 40.24,
+      "signals": {
+        "volume_death": 96.16,
+        "deep_decline": 24.86,
+        "reversal_8w": 68.36,
+        "funding_pressure": 16.57,
+        "momentum": 87.73
+      }
+    },
+    {
+      "symbol": "PEPE",
+      "score": 40.06,
+      "signals": {
+        "volume_death": 77.79,
+        "deep_decline": 10.48,
+        "reversal_8w": 75.45,
+        "funding_pressure": 24.92,
+        "momentum": 62.07
+      }
+    }
+  ],
+  "would_short": [
+    "GALA",
+    "IMX",
+    "SHIB",
+    "ATOM"
+  ]
+}
