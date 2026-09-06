@@ -464,6 +464,56 @@ def generate_json_data() -> dict:
             pass
     squeeze_recovery.sort(key=lambda x: x["score"], reverse=True)
 
+    # ── Leaderboard 4: Synthesis (combines all 3 — maximum conviction) ──
+    pa_map = {s["symbol"]: s for s in price_action}
+    dog_map = {s["symbol"]: s for s in dogshit}
+    sq_map = {s["symbol"]: s for s in squeeze_recovery}
+    all_syms = set(list(pa_map.keys()) + list(dog_map.keys()) + list(sq_map.keys()))
+
+    synthesis = []
+    for sym in all_syms:
+        pa = pa_map.get(sym, {})
+        dog = dog_map.get(sym, {})
+        sq = sq_map.get(sym, {})
+        m = next((m for m in markets if m["symbol"] == sym), {})
+
+        # How many leaderboards is this asset in? (confluence)
+        in_count = (1 if pa else 0) + (1 if dog else 0) + (1 if sq else 0)
+
+        pa_score = pa.get("score", 0)
+        dog_score = dog.get("score", 0)
+        sq_score = sq.get("score", 0)
+
+        # Synthesis: weighted combo + confluence bonus
+        # Confluence is the key — being in 2+ boards is much stronger
+        base = pa_score * 0.35 + dog_score * 0.25 + sq_score * 0.25
+        confluence_bonus = in_count * 15  # +15 per board
+        # Penalty if only in 1 board (less conviction)
+        if in_count == 1:
+            base *= 0.6
+
+        total = min(100, base + confluence_bonus)
+
+        # Evidence: what each board says about this asset
+        evidence = []
+        if pa: evidence.append(f"Price: overextended (rev={pa.get('reversal',0):.0f})")
+        if dog: evidence.append(f"Fundamentals: garbage (score={dog.get('score',0):.0f})")
+        if sq: evidence.append(f"Squeeze: just blew out (+{sq.get('pump_from_low',0):.0f}%)")
+
+        synthesis.append({
+            "symbol": sym,
+            "sector": pa.get("sector") or dog.get("sector") or sq.get("sector") or "other",
+            "score": round(total, 1),
+            "in_boards": in_count,
+            "price_action": pa_score,
+            "dogshit": dog_score,
+            "squeeze": sq_score,
+            "evidence": evidence,
+            "mark_px": m.get("mark_px", 0),
+            "funding": m.get("funding", 0),
+        })
+    synthesis.sort(key=lambda x: x["score"], reverse=True)
+
     # Also build old-format short_rankings for backward compat
     short_rankings = price_action[:20]
 
@@ -513,6 +563,7 @@ def generate_json_data() -> dict:
             "price_action": price_action[:20],
             "dogshit": dogshit[:20],
             "squeeze_recovery": squeeze_recovery[:20],
+            "synthesis": synthesis[:20],
         },
         "factors": factors,
         "candles": candles,
