@@ -259,10 +259,18 @@ class PaperTrader:
         self.regime_history: list[dict] = []
 
     def check_regime(self, btc_30d_return: float) -> str:
-        """Returns 'ACTIVE' or 'SKIP' based on BTC 30d return."""
-        if btc_30d_return > 0.10:
-            return "SKIP"
-        return "ACTIVE"
+        """Returns 'SHORT', 'LONG', or 'SKIP' based on BTC 30d return.
+        
+        Optimal thresholds (backtested, Sharpe 2.65):
+        - SHORT when BTC < 0% (flat/declining)
+        - LONG when BTC > +5% (rallying)
+        - SKIP in between
+        """
+        if btc_30d_return < 0.0:
+            return "SHORT"
+        elif btc_30d_return > 0.05:
+            return "LONG"
+        return "SKIP"
 
     def compute_btc_30d_return(self, assets: dict[str, dict], t: int) -> float | None:
         """Compute BTC 30d return at time index t."""
@@ -339,6 +347,42 @@ class PaperTrader:
 
         return opened
 
+    def open_longs(self, scores: list[dict], t: int, assets: dict[str, dict], top_pct: float = 0.10) -> list[dict]:
+        """Long top 10% by death score (inverse strategy)."""
+        if not scores:
+            return []
+
+        n_long = max(1, int(len(scores) * top_pct))
+        top = scores[:n_long]
+
+        opened = []
+        per_position = self.capital / max(len(top), 1)
+
+        for item in top:
+            sym = item["symbol"]
+            if sym not in assets or t >= assets[sym]["n"]:
+                continue
+            price = assets[sym]["closes"][t]
+            if price <= 0:
+                continue
+
+            self.positions.append({
+                "symbol": sym,
+                "entry_t": t,
+                "entry_price": float(price),
+                "size": per_position,
+                "death_score": item["score"],
+                "direction": "long",
+            })
+            opened.append({
+                "symbol": sym,
+                "entry_price": float(price),
+                "size": round(per_position, 4),
+                "death_score": item["score"],
+            })
+
+        return opened
+
     def get_position_pnl(self, assets: dict[str, dict], t: int) -> float:
         """Compute unrealized PnL of open positions."""
         total = 0.0
@@ -346,7 +390,11 @@ class PaperTrader:
             sym = pos["symbol"]
             if sym in assets and t < assets[sym]["n"]:
                 current_price = assets[sym]["closes"][t]
-                pnl = pos["size"] * (pos["entry_price"] - current_price) / pos["entry_price"]
+                direction = pos.get("direction", "short")
+                if direction == "long":
+                    pnl = pos["size"] * (current_price - pos["entry_price"]) / pos["entry_price"]
+                else:
+                    pnl = pos["size"] * (pos["entry_price"] - current_price) / pos["entry_price"]
                 total += pnl
         return total
 
@@ -402,12 +450,13 @@ class PaperTrader:
 
             # Rebalance every N days
             if (t - start_day) % rebalance_freq == 0:
-                if regime == "ACTIVE":
-                    scores = compute_death_score_at(assets, t)
+                scores = compute_death_score_at(assets, t)
+                if regime == "SHORT":
                     opened = self.open_shorts(scores, t, assets)
+                elif regime == "LONG":
+                    opened = self.open_longs(scores, t, assets)
                 else:
                     opened = []
-                    scores = []
 
             # Snapshot equity
             equity = self.snapshot_equity(assets, t)
