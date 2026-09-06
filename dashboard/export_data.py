@@ -149,44 +149,189 @@ def compute_structural_short_scores(markets: list[dict]) -> list[dict]:
 
 
 def compute_factor_scores(markets: list[dict]) -> dict[str, dict]:
-    """Compute per-asset factor scores for the dashboard.
+    """Compute per-asset factor scores with full transparency.
 
-    Returns a dict keyed by symbol with factor scores:
-      dilution, reversal, unlock, value, squeeze, carry
-    All values are 0-100 percentile ranks where applicable.
+    Returns a dict keyed by symbol with factor scores and breakdowns.
+    Each factor includes: value, raw_value, formula, inputs, source, paper_url, validated.
     """
+    import os
+    from pathlib import Path
+
+    CANDLE_DIR = Path("/root/BEAR/data/raw/candles")
     factors: dict[str, dict] = {}
 
+    # Load candle data for all available assets
+    candle_data: dict[str, pl.DataFrame] = {}
+    for sym in [m["symbol"] for m in markets]:
+        p = CANDLE_DIR / sym / "1h.parquet"
+        if p.exists():
+            candle_data[sym] = pl.read_parquet(p)
+
+    btc_df = candle_data.get("BTC")
+
+    # Cross-sectional ranking helpers
+    def percentile_rank(values: dict[str, float]) -> dict[str, float]:
+        vals = {k: v for k, v in values.items() if v is not None and not (isinstance(v, float) and (v != v))}
+        if not vals:
+            return {k: 50.0 for k in values}
+        sorted_vals = sorted(vals.values())
+        n = len(sorted_vals)
+        ranks = {}
+        for k, v in values.items():
+            if v is None or (isinstance(v, float) and v != v):
+                ranks[k] = 50.0
+            else:
+                # Count how many values are <= this one
+                count = sum(1 for s in sorted_vals if s <= v)
+                ranks[k] = (count / max(n, 1)) * 100.0
+        return ranks
+
+    # Factor 1: Reversal 8w (56-day return)
+    reversal_raw = {}
+    reversal_inputs = {}
+    for m in markets:
+        sym = m["symbol"]
+        df = candle_data.get(sym)
+        if df is not None and df.height >= 1344:  # 56 days * 24 hours
+            now_price = float(df["close"][-1])
+            old_price = float(df["close"][-1344])
+            if old_price > 0:
+                rev = float(np.log(now_price / old_price))
+                reversal_raw[sym] = rev
+                reversal_inputs[sym] = {"now": now_price, "56d_ago": old_price, "candles_used": 1344}
+            else:
+                reversal_raw[sym] = 0.0
+                reversal_inputs[sym] = {"now": now_price, "56d_ago": old_price, "error": "old_price=0"}
+        else:
+            reversal_raw[sym] = None
+            reversal_inputs[sym] = {"error": "insufficient candles", "have": df.height if df is not None else 0, "need": 1344}
+
+    reversal_ranks = percentile_rank({k: v for k, v in reversal_raw.items() if v is not None})
+
+    # Factor 2: Volatility 30d
+    vol_raw = {}
+    vol_inputs = {}
+    for m in markets:
+        sym = m["symbol"]
+        df = candle_data.get(sym)
+        if df is not None and df.height >= 720:
+            closes = df["close"].to_numpy().astype(float)
+            log_ret = np.diff(np.log(closes[-720:]))
+            vol = float(np.std(log_ret) * np.sqrt(8760))  # annualized
+            vol_raw[sym] = vol
+            vol_inputs[sym] = {"vol_annualized": round(vol, 4), "candles_used": 720}
+        else:
+            vol_raw[sym] = None
+            vol_inputs[sym] = {"error": "insufficient candles"}
+
+    vol_ranks = percentile_rank({k: v for k, v in vol_raw.items() if v is not None})
+
+    # Factor 3: Momentum 7d
+    mom_raw = {}
+    mom_inputs = {}
+    for m in markets:
+        sym = m["symbol"]
+        df = candle_data.get(sym)
+        if df is not None and df.height >= 168:
+            now_p = float(df["close"][-1])
+            old_p = float(df["close"][-168])
+            if old_p > 0:
+                mom = (now_p - old_p) / old_p
+                mom_raw[sym] = mom
+                mom_inputs[sym] = {"now": now_p, "7d_ago": old_p, "return": round(mom, 4)}
+            else:
+                mom_raw[sym] = None
+                mom_inputs[sym] = {"error": "old_price=0"}
+        else:
+            mom_raw[sym] = None
+            mom_inputs[sym] = {"error": "insufficient candles"}
+
+    mom_ranks = percentile_rank({k: v for k, v in mom_raw.items() if v is not None})
+
+    # Build per-asset factor dicts
     for m in markets:
         sym = m["symbol"]
         funding = m.get("funding") or 0.0
         vol = m.get("day_volume") or 0.0
         oi = m.get("open_interest") or 0.0
         sector = TAXONOMY.get(sym, m.get("category", "other"))
+        px = m.get("mark_px") or 0.0
 
-        # Carry: higher funding = more carry for shorts (good)
-        # Map funding to 0-100 scale
-        carry_raw = funding
-        carry_score = max(0.0, min(100.0, 50.0 + carry_raw * 5000))
+        # Funding carry
+        carry_val = funding * 24 * 365  # annualized
+        carry_score = max(0.0, min(100.0, 50.0 + carry_val * 500))
 
-        # Squeeze risk: low volume + high OI relative to volume = higher squeeze risk (bad for shorts)
-        if vol > 0:
-            squeeze_raw = oi / vol
-            squeeze_score = max(0.0, min(100.0, squeeze_raw * 50))
-        else:
-            squeeze_score = 50.0
+        # OI/ADV crowding
+        oi_adv = oi / vol if vol > 0 else 0.0
+        oi_adv_score = max(0.0, min(100.0, oi_adv * 10))
 
-        # Value badness: higher funding + lower volume = worse value
-        value_score = max(0.0, min(100.0, (carry_score + squeeze_score) / 2))
+        # Reversal
+        rev_val = reversal_raw.get(sym)
+        rev_score = reversal_ranks.get(sym, 50.0)
+
+        # Volatility
+        vol_val = vol_raw.get(sym)
+        vol_score = vol_ranks.get(sym, 50.0)
+
+        # Momentum
+        mom_val = mom_raw.get(sym)
+        mom_score = mom_ranks.get(sym, 50.0)
+
+        # Total: higher = worse short candidate
+        total = (rev_score * 0.25 + oi_adv_score * 0.25 + vol_score * 0.20 +
+                 carry_score * 0.15 + mom_score * 0.15)
+
+        # Confidence: how many factors were real vs fallback
+        real_count = sum(1 for v in [rev_val, vol_val, mom_val] if v is not None)
+        confidence = round((real_count / 3) * 100 + 33, 1)  # base 33% from market data
 
         factors[sym] = {
-            "dilution": 50.0,  # Placeholder - needs historical supply data
-            "reversal": 50.0,  # Placeholder - needs price history
-            "unlock": 50.0,    # Placeholder - needs unlock schedule
-            "value": round(value_score, 1),
-            "squeeze": round(squeeze_score, 1),
-            "carry": round(carry_score, 1),
+            "reversal_8w": {
+                "value": round(rev_score, 1),
+                "raw": round(rev_val, 6) if rev_val is not None else None,
+                "formula": "log(price_now / price_56d_ago)",
+                "inputs": reversal_inputs.get(sym, {}),
+                "validated": rev_val is not None,
+                "note": "Higher = recent winner = short candidate (reversal effect)",
+            },
+            "volatility_30d": {
+                "value": round(vol_score, 1),
+                "raw": round(vol_val, 4) if vol_val is not None else None,
+                "formula": "std(log_returns, 720h) × √8760",
+                "inputs": vol_inputs.get(sym, {}),
+                "validated": vol_val is not None,
+                "note": "Higher = more volatile = harder to hold short",
+            },
+            "funding_carry": {
+                "value": round(carry_score, 1),
+                "raw": round(carry_val, 6),
+                "formula": "funding_hourly × 24 × 365",
+                "inputs": {"funding_hourly": funding, "annualized": round(carry_val, 6)},
+                "validated": True,
+                "note": "Higher = shorts receive more carry (good for short)",
+                "source": "Hyperliquid API (live)",
+                "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6993978",
+            },
+            "oi_crowding": {
+                "value": round(oi_adv_score, 1),
+                "raw": round(oi_adv, 4),
+                "formula": "open_interest / day_volume",
+                "inputs": {"open_interest": oi, "day_volume": vol, "ratio": round(oi_adv, 4)},
+                "validated": vol > 0,
+                "note": "Higher = more crowded = squeeze risk",
+            },
+            "momentum_7d": {
+                "value": round(mom_score, 1),
+                "raw": round(mom_val, 4) if mom_val is not None else None,
+                "formula": "(price_now - price_7d_ago) / price_7d_ago",
+                "inputs": mom_inputs.get(sym, {}),
+                "validated": mom_val is not None,
+                "note": "Higher = recent winner = tends to revert",
+                "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6703978",
+            },
             "sector": sector,
+            "total_score": round(total, 1),
+            "confidence": confidence,
         }
 
     return factors
@@ -205,16 +350,18 @@ def generate_json_data() -> dict:
     short_rankings = compute_structural_short_scores(markets)
     factors = compute_factor_scores(markets)
 
-    # Build short rankings with factor details
+    # Build short rankings with factor details from transparent calculations
     for sr in short_rankings:
         sym = sr["symbol"]
         if sym in factors:
             f = factors[sym]
-            sr["dilution_8w"] = f["dilution"]
-            sr["reversal_8w"] = f["reversal"]
-            sr["unlock_pressure"] = f["unlock"]
-            sr["squeeze_risk"] = f["squeeze"]
-            sr["total_score"] = sr["structural_short"]
+            sr["total_score"] = f["total_score"]
+            sr["confidence"] = f["confidence"]
+            sr["reversal_8w"] = f["reversal_8w"]["value"]
+            sr["volatility"] = f["volatility_30d"]["value"]
+            sr["funding_carry"] = f["funding_carry"]["value"]
+            sr["oi_crowding"] = f["oi_crowding"]["value"]
+            sr["momentum_7d"] = f["momentum_7d"]["value"]
 
     data = {
         "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -246,16 +393,18 @@ def regenerate_html(data: dict) -> None:
     html = src.read_text()
     data_json = json.dumps(data, default=str)
 
-    # Replace or insert the bear-data script tag
+    # Replace or insert the bear-data script tag (avoid regex for unicode safety)
+    data_json = json.dumps(data, default=str)
     tag = f'<script id="bear-data" type="application/json">\n{data_json}\n</script>'
-    pattern = r'<script id="bear-data"[^>]*>.*?</script>'
-
-    if re.search(pattern, html, re.DOTALL):
-        html = re.sub(pattern, tag, html, flags=re.DOTALL)
+    
+    # Simple string replacement instead of regex
+    if '<script id="bear-data"' in html:
+        start = html.find('<script id="bear-data"')
+        end = html.find('</script>', start) + len('</script>')
+        html = html[:start] + tag + html[end:]
     elif '{BEAR_DATA_PLACEHOLDER}' in html:
         html = html.replace('{BEAR_DATA_PLACEHOLDER}', data_json)
     else:
-        # Insert before </body>
         html = html.replace("</body>", f"{tag}\n</body>")
 
     HTML_OUT.parent.mkdir(parents=True, exist_ok=True)

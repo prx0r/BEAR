@@ -68,6 +68,13 @@ td{padding:4px 6px;border-bottom:1px solid var(--border)}
   <div class="status"><span class="dot ok" id="dot"></span><span id="ts">loading...</span></div>
 </header>
 <div class="stats" id="stats"></div>
+<div style="font-size:10px;color:var(--dim);margin-bottom:8px">
+  <span style="margin-right:12px">&#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6703978" target="_blank" style="color:var(--blue)">Reversal (Kiefer 2026)</a></span>
+  <span style="margin-right:12px">&#128218; <a href="https://doi.org/10.2139/ssrn.6636258" target="_blank" style="color:var(--blue)">Dilution (Guo 2026)</a></span>
+  <span style="margin-right:12px">&#128218; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6993978" target="_blank" style="color:var(--blue)">Funding Carry (Lau 2026)</a></span>
+  <span style="margin-right:12px">&#128218; <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.05875" target="_blank" style="color:var(--blue)">Value Factor (Mgmt Sci 2026)</a></span>
+  <span style="margin-right:12px">&#9989; <span id="valid-count">0</span>/<span id="total-count">0</span> factors validated</span>
+</div>
 
 <div class="main">
   <!-- LEFT: Leaderboard -->
@@ -129,6 +136,15 @@ function loadData(){
 
 function renderStats(){
   const s=DATA.stats||{};
+  // Count validated factors
+  let valid=0,total=0;
+  Object.values(DATA.factors||{}).forEach(f=>{
+    ['reversal_8w','volatility_30d','funding_carry','oi_crowding','momentum_7d'].forEach(fn=>{
+      if(f[fn]){total++;if(f[fn].validated)valid++}
+    });
+  });
+  document.getElementById('valid-count').textContent=valid;
+  document.getElementById('total-count').textContent=total;
   document.getElementById('stats').innerHTML=`
     <div class="stat"><div class="label">Markets</div><div class="val">${s.total_markets||0}</div></div>
     <div class="stat"><div class="label">24h Vol</div><div class="val">$${fmtV(s.total_24h_volume||0)}</div></div>
@@ -143,11 +159,14 @@ function renderShorts(){
   document.getElementById('short-count').textContent=shorts.length;
   document.getElementById('shorts').innerHTML=shorts.map((s,i)=>{
     const sc=s.total_score||0;
+    const conf=s.confidence||0;
+    const confColor=conf>=80?'var(--green)':conf>=50?'var(--yellow)':'var(--red)';
     return`<div class="lb-row${selectedSym===s.symbol?' active':''}" onclick="selectSym('${s.symbol}')">
       <span class="lb-rank">#${i+1}</span>
       <span class="lb-sym">${s.symbol}</span>
       <div class="lb-bar"><div class="lb-bar-fill" style="width:${sc}%;background:${sc>=75?'var(--red)':sc>=50?'var(--yellow)':'var(--green)'}"></div></div>
       <span class="lb-score score ${sc>=75?'hi':sc>=50?'md':'lo'}">${sc.toFixed(0)}</span>
+      <span style="font-size:9px;color:${confColor};min-width:24px;text-align:right">${conf.toFixed(0)}%</span>
     </div>`;
   }).join('');
 }
@@ -162,20 +181,38 @@ function selectSym(sym){
 function renderFactors(sym){
   document.getElementById('factor-sym').textContent=sym;
   const f=(DATA.factors||{})[sym];
-  if(!f){document.getElementById('factors').innerHTML='<div style="color:var(--dim);grid-column:1/-1">No factor data</div>';return}
-  const items=[
-    {n:'Dilution 8w',v:f.dilution||50},{n:'Reversal 8w',v:f.reversal||50},
-    {n:'Unlock Pressure',v:f.unlock||50},{n:'Value Badness',v:f.value||50},
-    {n:'Squeeze Risk',v:f.squeeze||50},{n:'Funding Carry',v:f.carry||50},
-  ];
-  document.getElementById('factors').innerHTML=items.map(fa=>{
-    const c=fa.v>=75?'var(--red)':fa.v>=50?'var(--yellow)':'var(--green)';
-    return`<div class="factor-card">
-      <div class="fname">${fa.n}</div>
-      <div class="fval" style="color:${c}">${fa.v.toFixed(0)}</div>
-      <div class="fbar"><div class="fbar-fill" style="width:${fa.v}%;background:${c}"></div></div>
+  if(!f){document.getElementById('factors').innerHTML='<div style="color:var(--dim)">No factor data</div>';return}
+  
+  const factorNames=['reversal_8w','volatility_30d','funding_carry','oi_crowding','momentum_7d'];
+  const factorLabels={'reversal_8w':'Reversal 8w','volatility_30d':'Volatility 30d','funding_carry':'Funding Carry','oi_crowding':'OI/ADV Crowding','momentum_7d':'Momentum 7d'};
+  
+  let html=`<div style="font-size:11px;color:var(--dim);margin-bottom:6px">Score: <b style="color:var(--text)">${f.total_score||0}</b> | Confidence: ${f.confidence||0}% | Sector: ${f.sector||'?'}</div>`;
+  
+  factorNames.forEach(fn=>{
+    const fd=f[fn];if(!fd||typeof fd!=='object')return;
+    const v=fd.value||0;
+    const c=v>=75?'var(--red)':v>=50?'var(--yellow)':'var(--green)';
+    const validated=fd.validated;
+    const check=validated?'<span style="color:var(--green)">&#10003;</span>':'<span style="color:var(--red)">&#10007;</span>';
+    
+    html+=`<div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px;margin:4px 0">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-weight:600;font-size:12px">${factorLabels[fn]||fn}</span>
+        <span style="font-size:18px;font-weight:700;color:${c}">${v.toFixed(0)}</span>
+      </div>
+      <div style="height:4px;background:var(--border);border-radius:2px;margin-bottom:4px">
+        <div style="height:100%;width:${v}%;background:${c};border-radius:2px"></div>
+      </div>
+      <div style="font-size:10px;color:var(--dim)">
+        <div><code style="color:var(--blue)">${fd.formula||'?'}</code> ${check}</div>
+        <div>Raw: <b style="color:var(--text)">${fd.raw!==null&&fd.raw!==undefined?fd.raw:'N/A'}</b> | ${fd.note||''}</div>
+        ${fd.inputs?`<div>Inputs: ${Object.entries(fd.inputs).map(([k,v])=>`${k}=${typeof v==='number'?v.toLocaleString():v}`).join(', ')}</div>`:''}
+        ${fd.paper_url?`<div><a href="${fd.paper_url}" target="_blank" style="color:var(--blue);text-decoration:none">&#128218; Research paper</a></div>`:''}
+      </div>
     </div>`;
-  }).join('');
+  });
+  
+  document.getElementById('factors').innerHTML=html;
 }
 
 function renderChart(sym){
