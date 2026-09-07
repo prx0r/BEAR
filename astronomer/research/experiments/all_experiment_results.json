@@ -1,0 +1,61 @@
+{
+  "exp1_bearish_run_length": {
+    "description": "Optimal number of consecutive bearish calls before shorting",
+    "optimal": "2 consecutive bearish calls, then short 7d",
+    "timeless_run2": {
+      "n": 19,
+      "win_rate": 0.74,
+      "mean_7d": 0.0253
+    },
+    "xo_run2": {
+      "n": 3,
+      "win_rate": 0.67,
+      "mean_7d": 0.0536
+    },
+    "astro_run2": {
+      "n": 10,
+      "win_rate": 0.6,
+      "mean_7d": 0.0178
+    }
+  },
+  "exp2_holding_period": {
+    "timeless_best": "48h (56% win, +0.07%)",
+    "xo_best": "168h (54% win, -0.19%)",
+    "astro_best": "12h (58% win, +0.16%)"
+  },
+  "exp3_streak_continuation": {
+    "xo_after_3x_bullish": {
+      "n": 9,
+      "win_rate": 0.78,
+      "mean_24h": 0.0247
+    },
+    "xo_after_4x_bullish": {
+      "n": 7,
+      "win_rate": 0.86,
+      "mean_24h": 0.0253
+    },
+    "key_finding": "XO bullish streaks self-reinforce at 78-86%"
+  },
+  "exp5_regime_accuracy": {
+    "timeless": 0.26,
+    "xo": 0.25,
+    "astro": 0.27,
+    "key_finding": "Traders do NOT predict regime transitions"
+  },
+  "exp6_win_streak": {
+    "timeless_after_2_wins": {
+      "n": 112,
+      "win_rate": 0.61
+    },
+    "timeless_after_4_wins": {
+      "n": 41,
+      "win_rate": 0.63
+    },
+    "key_finding": "Timeless hot streaks continue at 61-63%"
+  },
+  "exp8_risk_reward": {
+    "timeless_mfe_mae_ratio": 0.9,
+    "xo_mfe_mae_ratio": 0.7,
+    "key_finding": "Win on frequency, not magnitude"
+  }
+}
