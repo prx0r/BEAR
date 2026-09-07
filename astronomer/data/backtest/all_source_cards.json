@@ -524,5 +524,220 @@
     "regimes": {
       "RANGE": 1
     }
+  },
+  "lBattleRhino": {
+    "handle": "lBattleRhino",
+    "category": "tactical",
+    "total_tweets": 260,
+    "total_events": 260,
+    "event_mix": {
+      "VIEW": 207,
+      "NON_SIGNAL": 6,
+      "CALL": 21,
+      "RETROSPECTIVE": 26
+    },
+    "call_events": 6,
+    "outcomes": 6,
+    "4h": {
+      "n": 6,
+      "win_rate": 0.1667,
+      "mean_return": -0.004576,
+      "sharpe": -11.37,
+      "pf": 0.06
+    },
+    "24h": {
+      "n": 6,
+      "win_rate": 0.5,
+      "mean_return": -0.001902,
+      "sharpe": -1.51
+    },
+    "regimes": {
+      "DOWN": 1,
+      "UP": 3,
+      "RANGE": 2
+    }
+  },
+  "ByzGeneral": {
+    "handle": "ByzGeneral",
+    "category": "derivative",
+    "total_tweets": 309,
+    "total_events": 309,
+    "event_mix": {
+      "VIEW": 271,
+      "CALL": 22,
+      "RETROSPECTIVE": 15,
+      "NON_SIGNAL": 1
+    },
+    "call_events": 6,
+    "outcomes": 6,
+    "4h": {
+      "n": 6,
+      "win_rate": 0.3333,
+      "mean_return": -0.002436,
+      "sharpe": -6.32,
+      "pf": 0.46
+    },
+    "24h": {
+      "n": 6,
+      "win_rate": 0.1667,
+      "mean_return": -0.016299,
+      "sharpe": -6.55
+    },
+    "regimes": {
+      "UP": 5,
+      "RANGE": 1
+    }
+  },
+  "0xLoris": {
+    "handle": "0xLoris",
+    "category": "derivative",
+    "total_tweets": 89,
+    "total_events": 89,
+    "event_mix": {
+      "VIEW": 76,
+      "RETROSPECTIVE": 6,
+      "NON_SIGNAL": 2,
+      "CALL": 3,
+      "OBSERVATION": 2
+    },
+    "call_events": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "ai_9684xtpa": {
+    "handle": "ai_9684xtpa",
+    "category": "onchain",
+    "total_tweets": 253,
+    "total_events": 253,
+    "event_mix": {
+      "VIEW": 203,
+      "OBSERVATION": 48,
+      "CALL": 2
+    },
+    "call_events": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.003274,
+      "sharpe": 0.0,
+      "pf": 0.0
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.03092,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "RANGE": 1
+    }
+  },
+  "janklimo": {
+    "handle": "janklimo",
+    "category": "hl",
+    "total_tweets": 37,
+    "total_events": 37,
+    "event_mix": {
+      "VIEW": 32,
+      "RETROSPECTIVE": 3,
+      "CALL": 2
+    },
+    "call_events": 1,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "chrono_chartist": {
+    "handle": "chrono_chartist",
+    "category": "regime",
+    "total_tweets": 288,
+    "total_events": 288,
+    "event_mix": {
+      "VIEW": 248,
+      "RETROSPECTIVE": 25,
+      "CALL": 11,
+      "OBSERVATION": 3,
+      "NON_SIGNAL": 1
+    },
+    "call_events": 2,
+    "outcomes": 2,
+    "4h": {
+      "n": 2,
+      "win_rate": 1.0,
+      "mean_return": 0.004066,
+      "sharpe": 28.02,
+      "pf": Infinity
+    },
+    "24h": {
+      "n": 2,
+      "win_rate": 1.0,
+      "mean_return": 0.009102,
+      "sharpe": 176.28
+    },
+    "regimes": {
+      "RANGE": 1,
+      "DOWN": 1
+    }
+  },
+  "_Checkmatey_": {
+    "handle": "_Checkmatey_",
+    "category": "regime",
+    "total_tweets": 260,
+    "total_events": 260,
+    "event_mix": {
+      "VIEW": 202,
+      "RETROSPECTIVE": 35,
+      "CALL": 13,
+      "NON_SIGNAL": 7,
+      "OBSERVATION": 3
+    },
+    "call_events": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 1.0,
+      "mean_return": 0.012301,
+      "sharpe": 0.0,
+      "pf": Infinity
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 1.0,
+      "mean_return": 0.073266,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "UP": 1
+    }
+  },
+  "0xngmi": {
+    "handle": "0xngmi",
+    "category": "fundamental",
+    "total_tweets": 32,
+    "total_events": 32,
+    "event_mix": {
+      "VIEW": 18,
+      "RETROSPECTIVE": 11,
+      "CALL": 3
+    },
+    "call_events": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "yeon__": {
+    "handle": "yeon__",
+    "category": "meme",
+    "total_tweets": 53,
+    "total_events": 53,
+    "event_mix": {
+      "VIEW": 42,
+      "NON_SIGNAL": 1,
+      "CALL": 3,
+      "OBSERVATION": 2,
+      "RETROSPECTIVE": 5
+    },
+    "call_events": 0,
+    "outcomes": 0,
+    "regimes": {}
   }
 }
