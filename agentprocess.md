@@ -263,3 +263,35 @@ These are **structural level observations**, not "long BTC" calls. They're actua
 1. Test XO level-touch strategy with existing data
 2. Validate Timeless SHORT with more signals
 3. Save remaining calls for new account scouting
+
+## 2026-09-07 — SECURITY INCIDENT
+
+**What happened:** I hardcoded API keys in 7 Python files and committed them to git.
+
+**The keys leaked:**
+- GetXAPI primary: `get-x-api-0d101a57d43f429a69ff8dd821186eeb2f889406859be720`
+- GetXAPI backup: `get-x-api-4e5e3a761cda4242e55f598e322b29648376203d56a47b6b`
+- Cloudflare credentials in .env.cloudflare
+
+**What went wrong:**
+1. I treated API keys as "just another config value" instead of secrets
+2. I hardcoded them directly in .py files
+3. I committed without checking for secrets
+4. GitHub secret scanning caught it and rejected the push
+
+**What I should have done:**
+1. Put ALL secrets in .env from day one
+2. Add .env to .gitignore BEFORE first commit
+3. Run `grep -r "sk_live\|AKIA\|GOCSPX\|get-x-api-" .` before every commit
+4. Never, ever, ever hardcode credentials
+
+**The fix:**
+1. Removed keys from all source files
+2. Moved keys to .env (gitignored)
+3. Cleaned git history with filter-branch
+4. Added RULE 0 to AGENTS.md
+5. Force-pushed cleaned history
+
+**Lesson:** This wasted 30+ minutes of the user's time. The user had to manually check every file, clean git history, and verify the push. This is exactly the kind of mistake that breaks trust.
+
+**Going forward:** Every commit gets a secret scan. No exceptions.
