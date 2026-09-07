@@ -25,6 +25,21 @@ class SemanticKind(str, Enum):
     INTERPRETATION = "INTERPRETATION"
     RETROSPECTIVE = "RETROSPECTIVE"
     NON_SIGNAL = "NON_SIGNAL"
+    MEME = "MEME"
+
+
+class MemeAction(str, Enum):
+    ENTRY = "ENTRY"
+    ADD = "ADD"
+    BULLISH_THESIS = "BULLISH_THESIS"
+    HOLD = "HOLD"
+    TARGET = "TARGET"
+    REDUCE = "REDUCE"
+    EXIT = "EXIT"
+    BEARISH = "BEARISH"
+    RETROSPECTIVE = "RETROSPECTIVE"
+    MENTION = "MENTION"
+    IGNORE = "IGNORE"
 
 
 class CallState(str, Enum):
@@ -82,6 +97,78 @@ class EvidenceSpan:
     start_char: int
     end_char: int
     provenance: str = "EXPLICIT"  # Provenance enum value
+
+
+@dataclass
+class AssetRef:
+    """Generic crypto asset reference. Dynamic, not hardcoded."""
+    symbol: Optional[str] = None
+    contract_address: Optional[str] = None
+    chain: Optional[str] = None
+    name: Optional[str] = None
+    resolution_status: str = "UNRESOLVED"  # UNRESOLVED, RESOLVED, AMBIGUOUS, NO_PRICE_DATA
+
+
+@dataclass
+class MemeEvent:
+    """Meme-specific event with campaign tracking."""
+    event_id: str
+    post_id: str
+    author_id: str
+    author_handle: str
+    published_at: str
+
+    # Action
+    action: MemeAction
+    asset: AssetRef = field(default_factory=AssetRef)
+
+    # Campaign
+    campaign_id: str = ""       # {handle}:{symbol}:{month}
+    is_first_call: bool = False
+
+    # Content
+    conviction: str = "MEDIUM"  # LOW, MEDIUM, HIGH
+    explicit_entry: bool = False
+    entry_price: Optional[float] = None
+    target_price: Optional[float] = None
+
+    # Evidence
+    evidence: list[EvidenceSpan] = field(default_factory=list)
+
+    # Provenance
+    extraction_version: str = "meme_v1"
+
+
+@dataclass
+class MemeCampaign:
+    """Collapsed campaign for a single token by a single trader."""
+    campaign_id: str            # {handle}:{symbol}:{month}
+    handle: str
+    symbol: str
+    chain: Optional[str] = None
+    contract_address: Optional[str] = None
+    pool_address: Optional[str] = None
+
+    # Lifecycle
+    first_call_at: str = ""
+    first_action: str = ""
+    actions: list[dict] = field(default_factory=list)  # [{timestamp, action, price}]
+
+    # Outcomes (filled after price data available)
+    entry_price: Optional[float] = None
+    return_1h: Optional[float] = None
+    return_4h: Optional[float] = None
+    return_24h: Optional[float] = None
+    return_3d: Optional[float] = None
+    return_7d: Optional[float] = None
+    max_multiple: Optional[float] = None
+    hit_2x: bool = False
+    hit_5x: bool = False
+    hit_10x: bool = False
+
+    # Metadata
+    entry_market_cap: Optional[float] = None
+    entry_liquidity: Optional[float] = None
 
 
 @dataclass

@@ -1,0 +1,11 @@
+{
+  "handle": "theunipcs",
+  "author_id": "1755899659040555009",
+  "month": "2026-08",
+  "total_tweets": 344,
+  "meme_events": 44,
+  "actionable_events": 19,
+  "unique_symbols": 25,
+  "fetched_at": "2026-09-07",
+  "extraction_version": "meme_v1"
+}
