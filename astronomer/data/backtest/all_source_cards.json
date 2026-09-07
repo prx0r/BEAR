@@ -1,0 +1,528 @@
+{
+  "exitpumpBTC": {
+    "handle": "exitpumpBTC",
+    "category": "derivative",
+    "total_tweets": 20,
+    "total_events": 20,
+    "event_mix": {
+      "VIEW": 16,
+      "CALL": 3,
+      "NON_SIGNAL": 1
+    },
+    "call_events_with_asset": 2,
+    "outcomes": 2,
+    "4h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": 1.3e-05,
+      "sharpe": 0.05,
+      "pf": 1.01,
+      "bayesian_wr": 0.5
+    },
+    "24h": {
+      "n": 2,
+      "win_rate": 0.0,
+      "mean_return": -0.014259,
+      "sharpe": -32.97
+    },
+    "regimes": {
+      "UP": 1,
+      "RANGE": 1
+    }
+  },
+  "laevitas1": {
+    "handle": "laevitas1",
+    "category": "derivative",
+    "total_tweets": 45,
+    "total_events": 45,
+    "event_mix": {
+      "VIEW": 26,
+      "RETROSPECTIVE": 9,
+      "CALL": 8,
+      "OBSERVATION": 1,
+      "NON_SIGNAL": 1
+    },
+    "call_events_with_asset": 6,
+    "outcomes": 5,
+    "4h": {
+      "n": 5,
+      "win_rate": 0.2,
+      "mean_return": -0.001552,
+      "sharpe": -9.53,
+      "pf": 0.32,
+      "bayesian_wr": 0.3333
+    },
+    "24h": {
+      "n": 5,
+      "win_rate": 0.6,
+      "mean_return": 0.010968,
+      "sharpe": 8.37
+    },
+    "regimes": {
+      "DOWN": 2,
+      "RANGE": 1,
+      "UP": 2
+    }
+  },
+  "hyblockcapital": {
+    "handle": "hyblockcapital",
+    "category": "derivative",
+    "total_tweets": 145,
+    "total_events": 145,
+    "event_mix": {
+      "VIEW": 102,
+      "CALL": 16,
+      "RETROSPECTIVE": 24,
+      "OBSERVATION": 2,
+      "NON_SIGNAL": 1
+    },
+    "call_events_with_asset": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.009788,
+      "sharpe": 0.0,
+      "pf": 0.0,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.006581,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "RANGE": 1
+    }
+  },
+  "kingfisher_btc": {
+    "handle": "kingfisher_btc",
+    "category": "derivative",
+    "total_tweets": 126,
+    "total_events": 126,
+    "event_mix": {
+      "VIEW": 99,
+      "CALL": 23,
+      "OBSERVATION": 3,
+      "RETROSPECTIVE": 1
+    },
+    "call_events_with_asset": 11,
+    "outcomes": 11,
+    "4h": {
+      "n": 11,
+      "win_rate": 0.3636,
+      "mean_return": 0.000989,
+      "sharpe": 2.21,
+      "pf": 1.48,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 11,
+      "win_rate": 0.7273,
+      "mean_return": 0.003852,
+      "sharpe": 2.48
+    },
+    "regimes": {
+      "DOWN": 2,
+      "RANGE": 3,
+      "UP": 6
+    }
+  },
+  "lookonchain": {
+    "handle": "lookonchain",
+    "category": "onchain",
+    "total_tweets": 20,
+    "total_events": 20,
+    "event_mix": {
+      "VIEW": 2,
+      "OBSERVATION": 10,
+      "CALL": 6,
+      "RETROSPECTIVE": 2
+    },
+    "call_events_with_asset": 5,
+    "outcomes": 5,
+    "4h": {
+      "n": 5,
+      "win_rate": 0.6,
+      "mean_return": 0.003731,
+      "sharpe": 9.98,
+      "pf": 3.74,
+      "bayesian_wr": 0.5556
+    },
+    "24h": {
+      "n": 5,
+      "win_rate": 1.0,
+      "mean_return": 0.017208,
+      "sharpe": 44.75
+    },
+    "regimes": {
+      "RANGE": 2,
+      "DOWN": 3
+    }
+  },
+  "ki_young_ju": {
+    "handle": "ki_young_ju",
+    "category": "onchain",
+    "total_tweets": 35,
+    "total_events": 35,
+    "event_mix": {
+      "VIEW": 30,
+      "RETROSPECTIVE": 3,
+      "CALL": 2
+    },
+    "call_events_with_asset": 2,
+    "outcomes": 2,
+    "4h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": -0.006072,
+      "sharpe": -5.66,
+      "pf": 0.41,
+      "bayesian_wr": 0.5
+    },
+    "24h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": -0.010611,
+      "sharpe": -11.45
+    },
+    "regimes": {
+      "RANGE": 2
+    }
+  },
+  "EmberCN": {
+    "handle": "EmberCN",
+    "category": "onchain",
+    "total_tweets": 126,
+    "total_events": 126,
+    "event_mix": {
+      "VIEW": 88,
+      "OBSERVATION": 35,
+      "CALL": 3
+    },
+    "call_events_with_asset": 2,
+    "outcomes": 2,
+    "4h": {
+      "n": 2,
+      "win_rate": 1.0,
+      "mean_return": 0.033477,
+      "sharpe": 16.12,
+      "pf": Infinity,
+      "bayesian_wr": 0.6667
+    },
+    "24h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": 0.06058,
+      "sharpe": 13.32
+    },
+    "regimes": {
+      "UP": 2
+    }
+  },
+  "OnchainLens": {
+    "handle": "OnchainLens",
+    "category": "onchain",
+    "total_tweets": 274,
+    "total_events": 274,
+    "event_mix": {
+      "VIEW": 128,
+      "CALL": 82,
+      "OBSERVATION": 17,
+      "NON_SIGNAL": 9,
+      "RETROSPECTIVE": 38
+    },
+    "call_events_with_asset": 66,
+    "outcomes": 31,
+    "4h": {
+      "n": 31,
+      "win_rate": 0.6774,
+      "mean_return": 0.004024,
+      "sharpe": 8.98,
+      "pf": 3.76,
+      "bayesian_wr": 0.6571
+    },
+    "24h": {
+      "n": 31,
+      "win_rate": 0.5484,
+      "mean_return": 0.002465,
+      "sharpe": 3.16
+    },
+    "regimes": {
+      "RANGE": 5,
+      "DOWN": 11,
+      "UP": 15
+    }
+  },
+  "FarsideUK": {
+    "handle": "FarsideUK",
+    "category": "flow",
+    "total_tweets": 80,
+    "total_events": 80,
+    "event_mix": {
+      "VIEW": 80
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "DeItaone": {
+    "handle": "DeItaone",
+    "category": "news",
+    "total_tweets": 400,
+    "total_events": 400,
+    "event_mix": {
+      "VIEW": 324,
+      "RETROSPECTIVE": 37,
+      "CALL": 25,
+      "NON_SIGNAL": 10,
+      "OBSERVATION": 4
+    },
+    "call_events_with_asset": 3,
+    "outcomes": 3,
+    "4h": {
+      "n": 3,
+      "win_rate": 1.0,
+      "mean_return": 0.006085,
+      "sharpe": 17.76,
+      "pf": Infinity,
+      "bayesian_wr": 0.7143
+    },
+    "24h": {
+      "n": 3,
+      "win_rate": 1.0,
+      "mean_return": 0.003557,
+      "sharpe": 17.46
+    },
+    "regimes": {
+      "DOWN": 3
+    }
+  },
+  "FirstSquawk": {
+    "handle": "FirstSquawk",
+    "category": "news",
+    "total_tweets": 400,
+    "total_events": 400,
+    "event_mix": {
+      "VIEW": 352,
+      "RETROSPECTIVE": 18,
+      "CALL": 16,
+      "NON_SIGNAL": 12,
+      "OBSERVATION": 2
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "EleanorTerrett": {
+    "handle": "EleanorTerrett",
+    "category": "news",
+    "total_tweets": 64,
+    "total_events": 64,
+    "event_mix": {
+      "VIEW": 53,
+      "OBSERVATION": 1,
+      "RETROSPECTIVE": 7,
+      "CALL": 3
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "crossbordercap": {
+    "handle": "crossbordercap",
+    "category": "macro",
+    "total_tweets": 19,
+    "total_events": 19,
+    "event_mix": {
+      "VIEW": 18,
+      "CALL": 1
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "josephwang": {
+    "handle": "josephwang",
+    "category": "macro",
+    "total_tweets": 61,
+    "total_events": 61,
+    "event_mix": {
+      "CALL": 7,
+      "VIEW": 48,
+      "RETROSPECTIVE": 6
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "HyperliquidR": {
+    "handle": "HyperliquidR",
+    "category": "hl",
+    "total_tweets": 81,
+    "total_events": 81,
+    "event_mix": {
+      "VIEW": 63,
+      "NON_SIGNAL": 5,
+      "RETROSPECTIVE": 8,
+      "OBSERVATION": 2,
+      "CALL": 3
+    },
+    "call_events_with_asset": 2,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "zachxbt": {
+    "handle": "zachxbt",
+    "category": "security",
+    "total_tweets": 86,
+    "total_events": 86,
+    "event_mix": {
+      "NON_SIGNAL": 2,
+      "VIEW": 64,
+      "RETROSPECTIVE": 18,
+      "OBSERVATION": 2
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "PeckShieldAlert": {
+    "handle": "PeckShieldAlert",
+    "category": "security",
+    "total_tweets": 23,
+    "total_events": 23,
+    "event_mix": {
+      "VIEW": 14,
+      "RETROSPECTIVE": 8,
+      "CALL": 1
+    },
+    "call_events_with_asset": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.00107,
+      "sharpe": 0.0,
+      "pf": 0.0,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.024459,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "RANGE": 1
+    }
+  },
+  "CertiKAlert": {
+    "handle": "CertiKAlert",
+    "category": "security",
+    "total_tweets": 18,
+    "total_events": 18,
+    "event_mix": {
+      "VIEW": 12,
+      "OBSERVATION": 2,
+      "RETROSPECTIVE": 4
+    },
+    "call_events_with_asset": 0,
+    "outcomes": 0,
+    "regimes": {}
+  },
+  "Tokenomist_ai": {
+    "handle": "Tokenomist_ai",
+    "category": "fundamental",
+    "total_tweets": 31,
+    "total_events": 31,
+    "event_mix": {
+      "VIEW": 21,
+      "RETROSPECTIVE": 3,
+      "NON_SIGNAL": 2,
+      "OBSERVATION": 1,
+      "CALL": 4
+    },
+    "call_events_with_asset": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.033554,
+      "sharpe": 0.0,
+      "pf": 0.0,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.025635,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "RANGE": 1
+    }
+  },
+  "SubnetStats": {
+    "handle": "SubnetStats",
+    "category": "tao",
+    "total_tweets": 5,
+    "total_events": 5,
+    "event_mix": {
+      "CALL": 1,
+      "VIEW": 3,
+      "RETROSPECTIVE": 1
+    },
+    "call_events_with_asset": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.004436,
+      "sharpe": 0.0,
+      "pf": 0.0,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.025136,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "DOWN": 1
+    }
+  },
+  "TAOTemplar": {
+    "handle": "TAOTemplar",
+    "category": "tao",
+    "total_tweets": 103,
+    "total_events": 103,
+    "event_mix": {
+      "RETROSPECTIVE": 9,
+      "VIEW": 90,
+      "CALL": 3,
+      "NON_SIGNAL": 1
+    },
+    "call_events_with_asset": 1,
+    "outcomes": 1,
+    "4h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.007862,
+      "sharpe": 0.0,
+      "pf": 0.0,
+      "bayesian_wr": 0.4
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 0.0,
+      "mean_return": -0.020147,
+      "sharpe": 0.0
+    },
+    "regimes": {
+      "RANGE": 1
+    }
+  }
+}
