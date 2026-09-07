@@ -1,0 +1,446 @@
+[
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094514116949856410",
+    "text": "bitcoin:native Look at this monthly candle. It looks mega bullish. If you think it doesn't, then you are either retarded or sidelined, wishing for market to dump so you can feel better being sidelined",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094503256948936760",
+    "text": "$ZEC looks good",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094429370496483610",
+    "text": "bitcoin:native I actually think the odds of hitting $100K this year are much higher than most people think.\n\nPrice is simply consolidating before the next leg up, this is exactly how it\u2019s supposed to ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094185652439110088",
+    "text": "Crypto feels completely different this cycle.\n\nNobody\u2019s levering up on alts chasing the next breakout. \n\nThis time, almost all the attention and volume seems to be on-chain, concentrated around a hand",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094131917561974864",
+    "text": "Feel free to send me coins. https://t.co/WxZNnWgScq",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094100845218430987",
+    "text": "Couple of longs I shared inside the Discord, both in profits. If you want to trade these markets with extra edge and real size, the VIP membership is free for anyone who buys a @breakoutprop account w",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094083729618604542",
+    "text": "bitcoin:native 79k is a key resistance level here and ask side above it is thin. Compressed price action here, reclaim the level and hopefully pump higher is very likely scenario. https://t.co/0EMrHM9",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094042123901222987",
+    "text": "bitcoin:native Shorts getting flushed on this fine Sunday. Key thing to watch: does OI climb back after the reset? If it does while price keeps grinding up, that's the setup for another leg of short l",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2093812176960065595",
+    "text": "bitcoin:native Open Interest isn't even overheated. Looks healthy. https://t.co/D2wnkiet5g",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2093360532795408450",
+    "text": "waiting months for a breakout just to sell on the first day of escape velocity?\n\nbear market has corrupted you, anon https://t.co/BWMmECgUOl",
+    "event_kind": "TEXT",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094492149639233774",
+    "text": "bitcoin:native Stack of bids on Binance perps orderbooks is still sitting there, while ask side is pretty thin. Looks bullish to me. https://t.co/Tw2MvKOduI",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2089340786567717056",
+    "text": "Im Long Vol. this week \n\nOpex expiration \n\n$VIX completely suppressed \n\nRecord low volume in the $SPY \n\n$QQQ unable to get higher highs \n\n$BTC meandering in a stale range while coiling and soaking pos",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2085679018959876326",
+    "text": "Pretty choppy week this \n\nLooks to me that $BTC is soaking positions on both sides of the book but I think we have unfinished buisness higher \n\nDownward slopping rolling 90 likely gets tagged soon \n\nI",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2092165203094032544",
+    "text": "$BTC HTF:\n\n86-90k res- full sell zone here for me. https://t.co/CCzzYUrJAX",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2083538118846902367",
+    "text": "$HYPE update: \n\nReached area of interest after 1.5 months\u2705\n\nStarted buying again, all the way down to a sweep of $45 region. https://t.co/vzgaEgAQyn",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "HYPE"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2092650835486372306",
+    "text": "8000 BTC long call condor for 25SEP26 expiry, built from two separate blocks at index $78.96k and $78.22k. Long the $85k-C and $100k-C, short the $90k-C and $95k-C. The long legs cost $4.06M premium p",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090386107661946943",
+    "text": "Impressive short-squeeze on Hyperliquid. https://t.co/5BYWSOmZjK",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090371876983918862",
+    "text": "Someone on Hyperliquid only got 57% of their $51MM long ethereum:native TWAP filled. RIP. https://t.co/85DpAn2HNW",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2094564270721872317",
+    "text": "Heavily bidding the dips on kinetiq:native and ethereum:0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be here.\n\nThink whether we get Sideways or Shakeout September, it'll be Opulent October once we have @Ki",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094605905488949549",
+    "text": "A mysterious Ethereum whale is selling 167,855 $ETH ($408M)!\n\nThe whale received 167,855 $ETH($408M) from multiple wallets and started depositing it into exchanges.\n\nOver the past 2 days, the whale ha",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090869519602548927",
+    "text": "Hey Claude, I\u2019m on my phone rn. Please find BTC price data since January 2019 and mark every 15% pump over three days on a price chart, shaded by bull and bear regime. One figure only, log price axis.",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2093254674195288304",
+    "text": "Looks like spot sellers continue to defend this zone\n\nMeanwhile we've seen the usual predatory maker tactics of pulling and placing 500-1000 bitcoin:native orders on mutliple perp venues but asks stil",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2092498045795787260",
+    "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 150 BTC\nrPNL: +$845,000\nuPNL: +$2,670,000\n\nRemainder of position will be closed in the 86-90k region (exact figure depends on LTF PA development ",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090725250388635959",
+    "text": "$ETH \n\n56% up / 2900 it is\ud83e\udd1d https://t.co/bnLFMLuka9",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090718600567083151",
+    "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 200 BTC\nuPNL: +$3,220,000\n\nWill take some profit here meow https://t.co/lv0d20Yids",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2093014548546560195",
+    "text": "4000 BTC 85k calls bought for 25SEP26($8.22M)\n\n2000 BTC 82k calls bought for 4SEP26($2.39M) https://t.co/6UHDm2LGxH",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2091905983010189489",
+    "text": "2000 BTC 82k calls bought for 4SEP26 across 2 blocks of 1000 BTC each, $2.9M premium. Spot $78.8-78.9K at execution. IV printed 48.5-48.8%. https://t.co/VLomuRb8Tl",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090370761215111261",
+    "text": "1/ Midweek Hyperliquid Report\n2026-08-20\n\nNine of the twelve most-churned instruments on Hyperliquid by turnover are @tradexyz HIP-3 perps, and the leading cluster is a memory-chip complex: SNDK at 37",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "SOL"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094618418528080339",
+    "text": "A whale who bought 488,599 $HYPE ($17.18M) at $35 5 months ago staked all 488,599 $HYPE today and is currently sitting on a $23.7M unrealized profit.\n\nhttps://t.co/A0GRsizCKg https://t.co/q4Az1Xy4HS",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "HYPE"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094582513096347988",
+    "text": "It seems that Tom Lee(@fundstrat)'s #Bitmine just bought another 51,000 $ETH($126M) from #FalconX and #BitGo 2 hours ago.\n\nhttps://t.co/lysw4izlK8\nhttps://t.co/tBWIHQYCeF https://t.co/jqoTLy3XO3",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090117314880438634",
+    "text": "that was it, you missed the generational golden bullrun bottom, it's impossible to get in now, it's up too much, you are late, it's over man, try next cycle",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2089738702918390138",
+    "text": "AI models are trained on whatever exists about trading and the truth is that most of that material is dogshit. Most of it was never even tested and the strategies that were tested usually turn out to ",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2085295894711152848",
+    "text": "Looking at Bitcoin right now, purely from intuition, it feels a lot like the summer of 2022. Price grinding sideways, no real direction, and almost nobody talking about crypto. Discretionary-wise, a l",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2094092759166861812",
+    "text": "Ran a deep structural study on Bitcoin across multiple market cycles from 2017 through the post ETF era. Anything beyond that is irrelevant and i'd argue you could even do this from 2019 onwards but I",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2091010650344759577",
+    "text": "#BTC update\n\nFirst and foremost I will take my W for being on the money this week regarding a big move in motion. It happened smack bang where I thought it would\n\nI was wrong on direction and I was aw",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2092913168154603988",
+    "text": "1/ Midweek Hyperliquid Report\n2026-08-27\n\nHyperliquid's forced flow this week ran short: $460MM of shorts were liquidated into forced buys against $295MM of longs over 7d, the bulk of it a single $322",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2087853685925675188",
+    "text": "ETH ACCUMULATION ON HYPERLIQUID\n\nThis week's largest TWAP fill on Hyperliquid was ethereum:native, with the  single largest TWAP being  +$47.99MM - a 36h programme completing 100%. \nETH spans 7/12 top",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2093889573709386083",
+    "text": "The same people who are criticizing @HyperliquidX buying and burning 40bps of hyperliquid:native mcap per month as \"wasteful\" or \"useless\" are going to try and convince you that bitcoin:native decreas",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2093233892102991910",
+    "text": "Caught the meat of the $2000>$2400 $ETH move, only major I'm trimming now. I think it'll continue to perform reasonably well in dollar terms (denominator trending to zero innit) but it's back to the u",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2092988341973319788",
+    "text": "The \"deep OTM $SOL calls\" I put on 2 months ago when $SOL was sub $70. \n\nPerps are amazing in ranging regimes, but options are the GOAT for betting on big cycle bottoms/tops. These types of trades can",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087435931506667865",
+    "text": "Another month and another opportunity to battle it out on @Bitbase_Ex \n\nThis is the best chance for the average person to partake as it is essentially a condensed, smaller competion that levels out th",
+    "event_kind": "PROMOTION",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2085681735946166360",
+    "text": "I understand lot of supply has come onto market but there also happens to be a lot of short positioning in market \n\nThis is very volatile and selling has been quite aggressive. I therefore think takin",
+    "event_kind": "PROMOTION",
+    "direction": null
+  }
+]
