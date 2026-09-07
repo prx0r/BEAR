@@ -1,0 +1,192 @@
+[
+  {
+    "event_id": "evt_2093262414988873783_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 79565.89,
+    "return_4h": -0.000295,
+    "return_24h": -0.024266,
+    "btc_regime": "RANGE",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2093254674195288304_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 79285.19,
+    "return_4h": -0.000575,
+    "return_24h": 0.020624,
+    "btc_regime": "RANGE",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2091868489657073974_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 78597.99,
+    "return_4h": 0.002076,
+    "return_24h": 0.000636,
+    "btc_regime": "UP",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2089340786567717056_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 63902.63,
+    "return_4h": 0.008235,
+    "return_24h": 0.012699,
+    "btc_regime": "UP",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2087944332267430213_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 63144.38,
+    "return_4h": 0.00522,
+    "return_24h": -0.00207,
+    "btc_regime": "DOWN",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2086651740183527516_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 65006.73,
+    "return_4h": 0.003674,
+    "return_24h": -0.015125,
+    "btc_regime": "RANGE",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2085679018959876326_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 65029.98,
+    "return_4h": 0.001803,
+    "return_24h": 0.000963,
+    "btc_regime": "UP",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2084165378201006312_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 62621.1,
+    "return_4h": -0.000976,
+    "return_24h": 0.017001,
+    "btc_regime": "DOWN",
+    "author": "Timeless_Crypto"
+  },
+  {
+    "event_id": "evt_2094221486634766842_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 77640.94,
+    "return_4h": -0.004831,
+    "return_24h": -0.009913,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2094041333732405606_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 78860.0,
+    "return_4h": 0.002042,
+    "return_24h": -0.012587,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2093318261437829383_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 79330.75,
+    "return_4h": 0.017985,
+    "return_24h": 0.020502,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2093156835763351938_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 79810.49,
+    "return_4h": -0.001886,
+    "return_24h": -0.02886,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2092223565034918339_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 78647.99,
+    "return_4h": -0.007527,
+    "return_24h": 0.002534,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2092000535864025289_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 78740.0,
+    "return_4h": 0.024252,
+    "return_24h": 0.001899,
+    "btc_regime": "UP",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2091995674091143662_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 78740.0,
+    "return_4h": 0.024252,
+    "return_24h": 0.001899,
+    "btc_regime": "UP",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2091032125273428206_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 77486.09,
+    "return_4h": -0.006583,
+    "return_24h": -0.017928,
+    "btc_regime": "RANGE",
+    "author": "astronomer_zero"
+  },
+  {
+    "event_id": "evt_2092165203094032544_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 79187.2,
+    "return_4h": 0.006809,
+    "return_24h": 0.009379,
+    "btc_regime": "UP",
+    "author": "CryptoBheem"
+  },
+  {
+    "event_id": "evt_2087005822471778471_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 64155.01,
+    "return_4h": -0.001388,
+    "return_24h": -0.004979,
+    "btc_regime": "DOWN",
+    "author": "CryptoBheem"
+  },
+  {
+    "event_id": "evt_2094564270721872317_call",
+    "asset": "ETH",
+    "direction": "BEARISH",
+    "entry_price": 2471.61,
+    "return_4h": 0.000643,
+    "return_24h": 0.025392,
+    "btc_regime": "UP",
+    "author": "koolkrypto223"
+  }
+]

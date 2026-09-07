@@ -1,0 +1,102 @@
+{
+  "Timeless_Crypto": {
+    "handle": "Timeless_Crypto",
+    "total_tweets": 50,
+    "call_events": 8,
+    "outcomes": 8,
+    "regimes": {
+      "RANGE": 3,
+      "UP": 3,
+      "DOWN": 2
+    },
+    "4h": {
+      "n": 8,
+      "win_rate": 0.625,
+      "mean_return": 0.002395,
+      "sharpe": 14.31,
+      "pf": 11.38,
+      "bayesian_wr": 0.5833
+    },
+    "24h": {
+      "n": 8,
+      "win_rate": 0.625,
+      "mean_return": 0.001308,
+      "sharpe": 1.61,
+      "pf": 1.25
+    }
+  },
+  "astronomer_zero": {
+    "handle": "astronomer_zero",
+    "total_tweets": 100,
+    "call_events": 8,
+    "outcomes": 8,
+    "regimes": {
+      "RANGE": 6,
+      "UP": 2
+    },
+    "4h": {
+      "n": 8,
+      "win_rate": 0.5,
+      "mean_return": 0.005963,
+      "sharpe": 8.21,
+      "pf": 3.29,
+      "bayesian_wr": 0.5
+    },
+    "24h": {
+      "n": 8,
+      "win_rate": 0.5,
+      "mean_return": -0.005307,
+      "sharpe": -6.67,
+      "pf": 0.39
+    }
+  },
+  "CryptoBheem": {
+    "handle": "CryptoBheem",
+    "total_tweets": 20,
+    "call_events": 3,
+    "outcomes": 2,
+    "regimes": {
+      "UP": 1,
+      "DOWN": 1
+    },
+    "4h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": 0.002711,
+      "sharpe": 8.93,
+      "pf": 4.91,
+      "bayesian_wr": 0.5
+    },
+    "24h": {
+      "n": 2,
+      "win_rate": 0.5,
+      "mean_return": 0.0022,
+      "sharpe": 4.14,
+      "pf": 1.88
+    }
+  },
+  "koolkrypto223": {
+    "handle": "koolkrypto223",
+    "total_tweets": 20,
+    "call_events": 1,
+    "outcomes": 1,
+    "regimes": {
+      "UP": 1
+    },
+    "4h": {
+      "n": 1,
+      "win_rate": 1.0,
+      "mean_return": 0.000643,
+      "sharpe": 0.0,
+      "pf": Infinity,
+      "bayesian_wr": 0.6
+    },
+    "24h": {
+      "n": 1,
+      "win_rate": 1.0,
+      "mean_return": 0.025392,
+      "sharpe": 0.0,
+      "pf": Infinity
+    }
+  }
+}
