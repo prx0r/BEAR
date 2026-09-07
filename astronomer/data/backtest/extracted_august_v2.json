@@ -1,0 +1,2523 @@
+[
+  {
+    "event_id": "evt_2094514116949856410_view",
+    "post_id": "2094514116949856410",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094503256948936760_view",
+    "post_id": "2094503256948936760",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094492149639233774_call",
+    "post_id": "2094492149639233774",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "bullish"
+    ]
+  },
+  {
+    "event_id": "evt_2094429370496483610_view",
+    "post_id": "2094429370496483610",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094185652439110088_view",
+    "post_id": "2094185652439110088",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094131917561974864_view",
+    "post_id": "2094131917561974864",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094100845218430987_call",
+    "post_id": "2094100845218430987",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2094083729618604542_view",
+    "post_id": "2094083729618604542",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094042123901222987_view",
+    "post_id": "2094042123901222987",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093812176960065595_view",
+    "post_id": "2093812176960065595",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093360532795408450_call",
+    "post_id": "2093360532795408450",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "sell"
+    ]
+  },
+  {
+    "event_id": "evt_2092917529597321394_view",
+    "post_id": "2092917529597321394",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092880975885725779_view",
+    "post_id": "2092880975885725779",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092277448868028822_view",
+    "post_id": "2092277448868028822",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091745439666090394_view",
+    "post_id": "2091745439666090394",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091539654927401235_view",
+    "post_id": "2091539654927401235",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091034462561706287_view",
+    "post_id": "2091034462561706287",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090869754663743802_view",
+    "post_id": "2090869754663743802",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090869519602548927_view",
+    "post_id": "2090869519602548927",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090853087716004153_view",
+    "post_id": "2090853087716004153",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090744768519131274_view",
+    "post_id": "2090744768519131274",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090491991201062925_call",
+    "post_id": "2090491991201062925",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2090485518840516807_view",
+    "post_id": "2090485518840516807",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090480038856810682_call",
+    "post_id": "2090480038856810682",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "buy"
+    ]
+  },
+  {
+    "event_id": "evt_2090350057795027036_view",
+    "post_id": "2090350057795027036",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090161545212743716_view",
+    "post_id": "2090161545212743716",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090117314880438634_retro",
+    "post_id": "2090117314880438634",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2089738702918390138_retro",
+    "post_id": "2089738702918390138",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2087799543425335537_view",
+    "post_id": "2087799543425335537",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2085299985990504696_view",
+    "post_id": "2085299985990504696",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2085295894711152848_retro",
+    "post_id": "2085295894711152848",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2094092759166861812_retro",
+    "post_id": "2094092759166861812",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093654571440845033_view",
+    "post_id": "2093654571440845033",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093262414988873783_call",
+    "post_id": "2093262414988873783",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "bullish"
+    ]
+  },
+  {
+    "event_id": "evt_2093254674195288304_call",
+    "post_id": "2093254674195288304",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "sell"
+    ]
+  },
+  {
+    "event_id": "evt_2092746864776917501_view",
+    "post_id": "2092746864776917501",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092736882480173131_view",
+    "post_id": "2092736882480173131",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091868489657073974_call",
+    "post_id": "2091868489657073974",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2091756631344439616_view",
+    "post_id": "2091756631344439616",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091010650344759577_retro",
+    "post_id": "2091010650344759577",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2089621631358439523_view",
+    "post_id": "2089621631358439523",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2089341976806408551_view",
+    "post_id": "2089341976806408551",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2089340786567717056_call",
+    "post_id": "2089340786567717056",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "Long"
+    ]
+  },
+  {
+    "event_id": "evt_2089339178949767279_view",
+    "post_id": "2089339178949767279",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2088200155526996309_view",
+    "post_id": "2088200155526996309",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2088041211357528085_view",
+    "post_id": "2088041211357528085",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087956097076277554_view",
+    "post_id": "2087956097076277554",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087952798809805216_view",
+    "post_id": "2087952798809805216",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087944332267430213_call",
+    "post_id": "2087944332267430213",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2087766791426834601_view",
+    "post_id": "2087766791426834601",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087540356619358225_view",
+    "post_id": "2087540356619358225",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087509323865895420_view",
+    "post_id": "2087509323865895420",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087435931506667865_promo",
+    "post_id": "2087435931506667865",
+    "semantic_kind": "NON_SIGNAL",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "promotional content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2086954313000144938_view",
+    "post_id": "2086954313000144938",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086651740183527516_call",
+    "post_id": "2086651740183527516",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "buy"
+    ]
+  },
+  {
+    "event_id": "evt_2086468254998925749_view",
+    "post_id": "2086468254998925749",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086378284099756162_view",
+    "post_id": "2086378284099756162",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086362965067116811_view",
+    "post_id": "2086362965067116811",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086051306783838535_view",
+    "post_id": "2086051306783838535",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086024590019399765_view",
+    "post_id": "2086024590019399765",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086020057734205562_view",
+    "post_id": "2086020057734205562",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086017989682323962_call",
+    "post_id": "2086017989682323962",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2086015322994143398_view",
+    "post_id": "2086015322994143398",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2085686037699842391_view",
+    "post_id": "2085686037699842391",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2085681735946166360_promo",
+    "post_id": "2085681735946166360",
+    "semantic_kind": "NON_SIGNAL",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "promotional content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2085679018959876326_call",
+    "post_id": "2085679018959876326",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2084845273621131411_view",
+    "post_id": "2084845273621131411",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2084487891401724339_view",
+    "post_id": "2084487891401724339",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2084165378201006312_call",
+    "post_id": "2084165378201006312",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "LEVEL",
+    "entry_price": 63650.0,
+    "evidence_count": 2,
+    "evidence_quotes": [
+      "long",
+      "63650 "
+    ]
+  },
+  {
+    "event_id": "evt_2094490804115181721_view",
+    "post_id": "2094490804115181721",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092498045795787260_observation",
+    "post_id": "2092498045795787260",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 61100.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "61,100\n"
+    ]
+  },
+  {
+    "event_id": "evt_2092165203094032544_call",
+    "post_id": "2092165203094032544",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "sell"
+    ]
+  },
+  {
+    "event_id": "evt_2091824173001896307_view",
+    "post_id": "2091824173001896307",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091046021073981622_view",
+    "post_id": "2091046021073981622",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090725250388635959_view",
+    "post_id": "2090725250388635959",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090718600567083151_observation",
+    "post_id": "2090718600567083151",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 61100.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "61,100\n"
+    ]
+  },
+  {
+    "event_id": "evt_2090461007487643794_view",
+    "post_id": "2090461007487643794",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090383394723217889_view",
+    "post_id": "2090383394723217889",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090352115743109430_view",
+    "post_id": "2090352115743109430",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090351691241808290_view",
+    "post_id": "2090351691241808290",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087011441480237121_view",
+    "post_id": "2087011441480237121",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087005822471778471_call",
+    "post_id": "2087005822471778471",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2083659694015717571_view",
+    "post_id": "2083659694015717571",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2083538118846902367_call",
+    "post_id": "2083538118846902367",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "buy"
+    ]
+  },
+  {
+    "event_id": "evt_2093014548546560195_view",
+    "post_id": "2093014548546560195",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092913168154603988_retro",
+    "post_id": "2092913168154603988",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092650835486372306_call",
+    "post_id": "2092650835486372306",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2092225057221136649_view",
+    "post_id": "2092225057221136649",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091905983010189489_view",
+    "post_id": "2091905983010189489",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091838283558846599_view",
+    "post_id": "2091838283558846599",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091838124594720818_view",
+    "post_id": "2091838124594720818",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090416550511587412_call",
+    "post_id": "2090416550511587412",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2090386107661946943_call",
+    "post_id": "2090386107661946943",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2090371876983918862_call",
+    "post_id": "2090371876983918862",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2090370761215111261_view",
+    "post_id": "2090370761215111261",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090368652306534746_view",
+    "post_id": "2090368652306534746",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2089280039992819866_view",
+    "post_id": "2089280039992819866",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2089279972162617431_view",
+    "post_id": "2089279972162617431",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087867763670847701_view",
+    "post_id": "2087867763670847701",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087853685925675188_retro",
+    "post_id": "2087853685925675188",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2094564270721872317_call",
+    "post_id": "2094564270721872317",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2093889573709386083_retro",
+    "post_id": "2093889573709386083",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093233892102991910_retro",
+    "post_id": "2093233892102991910",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092988341973319788_retro",
+    "post_id": "2092988341973319788",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2094626551933628872_view",
+    "post_id": "2094626551933628872",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094618418528080339_observation",
+    "post_id": "2094618418528080339",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 488599.0,
+    "evidence_count": 2,
+    "evidence_quotes": [
+      "488,599 ",
+      "488,599 "
+    ]
+  },
+  {
+    "event_id": "evt_2094605905488949549_call",
+    "post_id": "2094605905488949549",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "LEVEL",
+    "entry_price": 167855.0,
+    "evidence_count": 5,
+    "evidence_quotes": [
+      "sell",
+      "167,855 ",
+      "167,855 "
+    ]
+  },
+  {
+    "event_id": "evt_2094582513096347988_observation",
+    "post_id": "2094582513096347988",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 51000.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "51,000 "
+    ]
+  },
+  {
+    "event_id": "evt_2094580323837481304_observation",
+    "post_id": "2094580323837481304",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 132935.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "132,935 "
+    ]
+  },
+  {
+    "event_id": "evt_2094428194011333071_observation",
+    "post_id": "2094428194011333071",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 53501.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "53,501 "
+    ]
+  },
+  {
+    "event_id": "evt_2094427807866831157_observation",
+    "post_id": "2094427807866831157",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 302035.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "302,035 "
+    ]
+  },
+  {
+    "event_id": "evt_2094418220791042250_call",
+    "post_id": "2094418220791042250",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "LEVEL",
+    "entry_price": 102913.0,
+    "evidence_count": 4,
+    "evidence_quotes": [
+      "sell",
+      "102,913 ",
+      "102,913 "
+    ]
+  },
+  {
+    "event_id": "evt_2094403231548162287_observation",
+    "post_id": "2094403231548162287",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 62081.0,
+    "evidence_count": 2,
+    "evidence_quotes": [
+      "62,081",
+      "80,318"
+    ]
+  },
+  {
+    "event_id": "evt_2094398989118677052_observation",
+    "post_id": "2094398989118677052",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 80318.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "80,318 "
+    ]
+  },
+  {
+    "event_id": "evt_2094390180094562631_view",
+    "post_id": "2094390180094562631",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094330111197938172_call",
+    "post_id": "2094330111197938172",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "sell"
+    ]
+  },
+  {
+    "event_id": "evt_2094287185717690746_observation",
+    "post_id": "2094287185717690746",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 96191.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "96,191"
+    ]
+  },
+  {
+    "event_id": "evt_2094245869910708339_call",
+    "post_id": "2094245869910708339",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "buy"
+    ]
+  },
+  {
+    "event_id": "evt_2094243510551728543_call",
+    "post_id": "2094243510551728543",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2094231480834940992_retro",
+    "post_id": "2094231480834940992",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2094227251009376446_observation",
+    "post_id": "2094227251009376446",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 51387.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "51,387 "
+    ]
+  },
+  {
+    "event_id": "evt_2093998649714090246_retro",
+    "post_id": "2093998649714090246",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093944624574529560_call",
+    "post_id": "2093944624574529560",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "buy"
+    ]
+  },
+  {
+    "event_id": "evt_2093877850990604440_observation",
+    "post_id": "2093877850990604440",
+    "semantic_kind": "OBSERVATION",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": "LEVEL",
+    "entry_price": 67304.0,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "67,304 "
+    ]
+  },
+  {
+    "event_id": "evt_2094572232647516382_view",
+    "post_id": "2094572232647516382",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094530455551017006_view",
+    "post_id": "2094530455551017006",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094328001249071274_view",
+    "post_id": "2094328001249071274",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094223139018551620_view",
+    "post_id": "2094223139018551620",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094221486634766842_call",
+    "post_id": "2094221486634766842",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2094206498029400342_view",
+    "post_id": "2094206498029400342",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2094041333732405606_call",
+    "post_id": "2094041333732405606",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2094007317272633402_view",
+    "post_id": "2094007317272633402",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093894345925759401_view",
+    "post_id": "2093894345925759401",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093873656514699453_retro",
+    "post_id": "2093873656514699453",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093653297005736299_view",
+    "post_id": "2093653297005736299",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093589344573653230_retro",
+    "post_id": "2093589344573653230",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093586807107784773_view",
+    "post_id": "2093586807107784773",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093495889595900060_view",
+    "post_id": "2093495889595900060",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2093463796002246796_retro",
+    "post_id": "2093463796002246796",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2093318261437829383_call",
+    "post_id": "2093318261437829383",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2093156835763351938_call",
+    "post_id": "2093156835763351938",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2093147047121817729_retro",
+    "post_id": "2093147047121817729",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092955018727235699_view",
+    "post_id": "2092955018727235699",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092947031342121334_view",
+    "post_id": "2092947031342121334",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092925223595282648_view",
+    "post_id": "2092925223595282648",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092921581874118832_retro",
+    "post_id": "2092921581874118832",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092753998822678883_retro",
+    "post_id": "2092753998822678883",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092602865735111144_view",
+    "post_id": "2092602865735111144",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092599639149293718_view",
+    "post_id": "2092599639149293718",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092414698251801070_view",
+    "post_id": "2092414698251801070",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092223565034918339_call",
+    "post_id": "2092223565034918339",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2092220202213908981_view",
+    "post_id": "2092220202213908981",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092179041847812432_view",
+    "post_id": "2092179041847812432",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092173548727251338_retro",
+    "post_id": "2092173548727251338",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092053361508204846_view",
+    "post_id": "2092053361508204846",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092020188694880734_retro",
+    "post_id": "2092020188694880734",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2092000535864025289_call",
+    "post_id": "2092000535864025289",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2091995674091143662_call",
+    "post_id": "2091995674091143662",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2091846336505356573_view",
+    "post_id": "2091846336505356573",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091646944565514285_view",
+    "post_id": "2091646944565514285",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091475724288872843_retro",
+    "post_id": "2091475724288872843",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2091106340412485932_view",
+    "post_id": "2091106340412485932",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091032125273428206_call",
+    "post_id": "2091032125273428206",
+    "semantic_kind": "CALL",
+    "call_state": "CONDITIONAL",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BULLISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "long"
+    ]
+  },
+  {
+    "event_id": "evt_2090953646163034281_retro",
+    "post_id": "2090953646163034281",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2090946517448405004_retro",
+    "post_id": "2090946517448405004",
+    "semantic_kind": "RETROSPECTIVE",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "retrospective content detected"
+    ]
+  },
+  {
+    "event_id": "evt_2090911540954505708_view",
+    "post_id": "2090911540954505708",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090762123240415441_view",
+    "post_id": "2090762123240415441",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090733142911111610_view",
+    "post_id": "2090733142911111610",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090723371587690539_view",
+    "post_id": "2090723371587690539",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2092195816446296308_view",
+    "post_id": "2092195816446296308",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2091979073127891191_view",
+    "post_id": "2091979073127891191",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090158929380798768_call",
+    "post_id": "2090158929380798768",
+    "semantic_kind": "CALL",
+    "call_state": "DIRECT",
+    "target_variable": "PRICE_DIRECTION",
+    "asset": null,
+    "direction": "BEARISH",
+    "entry_type": "MARKET",
+    "entry_price": null,
+    "evidence_count": 1,
+    "evidence_quotes": [
+      "short"
+    ]
+  },
+  {
+    "event_id": "evt_2087598722515378428_view",
+    "post_id": "2087598722515378428",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087490429981790456_view",
+    "post_id": "2087490429981790456",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087310941264163185_view",
+    "post_id": "2087310941264163185",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087299759740522875_view",
+    "post_id": "2087299759740522875",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087207354320208155_view",
+    "post_id": "2087207354320208155",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086539632229916954_view",
+    "post_id": "2086539632229916954",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2086520759699271738_view",
+    "post_id": "2086520759699271738",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2085750399319892374_view",
+    "post_id": "2085750399319892374",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2090001486553981135_view",
+    "post_id": "2090001486553981135",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  },
+  {
+    "event_id": "evt_2087559428342215100_view",
+    "post_id": "2087559428342215100",
+    "semantic_kind": "VIEW",
+    "call_state": "NONE",
+    "target_variable": "OTHER",
+    "asset": null,
+    "direction": null,
+    "entry_type": null,
+    "entry_price": null,
+    "evidence_count": 0,
+    "evidence_quotes": []
+  }
+]
