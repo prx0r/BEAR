@@ -32,6 +32,47 @@ API_KEY = os.environ.get("GETXAPI_KEY")
 
 ---
 
+## Critical Architecture Rules
+
+### RULE 1: Raw Before Filter
+
+**Never filter during ingestion.** Store everything, filter during analysis.
+
+```
+GetXAPI response → raw JSON.zst → normalize → posts.parquet → derived views
+```
+
+Never throw away a tweet you've paid to acquire. A reply may contain a signal because the ticker was in its parent. A repost can mean endorsement. Filter for analysis, never filter the source corpus.
+
+### RULE 2: No Selection Bias in Historical Coverage
+
+For each target account: fetch full contiguous history. Don't skip months because "May looked promotional." Missing periods = NO_DATA, not excluded.
+
+### RULE 3: Engagement is a Snapshot, Not a Feature
+
+```
+posts: tweet_id, author_id, text, created_at, ...
+post_metric_snapshots: tweet_id, observed_at, likes, views, ...
+```
+
+Never use current likes/views as historical features. They leak future information.
+
+### RULE 4: Use author_id, Not Username
+
+Usernames change. IDs don't. Primary key everywhere = author_id.
+
+### RULE 5: Check for Secrets Before EVERY Commit
+
+```bash
+grep -r "sk_live\|AKIA\|GOCSPX\|get-x-api-\|cfat_" --include="*.py" --include="*.md" --include="*.json" .
+```
+
+If found → STOP → remove → .env → commit.
+
+### RULE 6: Check free -h before heavy jobs
+
+---
+
 ## Vision
 
 **BEAR is a signal intelligence business.**

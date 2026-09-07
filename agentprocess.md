@@ -269,8 +269,8 @@ These are **structural level observations**, not "long BTC" calls. They're actua
 **What happened:** I hardcoded API keys in 7 Python files and committed them to git.
 
 **The keys leaked:**
-- GetXAPI primary: `get-x-api-0d101a57d43f429a69ff8dd821186eeb2f889406859be720`
-- GetXAPI backup: `get-x-api-4e5e3a761cda4242e55f598e322b29648376203d56a47b6b`
+- GetXAPI primary: `[REDACTED]`
+- GetXAPI backup: `[REDACTED]`
 - Cloudflare credentials in .env.cloudflare
 
 **What went wrong:**
