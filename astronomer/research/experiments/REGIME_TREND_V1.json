@@ -1,0 +1,58 @@
+{
+  "contract_id": "REGIME_TREND_V1",
+  "source": "0xaporia",
+  "primitive": "REGIME_TREND",
+  "created_at": "2026-09-07T00:00:00Z",
+
+  "description": "Evaluate whether 0xaporia's regime/trend observations improve regime prediction and downstream strategy activation.",
+
+  "experiments": [
+    {
+      "id": "EXP-A-STATE",
+      "name": "State prediction vs baseline",
+      "h0": "Aporia contains no incremental regime information beyond price/breadth.",
+      "h1": "Aporia regime events improve Brier score and log-loss over baseline.",
+      "baseline": "lagged 24h return + 7d volatility + alt breadth percentile",
+      "candidate": "baseline + Aporia regime state",
+      "scoring": "Brier skill, log-loss improvement",
+      "horizon": "3d, 7d",
+      "falsification": "Brier skill <= 0 with n>=10"
+    },
+    {
+      "id": "EXP-B-TREND-PERSISTENCE",
+      "name": "Trend persistence after Aporia says TREND",
+      "h0": "When Aporia says TREND, future trend persistence is no different from baseline.",
+      "h1": "When Aporia says TREND, trend persistence is higher than baseline.",
+      "metric": "future return / trailing volatility (Sharpe-like), directional efficiency, max drawdown at 1d/3d/7d",
+      "control": "compare to all periods where baseline regime = same state",
+      "falsification": "no improvement in trend persistence metric with n>=10"
+    },
+    {
+      "id": "EXP-C-TRANSITION",
+      "name": "Transition lead/lag",
+      "h0": "Aporia does not lead objective regime transitions.",
+      "h1": "Aporia's regime changes lead objective regime changes by >= 1 day.",
+      "objective_regime": "price EMA crossover + volatility regime",
+      "scoring": "distribution of (source_transition - objective_transition)",
+      "falsification": "median lag > 0 with n>=5 transitions"
+    },
+    {
+      "id": "EXP-D-DOWNSTREAM-PNL",
+      "name": "Downstream strategy activation",
+      "h0": "Aporia regime gating does not improve downstream strategy EV.",
+      "h1": "Strategies gated by Aporia regime calls improve EV, Sharpe, and drawdown.",
+      "strategies": ["ALT_MOMENTUM", "BTC_TREND_FOLLOWING", "DEATH_TOKEN_VETO"],
+      "scoring": "ΔEV, ΔSharpe, Δmax_drawdown",
+      "falsification": "no improvement in any strategy with n>=10"
+    }
+  ],
+
+  "data_requirements": {
+    "august_posts": "raw/0xaporia_aug2026.json",
+    "regime_timeline": "data/regime/timeline.json",
+    "price_data": "data/prices/*.json",
+    "horizon": "2026-08-01 to 2026-08-31"
+  },
+
+  "status": "PENDING_RE_EXTRACTION"
+}

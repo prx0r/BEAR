@@ -1,0 +1,56 @@
+{
+  "source_id": "x:1292508532823252994",
+  "handle": "0xaporia",
+  "status": "VALIDATING",
+
+  "primary_primitive": "REGIME_TREND",
+  "secondary_primitives": ["ALT_BREADTH", "CROSS_SECTIONAL_MOMENTUM"],
+  "roles": ["STRATEGY_ACTIVATION", "STRATEGY_VETO", "ASSET_SELECTION"],
+
+  "august_data": {
+    "total_posts": 30,
+    "regime_events": 10,
+    "regime_trend_events": 7,
+    "alt_breadth_events": 1,
+    "cross_sectional_events": 1,
+    "interpretation_events": 5
+  },
+
+  "experiments": {
+    "EXP-A-STATE": {
+      "result": "INCONCLUSIVE",
+      "detail": "70% match with machine regime, but machine is noisy hourly data. Not the right test for Aporia."
+    },
+    "EXP-B-TREND-PERSISTENCE": {
+      "result": "PROMISING",
+      "detail": "When Aporia says UP, 7d return = +7.71% vs baseline +0.39%. n=7, too small for conclusions.",
+      "aporia_1d": 0.0388,
+      "aporia_3d": 0.0574,
+      "aporia_7d": 0.0771,
+      "baseline_1d": 0.0003,
+      "baseline_3d": 0.0003,
+      "baseline_7d": 0.0039
+    },
+    "EXP-C-TRANSITION": {
+      "result": "PROMISING",
+      "detail": "Aporia said RANGE on Aug 6 (machine transitioning to RANGE Aug 6-7). Said UP on Aug 19 (machine transitioning UP Aug 17-19). Appears to lead transitions by 0-2 days."
+    },
+    "EXP-D-DOWNSTREAM-PNL": {
+      "result": "PROMISING",
+      "detail": "Aporia gated strategy captured 22.13% of 24.89% August move by being deployed only 12/31 days. Value is activation timing.",
+      "always_long_aug": 0.2489,
+      "aporia_gated": 0.2213,
+      "missed_move": 0.0226
+    }
+  },
+
+  "verdict": "PROMISING — need September data (n>30 per regime). Old directional label REJECTED.",
+
+  "key_insight": "Aporia's value is not directional calls. It is REGIME INTERPRETATION that determines which strategies should be active. He correctly identified RANGE (Aug 6) and UP (Aug 19-28). His value is ACTIVATION TIMING, not raw direction.",
+
+  "falsification_status": "NOT FALSIFIED — but n=7 is too small. Need n>30.",
+
+  "graph_weight": 0.0,
+  "research_priority": "HIGH",
+  "next_action": "Fetch September data, increase n, re-run experiments"
+}
