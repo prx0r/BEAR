@@ -4,6 +4,34 @@
 
 ---
 
+## ⚠️ CRITICAL SECURITY RULES
+
+### RULE 0: NEVER HARDCODE API KEYS OR SECRETS
+
+**Incident: 2026-09-07**
+
+An agent hardcoded API keys in 7 files and pushed to GitHub. GitHub secret scanning rejected the push. Keys are now in git history forever. User had to spend 30+ minutes cleaning up.
+
+**The rules:**
+
+1. **NEVER** put API keys, tokens, or secrets in `.py`, `.md`, or `.json` files
+2. **ALWAYS** use `.env` for secrets
+3. **ALWAYS** add `.env` to `.gitignore` BEFORE first commit
+4. **Before ANY commit**, run: `grep -r "sk_live\|AKIA\|GOCSPX\|cfat_\|get-x-api-" --include="*.py" --include="*.md" --include="*.json" .`
+5. **If you find a key**: STOP. Remove it. Put it in `.env`. Then commit.
+
+**Correct pattern:**
+```python
+# WRONG - NEVER DO THIS
+API_KEY = "get-x-api-0d101a57d43f429a69ff8dd821186eeb2f889406859be720"
+
+# RIGHT
+import os
+API_KEY = os.environ.get("GETXAPI_KEY")
+```
+
+---
+
 ## Vision
 
 **BEAR is a signal intelligence business.**
