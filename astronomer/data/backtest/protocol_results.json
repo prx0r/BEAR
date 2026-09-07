@@ -1,0 +1,499 @@
+{
+  "0xAvast": {
+    "category": "meme",
+    "tweets": 181,
+    "events": 6,
+    "actionable": 4,
+    "symbols": [
+      "CASHCAT",
+      "FONE",
+      "MARSCOIN",
+      "POKI",
+      "SPCX",
+      "TOMOCHI"
+    ]
+  },
+  "0xaporia": {
+    "category": "major",
+    "tweets": 30,
+    "events": 30,
+    "by_kind": {
+      "CALL": 5,
+      "VIEW": 21,
+      "RETROSPECTIVE": 4
+    },
+    "with_asset": 2,
+    "calls": 5,
+    "calls_with_asset": 0
+  },
+  "0xnobi": {
+    "category": "meme",
+    "tweets": 400,
+    "events": 10,
+    "actionable": 2,
+    "symbols": [
+      "CATE",
+      "MARTIANS",
+      "PONS",
+      "PUMP",
+      "RWI",
+      "SPCX",
+      "YOLO"
+    ]
+  },
+  "52kskew": {
+    "category": "derivative",
+    "tweets": 0,
+    "events": 0,
+    "by_kind": {},
+    "with_asset": 0,
+    "calls": 0,
+    "calls_with_asset": 0
+  },
+  "CertiKAlert": {
+    "category": "security",
+    "tweets": 18,
+    "events": 18,
+    "by_kind": {
+      "VIEW": 12,
+      "OBSERVATION": 2,
+      "RETROSPECTIVE": 4
+    },
+    "with_asset": 1,
+    "calls": 0,
+    "calls_with_asset": 0
+  },
+  "CryptoBheem": {
+    "category": "major",
+    "tweets": 20,
+    "events": 20,
+    "by_kind": {
+      "VIEW": 14,
+      "OBSERVATION": 2,
+      "RETROSPECTIVE": 1,
+      "CALL": 3
+    },
+    "with_asset": 8,
+    "calls": 3,
+    "calls_with_asset": 3
+  },
+  "DeItaone": {
+    "category": "news",
+    "tweets": 400,
+    "events": 400,
+    "by_kind": {
+      "VIEW": 324,
+      "RETROSPECTIVE": 37,
+      "CALL": 25,
+      "NON_SIGNAL": 10,
+      "OBSERVATION": 4
+    },
+    "with_asset": 4,
+    "calls": 25,
+    "calls_with_asset": 3
+  },
+  "EleanorTerrett": {
+    "category": "news",
+    "tweets": 64,
+    "events": 64,
+    "by_kind": {
+      "VIEW": 53,
+      "OBSERVATION": 1,
+      "RETROSPECTIVE": 7,
+      "CALL": 3
+    },
+    "with_asset": 0,
+    "calls": 3,
+    "calls_with_asset": 0
+  },
+  "EmberCN": {
+    "category": "onchain",
+    "tweets": 126,
+    "events": 126,
+    "by_kind": {
+      "VIEW": 88,
+      "OBSERVATION": 35,
+      "CALL": 3
+    },
+    "with_asset": 90,
+    "calls": 3,
+    "calls_with_asset": 2
+  },
+  "FarsideUK": {
+    "category": "flow",
+    "tweets": 80,
+    "events": 80,
+    "by_kind": {
+      "VIEW": 80
+    },
+    "with_asset": 80,
+    "calls": 0,
+    "calls_with_asset": 0
+  },
+  "FirstSquawk": {
+    "category": "news",
+    "tweets": 400,
+    "events": 400,
+    "by_kind": {
+      "VIEW": 352,
+      "RETROSPECTIVE": 18,
+      "CALL": 16,
+      "NON_SIGNAL": 12,
+      "OBSERVATION": 2
+    },
+    "with_asset": 2,
+    "calls": 16,
+    "calls_with_asset": 0
+  },
+  "HyperliquidR": {
+    "category": "hl",
+    "tweets": 81,
+    "events": 81,
+    "by_kind": {
+      "VIEW": 63,
+      "NON_SIGNAL": 5,
+      "RETROSPECTIVE": 8,
+      "OBSERVATION": 2,
+      "CALL": 3
+    },
+    "with_asset": 19,
+    "calls": 3,
+    "calls_with_asset": 2
+  },
+  "OnchainLens": {
+    "category": "onchain",
+    "tweets": 274,
+    "events": 274,
+    "by_kind": {
+      "VIEW": 128,
+      "CALL": 82,
+      "OBSERVATION": 17,
+      "NON_SIGNAL": 9,
+      "RETROSPECTIVE": 38
+    },
+    "with_asset": 150,
+    "calls": 82,
+    "calls_with_asset": 66
+  },
+  "PeckShieldAlert": {
+    "category": "security",
+    "tweets": 23,
+    "events": 23,
+    "by_kind": {
+      "VIEW": 14,
+      "RETROSPECTIVE": 8,
+      "CALL": 1
+    },
+    "with_asset": 8,
+    "calls": 1,
+    "calls_with_asset": 1
+  },
+  "SevaFTW": {
+    "category": "meme",
+    "tweets": 32,
+    "events": 0,
+    "actionable": 0,
+    "symbols": []
+  },
+  "SubnetStats": {
+    "category": "tao",
+    "tweets": 5,
+    "events": 5,
+    "by_kind": {
+      "CALL": 1,
+      "VIEW": 3,
+      "RETROSPECTIVE": 1
+    },
+    "with_asset": 3,
+    "calls": 1,
+    "calls_with_asset": 1
+  },
+  "TAOTemplar": {
+    "category": "tao",
+    "tweets": 103,
+    "events": 103,
+    "by_kind": {
+      "RETROSPECTIVE": 9,
+      "VIEW": 90,
+      "CALL": 3,
+      "NON_SIGNAL": 1
+    },
+    "with_asset": 31,
+    "calls": 3,
+    "calls_with_asset": 1
+  },
+  "Timeless_Crypto": {
+    "category": "major",
+    "tweets": 50,
+    "events": 50,
+    "by_kind": {
+      "VIEW": 36,
+      "RETROSPECTIVE": 3,
+      "CALL": 9,
+      "NON_SIGNAL": 2
+    },
+    "with_asset": 27,
+    "calls": 9,
+    "calls_with_asset": 8
+  },
+  "Tokenomist_ai": {
+    "category": "fundamental",
+    "tweets": 31,
+    "events": 31,
+    "by_kind": {
+      "VIEW": 21,
+      "RETROSPECTIVE": 3,
+      "NON_SIGNAL": 2,
+      "OBSERVATION": 1,
+      "CALL": 4
+    },
+    "with_asset": 6,
+    "calls": 4,
+    "calls_with_asset": 1
+  },
+  "Trader_XO": {
+    "category": "major",
+    "tweets": 100,
+    "events": 100,
+    "by_kind": {
+      "VIEW": 92,
+      "RETROSPECTIVE": 5,
+      "CALL": 3
+    },
+    "with_asset": 3,
+    "calls": 3,
+    "calls_with_asset": 0
+  },
+  "astronomer_zero": {
+    "category": "major",
+    "tweets": 100,
+    "events": 100,
+    "by_kind": {
+      "VIEW": 72,
+      "CALL": 12,
+      "RETROSPECTIVE": 14,
+      "OBSERVATION": 2
+    },
+    "with_asset": 29,
+    "calls": 12,
+    "calls_with_asset": 8
+  },
+  "chameleon_jeff": {
+    "category": "hl",
+    "tweets": 3,
+    "events": 3,
+    "by_kind": {
+      "VIEW": 3
+    },
+    "with_asset": 2,
+    "calls": 0,
+    "calls_with_asset": 0
+  },
+  "crossbordercap": {
+    "category": "macro",
+    "tweets": 19,
+    "events": 19,
+    "by_kind": {
+      "VIEW": 18,
+      "CALL": 1
+    },
+    "with_asset": 0,
+    "calls": 1,
+    "calls_with_asset": 0
+  },
+  "exitpumpBTC": {
+    "category": "derivative",
+    "tweets": 20,
+    "events": 20,
+    "by_kind": {
+      "VIEW": 16,
+      "CALL": 3,
+      "NON_SIGNAL": 1
+    },
+    "with_asset": 7,
+    "calls": 3,
+    "calls_with_asset": 2
+  },
+  "hyblockcapital": {
+    "category": "derivative",
+    "tweets": 145,
+    "events": 145,
+    "by_kind": {
+      "VIEW": 102,
+      "CALL": 16,
+      "RETROSPECTIVE": 24,
+      "OBSERVATION": 2,
+      "NON_SIGNAL": 1
+    },
+    "with_asset": 10,
+    "calls": 16,
+    "calls_with_asset": 1
+  },
+  "josephwang": {
+    "category": "macro",
+    "tweets": 61,
+    "events": 61,
+    "by_kind": {
+      "CALL": 7,
+      "VIEW": 48,
+      "RETROSPECTIVE": 6
+    },
+    "with_asset": 0,
+    "calls": 7,
+    "calls_with_asset": 0
+  },
+  "kenjidgn": {
+    "category": "meme",
+    "tweets": 226,
+    "events": 19,
+    "actionable": 1,
+    "symbols": [
+      "CASHCAT",
+      "FEFER",
+      "ICAT",
+      "INDEX",
+      "WINK"
+    ]
+  },
+  "ki_young_ju": {
+    "category": "onchain",
+    "tweets": 35,
+    "events": 35,
+    "by_kind": {
+      "VIEW": 30,
+      "RETROSPECTIVE": 3,
+      "CALL": 2
+    },
+    "with_asset": 14,
+    "calls": 2,
+    "calls_with_asset": 2
+  },
+  "kingfisher_btc": {
+    "category": "derivative",
+    "tweets": 126,
+    "events": 126,
+    "by_kind": {
+      "VIEW": 99,
+      "CALL": 23,
+      "OBSERVATION": 3,
+      "RETROSPECTIVE": 1
+    },
+    "with_asset": 25,
+    "calls": 23,
+    "calls_with_asset": 11
+  },
+  "koolkrypto223": {
+    "category": "major",
+    "tweets": 20,
+    "events": 20,
+    "by_kind": {
+      "VIEW": 13,
+      "CALL": 2,
+      "RETROSPECTIVE": 4,
+      "OBSERVATION": 1
+    },
+    "with_asset": 2,
+    "calls": 2,
+    "calls_with_asset": 1
+  },
+  "laevitas1": {
+    "category": "derivative",
+    "tweets": 45,
+    "events": 45,
+    "by_kind": {
+      "VIEW": 26,
+      "RETROSPECTIVE": 9,
+      "CALL": 8,
+      "OBSERVATION": 1,
+      "NON_SIGNAL": 1
+    },
+    "with_asset": 15,
+    "calls": 8,
+    "calls_with_asset": 6
+  },
+  "loganlim_x": {
+    "category": "meme",
+    "tweets": 67,
+    "events": 8,
+    "actionable": 5,
+    "symbols": [
+      "CASHCAT",
+      "COOKWARE",
+      "EGG",
+      "HYPE",
+      "TOSHI"
+    ]
+  },
+  "lookonchain": {
+    "category": "onchain",
+    "tweets": 20,
+    "events": 20,
+    "by_kind": {
+      "VIEW": 2,
+      "OBSERVATION": 10,
+      "CALL": 6,
+      "RETROSPECTIVE": 2
+    },
+    "with_asset": 17,
+    "calls": 6,
+    "calls_with_asset": 5
+  },
+  "taodotbot": {
+    "category": "tao",
+    "tweets": 1,
+    "events": 1,
+    "by_kind": {
+      "RETROSPECTIVE": 1
+    },
+    "with_asset": 0,
+    "calls": 0,
+    "calls_with_asset": 0
+  },
+  "theunipcs": {
+    "category": "meme",
+    "tweets": 344,
+    "events": 44,
+    "actionable": 19,
+    "symbols": [
+      "AERO",
+      "ANSEM",
+      "BASECAT",
+      "BONK",
+      "CASHCAT",
+      "DELTA",
+      "DOGE",
+      "FARTCOIN",
+      "HMM",
+      "HYPE",
+      "JUGGERNAUT",
+      "MARSCOIN",
+      "MICRODUCK",
+      "PEPE",
+      "PNUT",
+      "PONS",
+      "PUMP",
+      "RAY",
+      "SAFEMOON",
+      "SHIB",
+      "SPCX",
+      "UNI",
+      "USELESS",
+      "VIRTUALS",
+      "WIF"
+    ]
+  },
+  "zachxbt": {
+    "category": "security",
+    "tweets": 86,
+    "events": 86,
+    "by_kind": {
+      "NON_SIGNAL": 2,
+      "VIEW": 64,
+      "RETROSPECTIVE": 18,
+      "OBSERVATION": 2
+    },
+    "with_asset": 4,
+    "calls": 0,
+    "calls_with_asset": 0
+  }
+}

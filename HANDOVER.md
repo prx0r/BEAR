@@ -170,7 +170,7 @@ Key principles:
 ```
 Primary key: stored in .env (GETXAPI_KEY)
 Backup key: in agent-vault (GETXAPI_KEY_BACKUP)
-Balance: $39.61
+Balance: $36.90
 Plan: pro_sub (expires 2026-10-07)
 ```
 

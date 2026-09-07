@@ -1,0 +1,217 @@
+[
+  {
+    "event_id": "evt_0xaporia_20260806_regime",
+    "post_id": "0xaporia_aug06_0924",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-06T09:24:00+00:00",
+    "semantic_kind": "OBSERVATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "RANGE",
+    "scope": "BTC",
+    "stance": "NEUTRAL",
+    "features": {
+      "trend": "NONE",
+      "direction": "SIDEWAYS",
+      "comparison": "SUMMER_2022"
+    },
+    "evidence_quote": "Price grinding sideways, no real direction",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260806_liquidity",
+    "post_id": "0xaporia_aug06_0940",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-06T09:40:00+00:00",
+    "semantic_kind": "OBSERVATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "RANGE",
+    "scope": "CRYPTO_BETA",
+    "stance": "NEUTRAL",
+    "features": {
+      "social_activity": "LOW",
+      "phase": "ACCUMULATION",
+      "discretionary": "BEST_TIME"
+    },
+    "evidence_quote": "slow phases are the best time for discretionary",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260819_missed",
+    "post_id": "0xaporia_aug19_1642",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-19T16:42:00+00:00",
+    "semantic_kind": "OBSERVATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "phase": "TREND",
+      "sentiment": "SARCASTIC_BEARISH"
+    },
+    "evidence_quote": "you missed the generational golden bullrun bottom",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260820_targets",
+    "post_id": "0xaporia_aug20_1706",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-20T17:06:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "method": "TREND_FOLLOWING",
+      "target_style": "OPEN_ENDED",
+      "winner_rate": "LOW"
+    },
+    "evidence_quote": "Most trends fail. So your job is making sure you are exposed as long as possible to the ones that do not.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260820_buyhigh",
+    "post_id": "0xaporia_aug20_0807",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-20T08:07:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "method": "TREND_CONTINUATION",
+      "risk_type": "RISK_ACCEPTANCE"
+    },
+    "evidence_quote": "Refusing to buy highs means only ever buying things that are not trending. Nobody buys the top on purpose, but everyone who caught the move risked it.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260820_grow",
+    "post_id": "0xaporia_aug20_1644",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-20T16:44:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "method": "TREND_CONTINUATION",
+      "risk_type": "RISK_ACCEPTANCE"
+    },
+    "evidence_quote": "99% of people come to crypto for one reason: trend. They want to be in the shitcoin while it is running. Then the first green candle shows up and mfers start calling tops. Grow some balls and take the risk of buying the top.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260821_lagging",
+    "post_id": "0xaporia_aug21_1016",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-21T10:16:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "CROSS_SECTIONAL_MOMENTUM",
+    "regime_state": "UP",
+    "scope": "ALTS",
+    "stance": "BULLISH",
+    "features": {
+      "selection": "PREFER_LEADERS",
+      "avoid": "LAGGARDS",
+      "rationale": "no queue for underperformance"
+    },
+    "evidence_quote": "the word lagging is doing dishonest work. People use it to reframe underperformance as opportunity, as if there is a queue and your bag is waiting for its turn.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260822_tops",
+    "post_id": "0xaporia_aug22_0527",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-22T05:27:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "method": "TREND_FOLLOWING",
+      "top_bottom": "IRRELEVANT"
+    },
+    "evidence_quote": "Tops and bottoms are arbitrary reference points with little relevance to sound strategies. Most money is made in between.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260825_altbreadth",
+    "post_id": "0xaporia_aug25_1546",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-25T15:46:00+00:00",
+    "semantic_kind": "OBSERVATION",
+    "primitive": "ALT_BREADTH",
+    "regime_state": "UP",
+    "scope": "ALTS",
+    "stance": "NEUTRAL",
+    "features": {
+      "aggregate_vs_equal_weight": "DIVERGENT",
+      "breadth": "NARROW",
+      "leaders_driving": true
+    },
+    "evidence_quote": "Whenever someone shows you the total altcoin market cap, you should have in mind what the equal-weight version looks like. The aggregate alt market can look alive and well while the average alt holder is getting destroyed.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  },
+  {
+    "event_id": "evt_0xaporia_20260828_trend",
+    "post_id": "0xaporia_aug28_1530",
+    "author_handle": "0xaporia",
+    "author_id": "1292508532823252994",
+    "published_at": "2026-08-28T15:30:00+00:00",
+    "semantic_kind": "INTERPRETATION",
+    "primitive": "REGIME_TREND",
+    "regime_state": "UP",
+    "scope": "CRYPTO_BETA",
+    "stance": "BULLISH",
+    "features": {
+      "method": "TREND_CONTINUATION",
+      "escape_velocity": true
+    },
+    "evidence_quote": "waiting months for a breakout just to sell on the first day of escape velocity? bear market has corrupted you, anon.",
+    "evidence_start": 0,
+    "evidence_end": 0,
+    "extraction_version": "regime_trend_v1",
+    "is_call": false
+  }
+]
