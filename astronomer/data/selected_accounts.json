@@ -1,0 +1,86 @@
+[
+  {
+    "panel": "PREMIUM_DATA",
+    "handle": "laevitas1",
+    "flow": 13,
+    "signal": 9,
+    "media": 14
+  },
+  {
+    "panel": "ONCHAIN",
+    "handle": "lookonchain",
+    "flow": 6,
+    "signal": 11,
+    "media": 20
+  },
+  {
+    "panel": "TACTICAL",
+    "handle": "astronomer_zero",
+    "flow": 8,
+    "signal": 8,
+    "media": 8
+  },
+  {
+    "panel": "DERIVATIVES",
+    "handle": "exitpumpBTC",
+    "flow": 7,
+    "signal": 10,
+    "media": 12
+  },
+  {
+    "panel": "BTC_REGIME",
+    "handle": "0xaporia",
+    "flow": 8,
+    "signal": 7,
+    "media": 6
+  },
+  {
+    "panel": "FUNDAMENTALS",
+    "handle": "bubblemaps",
+    "flow": 11,
+    "signal": 4,
+    "media": 11
+  },
+  {
+    "panel": "TAO",
+    "handle": "taodotbot",
+    "flow": 13,
+    "signal": 8,
+    "media": 17
+  },
+  {
+    "panel": "SECURITY",
+    "handle": "PeckShieldAlert",
+    "flow": 16,
+    "signal": 1,
+    "media": 20
+  },
+  {
+    "panel": "MEME_SCOUTS",
+    "handle": "kenjidgn",
+    "flow": 7,
+    "signal": 0,
+    "media": 3
+  },
+  {
+    "panel": "US_MACRO",
+    "handle": "josephwang",
+    "flow": 3,
+    "signal": 1,
+    "media": 6
+  },
+  {
+    "panel": "ETF_FLOWS",
+    "handle": "FarsideUK",
+    "flow": 20,
+    "signal": 0,
+    "media": 8
+  },
+  {
+    "panel": "HYPERLIQUID",
+    "handle": "chameleon_jeff",
+    "flow": 10,
+    "signal": 2,
+    "media": 2
+  }
+]
