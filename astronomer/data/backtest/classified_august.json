@@ -21,7 +21,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "exitpumpBTC",
@@ -57,7 +58,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "exitpumpBTC",
@@ -69,7 +71,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "exitpumpBTC",
@@ -81,7 +84,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "exitpumpBTC",
@@ -129,7 +133,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -141,7 +146,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -153,7 +159,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -165,7 +172,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -177,7 +185,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -189,7 +198,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -201,7 +211,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -213,7 +224,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -237,7 +249,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -249,7 +262,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -261,7 +275,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -273,7 +288,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -285,7 +301,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -297,7 +314,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -335,7 +353,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -347,7 +366,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "0xaporia",
@@ -373,7 +393,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -385,7 +406,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -433,7 +455,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -445,7 +468,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -464,7 +488,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -476,7 +501,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -500,7 +526,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -524,7 +551,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -572,7 +600,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -596,7 +625,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -615,7 +645,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -627,7 +658,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -651,7 +683,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -699,7 +732,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -711,7 +745,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -723,7 +758,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -735,7 +771,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -766,7 +803,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -778,7 +816,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Timeless_Crypto",
@@ -790,7 +829,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -802,7 +842,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -850,7 +891,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -886,7 +928,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -910,7 +953,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -922,7 +966,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -934,7 +979,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -958,7 +1004,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "CryptoBheem",
@@ -1013,7 +1060,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1037,7 +1085,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1049,7 +1098,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1061,7 +1111,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1109,7 +1160,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1121,7 +1173,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1133,7 +1186,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "laevitas1",
@@ -1254,7 +1308,18 @@
     "event_kind": "OBSERVATION",
     "direction": null,
     "assets": [
-      "BTC",
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094428194011333071",
+    "text": "Aug 24\u2013Aug 30, 2026 #LookonchainWeeklyReport\n\n\ud83d\udfe2 Overview\nStablecoin supply grew by $987.1M last week, DEX spot volume slipped and perp volume fell, while public companies added 4,003 BTC.\n\n\ud83d\udfe2 Stablecoi",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
       "ETH"
     ],
     "has_levels": true,
@@ -1404,7 +1469,8 @@
       "BTC"
     ],
     "has_levels": true,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "lookonchain",
@@ -1524,7 +1590,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1624,7 +1691,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1636,7 +1704,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1674,7 +1743,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1686,7 +1756,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1753,7 +1824,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1793,7 +1865,18 @@
     "event_kind": "TEXT",
     "direction": null,
     "assets": [
-      "BTC",
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091846336505356573",
+    "text": "$btc \n\nWhy I TP'd most of my higher timeframe longs above 78k - confluence two\n\nWhich is, no less than the one and only mmd with $eth.\n\nA higher high is formed on $eth where $btc formed a lower high.\n",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
       "ETH"
     ],
     "has_levels": false,
@@ -1825,7 +1908,18 @@
     "event_kind": "TEXT",
     "direction": null,
     "assets": [
-      "BTC",
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091106340412485932",
+    "text": "Nice drop so far. Did you check the Quartely $btc chart and $eth/$btc relatively by now?\n\nWhat do you see?\n\nIt will tell you why we face resistance.\n\nYour charts+annotations in the comments.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
       "ETH"
     ],
     "has_levels": false,
@@ -1864,7 +1958,18 @@
     "event_kind": "TEXT",
     "direction": null,
     "assets": [
-      "BTC",
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090911540954505708",
+    "text": "$btc - my higher timeframe call range idea\n\nAn hourly range \u2705, a daily range \u2705, and... a weekly range also very close now to completion \u23f3\n\nWith all the fomo on the timeline and how everyone \"called th",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
       "ETH"
     ],
     "has_levels": false,
@@ -1892,7 +1997,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "astronomer_zero",
@@ -1904,7 +2010,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1928,7 +2035,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1940,7 +2048,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1952,7 +2061,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1964,7 +2074,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1976,7 +2087,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -1988,7 +2100,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -2000,7 +2113,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": false
+    "is_conditional": false,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -2012,7 +2126,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -2024,7 +2139,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "Trader_XO",
@@ -2036,7 +2152,8 @@
       "BTC"
     ],
     "has_levels": false,
-    "is_conditional": true
+    "is_conditional": true,
+    "_fix_reason": "no explicit crypto mention"
   },
   {
     "handle": "chameleon_jeff",
