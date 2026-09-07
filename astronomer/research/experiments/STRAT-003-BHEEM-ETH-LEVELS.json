@@ -1,0 +1,57 @@
+{
+  "strategy_id": "STRAT-003-BHEEM-ETH-LEVELS",
+  "version": "0.1",
+  "status": "HYPOTHESIS",
+  "created_at": "2026-09-07T12:00:00Z",
+  "created_before_outcome_inspection": false,
+
+  "hypothesis": "CryptoBheem is a level trader who posts limit orders at specific ETH support levels. Following his levels produces a 79% win rate at 4h with +1.28% mean return.",
+
+  "economic_mechanism": "Market maker / large spot trader posts limit orders at orderblocks/support. These levels attract price due to his $25M+ position size. Following his levels captures the bounce from institutional liquidity.",
+
+  "source": "CryptoBheem",
+  "asset": "ETH",
+  "primitive": "PRICE_STRUCTURE",
+
+  "activation_rules": {
+    "trigger": "CryptoBheem posts $ETH with explicit price levels",
+    "entry": "Place limit order at his bid zone (not market order)",
+    "sizing": "Scale in 1/3 at each level",
+    "horizon": "4h"
+  },
+
+  "deactivation_rules": {
+    "exit_1": "Take 50% at first target",
+    "exit_2": "Move stop to breakeven",
+    "exit_3": "Let rest run to final target",
+    "hard_stop": "His invalidation level"
+  },
+
+  "backtest_2yr": {
+    "n": 14,
+    "win_rate_4h": 0.79,
+    "mean_return_4h": 0.01281,
+    "sharpe_4h": 13.4,
+    "profit_factor": 6.7,
+    "wilson_ci": [0.524, 0.924],
+    "regime_performance": {
+      "DOWN": {"n": 5, "win_rate": 1.0, "mean_return": 0.01670},
+      "UP": {"n": 6, "win_rate": 0.83, "mean_return": 0.01202},
+      "RANGE": {"n": 3, "win_rate": 0.33, "mean_return": 0.00791}
+    },
+    "win_loss": {
+      "avg_win": 0.01918,
+      "avg_loss": -0.01055,
+      "ratio": 1.82
+    }
+  },
+
+  "falsification": "If n>30 and win rate drops below 60%, or Wilson CI includes 50%, reject.",
+
+  "next_steps": [
+    "Monitor CryptoBheem ETH posts in real-time",
+    "Extract entry levels automatically",
+    "Paper trade the strategy for 30 days",
+    "Only then consider real capital"
+  ]
+}
