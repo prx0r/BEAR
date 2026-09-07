@@ -1,0 +1,20 @@
+{
+  "astronomer_zero": {
+    "tweets": 766,
+    "events": 766,
+    "btc_calls": 96,
+    "outcomes": 96
+  },
+  "Timeless_Crypto": {
+    "tweets": 2658,
+    "events": 2658,
+    "btc_calls": 193,
+    "outcomes": 193
+  },
+  "Trader_XO": {
+    "tweets": 776,
+    "events": 776,
+    "btc_calls": 22,
+    "outcomes": 22
+  }
+}
