@@ -78,7 +78,7 @@
 | Accounts tracked | 119 nodes |
 | Graph edges | 100 |
 | August backtest | 37 CALL events, 26 matched |
-| Top performer | @0xaporia (100% win 4h, n=3) |
+| Top performer | @0xaporia (100% win 4h, **n=3 — TOO SMALL**) |
 | Gold set | 42 posts for validation |
 | Price data | BTC/ETH/SOL/TAO hourly (23K+ candles) |
 
@@ -100,11 +100,18 @@
 - 42 gold-set posts for validation
 - 23K+ hourly price candles
 
-### Key Results
-- @0xaporia: 100% win 4h (n=3) — regime specialist
-- @Timeless: 89% win 4h — SHORT conviction
-- @lookonchain: 67% win 4h — onchain flow
-- Only 15% of posts are PREDICTION (properly classified)
+### Key Results (with caveats)
+
+| Account | Win 4h | N | Caveat |
+|---------|--------|---|--------|
+| @0xaporia | 100% | **3** | TOO SMALL. 3 signals is not statistically significant. Could be pure luck. |
+| @Timeless | 89% | 9 | Better sample, but still small. SHORT conviction validated. |
+| @lookonchain | 67% | 9 | Onchain flow validated as separate alpha source. |
+| @astronomer | 50% | 8 | Mixed. Needs regime filter. |
+
+**WARNING:** The 100% win rate for 0xaporia is based on 3 signals. That's not alpha — that's a coin flip with small sample bias. Do NOT treat this as validated. The real test is whether it holds with n>30.
+
+**Only 15% of posts are PREDICTION (properly classified).** The other 85% are observations, analysis, or retrospective.
 
 ---
 
