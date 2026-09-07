@@ -1,0 +1,21 @@
+{
+  "batch_id": "batch_20260907_0131",
+  "handle": "Timeless_Crypto",
+  "query": "from:Timeless_Crypto since:2026-06-01 until:2026-06-15",
+  "timestamp": "2026-09-07T01:31:46.110546+00:00",
+  "calls_made": 2,
+  "balance_before": 0.064,
+  "balance_after": 0.062,
+  "cost": 0.0020000000000000018,
+  "posts_returned": 33,
+  "filter_stats": {
+    "replies": 6,
+    "retweets": 0,
+    "short_posts": 1,
+    "after_filter": 27,
+    "directional": 9,
+    "has_levels": 2,
+    "signal_density": 0.407
+  },
+  "quality_judgment": "HIGH"
+}

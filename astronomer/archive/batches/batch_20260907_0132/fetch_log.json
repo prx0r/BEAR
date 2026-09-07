@@ -1,0 +1,21 @@
+{
+  "batch_id": "batch_20260907_0132",
+  "handle": "Trader_XO",
+  "query": "from:Trader_XO since:2026-05-01 until:2026-05-31",
+  "timestamp": "2026-09-07T01:32:54.519411+00:00",
+  "calls_made": 5,
+  "balance_before": 0.06,
+  "balance_after": 0.055,
+  "cost": 0.0049999999999999975,
+  "posts_returned": 100,
+  "filter_stats": {
+    "replies": 75,
+    "retweets": 0,
+    "short_posts": 19,
+    "after_filter": 23,
+    "directional": 7,
+    "has_levels": 7,
+    "signal_density": 0.609
+  },
+  "quality_judgment": "HIGH"
+}
