@@ -56,48 +56,6 @@
     "correct_7d": false
   },
   {
-    "handle": "Trader_XO",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 64462.58,
-    "return_4h": -0.004032727203906501,
-    "correct_4h": false,
-    "return_24h": -0.010539758104624392,
-    "correct_24h": false,
-    "return_7d": -0.0036135692986534987,
-    "correct_7d": false
-  },
-  {
-    "handle": "Trader_XO",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 79704.14,
-    "return_4h": 0.004238926610336685,
-    "correct_4h": true,
-    "return_24h": 0.0027338604995925456,
-    "correct_24h": true,
-    "return_7d": 0.005869958574297403,
-    "correct_7d": true
-  },
-  {
-    "handle": "Trader_XO",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 81147.16,
-    "return_4h": 0.020865794933550317,
-    "correct_4h": true,
-    "return_24h": 0.018449937126573543,
-    "correct_24h": true,
-    "return_7d": 0.012017179652374815,
-    "correct_7d": true
-  },
-  {
     "handle": "0xaporia",
     "direction": "SHORT",
     "assets": [
@@ -339,7 +297,7 @@
     "handle": "CryptoBheem",
     "direction": "LONG",
     "assets": [
-      "BTC"
+      "HYPE"
     ],
     "entry": 63069.32,
     "return_4h": -0.00572782455875535,
@@ -350,45 +308,271 @@
     "correct_7d": true
   },
   {
-    "handle": "CryptoBheem",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 63297.84,
-    "return_4h": -0.0064757344010474005,
-    "correct_4h": false,
-    "return_24h": -0.003251769728635203,
-    "correct_24h": false,
-    "return_7d": 0.01671700013776144,
-    "correct_7d": true
-  },
-  {
-    "handle": "CryptoBheem",
+    "handle": "laevitas1",
     "direction": "SHORT",
     "assets": [
       "BTC"
     ],
-    "entry": 79930.77,
-    "return_4h": 0.01189491856515337,
-    "correct_4h": true,
-    "return_24h": 0.015302992827418122,
+    "entry": 79626.0,
+    "return_4h": -0.0072595634591716635,
+    "correct_4h": false,
+    "return_24h": 0.0007549041770276114,
     "correct_24h": true,
-    "return_7d": 0.025615792266232455,
+    "return_7d": 0.023737472684801388,
     "correct_7d": true
   },
   {
-    "handle": "CryptoBheem",
+    "handle": "laevitas1",
     "direction": "LONG",
     "assets": [
       "BTC"
     ],
-    "entry": 63069.32,
-    "return_4h": -0.00572782455875535,
-    "correct_4h": false,
-    "return_24h": 0.0009132808154582695,
+    "entry": 78442.83,
+    "return_4h": 0.003584521364157731,
+    "correct_4h": true,
+    "return_24h": 0.025491558629386582,
     "correct_24h": true,
-    "return_7d": 0.03085414588265732,
+    "return_7d": -0.013527941304514362,
+    "correct_7d": false
+  },
+  {
+    "handle": "laevitas1",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78980.0,
+    "return_4h": -0.002228665484932946,
+    "correct_4h": false,
+    "return_24h": 0.00836173714864527,
+    "correct_24h": true,
+    "return_7d": 0.012357558875664726,
+    "correct_7d": true
+  },
+  {
+    "handle": "laevitas1",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 71691.99,
+    "return_4h": 0.014583358615097651,
+    "correct_4h": true,
+    "return_24h": 0.07776154630384775,
+    "correct_24h": true,
+    "return_7d": 0.10937288810088809,
+    "correct_7d": true
+  },
+  {
+    "handle": "laevitas1",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 71927.07,
+    "return_4h": -0.007559879750419344,
+    "correct_4h": false,
+    "return_24h": -0.06666822379946798,
+    "correct_24h": false,
+    "return_7d": -0.10497577615771073,
+    "correct_7d": false
+  },
+  {
+    "handle": "laevitas1",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 71995.99,
+    "return_4h": -0.002349297509486284,
+    "correct_4h": false,
+    "return_24h": 0.0807549142667529,
+    "correct_24h": true,
+    "return_7d": 0.1059782635116205,
+    "correct_7d": true
+  },
+  {
+    "handle": "laevitas1",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63484.3,
+    "return_4h": -0.001012691326832002,
+    "correct_4h": false,
+    "return_24h": -0.00969483793630868,
+    "correct_24h": false,
+    "return_7d": 0.1329898888386578,
+    "correct_7d": true
+  },
+  {
+    "handle": "koolkrypto223",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78581.29,
+    "return_4h": -0.001243553013700859,
+    "correct_4h": false,
+    "return_24h": 0.014536411911792155,
+    "correct_24h": true,
+    "return_7d": -0.02024285933712728,
+    "correct_7d": false
+  },
+  {
+    "handle": "koolkrypto223",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78144.68,
+    "return_4h": -0.000341417995441187,
+    "correct_4h": false,
+    "return_24h": -0.004964765355747655,
+    "correct_24h": false,
+    "return_7d": 0.024100552974303587,
+    "correct_7d": true
+  },
+  {
+    "handle": "koolkrypto223",
+    "direction": "SHORT",
+    "assets": [
+      "ETH",
+      "SOL",
+      "HYPE"
+    ],
+    "entry": 2496.48,
+    "return_4h": -0.003452861629173833,
+    "correct_4h": false,
+    "return_24h": 0.024061879125809205,
+    "correct_24h": true,
+    "return_7d": -0.003168461193360193,
+    "correct_7d": false
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "SHORT",
+    "assets": [
+      "ETH"
+    ],
+    "entry": 2465.08,
+    "return_4h": -0.0026490012494524316,
+    "correct_4h": false,
+    "return_24h": 0.022376555730442768,
+    "correct_24h": true,
+    "return_7d": -0.019025751699742032,
+    "correct_7d": false
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "SHORT",
+    "assets": [
+      "ETH"
+    ],
+    "entry": 2467.56,
+    "return_4h": -0.004149848433270209,
+    "correct_4h": false,
+    "return_24h": 0.007404075280844228,
+    "correct_24h": true,
+    "return_7d": -0.01800158861385339,
+    "correct_7d": false
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 77867.39,
+    "return_4h": 0.013227231579227212,
+    "correct_4h": true,
+    "return_24h": 0.00262754408488593,
+    "correct_24h": true,
+    "return_7d": 0.029596600065829877,
+    "correct_7d": true
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "SHORT",
+    "assets": [
+      "SOL"
+    ],
+    "entry": 103.24,
+    "return_4h": 0.004649360712901877,
+    "correct_4h": true,
+    "return_24h": 0.011332816737698584,
+    "correct_24h": true,
+    "return_7d": -0.030511429678419275,
+    "correct_7d": false
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "ETH"
+    ],
+    "entry": 2407.9,
+    "return_4h": 0.012774616886083211,
+    "correct_4h": true,
+    "return_24h": 0.023746833340254923,
+    "correct_24h": true,
+    "return_7d": 0.043224386394783806,
+    "correct_7d": true
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "ETH"
+    ],
+    "entry": 2407.9,
+    "return_4h": 0.012774616886083211,
+    "correct_4h": true,
+    "return_24h": 0.023746833340254923,
+    "correct_24h": true,
+    "return_7d": 0.043224386394783806,
+    "correct_7d": true
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78145.29,
+    "return_4h": 0.008169654242757469,
+    "correct_4h": true,
+    "return_24h": 0.007226539181056225,
+    "correct_24h": true,
+    "return_7d": 0.023784414902036956,
+    "correct_7d": true
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78280.34,
+    "return_4h": -0.001725209675890561,
+    "correct_4h": false,
+    "return_24h": -0.002382079587288471,
+    "correct_24h": false,
+    "return_7d": 0.019216957923279303,
+    "correct_7d": true
+  },
+  {
+    "handle": "lookonchain",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78106.01,
+    "return_4h": 0.0022319665285680545,
+    "correct_4h": true,
+    "return_24h": -0.00809182289557474,
+    "correct_24h": false,
+    "return_7d": 0.023061861692845458,
     "correct_7d": true
   },
   {
