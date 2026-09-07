@@ -2158,6 +2158,19 @@
     "btc_regime": "RANGE"
   },
   {
+    "event_id": "evt_2038841687838199939_call",
+    "author_handle": "Timeless_Crypto",
+    "asset": "HYPE",
+    "direction": "BEARISH",
+    "entry_price": 0.0838,
+    "return_4h": 0.001193,
+    "return_24h": -0.01074,
+    "return_7d": -0.051313,
+    "mfe_4h": -0.00358,
+    "mae_4h": -0.009547,
+    "btc_regime": "UP"
+  },
+  {
     "event_id": "evt_2035903996934635795_call",
     "author_handle": "Timeless_Crypto",
     "asset": "BTC",
@@ -2340,6 +2353,19 @@
     "btc_regime": "DOWN"
   },
   {
+    "event_id": "evt_2056226136607076648_call",
+    "author_handle": "Timeless_Crypto",
+    "asset": "HYPE",
+    "direction": "BEARISH",
+    "entry_price": 0.1116,
+    "return_4h": -0.062724,
+    "return_24h": -0.010753,
+    "return_7d": 0.077957,
+    "mfe_4h": -0.006272,
+    "mae_4h": -0.058244,
+    "btc_regime": "DOWN"
+  },
+  {
     "event_id": "evt_2056219761722188110_call",
     "author_handle": "Timeless_Crypto",
     "asset": "BTC",
@@ -2351,6 +2377,19 @@
     "mfe_4h": 0.000918,
     "mae_4h": 0.001923,
     "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2055137544526762335_call",
+    "author_handle": "Timeless_Crypto",
+    "asset": "HYPE",
+    "direction": "BEARISH",
+    "entry_price": 0.11,
+    "return_4h": -0.009091,
+    "return_24h": 0.013636,
+    "return_7d": -0.086364,
+    "mfe_4h": -0.012727,
+    "mae_4h": -0.013636,
+    "btc_regime": "RANGE"
   },
   {
     "event_id": "evt_2054048505740538055_call",
@@ -2782,6 +2821,32 @@
     "btc_regime": "DOWN"
   },
   {
+    "event_id": "evt_2014350925264015563_call",
+    "author_handle": "Trader_XO",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.119,
+    "return_4h": 0.010084,
+    "return_24h": 0.002521,
+    "return_7d": 0.010084,
+    "mfe_4h": 0.017647,
+    "mae_4h": -0.007563,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2009583074133119000_call",
+    "author_handle": "Trader_XO",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.1247,
+    "return_4h": 0.015237,
+    "return_24h": 0.012831,
+    "return_7d": 0.072173,
+    "mfe_4h": 0.025662,
+    "mae_4h": -0.00401,
+    "btc_regime": "DOWN"
+  },
+  {
     "event_id": "evt_2011920103126737160_call",
     "author_handle": "Trader_XO",
     "asset": "BTC",
@@ -2793,6 +2858,19 @@
     "mfe_4h": -0.001084,
     "mae_4h": 0.000135,
     "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_2009583074133119000_call",
+    "author_handle": "Trader_XO",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.1247,
+    "return_4h": 0.015237,
+    "return_24h": 0.012831,
+    "return_7d": 0.072173,
+    "mfe_4h": 0.025662,
+    "mae_4h": -0.00401,
+    "btc_regime": "DOWN"
   },
   {
     "event_id": "evt_2009577716526297250_call",
@@ -4225,6 +4303,32 @@
     "btc_regime": "DOWN"
   },
   {
+    "event_id": "evt_2083538118846902367_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.0568,
+    "return_4h": 0.028169,
+    "return_24h": 0.21831,
+    "return_7d": 0.132042,
+    "mfe_4h": 0.042254,
+    "mae_4h": -0.003521,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2067445183050911873_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.0777,
+    "return_4h": 0.009009,
+    "return_24h": 0.01287,
+    "return_7d": -0.047619,
+    "mfe_4h": 0.030888,
+    "mae_4h": -0.011583,
+    "btc_regime": "DOWN"
+  },
+  {
     "event_id": "evt_2062601591505744312_call",
     "author_handle": "CryptoBheem",
     "asset": "BTC",
@@ -4314,6 +4418,19 @@
     "mfe_4h": 0.004361,
     "mae_4h": -0.033934,
     "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2018583701421183239_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.107,
+    "return_4h": 0.000935,
+    "return_24h": 0.018692,
+    "return_7d": -0.107477,
+    "mfe_4h": 0.008411,
+    "mae_4h": -0.015888,
+    "btc_regime": "RANGE"
   },
   {
     "event_id": "evt_2013808769533157878_call",
@@ -4849,6 +4966,19 @@
     "btc_regime": "DOWN"
   },
   {
+    "event_id": "evt_1959644824199442799_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.3184,
+    "return_4h": 0.011621,
+    "return_24h": -0.04397,
+    "return_7d": -0.060616,
+    "mfe_4h": 0.049309,
+    "mae_4h": -0.00691,
+    "btc_regime": "DOWN"
+  },
+  {
     "event_id": "evt_1959040242230730858_call",
     "author_handle": "CryptoBheem",
     "asset": "ETH",
@@ -5054,6 +5184,32 @@
     "return_7d": -0.001698,
     "mfe_4h": 0.001067,
     "mae_4h": -0.003622,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_1946818221237309716_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BULLISH",
+    "entry_price": 0.3604,
+    "return_4h": -0.018868,
+    "return_24h": -0.00444,
+    "return_7d": 0.301332,
+    "mfe_4h": 0.005272,
+    "mae_4h": -0.030522,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1946516328212484569_call",
+    "author_handle": "CryptoBheem",
+    "asset": "HYPE",
+    "direction": "BEARISH",
+    "entry_price": 0.3461,
+    "return_4h": 0.012424,
+    "return_24h": -0.02167,
+    "return_7d": -0.409997,
+    "mfe_4h": 0.004334,
+    "mae_4h": 0.007223,
     "btc_regime": "RANGE"
   },
   {

@@ -35,7 +35,7 @@ DEFAULT_SLIPPAGE = 0.0005     # 0.05% slippage
 
 def load_all_prices() -> dict[str, list[dict]]:
     """Load all available price data. Returns {symbol: [candles]}."""
-    symbols = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "TAOUSDT"]
+    symbols = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "TAOUSDT", "HYPERUSDT"]
     prices = {}
     for symbol in symbols:
         data = load_prices(symbol, "1h")
@@ -54,6 +54,7 @@ def asset_to_symbol(asset: Optional[str]) -> Optional[str]:
         "ETH": "ETHUSDT",
         "SOL": "SOLUSDT",
         "TAO": "TAOUSDT",
+        "HYPE": "HYPERUSDT",
     }
     return mapping.get(asset.upper())
 
