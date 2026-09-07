@@ -23,7 +23,7 @@ An agent hardcoded API keys in 7 files and pushed to GitHub. GitHub secret scann
 **Correct pattern:**
 ```python
 # WRONG - NEVER DO THIS
-API_KEY = "get-x-api-0d101a57d43f429a69ff8dd821186eeb2f889406859be720"
+API_KEY = "your_key_here"
 
 # RIGHT
 import os
