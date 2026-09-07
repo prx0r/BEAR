@@ -19,7 +19,7 @@ BATCH(10 calls) → REVIEW → LOG → LEARN → NEXT BATCH
 | Max calls per batch | 10 | Forces review between batches |
 | Max posts per batch | ~180 (10 calls × 18 posts/call) | Manageable for manual review |
 | Review window | After each batch | Catch issues early |
-| Budget floor | $0.02 remaining | Never drain completely |
+| Budget floor | $5.00 remaining | Never drain completely |
 
 ## The Loop
 

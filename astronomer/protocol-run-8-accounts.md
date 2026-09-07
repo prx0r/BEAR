@@ -1,6 +1,6 @@
 # Protocol Run Results — 8 New S+/A Accounts
 
-*2026-09-07. Cost: $0.03. Remaining: $0.02.*
+*2026-09-07. Cost: $0.03. Remaining: $39.67.*
 
 ---
 
@@ -35,4 +35,4 @@ They leak expensive proprietary data as marketing. This is our unfair advantage.
 
 ## Cost
 
-$0.03 for 8 accounts. $0.02 remaining.
+$0.03 for 8 accounts. $39.67 remaining.

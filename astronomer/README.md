@@ -54,7 +54,7 @@ stats = compute_author_stats(outcomes)
 | Metric | Value |
 |--------|-------|
 | GetXAPI balance | $0.08 (83 calls) |
-| Total spent | $0.026 (26 calls) |
+| Total spent: $0.31 (468 calls) |
 | Posts collected | 591 |
 | Cost per post | $0.00004 |
 | Cost per signal | $0.0002 |
