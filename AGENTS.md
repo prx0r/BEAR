@@ -108,9 +108,24 @@ Every API call costs money. Before any fetch:
 5. Review batch before next one
 ```
 
-### Rule 7: Save User Messages Word-for-Word
+### Rule 7: Save User Messages Word-for-Word — STRICT
 
-When user sends >50 lines: save ENTIRE message to `YYYY-MM-DD-{topic}-original.md`. No summarization. No condensation.
+**Incident: 2026-09-07 — agent summarized user messages 3 times before being corrected.**
+
+When user sends a long message (anything substantive): save the ENTIRE message to `specs/originals/YYYY-MM-DD-{topic}-original.md`. 
+
+**STRICT RULES:**
+1. Copy the EXACT text the user sent. Character for character.
+2. Do NOT summarize. Do NOT condense. Do NOT rephrase.
+3. Do NOT skip sections. Do NOT say "essentially this means..."
+4. If the message is 5000 words, save all 5000 words.
+5. Add a header: `# User Message — YYYY-MM-DD (Word-for-Word)`
+6. Add a footer: `*Saved word for word. No summarization. No condensation.*`
+7. Then write your own analysis BELOW the saved message, clearly separated.
+
+**If you catch yourself rewriting the user's words, STOP. Copy exactly.**
+
+This is binding. The user has corrected the agent on this 3+ times.
 
 ### Rule 8: Crystallize Before Scaling
 
@@ -190,7 +205,9 @@ Not: `trader → win rate`
 | File | Purpose |
 |------|---------|
 | `specs/originals/2026-09-07-canonical-protocol-original.md` | **THE PROTOCOL** — 46 parts, binding architecture |
+| `specs/originals/2026-09-07-influencer-learning-protocol-original.md` | **INFLUENCER LEARNING** — 27 parts, how to onboard and evaluate sources |
 | `specs/originals/2026-09-07-backtest-protocol-original.md` | The backtest protocol |
+| `specs/influencer-learning-protocol.md` | Clean version of influencer learning protocol |
 | `specs/ONBOARDING_TEMPLATE.md` | Template for onboarding new sources |
 
 ### Core (`astronomer/`)
