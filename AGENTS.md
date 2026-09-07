@@ -293,17 +293,35 @@ Every cycle:
 
 ## MCP Server Status
 
-Not yet implemented. When ready:
+Endpoints implemented:
+```
+GET /signals/stats          — Signal performance statistics
+GET /signals/author/{name}  — Per-author performance
+GET /signals/leaderboard    — Author ranking
+GET /signals/hour-performance — Performance by hour
+GET /signals/outcomes       — Recent signal outcomes
+GET /signals/budget         — API spending status
+GET /mcp/summary           — Full system summary
+```
 
+Not yet implemented:
 ```
-bear-mcp
-├── search_signals(query, author, asset, date_range)
-├── get_author_stats(author)
-├── get_regime(date)
-├── backtest(strategy, date_range)
-├── add_influencer(handle)
-└── get_pnl(strategy, date_range)
+search_signals(query, author, asset, date_range)
+get_regime(date)
+backtest(strategy, date_range)
+add_influencer(handle)
+get_pnl(strategy, date_range)
 ```
+
+## Reference Documents
+
+| Document | Purpose |
+|----------|---------|
+| `GETXAPI.md` | Rate limits, balance tracking, spending rules |
+| `astronomer/apistrategy.md` | How to scrape properly |
+| `astronomer/pipelineplan.md` | Full pipeline specification |
+| `astronomer/strategy-combined.md` | AltCalls + Death + Macro strategy |
+| `astronomer/data-architecture.md` | Schema definitions |
 
 ---
 
