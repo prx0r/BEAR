@@ -1,0 +1,38 @@
+{
+  "hash_rate": {
+    "error": 404
+  },
+  "miner_revenue": {
+    "error": 404
+  },
+  "exchange_inflow": {
+    "error": 404
+  },
+  "exchange_outflow": {
+    "error": 404
+  },
+  "exchange_netflow": {
+    "error": 404
+  },
+  "mvrv": {
+    "error": 404
+  },
+  "sopr": {
+    "error": 404
+  },
+  "nvt": {
+    "error": 429
+  },
+  "active_addresses": {
+    "error": 429
+  },
+  "utxo_count": {
+    "error": 429
+  },
+  "lth_supply": {
+    "error": 429
+  },
+  "sth_supply": {
+    "error": 429
+  }
+}

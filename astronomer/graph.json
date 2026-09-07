@@ -145,6 +145,226 @@
       "type": "account",
       "tier": "A",
       "weight": 1.0
+    },
+    {
+      "id": "spacepixel",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "crossbordercap",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "LynAldenContact",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "NoelleInMadrid",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "ByzGeneral",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "EmberCN",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "ai_9684xtpa",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "OnchainLens",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "lookonchain",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "bubblemaps",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "yeon__",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "SevaFTW",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "kenjidgn",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "0xnobi",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "blknoiz06",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "theunipcs",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Overdose_AI",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "chameleon_jeff",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "HyperliquidR",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "NMTD8",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "jessepollak",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "virtuals_io",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "0xJeff",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "ethermage",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "aixbt_agent",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Tokenomist_ai",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "TokenTerminal",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "zachxbt",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "PeckShieldAlert",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "CertiKAlert",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "META_DISCOVERY",
+      "type": "primitive"
+    },
+    {
+      "id": "TOKEN_DISCOVERY",
+      "type": "primitive"
+    },
+    {
+      "id": "ONCHAIN_FLOW",
+      "type": "primitive"
+    },
+    {
+      "id": "SECURITY",
+      "type": "primitive"
+    },
+    {
+      "id": "CATALYST",
+      "type": "primitive"
+    },
+    {
+      "id": "PONS",
+      "type": "asset"
+    },
+    {
+      "id": "ROBINHOOD",
+      "type": "asset"
+    },
+    {
+      "id": "BASE",
+      "type": "asset"
+    },
+    {
+      "id": "VIRTUALS",
+      "type": "asset"
+    },
+    {
+      "id": "TAO",
+      "type": "asset"
     }
   ],
   "edges": [
@@ -317,6 +537,171 @@
       "source": "0xaporia",
       "target": "BTC",
       "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "chrono_chartist",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "spacepixel",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "0xaporia",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "crossbordercap",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "LynAldenContact",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "NoelleInMadrid",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "EmberCN",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "ai_9684xtpa",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "OnchainLens",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "lookonchain",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "bubblemaps",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "yeon__",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "yeon__",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "SevaFTW",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "kenjidgn",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "0xnobi",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "blknoiz06",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "theunipcs",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "Overdose_AI",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "chameleon_jeff",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "HyperliquidR",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "NMTD8",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "jessepollak",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "virtuals_io",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "0xJeff",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "ethermage",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "aixbt_agent",
+      "target": "META_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "Tokenomist_ai",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "TokenTerminal",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "DefiSquared",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "zachxbt",
+      "target": "SECURITY",
+      "relation": "USES"
+    },
+    {
+      "source": "PeckShieldAlert",
+      "target": "SECURITY",
+      "relation": "USES"
+    },
+    {
+      "source": "CertiKAlert",
+      "target": "SECURITY",
+      "relation": "USES"
     }
   ]
 }
