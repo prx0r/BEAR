@@ -1,0 +1,55 @@
+{
+  "strategy_id": "STRAT-004-CONFLUENCE",
+  "version": "1.0",
+  "status": "VALIDATED",
+  "created_at": "2026-09-07T13:00:00Z",
+
+  "hypothesis": "Two regime-conditioned rules produce a 59% win rate with +0.35% mean return per trade across 169 trades over 2 years.",
+
+  "rules": [
+    {
+      "id": "RULE_1",
+      "condition": "BTC regime = DOWN",
+      "source": "Trader_XO",
+      "horizon": "4h",
+      "direction": "follow XO's calls",
+      "n": 54,
+      "win_rate": 0.59,
+      "mean_return": 0.00358
+    },
+    {
+      "id": "RULE_2", 
+      "condition": "BTC regime = RANGE",
+      "source": "Timeless_Crypto",
+      "horizon": "24h",
+      "direction": "follow Timeless's calls",
+      "n": 115,
+      "win_rate": 0.59,
+      "mean_return": 0.00347
+    },
+    {
+      "id": "RULE_3",
+      "condition": "BTC regime = UP",
+      "action": "NO TRADE",
+      "n": 0
+    }
+  ],
+
+  "backtest_2yr": {
+    "total_trades": 169,
+    "wins": 100,
+    "win_rate": 0.592,
+    "mean_return": 0.00350,
+    "final_equity": 1.6944,
+    "total_return_pct": 69.4,
+    "period": "2024-09 to 2026-09"
+  },
+
+  "risk_management": {
+    "position_size": "fixed fraction",
+    "max_drawdown": "monitor equity curve",
+    "stop": "none (horizon-based exit)"
+  },
+
+  "falsification": "If forward-tested equity drops below 1.0 for 30+ consecutive trades, stop live trading."
+}
