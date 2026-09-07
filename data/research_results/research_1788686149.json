@@ -1,0 +1,1562 @@
+{
+  "combined": {
+    "ranked": [
+      [
+        "ZK",
+        {
+          "death_hazard_rank": 100.0,
+          "structural_rank": 48.41269841269842,
+          "setup_rank": 82.53968253968253,
+          "vol_rank": 50.79365079365079,
+          "composite": 75.35714285714286,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.7535714285714286,
+          "volume": 83315578.9,
+          "n_days": 812
+        }
+      ],
+      [
+        "W",
+        {
+          "death_hazard_rank": 92.06349206349206,
+          "structural_rank": 50.79365079365079,
+          "setup_rank": 57.14285714285714,
+          "vol_rank": 84.12698412698413,
+          "composite": 71.82539682539682,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.7182539682539683,
+          "volume": 10063953.4,
+          "n_days": 887
+        }
+      ],
+      [
+        "RENDER",
+        {
+          "death_hazard_rank": 68.25396825396825,
+          "structural_rank": 36.507936507936506,
+          "setup_rank": 85.71428571428571,
+          "vol_rank": 92.06349206349206,
+          "composite": 68.25396825396825,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.6825396825396826,
+          "volume": 512762.9,
+          "n_days": 773
+        }
+      ],
+      [
+        "SEI",
+        {
+          "death_hazard_rank": 71.42857142857143,
+          "structural_rank": 67.46031746031746,
+          "setup_rank": 79.36507936507937,
+          "vol_rank": 82.53968253968253,
+          "composite": 74.0873015873016,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.6667857142857144,
+          "volume": 16726193.8,
+          "n_days": 1000
+        }
+      ],
+      [
+        "XLM",
+        {
+          "death_hazard_rank": 93.65079365079364,
+          "structural_rank": 50.79365079365079,
+          "setup_rank": 66.66666666666666,
+          "vol_rank": 73.01587301587301,
+          "composite": 73.09523809523809,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.6578571428571428,
+          "volume": 14388186.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "SNX",
+        {
+          "death_hazard_rank": 74.60317460317461,
+          "structural_rank": 56.349206349206355,
+          "setup_rank": 76.19047619047619,
+          "vol_rank": 88.88888888888889,
+          "composite": 72.57936507936508,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.6532142857142857,
+          "volume": 1495232.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "WLD",
+        {
+          "death_hazard_rank": 90.47619047619048,
+          "structural_rank": 49.99999999999999,
+          "setup_rank": 92.06349206349206,
+          "vol_rank": 30.158730158730158,
+          "composite": 71.7063492063492,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.6453571428571427,
+          "volume": 7287684.2,
+          "n_days": 1000
+        }
+      ],
+      [
+        "TNSR",
+        {
+          "death_hazard_rank": 85.71428571428571,
+          "structural_rank": 51.58730158730159,
+          "setup_rank": 31.746031746031743,
+          "vol_rank": 90.47619047619048,
+          "composite": 64.4047619047619,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.644047619047619,
+          "volume": 1706177.9,
+          "n_days": 882
+        }
+      ],
+      [
+        "SAND",
+        {
+          "death_hazard_rank": 69.84126984126983,
+          "structural_rank": 59.523809523809526,
+          "setup_rank": 93.65079365079364,
+          "vol_rank": 47.61904761904761,
+          "composite": 69.88095238095238,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.6289285714285715,
+          "volume": 4051258.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "STRK",
+        {
+          "death_hazard_rank": 77.77777777777779,
+          "structural_rank": 49.2063492063492,
+          "setup_rank": 84.12698412698413,
+          "vol_rank": 20.634920634920633,
+          "composite": 63.65079365079365,
+          "tradeability": "ENTER",
+          "crowd_score": 15.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5887698412698413,
+          "volume": 79392356.1,
+          "n_days": 930
+        }
+      ],
+      [
+        "SUI",
+        {
+          "death_hazard_rank": 79.36507936507937,
+          "structural_rank": 47.61904761904762,
+          "setup_rank": 61.904761904761905,
+          "vol_rank": 49.2063492063492,
+          "composite": 62.53968253968254,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5628571428571428,
+          "volume": 19686508.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "ONDO",
+        {
+          "death_hazard_rank": 60.317460317460316,
+          "structural_rank": 46.82539682539682,
+          "setup_rank": 53.96825396825397,
+          "vol_rank": 65.07936507936508,
+          "composite": 56.07142857142857,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5607142857142857,
+          "volume": 5742119.1,
+          "n_days": 514
+        }
+      ],
+      [
+        "MATIC",
+        {
+          "death_hazard_rank": 55.55555555555556,
+          "structural_rank": 42.06349206349206,
+          "setup_rank": 100.0,
+          "vol_rank": 39.682539682539684,
+          "composite": 60.912698412698404,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5482142857142857,
+          "volume": 4452579.6,
+          "n_days": 1000
+        }
+      ],
+      [
+        "XRP",
+        {
+          "death_hazard_rank": 96.82539682539682,
+          "structural_rank": 44.44444444444444,
+          "setup_rank": 36.507936507936506,
+          "vol_rank": 38.095238095238095,
+          "composite": 59.84126984126984,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5385714285714286,
+          "volume": 15688606.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "IOTA",
+        {
+          "death_hazard_rank": 46.03174603174603,
+          "structural_rank": 54.76190476190476,
+          "setup_rank": 80.95238095238095,
+          "vol_rank": 55.55555555555556,
+          "composite": 58.37301587301587,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5253571428571429,
+          "volume": 5969757.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "WIF",
+        {
+          "death_hazard_rank": 88.88888888888889,
+          "structural_rank": 44.44444444444444,
+          "setup_rank": 25.396825396825395,
+          "vol_rank": 17.46031746031746,
+          "composite": 51.19047619047618,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5119047619047619,
+          "volume": 1860906.81,
+          "n_days": 916
+        }
+      ],
+      [
+        "TIA",
+        {
+          "death_hazard_rank": 84.12698412698413,
+          "structural_rank": 62.698412698412696,
+          "setup_rank": 41.269841269841265,
+          "vol_rank": 41.269841269841265,
+          "composite": 61.62698412698413,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5084226190476191,
+          "volume": 2064895.34,
+          "n_days": 1000
+        }
+      ],
+      [
+        "IMX",
+        {
+          "death_hazard_rank": 42.857142857142854,
+          "structural_rank": 50.0,
+          "setup_rank": 73.01587301587301,
+          "vol_rank": 68.25396825396825,
+          "composite": 55.992063492063494,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5039285714285715,
+          "volume": 2413950.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "SHIB",
+        {
+          "death_hazard_rank": 73.01587301587301,
+          "structural_rank": 51.58730158730159,
+          "setup_rank": 42.857142857142854,
+          "vol_rank": 36.507936507936506,
+          "composite": 54.64285714285714,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.4917857142857142,
+          "volume": 117313502240.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "DOT",
+        {
+          "death_hazard_rank": 25.396825396825395,
+          "structural_rank": 60.317460317460316,
+          "setup_rank": 69.84126984126983,
+          "vol_rank": 85.71428571428571,
+          "composite": 54.285714285714285,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.48857142857142855,
+          "volume": 1666625.14,
+          "n_days": 1000
+        }
+      ],
+      [
+        "LTC",
+        {
+          "death_hazard_rank": 53.96825396825397,
+          "structural_rank": 49.2063492063492,
+          "setup_rank": 34.92063492063492,
+          "vol_rank": 95.23809523809523,
+          "composite": 54.2063492063492,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.4878571428571428,
+          "volume": 74764.324,
+          "n_days": 1000
+        }
+      ],
+      [
+        "HBAR",
+        {
+          "death_hazard_rank": 39.682539682539684,
+          "structural_rank": 41.269841269841265,
+          "setup_rank": 58.730158730158735,
+          "vol_rank": 98.4126984126984,
+          "composite": 53.650793650793645,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.4828571428571429,
+          "volume": 18172751.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "ICP",
+        {
+          "death_hazard_rank": 41.269841269841265,
+          "structural_rank": 59.52380952380952,
+          "setup_rank": 46.03174603174603,
+          "vol_rank": 80.95238095238095,
+          "composite": 52.97619047619047,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.47678571428571426,
+          "volume": 723949.12,
+          "n_days": 1000
+        }
+      ],
+      [
+        "JTO",
+        {
+          "death_hazard_rank": 47.61904761904761,
+          "structural_rank": 44.44444444444444,
+          "setup_rank": 87.3015873015873,
+          "vol_rank": 22.22222222222222,
+          "composite": 52.93650793650794,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.4764285714285715,
+          "volume": 2030186.6,
+          "n_days": 1000
+        }
+      ],
+      [
+        "NEAR",
+        {
+          "death_hazard_rank": 58.730158730158735,
+          "structural_rank": 54.76190476190476,
+          "setup_rank": 60.317460317460316,
+          "vol_rank": 53.96825396825397,
+          "composite": 57.42063492063492,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.47372023809523806,
+          "volume": 4771256.4,
+          "n_days": 1000
+        }
+      ],
+      [
+        "SOL",
+        {
+          "death_hazard_rank": 76.19047619047619,
+          "structural_rank": 37.3015873015873,
+          "setup_rank": 12.698412698412698,
+          "vol_rank": 87.3015873015873,
+          "composite": 52.26190476190476,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.47035714285714286,
+          "volume": 649923.49,
+          "n_days": 1000
+        }
+      ],
+      [
+        "GALA",
+        {
+          "death_hazard_rank": 38.095238095238095,
+          "structural_rank": 53.17460317460318,
+          "setup_rank": 98.4126984126984,
+          "vol_rank": 3.1746031746031744,
+          "composite": 51.7063492063492,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.46535714285714286,
+          "volume": 125774274.0,
+          "n_days": 1000
+        }
+      ],
+      [
+        "BONK",
+        {
+          "death_hazard_rank": 17.46031746031746,
+          "structural_rank": 63.492063492063494,
+          "setup_rank": 95.23809523809523,
+          "vol_rank": 28.57142857142857,
+          "composite": 50.079365079365076,
+          "tradeability": "ENTER",
+          "crowd_score": 15.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.46323412698412697,
+          "volume": 300938070086.0,
+          "n_days": 997
+        }
+      ],
+      [
+        "ATOM",
+        {
+          "death_hazard_rank": 9.523809523809524,
+          "structural_rank": 43.650793650793645,
+          "setup_rank": 88.88888888888889,
+          "vol_rank": 93.65079365079364,
+          "composite": 50.515873015873005,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.45464285714285707,
+          "volume": 269475.29,
+          "n_days": 1000
+        }
+      ],
+      [
+        "INJ",
+        {
+          "death_hazard_rank": 44.44444444444444,
+          "structural_rank": 46.03174603174603,
+          "setup_rank": 63.49206349206349,
+          "vol_rank": 46.03174603174603,
+          "composite": 49.84126984126984,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.4485714285714286,
+          "volume": 483485.84,
+          "n_days": 1000
+        }
+      ]
+    ],
+    "all_results": {
+      "AAVE": {
+        "death_hazard_rank": 0.0,
+        "structural_rank": 44.44444444444444,
+        "setup_rank": 7.936507936507936,
+        "vol_rank": 23.809523809523807,
+        "composite": 16.666666666666664,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.075,
+        "volume": 48256.543,
+        "n_days": 1000
+      },
+      "ADA": {
+        "death_hazard_rank": 1.5873015873015872,
+        "structural_rank": 61.111111111111114,
+        "setup_rank": 33.33333333333333,
+        "vol_rank": 44.44444444444444,
+        "composite": 30.83333333333333,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.27749999999999997,
+        "volume": 31694584.8,
+        "n_days": 1000
+      },
+      "ALGO": {
+        "death_hazard_rank": 3.1746031746031744,
+        "structural_rank": 62.698412698412696,
+        "setup_rank": 50.79365079365079,
+        "vol_rank": 76.19047619047619,
+        "composite": 40.91269841269841,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3682142857142857,
+        "volume": 4358946.0,
+        "n_days": 1000
+      },
+      "APT": {
+        "death_hazard_rank": 4.761904761904762,
+        "structural_rank": 51.58730158730159,
+        "setup_rank": 74.60317460317461,
+        "vol_rank": 52.38095238095239,
+        "composite": 41.07142857142857,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3388392857142857,
+        "volume": 2313070.66,
+        "n_days": 1000
+      },
+      "ARB": {
+        "death_hazard_rank": 6.349206349206349,
+        "structural_rank": 51.58730158730159,
+        "setup_rank": 3.1746031746031744,
+        "vol_rank": 1.5873015873015872,
+        "composite": 16.150793650793652,
+        "tradeability": "VETO",
+        "crowd_score": 45.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.1251686507936508,
+        "volume": 253265315.4,
+        "n_days": 1000
+      },
+      "AR": {
+        "death_hazard_rank": 7.936507936507936,
+        "structural_rank": 54.76190476190476,
+        "setup_rank": 19.047619047619047,
+        "vol_rank": 26.984126984126984,
+        "composite": 25.27777777777778,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.20854166666666668,
+        "volume": 461351.16,
+        "n_days": 1000
+      },
+      "ATOM": {
+        "death_hazard_rank": 9.523809523809524,
+        "structural_rank": 43.650793650793645,
+        "setup_rank": 88.88888888888889,
+        "vol_rank": 93.65079365079364,
+        "composite": 50.515873015873005,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.45464285714285707,
+        "volume": 269475.29,
+        "n_days": 1000
+      },
+      "AVAX": {
+        "death_hazard_rank": 11.11111111111111,
+        "structural_rank": 61.111111111111114,
+        "setup_rank": 39.682539682539684,
+        "vol_rank": 96.82539682539682,
+        "composite": 43.611111111111114,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.39250000000000007,
+        "volume": 555522.81,
+        "n_days": 1000
+      },
+      "AXS": {
+        "death_hazard_rank": 12.698412698412698,
+        "structural_rank": 59.52380952380952,
+        "setup_rank": 65.07936507936508,
+        "vol_rank": 69.84126984126983,
+        "composite": 46.07142857142856,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4146428571428571,
+        "volume": 158675.97,
+        "n_days": 1000
+      },
+      "BCH": {
+        "death_hazard_rank": 14.285714285714285,
+        "structural_rank": 49.99999999999999,
+        "setup_rank": 28.57142857142857,
+        "vol_rank": 14.285714285714285,
+        "composite": 26.78571428571428,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.12053571428571427,
+        "volume": 12613.246,
+        "n_days": 1000
+      },
+      "BNB": {
+        "death_hazard_rank": 15.873015873015872,
+        "structural_rank": 60.317460317460316,
+        "setup_rank": 30.158730158730158,
+        "vol_rank": 100.0,
+        "composite": 43.17460317460317,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.19428571428571428,
+        "volume": 40196.244,
+        "n_days": 1000
+      },
+      "BONK": {
+        "death_hazard_rank": 17.46031746031746,
+        "structural_rank": 63.492063492063494,
+        "setup_rank": 95.23809523809523,
+        "vol_rank": 28.57142857142857,
+        "composite": 50.079365079365076,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.46323412698412697,
+        "volume": 300938070086.0,
+        "n_days": 997
+      },
+      "COMP": {
+        "death_hazard_rank": 19.047619047619047,
+        "structural_rank": 49.2063492063492,
+        "setup_rank": 38.095238095238095,
+        "vol_rank": 79.36507936507937,
+        "composite": 40.3968253968254,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.036357142857142866,
+        "volume": 8922.93,
+        "n_days": 1000
+      },
+      "CRV": {
+        "death_hazard_rank": 20.634920634920633,
+        "structural_rank": 59.52380952380952,
+        "setup_rank": 9.523809523809524,
+        "vol_rank": 12.698412698412698,
+        "composite": 26.388888888888886,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.21770833333333328,
+        "volume": 4507611.6,
+        "n_days": 1000
+      },
+      "DASH": {
+        "death_hazard_rank": 22.22222222222222,
+        "structural_rank": 49.2063492063492,
+        "setup_rank": 6.349206349206349,
+        "vol_rank": 6.349206349206349,
+        "composite": 22.619047619047617,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.1866071428571428,
+        "volume": 276141.386,
+        "n_days": 1000
+      },
+      "DOGE": {
+        "death_hazard_rank": 23.809523809523807,
+        "structural_rank": 50.0,
+        "setup_rank": 49.2063492063492,
+        "vol_rank": 61.904761904761905,
+        "composite": 42.42063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.38178571428571423,
+        "volume": 200592329.0,
+        "n_days": 1000
+      },
+      "DOT": {
+        "death_hazard_rank": 25.396825396825395,
+        "structural_rank": 60.317460317460316,
+        "setup_rank": 69.84126984126983,
+        "vol_rank": 85.71428571428571,
+        "composite": 54.285714285714285,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.48857142857142855,
+        "volume": 1666625.14,
+        "n_days": 1000
+      },
+      "DYDX": {
+        "death_hazard_rank": 26.984126984126984,
+        "structural_rank": 51.58730158730159,
+        "setup_rank": 68.25396825396825,
+        "vol_rank": 63.49206349206349,
+        "composite": 48.92857142857143,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4403571428571429,
+        "volume": 4158313.48,
+        "n_days": 1000
+      },
+      "ENA": {
+        "death_hazard_rank": 28.57142857142857,
+        "structural_rank": 38.095238095238095,
+        "setup_rank": 4.761904761904762,
+        "vol_rank": 4.761904761904762,
+        "composite": 21.428571428571427,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.1982142857142857,
+        "volume": 145776729.77,
+        "n_days": 888
+      },
+      "ETC": {
+        "death_hazard_rank": 30.158730158730158,
+        "structural_rank": 49.2063492063492,
+        "setup_rank": 44.44444444444444,
+        "vol_rank": 42.857142857142854,
+        "composite": 40.39682539682539,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.36357142857142855,
+        "volume": 84046.36,
+        "n_days": 1000
+      },
+      "ETH": {
+        "death_hazard_rank": 31.746031746031743,
+        "structural_rank": 54.76190476190476,
+        "setup_rank": 17.46031746031746,
+        "vol_rank": 71.42857142857143,
+        "composite": 39.88095238095237,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3589285714285714,
+        "volume": 52952.387,
+        "n_days": 1000
+      },
+      "FET": {
+        "death_hazard_rank": 33.33333333333333,
+        "structural_rank": 44.44444444444444,
+        "setup_rank": 90.47619047619048,
+        "vol_rank": 25.396825396825395,
+        "composite": 49.2063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.44285714285714284,
+        "volume": 8238790.7,
+        "n_days": 1000
+      },
+      "FIL": {
+        "death_hazard_rank": 34.92063492063492,
+        "structural_rank": 57.93650793650794,
+        "setup_rank": 52.38095238095239,
+        "vol_rank": 33.33333333333333,
+        "composite": 44.8015873015873,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.36961309523809516,
+        "volume": 5649414.5,
+        "n_days": 1000
+      },
+      "FLOKI": {
+        "death_hazard_rank": 36.507936507936506,
+        "structural_rank": 50.79365079365079,
+        "setup_rank": 47.61904761904761,
+        "vol_rank": 19.047619047619047,
+        "composite": 40.238095238095234,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3621428571428571,
+        "volume": 9934131948.0,
+        "n_days": 1000
+      },
+      "GALA": {
+        "death_hazard_rank": 38.095238095238095,
+        "structural_rank": 53.17460317460318,
+        "setup_rank": 98.4126984126984,
+        "vol_rank": 3.1746031746031744,
+        "composite": 51.7063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.46535714285714286,
+        "volume": 125774274.0,
+        "n_days": 1000
+      },
+      "HBAR": {
+        "death_hazard_rank": 39.682539682539684,
+        "structural_rank": 41.269841269841265,
+        "setup_rank": 58.730158730158735,
+        "vol_rank": 98.4126984126984,
+        "composite": 53.650793650793645,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4828571428571429,
+        "volume": 18172751.0,
+        "n_days": 1000
+      },
+      "ICP": {
+        "death_hazard_rank": 41.269841269841265,
+        "structural_rank": 59.52380952380952,
+        "setup_rank": 46.03174603174603,
+        "vol_rank": 80.95238095238095,
+        "composite": 52.97619047619047,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.47678571428571426,
+        "volume": 723949.12,
+        "n_days": 1000
+      },
+      "IMX": {
+        "death_hazard_rank": 42.857142857142854,
+        "structural_rank": 50.0,
+        "setup_rank": 73.01587301587301,
+        "vol_rank": 68.25396825396825,
+        "composite": 55.992063492063494,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5039285714285715,
+        "volume": 2413950.0,
+        "n_days": 1000
+      },
+      "INJ": {
+        "death_hazard_rank": 44.44444444444444,
+        "structural_rank": 46.03174603174603,
+        "setup_rank": 63.49206349206349,
+        "vol_rank": 46.03174603174603,
+        "composite": 49.84126984126984,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4485714285714286,
+        "volume": 483485.84,
+        "n_days": 1000
+      },
+      "IOTA": {
+        "death_hazard_rank": 46.03174603174603,
+        "structural_rank": 54.76190476190476,
+        "setup_rank": 80.95238095238095,
+        "vol_rank": 55.55555555555556,
+        "composite": 58.37301587301587,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5253571428571429,
+        "volume": 5969757.0,
+        "n_days": 1000
+      },
+      "JTO": {
+        "death_hazard_rank": 47.61904761904761,
+        "structural_rank": 44.44444444444444,
+        "setup_rank": 87.3015873015873,
+        "vol_rank": 22.22222222222222,
+        "composite": 52.93650793650794,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4764285714285715,
+        "volume": 2030186.6,
+        "n_days": 1000
+      },
+      "JUP": {
+        "death_hazard_rank": 49.2063492063492,
+        "structural_rank": 53.17460317460317,
+        "setup_rank": 23.809523809523807,
+        "vol_rank": 34.92063492063492,
+        "composite": 41.7063492063492,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.417063492063492,
+        "volume": 11829650.2,
+        "n_days": 950
+      },
+      "LDO": {
+        "death_hazard_rank": 50.79365079365079,
+        "structural_rank": 52.38095238095238,
+        "setup_rank": 15.873015873015872,
+        "vol_rank": 77.77777777777779,
+        "composite": 46.507936507936506,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.41857142857142854,
+        "volume": 2289243.18,
+        "n_days": 1000
+      },
+      "LINK": {
+        "death_hazard_rank": 52.38095238095239,
+        "structural_rank": 50.79365079365079,
+        "setup_rank": 11.11111111111111,
+        "vol_rank": 74.60317460317461,
+        "composite": 45.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.405,
+        "volume": 610974.56,
+        "n_days": 1000
+      },
+      "LTC": {
+        "death_hazard_rank": 53.96825396825397,
+        "structural_rank": 49.2063492063492,
+        "setup_rank": 34.92063492063492,
+        "vol_rank": 95.23809523809523,
+        "composite": 54.2063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4878571428571428,
+        "volume": 74764.324,
+        "n_days": 1000
+      },
+      "MATIC": {
+        "death_hazard_rank": 55.55555555555556,
+        "structural_rank": 42.06349206349206,
+        "setup_rank": 100.0,
+        "vol_rank": 39.682539682539684,
+        "composite": 60.912698412698404,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5482142857142857,
+        "volume": 4452579.6,
+        "n_days": 1000
+      },
+      "MKR": {
+        "death_hazard_rank": 57.14285714285714,
+        "structural_rank": 47.61904761904761,
+        "setup_rank": 71.42857142857143,
+        "vol_rank": 58.730158730158735,
+        "composite": 58.57142857142857,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.05271428571428572,
+        "volume": 208.5194,
+        "n_days": 1000
+      },
+      "NEAR": {
+        "death_hazard_rank": 58.730158730158735,
+        "structural_rank": 54.76190476190476,
+        "setup_rank": 60.317460317460316,
+        "vol_rank": 53.96825396825397,
+        "composite": 57.42063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.47372023809523806,
+        "volume": 4771256.4,
+        "n_days": 1000
+      },
+      "ONDO": {
+        "death_hazard_rank": 60.317460317460316,
+        "structural_rank": 46.82539682539682,
+        "setup_rank": 53.96825396825397,
+        "vol_rank": 65.07936507936508,
+        "composite": 56.07142857142857,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5607142857142857,
+        "volume": 5742119.1,
+        "n_days": 514
+      },
+      "OP": {
+        "death_hazard_rank": 61.904761904761905,
+        "structural_rank": 53.17460317460317,
+        "setup_rank": 55.55555555555556,
+        "vol_rank": 31.746031746031743,
+        "composite": 53.6111111111111,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4422916666666666,
+        "volume": 46277891.9,
+        "n_days": 1000
+      },
+      "PENDLE": {
+        "death_hazard_rank": 63.49206349206349,
+        "structural_rank": 54.76190476190476,
+        "setup_rank": 14.285714285714285,
+        "vol_rank": 57.14285714285714,
+        "composite": 48.05555555555554,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3964583333333332,
+        "volume": 739448.0,
+        "n_days": 1000
+      },
+      "PEPE": {
+        "death_hazard_rank": 65.07936507936508,
+        "structural_rank": 39.682539682539684,
+        "setup_rank": 26.984126984126984,
+        "vol_rank": 11.11111111111111,
+        "composite": 41.11111111111111,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.37,
+        "volume": 1554561036413.0,
+        "n_days": 1000
+      },
+      "PYTH": {
+        "death_hazard_rank": 66.66666666666666,
+        "structural_rank": 0.0,
+        "setup_rank": 20.634920634920633,
+        "vol_rank": 60.317460317460316,
+        "composite": 37.53968253968253,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.34724206349206344,
+        "volume": 15863727.0,
+        "n_days": 948
+      },
+      "RENDER": {
+        "death_hazard_rank": 68.25396825396825,
+        "structural_rank": 36.507936507936506,
+        "setup_rank": 85.71428571428571,
+        "vol_rank": 92.06349206349206,
+        "composite": 68.25396825396825,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.6825396825396826,
+        "volume": 512762.9,
+        "n_days": 773
+      },
+      "SAND": {
+        "death_hazard_rank": 69.84126984126983,
+        "structural_rank": 59.523809523809526,
+        "setup_rank": 93.65079365079364,
+        "vol_rank": 47.61904761904761,
+        "composite": 69.88095238095238,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.6289285714285715,
+        "volume": 4051258.0,
+        "n_days": 1000
+      },
+      "SEI": {
+        "death_hazard_rank": 71.42857142857143,
+        "structural_rank": 67.46031746031746,
+        "setup_rank": 79.36507936507937,
+        "vol_rank": 82.53968253968253,
+        "composite": 74.0873015873016,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.6667857142857144,
+        "volume": 16726193.8,
+        "n_days": 1000
+      },
+      "SHIB": {
+        "death_hazard_rank": 73.01587301587301,
+        "structural_rank": 51.58730158730159,
+        "setup_rank": 42.857142857142854,
+        "vol_rank": 36.507936507936506,
+        "composite": 54.64285714285714,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4917857142857142,
+        "volume": 117313502240.0,
+        "n_days": 1000
+      },
+      "SNX": {
+        "death_hazard_rank": 74.60317460317461,
+        "structural_rank": 56.349206349206355,
+        "setup_rank": 76.19047619047619,
+        "vol_rank": 88.88888888888889,
+        "composite": 72.57936507936508,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.6532142857142857,
+        "volume": 1495232.0,
+        "n_days": 1000
+      },
+      "SOL": {
+        "death_hazard_rank": 76.19047619047619,
+        "structural_rank": 37.3015873015873,
+        "setup_rank": 12.698412698412698,
+        "vol_rank": 87.3015873015873,
+        "composite": 52.26190476190476,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.47035714285714286,
+        "volume": 649923.49,
+        "n_days": 1000
+      },
+      "STRK": {
+        "death_hazard_rank": 77.77777777777779,
+        "structural_rank": 49.2063492063492,
+        "setup_rank": 84.12698412698413,
+        "vol_rank": 20.634920634920633,
+        "composite": 63.65079365079365,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5887698412698413,
+        "volume": 79392356.1,
+        "n_days": 930
+      },
+      "SUI": {
+        "death_hazard_rank": 79.36507936507937,
+        "structural_rank": 47.61904761904762,
+        "setup_rank": 61.904761904761905,
+        "vol_rank": 49.2063492063492,
+        "composite": 62.53968253968254,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5628571428571428,
+        "volume": 19686508.0,
+        "n_days": 1000
+      },
+      "SUSHI": {
+        "death_hazard_rank": 80.95238095238095,
+        "structural_rank": 51.58730158730158,
+        "setup_rank": 22.22222222222222,
+        "vol_rank": 9.523809523809524,
+        "composite": 48.21428571428571,
+        "tradeability": "VETO",
+        "crowd_score": 45.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.37366071428571423,
+        "volume": 16702408.2,
+        "n_days": 1000
+      },
+      "TAO": {
+        "death_hazard_rank": 82.53968253968253,
+        "structural_rank": 47.61904761904762,
+        "setup_rank": 77.77777777777779,
+        "vol_rank": 66.66666666666666,
+        "composite": 70.23809523809523,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.3511904761904761,
+        "volume": 13460.0872,
+        "n_days": 879
+      },
+      "TIA": {
+        "death_hazard_rank": 84.12698412698413,
+        "structural_rank": 62.698412698412696,
+        "setup_rank": 41.269841269841265,
+        "vol_rank": 41.269841269841265,
+        "composite": 61.62698412698413,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5084226190476191,
+        "volume": 2064895.34,
+        "n_days": 1000
+      },
+      "TNSR": {
+        "death_hazard_rank": 85.71428571428571,
+        "structural_rank": 51.58730158730159,
+        "setup_rank": 31.746031746031743,
+        "vol_rank": 90.47619047619048,
+        "composite": 64.4047619047619,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.644047619047619,
+        "volume": 1706177.9,
+        "n_days": 882
+      },
+      "UNI": {
+        "death_hazard_rank": 87.3015873015873,
+        "structural_rank": 53.17460317460318,
+        "setup_rank": 0.0,
+        "vol_rank": 15.873015873015872,
+        "composite": 46.23015873015873,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.3813988095238095,
+        "volume": 4571633.21,
+        "n_days": 1000
+      },
+      "WIF": {
+        "death_hazard_rank": 88.88888888888889,
+        "structural_rank": 44.44444444444444,
+        "setup_rank": 25.396825396825395,
+        "vol_rank": 17.46031746031746,
+        "composite": 51.19047619047618,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5119047619047619,
+        "volume": 1860906.81,
+        "n_days": 916
+      },
+      "WLD": {
+        "death_hazard_rank": 90.47619047619048,
+        "structural_rank": 49.99999999999999,
+        "setup_rank": 92.06349206349206,
+        "vol_rank": 30.158730158730158,
+        "composite": 71.7063492063492,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.6453571428571427,
+        "volume": 7287684.2,
+        "n_days": 1000
+      },
+      "W": {
+        "death_hazard_rank": 92.06349206349206,
+        "structural_rank": 50.79365079365079,
+        "setup_rank": 57.14285714285714,
+        "vol_rank": 84.12698412698413,
+        "composite": 71.82539682539682,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.7182539682539683,
+        "volume": 10063953.4,
+        "n_days": 887
+      },
+      "XLM": {
+        "death_hazard_rank": 93.65079365079364,
+        "structural_rank": 50.79365079365079,
+        "setup_rank": 66.66666666666666,
+        "vol_rank": 73.01587301587301,
+        "composite": 73.09523809523809,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.6578571428571428,
+        "volume": 14388186.0,
+        "n_days": 1000
+      },
+      "XMR": {
+        "death_hazard_rank": 95.23809523809523,
+        "structural_rank": 15.079365079365079,
+        "setup_rank": 96.82539682539682,
+        "vol_rank": 0.0,
+        "composite": 61.30952380952381,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.05517857142857143,
+        "volume": 7079.917,
+        "n_days": 1000
+      },
+      "XRP": {
+        "death_hazard_rank": 96.82539682539682,
+        "structural_rank": 44.44444444444444,
+        "setup_rank": 36.507936507936506,
+        "vol_rank": 38.095238095238095,
+        "composite": 59.84126984126984,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5385714285714286,
+        "volume": 15688606.0,
+        "n_days": 1000
+      },
+      "ZEC": {
+        "death_hazard_rank": 98.4126984126984,
+        "structural_rank": 50.79365079365079,
+        "setup_rank": 1.5873015873015872,
+        "vol_rank": 7.936507936507936,
+        "composite": 48.73015873015872,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.4020238095238094,
+        "volume": 80215.605,
+        "n_days": 1000
+      },
+      "ZK": {
+        "death_hazard_rank": 100.0,
+        "structural_rank": 48.41269841269842,
+        "setup_rank": 82.53968253968253,
+        "vol_rank": 50.79365079365079,
+        "composite": 75.35714285714286,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.7535714285714286,
+        "volume": 83315578.9,
+        "n_days": 812
+      }
+    }
+  }
+}

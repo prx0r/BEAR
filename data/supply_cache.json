@@ -1,0 +1,83 @@
+{
+  "BTC": {
+    "circulating": 20080328.0,
+    "total": 20080415.0,
+    "max": 21000000.0,
+    "market_cap": 1604651571385,
+    "fdv": 1604656286171,
+    "remaining_pct": 4.4,
+    "fdv_overhang": 1.0
+  },
+  "ETH": {
+    "circulating": 122023857.56610575,
+    "total": 122023857.5661057,
+    "max": null,
+    "market_cap": 305088523803,
+    "fdv": 305088523803,
+    "remaining_pct": 0,
+    "fdv_overhang": 1.0
+  },
+  "SOL": {
+    "circulating": 585445261.3676955,
+    "total": 633549133.5668881,
+    "max": null,
+    "market_cap": 62448412107,
+    "fdv": 67579572119,
+    "remaining_pct": 0,
+    "fdv_overhang": 1.082
+  },
+  "DOGE": {
+    "circulating": 155801556383.70526,
+    "total": 155801566383.7052,
+    "max": null,
+    "market_cap": 14047691768,
+    "fdv": 15464281545,
+    "remaining_pct": 0,
+    "fdv_overhang": 1.101
+  },
+  "SHIB": {
+    "circulating": 589239307782558.2,
+    "total": 589496238721205.9,
+    "max": null,
+    "market_cap": 3207430708,
+    "fdv": 3208828799,
+    "remaining_pct": 0,
+    "fdv_overhang": 1.0
+  },
+  "WLD": {
+    "circulating": 3636175168.0926137,
+    "total": 10000000000.0,
+    "max": 10000000000.0,
+    "market_cap": 1462209448,
+    "fdv": 4021284400,
+    "remaining_pct": 63.6,
+    "fdv_overhang": 2.75
+  },
+  "ENA": {
+    "circulating": 10095312500.0,
+    "total": 15000000000.0,
+    "max": 15000000000.0,
+    "market_cap": 1767606980,
+    "fdv": 2626377807,
+    "remaining_pct": 32.7,
+    "fdv_overhang": 1.486
+  },
+  "ADA": {
+    "circulating": 37504333228.36598,
+    "total": 45000000000.0,
+    "max": 45000000000.0,
+    "market_cap": 8227672163,
+    "fdv": 9872065851,
+    "remaining_pct": 16.7,
+    "fdv_overhang": 1.2
+  },
+  "AVAX": {
+    "circulating": 431771961.1772119,
+    "total": 463441061.1772119,
+    "max": 720000000.0,
+    "market_cap": 3305382239,
+    "fdv": 3547821513,
+    "remaining_pct": 40.0,
+    "fdv_overhang": 1.073
+  }
+}

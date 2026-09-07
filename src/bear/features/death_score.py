@@ -45,8 +45,8 @@ def signal_volume_death(prices_df: pl.DataFrame, window_peak: int = 90) -> pl.Se
 
     # Recent volume = 7-day mean
     recent_vol = np.full(n, np.nan)
-    for i in range(6, n):
-        window = vol[max(0, i - 6): i + 1]
+    for i in range(7, n):
+        window = vol[max(0, i - 7): i + 1]
         valid = window[np.isfinite(window)]
         recent_vol[i] = np.mean(valid) if len(valid) > 0 else np.nan
 
@@ -148,9 +148,9 @@ def signal_reversal_8w(prices_df: pl.DataFrame) -> pl.Series:
         return pl.lit(50.0).alias("reversal_8w")
 
     ret_8w = np.full(n, np.nan)
-    for i in range(55, n):
-        if np.isfinite(close[i]) and np.isfinite(close[i - 55]) and close[i - 55] > 0:
-            ret_8w[i] = (close[i] - close[i - 55]) / close[i - 55]
+    for i in range(56, n):
+        if np.isfinite(close[i]) and np.isfinite(close[i - 56]) and close[i - 56] > 0:
+            ret_8w[i] = (close[i] - close[i - 56]) / close[i - 56]
         else:
             ret_8w[i] = np.nan
 
@@ -210,8 +210,8 @@ def signal_funding_pressure(prices_df: pl.DataFrame) -> pl.Series:
 
     # Recent volume vs long-term
     vol_recent = np.full(n, np.nan)
-    for i in range(6, n):
-        window = volume[max(0, i - 6): i + 1]
+    for i in range(7, n):
+        window = volume[max(0, i - 7): i + 1]
         valid = window[np.isfinite(window)]
         vol_recent[i] = np.mean(valid) if len(valid) > 0 else np.nan
 
@@ -261,9 +261,9 @@ def signal_momentum(prices_df: pl.DataFrame) -> pl.Series:
         return pl.lit(50.0).alias("momentum")
 
     ret_7d = np.full(n, np.nan)
-    for i in range(6, n):
-        if np.isfinite(close[i]) and np.isfinite(close[i - 6]) and close[i - 6] > 0:
-            ret_7d[i] = (close[i] - close[i - 6]) / close[i - 6]
+    for i in range(7, n):
+        if np.isfinite(close[i]) and np.isfinite(close[i - 7]) and close[i - 7] > 0:
+            ret_7d[i] = (close[i] - close[i - 7]) / close[i - 7]
         else:
             ret_7d[i] = np.nan
 

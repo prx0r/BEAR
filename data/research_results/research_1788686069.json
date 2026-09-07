@@ -1,0 +1,1196 @@
+{
+  "combined": {
+    "ranked": [
+      [
+        "ADA",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ALGO",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "APT",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ARB",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 45.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "AR",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ATOM",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "AVAX",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "AXS",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "BONK",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "ENTER",
+          "crowd_score": 15.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "CRV",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "DASH",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "DOGE",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "DOT",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "DYDX",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ENA",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "ENTER",
+          "crowd_score": 15.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ETC",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ETH",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "FET",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "FIL",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 35.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "FLOKI",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "GALA",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "HBAR",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "ICP",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "IMX",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "INJ",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "IOTA",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "JTO",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "JUP",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "ENTER",
+          "crowd_score": 0.0,
+          "carry_score": 0.0,
+          "veto_reasons": [],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "LDO",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ],
+      [
+        "LINK",
+        {
+          "death_hazard": 100.0,
+          "structural_decay": 100.0,
+          "setup_score": 100.0,
+          "tradeability": "VETO",
+          "crowd_score": 20.0,
+          "carry_score": 0.0,
+          "veto_reasons": [
+            "btc_rallying (20.6%)"
+          ],
+          "tradable_death": 0.5
+        }
+      ]
+    ],
+    "all_results": {
+      "AAVE": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.25
+      },
+      "ADA": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ALGO": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "APT": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ARB": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 45.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "AR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ATOM": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "AVAX": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "AXS": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "BCH": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.25
+      },
+      "BNB": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.25
+      },
+      "BONK": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "COMP": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.05
+      },
+      "CRV": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "DASH": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "DOGE": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "DOT": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "DYDX": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ENA": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "ETC": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ETH": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "FET": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "FIL": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "FLOKI": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "GALA": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "HBAR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ICP": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "IMX": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "INJ": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "IOTA": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "JTO": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "JUP": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "LDO": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "LINK": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "LTC": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "MATIC": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "MKR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.05
+      },
+      "NEAR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ONDO": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "OP": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "PENDLE": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "PEPE": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "PYTH": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "RENDER": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "SAND": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "SEI": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "SHIB": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "SNX": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "SOL": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "STRK": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 15.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "SUI": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "SUSHI": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 45.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "TAO": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.25
+      },
+      "TIA": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "TNSR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "UNI": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "WIF": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "WLD": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "W": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      },
+      "XLM": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "XMR": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.05
+      },
+      "XRP": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 20.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ZEC": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "VETO",
+        "crowd_score": 35.0,
+        "carry_score": 0.0,
+        "veto_reasons": [
+          "btc_rallying (20.6%)"
+        ],
+        "tradable_death": 0.5
+      },
+      "ZK": {
+        "death_hazard": 100.0,
+        "structural_decay": 100.0,
+        "setup_score": 100.0,
+        "tradeability": "ENTER",
+        "crowd_score": 0.0,
+        "carry_score": 0.0,
+        "veto_reasons": [],
+        "tradable_death": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "author": "Timeless_Crypto",
+  "signal_type": "SHORT",
+  "sample_size": 29,
+  "win_rates": {
+    "1h": 0.34,
+    "4h": 0.55,
+    "24h": 0.76
+  },
+  "avg_returns": {
+    "1h": -0.123,
+    "4h": 0.202,
+    "24h": 1.01
+  },
+  "conclusion": "Timeless SHORT is statistically meaningful at 4h horizon. 55% win rate with +0.20% avg return across 29 signals."
+}

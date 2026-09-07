@@ -1,0 +1,1034 @@
+{
+  "zombie": {
+    "results": {
+      "AAVE": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.041,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "ADA": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.106,
+        "zombie_rate_90d": 0.181,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.3026698767502207,
+          "min_volume_182d": 0.3219779913116503,
+          "volume_ratio_7d_90d": -0.02451069945062125,
+          "volume_ratio_30d_182d_max": 0.07537587550343136,
+          "volume_floor_slope": -0.01567227385015137,
+          "days_since_volume_peak": 0.07842025503859318,
+          "median_return_182d": -0.4788318971888497,
+          "volatility_30d": -0.01112299422807521,
+          "liquidity_death_composite": -0.06220124330143383
+        }
+      },
+      "ALGO": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.25,
+        "zombie_rate_90d": 0.398,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.07235890987925696,
+          "min_volume_182d": 0.088927323547566,
+          "volume_ratio_7d_90d": -0.21091501679380906,
+          "volume_ratio_30d_182d_max": -0.43109221927441166,
+          "volume_floor_slope": -0.2661183591067819,
+          "days_since_volume_peak": 0.26832227987223506,
+          "median_return_182d": 0.05529335241116383,
+          "volatility_30d": -0.20328245143524568,
+          "liquidity_death_composite": 0.17989925489490222
+        }
+      },
+      "APT": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.041,
+        "zombie_rate_90d": 0.09,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.06281809875616434,
+          "min_volume_182d": 0.26896927698630774,
+          "volume_ratio_7d_90d": -0.16250083299734963,
+          "volume_ratio_30d_182d_max": -0.09466066539524191,
+          "volume_floor_slope": -0.26351275335016716,
+          "days_since_volume_peak": -0.12163747019792408,
+          "median_return_182d": -0.1483137499751425,
+          "volatility_30d": 0.21258712164778826,
+          "liquidity_death_composite": 0.19337638580163632
+        }
+      },
+      "ARB": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.017,
+        "zombie_rate_90d": 0.045,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.044653722123978015,
+          "min_volume_182d": 0.0381890075901636,
+          "volume_ratio_7d_90d": -0.17856840241071464,
+          "volume_ratio_30d_182d_max": -0.06291802685766573,
+          "volume_floor_slope": -0.14251118234916785,
+          "days_since_volume_peak": -0.08841164974797731,
+          "median_return_182d": 0.0937280162450932,
+          "volatility_30d": 0.21563510580679826,
+          "liquidity_death_composite": 0.19249696052240609
+        }
+      },
+      "AR": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.247,
+        "zombie_rate_90d": 0.293,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.05689793996850786,
+          "min_volume_182d": -0.26595734385641956,
+          "volume_ratio_7d_90d": -0.14346486940295006,
+          "volume_ratio_30d_182d_max": 0.16479520743054982,
+          "volume_floor_slope": -0.12048958244579228,
+          "days_since_volume_peak": -0.24734139971884872,
+          "median_return_182d": -0.3821820372036454,
+          "volatility_30d": 0.1371048567674886,
+          "liquidity_death_composite": 0.08839948036987705
+        }
+      },
+      "ATOM": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.066,
+        "zombie_rate_90d": 0.225,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.12493472055077044,
+          "min_volume_182d": -0.04938427089453539,
+          "volume_ratio_7d_90d": 0.016938510618051753,
+          "volume_ratio_30d_182d_max": -0.18586922111403312,
+          "volume_floor_slope": 0.10690799705281365,
+          "days_since_volume_peak": 0.22047120847498086,
+          "median_return_182d": -0.06884980235469014,
+          "volatility_30d": -0.12992704867102106,
+          "liquidity_death_composite": -0.12164435607641788
+        }
+      },
+      "AVAX": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.0,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "AXS": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.323,
+        "zombie_rate_90d": 0.381,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.28223526717521885,
+          "min_volume_182d": -0.09585392103898824,
+          "volume_ratio_7d_90d": -0.06315131169448773,
+          "volume_ratio_30d_182d_max": -0.03358828175955652,
+          "volume_floor_slope": -0.08465853248759846,
+          "days_since_volume_peak": -0.2089607620794949,
+          "median_return_182d": -0.5397986992148718,
+          "volatility_30d": 0.3396843524869495,
+          "liquidity_death_composite": 0.016835182367852232
+        }
+      },
+      "BCH": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.218,
+        "zombie_rate_90d": 0.401,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.2734772070409206,
+          "min_volume_182d": -0.24313955780897273,
+          "volume_ratio_7d_90d": -0.35831627129395605,
+          "volume_ratio_30d_182d_max": -0.49119314696794886,
+          "volume_floor_slope": -0.4118483585635526,
+          "days_since_volume_peak": 0.28904664817851816,
+          "median_return_182d": -0.09439462036984407,
+          "volatility_30d": -0.1669133621637466,
+          "liquidity_death_composite": 0.3590256046294147
+        }
+      },
+      "BNB": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.216,
+        "zombie_rate_90d": 0.482,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.02277808363853143,
+          "min_volume_182d": -0.1832199425189397,
+          "volume_ratio_7d_90d": -0.2875182052390667,
+          "volume_ratio_30d_182d_max": -0.3031987046950486,
+          "volume_floor_slope": -0.35760175718141257,
+          "days_since_volume_peak": 0.20410997412954668,
+          "median_return_182d": -0.06424417549884634,
+          "volatility_30d": 0.13063372622367508,
+          "liquidity_death_composite": 0.31160648388270135
+        }
+      },
+      "BONK": {
+        "n_days": 997,
+        "zombie_rate_28d": 0.12938816449348045,
+        "zombie_rate_90d": 0.3741223671013039,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.15490383708435573,
+          "min_volume_182d": -0.141608265830612,
+          "volume_ratio_7d_90d": -0.15339178656011807,
+          "volume_ratio_30d_182d_max": 0.06288662138675186,
+          "volume_floor_slope": -0.12262474081480196,
+          "days_since_volume_peak": 0.09922748851451356,
+          "median_return_182d": -0.043462272597328024,
+          "volatility_30d": -0.013030543748811362,
+          "liquidity_death_composite": 0.05675758433519218
+        }
+      },
+      "COMP": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.469,
+        "zombie_rate_90d": 0.605,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.24766611697558702,
+          "min_volume_182d": -0.25428604516116576,
+          "volume_ratio_7d_90d": -0.03573483438297822,
+          "volume_ratio_30d_182d_max": 0.13441878950376318,
+          "volume_floor_slope": -0.05273999685486782,
+          "days_since_volume_peak": -0.34553403433138097,
+          "median_return_182d": -0.14695206053762877,
+          "volatility_30d": 0.5126002774342044,
+          "liquidity_death_composite": 0.22568911203450184
+        }
+      },
+      "CRV": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.158,
+        "zombie_rate_90d": 0.263,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.38006407156404265,
+          "min_volume_182d": -0.2859674229206277,
+          "volume_ratio_7d_90d": -0.03621920438689709,
+          "volume_ratio_30d_182d_max": -0.26694902383177527,
+          "volume_floor_slope": -0.05569969528001756,
+          "days_since_volume_peak": 0.18942743535333342,
+          "median_return_182d": -0.2964446628639536,
+          "volatility_30d": 0.1612875395393517,
+          "liquidity_death_composite": -0.013837130868403026
+        }
+      },
+      "DASH": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.328,
+        "zombie_rate_90d": 0.425,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.2228300434498307,
+          "min_volume_182d": 0.1285474142791169,
+          "volume_ratio_7d_90d": -0.25784989091315746,
+          "volume_ratio_30d_182d_max": -0.5028801885781109,
+          "volume_floor_slope": -0.041054896276051085,
+          "days_since_volume_peak": -0.05377227263258766,
+          "median_return_182d": -0.216705314125081,
+          "volatility_30d": 0.0891086448530684,
+          "liquidity_death_composite": 0.48607168975814175
+        }
+      },
+      "DOGE": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.188,
+        "zombie_rate_90d": 0.269,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.09084225349683445,
+          "min_volume_182d": -0.21382441268282987,
+          "volume_ratio_7d_90d": -0.29309225045157905,
+          "volume_ratio_30d_182d_max": -0.16580756959710705,
+          "volume_floor_slope": -0.41064987369402023,
+          "days_since_volume_peak": -0.012451880647899335,
+          "median_return_182d": -0.5353208986574695,
+          "volatility_30d": 0.4847665824018362,
+          "liquidity_death_composite": 0.5563896588648886
+        }
+      },
+      "DOT": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.071,
+        "zombie_rate_90d": 0.227,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.05117461469733418,
+          "min_volume_182d": 0.24837102048285295,
+          "volume_ratio_7d_90d": -0.10496414502294589,
+          "volume_ratio_30d_182d_max": -0.1979684295994418,
+          "volume_floor_slope": -0.2487838103670791,
+          "days_since_volume_peak": -0.0023298134740661045,
+          "median_return_182d": 0.014748539381197898,
+          "volatility_30d": -0.003919352886204772,
+          "liquidity_death_composite": 0.13156220864927956
+        }
+      },
+      "DYDX": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.068,
+        "zombie_rate_90d": 0.169,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.19087293321707205,
+          "min_volume_182d": -0.18973249417337373,
+          "volume_ratio_7d_90d": -0.043403157361278484,
+          "volume_ratio_30d_182d_max": 0.07603465142060235,
+          "volume_floor_slope": 0.03554473632389709,
+          "days_since_volume_peak": -0.1013318481863536,
+          "median_return_182d": -0.1063869255654451,
+          "volatility_30d": 0.2802683222507248,
+          "liquidity_death_composite": -0.04255176391017482
+        }
+      },
+      "ENA": {
+        "n_days": 888,
+        "zombie_rate_28d": 0.0011261261261261261,
+        "zombie_rate_90d": 0.0022522522522522522,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.01754932097136948,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.00400679183057648,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": -0.0053068906163016025,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.03206226017476804,
+          "liquidity_death_composite": -0.03306397986461143
+        }
+      },
+      "ETC": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.41,
+        "zombie_rate_90d": 0.581,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.26019608855753557,
+          "min_volume_182d": 0.09745307776575059,
+          "volume_ratio_7d_90d": -0.39126172903774864,
+          "volume_ratio_30d_182d_max": -0.4858885043765412,
+          "volume_floor_slope": -0.394424518001552,
+          "days_since_volume_peak": 0.39859937247743693,
+          "median_return_182d": -0.17092548372930877,
+          "volatility_30d": -0.06398041448136572,
+          "liquidity_death_composite": 0.3519571452373128
+        }
+      },
+      "ETH": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.017,
+        "zombie_rate_90d": 0.022,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.17610650165230451,
+          "min_volume_182d": -0.14064042943315816,
+          "volume_ratio_7d_90d": 0.002171566765605172,
+          "volume_ratio_30d_182d_max": -0.03511960319005864,
+          "volume_floor_slope": -0.013390503492300115,
+          "days_since_volume_peak": 0.11791400470353569,
+          "median_return_182d": -0.09936470077256807,
+          "volatility_30d": -0.13645933384273662,
+          "liquidity_death_composite": -0.09184577553049361
+        }
+      },
+      "FET": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.138,
+        "zombie_rate_90d": 0.239,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.3784729367267658,
+          "min_volume_182d": -0.42614506271776204,
+          "volume_ratio_7d_90d": -0.08315719300861774,
+          "volume_ratio_30d_182d_max": -0.30413356029285615,
+          "volume_floor_slope": -0.02284311017569473,
+          "days_since_volume_peak": 0.32408855963919075,
+          "median_return_182d": -0.036887638875681195,
+          "volatility_30d": 0.0642789208037842,
+          "liquidity_death_composite": 0.014965311115538272
+        }
+      },
+      "FIL": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.258,
+        "zombie_rate_90d": 0.41,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.4927869764385432,
+          "min_volume_182d": -0.4844368305861045,
+          "volume_ratio_7d_90d": -0.24292715469595463,
+          "volume_ratio_30d_182d_max": -0.4015464281209462,
+          "volume_floor_slope": -0.10990153187632655,
+          "days_since_volume_peak": -0.19849882218467596,
+          "median_return_182d": 0.3485027279836935,
+          "volatility_30d": -0.20647106558726985,
+          "liquidity_death_composite": 0.12057069211191605
+        }
+      },
+      "FLOKI": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.17,
+        "zombie_rate_90d": 0.333,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.07360140224669576,
+          "min_volume_182d": -0.31640081852178376,
+          "volume_ratio_7d_90d": -0.13873519811308407,
+          "volume_ratio_30d_182d_max": -0.2415615874990412,
+          "volume_floor_slope": -0.1427272403447225,
+          "days_since_volume_peak": 0.07551656960529002,
+          "median_return_182d": 0.11258877386417135,
+          "volatility_30d": -0.020633631539435798,
+          "liquidity_death_composite": 0.182406015969411
+        }
+      },
+      "GALA": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.179,
+        "zombie_rate_90d": 0.2,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.12648192789348114,
+          "min_volume_182d": 0.06389008575562416,
+          "volume_ratio_7d_90d": -0.24854510340205824,
+          "volume_ratio_30d_182d_max": -0.20799734663743297,
+          "volume_floor_slope": -0.34702351827365996,
+          "days_since_volume_peak": 0.03056921461315246,
+          "median_return_182d": -0.3497964435494877,
+          "volatility_30d": 0.39548324701462034,
+          "liquidity_death_composite": 0.35917831198955086
+        }
+      },
+      "HBAR": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.314,
+        "zombie_rate_90d": 0.518,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.07827834895064642,
+          "min_volume_182d": -0.4239604798178796,
+          "volume_ratio_7d_90d": -0.22263945147891429,
+          "volume_ratio_30d_182d_max": -0.2859364441889465,
+          "volume_floor_slope": -0.13881014387522012,
+          "days_since_volume_peak": -0.04598760105818747,
+          "median_return_182d": -0.14882823056329422,
+          "volatility_30d": -0.2336702397590923,
+          "liquidity_death_composite": 0.2787054029288221
+        }
+      },
+      "ICP": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.231,
+        "zombie_rate_90d": 0.297,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.4218460470408743,
+          "min_volume_182d": -0.42108175430691863,
+          "volume_ratio_7d_90d": -0.20279350352862632,
+          "volume_ratio_30d_182d_max": -0.3364894225158342,
+          "volume_floor_slope": -0.05209937682222597,
+          "days_since_volume_peak": -0.13769006629770353,
+          "median_return_182d": -0.11180548280486327,
+          "volatility_30d": 0.13043451724432156,
+          "liquidity_death_composite": 0.14580204707701988
+        }
+      },
+      "IMX": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.07,
+        "zombie_rate_90d": 0.172,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.16172102009044403,
+          "min_volume_182d": -0.15310763535281455,
+          "volume_ratio_7d_90d": 0.19991804141538236,
+          "volume_ratio_30d_182d_max": 0.14770447964787195,
+          "volume_floor_slope": 0.08928321487244682,
+          "days_since_volume_peak": 0.051686278180729454,
+          "median_return_182d": 0.07253570919432817,
+          "volatility_30d": 0.02378548896732753,
+          "liquidity_death_composite": -0.21465844801733638
+        }
+      },
+      "INJ": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.087,
+        "zombie_rate_90d": 0.069,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.32756695479603154,
+          "min_volume_182d": -0.37169996493074414,
+          "volume_ratio_7d_90d": -0.01718905226970647,
+          "volume_ratio_30d_182d_max": -0.025860418918498326,
+          "volume_floor_slope": 0.11948257899282189,
+          "days_since_volume_peak": -0.10399969042075438,
+          "median_return_182d": 0.2634353389806285,
+          "volatility_30d": 0.0719363809624567,
+          "liquidity_death_composite": -0.08736191538000167
+        }
+      },
+      "IOTA": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.163,
+        "zombie_rate_90d": 0.27,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.2318795820396426,
+          "min_volume_182d": 0.22873098723641772,
+          "volume_ratio_7d_90d": -0.07916516427440494,
+          "volume_ratio_30d_182d_max": -0.0358041730681797,
+          "volume_floor_slope": -0.032546219632943824,
+          "days_since_volume_peak": -0.16020021245987226,
+          "median_return_182d": -0.5054063863967243,
+          "volatility_30d": 0.01738066634700092,
+          "liquidity_death_composite": 0.018098747815080075
+        }
+      },
+      "JTO": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.25,
+        "zombie_rate_90d": 0.407,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.15827852669692907,
+          "min_volume_182d": -0.09844483911072847,
+          "volume_ratio_7d_90d": -0.1092313512918491,
+          "volume_ratio_30d_182d_max": -0.13502715889369143,
+          "volume_floor_slope": -0.019890372691617784,
+          "days_since_volume_peak": 0.015870599014594828,
+          "median_return_182d": -0.30862960654266985,
+          "volatility_30d": 0.16099668968213554,
+          "liquidity_death_composite": 0.007663208120359892
+        }
+      },
+      "JUP": {
+        "n_days": 950,
+        "zombie_rate_28d": 0.2073684210526316,
+        "zombie_rate_90d": 0.38421052631578945,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.06831611478135509,
+          "min_volume_182d": 0.17799342775349844,
+          "volume_ratio_7d_90d": -0.1327785521361736,
+          "volume_ratio_30d_182d_max": -0.1756840370084538,
+          "volume_floor_slope": -0.11241786617030922,
+          "days_since_volume_peak": 0.052098789510817554,
+          "median_return_182d": -0.5058702231537588,
+          "volatility_30d": -0.01855391373837268,
+          "liquidity_death_composite": 0.09646791968304022
+        }
+      },
+      "LDO": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.049,
+        "zombie_rate_90d": 0.125,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.1769653409050998,
+          "min_volume_182d": -0.13000828483860988,
+          "volume_ratio_7d_90d": -0.13949787446875062,
+          "volume_ratio_30d_182d_max": -0.16121856560672518,
+          "volume_floor_slope": -0.06320397636266652,
+          "days_since_volume_peak": 0.04079440387929978,
+          "median_return_182d": 0.07875369393505524,
+          "volatility_30d": -0.029086413324559145,
+          "liquidity_death_composite": 0.09306983001429907
+        }
+      },
+      "LINK": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.075,
+        "zombie_rate_90d": 0.189,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.010578314607049749,
+          "min_volume_182d": 0.13863068250390795,
+          "volume_ratio_7d_90d": -0.13221353467633143,
+          "volume_ratio_30d_182d_max": -0.23311624832755468,
+          "volume_floor_slope": -0.16284683444079195,
+          "days_since_volume_peak": 0.0702881141680925,
+          "median_return_182d": -0.2536017728969579,
+          "volatility_30d": 0.06272730119091802,
+          "liquidity_death_composite": 0.16047189763556385
+        }
+      },
+      "LTC": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.182,
+        "zombie_rate_90d": 0.371,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.121062830519052,
+          "min_volume_182d": 0.14671693006533545,
+          "volume_ratio_7d_90d": -0.384467741942726,
+          "volume_ratio_30d_182d_max": -0.40748252592582274,
+          "volume_floor_slope": -0.33125986198126106,
+          "days_since_volume_peak": 0.17546359964782857,
+          "median_return_182d": 0.16252903294709956,
+          "volatility_30d": 0.04212793917901631,
+          "liquidity_death_composite": 0.4695306220334402
+        }
+      },
+      "MATIC": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.0,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "MKR": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.079,
+        "zombie_rate_90d": 0.237,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.10817516489490513,
+          "min_volume_182d": -0.10338181646651678,
+          "volume_ratio_7d_90d": 0.19768669382448503,
+          "volume_ratio_30d_182d_max": 0.19487467116770216,
+          "volume_floor_slope": 0.15252416517384113,
+          "days_since_volume_peak": -0.13267525423746415,
+          "median_return_182d": 0.01919720194179164,
+          "volatility_30d": -0.1005626487464364,
+          "liquidity_death_composite": -0.19618409147007812
+        }
+      },
+      "NEAR": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.001,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "ONDO": {
+        "n_days": 514,
+        "zombie_rate_28d": 0.058365758754863814,
+        "zombie_rate_90d": 0.16536964980544747,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.09504711235154958,
+          "min_volume_182d": 0.19578640592233953,
+          "volume_ratio_7d_90d": -0.3665093623008351,
+          "volume_ratio_30d_182d_max": -0.1707606399907087,
+          "volume_floor_slope": -0.38039733785446966,
+          "days_since_volume_peak": 0.057815601352034056,
+          "median_return_182d": 0.22368771130117016,
+          "volatility_30d": 0.10381397321831659,
+          "liquidity_death_composite": 0.47284099131283763
+        }
+      },
+      "OP": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.082,
+        "zombie_rate_90d": 0.184,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.18280192297163708,
+          "min_volume_182d": -0.109234184662984,
+          "volume_ratio_7d_90d": -0.24650786417621515,
+          "volume_ratio_30d_182d_max": -0.1567268881919336,
+          "volume_floor_slope": -0.13662320475741568,
+          "days_since_volume_peak": -0.08359828346464598,
+          "median_return_182d": -0.01929107201682042,
+          "volatility_30d": 0.015106856837184794,
+          "liquidity_death_composite": 0.2265611336655491
+        }
+      },
+      "PENDLE": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.054,
+        "zombie_rate_90d": 0.118,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.05234397959875565,
+          "min_volume_182d": -0.2008130899734327,
+          "volume_ratio_7d_90d": 0.042726530682702504,
+          "volume_ratio_30d_182d_max": 0.20038829161044222,
+          "volume_floor_slope": 0.07571531156744615,
+          "days_since_volume_peak": -0.0643257865450181,
+          "median_return_182d": -0.12806774352726283,
+          "volatility_30d": -0.07295070211245056,
+          "liquidity_death_composite": -0.15825202524764176
+        }
+      },
+      "PEPE": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.083,
+        "zombie_rate_90d": 0.282,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.3232441273540139,
+          "min_volume_182d": 0.17595162771494527,
+          "volume_ratio_7d_90d": -0.06989051743933974,
+          "volume_ratio_30d_182d_max": 0.02546844254195247,
+          "volume_floor_slope": 0.02360196111680811,
+          "days_since_volume_peak": -0.31170070444892356,
+          "median_return_182d": -0.3040719683609288,
+          "volatility_30d": 0.12691407043112085,
+          "liquidity_death_composite": 0.21168218176956824
+        }
+      },
+      "PYTH": {
+        "n_days": 948,
+        "zombie_rate_28d": 0.24050632911392406,
+        "zombie_rate_90d": 0.24578059071729957,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.2758094499904454,
+          "min_volume_182d": -0.14350218943113283,
+          "volume_ratio_7d_90d": -0.06337446254952259,
+          "volume_ratio_30d_182d_max": -0.2074308439613159,
+          "volume_floor_slope": 0.016391439349184616,
+          "days_since_volume_peak": -0.24907319489446036,
+          "median_return_182d": -0.43188291019488984,
+          "volatility_30d": 0.10905838061616144,
+          "liquidity_death_composite": 0.049988181069206036
+        }
+      },
+      "RENDER": {
+        "n_days": 773,
+        "zombie_rate_28d": 0.06338939197930142,
+        "zombie_rate_90d": 0.13195342820181113,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.2456480747005336,
+          "min_volume_182d": -0.2764543229522299,
+          "volume_ratio_7d_90d": -0.0925771023175572,
+          "volume_ratio_30d_182d_max": 0.28435686141519195,
+          "volume_floor_slope": -0.0010917638587540598,
+          "days_since_volume_peak": -0.1559958011339773,
+          "median_return_182d": -0.3512990905286964,
+          "volatility_30d": -0.2887573299449659,
+          "liquidity_death_composite": 0.06302794714246666
+        }
+      },
+      "SAND": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.379,
+        "zombie_rate_90d": 0.479,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.12517303241029581,
+          "min_volume_182d": 0.08503187279010578,
+          "volume_ratio_7d_90d": -0.2689099050341393,
+          "volume_ratio_30d_182d_max": -0.4773824957119469,
+          "volume_floor_slope": -0.1230223607561224,
+          "days_since_volume_peak": 0.0070951942421114194,
+          "median_return_182d": -0.474535182503775,
+          "volatility_30d": 0.2687581427702207,
+          "liquidity_death_composite": 0.3045510605340069
+        }
+      },
+      "SEI": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.015,
+        "zombie_rate_90d": 0.071,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.11468493425894674,
+          "min_volume_182d": 0.2378001093952255,
+          "volume_ratio_7d_90d": -0.052507252271415,
+          "volume_ratio_30d_182d_max": 0.010730392381546435,
+          "volume_floor_slope": -0.0419748785617504,
+          "days_since_volume_peak": -0.0835267696690009,
+          "median_return_182d": -0.3038901613699273,
+          "volatility_30d": 0.08623478237770056,
+          "liquidity_death_composite": 0.06112865146451639
+        }
+      },
+      "SHIB": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.286,
+        "zombie_rate_90d": 0.363,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.2897727613160268,
+          "min_volume_182d": 0.4237755589942797,
+          "volume_ratio_7d_90d": -0.21496120615133676,
+          "volume_ratio_30d_182d_max": -0.3606301616837835,
+          "volume_floor_slope": -0.34901569029357654,
+          "days_since_volume_peak": -0.15284610790753944,
+          "median_return_182d": -0.6825001598978481,
+          "volatility_30d": 0.40520195647502494,
+          "liquidity_death_composite": 0.425473953649373
+        }
+      },
+      "SNX": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.221,
+        "zombie_rate_90d": 0.268,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.41184450779937903,
+          "min_volume_182d": -0.47000637659675987,
+          "volume_ratio_7d_90d": -0.08948079046516585,
+          "volume_ratio_30d_182d_max": -0.18663117429870632,
+          "volume_floor_slope": 0.12872444151134477,
+          "days_since_volume_peak": -0.057685607595167686,
+          "median_return_182d": 0.14227065969889813,
+          "volatility_30d": 0.27525217221103154,
+          "liquidity_death_composite": 0.01567986329856287
+        }
+      },
+      "SOL": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.0,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "STRK": {
+        "n_days": 930,
+        "zombie_rate_28d": 0.23118279569892472,
+        "zombie_rate_90d": 0.22688172043010751,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.3537203817447154,
+          "min_volume_182d": -0.5167503376755367,
+          "volume_ratio_7d_90d": -0.08749721649273692,
+          "volume_ratio_30d_182d_max": -0.11181955680127141,
+          "volume_floor_slope": 0.24218932197273088,
+          "days_since_volume_peak": -0.1429402866351893,
+          "median_return_182d": -0.29182094798544406,
+          "volatility_30d": 0.0850691993846282,
+          "liquidity_death_composite": -0.004947640771964364
+        }
+      },
+      "SUI": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.033,
+        "zombie_rate_90d": 0.03,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.18325874371703865,
+          "min_volume_182d": -0.15394890069589492,
+          "volume_ratio_7d_90d": -0.07152423459393796,
+          "volume_ratio_30d_182d_max": -0.10749073721862937,
+          "volume_floor_slope": -0.03876636929688799,
+          "days_since_volume_peak": 0.17735846059964655,
+          "median_return_182d": -0.23872292235851048,
+          "volatility_30d": -0.28951800055215965,
+          "liquidity_death_composite": -0.00035741423384912584
+        }
+      },
+      "SUSHI": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.364,
+        "zombie_rate_90d": 0.571,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.17735626951012606,
+          "min_volume_182d": 0.22234700596163307,
+          "volume_ratio_7d_90d": -0.38898406154639964,
+          "volume_ratio_30d_182d_max": -0.3812702895746939,
+          "volume_floor_slope": -0.31209311717109667,
+          "days_since_volume_peak": -0.018698243825464395,
+          "median_return_182d": 0.21384632620770427,
+          "volatility_30d": -0.18952508024636405,
+          "liquidity_death_composite": 0.3556020115103387
+        }
+      },
+      "TAO": {
+        "n_days": 879,
+        "zombie_rate_28d": 0.06370875995449374,
+        "zombie_rate_90d": 0.13196814562002276,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.25887827497052107,
+          "min_volume_182d": -0.3570553596691323,
+          "volume_ratio_7d_90d": -0.14787721966371123,
+          "volume_ratio_30d_182d_max": -0.016493036905632526,
+          "volume_floor_slope": -0.08097573234578716,
+          "days_since_volume_peak": 0.07448027043843594,
+          "median_return_182d": -0.09528008577405576,
+          "volatility_30d": 0.2077912885357899,
+          "liquidity_death_composite": 0.08412003016108659
+        }
+      },
+      "TIA": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.028,
+        "zombie_rate_90d": 0.03,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.14144026794402545,
+          "min_volume_182d": -0.1893611901679412,
+          "volume_ratio_7d_90d": 0.09259927884141984,
+          "volume_ratio_30d_182d_max": 0.3873100326878889,
+          "volume_floor_slope": 0.05065260908603436,
+          "days_since_volume_peak": -0.17255777840066955,
+          "median_return_182d": 0.06705327196533135,
+          "volatility_30d": -0.2563757745522558,
+          "liquidity_death_composite": -0.14090328027427043
+        }
+      },
+      "TNSR": {
+        "n_days": 882,
+        "zombie_rate_28d": 0.336734693877551,
+        "zombie_rate_90d": 0.42063492063492064,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.4161103390241635,
+          "min_volume_182d": -0.48878219977070175,
+          "volume_ratio_7d_90d": 0.16234023027465513,
+          "volume_ratio_30d_182d_max": -0.10869885555591975,
+          "volume_floor_slope": 0.3503465246835214,
+          "days_since_volume_peak": -0.2702770419960789,
+          "median_return_182d": -0.06026569283162086,
+          "volatility_30d": 0.4911894589649771,
+          "liquidity_death_composite": -0.2669215021165782
+        }
+      },
+      "UNI": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.237,
+        "zombie_rate_90d": 0.255,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.2500632360161957,
+          "min_volume_182d": -0.056712168263505836,
+          "volume_ratio_7d_90d": -0.2498450260742784,
+          "volume_ratio_30d_182d_max": -0.3185969894923504,
+          "volume_floor_slope": -0.10861812250878156,
+          "days_since_volume_peak": 0.2825780361040949,
+          "median_return_182d": -0.45454417318578005,
+          "volatility_30d": 0.1692585424244063,
+          "liquidity_death_composite": 0.10813777300136063
+        }
+      },
+      "WIF": {
+        "n_days": 916,
+        "zombie_rate_28d": 0.16048034934497818,
+        "zombie_rate_90d": 0.29585152838427947,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.3455585038845985,
+          "min_volume_182d": -0.36367523796909695,
+          "volume_ratio_7d_90d": 0.009506615600195006,
+          "volume_ratio_30d_182d_max": 0.12777520996823358,
+          "volume_floor_slope": 0.09828797239836685,
+          "days_since_volume_peak": 0.12820479492457773,
+          "median_return_182d": -0.38297351167097005,
+          "volatility_30d": 0.3210049698317439,
+          "liquidity_death_composite": -0.20960431622319425
+        }
+      },
+      "WLD": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.185,
+        "zombie_rate_90d": 0.186,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.31693482212646434,
+          "min_volume_182d": -0.3527090462941666,
+          "volume_ratio_7d_90d": -0.0956278936471488,
+          "volume_ratio_30d_182d_max": 0.13166790056536726,
+          "volume_floor_slope": 0.008885483575210342,
+          "days_since_volume_peak": -0.31420042203529264,
+          "median_return_182d": -0.09278498333914251,
+          "volatility_30d": 0.2324902035131482,
+          "liquidity_death_composite": 0.025470679335629746
+        }
+      },
+      "W": {
+        "n_days": 887,
+        "zombie_rate_28d": 0.22886133032694475,
+        "zombie_rate_90d": 0.32807215332581735,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.3132493697458542,
+          "min_volume_182d": -0.2527539748644011,
+          "volume_ratio_7d_90d": 0.014359344618521036,
+          "volume_ratio_30d_182d_max": -0.11877440027002432,
+          "volume_floor_slope": 0.120983525955926,
+          "days_since_volume_peak": -0.07670273642403119,
+          "median_return_182d": 0.15054256774602362,
+          "volatility_30d": 0.062440283743546855,
+          "liquidity_death_composite": -0.09688114030568225
+        }
+      },
+      "XLM": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.361,
+        "zombie_rate_90d": 0.515,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.48293657420521874,
+          "min_volume_182d": 0.2076005483545422,
+          "volume_ratio_7d_90d": -0.23756692238422228,
+          "volume_ratio_30d_182d_max": -0.004861455080841031,
+          "volume_floor_slope": -0.10268549650923245,
+          "days_since_volume_peak": 0.035873900119221556,
+          "median_return_182d": -0.36849364301453347,
+          "volatility_30d": 0.3041432805925052,
+          "liquidity_death_composite": 0.349266180568568
+        }
+      },
+      "XMR": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.0,
+        "zombie_rate_90d": 0.0,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.0,
+          "min_volume_182d": 0.0,
+          "volume_ratio_7d_90d": 0.0,
+          "volume_ratio_30d_182d_max": 0.0,
+          "volume_floor_slope": 0.0,
+          "days_since_volume_peak": 0.0,
+          "median_return_182d": 0.0,
+          "volatility_30d": 0.0,
+          "liquidity_death_composite": 0.0
+        }
+      },
+      "XRP": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.17,
+        "zombie_rate_90d": 0.336,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.2147892611861442,
+          "min_volume_182d": -0.06372246701373001,
+          "volume_ratio_7d_90d": -0.13738365742513226,
+          "volume_ratio_30d_182d_max": -0.18155964274320935,
+          "volume_floor_slope": -0.10257402924722886,
+          "days_since_volume_peak": 0.15074079670486606,
+          "median_return_182d": -0.2575025787867732,
+          "volatility_30d": -0.13865948103068776,
+          "liquidity_death_composite": 0.09955525339940782
+        }
+      },
+      "ZEC": {
+        "n_days": 1000,
+        "zombie_rate_28d": 0.278,
+        "zombie_rate_90d": 0.482,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": 0.37284096496148733,
+          "min_volume_182d": 0.34489073176651563,
+          "volume_ratio_7d_90d": -0.20301863437298875,
+          "volume_ratio_30d_182d_max": -0.2805504554671835,
+          "volume_floor_slope": -0.21224305954046463,
+          "days_since_volume_peak": 0.38293368582077353,
+          "median_return_182d": -0.039136191343453336,
+          "volatility_30d": -0.24017805960428776,
+          "liquidity_death_composite": 0.2094595147393526
+        }
+      },
+      "ZK": {
+        "n_days": 812,
+        "zombie_rate_28d": 0.31403940886699505,
+        "zombie_rate_90d": 0.2733990147783251,
+        "correlations_with_zombie_28d": {
+          "min_volume_28d": -0.5848199524212052,
+          "min_volume_182d": -0.599443407355112,
+          "volume_ratio_7d_90d": -0.27530083190072063,
+          "volume_ratio_30d_182d_max": -0.270916737650246,
+          "volume_floor_slope": 0.1036250638759834,
+          "days_since_volume_peak": -0.10860933665266205,
+          "median_return_182d": 0.05779788055000517,
+          "volatility_30d": 0.42902356729027735,
+          "liquidity_death_composite": 0.21512779822905456
+        }
+      }
+    },
+    "summary": {
+      "n_assets": 64,
+      "avg_zombie_rate_28d": 0.1601429926498471
+    }
+  }
+}

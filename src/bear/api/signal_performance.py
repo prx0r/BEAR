@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 
 def load_outcomes() -> list[dict]:
     """Load all signal outcomes."""
-    path = Path(__file__).parent.parent.parent / "data" / "extracted" / "full_outcomes.json"
+    path = Path("/root/BEAR/astronomer/data/extracted/full_outcomes.json")
     if not path.exists():
         return []
     with open(path) as f:

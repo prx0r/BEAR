@@ -70,8 +70,8 @@ def precompute_all_signals(assets: dict[str, dict]) -> dict:
             vv = w[np.isfinite(w)]
             peak_vol[i] = np.max(vv) if len(vv) > 0 else np.nan
         recent_vol = np.full(n, np.nan)
-        for i in range(6, n):
-            w = v[max(0, i - 6): i + 1]
+        for i in range(7, n):
+            w = v[max(0, i - 7): i + 1]
             vv = w[np.isfinite(w)]
             recent_vol[i] = np.mean(vv) if len(vv) > 0 else np.nan
         ratio = np.where(
@@ -101,9 +101,9 @@ def precompute_all_signals(assets: dict[str, dict]) -> dict:
 
         # --- reversal_8w raw ---
         ret_8w = np.full(n, np.nan)
-        for i in range(55, n):
-            if np.isfinite(c[i]) and np.isfinite(c[i - 55]) and c[i - 55] > 0:
-                ret_8w[i] = (c[i] - c[i - 55]) / c[i - 55]
+        for i in range(56, n):
+            if np.isfinite(c[i]) and np.isfinite(c[i - 56]) and c[i - 56] > 0:
+                ret_8w[i] = (c[i] - c[i - 56]) / c[i - 56]
         reversal_raw_mat[si, :n] = ret_8w
 
         # --- funding_pressure ---
@@ -122,8 +122,8 @@ def precompute_all_signals(assets: dict[str, dict]) -> dict:
             vv = w[np.isfinite(w)]
             vol_ma[i] = np.mean(vv) if len(vv) > 0 else np.nan
         vol_recent = np.full(n, np.nan)
-        for i in range(6, n):
-            w = v[max(0, i - 6): i + 1]
+        for i in range(7, n):
+            w = v[max(0, i - 7): i + 1]
             vv = w[np.isfinite(w)]
             vol_recent[i] = np.mean(vv) if len(vv) > 0 else np.nan
         vol_ratio = np.where(
@@ -139,9 +139,9 @@ def precompute_all_signals(assets: dict[str, dict]) -> dict:
 
         # --- momentum raw ---
         ret_7d = np.full(n, np.nan)
-        for i in range(6, n):
-            if np.isfinite(c[i]) and np.isfinite(c[i - 6]) and c[i - 6] > 0:
-                ret_7d[i] = (c[i] - c[i - 6]) / c[i - 6]
+        for i in range(7, n):
+            if np.isfinite(c[i]) and np.isfinite(c[i - 7]) and c[i - 7] > 0:
+                ret_7d[i] = (c[i] - c[i - 7]) / c[i - 7]
         momentum_raw_mat[si, :n] = ret_7d
 
     # Cross-sectional rank for reversal and momentum

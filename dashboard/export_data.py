@@ -552,6 +552,130 @@ def compute_death_watch(markets: list[dict], tvl_data: dict, goplus_data: dict) 
     return dogshit
 
 
+# ---------------------------------------------------------------------------
+# NEW: TradableDeath leaderboard (4-model architecture)
+# ---------------------------------------------------------------------------
+
+def compute_tradable_death_leaderboard(markets: list[dict]) -> list[dict]:
+    """Compute TradableDeath scores using 4-model architecture.
+
+    This is the primary leaderboard per DEV_PLAN.md:
+      A. DEATH_HAZARD — volume floor collapse
+      B. STRUCTURAL_DECAY — dilution proxy
+      C. SETUP — 8-10w reversal
+      D. TRADEABILITY — crowding vetoes
+    """
+    import json as _json
+    from pathlib import Path as _Path
+
+    BINANCE_DIR = _Path("/root/BEAR/data/binance")
+
+    # Load daily data
+    assets = {}
+    for m in markets:
+        sym = m["symbol"]
+        p = BINANCE_DIR / f"{sym}USDT.json"
+        if not p.exists():
+            continue
+        try:
+            raw = _json.loads(p.read_text())
+            if len(raw) < 90:
+                continue
+            closes = np.array([d["close"] for d in raw], dtype=np.float64)
+            volumes = np.array([d["volume"] for d in raw], dtype=np.float64)
+            timestamps = np.array([d["open_time"] for d in raw], dtype=np.int64)
+            if np.all(closes > 0):
+                assets[sym] = {"closes": closes, "volumes": volumes, "timestamps": timestamps, "n": len(raw)}
+        except Exception:
+            continue
+
+    if not assets:
+        return []
+
+    btc = assets.get("BTC")
+    btc_closes = btc["closes"] if btc else None
+    t = btc["n"] - 1 if btc else 0
+
+    # Compute scores for each asset
+    results = []
+    for sym, data in assets.items():
+        if sym in 蓝筹 or sym == "BTC":
+            continue
+        if data["n"] <= t or t < 182:
+            continue
+
+        closes = data["closes"][:t + 1]
+        volumes = data["volumes"][:t + 1]
+
+        # A. Death Hazard
+        from bear.models.death_hazard import DeathHazardModel, compute_volume_floor_features
+        model = DeathHazardModel()
+        features = compute_volume_floor_features(closes, volumes, data["timestamps"][:t + 1])
+        hazard = model.predict(features, asset_age_days=float(t))
+        death_score = float(hazard[-1])
+
+        # B. Structural Decay (dilution proxy)
+        vol_mean_84d = float(np.mean(volumes[max(0, t - 84): t + 1]))
+        vol_recent_14d = float(np.mean(volumes[max(0, t - 14): t + 1]))
+        vol_surge = vol_recent_14d / max(vol_mean_84d, 1e-10)
+        price_change_12w = float((closes[t] - closes[t - 84]) / closes[t - 84]) if closes[t - 84] > 0 else 0.0
+        vol_7d = float(np.mean(volumes[max(0, t - 6): t + 1]))
+        vol_90d = float(np.mean(volumes[max(0, t - 89): t + 1]))
+        vol_death = 1.0 - vol_7d / max(vol_90d, 1e-10)
+        struct_score = min(100.0, max(0.0, vol_surge * 30 + max(-price_change_12w, 0) * 50 + vol_death * 20))
+
+        # C. Setup (reversal)
+        reversal_8w = float((closes[t] - closes[t - 56]) / closes[t - 56]) if closes[t - 56] > 0 else 0.0
+        setup_score = max(0.0, min(100.0, reversal_8w * 100 + 50))
+
+        # D. Tradeability
+        crowd_score = 0.0
+        veto_reasons = []
+        if btc_closes is not None and t >= 30 and btc_closes[t - 30] > 0:
+            btc_30d = float((btc_closes[t] - btc_closes[t - 30]) / btc_closes[t - 30])
+            if btc_30d > 0.10:
+                veto_reasons.append(f"btc_rallying ({btc_30d:.1%})")
+                crowd_score += 20
+        ret_7d = float((closes[t] - closes[t - 7]) / closes[t - 7]) if t >= 7 and closes[t - 7] > 0 else 0.0
+        if ret_7d > 0.15:
+            crowd_score += 15
+        trade_signal = "VETO" if veto_reasons else ("WAIT" if crowd_score > 60 else "ENTER")
+
+        # Liquidity
+        vol_now = float(volumes[t])
+        p_l = 1.0 if vol_now > 50_000 else 0.5 if vol_now > 10_000 else 0.1
+
+        # TradableDeath
+        composite = death_score * 0.35 + struct_score * 0.25 + setup_score * 0.25 + 50 * 0.15
+        tradable_death = composite * p_l * (1 - crowd_score / 200.0) / 100.0
+
+        # Funding carry
+        fund = m.get("funding") or 0
+        carry = fund * 24 * 365
+
+        results.append({
+            "symbol": sym,
+            "sector": TAXONOMY.get(sym, "other"),
+            "tradable_death": round(tradable_death, 4),
+            "death_hazard": round(death_score, 1),
+            "structural_decay": round(struct_score, 1),
+            "setup_score": round(setup_score, 1),
+            "composite": round(composite, 1),
+            "tradeability": trade_signal,
+            "crowd_score": round(crowd_score, 1),
+            "veto_reasons": veto_reasons,
+            "reversal_8w": round(reversal_8w, 4),
+            "vol_surge": round(vol_surge, 3),
+            "vol_death": round(vol_death, 3),
+            "carry": round(carry, 4),
+            "mark_px": m.get("mark_px") or 0,
+            "funding": fund,
+        })
+
+    results.sort(key=lambda x: x["tradable_death"], reverse=True)
+    return results
+
+
 def generate_json_data() -> dict:
     """Build the complete dashboard data JSON with candle data for charts."""
     conn = _connect()
@@ -698,6 +822,9 @@ def generate_json_data() -> dict:
         })
     synthesis.sort(key=lambda x: x["score"], reverse=True)
 
+    # ── Leaderboard 5: TradableDeath (4-model architecture, PRIMARY) ──
+    tradable_death_board = compute_tradable_death_leaderboard(markets)
+
     # Also build old-format short_rankings for backward compat
     short_rankings = price_action[:20]
 
@@ -755,7 +882,8 @@ def generate_json_data() -> dict:
         "markets": markets,
         "short_rankings": short_rankings,
         "leaderboards": {
-            "death_watch": dogshit[:20],  # PRIMARY — validated Sharpe 0.45
+            "tradable_death": tradable_death_board[:20],  # PRIMARY — 4-model architecture
+            "death_watch": dogshit[:20],
             "price_action": price_action[:20],
             "squeeze_recovery": squeeze_recovery[:20],
             "synthesis": synthesis[:20],
