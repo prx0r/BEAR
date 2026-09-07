@@ -123,7 +123,7 @@
     "handle": "0xaporia",
     "tweet_id": "2093360532795408450",
     "text": "waiting months for a breakout just to sell on the first day of escape velocity?\n\nbear market has corrupted you, anon https://t.co/BWMmECgUOl",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "SHORT",
     "assets": [
       "BTC"
@@ -159,7 +159,7 @@
     "handle": "0xaporia",
     "tweet_id": "2092277448868028822",
     "text": "Whenever someone shows you the total altcoin market cap, you should have in mind what the equal-weight version looks like. The *aggregate* alt market can look alive and well while the *average* alt ho",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -255,7 +255,7 @@
     "handle": "0xaporia",
     "tweet_id": "2090491991201062925",
     "text": "Targets put a ceiling on the exact thing you came here for. You showed up to this market because it produces enormous trends. And then your first instinct is to cap your upside at some arbitrary level",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -279,7 +279,7 @@
     "handle": "0xaporia",
     "tweet_id": "2090480038856810682",
     "text": "99% of people come to crypto for one reason: trend. They want to be in the shitcoin while it\u2019s running. Then the first green candle shows up and mfers start calling tops.\n\nGrow some balls and take the",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -367,7 +367,7 @@
     "handle": "Timeless_Crypto",
     "tweet_id": "2093654571440845033",
     "text": "I see a lot of people refrencing our prior cycle bottom as it is the closest point of bias we can anchor to and it might make sense from a microstructure perspective to compare those markets (far more",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -379,7 +379,7 @@
     "handle": "Timeless_Crypto",
     "tweet_id": "2093262414988873783",
     "text": "If we are entering a new regime defined by short pull backs and relentless bullish bid, then i suspect that forward leaning structure (yellow) to be staunchly defended \n\nThe most you get is a love tap",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -621,7 +621,7 @@
     "handle": "Timeless_Crypto",
     "tweet_id": "2086651740183527516",
     "text": "A few things stand out for me\n\nWe've reached inflection point for carrying capacity of this market \n\nShorts have been tested with the continuous flury of buy side reactions around key pivots (check my",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -705,7 +705,7 @@
     "handle": "Timeless_Crypto",
     "tweet_id": "2086017989682323962",
     "text": "Just added this to my long term book \n\nNumbers make sense for a buisness of this scale and i think this is undervalued based on current fundamentals \n\nThe volume says all I need to know\n\nSee you in 6 ",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -784,7 +784,7 @@
     "handle": "Timeless_Crypto",
     "tweet_id": "2084165378201006312",
     "text": "New month new opportunities \n\n63650 is last months vwap where we danced around it like a cat on a hot tin roof \n\nLook how responsive buyers stepped in every single time to bid it at the plate \n\nImmiad",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -796,7 +796,7 @@
     "handle": "CryptoBheem",
     "tweet_id": "2094490804115181721",
     "text": "Starting the $200-2000 challenge in partnership with ByBit. This challenge will be locked to **ByBit affiliates** starting on September 5th.\n\nPreviously completed challenges\ud83d\udd3d\n\ud83d\udc49500-5k (01/2023)\n\ud83d\udc49500-10",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -928,7 +928,7 @@
     "handle": "CryptoBheem",
     "tweet_id": "2087011441480237121",
     "text": "could\u2019ve bought a 2022 corvette instead &amp; still saved money\n\n but guess what\n\nim a crypto bro i must make retarted decisions in life\ud83e\udeea https://t.co/hDKCPWhceu",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -1007,7 +1007,7 @@
     "handle": "laevitas1",
     "tweet_id": "2092225057221136649",
     "text": "XRP open interest on Deribit rose ~27% over the past 24 hours, driven almost entirely by a short-straddle strategy concentrated in two strikes.\n\nThe lead trade: a 5M XRP short straddle, $1.5 strike, 2",
-    "event_kind": "OBSERVATION",
+    "event_kind": "TEXT",
     "direction": null,
     "assets": [
       "BTC"
@@ -1055,7 +1055,7 @@
     "handle": "laevitas1",
     "tweet_id": "2090416550511587412",
     "text": "2M XRP long straddle opened at the 1.16 strike for 28AUG26, $62k premium. IV 50.1% on the put and 41.2% on the call. https://t.co/J0xqgxSZVO",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
@@ -1398,7 +1398,7 @@
     "handle": "lookonchain",
     "tweet_id": "2093944624574529560",
     "text": "Someone spent 1,540 binancecoin:native ($1.07M) to buy 12.26M $\u725b\u6765 3 hours ago.\n\nhttps://t.co/XKaiTDtbB1 https://t.co/OyRslxFFeT",
-    "event_kind": "PREDICTION",
+    "event_kind": "TEXT",
     "direction": "LONG",
     "assets": [
       "BTC"
