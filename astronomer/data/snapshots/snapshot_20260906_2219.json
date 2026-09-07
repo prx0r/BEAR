@@ -1,0 +1,1898 @@
+{
+  "astronomer_zero": {
+    "info": {
+      "handle": "astronomer_zero",
+      "name": "Astronomer",
+      "followers": 64265,
+      "style": "multi-timeframe BTC positioning",
+      "timeframes": [
+        "monthly",
+        "3d",
+        "6h",
+        "m30"
+      ],
+      "focus": [
+        "BTC"
+      ],
+      "weight": 1.0
+    },
+    "tweets": [
+      {
+        "id": "1790757634133667981",
+        "author": "astronomer_zero",
+        "text": "$BTC recap\n\n8 trades, 8 wins \u2705\n\nPretty good month so far, despite the chop.\n\nAlmost every move caught on the 4 hourly.\n\nAll publicly called, with conviction and elaborated with extensive updates.\n\n(couldn't fit every tweet in one picture so first two are missing).",
+        "created_at": "Wed May 15 14:54:25 +0000 2024",
+        "likes": 1252,
+        "retweets": 67,
+        "views": 2765952,
+        "replies": 138,
+        "url": "https://x.com/astronomer_zero/status/1790757634133667981",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/GNnuoZla0AANHHC.jpg",
+          "https://pbs.twimg.com/media/GNn-KCsaIAAa5sB.jpg",
+          "https://pbs.twimg.com/media/GNoMITqakAAFNay.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964725+00:00"
+      },
+      {
+        "id": "2096586139163623552",
+        "author": "astronomer_zero",
+        "text": "$btc \n\n The trades I am still holding on all timeframes and multi-timeframe plan.\n\nBelow an extensive summary of the trades I am still holding and why. This is an execution oriented post, with mild reminders to my plan on how I'm currently positioned for all timeframes.\n\nTo the ones who follow me closely, nothing will be new here, but you all like reminders.\n\nIt's part of my transparency and good practice, always keeping you up to date of the general positions I am in without oversharing unnecessary details.\n\nI like to frequently remind you since I do trade multiple timeframes. And I always mildly recommend watching multiple timeframes as a form of practice to stay in tune with the market properly, not lose touch, and it allows to keep your plan flexible adhering to the environment we are in, especially with assets of \"permanent\" accumulation interest.\n\nMacro plan and trades (Monthly/weekly timeframe)\n\nFor the monthly timeframe, the plan continues of the ongoing spot accumulation, where we strongly recommended against \"DCA-ing\", since that never/rarely allows to get enough near the bottom and it doesn't clearly define how much to \"DCA\", neither does it have proper invalidation.\n\nOur plan is instead to buy 3 batches and adapt dynamically. One early buy, one near the estimated bottom and one confirmation buy.\n\nSince Feb was our early expected bottom time, that was buy 1, in the summer after the 7.12% bounce was buy 2 which beautifully ended up being the bottom so far indeed, and buy 3 waiting for full macro confirmation.\n\nPositional trade: the long (3-Day timeframe or similar)\n\nThen comes one timeframe step down, where we intended to capture the large breakout which took place imo when price aggressively moved above 69k where we took the entry.\n\nI'm still holding that trade even if September turns red, because the trend likely continues imo afterwards, hence why I'm still holding 35% and might increase size again if opportune deep retraces arise.\n\nSo despite the confluences of serious resistance 80-83k, it's only local resistance and does not serve a purpose to fully close a trade on the timeframe above.\n\nSwing trade (6-hourly timeframe or similar)\n\nBecause that's what the swing trade is for, the short. Detecting resistance, detecting the OHLC, mmd, order flow locally, March 2025 defence, POI etc. On timeframes where a short against the larger trend makes sense.\n\nActs as a clean hedge against both the positional and macro spot position as well, and is in full alignment with expecting red September where repeated trades or 1 big swing trade of these shorts can be caught, per our stated plan.\n\nOf the current short, still holding 55% waiting for lower.\n\nScalps (m30 or similar)\n\nAre all trades below that. Trades I share less often, except for the scalp long recently, as a great example of a scalp aiming for those 1000-2000 point moves total. Great trades to take when $btc starts compressing, ranging and getting \"boring\".\n\nScalp plan wise, still expecting higher locally as we indeed have been moving before lower.\n\nFinal notes\n\nNotice how recently, I was macro spot positioned, positional long, swing short and scalp long, yet all of the trades managed to co-exist and work out and were in alignment with the overall multi-timeframe plan.\n\nThat's because the timeframes from macro -> daily/positional -> swing -> scalp are big enough jumps (factor of 12 or similar) to not affect each other.\n\nThey also allow to affect each other through bias -> execution when stepping up or down one timeframe.\n\nThat brings the beauty of multi timeframe positioning full circle, helps you stay sharp and when the market does something unexpected, still allows you to profit most of the time.\n\nIt's imo a myth to align your \"personality\" with your trading timeframe. Not investing just because you don't have the patience seems like a detrimental issue, or not taking a swing trade while one of the best swing trade opportunities arises, equally.\n\nSo with all that said, I disclosed roughly all positions I hold, why and so you know on all timeframes where I expect price to go + actions towards it.",
+        "created_at": "Sun Sep 06 13:07:42 +0000 2026",
+        "likes": 183,
+        "retweets": 10,
+        "views": 20190,
+        "replies": 20,
+        "url": "https://x.com/astronomer_zero/status/2096586139163623552",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRiLr7RbsAAqFrn.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964752+00:00"
+      },
+      {
+        "id": "2096572813733961744",
+        "author": "astronomer_zero",
+        "text": "$btc\n\nStill the one chart that matters, still suggesting locally higher -> lower\n\n...as the lateral movement continues and VAH continues to hold until we test north 81/82k, before seeing lower.\n\nThat's my read to resolve the local sentiment and adhere to our analysis.\n\nLocally higher -> Lower",
+        "created_at": "Sun Sep 06 12:14:45 +0000 2026",
+        "likes": 172,
+        "retweets": 3,
+        "views": 27785,
+        "replies": 13,
+        "url": "https://x.com/astronomer_zero/status/2096572813733961744",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRiFKD8asAAL1_W.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964758+00:00"
+      },
+      {
+        "id": "2096396680845550069",
+        "author": "astronomer_zero",
+        "text": "Sentiment indeed confirms slowly that we will see some lateral, ranging environment next most likely, before further downside.",
+        "created_at": "Sun Sep 06 00:34:52 +0000 2026",
+        "likes": 157,
+        "retweets": 5,
+        "views": 24840,
+        "replies": 9,
+        "url": "https://x.com/astronomer_zero/status/2096396680845550069",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964762+00:00"
+      },
+      {
+        "id": "2096390624975147172",
+        "author": "astronomer_zero",
+        "text": "$btc \n\nMy red September idea is going around a fair bit now with many larger influencers calling a pullback.\n\nNot saying red Sept won't work but September is still long.\n\nBe sure to TP some if you haven't already while our shorts are up until that local sentiment fades again.",
+        "created_at": "Sun Sep 06 00:10:48 +0000 2026",
+        "likes": 196,
+        "retweets": 7,
+        "views": 34249,
+        "replies": 24,
+        "url": "https://x.com/astronomer_zero/status/2096390624975147172",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964766+00:00"
+      },
+      {
+        "id": "2096260646153449730",
+        "author": "astronomer_zero",
+        "text": "Trading fee community refund, month 24 & 25 (July & August 2026) done, 13513.49 USDT just sent \u2705\n\nSo hereby the fees of all the ref traders generated on month 24 & 25 are now also refunded.\n\nPart of our informal refund program we started over 2 years ago now, where I give you back the fees you generate out of my own pocket.\n\nIn our community, we find value in offering:\n\nEducational content \u2194\ufe0fCalls\u2194\ufe0fExecution.\n\nAll three are necessary to provide proper value because any missing links distort the band of a trustworthy trader.\n\nThe last part of the three is the most important and seemingly lacking the most on the platform.\n\nThat's why I value the small gesture of giving back fees highly since it is a reasonable part of execution never talked about.\n\nIt's one of those missing links, upon high request by you all more than 2 years ago, a deep ritual today.\n\nSome more principles of our monthly ritual:\n\n\u27a1\ufe0fLarge size is not favoured, all sizes are welcome (see list below). Anyone willing deserves a fair chance to get a place.\n\u27a1\ufe0fExchanges presented are my own main exchanges, as part of the message showcasing where I trade.\n\u27a1\ufe0fSupport is mutual. More refs help improve my impact on input for exchange improvements.\n\nAmounts sent out below. Enjoy.\n\nI also apologize for not sending it out last month, had some bot issues, amounts are recompensated and include both months.\n\nExchange | UID | Amount refunded\n\nBybit \u2502 XXXXXX339 \u2502 4572.32\nBloFin \u2502 XXXXXXXX982 \u2502 599.50\nBloFin \u2502 XXXXXXXX825 \u2502 55.86\nBloFin \u2502 XXXXXXXX069 \u2502 4324.23\nBloFin \u2502 XXXXXXXX801 \u2502 99.50\nBloFin \u2502 XXXXXXXX922 \u2502 1.71\nBloFin \u2502 XXXXXXXX792 \u2502 3.64\nBloFin \u2502 XXXXXXXX013 \u2502 0.38\nBloFin \u2502 XXXXXXXX885 \u2502 6.25\nBloFin \u2502 XXXXXXXX748 \u2502 8.45\nBloFin \u2502 XXXXXXXX406 \u2502 3.85\nBloFin \u2502 XXXXXXXX345 \u2502 314.16\nBloFin \u2502 XXXXXXXX976 \u2502 0.40\nBloFin \u2502 XXXXXXXX355 \u2502 1.70\nBloFin \u2502 XXXXXXXX702 \u2502 1.27\nBloFin \u2502 XXXXXXXX747 \u2502 298.78\nBloFin \u2502 XXXXXXXX180 \u2502 3.42\nBloFin \u2502 XXXXXXXX868 \u2502 2.45\nBloFin \u2502 XXXXXXXX388 \u2502 7.66\nBloFin \u2502 XXXXXXXX898 \u2502 18.07\nBloFin \u2502 XXXXXXXX691 \u2502 93.98\nBybit \u2502 XXXXXX749 \u2502 0.50\nBybit \u2502 XXXXXX902 \u2502 227.06\nBloFin \u2502 XXXXXXXX858 \u2502 23.19\nBybit \u2502 XXXXXX933 \u2502 232.54\nBybit \u2502 XXXXXX735 \u2502 52.28\nBloFin \u2502 XXXXXXXX121 \u2502 219.61\nBybit \u2502 XXXXXX264 \u2502 96.12\nBybit \u2502 XXXXXX099 \u2502 1.07\nBybit \u2502 XXXXXX443 \u2502 1.56\nBloFin \u2502 XXXXXXXX582 \u2502 14.12\nBloFin \u2502 XXXXXXXX037 \u2502 2.31\nBybit \u2502 XXXXXX241 \u2502 8.42\nBybit \u2502 XXXXXX848 \u2502 1.99\nBybit \u2502 XXXXXX943 \u2502 222.87\nBybit \u2502 XXXXXX915 \u2502 0.23\nBybit \u2502 XXXXXX974 \u2502 17.48\nBybit \u2502 XXXXXX819 \u2502 2.26\nBloFin \u2502 XXXXXXX937 \u2502 105.08\nBybit \u2502 XXXXXX830 \u2502 141.72\nBybit \u2502 XXXXXX076 \u2502 67.85\nBybit \u2502 XXXXXX797 \u2502 0.81\nBybit \u2502 XXXXXX839 \u2502 2.84\nBloFin \u2502 XXXXXXXX835 \u2502 9.96\nBloFin \u2502 XXXXXXXX826 \u2502 27.50\nBybit \u2502 XXXXXX439 \u2502 2.30\nBybit \u2502 XXXXXX091 \u2502 9.00\nBloFin \u2502 XXXXXXXX634 \u2502 0.26\nBloFin \u2502 XXXXXXXX017 \u2502 2.38\nBybit \u2502 XXXXXX342 \u2502 0.48\nBloFin \u2502 XXXXXXXX691 \u2502 84.70\nBloFin \u2502 XXXXXXXX371 \u2502 0.52\nBloFin \u2502 XXXXXXXX446 \u2502 0.35\nBloFin \u2502 XXXXXXXX158 \u2502 0.60\nBloFin \u2502 XXXXXXXX588 \u2502 9.12\nBloFin \u2502 XXXXXXXX808 \u2502 1.92\nBloFin \u2502 XXXXXXXX291 \u2502 0.61\nBloFin \u2502 XXXXXXXX833 \u2502 5.68\nBloFin \u2502 XXXXXXXX943 \u2502 86.59\nBybit \u2502 XXXXXX741 \u2502 353.94\nBloFin \u2502 XXXXXXXX051 \u2502 23.42\nBloFin \u2502 XXXXXXXX557 \u2502 0.11\nBloFin \u2502 XXXXXXXX478 \u2502 0.10\nBloFin \u2502 XXXXXXXX688 \u2502 9.33\nBloFin \u2502 XXXXXXXX731 \u2502 5.45\nBybit \u2502 XXXXXX002 \u2502 168.72\nBybit \u2502 XXXXXX937 \u2502 26.48\nBybit \u2502 XXXXXX893 \u2502 616.10\nBybit \u2502 XXXXXX230 \u2502 165.69\nBloFin \u2502 XXXXXXX727 \u2502 5.47\nBloFin \u2502 XXXXXXX304 \u2502 14.11\nBloFin \u2502 XXXXXXX418 \u2502 23.11\n\nTotal: 13513.49 USDT USDT\n\nProof of transactions done by ARB (Astro Refund Bot) below, verifiable on the Solana blockchain. \u2705\n\n\ud83d\udcccIf your UID is in the post and you haven't received your refund yet let me know in a twitter DM so that I can correct it.\n\n\ud83d\udcccIf you are also interested in receiving refunds, my applications are open for a brief period, just send me a request per dm on X with a kind reason of your trading goals. And for the ones sending in requests, your usernames in these posts are kept completely anonymous.\n\nThat's all from my end.\n\nNext batch will be after September closes.\n\nSee you then.",
+        "created_at": "Sat Sep 05 15:34:19 +0000 2026",
+        "likes": 120,
+        "retweets": 0,
+        "views": 23682,
+        "replies": 18,
+        "url": "https://x.com/astronomer_zero/status/2096260646153449730",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRdo9zVaQAApN2l.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964770+00:00"
+      },
+      {
+        "id": "2096241061186437388",
+        "author": "astronomer_zero",
+        "text": "$BTC September shorts\n\nNotes on execution and when I call it \"our third win in a row\"\n\nNot yet, still want lower after some lateral movement first.\n\nWe're indeed still on 2 wins in a row with current streak, not counting this \"the third one an \"official win\" yet, for that we need one more TP.\n\nJust a small housekeeping note for psychology sake.\n\n20% locked in at 1.46RR\n25% locked in at 2.02 RR\n\n0.2*1.46+2.02*0.25 = 0.797 RR\n\n-0.55 hypothetical remainder stop out\n\n= 0.247 RR or ~0.2 RR after fees.\n\nSo yes, a great start, risk off the trade and then some and in a great position too, but still some excursion to go to make it a good trade.\n\nAnd our plan aligns with that. September is still green, we still want it to be red and more red.\n\nWhat I drew out also hasn't played out fully yet.\n\nDo I think we get lower after the weekend? No, expecting continued lateral movement first, hence why I closed 45%.\n\nThis trade is a clear example of our plan aligning well with our execution.\n\nThat's meant to be the ultimate goal.\n\n1\u20e3 Plan, no execution (missed, or you are a chartist)\n2\u20e3 Plan, execution misaligned (TP too early, too late, front run, etc)\n3\u20e3Plan, execution well aligned\n4\u20e3Perfect execution\n\nRegarding 3\u20e3 or 4\u20e3, question this: what if your limit order was exactly 57717.55 on coin base spot.\n\nIf you ordered 100 BTC, not all may have been filled.\n\nSo we aim for 3\u20e3, not 4\u20e3. Perfection looks better on social media than your own books.",
+        "created_at": "Sat Sep 05 14:16:29 +0000 2026",
+        "likes": 175,
+        "retweets": 12,
+        "views": 53879,
+        "replies": 12,
+        "url": "https://x.com/astronomer_zero/status/2096241061186437388",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRdVwseboAAne0a.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964774+00:00"
+      },
+      {
+        "id": "2096196881928122450",
+        "author": "astronomer_zero",
+        "text": "$BTC \n\nThe one chart that matters\n\nQuick update on \"every timeframe except macro\" confluences, and how all of our most recent trades are simply defined by the local volume profile and the upper POI.\n\nThe red POI isn't just a POI, it's a conglomerate of confluences mentioned time and time again by now.\n\nIt explains my high conviction in both the September (false) pump we just received, and imo what will be the full retrace.\n\nBacked up by trade ideas.\n\nThis chart is the forefront of recent trades, simple on the surface, deeply researched in the background, but for the community, trades that paid us well so far heading into September.\n\nNow it's all about seeing the rest of September happen, result into downside and ending up in a red closure as the cherry on the cake, before I believe we see further upside.\n\nOne step at a time though, with the furthest steps being the least important for now, for that we rather zoom out and hold on to the macro picture.\n\nBut the immediate steps ahead are very clear, with a short entry shared on top of it.\n\nEnjoy and have a great weekend.",
+        "created_at": "Sat Sep 05 11:20:56 +0000 2026",
+        "likes": 203,
+        "retweets": 9,
+        "views": 56497,
+        "replies": 21,
+        "url": "https://x.com/astronomer_zero/status/2096196881928122450",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRcu2UzbIAAdEVL.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964778+00:00"
+      },
+      {
+        "id": "2096048400101998929",
+        "author": "astronomer_zero",
+        "text": "14 days of the POI rejecting price :)\n\nWe keep on counting, and keep on taking shorts.\n\nImo it's all you will really need the entire month of September. https://t.co/f2clNrT0TH",
+        "created_at": "Sat Sep 05 01:30:55 +0000 2026",
+        "likes": 206,
+        "retweets": 11,
+        "views": 30284,
+        "replies": 11,
+        "url": "https://x.com/astronomer_zero/status/2096048400101998929",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRaok6CawAApR9s.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964781+00:00"
+      },
+      {
+        "id": "2095895853282247064",
+        "author": "astronomer_zero",
+        "text": "The amount of confusion when to some when I TP some initial TP's after a 2000 points move when aiming for a move beyond that ultimately is hilarious.\n\nYour final TP's should generally align with where you expect the move to finish, not your first TP's.\n\nThat's how you prevent losing winning trades.\n\nMore winning = more profits = better sharpe ratio = less variance = lower risk of account ruin = less punishing when risking more, etc etc.",
+        "created_at": "Fri Sep 04 15:24:45 +0000 2026",
+        "likes": 184,
+        "retweets": 1,
+        "views": 21799,
+        "replies": 21,
+        "url": "https://x.com/astronomer_zero/status/2095895853282247064",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964788+00:00"
+      },
+      {
+        "id": "2095874131288093115",
+        "author": "astronomer_zero",
+        "text": "$BTC shorts\n\nUp about 2000 points \ud83d\udcb0closed just under half of the position so far by now.\n\nClosed exactly 45% of the position by now to be precise.\n\nThe rest I will leave and TP slower, but just want to lock in the W in case we are still part of the first week turbulence.\n\nAlways pay yourself especially on an initial fast move.",
+        "created_at": "Fri Sep 04 13:58:27 +0000 2026",
+        "likes": 203,
+        "retweets": 7,
+        "views": 93283,
+        "replies": 27,
+        "url": "https://x.com/astronomer_zero/status/2095874131288093115",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRYKPYHb0AAdNyn.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964792+00:00"
+      },
+      {
+        "id": "2095858361430610188",
+        "author": "astronomer_zero",
+        "text": "Always.",
+        "created_at": "Fri Sep 04 12:55:47 +0000 2026",
+        "likes": 240,
+        "retweets": 4,
+        "views": 22174,
+        "replies": 18,
+        "url": "https://x.com/astronomer_zero/status/2095858361430610188",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964796+00:00"
+      },
+      {
+        "id": "2095856069188923445",
+        "author": "astronomer_zero",
+        "text": "$BTC \n\nEntertained by the fake pump so far?\n\nOut of all pumps, false pumps are by far my favourite. https://t.co/mTZN5lf4fE",
+        "created_at": "Fri Sep 04 12:46:40 +0000 2026",
+        "likes": 266,
+        "retweets": 7,
+        "views": 30859,
+        "replies": 35,
+        "url": "https://x.com/astronomer_zero/status/2095856069188923445",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRX58MEa8AAvI9X.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964799+00:00"
+      },
+      {
+        "id": "2095852934156489144",
+        "author": "astronomer_zero",
+        "text": "bitcoin:native \n\nAnd... the drop \ud83d\ude09 TP 1 here.\n\nYup, 11 hours ago we shorted in live time, and as we speak, the market started sliding.\n\nWe listed the confluences, we formed the plan, and most importantly, we took the trade entry.\n\nAnd the rest was history.\n\nWelcome to my world",
+        "created_at": "Fri Sep 04 12:34:13 +0000 2026",
+        "likes": 278,
+        "retweets": 8,
+        "views": 23153,
+        "replies": 39,
+        "url": "https://x.com/astronomer_zero/status/2095852934156489144",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRX3CRlaQAA4rML.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964805+00:00"
+      },
+      {
+        "id": "2095814155546829122",
+        "author": "astronomer_zero",
+        "text": "bitcoin:native - 2025: Green September, 2026 will be Red September\n\nSo while September is nice and green right now, I remind you that it likely won't stay this way.\n\nThe monthly fake pump upon the open is here.\n\nAnd so while it was nice to scalp this pump upwards with a long, I am now not interested in longs that much anymore up here north of 81k, mostly interested in shorts.\n\nAlways backing up my calls with trades, because we are here to make money at the end of the day.\n\nCalls only are useless.\n\nAnd mostly doesn't mean I won't scalp, range trade, or buy capitulation wick longs (if any are given) on the way down where interesting, but the main trades will be shorts this month.\n\nThat's going to be the way I live September most likely this year (unless I am wrong).\n\nAnd I will guide you through it step by step with live calls and entries as always.\n\nThe Astronomer standard.",
+        "created_at": "Fri Sep 04 10:00:07 +0000 2026",
+        "likes": 290,
+        "retweets": 10,
+        "views": 25236,
+        "replies": 29,
+        "url": "https://x.com/astronomer_zero/status/2095814155546829122",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRXToElbUAAq0_6.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964808+00:00"
+      },
+      {
+        "id": "2095700142548824293",
+        "author": "astronomer_zero",
+        "text": "Taking care of my community",
+        "created_at": "Fri Sep 04 02:27:04 +0000 2026",
+        "likes": 291,
+        "retweets": 4,
+        "views": 37359,
+        "replies": 24,
+        "url": "https://x.com/astronomer_zero/status/2095700142548824293",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964812+00:00"
+      },
+      {
+        "id": "2095677437665558675",
+        "author": "astronomer_zero",
+        "text": "bitcoin:native \n\nAnd... I'm short again as promised.\n\nRed September is coming, I just flipped the long into a short again, can we get 2 wins in a row?\n\nWe shall see. But the idea is loud, the idea is clear.\n\nUnless you have been living under a rock, you would know my idea of the fake September pump coming, but it in fact also being a fake pump.\n\nThat's two calls in one. And most importantly: it's also two trades in one, where we longed the fake pump up, but now we .... (keep reading)\n\nFirst, I share the confluences as to why I flip here again below (they are already spread on my timeline, but you all like reminders):\n\n\u27a1\ufe0fOHLC\n\u27a1\ufe0fMarch 2025 defence\n\u27a1\ufe0fmmd with $eth \n\u27a1\ufe0fMy Red POI\n\u27a1\ufe0fBullish sentiment (macro bulls as loud as they have been in a long time)\n\u27a1\ufe0fRed September\n\nThere are more confluences, this is not enough for me to risk a sum of money, but it is enough to make the idea clear.\n\nAnd most importantly, no trading plan carries any value without actually taking a trade.\n\nSo that's what this post is about: the trade entry.\n\nI just started shorting again using the long profits we secured on this fake pump(lev 1.6x), I will see you on the other side.",
+        "created_at": "Fri Sep 04 00:56:51 +0000 2026",
+        "likes": 337,
+        "retweets": 19,
+        "views": 98802,
+        "replies": 37,
+        "url": "https://x.com/astronomer_zero/status/2095677437665558675",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRVVlQ_aMAAtH9C.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964816+00:00"
+      },
+      {
+        "id": "2095673322537451751",
+        "author": "astronomer_zero",
+        "text": "bitcoin:native \n\nAnd now, the monthly fake pump is nearly finished \u231b\ufe0f \n\nAlright! Beautiful move to 81k, now almost fully completing the monthly fake pump we talked about.\n\nThe pump we talked about loudly and clearly for 5 days, and the pump we scored a nice scalp on.\n\nI'm still letting it finish here as we roll into Friday. But after the long we shared here two days ago, I'm getting interested in another short again next, to ride the move back down.\n\nNot in it yet, but it's what I'm aiming at soon.\n\nIt's been a pleasure, not all pumps are real, and on my thesis of September closing red plus all other confluences shared, I think this won't be one of those \"real breakout\" pumps.\n\nWe shall see, on the lookout for a short next, slowly but surely.\n\nStand by for announcement.",
+        "created_at": "Fri Sep 04 00:40:30 +0000 2026",
+        "likes": 338,
+        "retweets": 14,
+        "views": 103291,
+        "replies": 38,
+        "url": "https://x.com/astronomer_zero/status/2095673322537451751",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRVTTFPagAAHQP_.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964820+00:00"
+      },
+      {
+        "id": "2095521488728211519",
+        "author": "astronomer_zero",
+        "text": "$BTC \n\nMonthly fake pump is now here too \u2705\n\nDo you see the strength of it?\n\nMonthly fake pumps push harder and more relentlessly than weekly fake pumps.\n\nAnd they make a lot more people bullish.\n\nRode this pump up with a long as we speak, but remember that by the end of it, we likely get red September anyway imo.",
+        "created_at": "Thu Sep 03 14:37:10 +0000 2026",
+        "likes": 390,
+        "retweets": 22,
+        "views": 115499,
+        "replies": 62,
+        "url": "https://x.com/astronomer_zero/status/2095521488728211519",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRTJr0SaAAAgKpC.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964824+00:00"
+      },
+      {
+        "id": "2095518833327182059",
+        "author": "astronomer_zero",
+        "text": "bitcoin:native longs \n\n79.5k reached, that's VAH, scalp long fully closed \u2705\n\nAlright, the plan was loud, the plan was clear. We took a long at 77k, and fast forward, price is a lot higher.\n\nLongs get paid on the way up, and price is higher, so we are getting paid.\n\nOn one condition: by actually realizing the trade. Done so, longs fully closed.\n\nEnjoy if you took it along. I thank you, and I wish you a good night.",
+        "created_at": "Thu Sep 03 14:26:37 +0000 2026",
+        "likes": 198,
+        "retweets": 8,
+        "views": 27442,
+        "replies": 26,
+        "url": "https://x.com/astronomer_zero/status/2095518833327182059",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRTHOg6awAAAbJT.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:15.964829+00:00"
+      },
+      {
+        "id": "2095490284339835201",
+        "author": "astronomer_zero",
+        "text": "All you had to do, was listen",
+        "created_at": "Thu Sep 03 12:33:10 +0000 2026",
+        "likes": 169,
+        "retweets": 3,
+        "views": 20768,
+        "replies": 17,
+        "url": "https://x.com/astronomer_zero/status/2095490284339835201",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:15.964832+00:00"
+      }
+    ],
+    "count": 21,
+    "fetched_at": "2026-09-06T22:19:15.964836+00:00"
+  },
+  "Timeless_Crypto": {
+    "info": {
+      "handle": "Timeless_Crypto",
+      "name": "Timeless",
+      "followers": 71693,
+      "style": "macro + on-chain sentiment",
+      "timeframes": [
+        "daily",
+        "weekly"
+      ],
+      "focus": [
+        "BTC"
+      ],
+      "weight": 1.0
+    },
+    "tweets": [
+      {
+        "id": "2084845273621131411",
+        "author": "Timeless_Crypto",
+        "text": "I obviously could be super wrong here but I am still pretty damn confident despite this apathetic pa that we will get a violent break soon and a meaningful uptick in volatility. \n\nPersonally think there is a 8-10 chance that red box gets sodomised and raided below \n\nI like these odds personally so im putting it out there for you to berate \n\n#BTC",
+        "created_at": "Wed Aug 05 03:33:42 +0000 2026",
+        "likes": 176,
+        "retweets": 6,
+        "views": 27847,
+        "replies": 20,
+        "url": "https://x.com/Timeless_Crypto/status/2084845273621131411",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HO7bbezWQAA-yvl.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230139+00:00"
+      },
+      {
+        "id": "2095160447028613590",
+        "author": "Timeless_Crypto",
+        "text": "someone has to say it\n\nthis is a bear market rally \n\nno doubt about it \n\nThanks and bookmark this\n\nLove u all\n\nBye\n\n#BTC",
+        "created_at": "Wed Sep 02 14:42:31 +0000 2026",
+        "likes": 139,
+        "retweets": 1,
+        "views": 12524,
+        "replies": 20,
+        "url": "https://x.com/Timeless_Crypto/status/2095160447028613590",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:17.230166+00:00"
+      },
+      {
+        "id": "2095137617197011216",
+        "author": "Timeless_Crypto",
+        "text": "Back within previous monthly value \n\n#BTC https://t.co/BlRWqtOmAO",
+        "created_at": "Wed Sep 02 13:11:48 +0000 2026",
+        "likes": 42,
+        "retweets": 1,
+        "views": 7133,
+        "replies": 4,
+        "url": "https://x.com/Timeless_Crypto/status/2095137617197011216",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRNsdGeWwAcWg5U.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230194+00:00"
+      },
+      {
+        "id": "2095085270706069846",
+        "author": "Timeless_Crypto",
+        "text": "Way too many bart charts from rando accounts on my feed\n\nBut at the same token the most influential cohort of CT are balls to the wall bullish\n\nWhich means a range with a deeper pullback likely on cards here\n\nI think first touch longers getting in aggressively here with invalidation at 75 k are forsure going to be tested \n\nI think deeper test is coming, just not a full retrace\n\n#BTC",
+        "created_at": "Wed Sep 02 09:43:47 +0000 2026",
+        "likes": 48,
+        "retweets": 0,
+        "views": 7209,
+        "replies": 6,
+        "url": "https://x.com/Timeless_Crypto/status/2095085270706069846",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:17.230204+00:00"
+      },
+      {
+        "id": "2094767244018438538",
+        "author": "Timeless_Crypto",
+        "text": "78750 will be important region today \n\nIt is where majority of positions built in last day occured \n\nNow acting as dynamic resistance\n\n#BTC https://t.co/eVy7RJxC8D",
+        "created_at": "Tue Sep 01 12:40:04 +0000 2026",
+        "likes": 21,
+        "retweets": 0,
+        "views": 4423,
+        "replies": 2,
+        "url": "https://x.com/Timeless_Crypto/status/2094767244018438538",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRIbiJWWMAAUQNL.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230214+00:00"
+      },
+      {
+        "id": "2094766698574266569",
+        "author": "Timeless_Crypto",
+        "text": "I get everyone has different methods when it comes to demarking zones and ranges but per system we are simply trading within huge qaurter bracket \n\nIn theory this can go to 85 and still be within confines of the bracket. Only acceptance into last year bracket in the 88s would suggest a new trend in motion imo \n\n#BTC",
+        "created_at": "Tue Sep 01 12:37:54 +0000 2026",
+        "likes": 40,
+        "retweets": 0,
+        "views": 7647,
+        "replies": 4,
+        "url": "https://x.com/Timeless_Crypto/status/2094766698574266569",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRIZ0GiX0AA-eCV.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230235+00:00"
+      },
+      {
+        "id": "2094725128940597348",
+        "author": "Timeless_Crypto",
+        "text": "Also looks like a bunch of trapped shorts here on nance \n\nTime to send it higher https://t.co/9Lm0k37FAd",
+        "created_at": "Tue Sep 01 09:52:43 +0000 2026",
+        "likes": 30,
+        "retweets": 0,
+        "views": 5643,
+        "replies": 1,
+        "url": "https://x.com/Timeless_Crypto/status/2094725128940597348",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRH1QY7X0AABcoa.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230249+00:00"
+      },
+      {
+        "id": "2094722066184282199",
+        "author": "Timeless_Crypto",
+        "text": "It's time to close your eyes and max long oil again\n\ninflationmaxiseason https://t.co/ddRA8JGNTq",
+        "created_at": "Tue Sep 01 09:40:33 +0000 2026",
+        "likes": 25,
+        "retweets": 0,
+        "views": 5806,
+        "replies": 1,
+        "url": "https://x.com/Timeless_Crypto/status/2094722066184282199",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRHyMnaWgAATjUZ.jpg",
+          "https://pbs.twimg.com/media/HRHyjEdW0AAqlVg.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230259+00:00"
+      },
+      {
+        "id": "2094492850138275934",
+        "author": "Timeless_Crypto",
+        "text": "Acting like the future has already been ordained in favour, produces outcomes that confrim it \n\nSend it https://t.co/xY9YHRP1F2",
+        "created_at": "Mon Aug 31 18:29:43 +0000 2026",
+        "likes": 36,
+        "retweets": 0,
+        "views": 6560,
+        "replies": 3,
+        "url": "https://x.com/Timeless_Crypto/status/2094492850138275934",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:17.230280+00:00"
+      },
+      {
+        "id": "2094433797483680081",
+        "author": "Timeless_Crypto",
+        "text": "They can rinse this candle 5-10% intra day and it will still keep macro momentum chasing algos in position\n\nInteresting Monthly close is upon us\n\n#BTC",
+        "created_at": "Mon Aug 31 14:35:04 +0000 2026",
+        "likes": 27,
+        "retweets": 0,
+        "views": 4881,
+        "replies": 2,
+        "url": "https://x.com/Timeless_Crypto/status/2094433797483680081",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:17.230296+00:00"
+      },
+      {
+        "id": "2094316162691608807",
+        "author": "Timeless_Crypto",
+        "text": "liquidation cluster on hyperliquid \n\nNot approximates, live dynamic liquidation regions of open positions \n\n70 k and 85 k are standout zones of interest within proximity \n\nlargest node is north of 90 k https://t.co/MRQCBLfBtZ",
+        "created_at": "Mon Aug 31 06:47:38 +0000 2026",
+        "likes": 33,
+        "retweets": 2,
+        "views": 6543,
+        "replies": 1,
+        "url": "https://x.com/Timeless_Crypto/status/2094316162691608807",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRB_KBCWUAATvTg.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230317+00:00"
+      },
+      {
+        "id": "2094279273448153148",
+        "author": "Timeless_Crypto",
+        "text": "Really interesting place here as previous qaurter VAH is essentially lining up with the developing monthly vah and last week's VAL \n\nAll within similar region of overlap which makes it a clean region for bulls to define risk and bears to understand if they have an opening window to attack \n\nAcceptance into previous brackets imply low 70s is on card. Bulls want to take out last week's vwap to attack the rolling 365 and higher (mid 80s +)\n\nEnjoy, should be a cracker of a week to trade \n\n#BTC",
+        "created_at": "Mon Aug 31 04:21:03 +0000 2026",
+        "likes": 29,
+        "retweets": 1,
+        "views": 5023,
+        "replies": 2,
+        "url": "https://x.com/Timeless_Crypto/status/2094279273448153148",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRBfkqxWAAAYVp2.jpg",
+          "https://pbs.twimg.com/media/HRBfl6LWAAAAm9K.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230328+00:00"
+      },
+      {
+        "id": "2094273980421083404",
+        "author": "Timeless_Crypto",
+        "text": "Perhaps we see windowdressing into monthly close today\n\nShould be an interesting session to partake in nonetheless\n\nLiquidation clusters highlighted in chart below \n\nLining up with spot books and key contextual zones (vwap structures etc.) \n\n#BTC https://t.co/5Vt9gJHFEo",
+        "created_at": "Mon Aug 31 04:00:01 +0000 2026",
+        "likes": 21,
+        "retweets": 1,
+        "views": 5718,
+        "replies": 1,
+        "url": "https://x.com/Timeless_Crypto/status/2094273980421083404",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRBZHb1XsAA8fej.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230337+00:00"
+      },
+      {
+        "id": "2094092759166861812",
+        "author": "Timeless_Crypto",
+        "text": "Ran a deep structural study on Bitcoin across multiple market cycles from 2017 through the post ETF era. Anything beyond that is irrelevant and i'd argue you could even do this from 2019 onwards but I wanted to glean any insight during stark bull and bear regimes. \n\nMost standard setups rely heavily on RSI, which frequently lags or triggers false positives during structural chop. Don't get me wrong, I think it is a great tool and no shade thrown whatsoever. I just decided to  stress-test my custom framework built around liquidity weighted volume flows, rolling trend regimes, and structural exhaustion metrics.\n\nTwo major takeaways stood out across the data:\ni) The 2022 Bear Market Desert: Notice how cleanly the model starves out false upthrusts while price was trapped underneath the 365-day rolling VWAP. It completely bypassed the noise of minor relief rallies, proving that exhaustion signatures mean something entirely different when macro momentum is inverted.\n\nii) The Post-2024 ETF Regime Shift: As liquidity plumbing changed with institutional inflows, the distribution flags started printing with heavy predictive weight right as structural exhaustion points converged. \n\nWhen you filter out the noise and anchor your execution to objective regime awareness, the charts look entirely different. Data over emotion.\n\n#BTC",
+        "created_at": "Sun Aug 30 15:59:54 +0000 2026",
+        "likes": 31,
+        "retweets": 2,
+        "views": 5620,
+        "replies": 5,
+        "url": "https://x.com/Timeless_Crypto/status/2094092759166861812",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQ-1luPaUAAYHfC.jpg",
+          "https://pbs.twimg.com/media/HQ-1r9tasAAZmDk.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230344+00:00"
+      },
+      {
+        "id": "2094097183574458525",
+        "author": "Timeless_Crypto",
+        "text": "Obvious points i neglected to share: timeframe is daily, the trend heuristic i use is rolling 365 but can use anything you fancy to define bear/bull regime \n\nOssilator is my own and i obviously have a defined thresholds like the RSI above 80 \n\nThanks",
+        "created_at": "Sun Aug 30 16:17:29 +0000 2026",
+        "likes": 4,
+        "retweets": 0,
+        "views": 1425,
+        "replies": 0,
+        "url": "https://x.com/Timeless_Crypto/status/2094097183574458525",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:17.230350+00:00"
+      },
+      {
+        "id": "2093654571440845033",
+        "author": "Timeless_Crypto",
+        "text": "I see a lot of people refrencing our prior cycle bottom as it is the closest point of bias we can anchor to and it might make sense from a microstructure perspective to compare those markets (far more relevent than anything before that imo)\n\nWe bottomed around previous ATH from 2017 then engulfed the down candle that marked the FTX capitulation bottom \n\nBut if we going to compare apples to apples, can see structurally nothing like what we have now. Also worth noting we have never consolidated and hugged a prior ATH like we did in 2024 for 200 plus days. Think of the psychology of the ETF cohort/others spent accumulating in and around that zone. Yes you can say these participants have a multiyear horizon or whatever, but reality is these buyers spent months underwater. Many are not entertaining further upside, if anything they are relieved to see breakeven prices at present. 80-83 k is very much staunch supply. \n\nThat is the thing throwing me off a bit here. I will not discount a change in regime is in the making (momentum clearly has flipped locally). I just need a bit more information and one thing that will keep me sane through all this is my trend heuristic here. No changes on the weekly so will continue to monitor the flip if and when it comes. 82-83 k on a weekly basis will turn this boat around. \n\nTill then, im just going to keep taking set ups as I see fit. It really isn't that deep. There will be flushes and there will be upthrusts. That is all. \n\n#BTC",
+        "created_at": "Sat Aug 29 10:58:42 +0000 2026",
+        "likes": 34,
+        "retweets": 1,
+        "views": 4274,
+        "replies": 2,
+        "url": "https://x.com/Timeless_Crypto/status/2093654571440845033",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQ4kU0UbMAACnbw.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:17.230356+00:00"
+      }
+    ],
+    "count": 16,
+    "fetched_at": "2026-09-06T22:19:17.230363+00:00"
+  },
+  "lBattleRhino": {
+    "info": {
+      "handle": "lBattleRhino",
+      "name": "BattleRhino",
+      "followers": 65383,
+      "style": "alt relative strength + BTC line",
+      "timeframes": [
+        "4h",
+        "daily"
+      ],
+      "focus": [
+        "BTC",
+        "alts"
+      ],
+      "weight": 0.9
+    },
+    "tweets": [
+      {
+        "id": "1989161022184370687",
+        "author": "lBattleRhino",
+        "text": "Btc line update https://t.co/LWsp3PvT3q",
+        "created_at": "Fri Nov 14 02:38:39 +0000 2025",
+        "likes": 320,
+        "retweets": 13,
+        "views": 183829,
+        "replies": 38,
+        "url": "https://x.com/lBattleRhino/status/1989161022184370687",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/G5rraHtboAAcGE9.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:18.692801+00:00"
+      },
+      {
+        "id": "2092083375502917725",
+        "author": "lBattleRhino",
+        "text": "Btc line update https://t.co/xkhnVnF3kd",
+        "created_at": "Tue Aug 25 02:55:20 +0000 2026",
+        "likes": 68,
+        "retweets": 1,
+        "views": 7413,
+        "replies": 9,
+        "url": "https://x.com/lBattleRhino/status/2092083375502917725",
+        "is_reply": true,
+        "media": [
+          "https://pbs.twimg.com/media/HQiSvlCbAAA55Rs.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:18.692818+00:00"
+      },
+      {
+        "id": "2093449819918410034",
+        "author": "lBattleRhino",
+        "text": "Line got hands",
+        "created_at": "Fri Aug 28 21:25:06 +0000 2026",
+        "likes": 61,
+        "retweets": 0,
+        "views": 4312,
+        "replies": 2,
+        "url": "https://x.com/lBattleRhino/status/2093449819918410034",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692822+00:00"
+      },
+      {
+        "id": "2092428783253127602",
+        "author": "lBattleRhino",
+        "text": "For old times sake I am long fartcoin been long past couple days, showing good relative strength through btc dump don\u2019t wanna see it below this recent consol",
+        "created_at": "Wed Aug 26 01:47:52 +0000 2026",
+        "likes": 399,
+        "retweets": 9,
+        "views": 36937,
+        "replies": 25,
+        "url": "https://x.com/lBattleRhino/status/2092428783253127602",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692825+00:00"
+      },
+      {
+        "id": "2092755609531855190",
+        "author": "lBattleRhino",
+        "text": "Up 12% and sol looks set to outperform a bit now, should gas",
+        "created_at": "Wed Aug 26 23:26:33 +0000 2026",
+        "likes": 72,
+        "retweets": 1,
+        "views": 8044,
+        "replies": 3,
+        "url": "https://x.com/lBattleRhino/status/2092755609531855190",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692827+00:00"
+      },
+      {
+        "id": "2092755767560753244",
+        "author": "lBattleRhino",
+        "text": "Long this and cashcat as mentioned before, heading out for couple weeks prob can\u2019t update the sells this time around godspeed brethren will return with a pod ep surely",
+        "created_at": "Wed Aug 26 23:27:11 +0000 2026",
+        "likes": 133,
+        "retweets": 2,
+        "views": 8381,
+        "replies": 7,
+        "url": "https://x.com/lBattleRhino/status/2092755767560753244",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692830+00:00"
+      },
+      {
+        "id": "2092735323361185804",
+        "author": "lBattleRhino",
+        "text": "Performance improved since, good trades + better management of spot in trad since top blasted May then later fairly good sells\n\nHowever overall pathetic 2026, up bit more than the Nasdaq for the year lmfao truly insane statement to make, one I never thought I\u2019d say as true\n\nOn the bright side, I haven\u2019t felt this motivated to truly work since before I debated retiring early 2025 \n\nThe rage and will to excel is back",
+        "created_at": "Wed Aug 26 22:05:56 +0000 2026",
+        "likes": 238,
+        "retweets": 1,
+        "views": 32482,
+        "replies": 11,
+        "url": "https://x.com/lBattleRhino/status/2092735323361185804",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692833+00:00"
+      },
+      {
+        "id": "2092735883980283963",
+        "author": "lBattleRhino",
+        "text": "Journaling on here is useful as you take mental screenshots you can look back on. I have nearly 5 years of data on my trading and commentary/mental surrounding it documented now. It is quite fun/useful to look back on how change over time.",
+        "created_at": "Wed Aug 26 22:08:10 +0000 2026",
+        "likes": 106,
+        "retweets": 1,
+        "views": 8157,
+        "replies": 4,
+        "url": "https://x.com/lBattleRhino/status/2092735883980283963",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692835+00:00"
+      },
+      {
+        "id": "2092742082897285429",
+        "author": "lBattleRhino",
+        "text": "Most people on here are completely glossing over how bad a time they had the past year in crypto. Many got wiped. Having sold near the top I suppose it\u2019s natural id miss the bottom. I rarely sell the exact top or buy exact bottom. However, hitting the 2/8 and 7/8 areas is more than good enough. Cryptos main objective isn\u2019t majors anyways for most. It\u2019s about what the bullish environment can create and allow during higher degrees of speculation (pepe, trump, aster whatever) or rare solid projects ie hype. \n\nMost of my anger relates to missing trad opportunities this past year ie metals mega trend and lots of the memory trade. Quite unforgivable. \n\nThe reality of this game is that loss mitigation and longevity rule all. I do exceptionally and almost freakishly well at not losing much money ever. Making money is easy and there is always abundant opportunity every year. Even the swings on hype I hit add up to the bullish price move others experienced now. Not the point tho. I\u2019m trad however I have failed to risk the same way as the prior 2 cycles likely due to mental block regarding size. Need to overcome this mental block. Spot trad port failure this year is my story. I\u2019ve actually done pretty insane in crypto this year but the size isn\u2019t size comparatively. \n\nIt\u2019s useful to update on the reality of this job, successful but far from perfect. Nobody is, don\u2019t buy the dream from others. Develop your mental, it is the only real challenge in this game.",
+        "created_at": "Wed Aug 26 22:32:48 +0000 2026",
+        "likes": 147,
+        "retweets": 4,
+        "views": 6491,
+        "replies": 4,
+        "url": "https://x.com/lBattleRhino/status/2092742082897285429",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692838+00:00"
+      },
+      {
+        "id": "2092731504669655441",
+        "author": "lBattleRhino",
+        "text": "Reading ct the past year https://t.co/MnqPBpWml4",
+        "created_at": "Wed Aug 26 21:50:46 +0000 2026",
+        "likes": 153,
+        "retweets": 6,
+        "views": 17747,
+        "replies": 6,
+        "url": "https://x.com/lBattleRhino/status/2092731504669655441",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692841+00:00"
+      },
+      {
+        "id": "2091003528378765463",
+        "author": "lBattleRhino",
+        "text": "Majors up 30% alts up 50-100% in like 4 days is legitimately fucking awe inspiring",
+        "created_at": "Sat Aug 22 03:24:24 +0000 2026",
+        "likes": 742,
+        "retweets": 16,
+        "views": 39742,
+        "replies": 21,
+        "url": "https://x.com/lBattleRhino/status/2091003528378765463",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692844+00:00"
+      },
+      {
+        "id": "2090724649860800804",
+        "author": "lBattleRhino",
+        "text": "Revenge of the plumbers",
+        "created_at": "Fri Aug 21 08:56:14 +0000 2026",
+        "likes": 634,
+        "retweets": 42,
+        "views": 26907,
+        "replies": 25,
+        "url": "https://x.com/lBattleRhino/status/2090724649860800804",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692846+00:00"
+      },
+      {
+        "id": "2090722799711306225",
+        "author": "lBattleRhino",
+        "text": "Good to see guys like Donalt Sto Based Fejau call for and hit this move, always a fan of traders posting theses and calling their shots on here (in an actual honest way lmfao not just relentless bullposting nonsense) \n\nRemnants of a ct long past",
+        "created_at": "Fri Aug 21 08:48:53 +0000 2026",
+        "likes": 940,
+        "retweets": 11,
+        "views": 46013,
+        "replies": 20,
+        "url": "https://x.com/lBattleRhino/status/2090722799711306225",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692849+00:00"
+      },
+      {
+        "id": "2090711312863301798",
+        "author": "lBattleRhino",
+        "text": "RT @hilowfi: if u leverage long and ur coins go up u get MORE margin which u can use to leverage more so when ur coins go up again u get ev\u2026",
+        "created_at": "Fri Aug 21 08:03:15 +0000 2026",
+        "likes": 0,
+        "retweets": 7,
+        "views": 5264,
+        "replies": 0,
+        "url": "https://x.com/lBattleRhino/status/2090711312863301798",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692852+00:00"
+      },
+      {
+        "id": "2090232914403619091",
+        "author": "lBattleRhino",
+        "text": "Timeline vibes are actually good today fuck yeah it has been a while",
+        "created_at": "Thu Aug 20 00:22:16 +0000 2026",
+        "likes": 432,
+        "retweets": 5,
+        "views": 20484,
+        "replies": 17,
+        "url": "https://x.com/lBattleRhino/status/2090232914403619091",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692854+00:00"
+      },
+      {
+        "id": "2090210505545986421",
+        "author": "lBattleRhino",
+        "text": "He who chases two rabbits \n\nGets raped",
+        "created_at": "Wed Aug 19 22:53:13 +0000 2026",
+        "likes": 698,
+        "retweets": 28,
+        "views": 35780,
+        "replies": 30,
+        "url": "https://x.com/lBattleRhino/status/2090210505545986421",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692857+00:00"
+      },
+      {
+        "id": "2090183312296010113",
+        "author": "lBattleRhino",
+        "text": "Now THAT is an eth daily",
+        "created_at": "Wed Aug 19 21:05:10 +0000 2026",
+        "likes": 315,
+        "retweets": 3,
+        "views": 20191,
+        "replies": 8,
+        "url": "https://x.com/lBattleRhino/status/2090183312296010113",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692860+00:00"
+      },
+      {
+        "id": "2090184241380524426",
+        "author": "lBattleRhino",
+        "text": "Eth is up as much as hype on a day the president said hyperliquid",
+        "created_at": "Wed Aug 19 21:08:51 +0000 2026",
+        "likes": 230,
+        "retweets": 5,
+        "views": 9140,
+        "replies": 6,
+        "url": "https://x.com/lBattleRhino/status/2090184241380524426",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692862+00:00"
+      },
+      {
+        "id": "2090174558204805452",
+        "author": "lBattleRhino",
+        "text": "You did not call the bottom you failed to sell, bullposted the whole way down for nearly a year, probably took many sponsors for your posts, rugged a coin or two, and then quote tweeted your most recent bullpost \n\nThis applies to basically 99% of people gloating on the feed",
+        "created_at": "Wed Aug 19 20:30:22 +0000 2026",
+        "likes": 546,
+        "retweets": 28,
+        "views": 25527,
+        "replies": 31,
+        "url": "https://x.com/lBattleRhino/status/2090174558204805452",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692865+00:00"
+      },
+      {
+        "id": "2090122104494834066",
+        "author": "lBattleRhino",
+        "text": "It may not feel like it but eth has actually had numerous 8-10% green dailies this year\n\nGiven this is off the back of short liquidations and news announcement, it will be very important to assess the price action in the days coming\n\nSustainable, or just short term shorts rape?",
+        "created_at": "Wed Aug 19 17:01:56 +0000 2026",
+        "likes": 293,
+        "retweets": 6,
+        "views": 35140,
+        "replies": 13,
+        "url": "https://x.com/lBattleRhino/status/2090122104494834066",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692869+00:00"
+      },
+      {
+        "id": "2090122928633602315",
+        "author": "lBattleRhino",
+        "text": "Yes yes countless underwater people rushing to claim clout and many who were short are skirting over that fact, this will never change here. \n\nUninteresting, I remain sidelined and observing",
+        "created_at": "Wed Aug 19 17:05:13 +0000 2026",
+        "likes": 69,
+        "retweets": 0,
+        "views": 7278,
+        "replies": 1,
+        "url": "https://x.com/lBattleRhino/status/2090122928633602315",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:18.692872+00:00"
+      }
+    ],
+    "count": 21,
+    "fetched_at": "2026-09-06T22:19:18.692875+00:00"
+  },
+  "Trader_XO": {
+    "info": {
+      "handle": "Trader_XO",
+      "name": "Trader XO",
+      "followers": 549220,
+      "style": "macro structure + weekly levels",
+      "timeframes": [
+        "weekly",
+        "monthly"
+      ],
+      "focus": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ],
+      "weight": 1.2
+    },
+    "tweets": [
+      {
+        "id": "1967512489966629057",
+        "author": "Trader_XO",
+        "text": "$BTC\n\nInflection points...\n\nGM https://t.co/NQe4XtHLQX",
+        "created_at": "Mon Sep 15 08:55:06 +0000 2025",
+        "likes": 582,
+        "retweets": 32,
+        "views": 218553,
+        "replies": 77,
+        "url": "https://x.com/Trader_XO/status/1967512489966629057",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/G04CLV9WYAESIMR.png",
+          "https://pbs.twimg.com/media/G04CLVnXIAAo5lf.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841293+00:00"
+      },
+      {
+        "id": "1967515644405907720",
+        "author": "Trader_XO",
+        "text": "Expectations for the week:   Early week longs tp-ing - hedging via shorts has been the usual pattern heading into fomc which could very well see's some short term risk off early in the week...  \n\nDo those hedges get unwound later in the week, that is what I'll be looking for to play longs again should they set up.  \n\nAlt OI (others) breiefly crossing the Bitcoin OI over the weekend, has been a notable inflection point for alts as well... and its where risking off or paying myself has turned out to be the play - sticking to the same playbook.\n\nGood luck this week.",
+        "created_at": "Mon Sep 15 09:07:38 +0000 2025",
+        "likes": 275,
+        "retweets": 14,
+        "views": 163042,
+        "replies": 20,
+        "url": "https://x.com/Trader_XO/status/1967515644405907720",
+        "is_reply": true,
+        "media": [
+          "https://pbs.twimg.com/media/G04FDMBXYAAi2lN.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841321+00:00"
+      },
+      {
+        "id": "2096637969566187760",
+        "author": "Trader_XO",
+        "text": "Sept 15\u201316 FOMC... around 10 days out\n\nPersonally not interested in chasing swing longs up here. There have been some fantastic moves across the board and perhaps they continue, but a correction or two over the coming weeks wouldn't surprise me.\n\nOne thing I'm watching is the continued rotation in OI dominance as per previous occasions.\n\nBTC has been steadily losing share while \"Others\" has expanded considerably, now sitting roughly alongside BTC.\n\nDoesn't make it bearish in itself, but it does tell you where the speculative leverage has migrated.\n\nCombine that with some fairly thin moves on the way up and, for me, this is more a place to manage existing exposure than start forcing fresh swing longs.\n\nNo prediction, just recognising that the further leverage moves out the risk curve, the less attractive chasing becomes - and being more selective with trades - as is always the case.",
+        "created_at": "Sun Sep 06 16:33:40 +0000 2026",
+        "likes": 133,
+        "retweets": 13,
+        "views": 9808,
+        "replies": 15,
+        "url": "https://x.com/Trader_XO/status/2096637969566187760",
+        "is_reply": true,
+        "media": [
+          "https://pbs.twimg.com/media/HRi_Dp1XIAQKJOj.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841329+00:00"
+      },
+      {
+        "id": "2096200723671446017",
+        "author": "Trader_XO",
+        "text": "The trenches are fun, no doubt, and there\u2019s nothing wrong with exploring them. New markets, new structures and new opportunities are part of trading... staying curious and open minded matters. \n\nThe danger is when curiosity turns into FOMO and a hyper gambling state of mind, constantly chasing the next ticker, the next runner, the next 10x because your timeline makes it look like the easiest money in the market.\n\nTo consistently make money in the trenches, you probably need some combination of sophisticated systems/software that identify opportunities early, strong position sizing and trade management, the ability to recognise genuine winners and size into them appropriately, or some form of informational advantage that the average participant simply doesn\u2019t have. \n\nThe other side of that equation is being part of the game itself... launching tokens, promoting them, controlling distribution, or having access to flows and information that others don\u2019t.\n\nAnd realistically, not everything is always what it appears to be. The statistics coming out are hardly surprising... the majority don\u2019t make much, while a relatively small percentage capture most of the upside. \n\nSocial media naturally amplifies the winners, the huge multiples and the overnight success stories, while behind the scenes there can be , teams, insiders, KOL allocations, side wallets, coordinated flows and plenty of questionable practices. \n\nBut that\u2019s part of understanding the game rather than complaining about it. You either understand the environment, develop an edge within it and participate accordingly... or you don\u2019t.\n\nThe important part is knowing what you\u2019re actually good at. If your edge is in the trenches, then become exceptional at it... build the systems, understand the flows, learn the participants and specialise in that environment. \n\nPersonally, my edge has always been spot and futures across crypto and global markets... understanding price, positioning, context, risk and recognising when conditions are favourable enough to press. \n\nThat doesn\u2019t mean ignoring new opportunities. Explore them, trade them small, learn from them and remain adaptable... but don\u2019t abandon a proven process because somebody else appears to be making easier money somewhere else. You cannot borrow somebody else\u2019s edge.\n\nThe long game is knowing where your statistical edge lies, understanding the conditions in which you perform best and having the patience to let that compound over time. It isn\u2019t particularly viral... nobody gets excited about taking singles, managing risk, sitting out poor conditions and compounding gradually. \n\nBut when you study many of the best traders, including plenty of the Market Wizards, the recurring theme is usually the same... they know what they\u2019re good at, they know when their edge is present and they don\u2019t feel obligated to participate in every game the market offers.\n\nKnow your game, know your edge... and be open minded without losing sight of either.\n\nHave a fab weekend!",
+        "created_at": "Sat Sep 05 11:36:12 +0000 2026",
+        "likes": 400,
+        "retweets": 24,
+        "views": 61370,
+        "replies": 42,
+        "url": "https://x.com/Trader_XO/status/2096200723671446017",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841336+00:00"
+      },
+      {
+        "id": "2095786785666429092",
+        "author": "Trader_XO",
+        "text": "bitcoin:native \n\nPrice auctioned higher but ran into a decent wall of supply around the 365D rolling VWAP, with stacked sells sitting around the June & August swing highs / raneg highs. \n\nWas a decent move, but there was still a fair bit of sell-side to chew through if price wanted to continue higher.\n\nCurrent view is pretty simple, 50wma  & 365d rvwap are the key contextual levels for me here. \n\nIf price trades back below the 50w particularly then that\u2019s effectively 3 attempts, 3 rejections - and back below.\n\nI\u2019d be looking for a move into previous weeks vwap - rotate lower around 77-78s - should that hold then it becomes interesting again with it being a shallow consolidation - back below here then... I guess if its looks like a range and trades like one - then it probably is one...",
+        "created_at": "Fri Sep 04 08:11:22 +0000 2026",
+        "likes": 537,
+        "retweets": 50,
+        "views": 64042,
+        "replies": 28,
+        "url": "https://x.com/Trader_XO/status/2095786785666429092",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRW4OwubsAAhVo6.jpg",
+          "https://pbs.twimg.com/media/HRW6RIoawAAEfPp.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841342+00:00"
+      },
+      {
+        "id": "2095872936733528489",
+        "author": "Trader_XO",
+        "text": "pwvwap \ud83c\udfaf https://t.co/J8aGL0lAXX",
+        "created_at": "Fri Sep 04 13:53:42 +0000 2026",
+        "likes": 76,
+        "retweets": 0,
+        "views": 9349,
+        "replies": 5,
+        "url": "https://x.com/Trader_XO/status/2095872936733528489",
+        "is_reply": true,
+        "media": [
+          "https://pbs.twimg.com/media/HRYJQo5aUAEEOn0.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841350+00:00"
+      },
+      {
+        "id": "2092195816446296308",
+        "author": "Trader_XO",
+        "text": "$BTC \n\nFor sustained bull-market conditions, I want to see the 50W curve higher with price accepting above it and developing a multi-week/month trend. By that point, the lower 12/21 structure should already be aligned.\n\nTrading aside, my very high-timeframe view remains unchanged:\n\nOwn Bitcoin.\n2027 \u2192 the debasement trade begins...?\n\nLTF, I expect the coming months to offer a much better trading environment \u2014 events, volatility and two-way opportunity.\n\nSupport: Macro mid range - confluent with 12/25s\n\nResistance: 50w Moving average - give or take...",
+        "created_at": "Tue Aug 25 10:22:08 +0000 2026",
+        "likes": 945,
+        "retweets": 124,
+        "views": 254353,
+        "replies": 75,
+        "url": "https://x.com/Trader_XO/status/2092195816446296308",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQj3sgQXMAAHBwm.jpg",
+          "https://pbs.twimg.com/media/HQj4ib-W4AAdAe0.png",
+          "https://pbs.twimg.com/media/HQj4vOQX0AEp-9N.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841357+00:00"
+      },
+      {
+        "id": "2095849637324460116",
+        "author": "Trader_XO",
+        "text": "Still amazes me to this day how clean the trading setups are in the right context around previous weeks highs and lows during local ranges - key is applied in context not just solely reliant upon 2 markers.",
+        "created_at": "Fri Sep 04 12:21:07 +0000 2026",
+        "likes": 47,
+        "retweets": 1,
+        "views": 6028,
+        "replies": 3,
+        "url": "https://x.com/Trader_XO/status/2095849637324460116",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841363+00:00"
+      },
+      {
+        "id": "2095464599030305103",
+        "author": "Trader_XO",
+        "text": "RT @TXMCtrades: Everyone knows the Fed will one day cut again.\n\nThe key question is where rates bottom when it does.\n\nLong live the bond be\u2026",
+        "created_at": "Thu Sep 03 10:51:06 +0000 2026",
+        "likes": 0,
+        "retweets": 5,
+        "views": 19668,
+        "replies": 0,
+        "url": "https://x.com/Trader_XO/status/2095464599030305103",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841369+00:00"
+      },
+      {
+        "id": "2094753110472159563",
+        "author": "Trader_XO",
+        "text": "They\u2019ve been churning away for a while, with a few already showing encouraging initial expansion. The structures look promising, but ultimately it comes down to price and time.\n\nIf they don\u2019t resolve over the coming weeks, several are beginning to shape up as potentially compelling setups heading into 2027.\n\nThis is where being a hybrid trader matters, applying the technicals to define the opportunity, while mapping the fundamentals to understand the broader backdrop.",
+        "created_at": "Tue Sep 01 11:43:54 +0000 2026",
+        "likes": 246,
+        "retweets": 9,
+        "views": 63267,
+        "replies": 22,
+        "url": "https://x.com/Trader_XO/status/2094753110472159563",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841375+00:00"
+      },
+      {
+        "id": "2093305924500734370",
+        "author": "Trader_XO",
+        "text": "So another tap on the 50week MA... and rejected again...\n\n1. Consolidation with a higher low or compression under the band gives the likelyhood of expansion...\n\n2. Should price drift way and trade through the 12/21s then were probably in for a longer period of building a base.",
+        "created_at": "Fri Aug 28 11:53:18 +0000 2026",
+        "likes": 160,
+        "retweets": 2,
+        "views": 20691,
+        "replies": 6,
+        "url": "https://x.com/Trader_XO/status/2093305924500734370",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841381+00:00"
+      },
+      {
+        "id": "2093378613345190123",
+        "author": "Trader_XO",
+        "text": "BTC / ETH / SOL still trading within February\u2019s range, so marking out February value should remain useful. \n\nThe 50WMA is also key here, currently capping price just above February\u2019s highs.\n\nThe long game is often the least exciting path in trading and the one few have the patience to stay with. For me, the edge is knowing when aggression is earned, while spending most of the time taking singles, scratches, controlled wins and losses, with a small number of trades ultimately doing the heavy lifting.\n\nExpectation heading into September: still leaning towards two-way price action rather than a clean sustained trend. \n\nJackson Hole adds another layer, with Warsh leaning hawkish on inflation, front-end yields pushing higher and the dollar catching a bid. \n\nNot fully convinced we\u2019re ready for a sustained directional move just yet. \n\nLoosely held view and happy to be wrong - looking forward to being back at it again in September.",
+        "created_at": "Fri Aug 28 16:42:09 +0000 2026",
+        "likes": 218,
+        "retweets": 7,
+        "views": 16650,
+        "replies": 13,
+        "url": "https://x.com/Trader_XO/status/2093378613345190123",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841386+00:00"
+      },
+      {
+        "id": "2092256330484506886",
+        "author": "Trader_XO",
+        "text": "RT @dmartin_trading: The head of trading at the world's largest CFD broker (IC Markets), on discretionary vs systematic trading:\n\n\"I've loo\u2026",
+        "created_at": "Tue Aug 25 14:22:36 +0000 2026",
+        "likes": 0,
+        "retweets": 30,
+        "views": 19467,
+        "replies": 0,
+        "url": "https://x.com/Trader_XO/status/2092256330484506886",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841392+00:00"
+      },
+      {
+        "id": "2091979073127891191",
+        "author": "Trader_XO",
+        "text": "Quite impressed by near intents tbh...",
+        "created_at": "Mon Aug 24 20:00:52 +0000 2026",
+        "likes": 308,
+        "retweets": 11,
+        "views": 71763,
+        "replies": 41,
+        "url": "https://x.com/Trader_XO/status/2091979073127891191",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841398+00:00"
+      },
+      {
+        "id": "2092199249718935610",
+        "author": "Trader_XO",
+        "text": "Dont personally hold any zec tbh but\n\nBut from a usage scenario / network effect - the platform itself becomes interesting should they roll out ZSA's = multi-asset privacy layer.\n\nI like what near intents do with the confidentially aspect - bridging has been seamless thus far.",
+        "created_at": "Tue Aug 25 10:35:46 +0000 2026",
+        "likes": 65,
+        "retweets": 1,
+        "views": 17619,
+        "replies": 6,
+        "url": "https://x.com/Trader_XO/status/2092199249718935610",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841403+00:00"
+      },
+      {
+        "id": "2092196395763585354",
+        "author": "Trader_XO",
+        "text": "Resistance: 50w moving average - if theres one level that was likely to provide strong resistance - its around there - Its a level I've often traded or hedged exposure - particularly with the current slop of the MA.",
+        "created_at": "Tue Aug 25 10:24:26 +0000 2026",
+        "likes": 103,
+        "retweets": 1,
+        "views": 10786,
+        "replies": 1,
+        "url": "https://x.com/Trader_XO/status/2092196395763585354",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841409+00:00"
+      },
+      {
+        "id": "2091503080076357948",
+        "author": "Trader_XO",
+        "text": "RT @Tom__Capital: Recap on my thoughts \ud83d\udc47\n\nThe buyback announcement Wednesday. The verdict by Friday:\n\n30yr: 5.34% \u2192 5.18% \u2192 back to 5.27%.\u2026",
+        "created_at": "Sun Aug 23 12:29:27 +0000 2026",
+        "likes": 0,
+        "retweets": 19,
+        "views": 18464,
+        "replies": 0,
+        "url": "https://x.com/Trader_XO/status/2091503080076357948",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841415+00:00"
+      },
+      {
+        "id": "2090158929380798768",
+        "author": "Trader_XO",
+        "text": "4th August: \n\n\"I\u2019d love to see it squeeze late shorts first \u2026 aka \nconfirmation traders...\"\n\nGood job tbh",
+        "created_at": "Wed Aug 19 19:28:16 +0000 2026",
+        "likes": 424,
+        "retweets": 20,
+        "views": 86377,
+        "replies": 39,
+        "url": "https://x.com/Trader_XO/status/2090158929380798768",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQG8Ty1XIAAl5EX.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841421+00:00"
+      },
+      {
+        "id": "2087598722515378428",
+        "author": "Trader_XO",
+        "text": "Simple tip but... \n\nDon't automate an agentic workflow until you've successfully performed it manually enough times to understand what you're automating...",
+        "created_at": "Wed Aug 12 17:54:55 +0000 2026",
+        "likes": 352,
+        "retweets": 23,
+        "views": 60492,
+        "replies": 30,
+        "url": "https://x.com/Trader_XO/status/2087598722515378428",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841427+00:00"
+      },
+      {
+        "id": "2087490429981790456",
+        "author": "Trader_XO",
+        "text": "My custom Exocharts Ladder template below for those who wanted a copy\n\nCheers\n\nhttps://mega.nz/file/gvFUjITJ#qvA9SWC94melXq2zLvT6KG7K9uSe1vjIDNQQNP7vWMw https://t.co/SY99WY2AC3",
+        "created_at": "Wed Aug 12 10:44:36 +0000 2026",
+        "likes": 489,
+        "retweets": 38,
+        "views": 67479,
+        "replies": 33,
+        "url": "https://x.com/Trader_XO/status/2087490429981790456",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HPhBAjCWYAALHdS.png"
+        ],
+        "fetched_at": "2026-09-06T22:19:22.841433+00:00"
+      },
+      {
+        "id": "2087491706786578531",
+        "author": "Trader_XO",
+        "text": "If the data doesn\u2019t load when importing the template for the first time, switch off your VPN, allow the data to load, then switch the VPN back on...\n\nNot sure why... exochart thing",
+        "created_at": "Wed Aug 12 10:49:41 +0000 2026",
+        "likes": 44,
+        "retweets": 3,
+        "views": 14261,
+        "replies": 3,
+        "url": "https://x.com/Trader_XO/status/2087491706786578531",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:22.841439+00:00"
+      }
+    ],
+    "count": 21,
+    "fetched_at": "2026-09-06T22:19:22.841444+00:00"
+  },
+  "eliz883": {
+    "info": {
+      "handle": "eliz883",
+      "name": "Eliz",
+      "followers": 607659,
+      "style": "liquidity levels + trend following",
+      "timeframes": [
+        "daily",
+        "weekly"
+      ],
+      "focus": [
+        "BTC"
+      ],
+      "weight": 1.2
+    },
+    "tweets": [
+      {
+        "id": "2096693224102371755",
+        "author": "eliz883",
+        "text": "After my message $TAO https://t.co/PRRC3EZd8N",
+        "created_at": "Sun Sep 06 20:13:13 +0000 2026",
+        "likes": 380,
+        "retweets": 21,
+        "views": 42399,
+        "replies": 42,
+        "url": "https://x.com/eliz883/status/2096693224102371755",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRjxwlgaUAAlHWM.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929604+00:00"
+      },
+      {
+        "id": "2096684362137751864",
+        "author": "eliz883",
+        "text": "I\u2019m not on FOMO app\n\nBut you should turn on my notifications for charts and trading \n\nYou\u2019ll enjoy it",
+        "created_at": "Sun Sep 06 19:38:01 +0000 2026",
+        "likes": 553,
+        "retweets": 13,
+        "views": 37722,
+        "replies": 46,
+        "url": "https://x.com/eliz883/status/2096684362137751864",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929626+00:00"
+      },
+      {
+        "id": "2096660266221994385",
+        "author": "eliz883",
+        "text": "\ud83d\udc40\ud83d\udd25 $TAO https://t.co/o6lwj6vPwV",
+        "created_at": "Sun Sep 06 18:02:16 +0000 2026",
+        "likes": 541,
+        "retweets": 33,
+        "views": 61741,
+        "replies": 47,
+        "url": "https://x.com/eliz883/status/2096660266221994385",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRjVZcQboAAmMwL.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929631+00:00"
+      },
+      {
+        "id": "2096615496179184038",
+        "author": "eliz883",
+        "text": "$PHA eyes on this breakout https://t.co/gAQ9L0BtLD",
+        "created_at": "Sun Sep 06 15:04:22 +0000 2026",
+        "likes": 289,
+        "retweets": 22,
+        "views": 51381,
+        "replies": 26,
+        "url": "https://x.com/eliz883/status/2096615496179184038",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRisrdDa4AAmsHj.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929636+00:00"
+      },
+      {
+        "id": "2096603591175782858",
+        "author": "eliz883",
+        "text": "$1K to $10K Spot Challenge up  \u2014 live in WWG.\n\nWe\u2019re taking this one to the target fast. \ud83d\ude80 https://whop.com/wealthgroup/wealthgroup?a=cryptoeliz https://t.co/ZQVqmT7lby",
+        "created_at": "Sun Sep 06 14:17:03 +0000 2026",
+        "likes": 197,
+        "retweets": 3,
+        "views": 49128,
+        "replies": 13,
+        "url": "https://x.com/eliz883/status/2096603591175782858",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRih2fsbMAAV7hH.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929640+00:00"
+      },
+      {
+        "id": "2096599059821719959",
+        "author": "eliz883",
+        "text": "You could show your appreciation by retweeting this \n\n\ud83d\udd25\u2705 $NEAR https://t.co/sEXsxOPQMt",
+        "created_at": "Sun Sep 06 13:59:03 +0000 2026",
+        "likes": 492,
+        "retweets": 104,
+        "views": 58100,
+        "replies": 25,
+        "url": "https://x.com/eliz883/status/2096599059821719959",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRidusAawAApppO.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929645+00:00"
+      },
+      {
+        "id": "2096561751772844130",
+        "author": "eliz883",
+        "text": "Bought more $TAO 110k https://t.co/2Y7Zt0MZ0b",
+        "created_at": "Sun Sep 06 11:30:48 +0000 2026",
+        "likes": 1314,
+        "retweets": 67,
+        "views": 202049,
+        "replies": 76,
+        "url": "https://x.com/eliz883/status/2096561751772844130",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRh7zLjXcAAT-7j.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929649+00:00"
+      },
+      {
+        "id": "2096560727796417008",
+        "author": "eliz883",
+        "text": "$CHILLGUY \n\neyes on this chart for next days https://t.co/0RpLjlCiWo",
+        "created_at": "Sun Sep 06 11:26:44 +0000 2026",
+        "likes": 460,
+        "retweets": 39,
+        "views": 32764,
+        "replies": 30,
+        "url": "https://x.com/eliz883/status/2096560727796417008",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRh61GSWkAQ-6sH.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929654+00:00"
+      },
+      {
+        "id": "2096534877571022990",
+        "author": "eliz883",
+        "text": "Active notification",
+        "created_at": "Sun Sep 06 09:44:01 +0000 2026",
+        "likes": 501,
+        "retweets": 10,
+        "views": 48025,
+        "replies": 83,
+        "url": "https://x.com/eliz883/status/2096534877571022990",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929658+00:00"
+      },
+      {
+        "id": "2096532704678261009",
+        "author": "eliz883",
+        "text": "Update in 2 days after I posted near not bad $NEAR https://t.co/Z4Hlr5Q3iw",
+        "created_at": "Sun Sep 06 09:35:23 +0000 2026",
+        "likes": 366,
+        "retweets": 4,
+        "views": 84253,
+        "replies": 32,
+        "url": "https://x.com/eliz883/status/2096532704678261009",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRhhYdYXkAEl2G_.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929662+00:00"
+      },
+      {
+        "id": "2096531281177665593",
+        "author": "eliz883",
+        "text": "GM friends \n\nMy chart today \u2600\ufe0f https://t.co/zGbqbkPMWy",
+        "created_at": "Sun Sep 06 09:29:43 +0000 2026",
+        "likes": 420,
+        "retweets": 4,
+        "views": 46531,
+        "replies": 71,
+        "url": "https://x.com/eliz883/status/2096531281177665593",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRhgFX2bEAErwAn.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:24.929666+00:00"
+      },
+      {
+        "id": "2096371048933404825",
+        "author": "eliz883",
+        "text": "Gn best and sleep peacefully \n\n\ud83d\udc4b\ud83c\udffb\ud83d\ude0c\ud83d\ude0a",
+        "created_at": "Sat Sep 05 22:53:01 +0000 2026",
+        "likes": 187,
+        "retweets": 6,
+        "views": 48129,
+        "replies": 16,
+        "url": "https://x.com/eliz883/status/2096371048933404825",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929702+00:00"
+      },
+      {
+        "id": "2096274859198226633",
+        "author": "eliz883",
+        "text": "$LTC",
+        "created_at": "Sat Sep 05 16:30:47 +0000 2026",
+        "likes": 626,
+        "retweets": 39,
+        "views": 105316,
+        "replies": 48,
+        "url": "https://x.com/eliz883/status/2096274859198226633",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929706+00:00"
+      },
+      {
+        "id": "2096251485851902334",
+        "author": "eliz883",
+        "text": "It could be the market\u2019s next big narrative . It\u2019s still early days, but it certainly has the potential to attract liquidity and attention\n\n$MANIFEST",
+        "created_at": "Sat Sep 05 14:57:55 +0000 2026",
+        "likes": 261,
+        "retweets": 45,
+        "views": 49069,
+        "replies": 33,
+        "url": "https://x.com/eliz883/status/2096251485851902334",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929710+00:00"
+      },
+      {
+        "id": "2096224413221818436",
+        "author": "eliz883",
+        "text": "Mmmm I have nice chart to big swing long \ud83d\udc40",
+        "created_at": "Sat Sep 05 13:10:20 +0000 2026",
+        "likes": 677,
+        "retweets": 13,
+        "views": 156340,
+        "replies": 95,
+        "url": "https://x.com/eliz883/status/2096224413221818436",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929714+00:00"
+      },
+      {
+        "id": "2096189441849045304",
+        "author": "eliz883",
+        "text": "Fuck it stop moaning! \n\nUse that energy to try and do something",
+        "created_at": "Sat Sep 05 10:51:22 +0000 2026",
+        "likes": 411,
+        "retweets": 15,
+        "views": 64497,
+        "replies": 34,
+        "url": "https://x.com/eliz883/status/2096189441849045304",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929720+00:00"
+      },
+      {
+        "id": "2096130083559817697",
+        "author": "eliz883",
+        "text": "On-chain and trading have just one thing in common: 99 per cent lose and 1 per cent win.\n\nBut they are two completely different games.\n\nIn on-chain, you win with speed, information and narrative.\nIn trading, you win with strategy, risk management and discipline.\n\nConfusing the two means losing at both.",
+        "created_at": "Sat Sep 05 06:55:30 +0000 2026",
+        "likes": 389,
+        "retweets": 22,
+        "views": 61762,
+        "replies": 31,
+        "url": "https://x.com/eliz883/status/2096130083559817697",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:24.929724+00:00"
+      }
+    ],
+    "count": 17,
+    "fetched_at": "2026-09-06T22:19:24.929727+00:00"
+  },
+  "CryptoBheem": {
+    "info": {
+      "handle": "CryptoBheem",
+      "name": "Bheem",
+      "followers": 72581,
+      "style": "quant macro + position sizing",
+      "timeframes": [
+        "daily",
+        "weekly"
+      ],
+      "focus": [
+        "BTC"
+      ],
+      "weight": 1.0
+    },
+    "tweets": [
+      {
+        "id": "1720841495417384991",
+        "author": "CryptoBheem",
+        "text": "Posted!! \n\nhttps://medium.com/@business.bheem/0-to-1-000-000-in-7-years-2ad55b484817 https://t.co/Stl0Izb8Ot",
+        "created_at": "Sat Nov 04 16:32:38 +0000 2023",
+        "likes": 1972,
+        "retweets": 144,
+        "views": 1566760,
+        "replies": 528,
+        "url": "https://x.com/CryptoBheem/status/1720841495417384991",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/F-GoNwmaMAADXcG.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659930+00:00"
+      },
+      {
+        "id": "2096597455727198243",
+        "author": "CryptoBheem",
+        "text": "$SOL\n\nInitial target hit\ud83e\udd1d extending further to $130 area. https://t.co/7VnphqRqdN",
+        "created_at": "Sun Sep 06 13:52:40 +0000 2026",
+        "likes": 113,
+        "retweets": 3,
+        "views": 17952,
+        "replies": 0,
+        "url": "https://x.com/CryptoBheem/status/2096597455727198243",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HRicRbkaQAAUS6Z.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659950+00:00"
+      },
+      {
+        "id": "2094490804115181721",
+        "author": "CryptoBheem",
+        "text": "Starting the $200-2000 challenge in partnership with ByBit. This challenge will be locked to **ByBit affiliates** starting on September 5th.\n\nPreviously completed challenges\ud83d\udd3d\n\ud83d\udc49500-5k (01/2023)\n\ud83d\udc49500-10k (03/2023)\n\ud83d\udc49500-26k (12/2023)\n\ud83d\udc4910k-100k (11/2024)\n\ud83d\udc49500-5k (10/2025)\n\nAll these challenge completion trade logs are available for view in discord:\nhttps://discord.gg/3UdEKFFh3h\n\nDetails: https://discord.gg/uHuh3AcUnc",
+        "created_at": "Mon Aug 31 18:21:36 +0000 2026",
+        "likes": 110,
+        "retweets": 4,
+        "views": 40704,
+        "replies": 0,
+        "url": "https://x.com/CryptoBheem/status/2094490804115181721",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.659956+00:00"
+      },
+      {
+        "id": "2092498045795787260",
+        "author": "CryptoBheem",
+        "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 150 BTC\nrPNL: +$845,000\nuPNL: +$2,670,000\n\nRemainder of position will be closed in the 86-90k region (exact figure depends on LTF PA development there)\n\nDip buys in the 73-65k region again (relative to future PA) https://t.co/ZQoSLoTZAR",
+        "created_at": "Wed Aug 26 06:23:05 +0000 2026",
+        "likes": 233,
+        "retweets": 15,
+        "views": 33334,
+        "replies": 16,
+        "url": "https://x.com/CryptoBheem/status/2092498045795787260",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQoL4WLbYAAKXX_.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659960+00:00"
+      },
+      {
+        "id": "2092165203094032544",
+        "author": "CryptoBheem",
+        "text": "$BTC HTF:\n\n86-90k res- full sell zone here for me. https://t.co/CCzzYUrJAX",
+        "created_at": "Tue Aug 25 08:20:29 +0000 2026",
+        "likes": 370,
+        "retweets": 16,
+        "views": 34713,
+        "replies": 22,
+        "url": "https://x.com/CryptoBheem/status/2092165203094032544",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQjdKXCaUAACOo_.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659964+00:00"
+      },
+      {
+        "id": "2091824173001896307",
+        "author": "CryptoBheem",
+        "text": "$SOL \u2705 https://t.co/34l0isc8Km",
+        "created_at": "Mon Aug 24 09:45:21 +0000 2026",
+        "likes": 158,
+        "retweets": 3,
+        "views": 27365,
+        "replies": 1,
+        "url": "https://x.com/CryptoBheem/status/2091824173001896307",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQem_f7akAA_I4M.jpg",
+          "https://pbs.twimg.com/media/HQem_gaaQAAIelh.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659969+00:00"
+      },
+      {
+        "id": "2091046021073981622",
+        "author": "CryptoBheem",
+        "text": "say less https://t.co/R2beW4yOrf",
+        "created_at": "Sat Aug 22 06:13:15 +0000 2026",
+        "likes": 298,
+        "retweets": 6,
+        "views": 26818,
+        "replies": 15,
+        "url": "https://x.com/CryptoBheem/status/2091046021073981622",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQTjRYQacAAoq8r.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659973+00:00"
+      },
+      {
+        "id": "2090725250388635959",
+        "author": "CryptoBheem",
+        "text": "$ETH \n\n56% up / 2900 it is\ud83e\udd1d https://t.co/bnLFMLuka9",
+        "created_at": "Fri Aug 21 08:58:38 +0000 2026",
+        "likes": 162,
+        "retweets": 2,
+        "views": 24997,
+        "replies": 5,
+        "url": "https://x.com/CryptoBheem/status/2090725250388635959",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQO_iBGbYAAxeut.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659978+00:00"
+      },
+      {
+        "id": "2090718600567083151",
+        "author": "CryptoBheem",
+        "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 200 BTC\nuPNL: +$3,220,000\n\nWill take some profit here meow https://t.co/lv0d20Yids",
+        "created_at": "Fri Aug 21 08:32:12 +0000 2026",
+        "likes": 178,
+        "retweets": 2,
+        "views": 54160,
+        "replies": 13,
+        "url": "https://x.com/CryptoBheem/status/2090718600567083151",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQO5e7IawAACE29.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659982+00:00"
+      },
+      {
+        "id": "2090461007487643794",
+        "author": "CryptoBheem",
+        "text": "take some profit &amp; have fun\ud83d\ude3c\n\nno new plan until next week https://t.co/xb0PFcGX6P",
+        "created_at": "Thu Aug 20 15:28:37 +0000 2026",
+        "likes": 226,
+        "retweets": 0,
+        "views": 18364,
+        "replies": 0,
+        "url": "https://x.com/CryptoBheem/status/2090461007487643794",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQLPNClbQAAjFw_.jpg",
+          "https://pbs.twimg.com/media/HQLPNCnaoAEG2BH.jpg",
+          "https://pbs.twimg.com/media/HQLPNCqagAAycVB.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659987+00:00"
+      },
+      {
+        "id": "2090383394723217889",
+        "author": "CryptoBheem",
+        "text": "$HYPE update:\n\n44% up meow https://t.co/tKtyWNdVJs",
+        "created_at": "Thu Aug 20 10:20:13 +0000 2026",
+        "likes": 146,
+        "retweets": 4,
+        "views": 22730,
+        "replies": 12,
+        "url": "https://x.com/CryptoBheem/status/2090383394723217889",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQKIme3agAIodSh.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659991+00:00"
+      },
+      {
+        "id": "2090352115743109430",
+        "author": "CryptoBheem",
+        "text": "meow meow https://t.co/2ThKmA2uiH",
+        "created_at": "Thu Aug 20 08:15:55 +0000 2026",
+        "likes": 156,
+        "retweets": 3,
+        "views": 23152,
+        "replies": 14,
+        "url": "https://x.com/CryptoBheem/status/2090352115743109430",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HQJsKtSbYAAryuo.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.659996+00:00"
+      },
+      {
+        "id": "2090351691241808290",
+        "author": "CryptoBheem",
+        "text": "https://t.co/87GrmbacEd",
+        "created_at": "Thu Aug 20 08:14:14 +0000 2026",
+        "likes": 108,
+        "retweets": 0,
+        "views": 14609,
+        "replies": 5,
+        "url": "https://x.com/CryptoBheem/status/2090351691241808290",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.660000+00:00"
+      },
+      {
+        "id": "2088192720615743588",
+        "author": "CryptoBheem",
+        "text": "Going to continue using redot for bulk bank transfers as the remittance feature is unbeatable \n\nbut\n\netherfi is going to be my daily spending card going forward\ud83e\udd1d",
+        "created_at": "Fri Aug 14 09:15:15 +0000 2026",
+        "likes": 11,
+        "retweets": 1,
+        "views": 2360,
+        "replies": 0,
+        "url": "https://x.com/CryptoBheem/status/2088192720615743588",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.660004+00:00"
+      },
+      {
+        "id": "2088192483884937400",
+        "author": "CryptoBheem",
+        "text": "Going to continue using redot for bulk bank transfers as the remittance feature is unbeatable \n\nbut\n\netherfi is going to be my daily spending card going forward\ud83e\udd1d",
+        "created_at": "Fri Aug 14 09:14:19 +0000 2026",
+        "likes": 0,
+        "retweets": 0,
+        "views": 1285,
+        "replies": 1,
+        "url": "https://x.com/CryptoBheem/status/2088192483884937400",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.660008+00:00"
+      },
+      {
+        "id": "2087011441480237121",
+        "author": "CryptoBheem",
+        "text": "could\u2019ve bought a 2022 corvette instead &amp; still saved money\n\n but guess what\n\nim a crypto bro i must make retarted decisions in life\ud83e\udeea https://t.co/hDKCPWhceu",
+        "created_at": "Tue Aug 11 03:01:17 +0000 2026",
+        "likes": 110,
+        "retweets": 2,
+        "views": 29229,
+        "replies": 14,
+        "url": "https://x.com/CryptoBheem/status/2087011441480237121",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HPaN1XPboAAdD7B.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.660013+00:00"
+      },
+      {
+        "id": "2087005822471778471",
+        "author": "CryptoBheem",
+        "text": "$BTC HTF:\n\nThe weekly breaker needs to be flipped to confirm bottom (weekly close above 68k\n\nThe longer it chops below 66k, the more chances to sweep 60k first (more bids here for me). https://t.co/ioLGlNT5xG",
+        "created_at": "Tue Aug 11 02:38:57 +0000 2026",
+        "likes": 207,
+        "retweets": 10,
+        "views": 21746,
+        "replies": 13,
+        "url": "https://x.com/CryptoBheem/status/2087005822471778471",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HPaIulFaUAEfjVS.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.660017+00:00"
+      },
+      {
+        "id": "2083659694015717571",
+        "author": "CryptoBheem",
+        "text": "crypto &gt; fiat withdrawals by @RedotPay are lightning fast\ud83e\udeea https://t.co/YPx52VJDR6",
+        "created_at": "Sat Aug 01 21:02:38 +0000 2026",
+        "likes": 117,
+        "retweets": 4,
+        "views": 23652,
+        "replies": 8,
+        "url": "https://x.com/CryptoBheem/status/2083659694015717571",
+        "is_reply": false,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.660021+00:00"
+      },
+      {
+        "id": "2083665048514568458",
+        "author": "CryptoBheem",
+        "text": "Not sponsored- but a great service \ud83e\udee1\nhttp://url.hk/i/en/vis9g",
+        "created_at": "Sat Aug 01 21:23:54 +0000 2026",
+        "likes": 13,
+        "retweets": 1,
+        "views": 3688,
+        "replies": 1,
+        "url": "https://x.com/CryptoBheem/status/2083665048514568458",
+        "is_reply": true,
+        "media": [],
+        "fetched_at": "2026-09-06T22:19:26.660025+00:00"
+      },
+      {
+        "id": "2083538118846902367",
+        "author": "CryptoBheem",
+        "text": "$HYPE update: \n\nReached area of interest after 1.5 months\u2705\n\nStarted buying again, all the way down to a sweep of $45 region. https://t.co/vzgaEgAQyn",
+        "created_at": "Sat Aug 01 12:59:32 +0000 2026",
+        "likes": 229,
+        "retweets": 5,
+        "views": 56176,
+        "replies": 13,
+        "url": "https://x.com/CryptoBheem/status/2083538118846902367",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HOo2323aUAAquNS.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.660030+00:00"
+      },
+      {
+        "id": "2081785141593288757",
+        "author": "CryptoBheem",
+        "text": "car maxxing https://t.co/Aqo7PE6ZaN",
+        "created_at": "Mon Jul 27 16:53:50 +0000 2026",
+        "likes": 138,
+        "retweets": 2,
+        "views": 33367,
+        "replies": 14,
+        "url": "https://x.com/CryptoBheem/status/2081785141593288757",
+        "is_reply": false,
+        "media": [
+          "https://pbs.twimg.com/media/HOP8jSGbAAAJvmp.jpg",
+          "https://pbs.twimg.com/media/HOP8jRzaAAACWHl.jpg"
+        ],
+        "fetched_at": "2026-09-06T22:19:26.660034+00:00"
+      }
+    ],
+    "count": 21,
+    "fetched_at": "2026-09-06T22:19:26.660038+00:00"
+  }
+}

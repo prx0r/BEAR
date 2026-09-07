@@ -1,0 +1,2021 @@
+[
+  {
+    "handle": "PriorXBT",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "i am not sure i completely follow the logic\n\nit seems the purpose of prio fees is for the case of x asset popping 10 bps in one tick, the person who i",
+        "likes": 16,
+        "tags": "MICRO|REGIME"
+      },
+      {
+        "text": "I would hope you are being misleading on purpose, the counterfactual seems rather implausible. i don't believe the intuition that the motivation for n",
+        "likes": 16,
+        "tags": "SIGNAL|FLOW|MICRO|REGIME"
+      },
+      {
+        "text": "i completely disagree with this framing. you are defining \"signal\" in binary terms, when a more useful framing is the difficulty spectrum of extractin",
+        "likes": 5,
+        "tags": "FLOW|LEVELS|MICRO"
+      },
+      {
+        "text": "maybe, but i would claim it is just a mistake. the perps infra of any perp dex that exists is more of a commodity than polymarket's current distributi",
+        "likes": 4,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "@derteil00 depending on p(success), it is rather trivial to burn billions in potential value by integrating rather than building. it would be absurdly",
+        "likes": 3,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "do you think hl is the final form factor of perps? it may seem pedantic, but hl is ~4000x slower than cme (~50 micros vs 200k micros hl per docs). the",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "much of 10/10 was driven by \"reckless\" net exposures on a venue basis because one's global was hedged. there is an argument that being net x long on a",
+        "likes": 4,
+        "tags": "SIGNAL|FLOW|MICRO|REGIME"
+      },
+      {
+        "text": "i would argue so, and i think the fallacy derives from thinking in linear space. \n\nimagine the scenario where avg markouts for mechanical mms on btc/e",
+        "likes": 3,
+        "tags": "SIGNAL|FLOW|MICRO|REGIME"
+      },
+      {
+        "text": "i unequivocally disagree with the claim of \"makers need to scale down, widen spreads, or step back during high-volatility periods \u2026 weekend should be ",
+        "likes": 40,
+        "tags": "FLOW|MICRO|REGIME"
+      },
+      {
+        "text": "i may have been imprecise in my original critique, causing me to get grouped into more generic rfq critiques, and that is my mistake.\n\nmy core claim i",
+        "likes": 49,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "i think we can both agree this is rather disingenuous attribution.\n\nyou have no obligation to fill the user at the quoted price/spread. for example, i",
+        "likes": 24,
+        "tags": "SIGNAL|MICRO"
+      },
+      {
+        "text": "the way you are arguing your viewpoint is completely logicless\n\nyou only need ~50 bps of 14d maker volume for maker rebates on hl, it isn't staking ga",
+        "likes": 11,
+        "tags": "FLOW|MICRO|REGIME"
+      },
+      {
+        "text": "@0xLoris spread # seems way too high unless i am misunderstanding. looking at their wallet they more or less quote tick on everything.",
+        "likes": 9,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "i generally disagree with both of the framings above and find it doesn't claim anything super useful. \n\nmm pnl at competitive equilibrium is extremely",
+        "likes": 5,
+        "tags": "SIGNAL|FLOW|MICRO"
+      },
+      {
+        "text": "i generally disagree. proxying mm profitability is always somewhat crude from a single-venue pov, but longer-term markouts become more noisy because y",
+        "likes": 7,
+        "tags": "SIGNAL|FLOW|MICRO"
+      },
+      {
+        "text": "@max_holloway @Lighter_xyz @vnovakovski btc maker mid dec -&gt; early jan\n\njump ~18.1%\nselini ~12.4%\n\nbtc generally has the longest tail of mms of any",
+        "likes": 5,
+        "tags": "SIGNAL|MICRO"
+      },
+      {
+        "text": "yeah makes sense. i don\u2019t think they are completely neutral in any way. i just think it makes more sense to give out points deals rather than fee deal",
+        "likes": 6,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "i generally disagree.\n\ntheir eth maker share is much lower than btc at only ~100 bps. i would assume that with a fee deal they would have some kpis. m",
+        "likes": 5,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "@thxgod777 @Lighter_xyz @vnovakovski the account id &lt;-&gt; wallet relationship is one api call on lighter. all of their lighter wallets were funded",
+        "likes": 15,
+        "tags": "FLOW"
+      },
+      {
+        "text": "The Jump situation is also interesting. At the moment, their edge seems concentrated on the taker side. However, it is unrealistic to assume their rel",
+        "likes": 23,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "Husslin_",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@jimtalbot I\u2019m the resistance \ud83d\ude22",
+        "likes": 215,
+        "tags": "LEVELS"
+      },
+      {
+        "text": "@finn__crypto We\u2019re a trading fund not an investment fund",
+        "likes": 16,
+        "tags": "TEXT"
+      },
+      {
+        "text": "If you\u2019re tryna build a medium-term position, the best places to bid are around range lows (80-83). If that doesn\u2019t hold, prior ATH could be decent as",
+        "likes": 918,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@0xFrenxbtdotxrp Top by size not performance",
+        "likes": 54,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@tmnxeq Nothing ever happens",
+        "likes": 69,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Jeliaz_7 https://t.co/rQvxXL6JD4",
+        "likes": 29,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Correction in original post: narrative follows price \n\nAdditionally, in my experience ppl tend to also be overly cautious and biased during the first ",
+        "likes": 385,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@cryptobyrde Yes my b just woke up lol \nNarrative follows price\nThen price follows narrative",
+        "likes": 73,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheRealDanSaedi \u201cMedium term\u201d\nDon\u2019t go blindly longing with 100x leverage",
+        "likes": 296,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "Let\u2019s also get @TheRealDanSaedi some more followers",
+        "likes": 124,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I believe the market wants to squeeze up\n\nI shorted the news yesterday as the market was buying into an obvious event (the only surprise would\u2019ve been",
+        "likes": 1995,
+        "tags": "SIGNAL|FLOW|MICRO"
+      },
+      {
+        "text": "@alCamel77 @magnum___opus + a little pre-NFP twap",
+        "likes": 24,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@alCamel77 @magnum___opus Nah he doesn\u2019t buy after red, those are just mrev algos lol",
+        "likes": 43,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@_Kolossus @SplitCapital The lowest T as well",
+        "likes": 19,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@SplitCapital How r u always wrong bro",
+        "likes": 70,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@jellyXBT Because crypto is not closed\n\nFollow for more insights",
+        "likes": 45,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@JohnnyPuts Thanks it\u2019s original",
+        "likes": 37,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Your counterparty still thinks Blackrock is some Jew in the shadows that buys and sells at their own discretion \n\nAs opposed to a bunch of boomer monk",
+        "likes": 1384,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@coinmamba @JumpmanJLow This is my quant",
+        "likes": 134,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@macrocephalopod Perfect square!",
+        "likes": 19,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "bitcoin:native 79K is holding, send it higher. https://t.co/bj8QJuJGLd",
+        "likes": 113,
+        "tags": "FLOW"
+      },
+      {
+        "text": "$ZEC looks good https://t.co/bforqJKO9U",
+        "likes": 73,
+        "tags": "TEXT"
+      },
+      {
+        "text": "This 3 \u00d7 $50K @breakotuprop evaluation draw + guaranteed 3-month VIP group access ($200 value) giveaway is ending tomorrow.\n\nIf you want to trade with",
+        "likes": 12,
+        "tags": "TEXT"
+      },
+      {
+        "text": "bitcoin:native This algo keeps chasing price with large bids on Kraken. It makes the orderbook based indicators turn bullish. https://t.co/SWHDg412RJ",
+        "likes": 159,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "Go long on Kalshi perps\n\nhttps://t.co/XEdKZT0NWk",
+        "likes": 2,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "bitcoin:native A mysterious whale on Kraken is back in the orderbook, bidding price up with aggressive limit buys. https://t.co/tYwGvXw5Rm",
+        "likes": 244,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "@shillmeariver looks bullish",
+        "likes": 1,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@manofgodzz 1.5 btc",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I am in a long https://t.co/urZlTTSEkc",
+        "likes": 16,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "bitcoin:native Thin air above in the orderbooks, would be great to see quick pump to 81ks during weekend. https://t.co/P3LErC5hPL",
+        "likes": 236,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@tradingnickfx 42",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Made some bread today\n\nGm https://t.co/ffh5UXEwuV",
+        "likes": 130,
+        "tags": "TEXT"
+      },
+      {
+        "text": "bitcoin:native Filled stack of big bids and bounced due to shorts closing. I think for today and coming weekend, in order to get a proper bounce, it's",
+        "likes": 149,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "Trade on Kalshi perps\n\nhttps://t.co/XEdKZT0NWk",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "bitcoin:native Lose 79K and September will be bearish. \n\nKeep in mind that reaction to news matter more than news itself. Market reminding it 2 days i",
+        "likes": 187,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "@CryptoKaleo Nice",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "bitcoin:native Decent flush, OI was overheated at resistance and market made sure to wipe it out. Might be a good place to buy the dip. https://t.co/H",
+        "likes": 221,
+        "tags": "SIGNAL|FLOW|LEVELS"
+      },
+      {
+        "text": "Be sized before the next move, because the last one paid out $7M to traders trading at @breakoutprop, while others watched it on a $2K account.\n\nThe 3",
+        "likes": 9,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@0xSisyphus This is usually a top",
+        "likes": 17,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Alts had no buyers to begin with. Now Robinhood Chain is draining the last bit of liquidity that was keeping them alive.",
+        "likes": 158,
+        "tags": "SIGNAL"
+      }
+    ]
+  },
+  {
+    "handle": "TheSpeculator0",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "If something was actually AGI then the black box of the model would just spit out a 3d model file. Having to teach it to use blender in order for it t",
+        "likes": 15,
+        "tags": "TEXT"
+      },
+      {
+        "text": "guys GPT 6 Astra is AGI but we needed to teach it how to use computers like a person in order for it to actually produce desirable outputs.\n\nyou see h",
+        "likes": 65,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Long83 by trading course i mean some influencer having you pay 500 a month to hear him blab about TA not like a university course lol",
+        "likes": 4,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "I'm not saying they should. I'm saying they can. My basic point is that anyone who actually knows what they're doing trading wise can make way more mo",
+        "likes": 0,
+        "tags": "FLOW"
+      },
+      {
+        "text": "trading course sellers are charlatans. This is not categorically true and there are some very smart people that write about trading (behind a paywall)",
+        "likes": 151,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@TheFlowHorse then you wouldn't need to make money from a newsletter? that's my point",
+        "likes": 1,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@dtw_le @TheOneLanceB because he's lying about his 100 mil profits gotcha",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheOneLanceB why do you charge money for a trading course if you have made over 100m in verified profits?",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "my main takeaway from this piece is that OpenAI has thousands of employees and literally none of them are even periodically checking if their sanboxin",
+        "likes": 29,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Tech people are like this and see nothing wrong with it",
+        "likes": 113,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@stoked_on_waves I'm mostly implying that if you have the skillset to make a good living out of capacity constrained garbage you can probably also get",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "the numbers are a little on the high end but you should realize that if you can make, say, 500k trading your own money at a high enough sharpe for it ",
+        "likes": 71,
+        "tags": "FLOW"
+      },
+      {
+        "text": "everyone butt mad on this is telling on themselves and should consider getting a real job instead",
+        "likes": 81,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@quant_arb why are you charging money for your substack if you are surrounded by such succesful teams and firms?",
+        "likes": 23,
+        "tags": "TEXT"
+      },
+      {
+        "text": "open up polymarket for a cheeky punt after shutting off all my algo trading months ago\n\nit's not getting better is it https://t.co/i6Jf0xHTuy",
+        "likes": 14,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Training an AI model to be good at 3d modelling. Jensen Huang just came in his pants.",
+        "likes": 19,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@FACEFUCKBRAH Man on twitter mad at twitter lingo",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "yes my entire point is how this system doesn't work in producing an actually economic right wing government. (Boomers and PVV voters want handouts in ",
+        "likes": 0,
+        "tags": "FLOW"
+      },
+      {
+        "text": "yes my entire point is how this system doesn't work in producing an actually economic right wing government. (Boomers and PVV voters want handouts in ",
+        "likes": 0,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@FACEFUCKBRAH depending on how you count the current polls have D66 + everything to the right of it at 100-120 seats",
+        "likes": 1,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "liquiditygoblin",
+    "tweets": 0,
+    "signals": []
+  },
+  {
+    "handle": "HangukQuant",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@spainquant Damn the database papers were way way back\ud83e\udd23\n\nWe walked a long way",
+        "likes": 2,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@0xLcrgs It\u2019s like, literally released \ud83e\udee1 but on the old contracts\n\nLong way to go, 7 digits pnl was never the goal",
+        "likes": 2,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@spainquant Wordd",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@abcdefmlzy Well I\u2019m not an ML expert and I don\u2019t use it in my quant systems so it would be disingenuous, but I may cover TWAP in the future",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@zzznoze \ud83e\udee1",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@1234skyshark Nope all the code you need is inside",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@pedma7 If I had 3 Sharpe on the full capacity of my net worth reliably (reasonable for trend) - putting 100% of my time into it is actually pretty re",
+        "likes": 7,
+        "tags": "FLOW|REGIME"
+      },
+      {
+        "text": "Looking to do a coupla giveaways, spread the gospel \ud83e\udd32\n\nIf my material has been useful to you in your quant journey, do lend me the honour of sharing m",
+        "likes": 8,
+        "tags": "MICRO"
+      },
+      {
+        "text": "Looking to do a coupla giveaways, spread the gospel \ud83e\udd32\n\nIf my material has been useful to you in your quant journey, do lend me the honour of sharing m",
+        "likes": 10,
+        "tags": "MICRO"
+      },
+      {
+        "text": "This is Lecture 50: Don't Blame Wintermute. https://t.co/eePS8lv9Zk",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "As much as I am disappointed that the market structure and flow has decayed for me to comfortably post the material online, I am super stoked to share",
+        "likes": 2,
+        "tags": "FLOW"
+      },
+      {
+        "text": "I dedicate a serious part of my efforts on relaying proper quantitative trading education, and would like to think that my lectures are standout mater",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "The full course curriculum can be found here:\nhttps://t.co/Sl5OuqCiLV\n\nLectures will be released over four phases, and we will have limited seats in e",
+        "likes": 10,
+        "tags": "TEXT"
+      },
+      {
+        "text": "The new quant lectures are information dense, and intense. It is a 50-part lecture series over 12 hours, released over 4 weeks. It will be more demand",
+        "likes": 14,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Many of you know me from the 8 hour quant trading lecture series on YT - it had more than 10'000 students across different platforms\nhttps://t.co/8Oge",
+        "likes": 17,
+        "tags": "TEXT"
+      },
+      {
+        "text": "[Quantitative Trading Lectures - How I Made 1M USD - Released] \n\nFor a good period of time, I was one of the most successful hft mm's on poly's crypto",
+        "likes": 151,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@THenkinet @0xdefidaniel @extendedapp Still pondering, I\u2019m tad bit occupied with my own trading projects\n\nWell robinhood is where all the dumb flow is",
+        "likes": 0,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@cryptard0405 thank god for not having it in school",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "must talk to GPT press press https://t.co/zxnIoeeZhd",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "attention span has never been worse, AI really has to be combined with some form of meditation",
+        "likes": 24,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "52kskew",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "$BTC \nNice reaction so far especially with all that selling into the low of the balance\n\nWould want to see a climb higher from here imo, buyers will n",
+        "likes": 111,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@1Mr_Robot clean, how you liking it so far man?",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "$BTC \nPrice now trading into the lower end of this current LTF balance\n\nLongs cutting here with spot selling continuing\nSome slight bid depth but will",
+        "likes": 99,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "$HYPE \nWouldn't be surprised to see a pretty significant fight here for control\n\nSellers have showed up already, now its time for buyers to put in the",
+        "likes": 80,
+        "tags": "SIGNAL|REGIME"
+      },
+      {
+        "text": "How I would be playing this uptrend:\n> Price above weekly + daily VWAP\n> market bid depth (spot & perp)\n+ \n> Skew MTF Trend in an uptrend\n> Momentum i",
+        "likes": 20,
+        "tags": "SIGNAL|FLOW|LEVELS|REGIME"
+      },
+      {
+        "text": "$HYPE \nMarket is certainly chasing this breakout pretty hard \n\nBut there's some good edge here\n&gt; VWAPs\n&gt; Orderbook depth &amp; CVDs https://t.co",
+        "likes": 24,
+        "tags": "FLOW"
+      },
+      {
+        "text": "$HYPE \nDamn hype running pretty hard off MTF Trend reclaims\n\nUp almost 30% earlier https://t.co/nfqyiyfUDa",
+        "likes": 60,
+        "tags": "LEVELS|REGIME"
+      },
+      {
+        "text": "@0xIrohsol oops had to update, thanks for that",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "$BTC \nNYO selling here via algos\n\nKey prices for today\n&gt; $66.9K\n&gt; $65.7K\n\ncompression / chop in-between https://t.co/zG9RiHLm1W",
+        "likes": 91,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Tom__Capital @v4vendetta888 true most impulses or selloffs have started from around then",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Tom__Capital most volatility &amp; momentum occurs on the cross over thats true \n\nbut for positioning wise its better to get positioned prior",
+        "likes": 7,
+        "tags": "REGIME"
+      },
+      {
+        "text": "Also when combined with a clean systematic trend it helps a ton with positioning &amp; managing positioning risks aka how much lev / margin to use",
+        "likes": 24,
+        "tags": "REGIME"
+      },
+      {
+        "text": "$BTC \nSome old alpha here for uptrends\n\nLows tend to occur during asia session & around key levels like daily - weekly opens or prev highs or lows\n~ m",
+        "likes": 160,
+        "tags": "FLOW|LEVELS|REGIME"
+      },
+      {
+        "text": "$BTC 4H\nPrice cleanly finding support with 4H trend once again but finding some resistance above $67K\n\nwith a further push up would want to see a lot ",
+        "likes": 27,
+        "tags": "LEVELS|REGIME"
+      },
+      {
+        "text": "$BTC \nMarket nicely developing value here\n\nso far what I see here is fairly significant passive spot buying which absorbed a lot of market selling fro",
+        "likes": 116,
+        "tags": "SIGNAL|REGIME"
+      },
+      {
+        "text": "$BTC \nCurrently price is being driven higher by passive flows &amp; short covering\n\nmarket positioning will slowly or quickly move towards net long fr",
+        "likes": 22,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "$BTC 4H\nSo far looks like price is accepting back into the previous value area\n\nPOC around $66.9K https://t.co/PdZI4z2Bi5",
+        "likes": 107,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@charles_wcr also frustratingly true",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Important headlines coming out here\n\nUS & Iran agreement seems to be underway this time \n\nhowever given Lebanon front & hesitancy from IDF this is whe",
+        "likes": 65,
+        "tags": "TEXT"
+      },
+      {
+        "text": "$CL 4H\nProbably going to see a tag of the 1D 200EMA later, hasn't been tested since $58 https://t.co/5aclqeTbRU",
+        "likes": 39,
+        "tags": "FLOW"
+      }
+    ]
+  },
+  {
+    "handle": "0xLoris",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@choffstein signs that LIT is ripping",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@0xMummy did you follow your advice?",
+        "likes": 3,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@JElafina i also made my own 80 iq ass so much money that day",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "only non stable i own btw",
+        "likes": 18,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@ooharu333 https://t.co/mYIQDro9fS",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "believe in something https://t.co/xmvssnw4nn",
+        "likes": 425,
+        "tags": "TEXT"
+      },
+      {
+        "text": "RWA perps just experienced their largest week-over-week decline in Open Interest ever\n\nglobal RWA perp OI is down $14.2B to $10.9B (-23%) since ATH on",
+        "likes": 90,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@ww2enjoyer ok fair that's an exception",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@choffstein inside me there are two wolves",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "for example @extendedapp is one of our top referral destinations\n\n$712mm in referred volume, $87,700 in fees paid https://t.co/You3XNuX9b",
+        "likes": 4,
+        "tags": "MICRO|REGIME"
+      },
+      {
+        "text": "we've referred billions of dollars in volume from Loris Tools to new perp dexs\n\nif you're starting a perp dex and want to get listed you can now apply",
+        "likes": 18,
+        "tags": "REGIME"
+      },
+      {
+        "text": "@korrom18 joke's on you, i'm running an anti-sniper sniper",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "sniper_v4_bybit_final_FINAL3_modified",
+        "likes": 29,
+        "tags": "TEXT"
+      },
+      {
+        "text": "the masculine urge to name all taker strategies 'sniper'",
+        "likes": 245,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@macroarb thanks, still shipping more indicators and cleaning up some UI bugs in the data widgets but it's my go-to now\n\nand yes i like the mobile, i ",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@macroarb https://t.co/nYWTxuZU7b \n\nnew customizable chart/data workspace on LT!",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "best trading in a while though",
+        "likes": 8,
+        "tags": "TEXT"
+      },
+      {
+        "text": "quick question \n\n1) what \n\nthe hell was that https://t.co/xKb6jj1NAx",
+        "likes": 48,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@quant_xbt what was the edge case?",
+        "likes": 12,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@MingoAirdrop loris tools spotted",
+        "likes": 3,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "skyquake_1",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@MostlyMonkey Me: bad luck\nOther people: skill issue",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@voooooogel And maybe a few honeypots too\u2026",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@SalsaTekila 1. they feel like they are not a large% of oi so risk is low\n2. public short liq wallet/hidden long wallet for money laundering\n3. bait l",
+        "likes": 2,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "@0xelevenquit bid for supply in uncompetitive places\nlike picking up from the womens shelter\nJeff taught me that",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@larpcapitalwc I did that once and the rfq guy said mate I just saw some dickhead tighten up the spread 2mins before you called (it genuinely wasn\u2019t m",
+        "likes": 27,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@ONAN_OUS opening a bbg sanctioned xltp file to throw the warden off the scent",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@aleabitoreddit &gt;he thinks the illiquid otc exchange is doing price discovery to multi hour old news",
+        "likes": 3,
+        "tags": "FLOW"
+      },
+      {
+        "text": "Jensen: Final offer $14b\n\n*Hugging face team frantically whispering to each other* \n\nClem: Can u do uhhh $12.9303b?\n\n*lawyers high5ing in the backgrou",
+        "likes": 3674,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@BittexXBT you need to pay for live prices man",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Cbb0fe Market data connection lost\nMarket data connection re established",
+        "likes": 26,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@fuckyourputs &gt;call it ansem\n&gt;forgets it spawned sub-agents",
+        "likes": 8,
+        "tags": "TEXT"
+      },
+      {
+        "text": "https://t.co/brQHJZv59M",
+        "likes": 12,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Versace_Trader fees for me, the restriction period for your account is 182 days for thee",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Free short? \nNo.\nrisk premia https://t.co/FMWKdGDaxT",
+        "likes": 24,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@Sokio8D wat if he's already using it https://t.co/8V9q0z3WWw",
+        "likes": 10,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@saliencexbt lowkey goated\n\nthe wsj again? whatever i dont respect them enough to fix up these dot points. Haiku 4.5 you're up.",
+        "likes": 5,
+        "tags": "FLOW"
+      },
+      {
+        "text": "how much does the medium of the message matter?\n\ndruck using claude \n            \u2191\n             |\n            \u2193\nit was revealed to me in a dream",
+        "likes": 39,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Having your drones drop a giant spinning gold coin on death is a great way for your enemies to recruit the most cracked zoomer fpv pilots alive",
+        "likes": 52,
+        "tags": "FLOW"
+      },
+      {
+        "text": "You may be stupid but are you 30min powernap at 11pm stupid? https://t.co/FBrG7BPuIg",
+        "likes": 66,
+        "tags": "TEXT"
+      },
+      {
+        "text": "squinting at an approaching customer and hotswapping the \"GamerGirl Bathwater\" label for \"Mythos2 Post-Training Datacenter Runoff\"",
+        "likes": 17,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "crypto_hades",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@macrocephalopod That\u2019s so wholesome!",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "&gt; prompt Fable 5\n&gt; \u201cclaude-opus-5[1m] is temporarily unavailable\u201d https://t.co/CEr1nBacxx",
+        "likes": 27,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@quant_xbt @yenwod_ Except for the weird as fuck order book logic!",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "The end of an era. The best casino there ever was, the best UI ever, the scammiest latency spikes and liquidation engine, the best trollbox, the place",
+        "likes": 77,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@Armv7lFx @vinted Very cool stuff!",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Armv7lFx @vinted Where is this data from?",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@kieran__duff @pedma7 @ExodiaCrypto My strategy in the plot was pure alpha, no beta, it was live, never backtested it, it was liquidity constrained an",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "If you are into prediction markets make sure to check this out!",
+        "likes": 19,
+        "tags": "TEXT"
+      },
+      {
+        "text": "the guy using last trade price as fair:",
+        "likes": 39,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@ScottPh77711570 Get well soon!",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "the president of the United States of America can\u2019t even size 1/10 of your average Hyperliquid whale when doing the most blatant market manipulation s",
+        "likes": 25,
+        "tags": "FLOW"
+      },
+      {
+        "text": "lmaooo if somebody wants to pay me to shit on @coinbase please hit my DMs, I didn\u2019t know I could monetize what I love to do for free",
+        "likes": 9,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@cmsholdings lmao banger",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "&gt; fire a bunch of people because AI\n&gt; immediately have the biggest downtime in a decade",
+        "likes": 835,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@ltrd_ banger article as always!",
+        "likes": 11,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@heart_ That\u2019s because he still got it",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@imotw2 @othadoh Id like to try it",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@friendscallmeap @Baskitchbrah @Sokio8D That\u2019s for you babe",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Baskitchbrah @Sokio8D lmao that\u2019s cute!! thank you, I\u2019m finally wassified",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@ScottPh77711570 Thanks man, I really enjoyed your podcast episode from last week aswell \ud83d\ude4f\ud83c\udffb",
+        "likes": 6,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "chameleon_jeff",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "link to the paper: https://t.co/pcrrmFsVSl",
+        "likes": 227,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Someone recently shared this paper with me, which rigorously studies the execution improvement of visible TWAPs on Hyperliquid: \"Trading in the Sunshi",
+        "likes": 2388,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "This is a cool dashboard: historical and realtime liquidity comparisons across venues. Hyperliquid is not only the most liquid venue for major crypto ",
+        "likes": 1807,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Thanks for having me on the podcast! It was a great conversation about a new category of integration: the first centralized exchange directly tapping ",
+        "likes": 1265,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Africa's largest crypto exchange will power their core perps offering directly using Hyperliquid's onchain liquidity. This is a major milestone that w",
+        "likes": 2343,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I spent the past few days in Washington with @hyperliquidpc meeting with policymakers during the historic advancement of the Clarity Act. We discussed",
+        "likes": 5316,
+        "tags": "LEVELS|MICRO"
+      },
+      {
+        "text": "Excited to see everyone come together for this historic moment. AQAv2 brings the protocol-aligned stablecoin model that @Nativemarkets trail-blazed to",
+        "likes": 3011,
+        "tags": "SIGNAL|FLOW|MICRO"
+      },
+      {
+        "text": "Thanks @domcooke for spending months on researching and writing this piece. Einstein once said, \"If you can't explain it simply, you don't understand ",
+        "likes": 3747,
+        "tags": "FLOW"
+      },
+      {
+        "text": "Huge congratulations to TradeXYZ and S&P for this historic partnership. I'm honored that these teams choose to build on Hyperliquid.\n\nSeeing official ",
+        "likes": 5463,
+        "tags": "TEXT"
+      },
+      {
+        "text": "It was great to have a second conversation with @KevinWSHPod more than a year after the first. While the first conversation was a general introduction",
+        "likes": 1540,
+        "tags": "FLOW"
+      },
+      {
+        "text": "I\u2019m excited to support the @HyperliquidPC launch. The Hyperliquid ecosystem needs a policy voice that represents our core values in DC. I\u2019ve gotten to",
+        "likes": 2106,
+        "tags": "FLOW|LEVELS|MICRO"
+      },
+      {
+        "text": "Hyperliquid has quietly achieved an important milestone of becoming the most liquid venue for crypto price discovery in the world. See below for side ",
+        "likes": 6193,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Integrity has always been one of Hyperliquid's core values.\n\nThe house of all finance must be credibly neutral. This means no private investors, no ma",
+        "likes": 4890,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "Those who can, do\nThose who can't, fud \n\nBefore writing a paper maybe learn the definition of what you are studying? ADL does not \"transfer pnl to HLP",
+        "likes": 3622,
+        "tags": "MICRO"
+      },
+      {
+        "text": "Hyperliquid supports permissionless perps on anything. As all of finance moves onchain, there is a billion dollar opportunity to build a mobile app fo",
+        "likes": 3604,
+        "tags": "FLOW|LEVELS|REGIME"
+      },
+      {
+        "text": "Congrats to Native Markets on pioneering the first aligned stablecoin on Hyperliquid! Looking forward to seeing a novel and compliant stablecoin grow ",
+        "likes": 1504,
+        "tags": "FLOW"
+      },
+      {
+        "text": "Congratulations to @tradexyz, @ventuals, and @felixprotocol on their HIP-3 launches!\n\nIt's exciting to see things come together after months of hard w",
+        "likes": 2819,
+        "tags": "LEVELS"
+      },
+      {
+        "text": "https://t.co/dFar7UmBjC",
+        "likes": 187,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Thanks to @TBPN for having me on! It was a fun conversation about the origin story, principles, and vision for Hyperliquid",
+        "likes": 1894,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Debunking the FUD that Hyperliquid prioritizes protocol revenue over traders\n\nOn 10/10, Hyperliquid ADLs net made users hundreds of millions of dollar",
+        "likes": 2987,
+        "tags": "SIGNAL"
+      }
+    ]
+  },
+  {
+    "handle": "0xdoug",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@ileakalpha I kind of have this meta-harness framework that I hand rolled. It sets up a plugin and skills file in Codex/Claude then exposes a CLI for ",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@0xShual @0xmomus Yeah, I usually pin Luna at xhigh all the time. Haven\u2019t really experimented much with it less. Need to measure Terra at high vs xhig",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I\u2019ve tried directly baking off Sol@medium against Luna/Terra on carefully spec\u2019d worker agent tasks, and so far have found no effective loss of qualit",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Luna is a work horse. It\u2019s not a big thinker, but can pretty much faithfully implement any clearly defined spec. In addition to being cheaper, it\u2019s al",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@rargulati Generally main reason is cost and speed, but increasingly finding that Luna writes cleaner, less over engineered code from a clean spec tha",
+        "likes": 11,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@0xmomus Yes, significantly cleaner with that setup",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Astra seems to be extremely capable, but prefers to write extremely dense, hard to read code.  Even with docs it seems to sometimes decide to drop del",
+        "likes": 183,
+        "tags": "LEVELS"
+      },
+      {
+        "text": "My understanding is this view has been somewhat replaced, or at least nuanced, in modern paleoanthropology.\n\nHumans definitely had larger groups, and ",
+        "likes": 22,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@teortaxesTex Definitely a possibility. My gut sense though was once you know you\u2019re going to fail a task, almost by definition you\u2019re out of distribu",
+        "likes": 0,
+        "tags": "FLOW"
+      },
+      {
+        "text": "These agents are, after all, *language* models. By their very nature they seem to love chit chat.\n\nYou should probably assume that whenever and wherev",
+        "likes": 12,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@joseph_h_garvin @andrewho03 @AgustinLebron3 Not anywhere I know. Just from rumors",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "This doesn\u2019t explain everything, but one issue seems to be an enormous amount of Anthropic revenue is coming from trading firms. This is all well and ",
+        "likes": 2,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@andrewho03 Math isn\u2019t that hard, humans are just really bad at it",
+        "likes": 18,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Everyone\u2019s talking about how to maintain monitor-ability of models, but I\u2019m actually interested in the opposite. How can a model keep its thoughts pri",
+        "likes": 13,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "This definitely improves readability. My biggest concern with it though is that RL has selected \u201cClaude slop speak\u201d for a reason. Even user facing res",
+        "likes": 25,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@uriklarman Wrong txn https://t.co/cDHlQYfr3i",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Idk. I honestly just opened SolScan and clicked a random txn. Did it again a few times, and a lot are sub penny, but it doesn\u2019t take long to find peop",
+        "likes": 2,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "Totally agree, that\u2019s the real crux of the difference. RH is at these congestion differences at O(100) txns/seconds versus Solana at like O(3000) txns",
+        "likes": 8,
+        "tags": "SIGNAL|MICRO"
+      },
+      {
+        "text": "@DefiIgnas @Orb_Markets Oh shit, I actually do prefer Orb. Just muscle memory of typing [blank]scan when I quickly needed a screenshot\u2026",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Long involved argument about why 30 cent gas fees on Robinhood are too structurally high and unsustainable.\n\nBut then he doesn\u2019t mention that Solana g",
+        "likes": 65,
+        "tags": "SIGNAL|REGIME"
+      }
+    ]
+  },
+  {
+    "handle": "quant_arb",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@logUp12 I\u2019m not gonna dox myself on here to make a point that\u2019s already very clear",
+        "likes": 4,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@cryptodavinci ?? The examples I gave were large shops. Even some of millenniums largest teams run sub 3 Sharpe higher risk and are considered extreme",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheSpeculator0 For fun and profit",
+        "likes": 15,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@1ce_breaker @TheOneLanceB \ud83d\udc40",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@1ce_breaker @TheOneLanceB Theyre definitely not tier 1. From the number I know in my own backyard: Made not even 9 figs in crypto last year from what",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@logUp12 Pod1, pod2, pod3, pod4",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@BoryaPupki5172 They made good PnL for 15 years in many cases and at serious scale, but yeah they took some risk and had a handful of bad years in the",
+        "likes": 2,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@LepoulpePoulpo Sounds like unsuccessful traders then if they didn\u2019t do 3 Sharpe. Must be larps",
+        "likes": 20,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@investingidiocy Probably shouldn\u2019t have said quarter, would edit tweet if still could",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@investingidiocy Yeah I\u2019d say year then, I\u2019m not privy to their details exactly since I\u2019ve never been on the desks but many I knew they\u2019ve been there ",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@investingidiocy But long run these guys do extremely well",
+        "likes": 4,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@investingidiocy And it\u2019s not that they always do hit this target!",
+        "likes": 4,
+        "tags": "LEVELS"
+      },
+      {
+        "text": "@investingidiocy I shouldn\u2019t have said quarter, it\u2019s probably per year to be honest these guys run a lot hotter than that and I wouldn\u2019t say they run ",
+        "likes": 11,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheOneLanceB Ceph has this sense of greater than thou elitism that makes him an unbearable cunt. Can\u2019t consider a world where you didn\u2019t go to Harvar",
+        "likes": 76,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "I can name 4 pods off the top of my head, 2 of which I\u2019ve sat opposite in the office. That print or printed (as of my time there) like this very consi",
+        "likes": 50,
+        "tags": "TEXT"
+      },
+      {
+        "text": "At a lot of Chicago style shops, it\u2019s just don\u2019t hit your DD and how much PnL did you make. \n\nThere\u2019s very profitable teams out there which consistent",
+        "likes": 206,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I know extremely profitable desks (9 figs PnL) where they don\u2019t check the Sharpe unless it\u2019s a systematic strategy. It\u2019s simply is the PnL positive ev",
+        "likes": 575,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@idiotek77777 You chase price up when you modify your order to follow price. It\u2019s a type of adversity, often larger than markouts.",
+        "likes": 3,
+        "tags": "FLOW|MICRO"
+      },
+      {
+        "text": "@HYPER_STITION didnt he rape his half niece",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@styt12332 Pre-fill chase is a cost. It correlates with tick size.",
+        "likes": 0,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "0xLightcycle",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "If your twitter handle is QuantSomething or HFTSomething, never change your profile picture\n\nBecause I will have no idea who you are afterwards",
+        "likes": 8,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@PrinceAbubu4 @SMB_Attorney The reason why we have two eyes is so we can shoot ourselves in the face with nerf guns\n\nOne of the eyes is a spare",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "When I was a kid, we found a 0.2 cubic meters of dry-ice in a box at the park\n\nEverybody at the playground had a blast that day because there were a b",
+        "likes": 29,
+        "tags": "TEXT"
+      },
+      {
+        "text": "What is your biggest monthly expense?",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@SMB_Attorney I took a finger in the eye and went to urgent care, they put this blue liquid in your eye to look for tears and scratches\n\nTwo takeaways",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@47fucb4r8c69323 This is the play to achieve too-big-to-fail status",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@kchoudhu since you have the space, cost vs performance vs reliability tips you over toward more airflow (more powerful fans) at ambient vs \u201cnormal ai",
+        "likes": 3,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "When I first saw the videos of this toothbrush, I glanced at it for a few seconds and immediately dismissed it as AI slop\n\nIt's clear to me now that I",
+        "likes": 12,
+        "tags": "SIGNAL|MICRO"
+      },
+      {
+        "text": "@QuantumHoneybee @TheRealDanSaedi The more likely reason is that non-working professionals really, really like the AI-slop style and then this is what",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@twid How did you compile it for arm? You used the arm branch or a custom project",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "IBM PC BIOS interface was reverse-engineered (copied) similarly\n\nOne group studied the public interface and wrote up a spec without writing code\n\nThen",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Agreed, we take knowing how to use tmux for granted, but there's a lot of quirks for a newcomer to overcome:\n\ne.g. The default bindings don't work on ",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I was taught that it's not possible to announce at all\n\nBecause a person cannot judge their own honesty: They can only strive toward the ideal, but th",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Oh, I remember Badger.  Someone asked me for a code audit of their staking contracts, and I told them:\n\nNo, because it was the most convoluted staking",
+        "likes": 5,
+        "tags": "REGIME"
+      },
+      {
+        "text": "@choffstein you\u2019re right, but i always give it to them\n\nbecause if you took it by force, they know where your car is parked, and you wouldn\u2019t know whe",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@QuiteMidlife @choffstein if they can physically stay in the middle of the spot, while a car is backing into them, they can hold it",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Jae's writings on finding and scaling a working strat and building a firm\n\nThe ones who pull it off are those who \"didn't know how hard it would be\" a",
+        "likes": 70,
+        "tags": "TEXT"
+      },
+      {
+        "text": "In my old life, I remember using the \u201crule of 7\u201d\n\nThat is: people around you are paying so little attention that you had to say something 7 times in d",
+        "likes": 16,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@ArisakaAya @syramio I posted the original, here's the full crop https://t.co/A4JGfa8zia",
+        "likes": 203,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@LacertaXG1 Also args and \u2014dry-run is easier in python",
+        "likes": 3,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "DeFiSquared",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "New - World Liberty Fi is finally unlocking the remaining 27 billion investor WLFI tokens after early investors began filing lawsuits this week. As a ",
+        "likes": 424,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "Haven\u2019t seen anyone else talk about this yet, so I wanted to bring up an alarming governance vote by World Liberty Fi this month that appears to be th",
+        "likes": 683,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "It was indeed the scariest chart in crypto. https://t.co/Y17tXJ0R4g",
+        "likes": 331,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Supported by 'thoughts and prayers' type of energy https://t.co/3rMlLnw1zW",
+        "likes": 43,
+        "tags": "LEVELS"
+      },
+      {
+        "text": "This is one of the scariest charts in crypto and you can't convince me otherwise. https://t.co/aYN3q7SnjK",
+        "likes": 184,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Orderly is still so cheap that its staking APR from just a portion of its fee revenue is consistently over 40% without using any token emissions or po",
+        "likes": 355,
+        "tags": "SIGNAL|FLOW|REGIME"
+      },
+      {
+        "text": "If you\u2019re having a hard time understanding why KOL\u2019s would want to launch their own perp DEX, you should take a look at Aden, another Orderly launched",
+        "likes": 301,
+        "tags": "REGIME"
+      },
+      {
+        "text": "Virtuals ran to 5 billion+ over the course of the agent meta. Orderly, the functional equivalent for perp dexes, has no competition in its lane and is",
+        "likes": 148,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Large accounts impressed by the performance of a certain trending perp dex, not realizing it's entirely powered / built on Orderly (which takes a shar",
+        "likes": 398,
+        "tags": "REGIME"
+      },
+      {
+        "text": "So the SEC update to accelerate the timeline of ETF approvals creates one of the wildest narrative overlaps I've seen in a long time on AVAX specifica",
+        "likes": 485,
+        "tags": "SIGNAL|FLOW|LEVELS|MICRO|REGIME"
+      },
+      {
+        "text": "Quick followup discussion to my last post, on Trump related coins in general.\n\nIt shouldn\u2019t be surprising to anyone that holders of large locked WLFI ",
+        "likes": 300,
+        "tags": "SIGNAL|FLOW|LEVELS|MICRO|REGIME"
+      },
+      {
+        "text": "So I checked with an OTC contact on this one, and apparently it's actually verified / real. During the same time period that Justin Sun was blackliste",
+        "likes": 294,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@saliencexbt The implication to me is that this is a different person, because this OTC sale continued shopping for offers even after the blacklist oc",
+        "likes": 13,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Gm! Been touching snow for a bit since flattening the books in Jan, but wanted to pop my head in for a bit to share an interview I recorded with @thic",
+        "likes": 521,
+        "tags": "REGIME"
+      },
+      {
+        "text": "Gmoas. https://t.co/GowZOAXjrF",
+        "likes": 372,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Bluntz_Capital Nice trade \ud83e\udee1",
+        "likes": 60,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Regardless, AIXBT is the single strongest performing agent related coin since my first post on it. There's really no debate about the relative strengt",
+        "likes": 92,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@ZeMirch Eh, attitudes get super toxic when vibes are bearish, and I don't appreciate having to pull out receipts to prove my trades.",
+        "likes": 29,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@ZeMirch I'm not comparing it to \"look good\", I'm comparing it because it was an obvious pair trade of similar assets and was the trade I had on all m",
+        "likes": 23,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@BearenstainBear @ZeMirch My twitter is for interesting information, not exact trades. Anyone I hang with regularly on tg can attest it's the trade I'",
+        "likes": 7,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "thiccyth0t",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@trylastpack nice",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Lastpack is now 5% marketshare of crypto gacha volume and we will be running 0 edge packs until that number is higher",
+        "likes": 94,
+        "tags": "REGIME"
+      },
+      {
+        "text": "@weretuna @umar_xbt @trylastpack logan paul dmed me to take it down for using his likeness lol",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "we will run the edge to zero and until all of the gacha market share is ours",
+        "likes": 173,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I spent 3 million dollars on:\n\n\u2022 200,000 Pokemon cards\n\u2022 a warehouse in California\n\u2022 a team of workers shipping cards out 24/7\n\nI am bullish on collec",
+        "likes": 744,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "there are cathedrals everywhere for those with the eyes to see https://t.co/UFDr3X3vyW",
+        "likes": 256,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@metahacker_ made a good amount in march longing them, it trades pretty similarly to crypto",
+        "likes": 9,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@Saixxbt strait doesn\u2019t open up immediately, the futures are still physically settled",
+        "likes": 3,
+        "tags": "MICRO"
+      },
+      {
+        "text": "it will probably be a decent long after the peace headline causes the stubborn longs to panic out",
+        "likes": 67,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "had the thesis right but got the path wrong",
+        "likes": 68,
+        "tags": "TEXT"
+      },
+      {
+        "text": "made a mistake in this thinking that negotiations were just a two player game when it was actually a three+ player game\n\nclosed my oil longs last nigh",
+        "likes": 375,
+        "tags": "SIGNAL|FLOW"
+      },
+      {
+        "text": "market trading like peace deal done and the \u201cblockade\u201d is just theatrics for normies to believe trump won by pressuring iran into concessions\n\nus winn",
+        "likes": 362,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@rev_cap agree with this. Us and Iran were never going to be able to make a deal from an optics perspective if it were just them but china can help br",
+        "likes": 15,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@basche42 he has plenty of moves left",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "think most people are tired just want to go back to making money longing AI \n\nthe people that price in commodities shortages have lost all of their mo",
+        "likes": 39,
+        "tags": "SIGNAL|MICRO"
+      },
+      {
+        "text": "@TurboUnknown it will be spun as a patriotic sacrifice to defeat iran/china",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "i find it hard to believe trump to want to make a deal with iran and essentially admit defeat with equities only 3% off the highs",
+        "likes": 368,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Trump is clearly in step 5 of his negotiating playbook, leaving the Iranians at the altar right when both sides were reportedly \u201cinches away\u201d from a d",
+        "likes": 597,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@mnltrades su wise fella",
+        "likes": 19,
+        "tags": "TEXT"
+      },
+      {
+        "text": "The best part of accumulating wealth is that you can start saying increasingly insane things and people begin treating them as insight instead of reta",
+        "likes": 7919,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "fiddybps1",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@_ianchain @tradeparadigm @paradex Try now",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Ozzny_CS2 it aint over until its over\n\nxertion got somethin to say",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "holy shit mouz stole that game",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@AliceCrypt0land @tradeparadigm @paradex try now",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@liquidated_hl @donk1337 bruh PR just lost the game for mouz cos hes a *******",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@AlokSK9 @tradeparadigm @paradex try now",
+        "likes": 1,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@donk1337 is the best rifler to ever play this game\n\nand will be for the forseeable future",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "This is NOT a traditional marketing role.\n\nWe have an insane amount of things cooking at @tradeparadigm and @paradex, and I\u2019m looking for someone exce",
+        "likes": 50,
+        "tags": "TEXT"
+      },
+      {
+        "text": "slack is objectively the worst product in the world. how anyone thinks this is a good experience is beyond me. what is worse is that all these new har",
+        "likes": 8,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@DimeTerminal is building @DimeTerminal \ud83d\udd25 https://t.co/TleprQ2n11",
+        "likes": 11,
+        "tags": "TEXT"
+      },
+      {
+        "text": "frontier intelligence at your fingertips on @DimeTerminal  \ud83d\udd25",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "having a conscience in crypto is ev-",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "retail is getting fucked face first,\n\nand we're all just like\n\n\"this is the future of finance\"",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@DimeTerminal coded \ud83d\udd25 \n\n+ pick any model\n+ private\n+ secure\n+ trader/finance centric",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "sec approved though lmao",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "make it exist, then make it better\n\nthe world belongs to those who are fast and iterate\n\nno surprise it is one of our core values https://t.co/80RlSOr",
+        "likes": 1,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@larpcapitalwc trade on @tradeparadigm and u will get better than screen pricing!",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "+1",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "fucking go for it \ud83e\udd18",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@DoveyWan Lol tennis is not a vanity sport",
+        "likes": 2,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "CL207",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@0xGeeGee dubai was culturally very very safe and absolutely nothing gets stolen\n\nit was safety and honor via both religion and culture\n\nonly huge wav",
+        "likes": 38,
+        "tags": "TEXT"
+      },
+      {
+        "text": "further view https://t.co/MKljqkL3iK",
+        "likes": 27,
+        "tags": "TEXT"
+      },
+      {
+        "text": "\ud83d\ude3c https://t.co/DQ2iMjtCIP",
+        "likes": 211,
+        "tags": "TEXT"
+      },
+      {
+        "text": "imo the chinese model is very strong in current world, as current capitalism kinda anti aligns government and corpos",
+        "likes": 44,
+        "tags": "TEXT"
+      },
+      {
+        "text": "china is like a corpo state collective, and def doing espionage on tech companies\n\nhynix use to have lots of labs in china, these corpo probably dont ",
+        "likes": 153,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@KayJamal2 @joe_darko @Kamsi_10 yes he has to exist in the middle, off ball movement is probably mbappe's worst quality",
+        "likes": 16,
+        "tags": "TEXT"
+      },
+      {
+        "text": "ppl asking about the anime\n\nits the best kind of slop, i guess ?",
+        "likes": 21,
+        "tags": "TEXT"
+      },
+      {
+        "text": "id totally rip a pack with chainsmoker cat https://t.co/9gsAwyI1Hs",
+        "likes": 886,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@ThaEuropeanLad totti esque",
+        "likes": 11,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@AwesomezeRkaz yah, its making me wana rewatch wonder egg",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@xxbttbxx but still overall its better than this anime tho lmeow",
+        "likes": 2,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@xxbttbxx too cheesy",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "watched another world, 6.5/10\n\nthis one reminded me of wonder egg priority a lot, so am a fan\n\nthese type of anime tend to have very shit plot but.. p",
+        "likes": 110,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@citrini my nmeow said ath\n\nsend it https://t.co/ab3hgt4oVN",
+        "likes": 103,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@feviknight wow fevi banger",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "understood 0 words, longed more",
+        "likes": 459,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@trading_axe just 1 band? we need a rate cut",
+        "likes": 37,
+        "tags": "TEXT"
+      },
+      {
+        "text": "gmeow my nmeows https://t.co/y28ggkxl4K",
+        "likes": 788,
+        "tags": "TEXT"
+      },
+      {
+        "text": "good airport hotels are low key vibe",
+        "likes": 241,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@MikeMcDonald89 this is like only seen before in movies",
+        "likes": 65,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "TheFlowHorse",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@Evan_ss6 Yes. I think software and bio cools again for semis to run into year end.",
+        "likes": 9,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@orangie https://t.co/whfAz6f7UP",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Excellent thread. Also for all the discretionary retail traders following, this is one reason intentional screen time matters. If you aren\u2019t being fed",
+        "likes": 61,
+        "tags": "FLOW"
+      },
+      {
+        "text": "New post tonight at 9pm ET.\n\nhttps://t.co/3qUgMbKPCJ",
+        "likes": 13,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Did you follow the plan?\n\nzcash:native is the new Bitcoin.",
+        "likes": 204,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@OnlyCapital Left curve style, right tail returns",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@crypto_bobby I totally agree, still though HYPE or any other similar name won't match the convex returns found in some of the dumb shitters.\n\n(Said a",
+        "likes": 6,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Every cycle has a \u201csmart\u201d asset to be long: real use case, strong fundamentals, holds up in the bear, sticky capital. \n\nEveryone will tell you this is",
+        "likes": 120,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@0xMarcB You know what doesn't need time off? An army of AI powered robots.",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheSpeculator0 Also, this is somewhat unclear, because you said if they can make 500k trading essentially they should work for someone else. \n\nAll of",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I think the point is if that person transitioned further away from trading, and could make money for a fraction of the effort but still in the same fi",
+        "likes": 2,
+        "tags": "FLOW"
+      },
+      {
+        "text": "I started using Open AI's Astra.\n\nAre we ready for AI to continuously improve the way it is?",
+        "likes": 69,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheSpeculator0 What happens if you clear over 7 figures a year but don't want to ever go back to trading for someone else again and want to be able t",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@macrocephalopod @TheOneLanceB Then that is fair and consistent. \ud83e\udd1d",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Another masterclass in quant ragebait started a war today. \n\nAre successful traders allowed to earn money from anything besides trading, or does a sec",
+        "likes": 142,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I thank God for everything because I have felt tapped into him before and all things come through him, but I am not sure he cares about my FOMO accoun",
+        "likes": 105,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@zz_beck Bruh. The reason why Wall Street is not here pillaging is because the reward is too small, they are capacity constrained. If they brought the",
+        "likes": 2,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@icobeast Jesus it is painful to read but also just so fucking funny.",
+        "likes": 3,
+        "tags": "TEXT"
+      },
+      {
+        "text": "Some of the most confidently stupid takes I have seen in years. This is bull market energy though so I won\u2019t argue with it lmao",
+        "likes": 68,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@theunipcs He is him. https://t.co/TTerTGaOuy",
+        "likes": 18,
+        "tags": "TEXT"
+      }
+    ]
+  },
+  {
+    "handle": "macrocephalopod",
+    "tweets": 20,
+    "signals": [
+      {
+        "text": "@TheFlowHorse @TheOneLanceB No \u2014 there are people who I like as a person despite the fact that they sell a trading course. That\u2019s all there is to it. ",
+        "likes": 11,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@LepoulpePoulpo @AgustinLebron3 @TheOneLanceB I wouldn\u2019t have lost the bet using Agustin\u2019s numbers either.",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "I agree the P&L bar is lower for a solo trader. We should adjust for payout, so an institutional PM who is paid 20% of P&L should have a bar which is ",
+        "likes": 20,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@matteo_febreeze Cem",
+        "likes": 0,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@uihxah There\u2019s definitely a correlation between being a good basketball player and being a good basketball coach. But basketball is different from tr",
+        "likes": 4,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@00jbam With a very small number of exceptions, the people selling trading courses or endlessly doing the rounds on podcasts are not actually any good",
+        "likes": 10,
+        "tags": "FLOW"
+      },
+      {
+        "text": "This is extremely basic stuff. The reason I didn\u2019t mention percentage returns is because you can use leverage to choose your risk level. So 15% @ 5% v",
+        "likes": 20,
+        "tags": "LEVELS|REGIME"
+      },
+      {
+        "text": "@JonCaguama @TheOneLanceB I live in the reality where I can trade for a living without needing to sell a course or a substack to make ends meet.",
+        "likes": 7,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@PAClearning @TheOneLanceB On a small book (eg the kind that is generating $15mm/year) it\u2019s not that hard to achieve a Sharpe over 3. I agree it\u2019s har",
+        "likes": 5,
+        "tags": "LEVELS|MICRO"
+      },
+      {
+        "text": "@petespetes @TheOneLanceB As an institutional trader/PM, yes I\u2019d say that person is about halfway to being considered a successful/great trader. As I ",
+        "likes": 10,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@Rates_Trader @TheOneLanceB Yeah this is reasonable. I\u2019d definitely accept lower Sharpe and higher PnL, and 75mm/year at Sharpe 1.5 sustained over fou",
+        "likes": 4,
+        "tags": "MICRO"
+      },
+      {
+        "text": "@sean91237 @TheOneLanceB Yes, it would pay you around $3m/year. I clearly said I would accept higher pnl at lower Sharpe (I\u2019d also accept lower Sharpe",
+        "likes": 6,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "We\u2019re not talking about someone who is just about able to quit their day job and make a living trading. Obviously you wouldn\u2019t buy a course from such ",
+        "likes": 12,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "I think truly exceptional people can do this. Obviously most people aren\u2019t exceptional, and the exceptional people would be able to earn much more if ",
+        "likes": 15,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@Trader_BLF @TheOneLanceB Let\u2019s say $25-50m notional capital allocation (which would be 30-60% annualized return at 10-20% volatility, assuming a Shar",
+        "likes": 12,
+        "tags": "REGIME"
+      },
+      {
+        "text": "I shouldn\u2019t need to point this out, but $250k/year is significantly less than you can make as a *first year junior trader* at a good prop firm. Your d",
+        "likes": 83,
+        "tags": "FLOW"
+      },
+      {
+        "text": "@TheOneLanceB I agree that the P&amp;L bar should be lower for an independent trader. A pod shop PM takes home maybe 20% of their PnL, so $3m/year wit",
+        "likes": 21,
+        "tags": "SIGNAL"
+      },
+      {
+        "text": "@TheOneLanceB If you\u2019re a PM at a decent pod shop and making materially less than that with a low sharpe (sub-2) then you\u2019re eventually getting fired ",
+        "likes": 127,
+        "tags": "TEXT"
+      },
+      {
+        "text": "@TheOneLanceB Sorry, I responded before I saw your reply \u2014 but we\u2019re pretty far apart. https://t.co/x3vXFUqenE",
+        "likes": 5,
+        "tags": "TEXT"
+      },
+      {
+        "text": "A good trader can generate high $ returns and high risk-adjusted returns, consistently over a good chunk of time. So I\u2019d propose something like, over ",
+        "likes": 168,
+        "tags": "SIGNAL"
+      }
+    ]
+  }
+]

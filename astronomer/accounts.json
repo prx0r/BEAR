@@ -1,0 +1,352 @@
+{
+  "signal_domains": [
+    "price_direction",
+    "order_flow",
+    "spot_perp_divergence",
+    "dealer_inventory",
+    "smart_money_positioning",
+    "liquidity",
+    "volatility",
+    "funding",
+    "basis",
+    "open_interest",
+    "liquidation_risk",
+    "market_maker_behavior",
+    "token_supply",
+    "catalyst",
+    "regime"
+  ],
+  "tiers": {
+    "tier_s": {
+      "description": "Market truth / microstructure \u2014 scrape everything",
+      "accounts": [
+        {
+          "handle": "PriorXBT",
+          "weight": 1.5,
+          "domains": {
+            "microstructure": 1.5,
+            "market_maker_flow": 1.5,
+            "directional": 1.15,
+            "macro": 0.5
+          },
+          "notes": "MM markouts, adverse selection, fee compression. Institutional-grade."
+        },
+        {
+          "handle": "Husslin_",
+          "weight": 1.48,
+          "domains": {
+            "dealer_positioning": 1.5,
+            "perp_flow": 1.45,
+            "directional": 1.3
+          },
+          "notes": "Ex-TradFi MM positioning, perp book inventory."
+        },
+        {
+          "handle": "exitpumpBTC",
+          "weight": 1.47,
+          "domains": {
+            "order_flow": 1.5,
+            "btc_directional": 1.45,
+            "levels": 1.4,
+            "fundamentals": 0.6
+          },
+          "notes": "CVD, OI, Coinbase walls, AVWAP/RVWAP. Best pure directional flow feed."
+        },
+        {
+          "handle": "TheSpeculator0",
+          "weight": 1.45,
+          "domains": {
+            "derivatives": 1.5,
+            "manipulation": 1.45,
+            "regime": 1.4
+          },
+          "notes": "BTC binary manipulation, Binance oracle, TWAP mechanics."
+        },
+        {
+          "handle": "liquiditygoblin",
+          "weight": 1.44,
+          "domains": {
+            "liquidity": 1.5,
+            "stat_arb": 1.45,
+            "regime": 1.4
+          },
+          "notes": "HFT/stat-arb/MEV. Where edges fail."
+        },
+        {
+          "handle": "HangukQuant",
+          "weight": 1.42,
+          "domains": {
+            "market_making": 1.5,
+            "prediction_markets": 1.45,
+            "regime": 1.3
+          },
+          "notes": "Crypto MFT/HFT, Polymarket systems."
+        }
+      ]
+    },
+    "tier_a": {
+      "description": "Flow / orderflow / execution",
+      "accounts": [
+        {
+          "handle": "52kskew",
+          "weight": 1.4,
+          "domains": {
+            "order_flow": 1.5,
+            "levels": 1.4,
+            "directional": 1.35
+          },
+          "notes": "Spot selling, bid depth, LTF balance. Machine-extractable."
+        },
+        {
+          "handle": "0xLoris",
+          "weight": 1.39,
+          "domains": {
+            "market_maker_intel": 1.5,
+            "onchain_positioning": 1.45,
+            "directional": 0.8
+          },
+          "notes": "Wintermute wallet forensics, 1732 resting orders."
+        },
+        {
+          "handle": "skyquake_1",
+          "weight": 1.38,
+          "domains": {
+            "basis": 1.5,
+            "funding": 1.45,
+            "regime": 1.4
+          },
+          "notes": "CME basis vs ETF flow, perp funding mechanics."
+        },
+        {
+          "handle": "crypto_hades",
+          "weight": 1.36,
+          "domains": {
+            "market_making": 1.5,
+            "execution": 1.45,
+            "directional": 0.9
+          },
+          "notes": "HFT postmortems, maker/taker construction."
+        },
+        {
+          "handle": "chameleon_jeff",
+          "weight": 1.35,
+          "domains": {
+            "hft_predicts_mft": 1.5,
+            "hyperliquid_micro": 1.45,
+            "regime": 1.3
+          },
+          "notes": "HFT PnL predicts medium-freq movement."
+        },
+        {
+          "handle": "0xdoug",
+          "weight": 1.34,
+          "domains": {
+            "liquidations": 1.5,
+            "exchange_plumbing": 1.45,
+            "regime": 1.3
+          },
+          "notes": "ADL mechanics, billion-dollar liquidation scenarios."
+        },
+        {
+          "handle": "quant_arb",
+          "weight": 1.32,
+          "domains": {
+            "stat_arb": 1.5,
+            "fair_value": 1.45,
+            "regime": 1.3
+          },
+          "notes": "Fair-value formation, pairs, latency, uncompetitive niches."
+        }
+      ]
+    },
+    "tier_b": {
+      "description": "Systematic / regime / research",
+      "accounts": [
+        {
+          "handle": "0xLightcycle",
+          "weight": 1.3,
+          "domains": {
+            "carry": 1.5,
+            "systematic": 1.45,
+            "regime": 1.4
+          },
+          "notes": "Funding carry, strategy diversification."
+        },
+        {
+          "handle": "DeFiSquared",
+          "weight": 1.2,
+          "domains": {
+            "fundamentals": 1.5,
+            "arbitrage": 1.45,
+            "token_mechanics": 1.4
+          },
+          "notes": "High signal \u2014 token unlocks, governance, flow, fundamentals"
+        },
+        {
+          "handle": "thiccyth0t",
+          "weight": 1.27,
+          "domains": {
+            "fund_flow": 1.5,
+            "positioning": 1.45,
+            "directional": 1.3
+          },
+          "notes": "Fund-trader perspective, thesis revisions."
+        },
+        {
+          "handle": "fiddybps1",
+          "weight": 1.26,
+          "domains": {
+            "options": 1.5,
+            "volatility": 1.45,
+            "derivatives_plumbing": 1.4
+          },
+          "notes": "Vol premium, blocks, ADL design."
+        },
+        {
+          "handle": "CL207",
+          "weight": 1.24,
+          "domains": {
+            "desk_intuition": 1.5,
+            "funding": 1.4,
+            "dislocations": 1.45
+          },
+          "notes": "Contract specs, funding, weird dislocations. Filter by topic."
+        },
+        {
+          "handle": "TheFlowHorse",
+          "weight": 1.22,
+          "domains": {
+            "flow": 1.5,
+            "positioning": 1.45,
+            "momentum": 1.4
+          },
+          "notes": "Prop-style price/flow, forced repricing."
+        },
+        {
+          "handle": "macrocephalopod",
+          "weight": 1.2,
+          "domains": {
+            "regime": 1.5,
+            "quant_validation": 1.45,
+            "directional": 0.7
+          },
+          "notes": "Systematic trend, execution realism. Meta-model input."
+        }
+      ]
+    },
+    "tier_directional": {
+      "description": "Original directional forecasters",
+      "accounts": [
+        {
+          "handle": "Trader_XO",
+          "weight": 1.2,
+          "domains": {
+            "levels": 1.5,
+            "directional": 1.4,
+            "macro": 1.3
+          }
+        },
+        {
+          "handle": "Timeless_Crypto",
+          "weight": 1.2,
+          "domains": {
+            "conviction": 1.5,
+            "levels": 1.4,
+            "contrarian": 1.45
+          }
+        },
+        {
+          "handle": "lBattleRhino",
+          "weight": 1.1,
+          "domains": {
+            "alt_strength": 1.5,
+            "directional": 1.3
+          }
+        },
+        {
+          "handle": "astronomer_zero",
+          "weight": 1.0,
+          "domains": {
+            "multi_tf": 1.5,
+            "levels": 1.4,
+            "directional": 1.3
+          }
+        },
+        {
+          "handle": "CryptoBheem",
+          "weight": 1.0,
+          "domains": {
+            "levels": 1.5,
+            "position_sizing": 1.4,
+            "directional": 1.3
+          }
+        },
+        {
+          "handle": "GreatMattsby",
+          "weight": 1.0,
+          "domains": {
+            "technical": 1.5,
+            "levels": 1.3
+          }
+        },
+        {
+          "handle": "calvintsaikm",
+          "weight": 1.0,
+          "domains": {
+            "levels": 1.5,
+            "systematic": 1.4
+          }
+        }
+      ]
+    },
+    "tier_discovery": {
+      "description": "Binance positions only \u2014 not X signals",
+      "accounts": [
+        {
+          "handle": "0xPickleCati",
+          "weight": 0.1
+        },
+        {
+          "handle": "Shangus_Capital",
+          "weight": 0.1
+        },
+        {
+          "handle": "BitcoinLiangGe",
+          "weight": 0.1
+        },
+        {
+          "handle": "0xMax98",
+          "weight": 0.1
+        },
+        {
+          "handle": "PopcornKirby",
+          "weight": 0.1
+        },
+        {
+          "handle": "haemulcoin",
+          "weight": 0.1
+        },
+        {
+          "handle": "0xJe3x",
+          "weight": 0.1
+        },
+        {
+          "handle": "MandangoCrypto",
+          "weight": 0.1
+        },
+        {
+          "handle": "btc66c",
+          "weight": 0.1
+        },
+        {
+          "handle": "zhngq318294",
+          "weight": 0.1
+        },
+        {
+          "handle": "ApexMirror",
+          "weight": 0.1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "handle": "CryptoBheem",
+  "tweets": [
+    {
+      "type": "tweet",
+      "id": "2096597455727198243",
+      "url": "https://x.com/CryptoBheem/status/2096597455727198243",
+      "twitterUrl": "https://twitter.com/CryptoBheem/status/2096597455727198243",
+      "text": "$SOL\n\nInitial target hit\ud83e\udd1d extending further to $130 area. https://t.co/7VnphqRqdN",
+      "source": "Twitter for iPhone",
+      "retweetCount": 3,
+      "replyCount": 0,
+      "likeCount": 119,
+      "quoteCount": 1,
+      "viewCount": 18775,
+      "createdAt": "Sun Sep 06 13:52:40 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 10,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2096597455727198243",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HRicRbkaQAAUS6Z.jpg",
+          "expanded_url": "https://x.com/CryptoBheem/status/2096597455727198243/photo/1",
+          "video_url": null
+        }
+      ],
+      "inReplyToUserId": null,
+      "author": {
+        "type": "user",
+        "userName": "CryptoBheem",
+        "url": "https://x.com/CryptoBheem",
+        "id": "1399033636691849222",
+        "name": "Ahmed",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1986047240448917504/EAdi2C2s_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1399033636691849222/1721904054",
+        "description": "Retired | Quantitative Insights \u2022 Macro Sentiment | Intersection of Liquidity Cycles",
+        "location": "",
+        "followers": 72583,
+        "following": 7,
+        "createdAt": "Sun May 30 16:03:17 +0000 2021",
+        "canDm": false
+      },
+      "quoted_tweet": {
+        "id": "2062829045407162720",
+        "text": "$SOL \ud83d\udd1c https://t.co/0qx5QtRPyt",
+        "user": {
+          "name": "Ahmed",
+          "screen_name": "CryptoBheem"
+        }
+      },
+      "retweeted_tweet": null
+    }
+  ],
+  "fetched_at": "2026-09-07T00:43:36.377086+00:00"
+}

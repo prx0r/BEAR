@@ -1,0 +1,151 @@
+[
+  {
+    "direction": "LONG",
+    "asset": "BTC",
+    "timeframe": "daily",
+    "accounts_aligned": [
+      "0xMax98",
+      "0xPickleCati",
+      "ApexMirror",
+      "CryptoBheem",
+      "GreatMattsby",
+      "MandangoCrypto",
+      "Oldman__Crypto",
+      "Timeless_Crypto",
+      "Trader_XO",
+      "calvintsaikm",
+      "eliz883",
+      "lBattleRhino"
+    ],
+    "total_weight": 47.75,
+    "signal_count": 30,
+    "avg_confidence": 0.37,
+    "strength": "strong"
+  },
+  {
+    "direction": "SHORT",
+    "asset": "BTC",
+    "timeframe": "daily",
+    "accounts_aligned": [
+      "0xPickleCati",
+      "CryptoBheem",
+      "MandangoCrypto",
+      "Oldman__Crypto",
+      "Shangus_Capital",
+      "Timeless_Crypto",
+      "Trader_XO",
+      "astronomer_zero",
+      "calvintsaikm",
+      "lBattleRhino"
+    ],
+    "total_weight": 30.25,
+    "signal_count": 17,
+    "avg_confidence": 0.4117647058823529,
+    "strength": "strong"
+  },
+  {
+    "direction": "LONG",
+    "asset": "ETH",
+    "timeframe": "daily",
+    "accounts_aligned": [
+      "0xPickleCati",
+      "GreatMattsby",
+      "MandangoCrypto",
+      "Oldman__Crypto"
+    ],
+    "total_weight": 11.75,
+    "signal_count": 5,
+    "avg_confidence": 0.5399999999999999,
+    "strength": "strong"
+  },
+  {
+    "direction": "LONG",
+    "asset": "SOL",
+    "timeframe": "daily",
+    "accounts_aligned": [
+      "Oldman__Crypto"
+    ],
+    "total_weight": 4.5,
+    "signal_count": 2,
+    "avg_confidence": 0.6,
+    "strength": "strong"
+  },
+  {
+    "direction": "LONG",
+    "asset": "BTC",
+    "timeframe": "30m",
+    "accounts_aligned": [
+      "astronomer_zero"
+    ],
+    "total_weight": 4.0,
+    "signal_count": 4,
+    "avg_confidence": 0.8,
+    "strength": "strong"
+  },
+  {
+    "direction": "LONG",
+    "asset": "BTC",
+    "timeframe": "weekly",
+    "accounts_aligned": [
+      "GreatMattsby",
+      "Timeless_Crypto",
+      "Trader_XO",
+      "astronomer_zero"
+    ],
+    "total_weight": 3.25,
+    "signal_count": 4,
+    "avg_confidence": 0.7,
+    "strength": "strong"
+  },
+  {
+    "direction": "SHORT",
+    "asset": "ETH",
+    "timeframe": "daily",
+    "accounts_aligned": [
+      "MandangoCrypto",
+      "lBattleRhino"
+    ],
+    "total_weight": 2.5,
+    "signal_count": 2,
+    "avg_confidence": 0.44999999999999996,
+    "strength": "moderate"
+  },
+  {
+    "direction": "LONG",
+    "asset": "BTC",
+    "timeframe": "monthly",
+    "accounts_aligned": [
+      "GreatMattsby",
+      "astronomer_zero"
+    ],
+    "total_weight": 2.0,
+    "signal_count": 2,
+    "avg_confidence": 0.65,
+    "strength": "weak"
+  },
+  {
+    "direction": "SHORT",
+    "asset": "BTC",
+    "timeframe": "weekly",
+    "accounts_aligned": [
+      "Trader_XO",
+      "astronomer_zero"
+    ],
+    "total_weight": 1.25,
+    "signal_count": 2,
+    "avg_confidence": 0.44999999999999996,
+    "strength": "weak"
+  },
+  {
+    "direction": "SHORT",
+    "asset": "BTC",
+    "timeframe": "monthly",
+    "accounts_aligned": [
+      "astronomer_zero"
+    ],
+    "total_weight": 2.0,
+    "signal_count": 2,
+    "avg_confidence": 0.65,
+    "strength": "none"
+  }
+]
