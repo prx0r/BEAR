@@ -1,0 +1,11 @@
+{
+  "handle": "0xnobi",
+  "author_id": "1396918823287144449",
+  "month": "2026-08",
+  "total_tweets": 400,
+  "meme_events": 10,
+  "actionable_events": 2,
+  "unique_symbols": 7,
+  "fetched_at": "2026-09-07",
+  "extraction_version": "meme_v1"
+}
