@@ -1,0 +1,2065 @@
+[
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094514116949856410",
+    "text": "bitcoin:native Look at this monthly candle. It looks mega bullish. If you think it doesn't, then you are either retarded or sidelined, wishing for market to dump so you can feel better being sidelined",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094503256948936760",
+    "text": "$ZEC looks good",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094492149639233774",
+    "text": "bitcoin:native Stack of bids on Binance perps orderbooks is still sitting there, while ask side is pretty thin. Looks bullish to me. https://t.co/Tw2MvKOduI",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094429370496483610",
+    "text": "bitcoin:native I actually think the odds of hitting $100K this year are much higher than most people think.\n\nPrice is simply consolidating before the next leg up, this is exactly how it\u2019s supposed to ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094185652439110088",
+    "text": "Crypto feels completely different this cycle.\n\nNobody\u2019s levering up on alts chasing the next breakout. \n\nThis time, almost all the attention and volume seems to be on-chain, concentrated around a hand",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094131917561974864",
+    "text": "Feel free to send me coins. https://t.co/WxZNnWgScq",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094100845218430987",
+    "text": "Couple of longs I shared inside the Discord, both in profits. If you want to trade these markets with extra edge and real size, the VIP membership is free for anyone who buys a @breakoutprop account w",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094083729618604542",
+    "text": "bitcoin:native 79k is a key resistance level here and ask side above it is thin. Compressed price action here, reclaim the level and hopefully pump higher is very likely scenario. https://t.co/0EMrHM9",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2094042123901222987",
+    "text": "bitcoin:native Shorts getting flushed on this fine Sunday. Key thing to watch: does OI climb back after the reset? If it does while price keeps grinding up, that's the setup for another leg of short l",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "tweet_id": "2093812176960065595",
+    "text": "bitcoin:native Open Interest isn't even overheated. Looks healthy. https://t.co/D2wnkiet5g",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2093360532795408450",
+    "text": "waiting months for a breakout just to sell on the first day of escape velocity?\n\nbear market has corrupted you, anon https://t.co/BWMmECgUOl",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2092917529597321394",
+    "text": "This is *not* how you use AI in trading. People actually doing this will get rekt.\n\nAI has made backtesting fast and accessible to anyone with data. What it has not removed is your need to judge the o",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2092880975885725779",
+    "text": "What I want as a trader is the ability to find out I'm wrong. To progress in trading (or any intellectual domain), you must formulate your beliefs in a way that makes them explicitly falsifiable. By i",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2092277448868028822",
+    "text": "Whenever someone shows you the total altcoin market cap, you should have in mind what the equal-weight version looks like. The *aggregate* alt market can look alive and well while the *average* alt ho",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2091745439666090394",
+    "text": "Sidelinooors didn\u2019t buy the bottom because it seemed too risky, then didn\u2019t buy the trend because it seemed too risky to be the top. Sidelinooors didn\u2019t buy the breakout because it could be a fakeout,",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2091539654927401235",
+    "text": "scams-pump-the-hardest.jpg https://t.co/IT73ePiZw1",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2091034462561706287",
+    "text": "Tops and bottoms are arbitrary reference points with little relevance to sound strategies. Most money is made in between. You don\u2019t have to care about them at all. You shouldn\u2019t.\n\nYou can be wrong abo",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090869754663743802",
+    "text": "thank you, claude https://t.co/ikTDzVrHlw",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090869519602548927",
+    "text": "Hey Claude, I\u2019m on my phone rn. Please find BTC price data since January 2019 and mark every 15% pump over three days on a price chart, shaded by bull and bear regime. One figure only, log price axis.",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090853087716004153",
+    "text": "what\u2019s your favourite motivational quote? https://t.co/14u4SBHl8U",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090744768519131274",
+    "text": "For the most part, the word \"lagging\" is doing dishonest work. People use it to reframe underperformance as opportunity, as if there's a queue and your bag is waiting for its turn. In most cases there",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090491991201062925",
+    "text": "Targets put a ceiling on the exact thing you came here for. You showed up to this market because it produces enormous trends. And then your first instinct is to cap your upside at some arbitrary level",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090485518840516807",
+    "text": "Most trends fail. So your job is making sure you\u2019re exposed as long as possible to the ones that don\u2019t. Targets are *not* useful.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090480038856810682",
+    "text": "99% of people come to crypto for one reason: trend. They want to be in the shitcoin while it\u2019s running. Then the first green candle shows up and mfers start calling tops.\n\nGrow some balls and take the",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090350057795027036",
+    "text": "Refusing to buy highs means only ever buying things that aren't trending.\n\nNobody buys the top on purpose, but everyone who caught the move risked it, innit?",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090161545212743716",
+    "text": "probably the most insane headline I\u2019ve read in my entire life\n\nhyperliquid",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2090117314880438634",
+    "text": "that was it, you missed the generational golden bullrun bottom, it's impossible to get in now, it's up too much, you are late, it's over man, try next cycle",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2089738702918390138",
+    "text": "AI models are trained on whatever exists about trading and the truth is that most of that material is dogshit. Most of it was never even tested and the strategies that were tested usually turn out to ",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2087799543425335537",
+    "text": "The whole plumbing meme is quite funny because it's one of the best analogies for what you should be doing in markets.\n\nThe plumber gets paid precisely because the job is the one nobody wants to touch",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2085299985990504696",
+    "text": "This is also why I'm barely on socials at the moment. A lot of the people who are here constantly seem to be waiting for a dynamic that only exists in a bull market. \n\nThese slow phases are the best t",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "0xaporia",
+    "tweet_id": "2085295894711152848",
+    "text": "Looking at Bitcoin right now, purely from intuition, it feels a lot like the summer of 2022. Price grinding sideways, no real direction, and almost nobody talking about crypto. Discretionary-wise, a l",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2094092759166861812",
+    "text": "Ran a deep structural study on Bitcoin across multiple market cycles from 2017 through the post ETF era. Anything beyond that is irrelevant and i'd argue you could even do this from 2019 onwards but I",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2093654571440845033",
+    "text": "I see a lot of people refrencing our prior cycle bottom as it is the closest point of bias we can anchor to and it might make sense from a microstructure perspective to compare those markets (far more",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2093262414988873783",
+    "text": "If we are entering a new regime defined by short pull backs and relentless bullish bid, then i suspect that forward leaning structure (yellow) to be staunchly defended \n\nThe most you get is a love tap",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2093254674195288304",
+    "text": "Looks like spot sellers continue to defend this zone\n\nMeanwhile we've seen the usual predatory maker tactics of pulling and placing 500-1000 bitcoin:native orders on mutliple perp venues but asks stil",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2092746864776917501",
+    "text": "GN #BTC https://t.co/h51TNN5ohT",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2092736882480173131",
+    "text": "MISSED THE BIG MOVE UP\n\nGURANTEED TO CATCH THE FLUSH\n\n74SSS COMING TO A  LIQ ENGINE NEAR U \n\n#btc",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2091868489657073974",
+    "text": "My modus operandi after an explosive up tick in vol. within the confides of a larger range is to scalp the rotations \n\nWe are going to see a lot of two way whipsaw from here\n\nShorts will get eaten, lo",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2091756631344439616",
+    "text": "Easy to mistake local velocity for macro regime change.\n\nLooking back at prior bear cycles, sharp >= 15% 3-day rallies beneath the 365-day VWAP are standard relief dynamics before structural bases for",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2091010650344759577",
+    "text": "#BTC update\n\nFirst and foremost I will take my W for being on the money this week regarding a big move in motion. It happened smack bang where I thought it would\n\nI was wrong on direction and I was aw",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2089621631358439523",
+    "text": "Big shoutout to @Bitbase_Ex for making this happen \n\nIt has been a minute since i've done a market update so I apologise if im a bit rusty\n\nOgs from past know I used to have a larger channel that got ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2089341976806408551",
+    "text": "Will articulate my thoughts in a vid in coming days \n\nIt has been a minute but very seldom do I see an opportunity like this tee up in the broad market and I want to get the thoughts out and fire up t",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2089340786567717056",
+    "text": "Im Long Vol. this week \n\nOpex expiration \n\n$VIX completely suppressed \n\nRecord low volume in the $SPY \n\n$QQQ unable to get higher highs \n\n$BTC meandering in a stale range while coiling and soaking pos",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2089339178949767279",
+    "text": "I don't know your risk tolerance account size and ability to navigate lower time frame and manage a position actively \n\nAll I can tell you is we are staring down a precipise of opportunity. My balls a",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2088200155526996309",
+    "text": "Just so you understand #BTC does not need any approval from the broad market to put in a big move\n\nWe've more or less done our own thing for the better part of the year\n\nThe Great Decoupling is Upon U",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2088041211357528085",
+    "text": "You have to have this kind of energy everytime you enter the pit \n\nYes be true to expectation and system\n\nBe asset agnostic\n\nBut most importantly have a delusional underbelly of optomism everytime you",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087956097076277554",
+    "text": "The important thing to note: NOT ONE LONG TAKEN\nAND COMPOUNDED SHORTS\n\nIn math we trust\n\n#BTC",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087952798809805216",
+    "text": "The bot is super strict on criteria but it is allowed to compound\n\nrisks 1.5% per trade but has discretion to attack with reason\n\nShe has been firing clips lol\n\nLet's see\n\n#BTC https://t.co/cFXsArUATj",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087944332267430213",
+    "text": "M/O longers soon bitcoin:native https://t.co/zy7FVuWnn8",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087766791426834601",
+    "text": "I am not going to dunk it in your face after the move happens \n\nI am saying that we are now in a time of great opportunity to those that get this right \n\nYou can farm volatility here which is what you",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087540356619358225",
+    "text": "We are going to see a massive wipeout\n\nMy bias remains the same\n\nStay safe bros\n\n$BTC is about to be one way traffic\n\nSee you in the mid to low 50s",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087509323865895420",
+    "text": "Happy CPI to those that celebrate it!\n\nIt isn't profit if it isn't locked in! \n\nEnjoy! https://t.co/XjW1n8nn1c",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2087435931506667865",
+    "text": "Another month and another opportunity to battle it out on @Bitbase_Ex \n\nThis is the best chance for the average person to partake as it is essentially a condensed, smaller competion that levels out th",
+    "event_kind": "PROMOTION",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086954313000144938",
+    "text": "time for a mean reversion bounce https://t.co/7FOcqaTXDx",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086651740183527516",
+    "text": "A few things stand out for me\n\nWe've reached inflection point for carrying capacity of this market \n\nShorts have been tested with the continuous flury of buy side reactions around key pivots (check my",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086468254998925749",
+    "text": "Holding this during an illiquid weekend \n\nToday is the day he gets carried out \n\nI don't make the rules \n\nThe sharks smell blood and will punish as nature intended \n\n#BTC https://t.co/X33DMPqnSc",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086378284099756162",
+    "text": "Far more illiquid these days as we continue in our summer doldrum \n\nBut I will say this is the environment where an outsized phat finger can cause a cascade which manifests into a greater trend and br",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086362965067116811",
+    "text": "21 FRIDAYS LEFT IN THE YEAR\nIT IS TIME TO LEVEL UP MY BROTHERS AND BAND TOGETHER\nWE ARE ABOUT TO MAKE AN INSANE AMOUNT OF MONEY\nTIME TO RISK IT FOR THE BISCUIT\nPUT EVERYTHING ASIDE AND LOCK IN\nYOUR TI",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086051306783838535",
+    "text": "#BTC is super coiled here \n\nWe are getting into a cradle zone pinched between value \n\nLooks decent as trading above the 30d and 7-d\n\nDownward sloping 90 d approaching fast \n\nWe should meet soon \n\nA la",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086024590019399765",
+    "text": "Leveraged traders are in for an eventful week ahead! \n\nApprox 1 decillion in positions are about to be wiped out!\n\nYes, a decillion.\n\nAHHH!\n\n#BTC https://t.co/UHoTnvjSE3",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086020057734205562",
+    "text": "While speculative money is chasing memory, qtum and all that jazz, $SLV has been meandering sideways for almost 200 days \n\nIt is abunduntly clear the great rotation back is likely closer than most her",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086017989682323962",
+    "text": "Just added this to my long term book \n\nNumbers make sense for a buisness of this scale and i think this is undervalued based on current fundamentals \n\nThe volume says all I need to know\n\nSee you in 6 ",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2086015322994143398",
+    "text": "Crypto usually forces a choice: full self-custody with multiple iterative steps and responsbilities every time you want to trade, or convenience on a platform at the cost of centralised control.\n\n@One",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2085686037699842391",
+    "text": "Obviously no idea what this means for this trader, could very well just be chump change for him \n\nHowever, i can't understand how one would simply not take a hint when price obviously fails to break t",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2085681735946166360",
+    "text": "I understand lot of supply has come onto market but there also happens to be a lot of short positioning in market \n\nThis is very volatile and selling has been quite aggressive. I therefore think takin",
+    "event_kind": "PROMOTION",
+    "direction": null
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2085679018959876326",
+    "text": "Pretty choppy week this \n\nLooks to me that $BTC is soaking positions on both sides of the book but I think we have unfinished buisness higher \n\nDownward slopping rolling 90 likely gets tagged soon \n\nI",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2084845273621131411",
+    "text": "I obviously could be super wrong here but I am still pretty damn confident despite this apathetic pa that we will get a violent break soon and a meaningful uptick in volatility. \n\nPersonally think the",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2084487891401724339",
+    "text": "If you wondering why there is very little momentum to both the upside and downside all you need to do is take a snapshot of the books across the board \n\nWe keep getting wedged between blocks of large ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "tweet_id": "2084165378201006312",
+    "text": "New month new opportunities \n\n63650 is last months vwap where we danced around it like a cat on a hot tin roof \n\nLook how responsive buyers stepped in every single time to bid it at the plate \n\nImmiad",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2094490804115181721",
+    "text": "Starting the $200-2000 challenge in partnership with ByBit. This challenge will be locked to **ByBit affiliates** starting on September 5th.\n\nPreviously completed challenges\ud83d\udd3d\n\ud83d\udc49500-5k (01/2023)\n\ud83d\udc49500-10",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2092498045795787260",
+    "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 150 BTC\nrPNL: +$845,000\nuPNL: +$2,670,000\n\nRemainder of position will be closed in the 86-90k region (exact figure depends on LTF PA development ",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2092165203094032544",
+    "text": "$BTC HTF:\n\n86-90k res- full sell zone here for me. https://t.co/CCzzYUrJAX",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2091824173001896307",
+    "text": "$SOL \u2705 https://t.co/34l0isc8Km",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "SOL"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2091046021073981622",
+    "text": "say less https://t.co/R2beW4yOrf",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090725250388635959",
+    "text": "$ETH \n\n56% up / 2900 it is\ud83e\udd1d https://t.co/bnLFMLuka9",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090718600567083151",
+    "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 200 BTC\nuPNL: +$3,220,000\n\nWill take some profit here meow https://t.co/lv0d20Yids",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090461007487643794",
+    "text": "take some profit &amp; have fun\ud83d\ude3c\n\nno new plan until next week https://t.co/xb0PFcGX6P",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090383394723217889",
+    "text": "$HYPE update:\n\n44% up meow https://t.co/tKtyWNdVJs",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "HYPE"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090352115743109430",
+    "text": "meow meow https://t.co/2ThKmA2uiH",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2090351691241808290",
+    "text": "https://t.co/87GrmbacEd",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2087011441480237121",
+    "text": "could\u2019ve bought a 2022 corvette instead &amp; still saved money\n\n but guess what\n\nim a crypto bro i must make retarted decisions in life\ud83e\udeea https://t.co/hDKCPWhceu",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2087005822471778471",
+    "text": "$BTC HTF:\n\nThe weekly breaker needs to be flipped to confirm bottom (weekly close above 68k\n\nThe longer it chops below 66k, the more chances to sweep 60k first (more bids here for me). https://t.co/io",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2083659694015717571",
+    "text": "crypto &gt; fiat withdrawals by @RedotPay are lightning fast\ud83e\udeea https://t.co/YPx52VJDR6",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "CryptoBheem",
+    "tweet_id": "2083538118846902367",
+    "text": "$HYPE update: \n\nReached area of interest after 1.5 months\u2705\n\nStarted buying again, all the way down to a sweep of $45 region. https://t.co/vzgaEgAQyn",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "HYPE"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2093014548546560195",
+    "text": "4000 BTC 85k calls bought for 25SEP26($8.22M)\n\n2000 BTC 82k calls bought for 4SEP26($2.39M) https://t.co/6UHDm2LGxH",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2092913168154603988",
+    "text": "1/ Midweek Hyperliquid Report\n2026-08-27\n\nHyperliquid's forced flow this week ran short: $460MM of shorts were liquidated into forced buys against $295MM of longs over 7d, the bulk of it a single $322",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2092650835486372306",
+    "text": "8000 BTC long call condor for 25SEP26 expiry, built from two separate blocks at index $78.96k and $78.22k. Long the $85k-C and $100k-C, short the $90k-C and $95k-C. The long legs cost $4.06M premium p",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2092225057221136649",
+    "text": "XRP open interest on Deribit rose ~27% over the past 24 hours, driven almost entirely by a short-straddle strategy concentrated in two strikes.\n\nThe lead trade: a 5M XRP short straddle, $1.5 strike, 2",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2091905983010189489",
+    "text": "2000 BTC 82k calls bought for 4SEP26 across 2 blocks of 1000 BTC each, $2.9M premium. Spot $78.8-78.9K at execution. IV printed 48.5-48.8%. https://t.co/VLomuRb8Tl",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2091838283558846599",
+    "text": "Week ahead: https://t.co/q9qz9F4TeT",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2091838124594720818",
+    "text": "https://t.co/NeH5zvhLs5",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090416550511587412",
+    "text": "2M XRP long straddle opened at the 1.16 strike for 28AUG26, $62k premium. IV 50.1% on the put and 41.2% on the call. https://t.co/J0xqgxSZVO",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090386107661946943",
+    "text": "Impressive short-squeeze on Hyperliquid. https://t.co/5BYWSOmZjK",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090371876983918862",
+    "text": "Someone on Hyperliquid only got 57% of their $51MM long ethereum:native TWAP filled. RIP. https://t.co/85DpAn2HNW",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090370761215111261",
+    "text": "1/ Midweek Hyperliquid Report\n2026-08-20\n\nNine of the twelve most-churned instruments on Hyperliquid by turnover are @tradexyz HIP-3 perps, and the leading cluster is a memory-chip complex: SNDK at 37",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "SOL"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2090368652306534746",
+    "text": "We deserve this https://t.co/6ZlSHbtOT9",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2089280039992819866",
+    "text": "Week ahead: https://t.co/adGviQlmYN",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2089279972162617431",
+    "text": "https://t.co/uhjefnZDKW",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2087867763670847701",
+    "text": "The ongoing US\u2013Iran conflict and Strait of Hormuz disruption risk continue to be a dominant story, with oil going in 2nd in liquidations on Hyperliquid in the past week. https://t.co/2Y40XhtCBL",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "laevitas1",
+    "tweet_id": "2087853685925675188",
+    "text": "ETH ACCUMULATION ON HYPERLIQUID\n\nThis week's largest TWAP fill on Hyperliquid was ethereum:native, with the  single largest TWAP being  +$47.99MM - a 36h programme completing 100%. \nETH spans 7/12 top",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2094564270721872317",
+    "text": "Heavily bidding the dips on kinetiq:native and ethereum:0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be here.\n\nThink whether we get Sideways or Shakeout September, it'll be Opulent October once we have @Ki",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2093889573709386083",
+    "text": "The same people who are criticizing @HyperliquidX buying and burning 40bps of hyperliquid:native mcap per month as \"wasteful\" or \"useless\" are going to try and convince you that bitcoin:native decreas",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2093233892102991910",
+    "text": "Caught the meat of the $2000>$2400 $ETH move, only major I'm trimming now. I think it'll continue to perform reasonably well in dollar terms (denominator trending to zero innit) but it's back to the u",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweet_id": "2092988341973319788",
+    "text": "The \"deep OTM $SOL calls\" I put on 2 months ago when $SOL was sub $70. \n\nPerps are amazing in ranging regimes, but options are the GOAT for betting on big cycle bottoms/tops. These types of trades can",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094626551933628872",
+    "text": "The Official Trump Meme Team transferred out another 11.01M solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN($26.65M) 2 hours ago.\n\nhttps://t.co/1GNw4tML6Z https://t.co/JgP9CucRRi",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094618418528080339",
+    "text": "A whale who bought 488,599 $HYPE ($17.18M) at $35 5 months ago staked all 488,599 $HYPE today and is currently sitting on a $23.7M unrealized profit.\n\nhttps://t.co/A0GRsizCKg https://t.co/q4Az1Xy4HS",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "HYPE"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094605905488949549",
+    "text": "A mysterious Ethereum whale is selling 167,855 $ETH ($408M)!\n\nThe whale received 167,855 $ETH($408M) from multiple wallets and started depositing it into exchanges.\n\nOver the past 2 days, the whale ha",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094582513096347988",
+    "text": "It seems that Tom Lee(@fundstrat)'s #Bitmine just bought another 51,000 $ETH($126M) from #FalconX and #BitGo 2 hours ago.\n\nhttps://t.co/lysw4izlK8\nhttps://t.co/tBWIHQYCeF https://t.co/jqoTLy3XO3",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094580323837481304",
+    "text": "Pump fun(@Pumpfun) sold another 132,935 $SOL ($13.75M) 9 hours ago.\n\nIn total, https://t.co/TcwYRTArT2 has sold 5,110,924 $SOL($834.3M) at an average price of $163.2.\n\nhttps://t.co/kyztoJLCjt https://",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "SOL"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094428194011333071",
+    "text": "Aug 24\u2013Aug 30, 2026 #LookonchainWeeklyReport\n\n\ud83d\udfe2 Overview\nStablecoin supply grew by $987.1M last week, DEX spot volume slipped and perp volume fell, while public companies added 4,003 BTC.\n\n\ud83d\udfe2 Stablecoi",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094427807866831157",
+    "text": "August 31 Update:\n\n#Bitcoin ETFs:\n1D NetFlow: -2,689 bitcoin:native(-$209.79M)\ud83d\udd34\n7D NetFlow: +11,724 bitcoin:native(+$914.72M)\ud83d\udfe2\n\n#Ethereum ETFs:\n1D NetFlow: +31,399 $ETH(+$76.99M)\ud83d\udfe2\n7D NetFlow: +302,035",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094418220791042250",
+    "text": "Watch out! \ud83d\udea8\n\nWhale 0xF626 is selling 102,913 $ETH($248.6M).\n\n11 hours ago, 0xF626 received 102,913 $ETH($248.6M) from multiple wallets, then deposited 2,858 $ETH($7M) into exchanges 20 minutes ago.\n\n",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094403231548162287",
+    "text": "Michael Saylor(@saylor) isn't a great trader either \u2014 always selling bitcoin:native low and buying it back high!\n\nOver the past 2 months, he sold 6,916 bitcoin:native($429.35M) at $62,081, then bought",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094398989118677052",
+    "text": "After 2 months, #Saylor bought bitcoin:native again!\n\nMichael Saylor(@saylor)'s @Strategy bought another 4,603 bitcoin:native($369.7M) at $80,318 last week!\n\nhttps://t.co/9qkhIoWvl1 https://t.co/JUnsc",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094390180094562631",
+    "text": "A wallet linked to #Cumberland withdrew 15,390 $ETH($37.66M) from #Binance an hour ago.\n\nhttps://t.co/TRkwMAxcE2 https://t.co/B2Ec1xOa7y",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094330111197938172",
+    "text": "Trader 9VQbih finally gave up after holding $SOL for a year, selling all 31,862 $SOL($3.25M) at a $2.2M loss.\n\nA year ago, he bought 30,002 $SOL($5.47M) at $182 and staked it, earning 1,860 $SOL($190K",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "SOL"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094287185717690746",
+    "text": "Bitcoin miner Metaplanet (@Metaplanet), which bought 43,000 ($3.48B) at an average price of $96,191, deposited another 2,400 ($186M) into Coinbase Prime in the past 3 hours.\n\nhttps://t.co/HGljOETBsX h",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094245869910708339",
+    "text": "Someone created a new wallet (0xD273) and spent 790 $ETH ($1.9M) to buy 5.24M ethereum:0x07f5b6823751c2e2cd4560f28af75ff887102241 6 hours ago.\n\nhttps://t.co/k5aWHIqXmD https://t.co/yozwyI3Ska",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094243510551728543",
+    "text": "Trader 0x0392 started longing $ETH 4 days ago, opening an 8x long on 45,087 $ETH($108.92M), and is currently sitting on a $3.18M unrealized loss.\n\nhttps://t.co/JOalaQcjRP https://t.co/MsP4KZYDbB",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094231480834940992",
+    "text": "Tectonic (@TectonicFi) was exploited on Cronos Network, losing over $75M!\ud83d\udea8\n\nThe attacker has already bridged $6.29M to Ethereum and swapped it for 2,592 $ETH, while another $68.7M remains on Cronos Ne",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2094227251009376446",
+    "text": "Whale/institution 0x2Ea2 is dumping 51,387 $ETH($125.94M)!\n\nOver the past 2 days, 0x2Ea2 has deposited 40,881 $ETH($100.67M) into exchanges, with 10,506 $ETH($25.52M) remaining.\n\nhttps://t.co/NVfK8bky",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "ETH"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2093998649714090246",
+    "text": "After $\u725b\u6765 was listed on @Aster_DEX Perps, its price surged by over 510%.\n\nTrader 0x463e opened a 5x long on 1.13M $\u725b\u6765 ($111K) on @Aster_DEX and is now sitting on a $49.5K unrealized profit \u2014 a 223% re",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2093944624574529560",
+    "text": "Someone spent 1,540 binancecoin:native ($1.07M) to buy 12.26M $\u725b\u6765 3 hours ago.\n\nhttps://t.co/XKaiTDtbB1 https://t.co/OyRslxFFeT",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "lookonchain",
+    "tweet_id": "2093877850990604440",
+    "text": "Unipcs(@theunipcs) is now up $2.48M on ethereum:0x07f5b6823751c2e2cd4560f28af75ff887102241 \u2014 a 37x return!\n\nHe spent 67,304 solana:2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH to buy 10.96M ethereum:0",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094572232647516382",
+    "text": "Astro's current biases on bitcoin:native - update\n\nUpdate on my current biases, always going top-down in timeframes.\n\nMentioning explicitly here because I operate on many timeframes and biases can be ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094530455551017006",
+    "text": "bitcoin:native \n\nWeekly fake pump \u2705 monthly fake pump \u23f3\n\nAlright, monthly open (of September) fake pump now also slowly growing as TP1 support continues to show its hand neatly.\n\nStill not finished ye",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094328001249071274",
+    "text": "bitcoin:native\n \nYup, here is the second fake pump onsetting\u231b\ufe0f, as our TP1 local support holds well so far \n\nRemember what I said about the pump into the monthly open, what I believe this is and how i",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094223139018551620",
+    "text": "bitcoin:native \n\nWeekly fake pump done for the most part now that we're back at TP1 local support.\n\nNow, we patiently await the monthly fake pump into September Open to complete.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094221486634766842",
+    "text": "bitcoin:native \n\nRemember, we're back at my TP1 support now.\n\nLet the month open, let local support play out\n\nAnd then, we likely see the month end up red.\n\nThat's the plan, and, most importantly, we ",
+    "event_kind": "PREDICTION",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094206498029400342",
+    "text": "$BTC \n\nI am probably the biggest fake pump enjoyer.\n\nDid you enjoy it?\n\nGood morning. https://t.co/xqrZlTJXzW",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094041333732405606",
+    "text": "bitcoin:native \n\nAre you all enjoying the fake pump?\n\nAs long as it lasts... https://t.co/NZDm6aMdSD",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2094007317272633402",
+    "text": "bitcoin:native shorts \n\nAnd the plan of September: A fake local move up, followed by a move down.\n\nAlright, just a quick update here on $btc. Giving you everything you need to know and what I'm lookin",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093894345925759401",
+    "text": "The ones who \"always wait for a retrace to enter after the market structure shift\" will miss more trades destined to win than trades destined to lose.\n\nFood for thought.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093873656514699453",
+    "text": "$btc \n\nGood times.\n\nGood times that are all happening again.\n\n2022-&gt; 2026.\n\nBottom Q4 -&gt; Bottom Q3.\n\n15k wasn't coming, neither will 50k.\n\nThis is the true nuance of the 4 year cycle this time.\n",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093653297005736299",
+    "text": "bitcoin:native \n\nClear appearance of the OHLC defense now with price rejecting multiple times.\n\nWhy? Because Prev Quarter Low is taken, hence the Previous Quarter High is defended.\n\nIt's just one conf",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093589344573653230",
+    "text": "The best part is that I am short on the hourly, but I actually think the bottom is in on the macro.\n\nI called it live at 60k in many ways, starting Feb, and in July with a tight macro SL (at 50k)\n\nI j",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093586807107784773",
+    "text": "bitcoin:native shorts \n\nThe POI of rejection \u2705\n\nNot just a POI, but one of many cornerstones combing together.\n\nNot much need to be said, we even had many start to bull post how they told us how they ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093495889595900060",
+    "text": "bitcoin:native \n\nOr two days later, you no longer wonder because the rejection is all hindsight now and already too late to profit properly from.\n\nAh well...",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093463796002246796",
+    "text": "bitcoin:native shorts\n\nAnd there's the drop. First TP here.\n\n\"Why short Astro? Why so stubborn on them Astro The market is bullish and everyone is bull posting.\"\n\nWell... looks like the market has ans",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093318261437829383",
+    "text": "$btc \n\nAnd why I'm still stubborn on shorts.\n\nThe answer is simple and given already through my local thesis. But the real answer is that many will say: \"I should've known\",\n\nonly after the move alrea",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093156835763351938",
+    "text": "$btc\n\nRe-shorted again, but slightly lower size.\n\nAlright good sweep received with a decent amount trapped and all confluences remaining.\n\nIt's also Friday on a green week.\n\nSo we have best case scena",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2093147047121817729",
+    "text": "bitcoin:native shorts\n\nExited shorts for now right here.\n\nStill think the overall idea is valid. But must remember the trend is strong and pumping on Daily open isn't the greatest.\n\nWe're close ish to",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092955018727235699",
+    "text": "Probably my favourite comment of all.\n\nHe asked shouldn't I wait for a better entry.\n\nDoing that clearly would have been the biggest mistake in a long time.\n\nNo harm done by the way\n\nBut I love teachi",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092947031342121334",
+    "text": "You want a real trader you have a real trader.\n\nNot all my trades are pretty or picture perfect \n\nWelcome to my account.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092925223595282648",
+    "text": "$btc \n\nYou wonder why we keep rejecting every time we go into my 79-83k resistance zone.\n\nHah, you would.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092921581874118832",
+    "text": "$btc shorts and our red POI\n\nThe local top is slowly forming \u231b\ufe0f\n\nTired of constantly seeing people repost their calls \"playing out\"? \"Thanks for watching, hah I told you, my plan played out perfectly.",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092753998822678883",
+    "text": "$btc and my bottom idea + sentiment.\n\nJust my comment, how it is very remarkable that at the time of this post, to today, almost every bull went:\n\nfrom: \"the bottom is probably in but I'm just DCA'ing",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092602865735111144",
+    "text": "Bull posting is easy.\n\nI gave everyone a thesis of a 98+% chance of 50k not happening and us bottoming 60k and since many adopted.\n\nWhich is great.\n\nBut now it's recognising that bull posting might dr",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092599639149293718",
+    "text": "900 points.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092414698251801070",
+    "text": "$btc shorts\n\nThe shorts now up 600 points!\n\nAs they continue to live on, and the POI gave another decent rejection.\n\nBacked by 4 confluences &amp; some clear Bullish engagement farming,\n\nwhile the maj",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092223565034918339",
+    "text": "$btc shorts\n\nInstant punishment of all bull posts peaking above 80k.\n\nAnd the biggest tell locally is... frequency. Frequency will always be the biggest giveaway. Very easy to track, with or without A",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092220202213908981",
+    "text": "$btc \n\n\"Why are we not breaking above the 80k zone Astro, I don't get it, why did price stop\".\n\nBecause we just put in a large and fast move so \"momentum should continue\".\n\nNothing is what it seems in",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092179041847812432",
+    "text": "$btc\n \nYou look at your timeline and you see all the bull posting lrc.\n\n\"Look at me I called the bottom/my longs are up big\"\n\nNot great timing imo\n\nWhat people need to hear now is that we face serious",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092173548727251338",
+    "text": "$btc shorts\n\n78-83k resistance zone and why I'm short again for while - confluence 4 - the sentiment\n\nAlso the sentiment is clearly showing exhuberance.\n\nThe ones who were bearish sub 60k are now quie",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092053361508204846",
+    "text": "1.8x leverage so far on the shorts. Quoting this because I didn't mention explicitly.\n\nOur range for swing trades will always be up to 8x.\n\nGoing 20x or higher is for scalping and gets you wrecked whe",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092020188694880734",
+    "text": "$btc \n\nStarted flipping these long profits into a fresh short position here.\n\nAlright, with all confluences shared over the last days, and my thesis clear of \"finding some resistance\", we have enough ",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2092000535864025289",
+    "text": "$btc - Daily (positional) timeframe\n\n78-83k resistance zone\n\nAnd then finally, this is the POI I believe will hold us back for a while.\n\nExplaining why I continue to look to TP longs in this zone.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091995674091143662",
+    "text": "$btc \n\nWhy I am still in the process of TP'ing my longs in the 78-83k zone - confluence 3\n\nAlright and then a third confluence as to why I believe 78k-83k will be resistance until at least end of Sept",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091846336505356573",
+    "text": "$btc \n\nWhy I TP'd most of my higher timeframe longs above 78k - confluence two\n\nWhich is, no less than the one and only mmd with $eth.\n\nA higher high is formed on $eth where $btc formed a lower high.\n",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091646944565514285",
+    "text": "$btc \n\nSome confusion in the comments on last post.\n\nSo quoting the post below to never mix up timeframes.\n\nSince most confusion is related to timeframes especially with my audience, understandable, g",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091475724288872843",
+    "text": "$btc \n\nWhy I TP'd most of my higher timeframe longs above 78k\n\nAnd why I am no longer very bullish.\n\nAnd what it means for September.\n\nThat's three titles. A triple whammy for you all, on this beautif",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091106340412485932",
+    "text": "Nice drop so far. Did you check the Quartely $btc chart and $eth/$btc relatively by now?\n\nWhat do you see?\n\nIt will tell you why we face resistance.\n\nYour charts+annotations in the comments.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2091032125273428206",
+    "text": "$btc\n\nYup, we're seeing that local sentiment get a bit too bullish again to my liking.\n\nPer last post, time to TP most of our longs if you took em. It's time for a pullback soon.\n\n(IMO - NFA - DYOR)",
+    "event_kind": "PREDICTION",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090953646163034281",
+    "text": "$btc big size longs (positional timeframe)\n\nTook another TP. Closed the majority by now, as the bulk of the move is soon over (confluences hinted)\n\nAlright, the longs we shared live now up 9000 points",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090946517448405004",
+    "text": "$eth \n\nWeekly range completed \u2705\n\nFor $eth, my triple range concept has already completed by the way.\n\nSo where 69k was our \"late long\" entry shared on here on $btc, 78k now\n\nLate long entries can work",
+    "event_kind": "RETROSPECTIVE",
+    "direction": null
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090911540954505708",
+    "text": "$btc - my higher timeframe call range idea\n\nAn hourly range \u2705, a daily range \u2705, and... a weekly range also very close now to completion \u23f3\n\nWith all the fomo on the timeline and how everyone \"called th",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC",
+      "ETH"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090762123240415441",
+    "text": "$btc 4 year cycle myths debunked.\n\nAnd why I still think we bottomed in Q3 and Q4 bottom waiters will miss a generational entry.\n\nSo now that the market is raging green candles, I have your attention ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090733142911111610",
+    "text": "There's no need to outright mock the macro bears.\n\nWe simply enjoy being part of the biggest weekly candle in a long long time.",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "astronomer_zero",
+    "tweet_id": "2090723371587690539",
+    "text": "So hinted this before but putting it out there now, since that is what I believe my followers need the most right now.\n\nExtensive post is below. But here's a short version/quick recap if you missed th",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2092195816446296308",
+    "text": "$BTC \n\nFor sustained bull-market conditions, I want to see the 50W curve higher with price accepting above it and developing a multi-week/month trend. By that point, the lower 12/21 structure should a",
+    "event_kind": "OBSERVATION",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": true,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2091979073127891191",
+    "text": "Quite impressed by near intents tbh...",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2090158929380798768",
+    "text": "4th August: \n\n\"I\u2019d love to see it squeeze late shorts first \u2026 aka \nconfirmation traders...\"\n\nGood job tbh",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2087598722515378428",
+    "text": "Simple tip but... \n\nDon't automate an agentic workflow until you've successfully performed it manually enough times to understand what you're automating...",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2087490429981790456",
+    "text": "My custom Exocharts Ladder template below for those who wanted a copy\n\nCheers\n\nhttps://t.co/9lUQOa50ym https://t.co/SY99WY2AC3",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2087310941264163185",
+    "text": "1 Year later....",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2087299759740522875",
+    "text": "Nice and quiet over on this side tbh...\n\nAnyway - current dev stack...\n\nHerdr with Pi/OMP & various agents primarily codex - with parallel orchestration workflow \n\nOtherwise Codex Desktop / CLI \n\nHerm",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2087207354320208155",
+    "text": "https://t.co/lJ0HUYpASU",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2086539632229916954",
+    "text": "In terms of productivity when I\u2019m on the move\u2026\n\nNotebookLM - throw a bunch of articles, resources, links, Substack pdfs and get it to generate a podcast\u2026 great time saver vs having to read a shit ton ",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2086520759699271738",
+    "text": "AI workflows that has been worth it for sure: \n\nHermes - obviously - continuously impressed with what can be achieved \n\nMultica is super cool - the one I\u2019ve enjoyed picking up - open-source platform t",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "Trader_XO",
+    "tweet_id": "2085750399319892374",
+    "text": "Well, it\u2019s Friday, and I couldn\u2019t help but laugh when I saw the comment below on a YouTube video covering some AI topic:\n\n\"There are so many YouTubers who act like they\u2019ve just made a groundbreaking d",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": true
+  },
+  {
+    "handle": "chameleon_jeff",
+    "tweet_id": "2090001486553981135",
+    "text": "Someone recently shared this paper with me, which rigorously studies the execution improvement of visible TWAPs on Hyperliquid: \"Trading in the Sunshine or in the Shade: Market Impact and Adverse Sele",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  },
+  {
+    "handle": "chameleon_jeff",
+    "tweet_id": "2087559428342215100",
+    "text": "This is a cool dashboard: historical and realtime liquidity comparisons across venues. Hyperliquid is not only the most liquid venue for major crypto and RWA perps, it's more liquid by an *order of ma",
+    "event_kind": "TEXT",
+    "direction": null,
+    "assets": [
+      "BTC"
+    ],
+    "has_levels": false,
+    "is_conditional": false
+  }
+]
