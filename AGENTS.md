@@ -71,6 +71,59 @@ If found → STOP → remove → .env → commit.
 
 ### RULE 6: Check free -h before heavy jobs
 
+### RULE 7: Save User Messages Word-for-Word
+
+**When the user sends a long message (specs, architecture, strategy), save it EXACTLY as sent. Do not summarize, condense, or rewrite.**
+
+**BAD (what happened):**
+
+User sends 900-line message about architecture.
+Agent saves 150 lines, summarizing key points.
+User says: "u save 150 lines i send you 900?"
+User's original thinking, examples, citations, and nuance are lost forever.
+
+**GOOD:**
+
+User sends 900-line message.
+Agent saves ALL 900 lines to a timestamped .md file.
+File header: `*Word-for-word from user, YYYY-MM-DD. Timestamped.*`
+File footer: `*Source: User message to BEAR agent*`
+
+**The rule:**
+
+```
+WHEN: User sends message > 50 lines
+WHAT: Save ENTIRE message to astronomer/YYYY-MM-DD-{topic}-original.md
+HOW: Copy text exactly. No summarization. No condensation.
+WHY: User's thinking is the asset. Summaries lose nuance, examples, citations.
+```
+
+**Example — BAD:**
+```markdown
+# Architecture Expansion (Condensed)
+
+Key points from user:
+- X = intelligence layer
+- Raw APIs = measurement layer
+- 5 vertical layers
+- 4 horizontal planes
+```
+
+**Example — GOOD:**
+```markdown
+# Architecture Expansion — Original Message
+
+*Word-for-word from user, 2026-09-07. Timestamped.*
+
+Actually, **there are things we cannot get cleanly from X**, and that boundary is useful.
+
+X can give us almost every *interpretation* we care about...
+
+[ENTIRE 900-LINE MESSAGE PRESERVED]
+```
+
+**Never truncate. Never summarize user messages. They are the source of truth.**
+
 ---
 
 ## Vision
