@@ -575,6 +575,90 @@
     {
       "id": "POLICY",
       "type": "primitive"
+    },
+    {
+      "id": "that1618guy",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "defioasis",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "koolkrypto223",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "CavanXy",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Wild_Randomness",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Parida",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "0xBohr",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "AvgJoesCrypto",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Koshkoi999",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "game_for_one",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "MuddyRC",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "wronguser000",
+      "type": "account",
+      "tier": "B",
+      "weight": 0.5
+    },
+    {
+      "id": "izebel_eth",
+      "type": "account",
+      "tier": "B",
+      "weight": 0.5
+    },
+    {
+      "id": "rasmr_eth",
+      "type": "account",
+      "tier": "B",
+      "weight": 0.5
     }
   ],
   "edges": [

@@ -1,0 +1,92 @@
+[
+  {
+    "handle": "that1618guy",
+    "tweets": 20,
+    "standalone": 7,
+    "media": 2,
+    "flow": 2,
+    "signal": 0,
+    "quant": 0
+  },
+  {
+    "handle": "defioasis",
+    "tweets": 20,
+    "standalone": 13,
+    "media": 13,
+    "flow": 2,
+    "signal": 1,
+    "quant": 0
+  },
+  {
+    "handle": "koolkrypto223",
+    "tweets": 20,
+    "standalone": 4,
+    "media": 5,
+    "flow": 4,
+    "signal": 5,
+    "quant": 3
+  },
+  {
+    "handle": "CavanXy",
+    "tweets": 20,
+    "standalone": 6,
+    "media": 4,
+    "flow": 5,
+    "signal": 3,
+    "quant": 1
+  },
+  {
+    "handle": "Wild_Randomness",
+    "tweets": 20,
+    "standalone": 9,
+    "media": 12,
+    "flow": 2,
+    "signal": 3,
+    "quant": 0
+  },
+  {
+    "handle": "0xBohr",
+    "tweets": 20,
+    "standalone": 11,
+    "media": 0,
+    "flow": 8,
+    "signal": 5,
+    "quant": 0
+  },
+  {
+    "handle": "AvgJoesCrypto",
+    "tweets": 20,
+    "standalone": 4,
+    "media": 1,
+    "flow": 2,
+    "signal": 2,
+    "quant": 0
+  },
+  {
+    "handle": "Koshkoi999",
+    "tweets": 20,
+    "standalone": 7,
+    "media": 4,
+    "flow": 4,
+    "signal": 2,
+    "quant": 0
+  },
+  {
+    "handle": "game_for_one",
+    "tweets": 20,
+    "standalone": 6,
+    "media": 3,
+    "flow": 3,
+    "signal": 1,
+    "quant": 0
+  },
+  {
+    "handle": "MuddyRC",
+    "tweets": 20,
+    "standalone": 6,
+    "media": 5,
+    "flow": 7,
+    "signal": 6,
+    "quant": 2
+  }
+]
