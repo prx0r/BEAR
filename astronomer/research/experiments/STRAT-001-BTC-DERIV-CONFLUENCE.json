@@ -1,0 +1,43 @@
+{
+  "strategy_id": "STRAT-001-BTC-DERIV-CONFLUENCE",
+  "version": "0.1",
+  "status": "HYPOTHESIS",
+  "created_at": "2026-09-07T09:00:00Z",
+
+  "hypothesis": "Combined derivatives signals (kingfisher_btc + laevitas1) at 24h horizon produce positive expected value. Derivatives sources operate at longer horizons than directional callers.",
+
+  "economic_mechanism": "Derivatives positioning data (funding, OI, liquidation state) takes 24-48h to manifest in price. Crowding signals predict mean reversion at 24h but noise at 4h.",
+
+  "activation_rules": {
+    "sources": ["kingfisher_btc", "laevitas1"],
+    "primitive": "DERIVATIVES_POSITIONING",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "min_sources": 1,
+    "horizon": "24h"
+  },
+
+  "deactivation_rules": {
+    "regime": "DOWN",
+    "min_sources": 0
+  },
+
+  "backtest_august": {
+    "n": 16,
+    "win_rate_24h": 0.69,
+    "mean_return_24h": 0.0061,
+    "sharpe_24h": 4.2,
+    "profit_factor": 1.9,
+    "baseline_mean_24h": 0.0039,
+    "marginal_value_24h": 0.0022
+  },
+
+  "falsification": "If n>30 and win rate drops below 55% at 24h, reject.",
+
+  "next_steps": [
+    "Fetch September data for kingfisher_btc and laevitas1",
+    "Increase n to >30",
+    "Test regime conditioning (does DOWN regime veto improve?)",
+    "Compare to always-long baseline at same timestamps"
+  ]
+}
