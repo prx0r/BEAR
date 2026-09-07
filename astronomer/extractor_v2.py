@@ -147,17 +147,17 @@ def classify_event(text: str, post_id: str, handle: str) -> list[MarketEvent]:
                 )
                 break
     
-    # Check for assets
+    # Check for assets (use regex search, not plain string find)
     assets = []
     asset_evidence = []
     for asset, pats in ASSET_PATS.items():
         for pat in pats:
-            span = find_quote_span(text, pat)
-            if span[0] >= 0:
+            m = re.search(pat, lower)
+            if m:
                 assets.append(asset)
                 asset_evidence.append(EvidenceSpan(
                     field="asset", post_id=post_id,
-                    quote=text[span[0]:span[1]], start_char=span[0], end_char=span[1],
+                    quote=text[m.start():m.end()], start_char=m.start(), end_char=m.end(),
                 ))
                 break
     

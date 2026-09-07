@@ -1,0 +1,57 @@
+{
+  "BTC:BEARISH:4h": {
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "horizon": "4h",
+    "n": 6,
+    "wins": 3,
+    "win_rate": 0.5,
+    "mean_return": 0.002277,
+    "median_return": 0.001803,
+    "profit_factor": 2.06
+  },
+  "BTC:BULLISH:4h": {
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "horizon": "4h",
+    "n": 20,
+    "wins": 10,
+    "win_rate": 0.5,
+    "mean_return": 0.002063,
+    "median_return": 0.002042,
+    "profit_factor": 1.93
+  },
+  "ETH:BEARISH:4h": {
+    "asset": "ETH",
+    "direction": "BEARISH",
+    "horizon": "4h",
+    "n": 3,
+    "wins": 1,
+    "win_rate": 0.3333,
+    "mean_return": -0.002052,
+    "median_return": -0.002649,
+    "profit_factor": 0.09
+  },
+  "SOL:BEARISH:4h": {
+    "asset": "SOL",
+    "direction": "BEARISH",
+    "horizon": "4h",
+    "n": 1,
+    "wins": 1,
+    "win_rate": 1.0,
+    "mean_return": 0.004649,
+    "median_return": 0.004649,
+    "profit_factor": Infinity
+  },
+  "ETH:BULLISH:4h": {
+    "asset": "ETH",
+    "direction": "BULLISH",
+    "horizon": "4h",
+    "n": 3,
+    "wins": 2,
+    "win_rate": 0.6667,
+    "mean_return": 0.006095,
+    "median_return": 0.00803,
+    "profit_factor": 8.26
+  }
+}

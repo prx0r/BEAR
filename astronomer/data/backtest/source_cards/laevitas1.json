@@ -1,0 +1,25 @@
+{
+  "source_handle": "laevitas1",
+  "primitive": "DERIVATIVES_POSITIONING",
+  "panel": "PREMIUM_DATA",
+  "august_tweets": 45,
+  "call_events_with_asset": 6,
+  "n_outcomes": 5,
+  "horizon_4h": {
+    "n": 5,
+    "win_rate": 0.2,
+    "mean_return": -0.00155,
+    "pf": 0.32,
+    "verdict": "POOR"
+  },
+  "horizon_24h": {
+    "n": 5,
+    "win_rate": 0.6,
+    "mean_return": 0.01097,
+    "pf": 3.68,
+    "verdict": "PROMISING (n=5)"
+  },
+  "key_insight": "Derivatives signals operate at 24h horizon, not 4h. First evidence horizon follows economic mechanism.",
+  "status": "INCONCLUSIVE",
+  "falsification": "If 24h win rate drops below 50% with n>30, signal has no edge"
+}

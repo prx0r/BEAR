@@ -168,9 +168,13 @@ Key principles:
 ## API Key
 
 ```
-Primary: get-x-api-0d101a57d43f429a69ff8dd821186eeb2f889406859be720
-Balance: $39.53
+Primary key: stored in .env (GETXAPI_KEY)
+Backup key: in agent-vault (GETXAPI_KEY_BACKUP)
+Balance: $39.61
+Plan: pro_sub (expires 2026-10-07)
 ```
+
+**NEVER hardcode keys in files. Use .env or agent-vault.**
 
 ## The One Rule
 

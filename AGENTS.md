@@ -165,62 +165,119 @@ immutable   parsed    outcomes   scores
 
 ---
 
+## The Canonical Protocol
+
+**The full 46-part protocol is at:** `astronomer/specs/originals/2026-09-07-canonical-protocol-original.md`
+
+This is the binding architecture. Every decision must trace back to it.
+
+**Core invariant:** `source × primitive × asset × regime × event_type × horizon → marginal economic value`
+
+Not: `trader → win rate`
+
+**Key principles:**
+1. People improve estimates of primitives. Primitives combine through economic mechanisms. Only those combinations become strategies.
+2. Horizon follows economic mechanism (derivatives = 24h, not 4h)
+3. Every claimed alpha must beat embarrassingly simple baselines
+4. August is the exemplar lab — never call it out-of-sample
+5. The experiment ledger is append-only — DSR and PBO protect against multiple testing
+
+---
+
 ## File Reference
+
+### The Gospel
+| File | Purpose |
+|------|---------|
+| `specs/originals/2026-09-07-canonical-protocol-original.md` | **THE PROTOCOL** — 46 parts, binding architecture |
+| `specs/originals/2026-09-07-backtest-protocol-original.md` | The backtest protocol |
+| `specs/ONBOARDING_TEMPLATE.md` | Template for onboarding new sources |
 
 ### Core (`astronomer/`)
 | File | Purpose |
 |------|---------|
-| `crystallized-protocol.md` | The main strategy architecture |
-| `strategy-architecture.md` | Binary activation, continuous graph |
-| `minimal-backtest-plan.md` | What data we need, what we have |
-| `targeted-acquisition-spec.md` | Buy data to fix weaknesses |
-| `pipelineplan.md` | Full pipeline specification (3641 lines) |
+| `schemas.py` | Canonical types: RawPost, MarketEvent, EvidenceSpan, EventOutcome |
+| `extractor_v2.py` | Evidence-grounded extractor (regex, no BTC default) |
+| `backtest.py` | Canonical backtest engine (next-candle entry, one outcome per asset) |
+| `regime.py` | Deterministic BTC regime timeline (EMA20/50, 24h return, 7d vol) |
+| `metrics.py` | Performance metrics (Sharpe, Sortino, Wilson CI, bootstrap CI) |
+| `baselines.py` | Baseline models (always long, always short, random, momentum) |
+| `run_backtest.py` | Full pipeline runner |
+| `run_background.py` | Background runner for nohup execution |
+| `crystallized-protocol.md` | Binary activation, continuous graph |
+| `strategy-architecture.md` | Strategy entity structure |
 | `protocol.md` | Alpha Mining Protocol v2 |
-| `meta-science.md` | Meta lifecycle theory |
-| `graph.json` | Source graph (119 nodes, 100 edges) |
-| `accounts.json` | Account registry with tiers |
-| `BUDGET.md` | API budget tracking |
-| `apistrategy.md` | How to scrape properly |
-| `canonical-accounts.md` | Final account list with proof |
-| `canonical-registry.md` | Account schema |
-| `cost-analysis.md` | Cost per content type |
-| `scraping-review.md` | Process lessons |
+| `meta-science.md` | Meta lifecycle theory, 13 panels |
 
 ### Data (`astronomer/data/`)
 | File | Purpose |
 |------|---------|
-| `recon_results.json` | Recon data for 64 accounts |
-| `recon_report.md` | Human-readable recon |
-| `pipeline_signals.json` | 154 extracted signals |
-| `selected_accounts.json` | Best account per primitive |
-| `new_p0_results.json` | New P0 account recon |
-| `regime/regime.json` | Current BTC regime |
+| `regime/timeline.json` | 23,520 BTC regime entries |
 | `prices/*.json` | Hourly OHLCV (BTC, ETH, SOL, TAO) |
-| `backtest/raw/` | Cached API responses |
-| `backtest/outcomes.json` | Signal → price outcomes |
+| `backtest/raw/*.json` | Cached API responses per account |
+| `backtest/extracted_august_v2.json` | All extracted events (523 total) |
+| `backtest/outcomes_v2.json` | Canonical outcomes (33 total) |
+| `backtest/source_cards_v2.json` | Source report cards |
+| `backtest/source_cards/*.json` | Per-source detailed cards |
+| `backtest/RESULTS_AUGUST_2026.md` | Honest assessment with caveats |
+| `recon_results.json` | Recon data for 64 accounts |
+| `budgets/fetch_log.jsonl` | Every API call logged |
 
-### Strategies (`astronomer/data/backtest/`)
+### Stale (`astronomer/stale/`)
+| File | Why moved |
+|------|-----------|
+| `backtest_august_v2.json` | BTC default, same-candle entry, flat outcomes |
+| `outcomes.json` | Unit error in return reporting |
+| `classified_august.json` | Old classification format |
+
+### Reports (`astronomer/reports/`)
 | File | Purpose |
 |------|---------|
-| `outcomes.json` | Matched signals → price outcomes |
-| `raw/*.json` | Raw API responses (cached) |
-
-### Backtest Engine (`src/bear/backtest/`)
-| File | Purpose |
-|------|---------|
-| `engine.py` | Walk-forward backtester (523 lines) |
-| `metrics.py` | Performance metrics |
-| `costs.py` | Execution costs |
-| `funding.py` | Funding-aware PnL |
-
-### Death Score (`src/bear/features/`)
-| File | Purpose |
-|------|---------|
-| `death_score.py` | 5-signal death score |
+| `2026-09-07-session-report.md` | Full session log with all findings |
 
 ---
 
 ## Procedures
+
+### Procedure: ONBOARD_SOURCE (canonical, repeatable)
+
+```bash
+# 1. RECON — 1 API call ($0.001)
+python3 -c "import httpx; r=httpx.get('https://api.getxapi.com/twitter/user/info', params={'userName':'HANDLE'}, headers={'Authorization':'Bearer KEY'}); print(r.json())"
+
+# 2. FETCH — 2-4 API calls ($0.002-0.004)
+# Use advanced_search with 2-week chunks: since:YYYY-MM-DD until:YYYY-MM-DD
+# Page 2 if has_more=True
+
+# 3. EXTRACT — local, free
+python3 -c "from extractor_v2 import classify_event; ..."
+
+# 4. BACKTEST — local, free
+cd /root/BEAR/astronomer && python3 backtest.py
+
+# 5. SOURCE CARD — save to source_cards/{handle}.json
+
+# 6. LOG — append to experiment_registry.jsonl
+```
+
+**Cost per source:** ~$0.005 (5 API calls)
+**Budget remaining:** $39.61
+**Plan expires:** 2026-10-07
+
+### Procedure: BACKGROUND_RUN
+
+```bash
+# Single account:
+nohup python3 run_background.py --handle laevitas1 \
+  > logs/laevitas1_$(date +%Y%m%d_%H%M).log 2>&1 &
+
+# Full backtest (no fetch):
+nohup python3 run_background.py --skip-fetch \
+  > logs/full_$(date +%Y%m%d_%H%M).log 2>&1 &
+
+# Check logs:
+tail -f logs/*.log
+```
 
 ### Procedure: DISCOVER_ACCOUNT
 
@@ -240,23 +297,30 @@ immutable   parsed    outcomes   scores
 ### Procedure: EXTRACT_SIGNALS
 
 ```
-1. FETCH 1 month (5-10 API calls)
-   - Use cache to avoid re-fetching
-   - Log every call to fetch_log.jsonl
+1. FETCH 1 month (2-4 API calls per account)
+   - advanced_search with 2-week chunks
+   - Page 2 if has_more=True
+   - Log every call to budgets/fetch_log.jsonl
 
-2. EXTRACT per post
-   - direction (LONG/SHORT/NEUTRAL)
-   - assets (BTC, ETH, SOL)
-   - levels (entry, target, stop)
-   - event_kind (PREDICTION, OBSERVATION, etc.)
+2. EXTRACT per post (local, free)
+   - classify_event() from extractor_v2.py
+   - Returns MarketEvent with evidence spans
+   - Asset detected via regex (no BTC default)
 
-3. MATCH to price outcomes
-   - entry_price = price at signal + 1h
-   - return_4h, return_24h, return_7d
+3. MATCH to price outcomes (local, free)
+   - Entry on NEXT candle after publication
+   - One EventOutcome per event × asset
+   - Returns as decimal (0.00338 = 0.338%)
 
 4. STORE
-   - Raw tweets: data/raw/{handle}_{month}.json
-   - Outcomes: data/backtest/outcomes.json
+   - Raw tweets: data/backtest/raw/{handle}_aug2026.json
+   - Events: data/backtest/extracted_august_v2.json (append)
+   - Outcomes: data/backtest/outcomes_v2.json (overwrite)
+   - Source card: data/backtest/source_cards/{handle}.json
+
+5. LOG
+   - Report: reports/YYYY-MM-DD-{handle}-report.md
+   - Experiment: experiment_registry.jsonl (when ready)
 ```
 
 ### Procedure: CRYSTALLIZE_STRATEGY
