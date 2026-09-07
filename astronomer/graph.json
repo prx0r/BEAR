@@ -365,6 +365,96 @@
     {
       "id": "TAO",
       "type": "asset"
+    },
+    {
+      "id": "hyblockcapital",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "laevitas1",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "kingfisher_btc",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "MenthorQpro",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "snorlax_uw",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "unusual_whales",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "EPBResearch",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "dampedspring",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "josephwang",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "WarrenPies",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "jam_croissant",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "t1alpha",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "profplum99",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "DERIVED_PREMIUM_DATA",
+      "type": "primitive"
+    },
+    {
+      "id": "US_MACRO",
+      "type": "primitive"
+    },
+    {
+      "id": "MARKET_STRUCTURE",
+      "type": "primitive"
     }
   ],
   "edges": [
@@ -701,6 +791,76 @@
     {
       "source": "CertiKAlert",
       "target": "SECURITY",
+      "relation": "USES"
+    },
+    {
+      "source": "hyblockcapital",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "laevitas1",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "kingfisher_btc",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "MenthorQpro",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "snorlax_uw",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "unusual_whales",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "EPBResearch",
+      "target": "US_MACRO",
+      "relation": "USES"
+    },
+    {
+      "source": "dampedspring",
+      "target": "US_MACRO",
+      "relation": "USES"
+    },
+    {
+      "source": "josephwang",
+      "target": "US_MACRO",
+      "relation": "USES"
+    },
+    {
+      "source": "WarrenPies",
+      "target": "US_MACRO",
+      "relation": "USES"
+    },
+    {
+      "source": "jam_croissant",
+      "target": "US_MACRO",
+      "relation": "USES"
+    },
+    {
+      "source": "jam_croissant",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "t1alpha",
+      "target": "MARKET_STRUCTURE",
+      "relation": "USES"
+    },
+    {
+      "source": "profplum99",
+      "target": "MARKET_STRUCTURE",
       "relation": "USES"
     }
   ]
