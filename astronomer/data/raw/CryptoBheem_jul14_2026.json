@@ -1,0 +1,147 @@
+{
+  "handle": "CryptoBheem",
+  "tweets": [
+    {
+      "type": "tweet",
+      "id": "2074824378114781567",
+      "url": "https://x.com/CryptoBheem/status/2074824378114781567",
+      "twitterUrl": "https://twitter.com/CryptoBheem/status/2074824378114781567",
+      "text": "probably chop- maybe 59k- eventually 71k",
+      "source": "Twitter for iPhone",
+      "retweetCount": 3,
+      "replyCount": 9,
+      "likeCount": 136,
+      "quoteCount": 2,
+      "viewCount": 42514,
+      "createdAt": "Wed Jul 08 11:54:14 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 11,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2074824378114781567",
+      "media": [],
+      "inReplyToUserId": null,
+      "author": {
+        "type": "user",
+        "userName": "CryptoBheem",
+        "url": "https://x.com/CryptoBheem",
+        "id": "1399033636691849222",
+        "name": "Ahmed",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1986047240448917504/EAdi2C2s_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1399033636691849222/1721904054",
+        "description": "Retired | Quantitative Insights \u2022 Macro Sentiment | Intersection of Liquidity Cycles",
+        "location": "",
+        "followers": 72583,
+        "following": 7,
+        "createdAt": "Sun May 30 16:03:17 +0000 2021",
+        "canDm": false
+      },
+      "quoted_tweet": {
+        "id": "2074823769986593205",
+        "text": "@CryptoBheem Next?",
+        "user": {
+          "name": "Naveed Abdul Sattar",
+          "screen_name": "naveedahmad008"
+        }
+      },
+      "retweeted_tweet": null
+    },
+    {
+      "type": "tweet",
+      "id": "2073512231032213547",
+      "url": "https://x.com/CryptoBheem/status/2073512231032213547",
+      "twitterUrl": "https://twitter.com/CryptoBheem/status/2073512231032213547",
+      "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 200 BTC\nuPNL: +$428,000\n\nLast bid at 56,555 (200 BTC) still remains. \n\nThis trade is a long term hold with a target of 90k &amp; estimated PNL $5.8M if no further bids are filled\ud83d\udc81\ud83c\udffb https://t.co/lxTU8DA0NP",
+      "source": "Twitter for iPhone",
+      "retweetCount": 17,
+      "replyCount": 18,
+      "likeCount": 267,
+      "quoteCount": 1,
+      "viewCount": 47180,
+      "createdAt": "Sat Jul 04 21:00:14 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 49,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2073512231032213547",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HMaYYa4a4AAG47X.jpg",
+          "expanded_url": "https://x.com/CryptoBheem/status/2073512231032213547/photo/1",
+          "video_url": null
+        }
+      ],
+      "inReplyToUserId": null,
+      "author": {
+        "type": "user",
+        "userName": "CryptoBheem",
+        "url": "https://x.com/CryptoBheem",
+        "id": "1399033636691849222",
+        "name": "Ahmed",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1986047240448917504/EAdi2C2s_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1399033636691849222/1721904054",
+        "description": "Retired | Quantitative Insights \u2022 Macro Sentiment | Intersection of Liquidity Cycles",
+        "location": "",
+        "followers": 72583,
+        "following": 7,
+        "createdAt": "Sun May 30 16:03:17 +0000 2021",
+        "canDm": false
+      },
+      "quoted_tweet": {
+        "id": "2070397154238382388",
+        "text": "$BTC macro:\n\nCurrent Average: 61,100\nCurrent Notional: 200 BTC\nuPNL: -$248,600\n\nAdded to spot bags ~58.2k\nLast bid at 56,555 (200 BTC) still remains. https://t.co/El4TiAjXi5",
+        "user": {
+          "name": "Ahmed",
+          "screen_name": "CryptoBheem"
+        }
+      },
+      "retweeted_tweet": null
+    },
+    {
+      "type": "tweet",
+      "id": "2073051642707230977",
+      "url": "https://x.com/CryptoBheem/status/2073051642707230977",
+      "twitterUrl": "https://twitter.com/CryptoBheem/status/2073051642707230977",
+      "text": "@Plasma \u2018lock 100k xpl worth $11k at current price to save $600 while we extract the remainder from the tokens you bought\u2019",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 2,
+      "likeCount": 17,
+      "quoteCount": 0,
+      "viewCount": 3961,
+      "createdAt": "Fri Jul 03 14:30:01 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": true,
+      "inReplyToId": "2073024628889379226",
+      "conversationId": "2073024628889379226",
+      "media": [],
+      "inReplyToUserId": "1844002277218242560",
+      "author": {
+        "type": "user",
+        "userName": "CryptoBheem",
+        "url": "https://x.com/CryptoBheem",
+        "id": "1399033636691849222",
+        "name": "Ahmed",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1986047240448917504/EAdi2C2s_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1399033636691849222/1721904054",
+        "description": "Retired | Quantitative Insights \u2022 Macro Sentiment | Intersection of Liquidity Cycles",
+        "location": "",
+        "followers": 72583,
+        "following": 7,
+        "createdAt": "Sun May 30 16:03:17 +0000 2021",
+        "canDm": false
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null
+    }
+  ],
+  "fetched_at": "2026-09-07T00:47:27.060801+00:00"
+}
