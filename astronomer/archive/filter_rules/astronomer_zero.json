@@ -1,0 +1,9 @@
+{
+  "handle": "astronomer_zero",
+  "min_length": 30,
+  "exclude_keywords": ["launch", "enrollment", "spots filled", "working through DMs", "trust shown", "announcement", "enrollment begins"],
+  "require_asset": true,
+  "preferred_months": ["2026-08", "2026-09", "2026-06", "2026-07"],
+  "avoid_months": ["2026-05"],
+  "notes": "May 2026 was course launch. Aug-Sep have actual trading calls."
+}

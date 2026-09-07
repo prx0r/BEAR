@@ -1,0 +1,21 @@
+{
+  "batch_id": "batch_20260907_0113",
+  "handle": "astronomer_zero",
+  "query": "from:astronomer_zero since:2026-06-01 until:2026-06-30",
+  "timestamp": "2026-09-07T01:13:32.711041+00:00",
+  "calls_made": 5,
+  "balance_before": 0.069,
+  "balance_after": 0.064,
+  "cost": 0.0050000000000000044,
+  "posts_returned": 100,
+  "filter_stats": {
+    "replies": 75,
+    "retweets": 0,
+    "short_posts": 7,
+    "after_filter": 25,
+    "directional": 13,
+    "has_levels": 10,
+    "signal_density": 0.92
+  },
+  "quality_judgment": "HIGH"
+}

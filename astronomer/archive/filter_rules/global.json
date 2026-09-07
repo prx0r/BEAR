@@ -1,0 +1,7 @@
+{
+  "min_length": 25,
+  "exclude_patterns": ["RT @", "launch", "enrollment", "announcement", "DMs", "spots filled"],
+  "require_direction_or_levels": true,
+  "min_signal_density": 0.15,
+  "notes": "Global filters. Per-account overrides in {handle}.json."
+}
