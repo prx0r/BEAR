@@ -1,0 +1,9 @@
+{
+  "handle": "DeItaone",
+  "category": "news",
+  "month": "2026-08",
+  "total_tweets": 400,
+  "status": "VALIDATED",
+  "fetched_at": "2026-09-07",
+  "extraction_version": "regex_v2"
+}

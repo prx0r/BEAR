@@ -1,0 +1,9 @@
+{
+  "handle": "Trader_XO",
+  "category": "major",
+  "month": "2026-08",
+  "total_tweets": 100,
+  "status": "PROCESSED",
+  "fetched_at": "2026-09-07",
+  "extraction_version": "regex_v2"
+}

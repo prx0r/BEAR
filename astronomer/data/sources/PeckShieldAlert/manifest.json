@@ -1,0 +1,9 @@
+{
+  "handle": "PeckShieldAlert",
+  "category": "security",
+  "month": "2026-08",
+  "total_tweets": 23,
+  "status": "VALIDATED",
+  "fetched_at": "2026-09-07",
+  "extraction_version": "regex_v2"
+}

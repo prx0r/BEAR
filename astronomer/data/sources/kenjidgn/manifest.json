@@ -1,11 +1,9 @@
 {
   "handle": "kenjidgn",
-  "author_id": "1497074100468076568",
+  "category": "meme",
   "month": "2026-08",
   "total_tweets": 226,
-  "meme_events": 19,
-  "actionable_events": 1,
-  "unique_symbols": 5,
+  "status": "PROCESSED",
   "fetched_at": "2026-09-07",
   "extraction_version": "meme_v1"
 }

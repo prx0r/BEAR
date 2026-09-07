@@ -1,11 +1,9 @@
 {
   "handle": "0xAvast",
-  "author_id": "1451266991143202827",
+  "category": "meme",
   "month": "2026-08",
   "total_tweets": 181,
-  "meme_events": 6,
-  "actionable_events": 4,
-  "unique_symbols": 6,
+  "status": "PROCESSED",
   "fetched_at": "2026-09-07",
   "extraction_version": "meme_v1"
 }

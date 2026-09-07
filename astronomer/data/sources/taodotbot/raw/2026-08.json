@@ -1,0 +1,46 @@
+{
+  "handle": "taodotbot",
+  "tweets": [
+    {
+      "type": "tweet",
+      "id": "2084490723630469202",
+      "url": "https://x.com/taodotbot/status/2084490723630469202",
+      "twitterUrl": "https://twitter.com/taodotbot/status/2084490723630469202",
+      "text": "Quick clarification on the post above:\nRoot Reborn\u2019s basket and claiming infrastructure is now live, but validator curation is not enabled yet.\n\nRoot validators cannot currently set allocation weights \u2014 the on-chain toggle remains off, so every validator is running the same null strategy and dividends accrue in the subnet where they were earned.\n\nFor Root stakers, yield continues to accrue automatically, but it is no longer auto-claimed. Accrued dividends must now be claimed manually.\n\nWe\u2019ll share another update when validator weight-setting is enabled.",
+      "source": "Twitter Web App",
+      "retweetCount": 0,
+      "replyCount": 0,
+      "likeCount": 13,
+      "quoteCount": 0,
+      "viewCount": 660,
+      "createdAt": "Tue Aug 04 04:04:51 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 1,
+      "isReply": true,
+      "inReplyToId": "2084417621433131458",
+      "conversationId": "2084417621433131458",
+      "media": [],
+      "inReplyToUserId": "1747604689221283842",
+      "author": {
+        "type": "user",
+        "userName": "taodotbot",
+        "url": "https://x.com/taodotbot",
+        "id": "1747604689221283842",
+        "name": "tao.bot (\u03c4, \u03c4)",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1886414701350805504/N1dBFQLh_normal.png",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1747604689221283842/1738591288",
+        "description": "Make the Bittensor Ecosystem your Playground with $TAOBOT\nCommunity: https://t.co/HUMg7tUwoA",
+        "location": "",
+        "followers": 12171,
+        "following": 0,
+        "createdAt": "Wed Jan 17 13:02:36 +0000 2024",
+        "canDm": true
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null
+    }
+  ],
+  "fetched_at": "2026-09-07"
+}
