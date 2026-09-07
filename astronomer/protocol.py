@@ -265,7 +265,7 @@ def run_validation(handle: str) -> dict:
     analysis = analyze_tweets(tweets)
     
     verdict = "CONFIRM" if (
-        len(signals) > 5 and
+        len(signals) >= 5 and
         analysis["signal_density"] > 0.10
     ) else "SKIP"
     
