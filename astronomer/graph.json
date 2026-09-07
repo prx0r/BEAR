@@ -139,6 +139,12 @@
       "type": "account",
       "tier": "A",
       "weight": 1.0
+    },
+    {
+      "id": "0xaporia",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
     }
   ],
   "edges": [
@@ -294,6 +300,21 @@
     },
     {
       "source": "chrono_chartist",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "0xaporia",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "0xaporia",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "0xaporia",
       "target": "BTC",
       "relation": "POSTS_ABOUT"
     }
