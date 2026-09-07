@@ -1,0 +1,227 @@
+[
+  {
+    "event_id": "evt_2075963609931260056_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 64180.01,
+    "return_4h": 0.003154,
+    "return_24h": -3.6e-05,
+    "btc_regime": "UP"
+  },
+  {
+    "event_id": "evt_2068675723934502985_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 64146.0,
+    "return_4h": 8.5e-05,
+    "return_24h": 0.022324,
+    "btc_regime": "UP"
+  },
+  {
+    "event_id": "evt_2062485260932120887_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 62545.99,
+    "return_4h": 0.021587,
+    "return_24h": -0.009289,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2062287525171900480_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 64912.98,
+    "return_4h": -0.025896,
+    "return_24h": -0.01814,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2061784680555286876_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 68811.91,
+    "return_4h": 0.019176,
+    "return_24h": 0.027697,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2056156913830633777_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 77209.95,
+    "return_4h": 0.002221,
+    "return_24h": 0.000895,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2051298264729739433_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 80216.16,
+    "return_4h": -0.001262,
+    "return_24h": 0.013968,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_2046711946838172080_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 76336.15,
+    "return_4h": 0.015528,
+    "return_24h": 0.024131,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_2041841398702293383_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 72071.95,
+    "return_4h": -0.006519,
+    "return_24h": -0.010993,
+    "btc_regime": "UP"
+  },
+  {
+    "event_id": "evt_2037836449144332360_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 66319.47,
+    "return_4h": 0.010486,
+    "return_24h": 0.007491,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2017898995754950962_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 78279.73,
+    "return_4h": 0.000876,
+    "return_24h": 0.009903,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2017189057525162366_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 83151.36,
+    "return_4h": -0.003216,
+    "return_24h": -0.00158,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_2011920103126737160_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 95583.87,
+    "return_4h": 0.000831,
+    "return_24h": 0.000731,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_2009577716526297250_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 90463.11,
+    "return_4h": 0.007886,
+    "return_24h": 0.002882,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1996594876230639619_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 92971.49,
+    "return_4h": -0.010713,
+    "return_24h": -0.027021,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_1990474239296540700_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 92549.01,
+    "return_4h": 0.003256,
+    "return_24h": -0.00845,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1990218048813273567_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 94768.02,
+    "return_4h": 0.003743,
+    "return_24h": -0.032223,
+    "btc_regime": "RANGE"
+  },
+  {
+    "event_id": "evt_1987994675186147697_call",
+    "asset": "BTC",
+    "direction": "BULLISH",
+    "entry_price": 106062.8,
+    "return_4h": 0.005584,
+    "return_24h": -0.028877,
+    "btc_regime": "UP"
+  },
+  {
+    "event_id": "evt_1986030099494240692_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 102673.35,
+    "return_4h": -0.012134,
+    "return_24h": 0.001178,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1985780968637284384_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 100542.64,
+    "return_4h": -0.009494,
+    "return_24h": -0.034467,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1983898059445772590_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 107711.56,
+    "return_4h": 0.01091,
+    "return_24h": -0.02313,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1976679190888907152_call",
+    "asset": "SOL",
+    "direction": "BEARISH",
+    "entry_price": 209.68,
+    "return_4h": 0.077594,
+    "return_24h": 0.127051,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1976336819081081213_call",
+    "asset": "ETH",
+    "direction": "BULLISH",
+    "entry_price": 4308.24,
+    "return_4h": 0.016153,
+    "return_24h": -0.05905,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1976199400641691913_call",
+    "asset": "ETH",
+    "direction": "BEARISH",
+    "entry_price": 4334.82,
+    "return_4h": -0.003689,
+    "return_24h": 0.00293,
+    "btc_regime": "DOWN"
+  },
+  {
+    "event_id": "evt_1975321006035107859_call",
+    "asset": "BTC",
+    "direction": "BEARISH",
+    "entry_price": 124658.54,
+    "return_4h": 0.002638,
+    "return_24h": 0.026678,
+    "btc_regime": "UP"
+  }
+]
