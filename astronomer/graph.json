@@ -455,6 +455,126 @@
     {
       "id": "MARKET_STRUCTURE",
       "type": "primitive"
+    },
+    {
+      "id": "DeItaone",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "FirstSquawk",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "EleanorTerrett",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "FarsideUK",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "EricBalchunas",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "JSeyff",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "SubnetStats",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.5
+    },
+    {
+      "id": "taodotbot",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "TAOTemplar",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "taostats",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "iliensinc",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "janklimo",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "hypurr_co",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "spotonchain",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "0xngmi",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "coinglass_com",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "DeribitInsights",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "Wolves_Techml",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "ETF_FLOW",
+      "type": "primitive"
+    },
+    {
+      "id": "NEWS_CATALYST",
+      "type": "primitive"
+    },
+    {
+      "id": "POLICY",
+      "type": "primitive"
     }
   ],
   "edges": [
@@ -861,6 +981,101 @@
     {
       "source": "profplum99",
       "target": "MARKET_STRUCTURE",
+      "relation": "USES"
+    },
+    {
+      "source": "DeItaone",
+      "target": "NEWS_CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "FirstSquawk",
+      "target": "NEWS_CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "EleanorTerrett",
+      "target": "NEWS_CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "EleanorTerrett",
+      "target": "POLICY",
+      "relation": "USES"
+    },
+    {
+      "source": "FarsideUK",
+      "target": "ETF_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "EricBalchunas",
+      "target": "ETF_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "JSeyff",
+      "target": "ETF_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "SubnetStats",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "taodotbot",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "TAOTemplar",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "taostats",
+      "target": "TOKEN_DISCOVERY",
+      "relation": "USES"
+    },
+    {
+      "source": "iliensinc",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "janklimo",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "hypurr_co",
+      "target": "CATALYST",
+      "relation": "USES"
+    },
+    {
+      "source": "spotonchain",
+      "target": "ONCHAIN_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "0xngmi",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "coinglass_com",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "DeribitInsights",
+      "target": "DERIVED_PREMIUM_DATA",
+      "relation": "USES"
+    },
+    {
+      "source": "Wolves_Techml",
+      "target": "TOKEN_DISCOVERY",
       "relation": "USES"
     }
   ]
