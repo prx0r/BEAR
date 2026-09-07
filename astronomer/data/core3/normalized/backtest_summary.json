@@ -1,0 +1,267 @@
+{
+  "Timeless_Crypto": {
+    "handle": "Timeless_Crypto",
+    "tweets": 2658,
+    "btc_calls": 193,
+    "outcomes": 193,
+    "regime": {
+      "UP": {
+        "n": 56,
+        "win": 0.4821,
+        "mean": -0.000213
+      },
+      "DOWN": {
+        "n": 79,
+        "win": 0.557,
+        "mean": 0.002498
+      },
+      "RANGE": {
+        "n": 58,
+        "win": 0.3966,
+        "mean": -0.001652
+      }
+    },
+    "direction": {
+      "BULLISH": {
+        "n": 126,
+        "win": 0.4524,
+        "mean": -0.000279
+      },
+      "BEARISH": {
+        "n": 67,
+        "win": 0.5522,
+        "mean": 0.001862
+      }
+    },
+    "4h": {
+      "n": 193,
+      "win_rate": 0.487,
+      "mean_return": 0.000464,
+      "median_return": -0.00011,
+      "sharpe": 0.83,
+      "pf": 1.14,
+      "bayesian_wr": 0.4873,
+      "wilson_lo": 0.4175,
+      "wilson_hi": 0.5571
+    },
+    "24h": {
+      "n": 193,
+      "win_rate": 0.5596,
+      "mean_return": 0.002866,
+      "sharpe": 2.06,
+      "pf": 1.36
+    }
+  },
+  "Trader_XO": {
+    "handle": "Trader_XO",
+    "tweets": 776,
+    "btc_calls": 22,
+    "outcomes": 22,
+    "regime": {
+      "UP": {
+        "n": 5,
+        "win": 0.8,
+        "mean": 0.000988
+      },
+      "DOWN": {
+        "n": 12,
+        "win": 0.6667,
+        "mean": 0.002138
+      },
+      "RANGE": {
+        "n": 5,
+        "win": 0.6,
+        "mean": 0.001625
+      }
+    },
+    "direction": {
+      "BULLISH": {
+        "n": 13,
+        "win": 0.6154,
+        "mean": 0.001573
+      },
+      "BEARISH": {
+        "n": 9,
+        "win": 0.7778,
+        "mean": 0.002031
+      }
+    },
+    "4h": {
+      "n": 22,
+      "win_rate": 0.6818,
+      "mean_return": 0.00176,
+      "median_return": 0.00243,
+      "sharpe": 3.11,
+      "pf": 1.56,
+      "bayesian_wr": 0.6538,
+      "wilson_lo": 0.4732,
+      "wilson_hi": 0.8364
+    },
+    "24h": {
+      "n": 22,
+      "win_rate": 0.5,
+      "mean_return": -0.00256,
+      "sharpe": -2.55,
+      "pf": 0.71
+    }
+  },
+  "astronomer_zero": {
+    "handle": "astronomer_zero",
+    "tweets": 766,
+    "btc_calls": 96,
+    "outcomes": 96,
+    "regime": {
+      "UP": {
+        "n": 28,
+        "win": 0.4643,
+        "mean": -0.001332
+      },
+      "DOWN": {
+        "n": 30,
+        "win": 0.5667,
+        "mean": 0.000175
+      },
+      "RANGE": {
+        "n": 38,
+        "win": 0.4737,
+        "mean": 0.00053
+      }
+    },
+    "direction": {
+      "BULLISH": {
+        "n": 70,
+        "win": 0.5429,
+        "mean": 0.000984
+      },
+      "BEARISH": {
+        "n": 26,
+        "win": 0.3846,
+        "mean": -0.003108
+      }
+    },
+    "4h": {
+      "n": 96,
+      "win_rate": 0.5,
+      "mean_return": -0.000124,
+      "median_return": 5.4e-05,
+      "sharpe": -0.22,
+      "pf": 0.97,
+      "bayesian_wr": 0.5,
+      "wilson_lo": 0.4019,
+      "wilson_hi": 0.5981
+    },
+    "24h": {
+      "n": 96,
+      "win_rate": 0.5208,
+      "mean_return": -0.001562,
+      "sharpe": -1.48,
+      "pf": 0.81
+    }
+  },
+  "CryptoBheem": {
+    "handle": "CryptoBheem",
+    "tweets": 883,
+    "btc_calls": 72,
+    "outcomes": 72,
+    "regime": {
+      "UP": {
+        "n": 28,
+        "win": 0.7143,
+        "mean": 0.003351
+      },
+      "DOWN": {
+        "n": 27,
+        "win": 0.4074,
+        "mean": -0.00229
+      },
+      "RANGE": {
+        "n": 17,
+        "win": 0.3529,
+        "mean": -0.001294
+      }
+    },
+    "direction": {
+      "BULLISH": {
+        "n": 57,
+        "win": 0.5614,
+        "mean": -7e-06
+      },
+      "BEARISH": {
+        "n": 15,
+        "win": 0.3333,
+        "mean": 0.000694
+      }
+    },
+    "4h": {
+      "n": 72,
+      "win_rate": 0.5139,
+      "mean_return": 0.000139,
+      "median_return": 0.00011,
+      "sharpe": 0.32,
+      "pf": 1.05,
+      "bayesian_wr": 0.5132,
+      "wilson_lo": 0.4007,
+      "wilson_hi": 0.6257
+    },
+    "24h": {
+      "n": 72,
+      "win_rate": 0.4583,
+      "mean_return": -0.002256,
+      "sharpe": -2.69,
+      "pf": 0.68
+    }
+  },
+  "eliz883": {
+    "handle": "eliz883",
+    "tweets": 813,
+    "btc_calls": 23,
+    "outcomes": 23,
+    "regime": {
+      "UP": {
+        "n": 8,
+        "win": 0.5,
+        "mean": -0.003371
+      },
+      "DOWN": {
+        "n": 9,
+        "win": 0.1111,
+        "mean": -0.004565
+      },
+      "RANGE": {
+        "n": 6,
+        "win": 0.1667,
+        "mean": -0.00104
+      }
+    },
+    "direction": {
+      "BULLISH": {
+        "n": 16,
+        "win": 0.3125,
+        "mean": -0.000156
+      },
+      "BEARISH": {
+        "n": 7,
+        "win": 0.1429,
+        "mean": -0.010257
+      }
+    },
+    "4h": {
+      "n": 23,
+      "win_rate": 0.2609,
+      "mean_return": -0.00323,
+      "median_return": -0.003083,
+      "sharpe": -6.47,
+      "pf": 0.39,
+      "bayesian_wr": 0.2963,
+      "wilson_lo": 0.1255,
+      "wilson_hi": 0.4647
+    },
+    "24h": {
+      "n": 23,
+      "win_rate": 0.3913,
+      "mean_return": -0.006711,
+      "sharpe": -5.89,
+      "pf": 0.38
+    }
+  }
+}
