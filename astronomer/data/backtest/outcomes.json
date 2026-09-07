@@ -1,5 +1,397 @@
 [
   {
+    "handle": "exitpumpBTC",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78864.72,
+    "return_4h": -0.0026972770587406023,
+    "correct_4h": false,
+    "return_24h": -0.01795822010145987,
+    "correct_24h": false,
+    "return_7d": 0.016576233327145508,
+    "correct_7d": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 79016.0,
+    "return_4h": -0.005351447808038952,
+    "correct_4h": false,
+    "return_24h": -0.023566113192264933,
+    "correct_24h": false,
+    "return_7d": 0.014629948364888123,
+    "correct_7d": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78600.14,
+    "return_4h": 0.005290830270785784,
+    "correct_4h": true,
+    "return_24h": -0.005498081810032325,
+    "correct_24h": false,
+    "return_7d": 0.019998183209342893,
+    "correct_7d": true
+  },
+  {
+    "handle": "exitpumpBTC",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78860.0,
+    "return_4h": -0.002041846309916359,
+    "correct_4h": false,
+    "return_24h": 0.012586989601826028,
+    "correct_24h": true,
+    "return_7d": -0.012300025361399897,
+    "correct_7d": false
+  },
+  {
+    "handle": "Trader_XO",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 64462.58,
+    "return_4h": -0.004032727203906501,
+    "correct_4h": false,
+    "return_24h": -0.010539758104624392,
+    "correct_24h": false,
+    "return_7d": -0.0036135692986534987,
+    "correct_7d": false
+  },
+  {
+    "handle": "Trader_XO",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 79704.14,
+    "return_4h": 0.004238926610336685,
+    "correct_4h": true,
+    "return_24h": 0.0027338604995925456,
+    "correct_24h": true,
+    "return_7d": 0.005869958574297403,
+    "correct_7d": true
+  },
+  {
+    "handle": "Trader_XO",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 81147.16,
+    "return_4h": 0.020865794933550317,
+    "correct_4h": true,
+    "return_24h": 0.018449937126573543,
+    "correct_24h": true,
+    "return_7d": 0.012017179652374815,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 77788.46,
+    "return_4h": 0.004899441382436545,
+    "correct_4h": true,
+    "return_24h": -0.003068707106426735,
+    "correct_24h": false,
+    "return_7d": -0.02516144425535599,
+    "correct_7d": false
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 77149.4,
+    "return_4h": 0.0052454069636317015,
+    "correct_4h": true,
+    "return_24h": 0.046435876364560195,
+    "correct_24h": true,
+    "return_7d": 0.011232751000007854,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 77810.02,
+    "return_4h": -0.005466391089476792,
+    "correct_4h": false,
+    "return_24h": -0.01071867093723924,
+    "correct_24h": false,
+    "return_7d": 0.022566116806035975,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 72431.36,
+    "return_4h": 0.0033805799035114153,
+    "correct_4h": true,
+    "return_24h": 0.0650911428419955,
+    "correct_24h": true,
+    "return_7d": 0.10657441748988286,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 72737.5,
+    "return_4h": 5.92541673826798e-05,
+    "correct_4h": true,
+    "return_24h": 0.06399972503866634,
+    "correct_24h": true,
+    "return_7d": 0.10592830383227367,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 72737.5,
+    "return_4h": 5.92541673826798e-05,
+    "correct_4h": true,
+    "return_24h": 0.06399972503866634,
+    "correct_24h": true,
+    "return_7d": 0.10592830383227367,
+    "correct_7d": true
+  },
+  {
+    "handle": "0xaporia",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 71592.1,
+    "return_4h": 0.005027649698779443,
+    "correct_4h": true,
+    "return_24h": 0.1070778759108895,
+    "correct_24h": true,
+    "return_7d": 0.11403339195246401,
+    "correct_7d": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 79285.19,
+    "return_4h": 0.0005746344304654838,
+    "correct_4h": true,
+    "return_24h": -0.02062377601668109,
+    "correct_24h": false,
+    "return_7d": 0.02234263422967142,
+    "correct_7d": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 78470.0,
+    "return_4h": -0.016050082834204116,
+    "correct_4h": false,
+    "return_24h": -0.023805275901618454,
+    "correct_24h": false,
+    "return_7d": -0.010463744106027737,
+    "correct_7d": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63672.36,
+    "return_4h": 0.010265521805693983,
+    "correct_4h": true,
+    "return_24h": 0.008600749210489408,
+    "correct_24h": true,
+    "return_7d": 0.23441301688833277,
+    "correct_7d": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63310.0,
+    "return_4h": 0.003475122413520803,
+    "correct_4h": true,
+    "return_24h": -0.006002053388090317,
+    "correct_24h": false,
+    "return_7d": 0.14407455378297268,
+    "correct_7d": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63878.0,
+    "return_4h": 0.0014928457371865208,
+    "correct_4h": true,
+    "return_24h": 0.007798772660383829,
+    "correct_24h": true,
+    "return_7d": -0.0865484204264378,
+    "correct_7d": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 64982.01,
+    "return_4h": 0.003396632391026396,
+    "correct_4h": true,
+    "return_24h": -0.012726599254162805,
+    "correct_24h": false,
+    "return_7d": -0.023895844403705006,
+    "correct_7d": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 64994.31,
+    "return_4h": 0.00032248976871974066,
+    "correct_4h": true,
+    "return_24h": -0.0017918491634113683,
+    "correct_24h": false,
+    "return_7d": -0.030216952837871507,
+    "correct_7d": false
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 65029.98,
+    "return_4h": 0.001803168323287229,
+    "correct_4h": true,
+    "return_24h": 0.0009630942528354561,
+    "correct_24h": true,
+    "return_7d": 0.033233133394781934,
+    "correct_7d": true
+  },
+  {
+    "handle": "Timeless_Crypto",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 65029.98,
+    "return_4h": 0.001803168323287229,
+    "correct_4h": true,
+    "return_24h": 0.0009630942528354561,
+    "correct_24h": true,
+    "return_7d": 0.033233133394781934,
+    "correct_7d": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 79930.77,
+    "return_4h": 0.01189491856515337,
+    "correct_4h": true,
+    "return_24h": 0.015302992827418122,
+    "correct_24h": true,
+    "return_7d": 0.025615792266232455,
+    "correct_7d": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63069.32,
+    "return_4h": -0.00572782455875535,
+    "correct_4h": false,
+    "return_24h": 0.0009132808154582695,
+    "correct_24h": true,
+    "return_7d": 0.03085414588265732,
+    "correct_7d": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63297.84,
+    "return_4h": -0.0064757344010474005,
+    "correct_4h": false,
+    "return_24h": -0.003251769728635203,
+    "correct_24h": false,
+    "return_7d": 0.01671700013776144,
+    "correct_7d": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "direction": "SHORT",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 79930.77,
+    "return_4h": 0.01189491856515337,
+    "correct_4h": true,
+    "return_24h": 0.015302992827418122,
+    "correct_24h": true,
+    "return_7d": 0.025615792266232455,
+    "correct_7d": true
+  },
+  {
+    "handle": "CryptoBheem",
+    "direction": "LONG",
+    "assets": [
+      "BTC"
+    ],
+    "entry": 63069.32,
+    "return_4h": -0.00572782455875535,
+    "correct_4h": false,
+    "return_24h": 0.0009132808154582695,
+    "correct_24h": true,
+    "return_7d": 0.03085414588265732,
+    "correct_7d": true
+  },
+  {
     "handle": "astronomer_zero",
     "direction": "LONG",
     "assets": [
@@ -379,160 +771,6 @@
     "return_24h": -0.010893495900627798,
     "correct_24h": false,
     "return_7d": 0.017641733723129924,
-    "correct_7d": true
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 79285.19,
-    "return_4h": 0.0005746344304654838,
-    "correct_4h": true,
-    "return_24h": -0.02062377601668109,
-    "correct_24h": false,
-    "return_7d": 0.02234263422967142,
-    "correct_7d": true
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 78470.0,
-    "return_4h": -0.016050082834204116,
-    "correct_4h": false,
-    "return_24h": -0.023805275901618454,
-    "correct_24h": false,
-    "return_7d": -0.010463744106027737,
-    "correct_7d": false
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 63672.36,
-    "return_4h": 0.010265521805693983,
-    "correct_4h": true,
-    "return_24h": 0.008600749210489408,
-    "correct_24h": true,
-    "return_7d": 0.23441301688833277,
-    "correct_7d": true
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 63310.0,
-    "return_4h": 0.003475122413520803,
-    "correct_4h": true,
-    "return_24h": -0.006002053388090317,
-    "correct_24h": false,
-    "return_7d": 0.14407455378297268,
-    "correct_7d": true
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 63878.0,
-    "return_4h": 0.0014928457371865208,
-    "correct_4h": true,
-    "return_24h": 0.007798772660383829,
-    "correct_24h": true,
-    "return_7d": -0.0865484204264378,
-    "correct_7d": false
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 64982.01,
-    "return_4h": 0.003396632391026396,
-    "correct_4h": true,
-    "return_24h": -0.012726599254162805,
-    "correct_24h": false,
-    "return_7d": -0.023895844403705006,
-    "correct_7d": false
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 64994.31,
-    "return_4h": 0.00032248976871974066,
-    "correct_4h": true,
-    "return_24h": -0.0017918491634113683,
-    "correct_24h": false,
-    "return_7d": -0.030216952837871507,
-    "correct_7d": false
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 65029.98,
-    "return_4h": 0.001803168323287229,
-    "correct_4h": true,
-    "return_24h": 0.0009630942528354561,
-    "correct_24h": true,
-    "return_7d": 0.033233133394781934,
-    "correct_7d": true
-  },
-  {
-    "handle": "Timeless_Crypto",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 65029.98,
-    "return_4h": 0.001803168323287229,
-    "correct_4h": true,
-    "return_24h": 0.0009630942528354561,
-    "correct_24h": true,
-    "return_7d": 0.033233133394781934,
-    "correct_7d": true
-  },
-  {
-    "handle": "CryptoBheem",
-    "direction": "SHORT",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 79930.77,
-    "return_4h": 0.01189491856515337,
-    "correct_4h": true,
-    "return_24h": 0.015302992827418122,
-    "correct_24h": true,
-    "return_7d": 0.025615792266232455,
-    "correct_7d": true
-  },
-  {
-    "handle": "CryptoBheem",
-    "direction": "LONG",
-    "assets": [
-      "BTC"
-    ],
-    "entry": 63069.32,
-    "return_4h": -0.00572782455875535,
-    "correct_4h": false,
-    "return_24h": 0.0009132808154582695,
-    "correct_24h": true,
-    "return_7d": 0.03085414588265732,
     "correct_7d": true
   }
 ]
