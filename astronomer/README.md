@@ -1,76 +1,87 @@
-# Astronomer — X Signal Intelligence Module
+# BEAR Astronomer — X Signal Intelligence Module
 
-*Part of BEAR. Scrape X accounts, extract signals, backtest against price data.*
+*Crystallized strategies, continuous graph, binary activation.*
+
+---
+
+## Structure
+
+```
+astronomer/
+├── config/                    # Account registry, budget, filters
+│   ├── accounts.json          # 119 nodes, tier/weight
+│   ├── accounts-reference.md  # Account details
+│   ├── canonical-registry.md  # Schema
+│   └── BUDGET.md              # API tracking
+│
+├── specs/                     # Architecture documents
+│   ├── crystallized-protocol.md  # Main strategy architecture
+│   ├── strategy-architecture.md  # Binary activation
+│   ├── protocol.md               # Alpha Mining v2
+│   ├── meta-science.md           # Meta lifecycle theory
+│   ├── graph-architecture.md     # Graph spec
+│   ├── data-architecture.md      # Schema spec
+│   ├── minimal-backtest-plan.md  # What data we need
+│   ├── targeted-acquisition-spec.md  # Buy data to fix weaknesses
+│   ├── pipelineplan.md           # Full pipeline (3641 lines)
+│   ├── apistrategy.md            # How to scrape
+│   ├── cost-analysis.md          # Cost per content type
+│   └── originals/                # User messages (word-for-word)
+│
+├── data/                      # Raw data + backtest results
+│   ├── backtest/              # Cached API responses + outcomes
+│   ├── prices/                # BTC/ETH/SOL/TAO hourly OHLCV
+│   ├── regime/                # BTC regime detection
+│   └── recon_report.md        # 64-account recon results
+│
+├── src/                       # Code
+│   ├── backtest.py            # Signal → price outcomes
+│   ├── pipeline.py            # Fetch pipeline
+│   ├── regime.py              # BGeometrics regime detection
+│   ├── schemas.py             # Data models
+│   └── ...
+│
+├── specs/originals/           # User messages (word-for-word)
+│   ├── 2026-09-07-meta-science-original.md
+│   ├── 2026-09-07-architecture-expansion-original.md
+│   ├── 2026-09-07-canonical-sources-original.md
+│   ├── 2026-09-07-new-research-accounts-original.md
+│   └── death-token-x-intelligence-original.md
+│
+├── archive/                   # Batch processing archives
+│   ├── batches/               # Raw API responses
+│   ├── filter_rules/          # Learned filter rules
+│   └── reviews/               # Batch review notes
+│
+└── docs/getxapi/              # GetXAPI documentation
+```
+
+## Current State
+
+| Metric | Value |
+|--------|-------|
+| Accounts | 119 nodes |
+| Edges | 100 |
+| August backtest | 10 accounts, 383 tweets, 68 signals |
+| Top performer | @0xaporia (86% win 4h) |
+| Balance | $39.61 |
 
 ## Quick Start
 
 ```python
-# 1. Scout an account (3 calls)
-from astronomer.fetcher import scout_account
-result = scout_account("new_trader_handle")
-print(f"Signal density: {result['signal_density']:.0%}")
+# Fetch data
+python3 astronomer/pipeline.py
 
-# 2. Batch scrape if signal density > 0.3
-from astronomer.fetcher import batch_scrape
-batch_scrape("new_trader_handle", "2026-08-01", "2026-08-31")
+# Run backtest
+python3 astronomer/backtest.py
 
-# 3. Extract signals
-from astronomer.extractor import extract_signals
-signals = extract_signals(handle="new_trader_handle")
-
-# 4. Backtest
-from astronomer.backtest import match_outcomes
-outcomes = match_outcomes(signals)
-
-# 5. Analyze
-from astronomer.signal_engine import compute_author_stats
-stats = compute_author_stats(outcomes)
+# Check regime
+python3 astronomer/regime.py
 ```
 
-## Key Files
+## The Edge
 
-| File | Purpose |
-|------|---------|
-| `apistrategy.md` | How to scrape properly |
-| `pipelineplan.md` | Full pipeline specification |
-| `strategy-combined.md` | AltCalls + Death + Macro strategy |
-| `strategy-flaws-addressed.md` | Guardrails for each flaw |
-| `death-pipeline.md` | Death token X intelligence |
-| `data-architecture.md` | Schema definitions |
-| `schemas.py` | Pydantic data models |
-| `scraping-review.md` | Process review and lessons |
+**Not:** "short dead tokens"
+**But:** "probability DEATH_TOKEN should be active RIGHT NOW = 0.82"
 
-## Data
-
-| Path | Content |
-|------|---------|
-| `data/raw/` | 16 JSON files, 591 tweets |
-| `data/extracted/` | 128 directional signals |
-| `data/prices/` | BTC/ETH/SOL/TAO hourly klines |
-| `data/budgets/` | API call log |
-
-## Budget
-
-| Metric | Value |
-|--------|-------|
-| GetXAPI balance | $0.08 (83 calls) |
-| Total spent: $0.31 (468 calls) |
-| Posts collected | 591 |
-| Cost per post | $0.00004 |
-| Cost per signal | $0.0002 |
-
-## Accounts
-
-| Tier | Count | Purpose |
-|------|-------|---------|
-| S (scrape) | 8 | Direct signal |
-| A (selective) | 8 | Context + some signal |
-| B (archive) | 11 | Discovery only |
-
-See `accounts.json` and `canonical-accounts.md` for full list.
-
-## See Also
-
-- `../AGENTS.md` — Agent operating manual
-- `../src/bear/social/` — XReader adapter
-- `../DEV_PLAN.md` — Death token strategy
+The graph predicts when strategies activate. That probability prediction is the product.
