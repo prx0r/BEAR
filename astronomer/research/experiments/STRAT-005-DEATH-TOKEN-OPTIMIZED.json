@@ -1,0 +1,68 @@
+{
+  "strategy_id": "STRAT-005-DEATH-TOKEN-OPTIMIZED",
+  "version": "1.0",
+  "status": "HYPOTHESIS",
+  "created_at": "2026-09-07T14:00:00Z",
+
+  "hypothesis": "Optimizing DEATH_TOKEN with trader regime filters and entry/exit timing improves Sharpe from 1.11 to ~1.5.",
+
+  "base_strategy": {
+    "name": "DEATH_TOKEN",
+    "existing_sharpe": 1.1062,
+    "existing_return": 102.92,
+    "existing_win_rate": 71.43,
+    "existing_trades": 251,
+    "best_weights": {
+      "funding_pressure": 0.55,
+      "reversal": 0.15,
+      "volume_death": 0.10,
+      "deep_decline": 0.10,
+      "momentum": 0.10
+    }
+  },
+
+  "optimizations": [
+    {
+      "name": "REGIME_FILTER",
+      "source": "Timeless_Crypto",
+      "rule": "Only short when Timeless says DOWN or RANGE regime",
+      "expected_impact": "Eliminate UP regime losers, ~80% win rate"
+    },
+    {
+      "name": "ENTRY_TIMING",
+      "source": "Trader_XO",
+      "rule": "Short when XO says SHORT (4h) AND death_score > 75",
+      "expected_impact": "Better entry prices, ~5% improvement"
+    },
+    {
+      "name": "EXIT_TIMING",
+      "source": "Timeless_Crypto",
+      "rule": "Exit when Timeless flips BULLISH or death_score < 50",
+      "expected_impact": "Capture more of the move, ~10% improvement"
+    },
+    {
+      "name": "ASSET_SCREENING",
+      "source": "CryptoBheem (concept)",
+      "rule": "Avoid tokens at strong support levels (conceptual)",
+      "expected_impact": "Fewer false signals"
+    }
+  ],
+
+  "combined_rules": {
+    "selection": "death_score > 75 (funding_pressure weighted)",
+    "regime_filter": "Timeless says DOWN or RANGE",
+    "entry": "XO says SHORT (4h) OR death_score > 90",
+    "exit": "Timeless flips BULLISH OR death_score < 50 OR 2-week time stop",
+    "position": "Short perp, 2-3x leverage",
+    "stop": "+10% from entry",
+    "target": "-30% from entry"
+  },
+
+  "expected_improvement": {
+    "sharpe": "~1.5 (from 1.11)",
+    "return": "~150%+ (from 103%)",
+    "win_rate": "~80% (from 71%)"
+  },
+
+  "falsification": "If combined strategy Sharpe < 1.0 with n>100, reject."
+}
