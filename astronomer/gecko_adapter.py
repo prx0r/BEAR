@@ -101,14 +101,14 @@ class GeckoTerminalAdapter:
             print(f"  GeckoTerminal pool search error: {e}")
             return None
 
-    def get_ohlcv(self, chain: str, pool_address: str, interval: str = "1h",
+    def get_ohlcv(self, chain: str, pool_address: str, interval: str = "day",
                   after: Optional[str] = None, before: Optional[str] = None) -> list[dict]:
         """Fetch OHLCV for a pool.
 
         Args:
             chain: Network (solana, ethereum, etc.)
             pool_address: Pool contract address
-            interval: OHLCV interval (1h, 4h, 1d)
+            interval: OHLCV interval (day, hour)
             after: ISO date string for start
             before: ISO date string for end
 
@@ -125,7 +125,8 @@ class GeckoTerminalAdapter:
 
         try:
             # GeckoTerminal OHLCV endpoint
-            params = {"aggregate": "1"}  # 1 unit of the interval
+            # Interval must be "day" or "hour" (not "1h")
+            params = {"aggregate": "1"}
             if after:
                 dt = datetime.fromisoformat(after.replace("Z", "+00:00"))
                 params["after"] = int(dt.timestamp())
@@ -188,7 +189,7 @@ class GeckoTerminalAdapter:
         if not pool:
             return {"pool": None, "ohlcv": [], "status": "no_pool"}
 
-        ohlcv = self.get_ohlcv(chain, pool["pool_address"], "1h", after, before)
+        ohlcv = self.get_ohlcv(chain, pool["pool_address"], "day", after, before)
         if not ohlcv:
             return {"pool": pool, "ohlcv": [], "status": "no_data"}
 
