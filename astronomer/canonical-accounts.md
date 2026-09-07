@@ -6,7 +6,7 @@
 
 ## ✅ SCRAPE FOR SIGNALS (15 accounts)
 
-### Tier S — Direct Signal (proven standalone calls)
+### Tier S — Direct Signal (extractable standalone calls)
 
 | Handle | Weight | Proof |
 |--------|--------|-------|
@@ -21,7 +21,7 @@
 | @calvintsaikm | 1.0 | Levels, quant. Verify claims. |
 | @lBattleRhino | 1.1 | Alt strength when he posts. |
 
-### Tier A — Some Signal (proven but mixed content)
+### Tier A — Some Signal (mixed content, needs validation)
 
 | Handle | Weight | Proof |
 |--------|--------|-------|

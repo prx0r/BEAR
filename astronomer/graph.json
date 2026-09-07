@@ -1162,5 +1162,14 @@
       "target": "TOKEN_DISCOVERY",
       "relation": "USES"
     }
-  ]
+  ],
+  "metadata": {
+    "tier_definitions": {
+      "S": "Highest expected information value from reconnaissance. NOT proven profitable.",
+      "A": "Good information value, needs validation.",
+      "B": "Context/discovery only."
+    },
+    "last_updated": "2026-09-07",
+    "note": "Tier assignments are based on recon scouting, not backtested performance. All accounts need backtest validation before scaling."
+  }
 }
