@@ -15,167 +15,167 @@
 
 ---
 
-## Repo Layout
+## What Was Built (2026-09-07)
 
-```
-/root/BEAR/
-├── AGENTS.md                    ← THE CONTROL PLANE (10 binding rules)
-├── HANDOVER.md                  ← THIS FILE (operational bible)
-├── QUALITY.md                   ← Current vs standard assessment
-├── PLAN.md                      ← Strategy + backtest plan
-│
-├── astronomer/                  ← Signal intelligence module
-│   ├── config/                  # Account registry, budget
-│   │   ├── accounts.json        # 119 nodes, tier/weight
-│   │   ├── BUDGET.md            # API tracking
-│   │   └── canonical-registry.md
-│   │
-│   ├── specs/                   # Architecture documents
-│   │   ├── crystallized-protocol.md  # Main strategy
-│   │   ├── strategy-architecture.md  # Binary activation
-│   │   ├── protocol.md               # Alpha Mining v2
-│   │   ├── meta-science.md           # Meta lifecycle
-│   │   ├── minimal-backtest-plan.md  # What data we need
-│   │   ├── backtest-methodology.md   # How to score properly
-│   │   ├── signal-classification-schema.md  # Event kinds
-│   │   └── originals/                # User messages
-│   │
-│   ├── src/                       # Code
-│   │   ├── extractor_v2.py        # Evidence-grounded extractor
-│   │   ├── backtest.py            # Signal → outcomes
-│   │   ├── pipeline.py            # Fetch pipeline
-│   │   ├── regime.py              # BGeometrics regime
-│   │   └── schemas.py             # Data models
-│   │
-│   ├── data/                      # Data + results
-│   │   ├── backtest/
-│   │   │   ├── raw/              # Cached API responses
-│   │   │   ├── extracted_august_v2.json  # 182 events
-│   │   │   ├── backtest_august_v2.json   # 26 outcomes
-│   │   │   ├── gold_set.json     # 42 validation posts
-│   │   │   └── classified_august.json
-│   │   ├── prices/               # BTC/ETH/SOL/TAO OHLCV
-│   │   └── regime/               # BTC regime detection
-│   │
-│   ├── archive/                  # Batch archives
-│   └── docs/getxapi/            # API documentation
-│
-├── src/bear/
-│   ├── social/                   # XReader adapter
-│   ├── backtest/                 # Walk-forward backtester
-│   └── hyperliquid/              # HL integration
-│
-└── data/                         # Price data, regime, etc.
-```
+### Core 3 Traders
+- **Timeless_Crypto** — 2yr data (2,658 tweets, 390 strict calls)
+- **Trader_XO** — 2yr data (776 tweets, 89 strict calls)
+- **astronomer_zero** — 2yr data (766 tweets, 461 strict calls)
+
+### Additional Traders
+- **CryptoBheem** — 2yr data (883 tweets, 72 BTC calls)
+- **eliz883** — 2yr data (813 tweets, 23 BTC calls)
+
+### Key Edges Found (2yr data, n>=10)
+| Signal | N | Win | Mean | How |
+|--------|---|-----|------|-----|
+| XO after 3+ bullish | 9 | 78% | +2.47% | Momentum continuation |
+| Timeless bearish run=2 | 19 | 74% | +2.53% | Short squeeze reversal |
+| Astro 12h | 460 | 58% | +0.16% | Consistent edge |
+| Timeless hot streak | 112 | 61% | +0.57% | Streaks continue |
+
+### Strategies Crystallized
+1. **STRAT-004: Confluence** — XO DOWN 4h + Timeless RANGE 24h = +69.4% over 2yr
+2. **STRAT-005: Death Token Optimized** — death_score + trader regime filter
+3. **STRAT-003: Bheem ETH Levels** — 79% win at 4h (but n=14, needs validation)
+
+### LLM Agent
+- `agent.py` — Reads live tweets, decides ON/OFF for strategies
+- Uses OpenCode Zen MiMo V2.5
+- Correctly identifies: regime UP → all short strategies OFF
 
 ---
 
 ## Current State
 
-| Metric | Value |
-|--------|-------|
-| API Balance | $39.53 (primary key) |
-| Accounts tracked | 119 nodes |
-| Graph edges | 100 |
-| August backtest | 37 CALL events, 26 matched |
-| Top performer | @0xaporia (100% win 4h, **n=3 — TOO SMALL**) |
-| Gold set | 42 posts for validation |
-| Price data | BTC/ETH/SOL/TAO hourly (23K+ candles) |
+### Market (Sep 15, 2026)
+- **BTC: $78,810** — RANGE regime
+- **XO:** "Inflection points... hedging into FOMC Sep 15-16"
+- **Timeless:** Bearish, signed off Sep 2
+- **Astro:** "Local upside, more downside" — short-term bullish, macro bearish
+- **Bheem:** SOL target hit, BTC resistance 86-90k
+
+### Action: WAIT
+FOMC Sep 15-16 is the catalyst. XO is hedging into it. No clear entry.
+
+### Budget
+- Balance: $36.90
+- Plan expires: 2026-10-07
 
 ---
 
-## What We Built
+## Repo Layout
 
-### Core System
-- AGENTS.md — Control plane (10 rules, 5 procedures)
-- crystallized-protocol.md — Binary activation, continuous graph
-- strategy-architecture.md — Strategy entity structure
-- extractor_v2.py — Evidence-grounded extractor
-- backtest.py — Signal → price outcomes
-
-### Data
-- 12 JSON files (cached API responses)
-- 182 extracted events from August
-- 26 matched outcomes
-- 42 gold-set posts for validation
-- 23K+ hourly price candles
-
-### Key Results (with caveats)
-
-| Account | Win 4h | N | Caveat |
-|---------|--------|---|--------|
-| @0xaporia | 100% | **3** | TOO SMALL. 3 signals is not statistically significant. Could be pure luck. |
-| @Timeless | 89% | 9 | Better sample, but still small. SHORT conviction validated. |
-| @lookonchain | 67% | 9 | Onchain flow validated as separate alpha source. |
-| @astronomer | 50% | 8 | Mixed. Needs regime filter. |
-
-**WARNING:** The 100% win rate for 0xaporia is based on 3 signals. That's not alpha — that's a coin flip with small sample bias. Do NOT treat this as validated. The real test is whether it holds with n>30.
-
-**Only 15% of posts are PREDICTION (properly classified).** The other 85% are observations, analysis, or retrospective.
-
----
-
-## The Protocol (Gospel)
-
-See: `astronomer/specs/originals/2026-09-07-backtest-protocol-original.md`
-
-Key principles:
-1. Evidence-grounded extraction (every field needs evidence span)
-2. No BTC default (null for unknown assets)
-3. One asset per outcome
-4. Two evaluation lanes (trade vs information)
-5. Regime classification from market data only
-6. Gold set for extraction validation
-
----
-
-## Next Agent Should
-
-### Priority 1: Validate Extraction (30 min)
-1. Manually label 50 posts from gold set
-2. Run extractor_v2.py
-3. Measure precision/recall
-4. Fix until >90% precision
-
-### Priority 2: Build Hypothesis Registry (1 hour)
-1. Every strategy idea timestamped
-2. Store in hypothesis_registry.jsonl
-
-### Priority 3: Regime Timeline (30 min)
-1. Deterministic BTC regime from hourly data
-2. EMA20, EMA50, 24h return, 7d vol
-
-### Priority 4: Full Backtest (1 hour)
-1. Re-extract August with v2 extractor
-2. Match 37 CALL events to outcomes
-3. Compare to baseline
-4. Generate source cards
+```
+/root/BEAR/
+├── AGENTS.md                    ← THE CONTROL PLANE
+├── HANDOVER.md                  ← THIS FILE
+├── BUILD_NOTES.md               ← Session build notes
+├── PLAN.md                      ← Strategy + backtest plan
+│
+├── astronomer/                  ← Signal intelligence module
+│   ├── agent.py                 # LLM trading agent (MiMo V2.5)
+│   ├── backtest.py              # Canonical backtest engine
+│   ├── regime.py                # BTC regime detection
+│   ├── schemas.py               # Canonical data types
+│   ├── metrics.py               # Performance metrics
+│   ├── baselines.py             # Baseline models
+│   ├── extractor_v2.py          # Evidence-grounded extractor
+│   ├── run_backtest.py          # Full pipeline runner
+│   ├── src/getxapi/             # Budget-enforced API client
+│   ├── data/core3/              # Core 3 normalized data
+│   │   ├── normalized/          # all_events, outcomes, feature_matrix
+│   │   └── ml/                  # Experiment results
+│   ├── data/backtest/           # Raw API responses, outcomes
+│   ├── data/regime/             # BTC regime timeline
+│   ├── data/prices/             # BTC/ETH/SOL/HYPE hourly
+│   ├── data/live/               # Live monitoring feed
+│   ├── research/experiments/    # Strategy files + results
+│   └── specs/                   # Architecture docs + user messages
+│
+├── carbon/                      # Pump.fun indexer (cloned, unused)
+├── pump-public-docs/            # Official Pump IDLs
+├── pump-fun-skills/             # Pump agent skills
+│
+├── src/bear/                    # Full BEAR codebase
+│   ├── backtest/                # Walk-forward backtester
+│   ├── features/                # Death score signals (22 modules)
+│   ├── models/                  # Death hazard model
+│   └── social/                  # XReader adapter
+│
+└── data/
+    ├── binance/                 # 65 token price files
+    ├── live/                    # Dead coins, funding, pressure
+    └── death_score_results.json # Death token strategy results
+```
 
 ---
 
-## Key Files
+## How to Run
+
+### Quick backtest
+```bash
+cd astronomer && python3 backtest.py
+```
+
+### Full pipeline
+```bash
+cd astronomer && python3 run_backtest.py
+```
+
+### LLM agent
+```bash
+cd astronomer && python3 agent.py
+```
+
+### Monitor live
+```bash
+cd astronomer && python3 monitor.py
+```
+
+### Fetch new data
+```bash
+cd astronomer && python3 -c "
+from src.getxapi import GetXAPI
+with GetXAPI() as api:
+    tweets = api.user_tweets('HandleName', max_pages=50)
+"
+```
+
+---
+
+## Key Files for Next Agent
 
 | File | Purpose |
 |------|---------|
-| `AGENTS.md` | Control plane — read first |
-| `QUALITY.md` | Current vs standard |
-| `HANDOVER.md` | This file |
-| `astronomer/specs/originals/2026-09-07-backtest-protocol-original.md` | The protocol |
-| `astronomer/extractor_v2.py` | Evidence-grounded extractor |
-| `astronomer/data/backtest/gold_set.json` | 42 validation posts |
-| `astronomer/data/backtest/extracted_august_v2.json` | 182 events |
+| `BUILD_NOTES.md` | What was built and found |
+| `research/experiments/all_experiment_results.json` | All 8 experiment results |
+| `research/experiments/STRAT-004-CONFLUENCE.json` | Best strategy (+69.4%) |
+| `data/core3/normalized/strict_calls.json` | 940 properly classified calls |
+| `data/core3/normalized/all_outcomes.json` | 1,876 backtest outcomes |
+| `data/core3/ml/feature_matrix.json` | Feature matrix for ML |
+| `agent.py` | LLM trading agent |
+| `src/getxapi/client.py` | Budget-enforced API client |
 
-## API Key
+---
 
-```
-Primary key: stored in .env (GETXAPI_KEY)
-Backup key: in agent-vault (GETXAPI_KEY_BACKUP)
-Balance: $36.90
-Plan: pro_sub (expires 2026-10-07)
-```
+## What NOT to Do
 
-**NEVER hardcode keys in files. Use .env or agent-vault.**
+1. **Don't add more accounts until Core 3 is validated**
+2. **Don't use regex for classification** — it lies about direction
+3. **Don't skip budget checks** — every API call goes through GetXAPI
+4. **Don't ignore regime** — no edge without it
+5. **Don't trust small n** — n<10 is meaningless
+
+---
 
 ## The One Rule
 
 **Source fidelity outranks what the model thinks is true.**
+
+Every extracted field must have an evidence span. If the extractor can't point to supporting text, the value is null.
+
+---
+
+*Last updated: 2026-09-15*
+*Next agent: Read this, then AGENTS.md, then data/core3/normalized/ for the actual numbers.*
