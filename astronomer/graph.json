@@ -1,77 +1,301 @@
 {
   "nodes": [
-    {"id": "astronomer_zero", "type": "account", "tier": "S", "weight": 1.0},
-    {"id": "Timeless_Crypto", "type": "account", "tier": "S", "weight": 1.2},
-    {"id": "exitpumpBTC", "type": "account", "tier": "S", "weight": 1.2},
-    {"id": "52kskew", "type": "account", "tier": "S", "weight": 1.2},
-    {"id": "Trader_XO", "type": "account", "tier": "A", "weight": 1.2},
-    {"id": "Husslin_", "type": "account", "tier": "A", "weight": 1.1},
-    {"id": "DeFiSquared", "type": "account", "tier": "A", "weight": 1.0},
-    {"id": "thiccyth0t", "type": "account", "tier": "A", "weight": 1.0},
-    {"id": "CryptoBheem", "type": "account", "tier": "A", "weight": 1.0},
-    {"id": "GreatMattsby", "type": "account", "tier": "A", "weight": 1.0},
-    {"id": "calvintsaikm", "type": "account", "tier": "A", "weight": 1.0},
-    {"id": "lBattleRhino", "type": "account", "tier": "A", "weight": 1.1},
-    {"id": "PriorXBT", "type": "account", "tier": "B", "weight": 1.5},
-    {"id": "skyquake_1", "type": "account", "tier": "B", "weight": 0.3},
-    {"id": "macrocephalopod", "type": "account", "tier": "B", "weight": 0.3},
-    
-    {"id": "TRADE_INTENT", "type": "primitive"},
-    {"id": "PRICE_MAP", "type": "primitive"},
-    {"id": "ORDER_FLOW", "type": "primitive"},
-    {"id": "DERIVATIVES_STATE", "type": "primitive"},
-    {"id": "REGIME", "type": "primitive"},
-    {"id": "TOKENOMICS", "type": "primitive"},
-    {"id": "POSITION_UPDATE", "type": "primitive"},
-    
-    {"id": "BTC", "type": "asset"},
-    {"id": "ETH", "type": "asset"},
-    {"id": "SOL", "type": "asset"},
-    {"id": "HYPE", "type": "asset"}
+    {
+      "id": "astronomer_zero",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.0
+    },
+    {
+      "id": "Timeless_Crypto",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.2
+    },
+    {
+      "id": "exitpumpBTC",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.2
+    },
+    {
+      "id": "52kskew",
+      "type": "account",
+      "tier": "S",
+      "weight": 1.2
+    },
+    {
+      "id": "Trader_XO",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.2
+    },
+    {
+      "id": "Husslin_",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.1
+    },
+    {
+      "id": "DeFiSquared",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "thiccyth0t",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "CryptoBheem",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "GreatMattsby",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "calvintsaikm",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    },
+    {
+      "id": "lBattleRhino",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.1
+    },
+    {
+      "id": "PriorXBT",
+      "type": "account",
+      "tier": "B",
+      "weight": 1.5
+    },
+    {
+      "id": "skyquake_1",
+      "type": "account",
+      "tier": "B",
+      "weight": 0.3
+    },
+    {
+      "id": "macrocephalopod",
+      "type": "account",
+      "tier": "B",
+      "weight": 0.3
+    },
+    {
+      "id": "TRADE_INTENT",
+      "type": "primitive"
+    },
+    {
+      "id": "PRICE_MAP",
+      "type": "primitive"
+    },
+    {
+      "id": "ORDER_FLOW",
+      "type": "primitive"
+    },
+    {
+      "id": "DERIVATIVES_STATE",
+      "type": "primitive"
+    },
+    {
+      "id": "REGIME",
+      "type": "primitive"
+    },
+    {
+      "id": "TOKENOMICS",
+      "type": "primitive"
+    },
+    {
+      "id": "POSITION_UPDATE",
+      "type": "primitive"
+    },
+    {
+      "id": "BTC",
+      "type": "asset"
+    },
+    {
+      "id": "ETH",
+      "type": "asset"
+    },
+    {
+      "id": "SOL",
+      "type": "asset"
+    },
+    {
+      "id": "HYPE",
+      "type": "asset"
+    },
+    {
+      "id": "chrono_chartist",
+      "type": "account",
+      "tier": "A",
+      "weight": 1.0
+    }
   ],
-  
   "edges": [
-    {"source": "astronomer_zero", "target": "TRADE_INTENT", "relation": "USES"},
-    {"source": "astronomer_zero", "target": "PRICE_MAP", "relation": "USES"},
-    {"source": "astronomer_zero", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "Timeless_Crypto", "target": "TRADE_INTENT", "relation": "USES"},
-    {"source": "Timeless_Crypto", "target": "PRICE_MAP", "relation": "USES"},
-    {"source": "Timeless_Crypto", "target": "REGIME", "relation": "USES"},
-    {"source": "Timeless_Crypto", "target": "POSITION_UPDATE", "relation": "USES"},
-    {"source": "Timeless_Crypto", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "exitpumpBTC", "target": "ORDER_FLOW", "relation": "USES"},
-    {"source": "exitpumpBTC", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "52kskew", "target": "ORDER_FLOW", "relation": "USES"},
-    {"source": "52kskew", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "Trader_XO", "target": "PRICE_MAP", "relation": "USES"},
-    {"source": "Trader_XO", "target": "BTC", "relation": "POSTS_ABOUT"},
-    {"source": "Trader_XO", "target": "ETH", "relation": "POSTS_ABOUT"},
-    
-    {"source": "Husslin_", "target": "ORDER_FLOW", "relation": "USES"},
-    {"source": "Husslin_", "target": "POSITION_UPDATE", "relation": "USES"},
-    
-    {"source": "DeFiSquared", "target": "TOKENOMICS", "relation": "USES"},
-    
-    {"source": "thiccyth0t", "target": "TOKENOMICS", "relation": "USES"},
-    
-    {"source": "CryptoBheem", "target": "TRADE_INTENT", "relation": "USES"},
-    {"source": "CryptoBheem", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "GreatMattsby", "target": "TRADE_INTENT", "relation": "USES"},
-    
-    {"source": "calvintsaikm", "target": "PRICE_MAP", "relation": "USES"},
-    
-    {"source": "lBattleRhino", "target": "TRADE_INTENT", "relation": "USES"},
-    {"source": "lBattleRhino", "target": "BTC", "relation": "POSTS_ABOUT"},
-    
-    {"source": "PriorXBT", "target": "DERIVATIVES_STATE", "relation": "USES"},
-    
-    {"source": "skyquake_1", "target": "DERIVATIVES_STATE", "relation": "USES"},
-    
-    {"source": "macrocephalopod", "target": "REGIME", "relation": "USES"}
+    {
+      "source": "astronomer_zero",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "astronomer_zero",
+      "target": "PRICE_MAP",
+      "relation": "USES"
+    },
+    {
+      "source": "astronomer_zero",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "Timeless_Crypto",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "Timeless_Crypto",
+      "target": "PRICE_MAP",
+      "relation": "USES"
+    },
+    {
+      "source": "Timeless_Crypto",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "Timeless_Crypto",
+      "target": "POSITION_UPDATE",
+      "relation": "USES"
+    },
+    {
+      "source": "Timeless_Crypto",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "exitpumpBTC",
+      "target": "ORDER_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "exitpumpBTC",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "52kskew",
+      "target": "ORDER_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "52kskew",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "Trader_XO",
+      "target": "PRICE_MAP",
+      "relation": "USES"
+    },
+    {
+      "source": "Trader_XO",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "Trader_XO",
+      "target": "ETH",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "Husslin_",
+      "target": "ORDER_FLOW",
+      "relation": "USES"
+    },
+    {
+      "source": "Husslin_",
+      "target": "POSITION_UPDATE",
+      "relation": "USES"
+    },
+    {
+      "source": "DeFiSquared",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "thiccyth0t",
+      "target": "TOKENOMICS",
+      "relation": "USES"
+    },
+    {
+      "source": "CryptoBheem",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "CryptoBheem",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "GreatMattsby",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "calvintsaikm",
+      "target": "PRICE_MAP",
+      "relation": "USES"
+    },
+    {
+      "source": "lBattleRhino",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "lBattleRhino",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    },
+    {
+      "source": "PriorXBT",
+      "target": "DERIVATIVES_STATE",
+      "relation": "USES"
+    },
+    {
+      "source": "skyquake_1",
+      "target": "DERIVATIVES_STATE",
+      "relation": "USES"
+    },
+    {
+      "source": "macrocephalopod",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "chrono_chartist",
+      "target": "REGIME",
+      "relation": "USES"
+    },
+    {
+      "source": "chrono_chartist",
+      "target": "TRADE_INTENT",
+      "relation": "USES"
+    },
+    {
+      "source": "chrono_chartist",
+      "target": "BTC",
+      "relation": "POSTS_ABOUT"
+    }
   ]
 }
