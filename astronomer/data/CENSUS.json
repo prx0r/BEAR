@@ -1,0 +1,1300 @@
+{
+ "generated_at": "2026-09-10T14:17:41.610165+00:00",
+ "raw": {
+  "0xAvast_aug2026.json": {
+   "rows": 181,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 1,
+   "media": 35,
+   "bytes": 307713
+  },
+  "0xLoris_aug2026.json": {
+   "rows": 89,
+   "from": "2026-08-04",
+   "to": "2026-08-28",
+   "span_d": 23,
+   "dupes": 0,
+   "media": 32,
+   "bytes": 148070
+  },
+  "0xaporia_aug2026.json": {
+   "rows": 30,
+   "from": "2026-08-06",
+   "to": "2026-08-28",
+   "span_d": 22,
+   "dupes": 0,
+   "media": 7,
+   "bytes": 62067
+  },
+  "0xngmi_aug2026.json": {
+   "rows": 32,
+   "from": "2026-08-02",
+   "to": "2026-08-29",
+   "span_d": 27,
+   "dupes": 6,
+   "media": 1,
+   "bytes": 54111
+  },
+  "0xnobi_aug2026.json": {
+   "rows": 400,
+   "from": "2026-08-07",
+   "to": "2026-09-02",
+   "span_d": 25,
+   "dupes": 0,
+   "media": 129,
+   "bytes": 633865
+  },
+  "52kskew_aug2026.json": {
+   "rows": 0,
+   "note": "empty/dict",
+   "bytes": 2
+  },
+  "AxelAdlerJr_aug2026.json": {
+   "rows": 130,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 102,
+   "bytes": 226590
+  },
+  "AxelAdlerJr_jul2026.json": {
+   "rows": 124,
+   "from": "2026-07-01",
+   "to": "2026-08-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 100,
+   "bytes": 219192
+  },
+  "Bluntz_Capital_aug2026.json": {
+   "rows": 285,
+   "from": "2026-08-07",
+   "to": "2026-09-02",
+   "span_d": 25,
+   "dupes": 0,
+   "media": 82,
+   "bytes": 429226
+  },
+  "ByzGeneral_aug2026.json": {
+   "rows": 309,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 77,
+   "bytes": 515778
+  },
+  "CJ900X_aug2026.json": {
+   "rows": 110,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 42,
+   "bytes": 156490
+  },
+  "CavanXy_aug2026.json": {
+   "rows": 129,
+   "from": "2026-08-02",
+   "to": "2026-08-29",
+   "span_d": 27,
+   "dupes": 0,
+   "media": 33,
+   "bytes": 183659
+  },
+  "CertiKAlert_aug2026.json": {
+   "rows": 18,
+   "from": "2026-08-05",
+   "to": "2026-08-31",
+   "span_d": 26,
+   "dupes": 0,
+   "media": 12,
+   "bytes": 38776
+  },
+  "CrypNuevo_aug2026.json": {
+   "rows": 32,
+   "from": "2026-08-03",
+   "to": "2026-08-31",
+   "span_d": 28,
+   "dupes": 0,
+   "media": 22,
+   "bytes": 54297
+  },
+  "CrypNuevo_jul2026.json": {
+   "rows": 42,
+   "from": "2026-07-02",
+   "to": "2026-07-29",
+   "span_d": 26,
+   "dupes": 0,
+   "media": 21,
+   "bytes": 67532
+  },
+  "CryptoBheem_2yr.json": {
+   "rows": 883,
+   "from": "2025-01-09",
+   "to": "2026-09-06",
+   "span_d": 604,
+   "dupes": 56,
+   "media": 800,
+   "bytes": 1999984
+  },
+  "CryptoBheem_aug2026.json": {
+   "rows": 20,
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 15,
+   "bytes": 38703
+  },
+  "CryptoBheem_jul_sep2026.json": {
+   "rows": 30,
+   "from": "2026-07-03",
+   "to": "2026-09-06",
+   "span_d": 64,
+   "dupes": 0,
+   "media": 21,
+   "bytes": 57786
+  },
+  "CryptoCred_aug2026.json": {
+   "rows": 29,
+   "from": "2026-08-02",
+   "to": "2026-08-24",
+   "span_d": 22,
+   "dupes": 0,
+   "media": 6,
+   "bytes": 40286
+  },
+  "CryptoVizArt_aug2026.json": {
+   "rows": 26,
+   "from": "2026-08-06",
+   "to": "2026-08-29",
+   "span_d": 23,
+   "dupes": 0,
+   "media": 11,
+   "bytes": 45424
+  },
+  "Crypto_Chase_aug2026.json": {
+   "rows": 63,
+   "from": "2026-08-02",
+   "to": "2026-09-02",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 30,
+   "bytes": 94668
+  },
+  "Crypto_Chase_jul2026.json": {
+   "rows": 125,
+   "from": "2026-06-30",
+   "to": "2026-07-31",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 46,
+   "bytes": 167549
+  },
+  "DaanCrypto_aug2026.json": {
+   "rows": 180,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 136,
+   "bytes": 324648
+  },
+  "DaanCrypto_jul2026.json": {
+   "rows": 163,
+   "from": "2026-06-30",
+   "to": "2026-08-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 124,
+   "bytes": 293553
+  },
+  "DeItaone_aug2026.json": {
+   "rows": 400,
+   "from": "2026-08-10",
+   "to": "2026-09-01",
+   "span_d": 22,
+   "dupes": 0,
+   "media": 13,
+   "bytes": 653755
+  },
+  "DonAlt_aug2026.json": {
+   "rows": 121,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 24,
+   "bytes": 197839
+  },
+  "DrProfitCrypto_aug2026.json": {
+   "rows": 29,
+   "from": "2026-08-01",
+   "to": "2026-08-30",
+   "span_d": 29,
+   "dupes": 0,
+   "media": 11,
+   "bytes": 68509
+  },
+  "DrProfitCrypto_jul2026.json": {
+   "rows": 22,
+   "from": "2026-07-05",
+   "to": "2026-08-01",
+   "span_d": 27,
+   "dupes": 0,
+   "media": 12,
+   "bytes": 84848
+  },
+  "EleanorTerrett_aug2026.json": {
+   "rows": 64,
+   "from": "2026-08-04",
+   "to": "2026-09-01",
+   "span_d": 28,
+   "dupes": 0,
+   "media": 16,
+   "bytes": 134416
+  },
+  "EmberCN_aug2026.json": {
+   "rows": 126,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 117,
+   "bytes": 377884
+  },
+  "FarsideUK_aug2026.json": {
+   "rows": 80,
+   "from": "2026-08-12",
+   "to": "2026-09-02",
+   "span_d": 20,
+   "dupes": 0,
+   "media": 47,
+   "bytes": 141888
+  },
+  "FirstSquawk_aug2026.json": {
+   "rows": 400,
+   "from": "2026-08-15",
+   "to": "2026-09-02",
+   "span_d": 17,
+   "dupes": 0,
+   "media": 0,
+   "bytes": 640888
+  },
+  "FrankAFetter_aug2026.json": {
+   "rows": 132,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 61,
+   "bytes": 177032
+  },
+  "FrankAFetter_jul2026.json": {
+   "rows": 121,
+   "from": "2026-07-02",
+   "to": "2026-08-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 41,
+   "bytes": 160356
+  },
+  "Husslin__aug2026.json": {
+   "rows": 0,
+   "note": "empty/dict",
+   "bytes": 2
+  },
+  "HyperTracker_aug2026.json": {
+   "rows": 54,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 30,
+   "bytes": 80165
+  },
+  "HyperliquidR_aug2026.json": {
+   "rows": 81,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 29,
+   "dupes": 0,
+   "media": 34,
+   "bytes": 162889
+  },
+  "JA_Maartun_aug2026.json": {
+   "rows": 120,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 113,
+   "bytes": 201240
+  },
+  "JA_Maartun_jul2026.json": {
+   "rows": 72,
+   "from": "2026-07-01",
+   "to": "2026-08-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 70,
+   "bytes": 120542
+  },
+  "NachoTrades_aug2026.json": {
+   "rows": 7,
+   "from": "2026-08-09",
+   "to": "2026-09-01",
+   "span_d": 23,
+   "dupes": 0,
+   "media": 3,
+   "bytes": 10404
+  },
+  "OnchainLens_aug2026.json": {
+   "rows": 274,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 2,
+   "media": 227,
+   "bytes": 537105
+  },
+  "PeckShieldAlert_aug2026.json": {
+   "rows": 23,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 23,
+   "bytes": 47156
+  },
+  "Pentosh1_aug2026.json": {
+   "rows": 161,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 24,
+   "bytes": 224411
+  },
+  "RektProof_aug2026.json": {
+   "rows": 62,
+   "from": "2026-07-31",
+   "to": "2026-09-02",
+   "span_d": 32,
+   "dupes": 0,
+   "media": 44,
+   "bytes": 91787
+  },
+  "SalsaTekila_aug2026.json": {
+   "rows": 325,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 46,
+   "bytes": 428783
+  },
+  "SevaFTW_aug2026.json": {
+   "rows": 32,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 8,
+   "bytes": 53973
+  },
+  "SubnetStats_aug2026.json": {
+   "rows": 5,
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "span_d": 29,
+   "dupes": 0,
+   "media": 2,
+   "bytes": 9416
+  },
+  "TAOTemplar_aug2026.json": {
+   "rows": 103,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 20,
+   "bytes": 185114
+  },
+  "TheFlowHorse_aug2026.json": {
+   "rows": 554,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 138,
+   "bytes": 845681
+  },
+  "Timeless_Crypto_2yr.json": {
+   "rows": 2658,
+   "from": "2024-09-02",
+   "to": "2026-09-01",
+   "span_d": 729,
+   "dupes": 66,
+   "media": 1488,
+   "bytes": 4873255
+  },
+  "Timeless_Crypto_aug2026.json": {
+   "rows": 50,
+   "from": "2026-08-03",
+   "to": "2026-08-30",
+   "span_d": 27,
+   "dupes": 0,
+   "media": 32,
+   "bytes": 97661
+  },
+  "Tokenomist_ai_aug2026.json": {
+   "rows": 31,
+   "from": "2026-08-03",
+   "to": "2026-09-01",
+   "span_d": 29,
+   "dupes": 0,
+   "media": 29,
+   "bytes": 70434
+  },
+  "Trader_XO_2yr.json": {
+   "rows": 776,
+   "from": "2025-05-22",
+   "to": "2026-09-06",
+   "span_d": 471,
+   "dupes": 8,
+   "media": 358,
+   "bytes": 1881852
+  },
+  "Trader_XO_aug2026.json": {
+   "rows": 100,
+   "from": "2026-08-04",
+   "to": "2026-08-31",
+   "span_d": 27,
+   "dupes": 0,
+   "media": 5,
+   "bytes": 157533
+  },
+  "Trader_XO_jul_sep2026.json": {
+   "rows": 60,
+   "from": "2026-07-18",
+   "to": "2026-09-06",
+   "span_d": 50,
+   "dupes": 0,
+   "media": 13,
+   "bytes": 99744
+  },
+  "VetleLunde_aug2026.json": {
+   "rows": 11,
+   "from": "2026-08-12",
+   "to": "2026-08-25",
+   "span_d": 13,
+   "dupes": 0,
+   "media": 8,
+   "bytes": 17326
+  },
+  "Wild_Randomness_aug2026.json": {
+   "rows": 816,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 514,
+   "bytes": 1279492
+  },
+  "Wild_Randomness_jul2026.json": {
+   "rows": 734,
+   "from": "2026-07-01",
+   "to": "2026-08-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 475,
+   "bytes": 1154869
+  },
+  "_Checkmatey__aug2026.json": {
+   "rows": 260,
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 12,
+   "bytes": 459845
+  },
+  "ai_9684xtpa_aug2026.json": {
+   "rows": 253,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 32,
+   "dupes": 7,
+   "media": 186,
+   "bytes": 666286
+  },
+  "astronomer_zero_2yr.json": {
+   "rows": 766,
+   "from": "2026-04-08",
+   "to": "2026-09-07",
+   "span_d": 151,
+   "dupes": 0,
+   "media": 519,
+   "bytes": 2661333
+  },
+  "astronomer_zero_aug2026.json": {
+   "rows": 100,
+   "from": "2026-08-21",
+   "to": "2026-08-31",
+   "span_d": 10,
+   "dupes": 0,
+   "media": 25,
+   "bytes": 213290
+  },
+  "chameleon_jeff_aug2026.json": {
+   "rows": 3,
+   "from": "2026-08-12",
+   "to": "2026-08-19",
+   "span_d": 6,
+   "dupes": 0,
+   "media": 0,
+   "bytes": 6686
+  },
+  "chrono_chartist_aug2026.json": {
+   "rows": 288,
+   "from": "2026-08-05",
+   "to": "2026-09-01",
+   "span_d": 27,
+   "dupes": 2,
+   "media": 47,
+   "bytes": 518348
+  },
+  "crossbordercap_aug2026.json": {
+   "rows": 19,
+   "from": "2026-08-02",
+   "to": "2026-08-29",
+   "span_d": 26,
+   "dupes": 1,
+   "media": 10,
+   "bytes": 34380
+  },
+  "eliz883_2yr.json": {
+   "rows": 813,
+   "from": "2026-06-16",
+   "to": "2026-09-07",
+   "span_d": 82,
+   "dupes": 13,
+   "media": 436,
+   "bytes": 1699137
+  },
+  "exitpumpBTC_aug2026.json": {
+   "rows": 20,
+   "from": "2026-08-29",
+   "to": "2026-08-31",
+   "span_d": 1,
+   "dupes": 0,
+   "media": 8,
+   "bytes": 34068
+  },
+  "eyeonchains_aug2026.json": {
+   "rows": 12,
+   "from": "2026-08-04",
+   "to": "2026-08-04",
+   "span_d": 0,
+   "dupes": 0,
+   "media": 4,
+   "bytes": 18809
+  },
+  "hyblockcapital_aug2026.json": {
+   "rows": 145,
+   "from": "2026-08-01",
+   "to": "2026-09-01",
+   "span_d": 31,
+   "dupes": 0,
+   "media": 112,
+   "bytes": 306319
+  },
+  "janklimo_aug2026.json": {
+   "rows": 37,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 29,
+   "dupes": 1,
+   "media": 7,
+   "bytes": 60476
+  },
+  "jjcmoreno_aug2026.json": {
+   "rows": 19,
+   "from": "2026-08-01",
+   "to": "2026-08-27",
+   "span_d": 26,
+   "dupes": 0,
+   "media": 12,
+   "bytes": 30303
+  },
+  "josephwang_aug2026.json": {
+   "rows": 61,
+   "from": "2026-08-01",
+   "to": "2026-08-30",
+   "span_d": 29,
+   "dupes": 1,
+   "media": 18,
+   "bytes": 100957
+  },
+  "kenjidgn_aug2026.json": {
+   "rows": 226,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 3,
+   "media": 46,
+   "bytes": 345550
+  },
+  "ki_young_ju_aug2026.json": {
+   "rows": 35,
+   "from": "2026-08-05",
+   "to": "2026-08-30",
+   "span_d": 25,
+   "dupes": 0,
+   "media": 17,
+   "bytes": 63960
+  },
+  "kingfisher_btc_aug2026.json": {
+   "rows": 126,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 31,
+   "dupes": 9,
+   "media": 64,
+   "bytes": 257644
+  },
+  "koolkrypto223_aug2026.json": {
+   "rows": 20,
+   "from": "2026-08-26",
+   "to": "2026-08-31",
+   "span_d": 5,
+   "dupes": 0,
+   "media": 4,
+   "bytes": 34044
+  },
+  "lBattleRhino_aug2026.json": {
+   "rows": 260,
+   "from": "2026-08-01",
+   "to": "2026-08-28",
+   "span_d": 27,
+   "dupes": 0,
+   "media": 13,
+   "bytes": 402630
+  },
+  "laevitas1_aug2026.json": {
+   "rows": 45,
+   "from": "2026-08-06",
+   "to": "2026-09-02",
+   "span_d": 26,
+   "dupes": 0,
+   "media": 34,
+   "bytes": 92422
+  },
+  "loganlim_x_aug2026.json": {
+   "rows": 67,
+   "from": "2026-08-02",
+   "to": "2026-09-01",
+   "span_d": 30,
+   "dupes": 0,
+   "media": 6,
+   "bytes": 115871
+  },
+  "lookonchain_aug2026.json": {
+   "rows": 20,
+   "from": "2026-08-30",
+   "to": "2026-09-01",
+   "span_d": 2,
+   "dupes": 0,
+   "media": 20,
+   "bytes": 41290
+  },
+  "n3ocortex_aug2026.json": {
+   "rows": 49,
+   "from": "2026-08-02",
+   "to": "2026-08-30",
+   "span_d": 28,
+   "dupes": 0,
+   "media": 39,
+   "bytes": 78525
+  },
+  "taodotbot_aug2026.json": {
+   "rows": 1,
+   "from": "2026-08-04",
+   "to": "2026-08-04",
+   "span_d": 0,
+   "dupes": 0,
+   "media": 0,
+   "bytes": 2127
+  },
+  "that1618guy_aug2026.json": {
+   "rows": 626,
+   "from": "2026-08-01",
+   "to": "2026-09-02",
+   "span_d": 32,
+   "dupes": 0,
+   "media": 216,
+   "bytes": 937697
+  },
+  "theunipcs_aug2026.json": {
+   "rows": 344,
+   "from": "2026-08-03",
+   "to": "2026-09-01",
+   "span_d": 29,
+   "dupes": 0,
+   "media": 35,
+   "bytes": 598854
+  },
+  "trader1sz_aug2026.json": {
+   "rows": 1000,
+   "from": "2026-08-05",
+   "to": "2026-08-31",
+   "span_d": 26,
+   "dupes": 0,
+   "media": 217,
+   "bytes": 1379167
+  },
+  "yeon___aug2026.json": {
+   "rows": 53,
+   "from": "2026-08-26",
+   "to": "2026-09-01",
+   "span_d": 6,
+   "dupes": 0,
+   "media": 12,
+   "bytes": 84765
+  },
+  "zachxbt_aug2026.json": {
+   "rows": 86,
+   "from": "2026-08-02",
+   "to": "2026-08-31",
+   "span_d": 28,
+   "dupes": 1,
+   "media": 36,
+   "bytes": 156096
+  }
+ },
+ "flags": [
+  "0xAvast_aug2026.json: 1 duplicate ids",
+  "0xngmi_aug2026.json: 6 duplicate ids",
+  "52kskew_aug2026.json: EMPTY STUB",
+  "CryptoBheem_2yr.json: 56 duplicate ids",
+  "Husslin__aug2026.json: EMPTY STUB",
+  "OnchainLens_aug2026.json: 2 duplicate ids",
+  "Timeless_Crypto_2yr.json: 66 duplicate ids",
+  "Trader_XO_2yr.json: 8 duplicate ids",
+  "ai_9684xtpa_aug2026.json: 7 duplicate ids",
+  "chrono_chartist_aug2026.json: 2 duplicate ids",
+  "crossbordercap_aug2026.json: 1 duplicate ids",
+  "eliz883_2yr.json: 13 duplicate ids",
+  "janklimo_aug2026.json: 1 duplicate ids",
+  "josephwang_aug2026.json: 1 duplicate ids",
+  "kenjidgn_aug2026.json: 3 duplicate ids",
+  "kingfisher_btc_aug2026.json: 9 duplicate ids",
+  "zachxbt_aug2026.json: 1 duplicate ids"
+ ],
+ "normalized": {
+  "CryptoBheem": {
+   "rows": 883,
+   "kinds": {
+    "VIEW": 643,
+    "OBSERVATION": 17,
+    "CALL": 147,
+    "RETROSPECTIVE": 59,
+    "NON_SIGNAL": 17
+   },
+   "bytes": 668428
+  },
+  "Timeless_Crypto": {
+   "rows": 2658,
+   "kinds": {
+    "VIEW": 2043,
+    "RETROSPECTIVE": 207,
+    "CALL": 309,
+    "NON_SIGNAL": 48,
+    "OBSERVATION": 51
+   },
+   "bytes": 1998233
+  },
+  "Trader_XO": {
+   "rows": 776,
+   "kinds": {
+    "VIEW": 602,
+    "NON_SIGNAL": 23,
+    "RETROSPECTIVE": 83,
+    "CALL": 67,
+    "OBSERVATION": 1
+   },
+   "bytes": 600044
+  },
+  "all": {
+   "rows": 5896,
+   "kinds": {
+    "VIEW": 4329,
+    "RETROSPECTIVE": 670,
+    "CALL": 701,
+    "NON_SIGNAL": 117,
+    "OBSERVATION": 79
+   },
+   "bytes": 4236674
+  },
+  "astronomer_zero": {
+   "rows": 766,
+   "kinds": {
+    "VIEW": 387,
+    "RETROSPECTIVE": 251,
+    "CALL": 110,
+    "NON_SIGNAL": 16,
+    "OBSERVATION": 2
+   },
+   "bytes": 728017
+  },
+  "eliz883": {
+   "rows": 813,
+   "kinds": {
+    "VIEW": 654,
+    "CALL": 68,
+    "OBSERVATION": 8,
+    "NON_SIGNAL": 13,
+    "RETROSPECTIVE": 70
+   },
+   "bytes": 556591
+  }
+ },
+ "outcomes": {
+  "rows": 460,
+  "bytes": 151092
+ },
+ "outcomes_expanded": {
+  "rows": 508,
+  "bytes": 141582
+ },
+ "strict": {
+  "rows": 940,
+  "bytes": 352098
+ },
+ "prices": {
+  "BTCUSDT_1h.json": {
+   "rows": 23520,
+   "from": "2024-01-01",
+   "to": "2026-09-06"
+  },
+  "BTCUSDT_5m.json": {
+   "rows": 212955,
+   "from": "2024-09-01",
+   "to": "2026-09-10"
+  },
+  "ETHUSDT_1h.json": {
+   "rows": 23520,
+   "from": "2024-01-01",
+   "to": "2026-09-06"
+  },
+  "ETHUSDT_5m.json": {
+   "rows": 212955,
+   "from": "2024-09-01",
+   "to": "2026-09-10"
+  },
+  "HYPERUSDT_1h.json": {
+   "rows": 12071,
+   "from": "2025-04-22",
+   "to": "2026-09-07"
+  },
+  "SOLUSDT_1h.json": {
+   "rows": 23520,
+   "from": "2024-01-01",
+   "to": "2026-09-06"
+  },
+  "TAOUSDT_1h.json": {
+   "rows": 21084,
+   "from": "2024-04-11",
+   "to": "2026-09-06"
+  },
+  "AAVEUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ADAUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ALGOUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "APTUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ARBUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ARUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ASTERUSDT.json": {
+   "rows": 340,
+   "from": "2025-10-06",
+   "to": "2026-09-10"
+  },
+  "ATOMUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "AVAXUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "AXSUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "BCHUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "BNBUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "BONKUSDT.json": {
+   "rows": 997,
+   "from": "2023-12-15",
+   "to": "2026-09-06"
+  },
+  "BTCUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "CATUSDT.json": {
+   "rows": 415,
+   "from": "2025-07-23",
+   "to": "2026-09-10"
+  },
+  "COMPUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "CRVUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "DASHUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "DOGEUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "DOTUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "DYDXUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ENAUSDT.json": {
+   "rows": 888,
+   "from": "2024-04-02",
+   "to": "2026-09-06"
+  },
+  "ETCUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ETHUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "FETUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "FILUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "FLOKIUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "GALAUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "HAEDALUSDT.json": {
+   "rows": 478,
+   "from": "2025-05-21",
+   "to": "2026-09-10"
+  },
+  "HBARUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ICPUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "IMXUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "INJUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "IOTAUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "JTOUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "JUPUSDT.json": {
+   "rows": 950,
+   "from": "2024-01-31",
+   "to": "2026-09-06"
+  },
+  "LDOUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "LINKUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "LTCUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "LUNAUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-16",
+   "to": "2026-09-10"
+  },
+  "MATICUSDT.json": {
+   "rows": 1000,
+   "from": "2021-12-16",
+   "to": "2024-09-10"
+  },
+  "MKRUSDT.json": {
+   "rows": 1000,
+   "from": "2022-12-21",
+   "to": "2025-09-15"
+  },
+  "MNTUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-16",
+   "to": "2026-09-10"
+  },
+  "NEARUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ONDOUSDT.json": {
+   "rows": 514,
+   "from": "2025-04-11",
+   "to": "2026-09-06"
+  },
+  "OPUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "PENDLEUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "PENGUUSDT.json": {
+   "rows": 633,
+   "from": "2024-12-17",
+   "to": "2026-09-10"
+  },
+  "PEPEUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "PUMPUSDT.json": {
+   "rows": 365,
+   "from": "2025-09-11",
+   "to": "2026-09-10"
+  },
+  "PYTHUSDT.json": {
+   "rows": 948,
+   "from": "2024-02-02",
+   "to": "2026-09-06"
+  },
+  "RENDERUSDT.json": {
+   "rows": 773,
+   "from": "2024-07-26",
+   "to": "2026-09-06"
+  },
+  "SANDUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SEIUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SHIBUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SNXUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SOLUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SPXUSDT.json": {
+   "rows": 659,
+   "from": "2024-11-21",
+   "to": "2026-09-10"
+  },
+  "STRKUSDT.json": {
+   "rows": 930,
+   "from": "2024-02-20",
+   "to": "2026-09-06"
+  },
+  "SUIUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "SUSHIUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "TAOUSDT.json": {
+   "rows": 879,
+   "from": "2024-04-11",
+   "to": "2026-09-06"
+  },
+  "TIAUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "TNSRUSDT.json": {
+   "rows": 882,
+   "from": "2024-04-08",
+   "to": "2026-09-06"
+  },
+  "UNIUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "WIFUSDT.json": {
+   "rows": 916,
+   "from": "2024-03-05",
+   "to": "2026-09-06"
+  },
+  "WLDUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "WUSDT.json": {
+   "rows": 887,
+   "from": "2024-04-03",
+   "to": "2026-09-06"
+  },
+  "XLMUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "XMRUSDT.json": {
+   "rows": 1000,
+   "from": "2021-05-27",
+   "to": "2024-02-20"
+  },
+  "XPLUSDT.json": {
+   "rows": 351,
+   "from": "2025-09-25",
+   "to": "2026-09-10"
+  },
+  "XRPUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ZECUSDT.json": {
+   "rows": 1000,
+   "from": "2023-12-12",
+   "to": "2026-09-06"
+  },
+  "ZKUSDT.json": {
+   "rows": 812,
+   "from": "2024-06-17",
+   "to": "2026-09-06"
+  }
+ },
+ "media_dirs": {
+  "AxelAdlerJr": 101,
+  "CrypNuevo": 31,
+  "CryptoBheem": 945,
+  "Crypto_Chase": 49,
+  "DaanCrypto": 124,
+  "DrProfitCrypto": 15,
+  "FrankAFetter": 41,
+  "JA_Maartun": 75,
+  "Timeless_Crypto": 1545,
+  "Trader_XO": 663,
+  "Wild_Randomness": 783,
+  "astronomer_zero": 530
+ }
+}

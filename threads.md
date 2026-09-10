@@ -84,3 +84,7 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
   XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%.
 - C29 Bheem multi-asset (BTC+ETH+HYPE): 60 trades 47/47; strict gap found (Bheem has
   zero strict rows — events-CALL fallback built); his 95/98 CALLs pre-date mock window.
+- C30 fix-audit: deduped 143 (raw+core3+normalized consistent) · 5,307 charts re-pulled,
+  misfiled-dirs consolidated (67 clean handles, 769MB) · 8 graduates NORMALIZED
+  (2,840 events, 153 strict, 153 canonical outcomes, 44% 4h win — honest) ·
+  Chase/DrProfit/Cryp format gap proven (3 strict each — custom extractor required).
