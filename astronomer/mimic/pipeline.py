@@ -60,7 +60,7 @@ def stage_train(h, seed, log, skip=False):
     return r
 
 
-def stage_gate(rep, log):
+def stage_gate(rep, log, handle=None):
     d = (rep.get("direction") or {}).get("sec", rep.get("direction") or {})
     n = d.get("n", 0)
     verdict = {"pass": False, "reasons": []}
@@ -74,7 +74,7 @@ def stage_gate(rep, log):
             verdict = {"pass": False, "reasons": ["secret/frozen !< base"]}
     else:
         verdict = {"pass": False, "reasons": [f"n={n} < 100"]}
-    log.append({"stage": 3, "gate": verdict})
+    log.append({"stage": 3, "handle": handle, "gate": verdict})
     return verdict
 
 
@@ -152,7 +152,7 @@ def main():
         stage_ingest(h, log)
         stage_label(h, log)
         rep = stage_train(h, a.seed, log, skip=a.skip_train)
-        verdict = stage_gate(rep or {}, log)
+        verdict = stage_gate(rep or {}, log, h)
         sig = stage_serve(h, verdict, log)
         stage_render(h, sig, log)
         stage_prove(h, log)
