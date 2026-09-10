@@ -1,0 +1,4 @@
+BEAR PAPER regime: RANGE
+Rule: follow Timeless_Crypto 24h
+Paper 30d: 8 trades, 4 targets, +3.27%
+Not financial advice. Paper signal.

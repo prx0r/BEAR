@@ -1,0 +1,7 @@
+{
+ "generated_at": "2026-09-10T20:52:51.896467+00:00",
+ "regime": "RANGE",
+ "rule": "follow Timeless_Crypto 24h",
+ "paper": true,
+ "note": "paper only, not financial advice"
+}
