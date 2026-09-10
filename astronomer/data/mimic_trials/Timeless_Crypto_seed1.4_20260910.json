@@ -6,7 +6,7 @@
  "val_cut": "2026-04-17T19:54:55.700000+00:00",
  "train": {
   "base_act": 0.19774183704607873,
-  "base_dir": 0.6959459459459459,
+  "base_dir": 0.6938775510204082,
   "train_posts": 657
  },
  "activity": {
@@ -15,13 +15,13 @@
     "brier": 0.0678,
     "n": 7662,
     "logloss": 0.2437,
-    "ece": 0.0116
+    "ece": 0.0117
    },
    "froz": {
     "brier": 0.0686,
     "n": 7662,
     "logloss": 0.2474,
-    "ece": 0.0137
+    "ece": 0.0138
    },
    "base": {
     "brier": 0.0875,
@@ -34,8 +34,8 @@
    "live": {
     "brier": 0.0481,
     "n": 3284,
-    "logloss": 0.1877,
-    "ece": 0.017
+    "logloss": 0.1872,
+    "ece": 0.0175
    },
    "froz": {
     "brier": 0.0501,
@@ -54,63 +54,63 @@
  "direction": {
   "val": {
    "live": {
-    "brier": 0.2249,
-    "n": 187,
-    "logloss": 0.674,
-    "ece": 0.1174
+    "brier": 0.2378,
+    "n": 182,
+    "logloss": 0.7064,
+    "ece": 0.1604
    },
    "froz": {
-    "brier": 0.2283,
-    "n": 187,
-    "logloss": 0.6494,
-    "ece": 0.1024
+    "brier": 0.2571,
+    "n": 182,
+    "logloss": 0.7103,
+    "ece": 0.1467
    },
    "base": {
-    "brier": 0.2119,
-    "n": 187,
-    "logloss": 0.6149,
-    "ece": 0.0452
+    "brier": 0.2152,
+    "n": 182,
+    "logloss": 0.6217,
+    "ece": 0.0368
    }
   },
   "sec": {
    "live": {
-    "brier": 0.2608,
-    "n": 55,
-    "logloss": 0.7271,
-    "ece": 0.2391
+    "brier": 0.2605,
+    "n": 54,
+    "logloss": 0.7567,
+    "ece": 0.2333
    },
    "froz": {
-    "brier": 0.2332,
-    "n": 55,
-    "logloss": 0.66,
-    "ece": 0.1409
+    "brier": 0.2371,
+    "n": 54,
+    "logloss": 0.6686,
+    "ece": 0.1352
    },
    "base": {
-    "brier": 0.2136,
-    "n": 55,
-    "logloss": 0.6184,
-    "ece": 0.0409
+    "brier": 0.2158,
+    "n": 54,
+    "logloss": 0.6231,
+    "ece": 0.0352
    }
   }
  },
  "gate": {
   "pass": false,
   "reasons": [
-   "n=55 < 100",
-   "secret 0.26081939671827586 !< base 0.21357908891692676",
-   "frozen 0.2332028104601045 !< base 0.21357908891692676"
+   "n=54 < 100",
+   "secret 0.2605197790367863 !< base 0.215782004411742",
+   "frozen 0.23709350503072799 !< base 0.215782004411742"
   ],
   "scope": "direction-secret"
  },
  "text": {
   "n": 785,
-  "retrieval": 0.059841666018842166,
-  "rerank": 0.051223077360782535,
+  "retrieval": 0.061647615192618375,
+  "rerank": 0.05485178476583861,
   "random": 0.05378914791452568,
   "use_rerank": false
  },
  "receipt": {
-  "sha256": "f09deec2c027bf219a7c46641c9cb33b909729922e8dc1a46d7aafdf85151d0e",
-  "git_head": "15f5f3322aa508d028e3c0e668f420c12d3007c9"
+  "sha256": "1acfad25266313cda9f98ea982579dd8044d9a605ad29c67c562c1b9e8988a3b",
+  "git_head": "bbb1734ed4a64263610ec9ee02b539b2a4e29e5a"
  }
 }

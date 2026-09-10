@@ -100,6 +100,8 @@ def main():
     ap.add_argument("--json-out", default=None)
     ap.add_argument("--save-weights", action="store_true")
     ap.add_argument("--seed", default="seed1")
+    ap.add_argument("--skip-text", action="store_true",
+                    help="skip retrieval scoring (proven dead: retr~=random everywhere)")
     a = ap.parse_args()
 
     ms = MarketState()
@@ -204,7 +206,7 @@ def main():
         tracks[("act", "froz", w)].add(frozen_act.proba(x), y)
         tracks[("act", "base", w)].add(base_act, y)
         n_act += 1
-        if y:
+        if y and not a.skip_text:
             actual = next((txt for t, txt in posts if t - (t % 3600000) == h), "")
             if train_vecs and actual:
                 top3 = nearest3(train_vecs, x)
