@@ -1,0 +1,48 @@
+{
+ "receipt": "7a5af419611af35fb6e53cc57b189e4463cee9169a47b35e73f77504246c01cb",
+ "seed": "seed1.4",
+ "git": "2ebd7090460d8a2eb4813b7645ceccb8658548bd",
+ "log": [
+  {
+   "stage": 0,
+   "handle": "astronomer_zero",
+   "rows": 8983
+  },
+  {
+   "stage": 1,
+   "handle": "astronomer_zero",
+   "events": 8983
+  },
+  {
+   "stage": 2,
+   "handle": "astronomer_zero",
+   "report": "/home/ubuntu/BEAR/astronomer/data/mimic_trials/astronomer_zero_seed1.4_pipe.json"
+  },
+  {
+   "stage": 3,
+   "gate": {
+    "pass": false,
+    "reasons": [
+     "n=0 < 100"
+    ]
+   }
+  },
+  {
+   "stage": 4,
+   "handle": "astronomer_zero",
+   "signal": "/home/ubuntu/BEAR/astronomer/data/pipeline_runs/latest/signal_astronomer_zero.json"
+  },
+  {
+   "stage": 5,
+   "handle": "astronomer_zero",
+   "artifacts": {
+    "long": true,
+    "short": true,
+    "chart": true
+   }
+  }
+ ],
+ "digests": {
+  "astronomer_zero": "5464a6588022ffca3a1a2dd478f5b4257999605d72c71575ebf79ae8ffa56acf"
+ }
+}

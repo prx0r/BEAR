@@ -84,6 +84,8 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
   XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%.
 - C29 Bheem multi-asset (BTC+ETH+HYPE): 60 trades 47/47; strict gap found (Bheem has
   zero strict rows — events-CALL fallback built); his 95/98 CALLs pre-date mock window.
+- C30 N-loop done + Step-1 prove-outs: astro full n=320 (MODEL 54% vs ACTUAL 52%);
+  history reconciled (42e5471's 135 + 96 new, all unique); blank-line hardening.
 - C30 N-loop done: prove-outs refreshed · Bheem-2025 trial · custom extractor 8/8 ·
   rerank gate (all-False, correctly) · swing_pos #2 weight · brain enriched (seed+receipt) ·
   API recovered → XO gap closed (+181, $0.010) + normalized (181/6/6) + 67 charts.

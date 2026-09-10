@@ -1,0 +1,115 @@
+{
+ "seed": "seed1.4",
+ "handle": "Trader_XO",
+ "split": "2025-01-07",
+ "n_posts": 4717,
+ "val_cut": "2026-03-08T15:26:43+00:00",
+ "train": {
+  "base_act": 0.7650876054510058,
+  "base_dir": 0.6938775510204082,
+  "train_posts": 875
+ },
+ "activity": {
+  "val": {
+   "live": {
+    "brier": 0.0681,
+    "n": 10196,
+    "logloss": 0.2254,
+    "ece": 0.0229
+   },
+   "froz": {
+    "brier": 0.0712,
+    "n": 10196,
+    "logloss": 0.2346,
+    "ece": 0.025
+   },
+   "base": {
+    "brier": 0.535,
+    "n": 10196,
+    "logloss": 1.3363,
+    "ece": 0.655
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.0516,
+    "n": 4369,
+    "logloss": 0.1965,
+    "ece": 0.0198
+   },
+   "froz": {
+    "brier": 0.0631,
+    "n": 4369,
+    "logloss": 0.2314,
+    "ece": 0.0617
+   },
+   "base": {
+    "brier": 0.5551,
+    "n": 4369,
+    "logloss": 1.3812,
+    "ece": 0.693
+   }
+  }
+ },
+ "direction": {
+  "val": {
+   "live": {
+    "brier": 0.2295,
+    "n": 70,
+    "logloss": 0.699,
+    "ece": 0.1886
+   },
+   "froz": {
+    "brier": 0.2132,
+    "n": 70,
+    "logloss": 0.6543,
+    "ece": 0.1786
+   },
+   "base": {
+    "brier": 0.1934,
+    "n": 70,
+    "logloss": 0.5759,
+    "ece": 0.0929
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.1605,
+    "n": 48,
+    "logloss": 0.5707,
+    "ece": 0.1208
+   },
+   "froz": {
+    "brier": 0.1496,
+    "n": 48,
+    "logloss": 0.4888,
+    "ece": 0.1333
+   },
+   "base": {
+    "brier": 0.1583,
+    "n": 48,
+    "logloss": 0.5018,
+    "ece": 0.1833
+   }
+  }
+ },
+ "gate": {
+  "pass": false,
+  "reasons": [
+   "n=48 < 100",
+   "secret 0.16051056074222222 !< base 0.15833680410939888"
+  ],
+  "scope": "direction-secret"
+ },
+ "text": {
+  "n": 0,
+  "retrieval": null,
+  "rerank": null,
+  "random": null,
+  "use_rerank": false
+ },
+ "receipt": {
+  "sha256": "82a319784061dc5fade937559ee471eea4dab68522e8668b68b42625805e43a3",
+  "git_head": "2ebd7090460d8a2eb4813b7645ceccb8658548bd"
+ }
+}

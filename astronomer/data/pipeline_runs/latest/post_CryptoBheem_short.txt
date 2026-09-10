@@ -1,0 +1,6 @@
+$BTC SHORT ▼
+Entry: 77962.0
+Target: 77000
+Invalidation: 79000
+Regime: RANGE
+Not financial advice. Paper signal.

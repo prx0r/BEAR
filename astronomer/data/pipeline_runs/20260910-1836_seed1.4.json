@@ -1,0 +1,97 @@
+{
+ "receipt": "0848e6fa189e58e6d34057d43b4dff342305288243e747953185a268680b2c5b",
+ "seed": "seed1.4",
+ "git": "2ebd7090460d8a2eb4813b7645ceccb8658548bd",
+ "log": [
+  {
+   "stage": 0,
+   "handle": "Trader_XO",
+   "rows": 4717
+  },
+  {
+   "stage": 1,
+   "handle": "Trader_XO",
+   "events": 4717
+  },
+  {
+   "stage": 2,
+   "handle": "Trader_XO",
+   "report": "/home/ubuntu/BEAR/astronomer/data/mimic_trials/Trader_XO_seed1.4_pipe.json"
+  },
+  {
+   "stage": 3,
+   "gate": {
+    "pass": false,
+    "reasons": [
+     "n=0 < 100"
+    ]
+   }
+  },
+  {
+   "stage": 4,
+   "handle": "Trader_XO",
+   "signal": "/home/ubuntu/BEAR/astronomer/data/pipeline_runs/latest/signal_Trader_XO.json"
+  },
+  {
+   "stage": 5,
+   "handle": "Trader_XO",
+   "artifacts": {
+    "long": true,
+    "short": true,
+    "chart": true
+   }
+  },
+  {
+   "stage": 6,
+   "handle": "Trader_XO",
+   "note": "see proveout trials (stdlib harness)"
+  },
+  {
+   "stage": 0,
+   "handle": "CryptoBheem",
+   "rows": 1638
+  },
+  {
+   "stage": 1,
+   "handle": "CryptoBheem",
+   "events": 1638
+  },
+  {
+   "stage": 2,
+   "handle": "CryptoBheem",
+   "report": "/home/ubuntu/BEAR/astronomer/data/mimic_trials/CryptoBheem_seed1.4_pipe.json"
+  },
+  {
+   "stage": 3,
+   "gate": {
+    "pass": false,
+    "reasons": [
+     "n=0 < 100"
+    ]
+   }
+  },
+  {
+   "stage": 4,
+   "handle": "CryptoBheem",
+   "signal": "/home/ubuntu/BEAR/astronomer/data/pipeline_runs/latest/signal_CryptoBheem.json"
+  },
+  {
+   "stage": 5,
+   "handle": "CryptoBheem",
+   "artifacts": {
+    "long": true,
+    "short": true,
+    "chart": true
+   }
+  },
+  {
+   "stage": 6,
+   "handle": "CryptoBheem",
+   "note": "see proveout trials (stdlib harness)"
+  }
+ ],
+ "digests": {
+  "Trader_XO": "8259a639400dc45dc19951ef88767d69a44d20da54d932f54ca1124b5cf21c80",
+  "CryptoBheem": "ef5f323185f27ebd5be48da8af91d4e3129f30d01295f1ecf608c1ff23b9b925"
+ }
+}

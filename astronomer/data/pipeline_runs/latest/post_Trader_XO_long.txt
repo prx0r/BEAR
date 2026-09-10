@@ -1,0 +1,6 @@
+$BTC LONG ▲
+Entry: 77962.0
+Target: 79000
+Invalidation: 77000
+Regime: RANGE
+Not financial advice. Paper signal.

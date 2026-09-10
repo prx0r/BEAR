@@ -1,0 +1,10 @@
+{
+ "handle": "Trader_XO",
+ "asset": "BTC",
+ "generated_at": "2026-09-10T18:35:07.421662+00:00",
+ "regime": "RANGE",
+ "entry": 77962.0,
+ "target_up": 78917.0,
+ "target_dn": 77008.0,
+ "experimental": true
+}

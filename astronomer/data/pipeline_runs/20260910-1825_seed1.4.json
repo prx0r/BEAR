@@ -1,0 +1,53 @@
+{
+ "receipt": "fd1c61258c3e37958a1951eff000cad5b466678952217ebfbc1f7de3ebd6fc42",
+ "seed": "seed1.4",
+ "git": "2ebd7090460d8a2eb4813b7645ceccb8658548bd",
+ "log": [
+  {
+   "stage": 0,
+   "handle": "astronomer_zero",
+   "rows": 8983
+  },
+  {
+   "stage": 1,
+   "handle": "astronomer_zero",
+   "events": 8983
+  },
+  {
+   "stage": 2,
+   "handle": "astronomer_zero",
+   "skipped": true
+  },
+  {
+   "stage": 3,
+   "gate": {
+    "pass": false,
+    "reasons": [
+     "n=0 < 100"
+    ]
+   }
+  },
+  {
+   "stage": 4,
+   "handle": "astronomer_zero",
+   "signal": "/home/ubuntu/BEAR/astronomer/data/pipeline_runs/latest/signal_astronomer_zero.json"
+  },
+  {
+   "stage": 5,
+   "handle": "astronomer_zero",
+   "artifacts": {
+    "long": true,
+    "short": true,
+    "chart": true
+   }
+  },
+  {
+   "stage": 6,
+   "handle": "astronomer_zero",
+   "note": "see proveout trials (stdlib harness)"
+  }
+ ],
+ "digests": {
+  "astronomer_zero": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+ }
+}
