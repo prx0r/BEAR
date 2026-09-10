@@ -130,6 +130,10 @@ class MarketState:
         return self.timeline[i].get("regime", self.timeline[i].get("state", "RANGE"))
 
     def vector(self, t_ms, mem: dict) -> dict[str, float]:
+        # NOTE (audit 2026-09-10): OI/LS/top/taker histories cover ~30d only.
+        # They are EXCLUDED from training vectors (era-bias: 854/930 strict rows
+        # would read 0.0). Live serving may append them separately. Funding (full
+        # history) and 5m fields stay.
         """mem: hours_since_post, last_dir (+1/-1/0), bull_streak, bear_streak."""
         dt = datetime.fromtimestamp(t_ms / 1000, tz=timezone.utc)
         reg = self.regime_at(t_ms)
@@ -158,9 +162,7 @@ class MarketState:
             "bull_streak": min(mem.get("bull_streak", 0), 5) / 5.0,
             "bear_streak": min(mem.get("bear_streak", 0), 5) / 5.0,
             "funding": max(-0.01, min(0.01, self._fut_at("BTCUSDT_fundingRate_fund", t_ms))) * 100.0,
-            "ls_ratio": self._fut_at("BTCUSDT_globalLongShortAccountRatio_15m", t_ms) - 1.0,
-            "top_ls": self._fut_at("BTCUSDT_topLongShortAccountRatio_15m", t_ms) - 1.0,
-            "taker_bs": self._fut_at("BTCUSDT_takerlongshortRatio_15m", t_ms) - 1.0,
+            # OI/LS/top/taker EXCLUDED (30d coverage only — era-bias, see note above)
             "m5_r15": self._mret(t_ms, 15),
             "m5_r60": self._mret(t_ms, 60),
             "m5_range60": self._mrange(t_ms, 60),

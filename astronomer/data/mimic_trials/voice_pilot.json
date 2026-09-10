@@ -1,0 +1,26 @@
+{
+ "terse": {
+  "numbers": 1.0,
+  "direction": 1.0,
+  "struct": 0.46,
+  "jaccard": 0.018,
+  "total": 0.696,
+  "n": 5
+ },
+ "astro-verbose": {
+  "numbers": 0.0,
+  "direction": 0.0,
+  "struct": 0.1,
+  "jaccard": 0.0,
+  "total": 0.02,
+  "n": 5
+ },
+ "levels-first": {
+  "numbers": 0.2,
+  "direction": 0.2,
+  "struct": 0.2,
+  "jaccard": 0.011,
+  "total": 0.162,
+  "n": 5
+ }
+}
