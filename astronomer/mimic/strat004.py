@@ -47,7 +47,27 @@ def load_btc():
     return ts
 
 
-def levels_at(ts, t_ms, direction):
+def levels_at(ts, t_ms, direction, mult=1.0):
+    """SYMMETRIC-R levels: ATR-scaled target/stop so win rate is meaningful.
+    (Legacy swing-nearest mode made R asymmetric with chop: shorts got near
+    targets in uptrends and 'won' meaninglessly. See a-logs.)"""
+    T = [t for t, _, _, _ in ts]
+    i = bisect.bisect_right(T, t_ms)
+    if i >= len(T):
+        return None
+    e = ts[i][1]
+    j0 = max(0, i - 60)
+    atr = sum(h - l for _, _, h, l in ts[j0:i + 1]) / max(1, i + 1 - j0)
+    if atr <= 0:
+        return None
+    up = direction == "BULLISH"
+    tgt = e + atr * mult if up else e - atr * mult
+    stp = e - atr * mult if up else e + atr * mult
+    return {"entry": e, "entry_ms": ts[i][0], "target": tgt, "stop": stp}
+
+
+def levels_swing_at(ts, t_ms, direction):
+    """Legacy asymmetric swing levels (kept for comparison, not default)."""
     T = [t for t, _, _, _ in ts]
     i = bisect.bisect_right(T, t_ms)
     if i >= len(T):
@@ -87,6 +107,9 @@ def main():
     ap.add_argument("--paper", action="store_true")
     ap.add_argument("--signal", action="store_true")
     ap.add_argument("--days", type=int, default=30)
+    ap.add_argument("--symmetric", action="store_true",
+                    help="ATR-symmetric R levels (default: legacy swing levels)")
+    ap.add_argument("--ledger", default="paper_ledger.jsonl")
     a = ap.parse_args()
     ms = MarketState()
     calls = load_calls()
@@ -104,7 +127,7 @@ def main():
         start = int((datetime.now(tz=timezone.utc) - timedelta(days=a.days)).timestamp() * 1000)
         n = w = 0
         ret_sum = 0.0
-        lp = os.path.join(DATA, "paper_ledger.jsonl")
+        lp = os.path.join(DATA, a.ledger)
         seen = set()
         if os.path.exists(lp):
             for l in open(lp):
@@ -122,7 +145,8 @@ def main():
             handle, hz = RULES[reg]
             if r["handle"] != handle:
                 continue
-            lv = levels_at(ts, t_ms, r["direction"])
+            lv = (levels_at(ts, t_ms, r["direction"]) if a.symmetric
+                  else levels_swing_at(ts, t_ms, r["direction"]))
             if not lv:
                 continue
             out = resolve(ts, lv["entry_ms"], lv["target"], lv["stop"], r["direction"], hz)
