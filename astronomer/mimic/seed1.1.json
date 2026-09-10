@@ -1,0 +1,7 @@
+{
+  "seed": "seed1.1",
+  "from": "seed1",
+  "justification": "direction prior 0.5 hurt frozen OOS (astro frozen 0.253 vs base 0.227); train-window base rates are free+causal. Retrieval k1 ~ random; k3+structural-rerank tests shape-filtering for $0. save-weights enables the dormant transfer test.",
+  "changes": ["direction.prior: 0.5 -> per-handle train base rate", "retrieval: k1 -> k3 + structural-discriminator rerank (k1 kept as comparator)", "added --save-weights; transfer test live"],
+  "frozen_rest": ["handles", "split", "activity hypers", "features", "protocol"]
+}
