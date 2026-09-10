@@ -1,0 +1,8 @@
+$ETH LONG ▲
+Entry: 102673.0
+Target: 105512.0
+Invalidation: 99835.0
+Regime: RANGE
+Model P: 0.91
+Horizon: 24h
+Not financial advice. Paper signal.

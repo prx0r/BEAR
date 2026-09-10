@@ -68,6 +68,17 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
 - C21 A-loop run 3: Bybit dailies (MNT/CAT/SPX, +7 labels → 508) · 5m-vs-1h entry audit
   (71.3% agree — 29% of labels entry-sensitive) · pair leakage 17%→0% (neutralize.py v1.2) ·
   brain 3/3 live · spend ledger $0.391+$0.015
+- C22 env upgrade: venv+pip (pydantic/httpx/pandas) · OPENAI_API_KEY vaulted BUT 401-invalid
+  (needs replacement) · Hermes 3 8B local via ollama :11434 ✓ · opencode wiring as example only
+- C23 PIVOT voice→signals+charts: voice track SHELVED (LoRA/AuthorMix on hold) ·
+  `mimic/post.py` template generator (fail-closed verified) · chart game-plan overlay
+  (entry/target/stop zones + R:R) · live demo post+chart generated · PNG export needs chromium (H)
+- C24 mermaid diagrams (`mimic/diagram.py`): game-plan flowchart + round-trip timeline from
+  signal JSON, deterministic, zero-dep. For API/agent/GitHub surfaces; X still needs PNG.
+- C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
+- C26 APIFY_TOKEN rotated in vault (user-supplied, verified live: tangta/FREE plan).
+- C25 full output chain CLOSED $0: signal→post+SVG+mermaid→PNG via mermaid.ink (verified 24KB).
+  Output machinery 100%; remaining gap is SIGNAL QUALITY (gate fails secret) + candle-PNG.
 - C20 A-loop run 2: ONBOARD_SOURCE adopts scout criteria · 5m fields wired (top-8 weights) ·
   6 alt daily files, labels 485→501 · twobots.md wiring spec · trials regression stable ·
   AuthorMix pairs (724) · blocked: A3 deps, A9 backfills, A11 VLM runner, PNG export

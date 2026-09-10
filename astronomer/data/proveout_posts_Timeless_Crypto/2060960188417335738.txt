@@ -1,0 +1,8 @@
+$HYPE LONG ▲
+Entry: 74098.0
+Target: 74487.0
+Invalidation: 73708.0
+Regime: RANGE
+Model P: 0.86
+Horizon: 24h
+Not financial advice. Paper signal.

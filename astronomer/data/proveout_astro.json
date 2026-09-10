@@ -1,0 +1,183 @@
+{
+ "n": 20,
+ "model": {
+  "wins": 10,
+  "n": 20,
+  "rate": 0.5,
+  "ci": [
+   0.299,
+   0.701
+  ]
+ },
+ "actual": {
+  "wins": 12,
+  "n": 20,
+  "rate": 0.6,
+  "ci": [
+   0.387,
+   0.781
+  ]
+ },
+ "posts": [
+  {
+   "post_id": "2072668069068235170",
+   "published_at": "2026-07-02T13:05:50+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00763,
+   "actual_ret24": 0.007632
+  },
+  {
+   "post_id": "2073898834946851315",
+   "published_at": "2026-07-05T22:36:28+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00616,
+   "actual_ret24": 0.006159
+  },
+  {
+   "post_id": "2074103391891206151",
+   "published_at": "2026-07-06T12:09:18+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02085,
+   "actual_ret24": 0.020849
+  },
+  {
+   "post_id": "2074269473511788967",
+   "published_at": "2026-07-06T23:09:15+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00921,
+   "actual_ret24": -0.009208
+  },
+  {
+   "post_id": "2075026589826646295",
+   "published_at": "2026-07-09T01:17:45+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.03517,
+   "actual_ret24": 0.035171
+  },
+  {
+   "post_id": "2075608037109432511",
+   "published_at": "2026-07-10T15:48:13+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00062,
+   "actual_ret24": 0.000624
+  },
+  {
+   "post_id": "2077015530356314452",
+   "published_at": "2026-07-14T13:01:06+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01702,
+   "actual_ret24": 0.017025
+  },
+  {
+   "post_id": "2077386297375903758",
+   "published_at": "2026-07-15T13:34:23+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01309,
+   "actual_ret24": -0.013093
+  },
+  {
+   "post_id": "2077552803770511595",
+   "published_at": "2026-07-16T00:36:02+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01829,
+   "actual_ret24": -0.018288
+  },
+  {
+   "post_id": "2077697300483481899",
+   "published_at": "2026-07-16T10:10:12+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01492,
+   "actual_ret24": -0.014917
+  },
+  {
+   "post_id": "2077737416316899489",
+   "published_at": "2026-07-16T12:49:37+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01898,
+   "actual_ret24": -0.018982
+  },
+  {
+   "post_id": "2078120921727197534",
+   "published_at": "2026-07-17T14:13:32+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01058,
+   "actual_ret24": 0.010577
+  },
+  {
+   "post_id": "2079074734797709708",
+   "published_at": "2026-07-20T05:23:38+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.03121,
+   "actual_ret24": 0.031212
+  },
+  {
+   "post_id": "2079173901637263407",
+   "published_at": "2026-07-20T11:57:41+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02968,
+   "actual_ret24": 0.029685
+  },
+  {
+   "post_id": "2080600072518312054",
+   "published_at": "2026-07-24T10:24:47+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.01566,
+   "actual_ret24": 0.015663
+  },
+  {
+   "post_id": "2081319989991391242",
+   "published_at": "2026-07-26T10:05:29+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.0092,
+   "actual_ret24": -0.0092
+  },
+  {
+   "post_id": "2081859520641564744",
+   "published_at": "2026-07-27T21:49:23+00:00",
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00013,
+   "actual_ret24": 0.00013
+  },
+  {
+   "post_id": "2082036735610110283",
+   "published_at": "2026-07-28T09:33:34+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.0157,
+   "actual_ret24": -0.015697
+  },
+  {
+   "post_id": "2082392219689054428",
+   "published_at": "2026-07-29T09:06:08+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00156,
+   "actual_ret24": 0.001565
+  },
+  {
+   "post_id": "2082760071910691053",
+   "published_at": "2026-07-30T09:27:51+00:00",
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.0101,
+   "actual_ret24": -0.010098
+  }
+ ]
+}

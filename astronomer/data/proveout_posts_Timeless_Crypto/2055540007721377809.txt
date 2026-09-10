@@ -1,0 +1,8 @@
+$BTC LONG ▲
+Entry: 78655.0
+Target: 79812.0
+Invalidation: 77497.0
+Regime: RANGE
+Model P: 0.89
+Horizon: 24h
+Not financial advice. Paper signal.

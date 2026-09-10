@@ -1,0 +1,9 @@
+flowchart LR
+    sig[["$ETH LONG @ 98974.0"]]
+    sig -->|"hold above 96053.0"| tgt[["TARGET 101895.0"]]
+    sig -->|"lose 96053.0"| stp[["STOPPED · max loss 2921"]]
+    tgt -->|"partial 50%"| t2[["runner to measured move"]]
+    style sig fill:#f0b429,stroke:#333
+    style tgt fill:#26a69a,stroke:#333
+    style stp fill:#ef5350,stroke:#333
+    sub["regime RANGE" ]

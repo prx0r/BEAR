@@ -1,0 +1,8 @@
+$BTC SHORT ▼
+Entry: 77158.0
+Target: 76404.0
+Invalidation: 77911.0
+Regime: RANGE
+Model P: 0.37
+Horizon: 24h
+Not financial advice. Paper signal.

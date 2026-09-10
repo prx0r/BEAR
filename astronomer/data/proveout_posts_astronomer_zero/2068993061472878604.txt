@@ -1,0 +1,8 @@
+$ETH SHORT ▼
+Entry: 64120.0
+Target: 63433.0
+Invalidation: 64807.0
+Regime: RANGE
+Model P: 0.37
+Horizon: 24h
+Not financial advice. Paper signal.

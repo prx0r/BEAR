@@ -25,10 +25,13 @@ def swings(rows, k=3):
     return max(hi[-60:]), min(lo[-60:])
 
 
-def render(symbol, out, extra_levels=(), title=None):
+def render(symbol, out, extra_levels=(), title=None, plan=None):
+    """plan: {direction, entry, target, invalidation} -> shaded game-plan overlay.
+    PNG export needs chromium/rsvg (not on box) — SVG now, convert later."""
     rows = load(symbol)
     hi, lo = swings(rows)
-    for lv in extra_levels:
+    for lv in list(extra_levels) + [v for k, v in (plan or {}).items()
+                                    if k in ("entry", "target", "invalidation") and v]:
         hi, lo = max(hi, lv), min(lo, lv)
     span = max(hi - lo, 1e-9)
     cw = (W - 2 * PAD) / len(rows)
@@ -54,15 +57,28 @@ def render(symbol, out, extra_levels=(), title=None):
         el.append(f'<line x1="{PAD}" y1="{Y(lv):.0f}" x2="{W-PAD}" y2="{Y(lv):.0f}" stroke="{colors[j%3]}" stroke-width="1.5" stroke-dasharray="7,4"/>')
         el.append(f'<text x="{PAD+4}" y="{Y(lv)-6:.0f}" fill="{colors[j%3]}" font-size="14" font-family="monospace">L{j+1} {lv:,.0f}</text>')
     el.append(f'<text x="{PAD}" y="30" fill="{TXT}" font-size="17" font-family="monospace">{title or symbol + " 5m"} · mimichart v0</text>')
+    if plan and all(plan.get(k) for k in ("entry", "target", "invalidation")):
+        e, t, s = float(plan["entry"]), float(plan["target"]), float(plan["invalidation"])
+        long = t > e
+        rtop, rbot = (t, s) if long else (s, t)
+        el.append(f'<rect x="{PAD}" y="{Y(rtop):.0f}" width="{W-2*PAD}" height="{abs(Y(rbot)-Y(rtop)):.0f}" fill="{"#26a69a" if long else "#ef5350"}" opacity="0.10"/>')
+        for lv, lbl, col in ((e, f"ENTRY {e:,.0f}", "#f0b429"), (t, f"TARGET {t:,.0f}", "#26a69a"), (s, f"STOP {s:,.0f}", "#ef5350")):
+            el.append(f'<line x1="{PAD}" y1="{Y(lv):.0f}" x2="{W-PAD}" y2="{Y(lv):.0f}" stroke="{col}" stroke-width="2"/>')
+            el.append(f'<text x="{W-PAD-6}" y="{Y(lv)-7:.0f}" text-anchor="end" fill="{col}" font-size="14" font-family="monospace" font-weight="bold">{lbl}</text>')
+        d = str(plan.get("direction", "")).upper()
+        el.append(f'<text x="{PAD}" y="52" fill="{TXT}" font-size="15" font-family="monospace">{d} plan · R:R 1:{abs(t-e)/max(abs(e-s),1e-9):.1f}</text>')
     open(out, "w").write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}">' + "".join(el) + "</svg>")
     print(f"chart -> {out} ({len(rows)} candles)")
 
 
 if __name__ == "__main__":
+    import json as _j
     sym = sys.argv[1] if len(sys.argv) > 1 else "BTCUSDT"
     out = sys.argv[2] if len(sys.argv) > 2 else "/tmp/mimichart.svg"
-    lvls = []
+    lvls, plan = [], None
     for a in sys.argv[3:]:
         if a.startswith("--levels"):
             lvls = [float(x) for x in a.split("=", 1)[1].split(",")]
-    render(sym, out, lvls)
+        if a.startswith("--plan"):
+            plan = _j.loads(a.split("=", 1)[1])
+    render(sym, out, lvls, plan=plan)

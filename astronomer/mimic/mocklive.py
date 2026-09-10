@@ -141,15 +141,20 @@ def main():
                     break
         mem["hours_since_post"] = 0.0 if y else mem.get("hours_since_post", 24.0) + 1.0
         h += 3600000
+    _train_resid = []
     for t, y in strict:
         if t < cut:
             x = ms.vector(t, mem)
+            _train_resid.append(y - dmodel.proba(x))
             dmodel.learn_one(x, y)
             mem["bull_streak"] = mem.get("bull_streak", 0) + 1 if y else 0
             mem["bear_streak"] = mem.get("bear_streak", 0) + 1 if not y else 0
             mem["last_dir"] = 1 if y else -1
             trail.append(y)
             mem["trail"] = trail[-20:]
+    # seed1.4: train-fitted intercept (frozen copy uses this; live uses trailing)
+    frozen_bias_corr = sum(_train_resid) / max(1, len(_train_resid))
+    live_resid = []
     # train-window base rates (frozen baselines)
     train_hours = max(1, int((cut - t0) / 3600000))
     base_act = sum(1 for t, _ in posts if t < cut) / train_hours
@@ -197,8 +202,14 @@ def main():
         if t >= cut:
             w = "val" if t < val_cut else "sec"
             x = ms.vector(t, mem_l)
-            tracks[("dir", "live", w)].add(dmodel.learn_one(x, y), y)
-            tracks[("dir", "froz", w)].add(frozen_dir.proba(x), y)
+            p_live_raw = dmodel.learn_one(x, y)
+            p_froz_raw = frozen_dir.proba(x)
+            live_corr = sum(live_resid[-20:]) / max(1, len(live_resid[-20:])) if len(live_resid) >= 5 else 0.0
+            p_live = min(0.99, max(0.01, p_live_raw + live_corr))
+            p_froz = min(0.99, max(0.01, p_froz_raw + frozen_bias_corr))
+            live_resid.append(y - p_live_raw)
+            tracks[("dir", "live", w)].add(p_live, y)
+            tracks[("dir", "froz", w)].add(p_froz, y)
             tracks[("dir", "base", w)].add(base_dir, y)
             n_dir += 1
             mem_l.setdefault("trail", [])

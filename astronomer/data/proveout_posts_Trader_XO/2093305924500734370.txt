@@ -1,0 +1,8 @@
+$SOL LONG ▲
+Entry: 79604.0
+Target: 80661.0
+Invalidation: 78547.0
+Regime: RANGE
+Model P: 0.94
+Horizon: 24h
+Not financial advice. Paper signal.

@@ -1,0 +1,860 @@
+{
+ "n": 89,
+ "model": {
+  "wins": 50,
+  "n": 89,
+  "rate": 0.562,
+  "ci": [
+   0.458,
+   0.66
+  ]
+ },
+ "actual": {
+  "wins": 48,
+  "n": 89,
+  "rate": 0.539,
+  "ci": [
+   0.436,
+   0.639
+  ]
+ },
+ "model_oos": {
+  "wins": 23,
+  "n": 41,
+  "rate": 0.561,
+  "ci": [
+   0.41,
+   0.701
+  ]
+ },
+ "model_ins": {
+  "wins": 27,
+  "n": 48,
+  "rate": 0.562,
+  "ci": [
+   0.423,
+   0.693
+  ]
+ },
+ "actual_oos": {
+  "wins": 24,
+  "n": 41,
+  "rate": 0.585,
+  "ci": [
+   0.434,
+   0.722
+  ]
+ },
+ "actual_ins": {
+  "wins": 24,
+  "n": 48,
+  "rate": 0.5,
+  "ci": [
+   0.364,
+   0.636
+  ]
+ },
+ "posts": [
+  {
+   "post_id": "2042193957837541794",
+   "published_at": "2026-04-09T10:52:36+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01374,
+   "actual_ret24": 0.013737
+  },
+  {
+   "post_id": "2044013255065252032",
+   "published_at": "2026-04-14T11:21:50+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00239,
+   "actual_ret24": -0.002394
+  },
+  {
+   "post_id": "2048553530236293199",
+   "published_at": "2026-04-27T00:03:16+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.02774,
+   "actual_ret24": -0.027736
+  },
+  {
+   "post_id": "2049827132680077496",
+   "published_at": "2026-04-30T12:24:07+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.03032,
+   "actual_ret24": -0.030317
+  },
+  {
+   "post_id": "2051248372498260404",
+   "published_at": "2026-05-04T10:31:37+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02818,
+   "actual_ret24": 0.02818
+  },
+  {
+   "post_id": "2053603830408126801",
+   "published_at": "2026-05-10T22:31:21+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00565,
+   "actual_ret24": -0.005649
+  },
+  {
+   "post_id": "2053823496195879092",
+   "published_at": "2026-05-11T13:04:14+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00511,
+   "actual_ret24": 0.005106
+  },
+  {
+   "post_id": "2055547631775146253",
+   "published_at": "2026-05-16T07:15:20+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00429,
+   "actual_ret24": -0.004294
+  },
+  {
+   "post_id": "2055775721071784041",
+   "published_at": "2026-05-16T22:21:41+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00883,
+   "actual_ret24": 0.008834
+  },
+  {
+   "post_id": "2056388601718698254",
+   "published_at": "2026-05-18T14:57:03+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00146,
+   "actual_ret24": 0.001463
+  },
+  {
+   "post_id": "2056393360328528029",
+   "published_at": "2026-05-18T15:15:57+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00634,
+   "actual_ret24": -0.006342
+  },
+  {
+   "post_id": "2057084466015936557",
+   "published_at": "2026-05-20T13:02:10+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00596,
+   "actual_ret24": -0.005959
+  },
+  {
+   "post_id": "2057459428933124180",
+   "published_at": "2026-05-21T13:52:08+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00273,
+   "actual_ret24": -0.002733
+  },
+  {
+   "post_id": "2058180583730364846",
+   "published_at": "2026-05-23T13:37:44+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01228,
+   "actual_ret24": 0.012278
+  },
+  {
+   "post_id": "2058354381435920871",
+   "published_at": "2026-05-24T01:08:21+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00363,
+   "actual_ret24": -0.003628
+  },
+  {
+   "post_id": "2058573644457296213",
+   "published_at": "2026-05-24T15:39:37+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.01388,
+   "actual_ret24": 0.013877
+  },
+  {
+   "post_id": "2059753471747010681",
+   "published_at": "2026-05-27T21:47:50+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.01281,
+   "actual_ret24": 0.01281
+  },
+  {
+   "post_id": "2059763025310326811",
+   "published_at": "2026-05-27T22:25:48+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01117,
+   "actual_ret24": -0.011173
+  },
+  {
+   "post_id": "2061790939023294696",
+   "published_at": "2026-06-02T12:44:00+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0277,
+   "actual_ret24": -0.027697
+  },
+  {
+   "post_id": "2061790951836942587",
+   "published_at": "2026-06-02T12:44:03+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0277,
+   "actual_ret24": -0.027697
+  },
+  {
+   "post_id": "2062204062129606664",
+   "published_at": "2026-06-03T16:05:36+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.03673,
+   "actual_ret24": -0.036734
+  },
+  {
+   "post_id": "2062467901526093893",
+   "published_at": "2026-06-04T09:34:01+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00187,
+   "actual_ret24": -0.001872
+  },
+  {
+   "post_id": "2062517983269015767",
+   "published_at": "2026-06-04T12:53:01+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.05446,
+   "actual_ret24": -0.054455
+  },
+  {
+   "post_id": "2062538581013365117",
+   "published_at": "2026-06-04T14:14:52+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.05412,
+   "actual_ret24": -0.054122
+  },
+  {
+   "post_id": "2063588276381085896",
+   "published_at": "2026-06-07T11:45:59+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.03185,
+   "actual_ret24": 0.031847
+  },
+  {
+   "post_id": "2063786612027498838",
+   "published_at": "2026-06-08T00:54:06+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00708,
+   "actual_ret24": -0.007078
+  },
+  {
+   "post_id": "2063860545569292396",
+   "published_at": "2026-06-08T05:47:53+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00495,
+   "actual_ret24": -0.004953
+  },
+  {
+   "post_id": "2064120163243598078",
+   "published_at": "2026-06-08T22:59:31+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.02149,
+   "actual_ret24": 0.021494
+  },
+  {
+   "post_id": "2064123566678020098",
+   "published_at": "2026-06-08T23:13:02+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.01021,
+   "actual_ret24": 0.010211
+  },
+  {
+   "post_id": "2064178903053381711",
+   "published_at": "2026-06-09T02:52:55+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.02108,
+   "actual_ret24": 0.021082
+  },
+  {
+   "post_id": "2064366448508907631",
+   "published_at": "2026-06-09T15:18:10+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.0135,
+   "actual_ret24": 0.013501
+  },
+  {
+   "post_id": "2064390361439727672",
+   "published_at": "2026-06-09T16:53:11+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00451,
+   "actual_ret24": 0.004506
+  },
+  {
+   "post_id": "2064886552116023298",
+   "published_at": "2026-06-11T01:44:52+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.02375,
+   "actual_ret24": 0.023751
+  },
+  {
+   "post_id": "2065044594354766148",
+   "published_at": "2026-06-11T12:12:52+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0024,
+   "actual_ret24": 0.002402
+  },
+  {
+   "post_id": "2065196645600600104",
+   "published_at": "2026-06-11T22:17:04+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00072,
+   "actual_ret24": -0.000723
+  },
+  {
+   "post_id": "2065696216206430348",
+   "published_at": "2026-06-13T07:22:11+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01019,
+   "actual_ret24": 0.010192
+  },
+  {
+   "post_id": "2065939474002129089",
+   "published_at": "2026-06-13T23:28:48+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01643,
+   "actual_ret24": 0.016433
+  },
+  {
+   "post_id": "2065970359166493112",
+   "published_at": "2026-06-14T01:31:32+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01523,
+   "actual_ret24": 0.015227
+  },
+  {
+   "post_id": "2066878764815098131",
+   "published_at": "2026-06-16T13:41:12+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00843,
+   "actual_ret24": 0.00843
+  },
+  {
+   "post_id": "2067198311623446533",
+   "published_at": "2026-06-17T10:50:58+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01289,
+   "actual_ret24": -0.012893
+  },
+  {
+   "post_id": "2067358246265135264",
+   "published_at": "2026-06-17T21:26:30+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.02199,
+   "actual_ret24": 0.021993
+  },
+  {
+   "post_id": "2067684857678082272",
+   "published_at": "2026-06-18T19:04:20+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.0026,
+   "actual_ret24": -0.0026
+  },
+  {
+   "post_id": "2067961508433400267",
+   "published_at": "2026-06-19T13:23:39+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01181,
+   "actual_ret24": 0.011809
+  },
+  {
+   "post_id": "2068269338336141813",
+   "published_at": "2026-06-20T09:46:51+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01086,
+   "actual_ret24": 0.010857
+  },
+  {
+   "post_id": "2069027317138256222",
+   "published_at": "2026-06-22T11:58:47+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.04441,
+   "actual_ret24": -0.044405
+  },
+  {
+   "post_id": "2070120318069518827",
+   "published_at": "2026-06-25T12:21:59+00:00",
+   "oos": false,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.03234,
+   "actual_ret24": 0.032343
+  },
+  {
+   "post_id": "2071553738322665790",
+   "published_at": "2026-06-29T11:17:53+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.02564,
+   "actual_ret24": -0.025635
+  },
+  {
+   "post_id": "2071832171049001145",
+   "published_at": "2026-06-30T05:44:17+00:00",
+   "oos": false,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01403,
+   "actual_ret24": -0.014032
+  },
+  {
+   "post_id": "2072668069068235170",
+   "published_at": "2026-07-02T13:05:50+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00763,
+   "actual_ret24": 0.007632
+  },
+  {
+   "post_id": "2073898834946851315",
+   "published_at": "2026-07-05T22:36:28+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00616,
+   "actual_ret24": 0.006159
+  },
+  {
+   "post_id": "2074103391891206151",
+   "published_at": "2026-07-06T12:09:18+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02085,
+   "actual_ret24": 0.020849
+  },
+  {
+   "post_id": "2074269473511788967",
+   "published_at": "2026-07-06T23:09:15+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00921,
+   "actual_ret24": -0.009208
+  },
+  {
+   "post_id": "2075026589826646295",
+   "published_at": "2026-07-09T01:17:45+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.03517,
+   "actual_ret24": 0.035171
+  },
+  {
+   "post_id": "2075608037109432511",
+   "published_at": "2026-07-10T15:48:13+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00062,
+   "actual_ret24": 0.000624
+  },
+  {
+   "post_id": "2077015530356314452",
+   "published_at": "2026-07-14T13:01:06+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01702,
+   "actual_ret24": 0.017025
+  },
+  {
+   "post_id": "2077386297375903758",
+   "published_at": "2026-07-15T13:34:23+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01309,
+   "actual_ret24": -0.013093
+  },
+  {
+   "post_id": "2077552803770511595",
+   "published_at": "2026-07-16T00:36:02+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01829,
+   "actual_ret24": -0.018288
+  },
+  {
+   "post_id": "2077697300483481899",
+   "published_at": "2026-07-16T10:10:12+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01492,
+   "actual_ret24": -0.014917
+  },
+  {
+   "post_id": "2077737416316899489",
+   "published_at": "2026-07-16T12:49:37+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01898,
+   "actual_ret24": -0.018982
+  },
+  {
+   "post_id": "2078120921727197534",
+   "published_at": "2026-07-17T14:13:32+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.01058,
+   "actual_ret24": 0.010577
+  },
+  {
+   "post_id": "2079074734797709708",
+   "published_at": "2026-07-20T05:23:38+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.03121,
+   "actual_ret24": 0.031212
+  },
+  {
+   "post_id": "2079173901637263407",
+   "published_at": "2026-07-20T11:57:41+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02968,
+   "actual_ret24": 0.029685
+  },
+  {
+   "post_id": "2080600072518312054",
+   "published_at": "2026-07-24T10:24:47+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.01566,
+   "actual_ret24": 0.015663
+  },
+  {
+   "post_id": "2081319989991391242",
+   "published_at": "2026-07-26T10:05:29+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.0092,
+   "actual_ret24": -0.0092
+  },
+  {
+   "post_id": "2081859520641564744",
+   "published_at": "2026-07-27T21:49:23+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00013,
+   "actual_ret24": 0.00013
+  },
+  {
+   "post_id": "2082036735610110283",
+   "published_at": "2026-07-28T09:33:34+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.0157,
+   "actual_ret24": -0.015697
+  },
+  {
+   "post_id": "2082392219689054428",
+   "published_at": "2026-07-29T09:06:08+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00156,
+   "actual_ret24": 0.001565
+  },
+  {
+   "post_id": "2082760071910691053",
+   "published_at": "2026-07-30T09:27:51+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.0101,
+   "actual_ret24": -0.010098
+  },
+  {
+   "post_id": "2083113954361106833",
+   "published_at": "2026-07-31T08:54:03+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0104,
+   "actual_ret24": -0.010401
+  },
+  {
+   "post_id": "2083115226036387945",
+   "published_at": "2026-07-31T08:59:06+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.0104,
+   "actual_ret24": 0.010401
+  },
+  {
+   "post_id": "2083378863028179148",
+   "published_at": "2026-08-01T02:26:42+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00726,
+   "actual_ret24": 0.007261
+  },
+  {
+   "post_id": "2083667923881828692",
+   "published_at": "2026-08-01T21:35:20+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00944,
+   "actual_ret24": 0.009443
+  },
+  {
+   "post_id": "2083739760103985324",
+   "published_at": "2026-08-02T02:20:47+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.00932,
+   "actual_ret24": -0.00932
+  },
+  {
+   "post_id": "2083886395052183862",
+   "published_at": "2026-08-02T12:03:27+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00355,
+   "actual_ret24": 0.003551
+  },
+  {
+   "post_id": "2083899453057249491",
+   "published_at": "2026-08-02T12:55:21+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00355,
+   "actual_ret24": 0.003551
+  },
+  {
+   "post_id": "2084575577449828549",
+   "published_at": "2026-08-04T09:42:01+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.00468,
+   "actual_ret24": -0.004677
+  },
+  {
+   "post_id": "2085319768396165378",
+   "published_at": "2026-08-06T10:59:10+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00631,
+   "actual_ret24": 0.006312
+  },
+  {
+   "post_id": "2086924952864010693",
+   "published_at": "2026-08-10T21:17:36+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00543,
+   "actual_ret24": 0.005428
+  },
+  {
+   "post_id": "2089509574265241867",
+   "published_at": "2026-08-18T00:27:58+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.00312,
+   "actual_ret24": 0.003122
+  },
+  {
+   "post_id": "2091032125273428206",
+   "published_at": "2026-08-22T05:18:02+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01793,
+   "actual_ret24": -0.017928
+  },
+  {
+   "post_id": "2091995674091143662",
+   "published_at": "2026-08-24T21:06:50+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0019,
+   "actual_ret24": 0.001899
+  },
+  {
+   "post_id": "2092000535864025289",
+   "published_at": "2026-08-24T21:26:09+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.0019,
+   "actual_ret24": 0.001899
+  },
+  {
+   "post_id": "2092223565034918339",
+   "published_at": "2026-08-25T12:12:24+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00253,
+   "actual_ret24": 0.002534
+  },
+  {
+   "post_id": "2093156835763351938",
+   "published_at": "2026-08-28T02:00:53+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": 0.02886,
+   "actual_ret24": -0.02886
+  },
+  {
+   "post_id": "2093318261437829383",
+   "published_at": "2026-08-28T12:42:20+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.0205,
+   "actual_ret24": 0.020502
+  },
+  {
+   "post_id": "2094041333732405606",
+   "published_at": "2026-08-30T12:35:34+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.01259,
+   "actual_ret24": -0.012587
+  },
+  {
+   "post_id": "2094221486634766842",
+   "published_at": "2026-08-31T00:31:25+00:00",
+   "oos": true,
+   "model_dir": "BEARISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": -0.00991,
+   "actual_ret24": -0.009913
+  },
+  {
+   "post_id": "2095521488728211519",
+   "published_at": "2026-09-03T14:37:10+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BULLISH",
+   "model_ret24": -0.02359,
+   "actual_ret24": -0.023586
+  },
+  {
+   "post_id": "2095874131288093115",
+   "published_at": "2026-09-04T13:58:27+00:00",
+   "oos": true,
+   "model_dir": "BULLISH",
+   "actual_dir": "BEARISH",
+   "model_ret24": 0.01019,
+   "actual_ret24": -0.010189
+  }
+ ]
+}
