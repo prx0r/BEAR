@@ -1,0 +1,7 @@
+{
+ "n": 885,
+ "agree": 631,
+ "disagree": 254,
+ "agree_rate": 0.7129943502824859,
+ "method": "4h direction-correct, 1h-next-candle vs 5m-next-candle entry"
+}

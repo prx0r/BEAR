@@ -1,0 +1,16 @@
+{
+  "recon_at": "2026-09-10",
+  "recon_cost_usd": 0.01,
+  "handles": [
+    {"handle": "astronomer_zero", "author_id": "1390948342021120000", "cadence_min": 1, "role": "flagship BTC calls", "followers": 64310},
+    {"handle": "Timeless_Crypto", "author_id": "952109977157668864", "cadence_min": 5, "role": "BTC tactical / mean-reversion", "followers": 71674},
+    {"handle": "Trader_XO", "author_id": "1381341090", "cadence_min": 5, "role": "BTC momentum / hedging", "followers": 549313},
+    {"handle": "CryptoBheem", "author_id": "1399033636691849222", "cadence_min": 5, "role": "ETH levels", "followers": 72587},
+    {"handle": "eliz883", "author_id": "993962483332329472", "cadence_min": 5, "role": "contrarian spare", "followers": 608009},
+    {"handle": "lookonchain", "author_id": "1462727797135216641", "cadence_min": 5, "role": "onchain flow", "followers": 708659},
+    {"handle": "laevitas1", "author_id": "1306192341682786306", "cadence_min": 5, "role": "derivatives / OI", "followers": 25065},
+    {"handle": "hyblockcapital", "author_id": "1185049143703724033", "cadence_min": 5, "role": "orderbook liquidity", "followers": 40436},
+    {"handle": "52kskew", "author_id": "723345972", "cadence_min": 5, "role": "options flow", "followers": 123723},
+    {"handle": "exitpumpBTC", "author_id": "1373615088532328449", "cadence_min": 5, "role": "BTC exits", "followers": 42201}
+  ]
+}

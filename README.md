@@ -1,3 +1,10 @@
+# ⛔ NEW AGENTS START HERE, NOT BELOW ⛔
+> This README describes the ORIGINAL rel-value engine (archived direction).
+> The live project is **signal intelligence + per-expert mimics → x402 endpoints**.
+> Read in order: `AGENTS.md` (control plane) → `threads.md` (live status + task
+> taxonomy) → `mimichartastro.md` (mimic spec) → `RECIPES.md` (copy-paste commands).
+> Repo lives at `/home/ubuntu/BEAR` (not `/root/BEAR` — old docs lie, see RECIPES).
+
 # BEAR — Hyperliquid Relative-Value Trading Engine
 
 ## Thesis (Section 76)

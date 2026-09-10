@@ -1,0 +1,13 @@
+{
+  "seed": "seed1",
+  "from": null,
+  "justification": "baseline: everything as built through C21 loop runs",
+  "handles": ["astronomer_zero", "Timeless_Crypto", "Trader_XO"],
+  "split": "mid-count",
+  "activity": {"lr": 0.2, "prior": {"astronomer_zero": 0.171, "Timeless_Crypto": 0.203, "Trader_XO": 0.07}, "l1": 1e-4, "l2": 1e-5},
+  "direction": {"lr": 0.3, "prior": 0.5},
+  "features": ["bias", "btc_r1", "btc_r4", "btc_r24", "eth_r4", "eth_btc_24", "reg_up", "reg_down", "hour_sin", "hour_cos", "dow_sin", "dow_cos", "weekend", "quiet_16_20", "log_hours_since", "last_bull", "last_bear", "bull_streak", "bear_streak", "funding", "ls_ratio", "top_ls", "taker_bs", "m5_r15", "m5_r60", "m5_range60"],
+  "retrieval": "euclidean-market-state-k1",
+  "discriminator": {"dim": 2048, "lr": 0.1, "epochs": 3, "struct_only": true},
+  "protocol": "predict-commit-reveal-update, frozen-vs-adaptive, Brier/log-loss/ECE"
+}

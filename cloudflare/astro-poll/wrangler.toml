@@ -1,0 +1,21 @@
+# astro-poll — 1-min poll of @astronomer_zero via GetXAPI, KV inbox for VPS.
+# Secrets (NEVER in code):  wrangler secret put GETXAPI_KEY
+# KV: wrangler kv:namespace create MIMIC_STATE  -> paste id below
+# account_id intentionally left blank: export CLOUDFLARE_ACCOUNT_ID at deploy time.
+
+name = "astro-poll"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# PAUSED 2026-09-10 by user request — no live polling. Re-enable by uncommenting.
+# [triggers]
+# crons = ["* * * * *"]
+
+[[kv_namespaces]]
+binding = "MIMIC_STATE"
+id = "f4358bd53e7d40f2a76377972169d12b"
+
+[vars]
+HANDLE = "astronomer_zero"
+AUTHOR_ID = "1390948342021120000"
+INBOX_CAP = "200"

@@ -1,6 +1,6 @@
 """Canonical backtest runner — wires extraction, outcomes, baselines, and source cards.
 
-Run: cd /root/BEAR/astronomer && python3 run_backtest.py
+Run: cd /home/ubuntu/BEAR/astronomer && python3 run_backtest.py
 
 This is the ONLY backtest entry point.
 """

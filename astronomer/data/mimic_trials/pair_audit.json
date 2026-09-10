@@ -1,0 +1,8 @@
+{
+ "n": 30,
+ "leak": 0,
+ "rate": 0.0,
+ "bar": "<10%",
+ "pass": true,
+ "neutralizer": "mimic/neutralize.py v1.2"
+}

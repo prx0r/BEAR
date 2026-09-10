@@ -3,3 +3,389 @@
 {"timestamp": "2026-09-07T00:47:39.962306+00:00", "handle": "astronomer_zero", "query": "from:astronomer_zero since:2026-05-01 until:2026-05-31", "pages_fetched": 4, "posts_returned": 60, "cost_usd": 0.0030000000000000027, "credits_before": 0.09, "credits_after": 0.087}
 {"timestamp": "2026-09-07T00:47:45.608290+00:00", "handle": "Timeless_Crypto", "query": "from:Timeless_Crypto since:2026-07-01 until:2026-07-31", "pages_fetched": 3, "posts_returned": 52, "cost_usd": 0.002999999999999989, "credits_before": 0.087, "credits_after": 0.084}
 {"timestamp": "2026-09-07T00:47:47.504518+00:00", "handle": "CryptoBheem", "query": "from:CryptoBheem since:2026-09-01 until:2026-09-07", "pages_fetched": 1, "posts_returned": 1, "cost_usd": 0.0010000000000000009, "credits_before": 0.084, "credits_after": 0.083}
+{"ts": 1789024898.0307891, "endpoint": "user_info", "handle": "DaanCrypto", "cost": 0.001}
+{"ts": 1789024900.0241513, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024901.7696102, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024903.3638487, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024904.8200517, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-01", "until": "2026-08-15", "n": 7, "cost": 0.001}
+{"ts": 1789024906.7600656, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024908.5632172, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024910.424932, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024912.79193, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024913.9102886, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024915.1387835, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 13, "cost": 0.001}
+{"ts": 1789024915.8059092, "endpoint": "user_info", "handle": "Crypto_Chase", "cost": 0.001}
+{"ts": 1789024916.7832694, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024918.5200741, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-08-01", "until": "2026-08-15", "n": 4, "cost": 0.001}
+{"ts": 1789024920.1126664, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024921.4777234, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-08-16", "until": "2026-09-01", "n": 19, "cost": 0.001}
+{"ts": 1789024922.5208745, "endpoint": "user_info", "handle": "DrProfitCrypto", "cost": 0.001}
+{"ts": 1789024925.0936217, "endpoint": "advanced_search", "handle": "DrProfitCrypto", "since": "2026-08-01", "until": "2026-08-15", "n": 12, "cost": 0.001}
+{"ts": 1789024926.080866, "endpoint": "advanced_search", "handle": "DrProfitCrypto", "since": "2026-08-16", "until": "2026-09-01", "n": 17, "cost": 0.001}
+{"ts": 1789024926.9227068, "endpoint": "user_info", "handle": "TheFlowHorse", "cost": 0.001}
+{"ts": 1789024928.7731097, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024931.2742054, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024932.9641073, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024934.9695985, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024937.456439, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024939.0268922, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024940.5479515, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024941.9446592, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024944.090705, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024945.475418, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024947.5766277, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024949.6728265, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024952.0281894, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024953.7320058, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024956.0363686, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 20, "cost": 0.001}
+{"ts": 1789024958.2186992, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-01", "until": "2026-08-15", "n": 2, "cost": 0.001}
+{"ts": 1789024959.5205805, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024960.7217054, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024962.2060597, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024964.7413101, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024966.1783755, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024967.88281, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024969.8581424, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024972.1693392, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024973.5900316, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024974.6644163, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024976.3399007, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024978.1159823, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 20, "cost": 0.001}
+{"ts": 1789024979.2158546, "endpoint": "advanced_search", "handle": "TheFlowHorse", "since": "2026-08-16", "until": "2026-09-01", "n": 15, "cost": 0.001}
+{"ts": 1789025012.2060907, "endpoint": "advanced_search", "handle": "52kskew", "since": "2026-08-01", "n": 0, "cost": 0.001}
+{"ts": 1789025015.135187, "endpoint": "advanced_search", "handle": "52kskew", "since": "2026-08-16", "n": 0, "cost": 0.001}
+{"ts": 1789026861.19287, "endpoint": "user_info", "handle": "Bluntz_Capital", "cost": 0.001}
+{"ts": 1789026862.7583418, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026864.2920983, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026865.9900908, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026867.9629269, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-01", "n": 2, "cost": 0.001}
+{"ts": 1789026869.765233, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026871.1266155, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026872.7086608, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026875.2730732, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026877.1043544, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026882.965935, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026885.4345353, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026887.2213695, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026889.0464656, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026891.5261068, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026908.3921115, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026910.1552706, "endpoint": "advanced_search", "handle": "Bluntz_Capital", "since": "2026-08-16", "n": 13, "cost": 0.001}
+{"ts": 1789026911.2155848, "endpoint": "user_info", "handle": "Pentosh1", "cost": 0.001}
+{"ts": 1789026912.3852973, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026913.8075683, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026914.8503535, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026916.5813782, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-01", "n": 14, "cost": 0.001}
+{"ts": 1789026918.098615, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026919.7546358, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026921.4993393, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026924.367341, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026925.6062937, "endpoint": "advanced_search", "handle": "Pentosh1", "since": "2026-08-16", "n": 7, "cost": 0.001}
+{"ts": 1789026930.4324365, "endpoint": "user_info", "handle": "SalsaTekila", "cost": 0.001}
+{"ts": 1789026931.8287063, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026933.5338511, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026934.5747685, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026936.701178, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026938.0444984, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789026939.159863, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-01", "n": 7, "cost": 0.001}
+{"ts": 1789026940.6476479, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026941.7213235, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026943.5013154, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026944.9758193, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026946.5406473, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026947.809819, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026949.8204098, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026951.4304807, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026952.6486993, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026954.0062547, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789026956.207319, "endpoint": "advanced_search", "handle": "SalsaTekila", "since": "2026-08-16", "n": 18, "cost": 0.001}
+{"ts": 1789026957.3534923, "endpoint": "user_info", "handle": "CryptoCred", "cost": 0.001}
+{"ts": 1789026958.2647066, "endpoint": "advanced_search", "handle": "CryptoCred", "since": "2026-08-01", "n": 10, "cost": 0.001}
+{"ts": 1789026959.6610355, "endpoint": "advanced_search", "handle": "CryptoCred", "since": "2026-08-16", "n": 19, "cost": 0.001}
+{"ts": 1789028497.793105, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028499.2705908, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028501.0352092, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028504.193818, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028505.592997, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-01", "n": 2, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028508.240779, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028510.6598506, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028511.8399525, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028513.5057871, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028514.1518471, "endpoint": "advanced_search", "handle": "DaanCrypto", "since": "2026-07-16", "n": 1, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028516.3892388, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028517.39854, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028518.8316982, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028521.3791845, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-01", "n": 4, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028523.2554631, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028524.687707, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028525.6568902, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028526.789949, "endpoint": "advanced_search", "handle": "Crypto_Chase", "since": "2026-07-16", "n": 1, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028528.1030672, "endpoint": "advanced_search", "handle": "DrProfitCrypto", "since": "2026-07-01", "n": 5, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789028529.9140604, "endpoint": "advanced_search", "handle": "DrProfitCrypto", "since": "2026-07-16", "n": 17, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789031144.1167772, "endpoint": "user_info", "handle": "52kskew", "cost": 0.001}
+{"ts": 1789031145.1641362, "endpoint": "user_info", "handle": "JA_Maartun", "cost": 0.001}
+{"ts": 1789031146.0097473, "endpoint": "user_info", "handle": "Husslin_", "cost": 0.001}
+{"ts": 1789031146.7120109, "endpoint": "user_info", "handle": "FrankAFetter", "cost": 0.001}
+{"ts": 1789031147.7693145, "endpoint": "user_info", "handle": "jjcmoreno", "cost": 0.001}
+{"ts": 1789031148.6798089, "endpoint": "user_info", "handle": "CavanXy", "cost": 0.001}
+{"ts": 1789031150.5110643, "endpoint": "user_info", "handle": "VetleLunde", "cost": 0.001}
+{"ts": 1789031151.173461, "endpoint": "user_info", "handle": "HyperTracker", "cost": 0.001}
+{"ts": 1789031152.557827, "endpoint": "user_info", "handle": "CrypNuevo", "cost": 0.001}
+{"ts": 1789031153.3695958, "endpoint": "user_info", "handle": "Wild_Randomness", "cost": 0.001}
+{"ts": 1789031153.9944108, "endpoint": "user_info", "handle": "RektProof", "cost": 0.001}
+{"ts": 1789031154.6863616, "endpoint": "user_info", "handle": "trader1sz", "cost": 0.001}
+{"ts": 1789031155.996576, "endpoint": "user_info", "handle": "CJ900X", "cost": 0.001}
+{"ts": 1789031156.8346004, "endpoint": "user_info", "handle": "liquiditygoblin", "cost": 0.001}
+{"ts": 1789031157.3881226, "endpoint": "user_info", "handle": "eyeonchains", "cost": 0.001}
+{"ts": 1789031158.5991068, "endpoint": "user_info", "handle": "that1618guy", "cost": 0.001}
+{"ts": 1789031159.678086, "endpoint": "user_info", "handle": "AxelAdlerJr", "cost": 0.001}
+{"ts": 1789031160.268866, "endpoint": "user_info", "handle": "n3ocortex", "cost": 0.001}
+{"ts": 1789031161.3964636, "endpoint": "user_info", "handle": "CryptoVizArt", "cost": 0.001}
+{"ts": 1789031162.7951555, "endpoint": "user_info", "handle": "NachoTrades", "cost": 0.001}
+{"ts": 1789031164.4549258, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031166.5189145, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031168.0581722, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-01", "n": 6, "cost": 0.001}
+{"ts": 1789031171.3609219, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031172.7131987, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031174.3052285, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031175.9554586, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-08-16", "n": 14, "cost": 0.001}
+{"ts": 1789031177.5805469, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031178.985035, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031180.2406209, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-01", "n": 11, "cost": 0.001}
+{"ts": 1789031182.3690524, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031183.797168, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031185.907088, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031187.6968827, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031189.7066348, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-08-16", "n": 1, "cost": 0.001}
+{"ts": 1789031191.5956225, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031193.5043998, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031194.8976972, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031197.0863285, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031198.9367006, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031200.9269927, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031203.6169558, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031204.9522057, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031206.7957194, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031209.2090442, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031211.1805182, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031212.98139, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031215.6497066, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031217.294161, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031218.8408618, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031221.8230567, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031223.4957867, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031225.0678406, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-01", "n": 13, "cost": 0.001}
+{"ts": 1789031227.4180446, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031230.1193495, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031232.2408261, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031234.680007, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031236.4729416, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031238.3611004, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031241.5752144, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031243.0121174, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031244.4901583, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031248.2460637, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031249.885085, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031251.297308, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031254.0002694, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031255.7933345, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031258.0927653, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031261.4344919, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031263.5365808, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031266.9479518, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031269.5511413, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031271.4130616, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031273.224942, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031276.8372643, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031278.3739016, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031279.152482, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-08-16", "n": 3, "cost": 0.001}
+{"ts": 1789031281.4175258, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-08-01", "n": 12, "cost": 0.001}
+{"ts": 1789031282.5465367, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031283.6590853, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-08-16", "n": 0, "cost": 0.001}
+{"ts": 1789031544.3201287, "endpoint": "advanced_search", "handle": "Husslin_", "since": "2026-08-01", "n": 0, "cost": 0.001}
+{"ts": 1789031546.6947873, "endpoint": "advanced_search", "handle": "Husslin_", "since": "2026-08-16", "n": 0, "cost": 0.001}
+{"ts": 1789031548.7310412, "endpoint": "advanced_search", "handle": "jjcmoreno", "since": "2026-08-01", "n": 12, "cost": 0.001}
+{"ts": 1789031549.5450783, "endpoint": "advanced_search", "handle": "jjcmoreno", "since": "2026-08-16", "n": 7, "cost": 0.001}
+{"ts": 1789031551.056831, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031552.5436454, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031554.9062834, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031556.4816525, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-01", "n": 15, "cost": 0.001}
+{"ts": 1789031558.1481872, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031559.4376693, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031561.0531235, "endpoint": "advanced_search", "handle": "CavanXy", "since": "2026-08-16", "n": 14, "cost": 0.001}
+{"ts": 1789031562.2388966, "endpoint": "advanced_search", "handle": "VetleLunde", "since": "2026-08-01", "n": 3, "cost": 0.001}
+{"ts": 1789031563.21854, "endpoint": "advanced_search", "handle": "VetleLunde", "since": "2026-08-16", "n": 8, "cost": 0.001}
+{"ts": 1789031564.4462557, "endpoint": "advanced_search", "handle": "HyperTracker", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031565.6488104, "endpoint": "advanced_search", "handle": "HyperTracker", "since": "2026-08-01", "n": 12, "cost": 0.001}
+{"ts": 1789031567.6488261, "endpoint": "advanced_search", "handle": "HyperTracker", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031570.2017503, "endpoint": "advanced_search", "handle": "HyperTracker", "since": "2026-08-16", "n": 2, "cost": 0.001}
+{"ts": 1789031571.1920123, "endpoint": "advanced_search", "handle": "RektProof", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031574.5451605, "endpoint": "advanced_search", "handle": "RektProof", "since": "2026-08-01", "n": 6, "cost": 0.001}
+{"ts": 1789031576.6922314, "endpoint": "advanced_search", "handle": "RektProof", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031577.616659, "endpoint": "advanced_search", "handle": "RektProof", "since": "2026-08-16", "n": 16, "cost": 0.001}
+{"ts": 1789031578.8502362, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031580.0374904, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031581.565183, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031584.0055592, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031586.075822, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031588.463569, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031590.97423, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031592.3190393, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031593.5580032, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031595.1461263, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031597.4320073, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031599.717092, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031600.834013, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031602.637608, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031604.359893, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031605.5116925, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031607.0701075, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031608.8509634, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031610.752584, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031612.3464062, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031614.1604981, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031615.8821657, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031618.0505762, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031619.7698078, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031621.0257158, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031622.6067326, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031625.0236268, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031626.2470207, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031627.3770876, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031629.2468882, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031631.3524098, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031633.3608673, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031634.890313, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031636.0297515, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031638.2866766, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031639.7321393, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031641.3114173, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031644.0664563, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031646.3700893, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031647.880048, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031649.2981293, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031650.7066882, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031652.5556884, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031654.3841872, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031656.0610392, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031657.8491595, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031659.9750736, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031662.0907922, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031663.8529131, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031665.8763397, "endpoint": "advanced_search", "handle": "trader1sz", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031666.9453728, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-01", "n": 19, "cost": 0.001}
+{"ts": 1789031668.4112127, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031669.6041067, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031671.8101656, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031673.2406182, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031674.3381846, "endpoint": "advanced_search", "handle": "CJ900X", "since": "2026-08-16", "n": 11, "cost": 0.001}
+{"ts": 1789031675.2700882, "endpoint": "advanced_search", "handle": "eyeonchains", "since": "2026-08-01", "n": 12, "cost": 0.001}
+{"ts": 1789031677.511331, "endpoint": "advanced_search", "handle": "eyeonchains", "since": "2026-08-16", "n": 0, "cost": 0.001}
+{"ts": 1789031679.7893429, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031681.199325, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031682.9467254, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031684.2420282, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031686.0954957, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031687.8016562, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031689.4365113, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031691.0461822, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031694.2562897, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031695.2135198, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-01", "n": 9, "cost": 0.001}
+{"ts": 1789031697.304221, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031701.064932, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031702.8204336, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031704.1619997, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031706.206332, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031708.0242028, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031709.8359263, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031711.5193455, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031714.5085351, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031716.5093908, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031718.5845208, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031720.578868, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031722.282775, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031723.5893955, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031725.2925193, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031728.22265, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031729.7798615, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031731.392024, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031734.2758899, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031736.2883868, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031738.0204268, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031739.0374484, "endpoint": "advanced_search", "handle": "that1618guy", "since": "2026-08-16", "n": 17, "cost": 0.001}
+{"ts": 1789031740.906595, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031741.8994448, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031743.0236726, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-01", "n": 1, "cost": 0.001}
+{"ts": 1789031745.3401735, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031746.6256318, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031748.5587738, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031749.758753, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031751.647934, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-08-16", "n": 9, "cost": 0.001}
+{"ts": 1789031753.299652, "endpoint": "advanced_search", "handle": "n3ocortex", "since": "2026-08-01", "n": 20, "cost": 0.001}
+{"ts": 1789031754.408398, "endpoint": "advanced_search", "handle": "n3ocortex", "since": "2026-08-01", "n": 1, "cost": 0.001}
+{"ts": 1789031755.9605272, "endpoint": "advanced_search", "handle": "n3ocortex", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031757.5179374, "endpoint": "advanced_search", "handle": "n3ocortex", "since": "2026-08-16", "n": 8, "cost": 0.001}
+{"ts": 1789031758.7487247, "endpoint": "advanced_search", "handle": "CryptoVizArt", "since": "2026-08-01", "n": 5, "cost": 0.001}
+{"ts": 1789031760.0557187, "endpoint": "advanced_search", "handle": "CryptoVizArt", "since": "2026-08-16", "n": 20, "cost": 0.001}
+{"ts": 1789031760.9433918, "endpoint": "advanced_search", "handle": "CryptoVizArt", "since": "2026-08-16", "n": 1, "cost": 0.001}
+{"ts": 1789031762.1308787, "endpoint": "advanced_search", "handle": "NachoTrades", "since": "2026-08-01", "n": 1, "cost": 0.001}
+{"ts": 1789031763.9399164, "endpoint": "advanced_search", "handle": "NachoTrades", "since": "2026-08-16", "n": 6, "cost": 0.001}
+{"ts": 1789034429.581211, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034431.2187157, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-07-01", "n": 15, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034433.488383, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034434.6220262, "endpoint": "advanced_search", "handle": "JA_Maartun", "since": "2026-07-16", "n": 17, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034437.4849977, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034439.0466843, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034440.604025, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-01", "n": 17, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034442.6002724, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034443.8194427, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034445.2472458, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034446.5381079, "endpoint": "advanced_search", "handle": "FrankAFetter", "since": "2026-07-16", "n": 4, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034449.2948785, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034450.982099, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034452.809565, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034455.5535533, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034457.0571594, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034459.8844092, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034463.1918252, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034465.1576364, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034468.4351192, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034471.2589302, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034472.968349, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034474.8590262, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034477.1816266, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-01", "n": 17, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034479.1284146, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034480.9904675, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034483.6036382, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034485.0439758, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034487.3461823, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034489.9932265, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034492.308006, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034493.9404554, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034496.212496, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034497.9666703, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034499.8197744, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034502.1112177, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034503.7293422, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034505.6173267, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034506.9683518, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034509.5030694, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034511.1470585, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034512.6843264, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034515.0546534, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034517.5242481, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034520.5736263, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034522.9792087, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034525.628627, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034527.251292, "endpoint": "advanced_search", "handle": "Wild_Randomness", "since": "2026-07-16", "n": 17, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034528.8449447, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034530.249088, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-07-01", "n": 1, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034531.6275928, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034533.271108, "endpoint": "advanced_search", "handle": "CrypNuevo", "since": "2026-07-16", "n": 1, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034535.025974, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034537.3924716, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-01", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034538.6776989, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-01", "n": 9, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034539.966218, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034541.742798, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034544.1026254, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-16", "n": 20, "unit_cost": 0.001, "cost": 0.001}
+{"ts": 1789034545.1142263, "endpoint": "advanced_search", "handle": "AxelAdlerJr", "since": "2026-07-16", "n": 15, "unit_cost": 0.001, "cost": 0.001}

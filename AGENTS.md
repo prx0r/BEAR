@@ -225,6 +225,15 @@ Not: `trader → win rate`
 | `strategy-architecture.md` | Strategy entity structure |
 | `protocol.md` | Alpha Mining Protocol v2 |
 | `meta-science.md` | Meta lifecycle theory, 13 panels |
+| `mimic/` | Online per-expert imitators: market-state features, AdaGrad logistic, Brier/ECE tracking, SHA256 commit log, causal replay + walk-forward mock-live (`trial.sh <handle>`) |
+| `mimic/handles.json` | 10 reconfirmed mimic targets (IDs, cadence, roles; recon 2026-09-10) |
+
+### Serving (`~/mimichart/` — separate repo, this file indexes it)
+| File | Purpose |
+|------|---------|
+| `README.md` | Model → x402 endpoint blueprint: route/price table, signal JSON, TS-paywall + Python-brain build, Caddy/systemd deploy |
+| `mimichartastro.md` (BEAR root) | Per-expert mimic spec: data truth, hurdle architecture, LoRA + AuthorMix plan, mock-live protocol |
+| `threads.md` (BEAR root) | Open-thread tracker: mimic/data/strategy/infra/serving/legacy status + next actions |
 
 ### Data (`astronomer/data/`)
 | File | Purpose |
@@ -270,7 +279,7 @@ python3 -c "import httpx; r=httpx.get('https://api.getxapi.com/twitter/user/info
 python3 -c "from extractor_v2 import classify_event; ..."
 
 # 4. BACKTEST — local, free
-cd /root/BEAR/astronomer && python3 backtest.py
+cd /home/ubuntu/BEAR/astronomer && python3 backtest.py
 
 # 5. SOURCE CARD — save to source_cards/{handle}.json
 
@@ -278,7 +287,8 @@ cd /root/BEAR/astronomer && python3 backtest.py
 ```
 
 **Cost per source:** ~$0.005 (5 API calls)
-**Budget remaining:** $39.61
+**Budget:** see live ledger `astronomer/data/budgets/fetch_log.jsonl`
+(session spend $0.41 as of 2026-09-10; historical notes below are stale)
 **Plan expires:** 2026-10-07
 
 ### Procedure: BACKGROUND_RUN
@@ -304,11 +314,21 @@ tail -f logs/*.log
    - Classify: replies, standalone, media
    - Measure: signal_density = (directional + levels) / standalone
    - DECIDE: >0.3 PROCEED, 0.1-0.3 CAUTION, <0.1 SKIP
+   - UPGRADED 2026-09-10 (measured on 7,374 posts — see
+     `astronomer/mimic/categories/scout-criteria.md` + `thresholds.json`):
+     yield = (CALL+EXIT+COND+VERDICT+FLOW+MACRO)/n, same 0.3/0.1 gates (validated);
+     role signatures (need ≥2 posts): VOTER=CALL+levels · VERDICT=VERDICT+COND ·
+     FEED=numbers≥3+media+~0 direction words (yield-blind whitelist) ·
+     EXIT marker `closed` (143× lift); instant drops: numbers==0 → CHATTER,
+     promo (`bitget/vip/cfd`) → SPAM; LEAN splits tactical/data/spam.
 
 2. DOCUMENT
    - Add to accounts.json
    - Record scout results
    - Set initial tier
+
+3. PIPELINE RULE (binding): August validate → July confirm (format stability) →
+   price 2yr backfill for HUMAN approval. Never backfill blind.
 ```
 
 ### Procedure: EXTRACT_SIGNALS

@@ -1,0 +1,11 @@
+{
+ "labels_24h": 485,
+ "finding": "no direction x regime cell has Wilson lower bound > 50%",
+ "best_cell": {
+  "direction": "BEARISH",
+  "regime": "DOWN",
+  "win": "31/55=56%",
+  "ci": "[43%,69%]"
+ },
+ "implication": "gate must stay source x regime x horizon specific (STRAT-004), not direction-generic"
+}

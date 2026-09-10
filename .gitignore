@@ -16,3 +16,10 @@ venv/
 *.log
 .DS_Store
 .env.cloudflare
+# Local chart/media archive (binaries, ~300MB) — keep manifest only
+astronomer/data/media/*
+!astronomer/data/media/manifest.json
+# Cloudflare worker local artifacts
+cloudflare/*/node_modules/
+cloudflare/*/.wrangler/
+cloudflare/*/dev.vars

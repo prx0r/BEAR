@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MimicPost v1.0",
+  "type": "object",
+  "required": ["post_id", "handle", "author_id", "published_at", "archetype", "text", "evidence"],
+  "properties": {
+    "post_id": {"type": "string", "pattern": "^[0-9]{15,25}$"},
+    "handle": {"type": "string", "minLength": 1},
+    "author_id": {"type": "string", "pattern": "^[0-9]+$"},
+    "published_at": {"type": "string", "format": "date-time"},
+    "archetype": {"enum": ["CALL", "EXIT", "COND", "VERDICT", "MACRO_STATE", "FLOW_DATA", "LEAN_TAC", "EDU", "CHATTER"]},
+    "text": {"type": "string", "minLength": 1},
+    "chart_ref": {"type": "string"},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["field", "span"], "properties": {"field": {"type": "string"}, "span": {"type": "string"}}}},
+    "regime": {"type": ["object", "null"]},
+    "market_snapshot": {"type": ["string", "null"]},
+    "call": {
+      "type": "object",
+      "required": ["asset", "direction", "entry_basis"],
+      "properties": {
+        "asset": {"type": "string", "pattern": "^[A-Z]{2,12}$"},
+        "direction": {"enum": ["LONG", "SHORT"]},
+        "entry_basis": {"enum": ["NOW", "LEVEL", "UNKNOWN"], "default": "UNKNOWN"},
+        "entry_range": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "targets": {"type": "array", "items": {"type": "number"}},
+        "invalidation": {"type": "number"},
+        "horizon_h": {"type": "number"},
+        "position": {"enum": ["OPEN", "HYPOTHETICAL", "UNKNOWN"], "default": "UNKNOWN"}
+      }
+    },
+    "exit": {
+      "type": "object",
+      "required": ["asset", "exit_zone", "fraction"],
+      "properties": {
+        "asset": {"type": "string"},
+        "exit_zone": {"type": "string"},
+        "fraction": {"enum": ["PARTIAL", "FULL", "UNKNOWN"]},
+        "entry_ref": {"type": "string"},
+        "pnl_pct": {"type": "number"},
+        "reason": {"type": "string"}
+      }
+    },
+    "cond": {
+      "type": "object",
+      "required": ["asset", "trigger", "action"],
+      "properties": {
+        "asset": {"type": "string"},
+        "trigger": {"type": "string"},
+        "action": {"type": "string"},
+        "invalidation": {"type": "number"},
+        "expiry": {"type": "string", "format": "date-time"}
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "required": ["scope", "verdict", "because"],
+      "properties": {
+        "scope": {"enum": ["ASSET", "SECTOR", "MARKET"]},
+        "verdict": {"enum": ["BULL", "BEAR", "RANGE"]},
+        "because": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "horizon_h": {"type": "number"}
+      }
+    },
+    "macro_state": {
+      "type": "object",
+      "required": ["topics"],
+      "properties": {
+        "topics": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "stance": {"type": "string"},
+        "event_date": {"type": "string"},
+        "surprise": {"type": "string"}
+      }
+    },
+    "flow_data": {
+      "type": "object",
+      "required": ["metric", "values"],
+      "properties": {
+        "metric": {"enum": ["ETF_FLOW", "FUNDING", "OI", "LS_RATIO", "CVD", "WHALE", "UNLOCK", "LIQ", "HACK"]},
+        "values": {"type": "object"},
+        "asset": {"type": "string"},
+        "window": {"type": "string"}
+      }
+    },
+    "lean_tac": {
+      "type": "object",
+      "required": ["asset", "lean", "chart_ref"],
+      "properties": {
+        "asset": {"type": "string"},
+        "lean": {"enum": ["LONG", "SHORT"]}
+      }
+    },
+    "edu": {
+      "type": "object",
+      "required": ["concepts"],
+      "properties": {
+        "concepts": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "assets": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "chatter": {
+      "type": "object",
+      "required": ["reason"],
+      "properties": {"reason": {"enum": ["REPLY", "NO_NUMBERS", "SPAM", "OFF_TOPIC"]}}
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"archetype": {"const": "LEAN_TAC"}}}, "then": {"required": ["lean_tac", "chart_ref"]}},
+    {"if": {"properties": {"archetype": {"const": "CALL"}}}, "then": {"required": ["call"]}},
+    {"if": {"properties": {"archetype": {"const": "EXIT"}}}, "then": {"required": ["exit"]}},
+    {"if": {"properties": {"archetype": {"const": "COND"}}}, "then": {"required": ["cond"]}},
+    {"if": {"properties": {"archetype": {"const": "VERDICT"}}}, "then": {"required": ["verdict"]}},
+    {"if": {"properties": {"archetype": {"const": "MACRO_STATE"}}}, "then": {"required": ["macro_state"]}},
+    {"if": {"properties": {"archetype": {"const": "FLOW_DATA"}}}, "then": {"required": ["flow_data"]}},
+    {"if": {"properties": {"archetype": {"const": "EDU"}}}, "then": {"required": ["edu"]}},
+    {"if": {"properties": {"archetype": {"const": "CHATTER"}}}, "then": {"required": ["chatter"]}}
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "yield_gate": {
+  "proceed": 0.3,
+  "caution": 0.1,
+  "sample_n": 20
+ },
+ "voter": {
+  "min_calls": 2,
+  "need_levels": true,
+  "nums_per_post": 6.1,
+  "media_rate": 0.94
+ },
+ "verdict": {
+  "min_verdict_cond": 2
+ },
+ "feed_whitelist": {
+  "min_nums": 3,
+  "max_direction_words": 0,
+  "need_media": true
+ },
+ "exit_marker": {
+  "word": "closed",
+  "lift": 143.7
+ },
+ "drop_rules": [
+  "numbers==0 -> CHATTER",
+  "promo(bitget|vip|cfd|bonus) -> SPAM"
+ ],
+ "poll_peaks_utc": {
+  "CALL": [
+   8,
+   10,
+   12,
+   23
+  ],
+  "VERDICT": [
+   15,
+   20,
+   22
+  ],
+  "FLOW": [
+   2,
+   15,
+   17
+  ],
+  "MACRO": [
+   12,
+   14,
+   17
+  ],
+  "dead_zone": [
+   16,
+   17,
+   18,
+   19,
+   20
+  ]
+ },
+ "money_cluster": [
+  "OnchainLens",
+  "Tokenomist_ai",
+  "hyblockcapital",
+  "laevitas1",
+  "lookonchain"
+ ]
+}
