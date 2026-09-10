@@ -34,6 +34,8 @@ def wilson(k, n, z=1.96):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--handle", default="astronomer_zero")
+    ap.add_argument("--full", action="store_true",
+                    help="score every row (no CUT gate); all tagged in-sample")
     a = ap.parse_args()
     H = a.handle
     ms = MarketState()
@@ -42,15 +44,30 @@ def main():
         [x for x in json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized",
                                                 "strict_calls.json"))) if x["handle"] == H],
         key=lambda x: x["published_at"])
-    d1 = json.load(open(os.path.join(ROOT, "astronomer", "data", "prices", "BTCUSDT_1h.json")))
-    ts = sorted([(r["timestamp"], float(r["close"]), float(r["high"]), float(r["low"])) for r in d1])
-    T = [t for t, _, _, _ in ts]
+    if not strict:
+        # fallback: direction rows straight from normalized CALL events
+        for l in open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized", f"{H}_events.jsonl")):
+            r = json.loads(l)
+            if r.get("semantic_kind") == "CALL" and r.get("direction") in ("BULLISH", "BEARISH") and r.get("asset"):
+                strict.append({"handle": H, "published_at": r["published_at"],
+                               "direction": r["direction"], "asset": r["asset"]})
+        strict.sort(key=lambda x: x["published_at"])
+        print(f"{H}: no strict rows, using {len(strict)} event CALLs")
+    d1 = {}
+    for _a, _f in (("BTC", "BTCUSDT_1h"), ("ETH", "ETHUSDT_1h"), ("SOL", "SOLUSDT_1h"),
+                   ("TAO", "TAOUSDT_1h"), ("HYPE", "HYPERUSDT_1h")):
+        try:
+            _d = json.load(open(os.path.join(ROOT, "astronomer", "data", "prices", f"{_f}.json")))
+            _ts = sorted([(r.get("timestamp", r.get("open_time")), float(r["close"]), float(r["high"]), float(r["low"])) for r in _d])
+            d1[_a] = _ts
+        except FileNotFoundError:
+            continue
     mem = {"hours_since_post": 0.0, "last_dir": 0, "bull_streak": 0, "bear_streak": 0, "trail": []}
     MW = MA = NW = NA = 0
     R = []
     for s in strict:
         t = int(datetime.fromisoformat(s["published_at"]).timestamp() * 1000)
-        if t < CUT:
+        if t < CUT and not a.full:
             if s["direction"] == "BULLISH":
                 mem["bull_streak"] += 1; mem["bear_streak"] = 0
             else:
@@ -64,6 +81,11 @@ def main():
         p = 1.0 / (1.0 + math.exp(-max(-60.0, min(60.0, z))))
         for who, direction in (("model", "BULLISH" if p >= 0.5 else "BEARISH"),
                                ("actual", s["direction"])):
+            asset = s.get("asset") or "BTC"
+            if asset not in d1:
+                continue
+            ts = d1[asset]
+            T = [t for t, _, _, _ in ts]
             i = bisect.bisect_right(T, t)
             if i >= len(T):
                 continue

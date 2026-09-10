@@ -77,8 +77,6 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
   signal JSON, deterministic, zero-dep. For API/agent/GitHub surfaces; X still needs PNG.
 - C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
 - C27 level-infill pivot: 1,746 TIER1 levels; v0 beats spot, loses to swing;
-  v1 grid FAILS (constant outputs); STRUCTURAL FIND 75.9% levels on $1k grid →
-  $500-snap wired into post.py (entries exact); which-grid-point needs chart vision (H/M).
 - C26 APIFY_TOKEN rotated in vault (user-supplied, verified live: tangta/FREE plan).
 - C27 prove-out FULL history ($0): 282 paper posts — astro 56% CI(46,66), Timeless 55%,
   XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%. No edge
