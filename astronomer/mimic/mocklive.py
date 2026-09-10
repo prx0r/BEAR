@@ -46,6 +46,18 @@ def load_posts(handle):
 def load_strict(handle):
     s = [x for x in json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized", "strict_calls.json")))
          if x["handle"] == handle]
+    if not s:
+        # fallback: direction rows straight from normalized CALL events
+        # (strict_calls.json only covers astro/Timeless/XO)
+        try:
+            fh = open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized", f"{handle}_events.jsonl"))
+        except FileNotFoundError:
+            return []
+        for l in fh:
+            r = json.loads(l)
+            if r.get("semantic_kind") == "CALL" and r.get("direction") in ("BULLISH", "BEARISH") and r.get("asset"):
+                s.append({"handle": handle, "published_at": r["published_at"],
+                          "direction": r["direction"], "asset": r["asset"], "_from": "events"})
     s.sort(key=lambda x: x["published_at"])
     out = []
     for x in s:
