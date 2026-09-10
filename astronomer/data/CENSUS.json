@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-10T14:17:41.610165+00:00",
+ "generated_at": "2026-09-10T15:08:20.690891+00:00",
  "raw": {
   "0xAvast_aug2026.json": {
    "rows": 181,
@@ -133,13 +133,13 @@
    "bytes": 67532
   },
   "CryptoBheem_2yr.json": {
-   "rows": 883,
-   "from": "2025-01-09",
+   "rows": 1638,
+   "from": "2024-09-01",
    "to": "2026-09-06",
-   "span_d": 604,
-   "dupes": 56,
-   "media": 800,
-   "bytes": 1999984
+   "span_d": 734,
+   "dupes": 0,
+   "media": 1380,
+   "bytes": 2692465
   },
   "CryptoBheem_aug2026.json": {
    "rows": 20,
@@ -435,13 +435,13 @@
    "bytes": 845681
   },
   "Timeless_Crypto_2yr.json": {
-   "rows": 2658,
+   "rows": 2592,
    "from": "2024-09-02",
    "to": "2026-09-01",
    "span_d": 729,
-   "dupes": 66,
-   "media": 1488,
-   "bytes": 4873255
+   "dupes": 0,
+   "media": 1449,
+   "bytes": 3928450
   },
   "Timeless_Crypto_aug2026.json": {
    "rows": 50,
@@ -462,13 +462,13 @@
    "bytes": 70434
   },
   "Trader_XO_2yr.json": {
-   "rows": 776,
-   "from": "2025-05-22",
+   "rows": 4536,
+   "from": "2024-09-01",
    "to": "2026-09-06",
-   "span_d": 471,
-   "dupes": 8,
-   "media": 358,
-   "bytes": 1881852
+   "span_d": 735,
+   "dupes": 0,
+   "media": 1130,
+   "bytes": 6276884
   },
   "Trader_XO_aug2026.json": {
    "rows": 100,
@@ -534,13 +534,13 @@
    "bytes": 666286
   },
   "astronomer_zero_2yr.json": {
-   "rows": 766,
-   "from": "2026-04-08",
+   "rows": 786,
+   "from": "2025-07-01",
    "to": "2026-09-07",
-   "span_d": 151,
+   "span_d": 432,
    "dupes": 0,
-   "media": 519,
-   "bytes": 2661333
+   "media": 522,
+   "bytes": 2249329
   },
   "astronomer_zero_aug2026.json": {
    "rows": 100,
@@ -579,13 +579,13 @@
    "bytes": 34380
   },
   "eliz883_2yr.json": {
-   "rows": 813,
+   "rows": 800,
    "from": "2026-06-16",
    "to": "2026-09-07",
    "span_d": 82,
-   "dupes": 13,
-   "media": 436,
-   "bytes": 1699137
+   "dupes": 0,
+   "media": 425,
+   "bytes": 1325129
   },
   "exitpumpBTC_aug2026.json": {
    "rows": 20,
@@ -781,15 +781,11 @@
   "0xAvast_aug2026.json: 1 duplicate ids",
   "0xngmi_aug2026.json: 6 duplicate ids",
   "52kskew_aug2026.json: EMPTY STUB",
-  "CryptoBheem_2yr.json: 56 duplicate ids",
   "Husslin__aug2026.json: EMPTY STUB",
   "OnchainLens_aug2026.json: 2 duplicate ids",
-  "Timeless_Crypto_2yr.json: 66 duplicate ids",
-  "Trader_XO_2yr.json: 8 duplicate ids",
   "ai_9684xtpa_aug2026.json: 7 duplicate ids",
   "chrono_chartist_aug2026.json: 2 duplicate ids",
   "crossbordercap_aug2026.json: 1 duplicate ids",
-  "eliz883_2yr.json: 13 duplicate ids",
   "janklimo_aug2026.json: 1 duplicate ids",
   "josephwang_aug2026.json: 1 duplicate ids",
   "kenjidgn_aug2026.json: 3 duplicate ids",
@@ -797,38 +793,124 @@
   "zachxbt_aug2026.json: 1 duplicate ids"
  ],
  "normalized": {
-  "CryptoBheem": {
-   "rows": 883,
+  "AxelAdlerJr": {
+   "rows": 253,
    "kinds": {
-    "VIEW": 643,
-    "OBSERVATION": 17,
-    "CALL": 147,
-    "RETROSPECTIVE": 59,
-    "NON_SIGNAL": 17
-   },
-   "bytes": 668428
-  },
-  "Timeless_Crypto": {
-   "rows": 2658,
-   "kinds": {
-    "VIEW": 2043,
-    "RETROSPECTIVE": 207,
-    "CALL": 309,
-    "NON_SIGNAL": 48,
-    "OBSERVATION": 51
-   },
-   "bytes": 1998233
-  },
-  "Trader_XO": {
-   "rows": 776,
-   "kinds": {
-    "VIEW": 602,
-    "NON_SIGNAL": 23,
-    "RETROSPECTIVE": 83,
-    "CALL": 67,
+    "VIEW": 187,
+    "RETROSPECTIVE": 29,
+    "CALL": 34,
+    "NON_SIGNAL": 2,
     "OBSERVATION": 1
    },
-   "bytes": 600044
+   "bytes": 203034
+  },
+  "CrypNuevo": {
+   "rows": 74,
+   "kinds": {
+    "NON_SIGNAL": 5,
+    "VIEW": 51,
+    "RETROSPECTIVE": 10,
+    "CALL": 8
+   },
+   "bytes": 60976
+  },
+  "CryptoBheem": {
+   "rows": 1638,
+   "kinds": {
+    "VIEW": 1212,
+    "OBSERVATION": 51,
+    "CALL": 247,
+    "RETROSPECTIVE": 109,
+    "NON_SIGNAL": 19
+   },
+   "bytes": 1201247
+  },
+  "Crypto_Chase": {
+   "rows": 188,
+   "kinds": {
+    "VIEW": 161,
+    "CALL": 11,
+    "NON_SIGNAL": 3,
+    "RETROSPECTIVE": 13
+   },
+   "bytes": 130138
+  },
+  "DaanCrypto": {
+   "rows": 339,
+   "kinds": {
+    "VIEW": 214,
+    "CALL": 42,
+    "RETROSPECTIVE": 72,
+    "NON_SIGNAL": 8,
+    "OBSERVATION": 3
+   },
+   "bytes": 312060
+  },
+  "DrProfitCrypto": {
+   "rows": 50,
+   "kinds": {
+    "VIEW": 24,
+    "CALL": 5,
+    "RETROSPECTIVE": 19,
+    "NON_SIGNAL": 1,
+    "OBSERVATION": 1
+   },
+   "bytes": 109029
+  },
+  "FrankAFetter": {
+   "rows": 249,
+   "kinds": {
+    "VIEW": 162,
+    "OBSERVATION": 2,
+    "CALL": 67,
+    "RETROSPECTIVE": 14,
+    "NON_SIGNAL": 4
+   },
+   "bytes": 167939
+  },
+  "JA_Maartun": {
+   "rows": 189,
+   "kinds": {
+    "VIEW": 129,
+    "RETROSPECTIVE": 17,
+    "CALL": 35,
+    "OBSERVATION": 7,
+    "NON_SIGNAL": 1
+   },
+   "bytes": 156862
+  },
+  "Timeless_Crypto": {
+   "rows": 2592,
+   "kinds": {
+    "VIEW": 1990,
+    "RETROSPECTIVE": 204,
+    "CALL": 301,
+    "NON_SIGNAL": 46,
+    "OBSERVATION": 51
+   },
+   "bytes": 1951265
+  },
+  "Trader_XO": {
+   "rows": 4536,
+   "kinds": {
+    "VIEW": 3899,
+    "NON_SIGNAL": 54,
+    "RETROSPECTIVE": 258,
+    "CALL": 313,
+    "OBSERVATION": 12
+   },
+   "bytes": 2899544
+  },
+  "Wild_Randomness": {
+   "rows": 1498,
+   "kinds": {
+    "RETROSPECTIVE": 167,
+    "VIEW": 1173,
+    "CALL": 150,
+    "OBSERVATION": 3,
+    "NON_SIGNAL": 5
+   },
+   "bytes": 1124370
   },
   "all": {
    "rows": 5896,
@@ -853,15 +935,15 @@
    "bytes": 728017
   },
   "eliz883": {
-   "rows": 813,
+   "rows": 800,
    "kinds": {
-    "VIEW": 654,
+    "VIEW": 641,
     "CALL": 68,
     "OBSERVATION": 8,
     "NON_SIGNAL": 13,
     "RETROSPECTIVE": 70
    },
-   "bytes": 556591
+   "bytes": 548610
   }
  },
  "outcomes": {
@@ -1284,17 +1366,72 @@
   }
  },
  "media_dirs": {
-  "AxelAdlerJr": 101,
-  "CrypNuevo": 31,
-  "CryptoBheem": 945,
-  "Crypto_Chase": 49,
-  "DaanCrypto": 124,
-  "DrProfitCrypto": 15,
-  "FrankAFetter": 41,
-  "JA_Maartun": 75,
-  "Timeless_Crypto": 1545,
-  "Trader_XO": 663,
-  "Wild_Randomness": 783,
-  "astronomer_zero": 530
+  "0xAvast": 37,
+  "0xLoris": 38,
+  "0xaporia": 6,
+  "0xngmi": 1,
+  "0xnobi": 104,
+  "AxelAdlerJr": 202,
+  "Bluntz_Capital": 94,
+  "ByzGeneral": 78,
+  "CJ900X": 48,
+  "CavanXy": 38,
+  "CertiKAlert": 15,
+  "CrypNuevo": 61,
+  "CryptoBheem": 1676,
+  "CryptoCred": 5,
+  "CryptoVizArt": 14,
+  "Crypto_Chase": 81,
+  "DaanCrypto": 257,
+  "DeItaone": 13,
+  "DonAlt": 24,
+  "DrProfitCrypto": 27,
+  "EleanorTerrett": 23,
+  "EmberCN": 151,
+  "FarsideUK": 47,
+  "FrankAFetter": 100,
+  "HyperTracker": 28,
+  "HyperliquidR": 54,
+  "JA_Maartun": 199,
+  "NachoTrades": 5,
+  "OnchainLens": 262,
+  "PeckShieldAlert": 33,
+  "Pentosh1": 31,
+  "RektProof": 44,
+  "SalsaTekila": 53,
+  "SevaFTW": 7,
+  "SubnetStats": 2,
+  "TAOTemplar": 14,
+  "TheFlowHorse": 132,
+  "Timeless_Crypto": 1546,
+  "Tokenomist_ai": 28,
+  "Trader_XO": 1791,
+  "VetleLunde": 9,
+  "Wild_Randomness": 1595,
+  "_Checkmatey_": 12,
+  "ai_9684xtpa": 198,
+  "astronomer_zero": 533,
+  "chrono_chartist": 49,
+  "crossbordercap": 10,
+  "exitpumpBTC": 9,
+  "eyeonchains": 6,
+  "hyblockcapital": 129,
+  "janklimo": 7,
+  "jjcmoreno": 13,
+  "josephwang": 19,
+  "kenjidgn": 45,
+  "ki_young_ju": 15,
+  "kingfisher_btc": 72,
+  "koolkrypto223": 4,
+  "lBattleRhino": 11,
+  "laevitas1": 41,
+  "loganlim_x": 6,
+  "lookonchain": 34,
+  "n3ocortex": 42,
+  "that1618guy": 238,
+  "theunipcs": 38,
+  "trader1sz": 208,
+  "yeon__": 17,
+  "zachxbt": 55
  }
 }

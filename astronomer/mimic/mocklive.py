@@ -46,6 +46,11 @@ def load_posts(handle):
 def load_strict(handle):
     s = [x for x in json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized", "strict_calls.json")))
          if x["handle"] == handle]
+    try:
+        s += [x for x in json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized", "strict_NEW.json")))
+              if x["handle"] == handle]
+    except FileNotFoundError:
+        pass
     if not s:
         # fallback: direction rows straight from normalized CALL events
         # (strict_calls.json only covers astro/Timeless/XO)
