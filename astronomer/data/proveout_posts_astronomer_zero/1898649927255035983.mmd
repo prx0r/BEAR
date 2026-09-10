@@ -1,0 +1,9 @@
+flowchart LR
+    sig[["$BTC SHORT @ 85937.0"]]
+    sig -->|"hold above 86500"| tgt[["TARGET 85500"]]
+    sig -->|"lose 86500"| stp[["STOPPED · max loss 563"]]
+    tgt -->|"partial 50%"| t2[["runner to measured move"]]
+    style sig fill:#f0b429,stroke:#333
+    style tgt fill:#26a69a,stroke:#333
+    style stp fill:#ef5350,stroke:#333
+    sub["regime RANGE" ]
