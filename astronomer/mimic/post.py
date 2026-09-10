@@ -14,6 +14,17 @@ def render(sig: dict) -> str | None:
     for k in ("asset", "direction", "entry", "target", "invalidation"):
         if sig.get(k) is None:
             return None
+    # grid-snap targets/stops to $500 (measured: stated levels cluster on round
+    # numbers); entries stay exact (they cluster at spot, not grid)
+    for k in ("target", "invalidation"):
+        try:
+            sig[k] = round(float(sig[k]) / 500) * 500
+        except (TypeError, ValueError):
+            return None
+    try:
+        float(sig["entry"])
+    except (TypeError, ValueError):
+        return None
     d = "LONG" if str(sig["direction"]).upper().startswith(("LONG", "BULL", "BUY")) else "SHORT"
     arrow = "▲" if d == "LONG" else "▼"
     lines = [
