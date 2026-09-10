@@ -23,3 +23,5 @@ astronomer/data/media/*
 cloudflare/*/node_modules/
 cloudflare/*/.wrangler/
 cloudflare/*/dev.vars
+mimic_predictions.jsonl
+mimic_pull.log
