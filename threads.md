@@ -84,5 +84,3 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
   XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%.
 - C29 Bheem multi-asset (BTC+ETH+HYPE): 60 trades 47/47; strict gap found (Bheem has
   zero strict rows — events-CALL fallback built); his 95/98 CALLs pre-date mock window.
-- C20 A-loop run 2 (kept for history): ONBOARD_SOURCE adopts scout criteria · 5m fields wired ·
-  6 alt daily files, labels 485→501 · twobots.md · trials regression stable · AuthorMix pairs (724).
