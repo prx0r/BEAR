@@ -27,5 +27,29 @@ output peer-review pack. Anything failing goes back with the discrepancy noted.
 
 ## Branch convention
 
-`seed1`, `seed1.1`, `seed2`, … — one branch per generation, cut from prior seed
-branch. Master only receives reviewed merges (H-approval).
+`seed0` (IMMUTABLE reference — full-logic snapshot, never tuned, never re-run for
+decisions; all seeds compare against it, not each other), then `seed1`, `seed1.1`,
+`seed2`, … — one branch per generation, cut from prior seed branch. Master only
+receives reviewed merges (H-approval).
+
+## Hard lessons (from reviewing `~/cg` cogymkernel + our own seed1.1)
+
+1. **Secret holdout (cg's dev/validation/secret layering).** Our seed1.1 was tuned
+   ON mock-live numbers — that window is now contaminated. Fix: split mock-live
+   into VALIDATION (tune here) + SECRET (final verdict only, touched once per
+   generation). No seed ships on validation numbers alone.
+2. **Gates as hard constraints, not advice** (cg `eval/gates.py` pattern):
+   promote a change ONLY if Wilson lower-bound improves at n≥30 AND frozen-copy
+   check passes; else auto-reject. Our seed1.1 rejection was judgment — encode it.
+3. **Content-addressed receipts** (cg blake3 run-ids): trial reports gain a
+   sha256 over (seed.json + code version + data manifest) so any rerun is
+   provably identical. Implement in `trial.sh`.
+4. **Small-n seed hacking**: XO n=55 — seed deltas at that n are noise until
+   proven otherwise. Minimum n for promotion decisions: 100, or pooled test.
+
+## Reuse verdict on `~/cg`
+
+Steal ideas + discipline (above), NOT the framework: cg needs pydantic/httpx/
+HydraDB scheduler weight our stdlib box can't and shouldn't carry. Revisit only
+if we outgrow single-machine trials. `cge` (expanded variant) unchecked —
+evaluate only on a concrete need.

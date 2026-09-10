@@ -153,23 +153,29 @@ def main():
     base_dir = sum(y for t, y in strict if t < cut) / max(1, sum(1 for t, y in strict if t < cut))
     print(f"train: base_act={base_act:.3f} base_dir={base_dir:.3f} train_posts={len(train_vecs)}")
 
-    # ---- Phase 2: mock-live ----
+    # ---- Phase 2: mock-live (VALIDATION first 70%, SECRET last 30%) ----
+    # Models update throughout (deployed behavior); verdicts use SECRET only.
+    val_cut = cut + int((t1 - cut) * 0.7)
     frozen_act = copy.deepcopy(act)
     frozen_dir = copy.deepcopy(dmodel)
-    s_act_live, s_act_froz, s_act_base = ScoreTracker(), ScoreTracker(), ScoreTracker()
-    s_dir_live, s_dir_froz, s_dir_base = ScoreTracker(), ScoreTracker(), ScoreTracker()
+    tracks = {}
+    for task in ("act", "dir"):
+        for copying in ("live", "froz", "base"):
+            for window in ("val", "sec"):
+                tracks[(task, copying, window)] = ScoreTracker()
     j_ret, j_rerank, j_rnd, n_txt = 0.0, 0.0, 0.0, 0
     random.seed(7)
     mem_l = dict(mem)
     h = cut - (cut % 3600000)
     n_act = n_dir = 0
     while h <= t1:
+        w = "val" if h < val_cut else "sec"
         y = 1 if h in post_set else 0
         x = ms.vector(h, mem_l)
         commit({"handle": a.handle, "mocklive": True, "bucket": h, "p_post": round(act.proba(x), 4)})
-        s_act_live.add(act.learn_one(x, y), y)
-        s_act_froz.add(frozen_act.proba(x), y)
-        s_act_base.add(base_act, y)
+        tracks[("act", "live", w)].add(act.learn_one(x, y), y)
+        tracks[("act", "froz", w)].add(frozen_act.proba(x), y)
+        tracks[("act", "base", w)].add(base_act, y)
         n_act += 1
         if y:
             actual = next((txt for t, txt in posts if t - (t % 3600000) == h), "")
@@ -186,23 +192,41 @@ def main():
         h += 3600000
     for t, y in strict:
         if t >= cut:
+            w = "val" if t < val_cut else "sec"
             x = ms.vector(t, mem_l)
-            s_dir_live.add(dmodel.learn_one(x, y), y)
-            s_dir_froz.add(frozen_dir.proba(x), y)
-            s_dir_base.add(base_dir, y)
+            tracks[("dir", "live", w)].add(dmodel.learn_one(x, y), y)
+            tracks[("dir", "froz", w)].add(frozen_dir.proba(x), y)
+            tracks[("dir", "base", w)].add(base_dir, y)
             n_dir += 1
 
-    print(f"MOCK-LIVE activity hrs={n_act}: live={s_act_live.brier:.4f} frozen={s_act_froz.brier:.4f} base={s_act_base.brier:.4f}")
-    print(f"MOCK-LIVE direction n={n_dir}: live={s_dir_live.brier:.4f} frozen={s_dir_froz.brier:.4f} base={s_dir_base.brier:.4f} ece_live={s_dir_live.ece:.4f}")
+    def rep(task, copying, window):
+        s = tracks[(task, copying, window)]
+        return {"brier": round(s.brier, 4), "n": s.n,
+                "logloss": round(s.logloss, 4), "ece": round(s.ece, 4)}
+
+    for window in ("val", "sec"):
+        la, fa, ba = (rep("act", c, window)["brier"] for c in ("live", "froz", "base"))
+        print(f"MOCK-LIVE activity {window} hrs={tracks[('act','live',window)].n}: "
+              f"live={la:.4f} frozen={fa:.4f} base={ba:.4f}")
+        ld, fd, bd = (rep("dir", c, window)["brier"] for c in ("live", "froz", "base"))
+        print(f"MOCK-LIVE direction n={tracks[('dir','live',window)].n}: "
+              f"live={ld:.4f} frozen={fd:.4f} base={bd:.4f}")
+    from mimic.gates import check_gate
+    sec = tracks[("dir", "live", "sec")]
+    gate_pass, gate_reasons = check_gate(
+        sec.brier, tracks[("dir", "base", "sec")].brier,
+        tracks[("dir", "froz", "sec")].brier, sec.n)
+    print(f"GATE direction: {'PASS' if gate_pass else 'FAIL'} {gate_reasons}")
     if n_txt:
         print(f"MOCK-LIVE text n={n_txt}: k1={j_ret/n_txt:.3f} rerank={j_rerank/n_txt:.3f} random={j_rnd/n_txt:.3f}")
 
     report = {
         "seed": a.seed, "handle": a.handle, "split": cut_d.isoformat(), "n_posts": len(posts),
+        "val_cut": datetime.fromtimestamp(val_cut / 1000, tz=timezone.utc).isoformat(),
         "train": {"base_act": base_act, "base_dir": base_dir, "train_posts": len(train_vecs)},
-        "activity": {"n": n_act, "live": s_act_live.brier, "frozen": s_act_froz.brier, "base": s_act_base.brier},
-        "direction": {"n": n_dir, "live": s_dir_live.brier, "frozen": s_dir_froz.brier,
-                      "base": s_dir_base.brier, "ece_live": s_dir_live.ece},
+        "activity": {w: {c: rep("act", c, w) for c in ("live", "froz", "base")} for w in ("val", "sec")},
+        "direction": {w: {c: rep("dir", c, w) for c in ("live", "froz", "base")} for w in ("val", "sec")},
+        "gate": {"pass": gate_pass, "reasons": gate_reasons, "scope": "direction-secret"},
         "text": {"n": n_txt, "retrieval": j_ret / n_txt if n_txt else None,
                  "rerank": j_rerank / n_txt if n_txt else None,
                  "random": j_rnd / n_txt if n_txt else None},
@@ -229,9 +253,21 @@ def main():
         print("TRANSFER: no astro weight file (run --handle astronomer_zero --save-weights first)")
 
     if a.json_out:
+        import hashlib
+        import subprocess
         os.makedirs(os.path.dirname(a.json_out) or ".", exist_ok=True)
+        body = json.dumps(report, sort_keys=True).encode()
+        try:
+            head = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True,
+                                  cwd=ROOT, timeout=10).stdout.strip()
+        except Exception:
+            head = "nogit"
+        seed_raw = open(os.path.join(ROOT, "astronomer", "mimic", "seed.json"), "rb").read() \
+            if os.path.exists(os.path.join(ROOT, "astronomer", "mimic", "seed.json")) else b""
+        report["receipt"] = {"sha256": hashlib.sha256(seed_raw + head.encode() + body).hexdigest(),
+                             "git_head": head}
         json.dump(report, open(a.json_out, "w"), indent=1)
-        print(f"report -> {a.json_out}")
+        print(f"report -> {a.json_out} sha={report['receipt']['sha256'][:12]}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,7 @@
+{
+  "seed": "seed1.2",
+  "from": "seed1.1",
+  "justification": "NORTHSTAR hard lessons: (1) mock-live contaminated by tuning -> VALIDATION (first 70%) / SECRET (last 30%) split, verdicts on SECRET only; (2) promotion by judgment -> gates.py hard constraints (secret<base, frozen<base, n>=100); (3) no provenance -> sha256 receipt over seed+code+report. Keeps seed1.1 model code (priors, k3-rerank, weights) so gate math is comparable.",
+  "changes": ["mock-live split into val/sec windows", "GATE direction verdict via gates.check_gate", "receipt hashing", "A3 pending labels via stdlib extractor_v2 (unblocked)"],
+  "frozen_rest": ["handles", "model hypers", "features", "retrieval", "protocol"]
+}
