@@ -1,0 +1,114 @@
+{
+ "seed": "seed1.4",
+ "handle": "astronomer_zero",
+ "split": "2025-05-14",
+ "n_posts": 8983,
+ "val_cut": "2026-04-15T21:33:59.600000+00:00",
+ "train": {
+  "base_act": 0.7329851477068712,
+  "base_dir": 0.7422680412371134,
+  "train_posts": 1716
+ },
+ "activity": {
+  "val": {
+   "live": {
+    "brier": 0.1324,
+    "n": 8074,
+    "logloss": 0.4254,
+    "ece": 0.02
+   },
+   "froz": {
+    "brier": 0.1374,
+    "n": 8074,
+    "logloss": 0.4399,
+    "ece": 0.0577
+   },
+   "base": {
+    "brier": 0.4568,
+    "n": 8074,
+    "logloss": 1.1461,
+    "ece": 0.5773
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.1412,
+    "n": 3460,
+    "logloss": 0.451,
+    "ece": 0.0296
+   },
+   "froz": {
+    "brier": 0.1519,
+    "n": 3460,
+    "logloss": 0.4774,
+    "ece": 0.0734
+   },
+   "base": {
+    "brier": 0.4557,
+    "n": 3460,
+    "logloss": 1.1436,
+    "ece": 0.5749
+   }
+  }
+ },
+ "direction": {
+  "val": {
+   "live": {
+    "brier": 0.0938,
+    "n": 52,
+    "logloss": 0.3928,
+    "ece": 0.0615
+   },
+   "froz": {
+    "brier": 0.0915,
+    "n": 52,
+    "logloss": 0.386,
+    "ece": 0.0808
+   },
+   "base": {
+    "brier": 0.113,
+    "n": 52,
+    "logloss": 0.3998,
+    "ece": 0.1538
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.1631,
+    "n": 543,
+    "logloss": 0.5131,
+    "ece": 0.0774
+   },
+   "froz": {
+    "brier": 0.189,
+    "n": 543,
+    "logloss": 0.6304,
+    "ece": 0.1157
+   },
+   "base": {
+    "brier": 0.1798,
+    "n": 543,
+    "logloss": 0.5454,
+    "ece": 0.0161
+   }
+  }
+ },
+ "gate": {
+  "pass": false,
+  "reasons": [
+   "frozen 0.1890492484493418 !< base 0.17975188130482014"
+  ],
+  "scope": "direction-secret"
+ },
+ "text": {
+  "n": 0,
+  "retrieval": null,
+  "rerank": null,
+  "random": null,
+  "use_rerank": false
+ },
+ "receipt": {
+  "sha256": "d71083e12f2467a61d35a7155f04f46707db2ef4bc25489f794b92cef9ed3bb1",
+  "git_head": "fb98898afaaf25874399059b5941851334a6f3de"
+ }
+}

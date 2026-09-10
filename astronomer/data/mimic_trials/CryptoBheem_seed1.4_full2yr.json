@@ -1,0 +1,116 @@
+{
+ "seed": "seed1.4",
+ "handle": "CryptoBheem",
+ "split": "2025-06-12",
+ "n_posts": 1638,
+ "val_cut": "2026-04-24T07:59:23.800000+00:00",
+ "train": {
+  "base_act": 0.12017608217168012,
+  "base_dir": 0.7910447761194029,
+  "train_posts": 443
+ },
+ "activity": {
+  "val": {
+   "live": {
+    "brier": 0.0625,
+    "n": 7574,
+    "logloss": 0.2279,
+    "ece": 0.0166
+   },
+   "froz": {
+    "brier": 0.0674,
+    "n": 7574,
+    "logloss": 0.2823,
+    "ece": 0.0194
+   },
+   "base": {
+    "brier": 0.0694,
+    "n": 7574,
+    "logloss": 0.2721,
+    "ece": 0.0776
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.015,
+    "n": 3246,
+    "logloss": 0.0797,
+    "ece": 0.0349
+   },
+   "froz": {
+    "brier": 0.0151,
+    "n": 3246,
+    "logloss": 0.0863,
+    "ece": 0.0353
+   },
+   "base": {
+    "brier": 0.0259,
+    "n": 3246,
+    "logloss": 0.1581,
+    "ece": 0.1349
+   }
+  }
+ },
+ "direction": {
+  "val": {
+   "live": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   },
+   "froz": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   },
+   "base": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   },
+   "froz": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   },
+   "base": {
+    "brier": 0.0,
+    "n": 0,
+    "logloss": 0.0,
+    "ece": 0.0
+   }
+  }
+ },
+ "gate": {
+  "pass": false,
+  "reasons": [
+   "n=0 < 100",
+   "secret 0.0 !< base 0.0",
+   "frozen 0.0 !< base 0.0"
+  ],
+  "scope": "direction-secret"
+ },
+ "text": {
+  "n": 0,
+  "retrieval": null,
+  "rerank": null,
+  "random": null,
+  "use_rerank": false
+ },
+ "receipt": {
+  "sha256": "9f4adbe95e04e779611e1421ccd191c4095c8089711ab3c6ba7ed78a15db32d6",
+  "git_head": "fb98898afaaf25874399059b5941851334a6f3de"
+ }
+}
