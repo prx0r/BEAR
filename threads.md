@@ -76,13 +76,12 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
 - C24 mermaid diagrams (`mimic/diagram.py`): game-plan flowchart + round-trip timeline from
   signal JSON, deterministic, zero-dep. For API/agent/GitHub surfaces; X still needs PNG.
 - C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
-- C27 level-infill pivot: 1,746 TIER1 levels; v0 beats spot, loses to swing;
-- C26 APIFY_TOKEN rotated in vault (user-supplied, verified live: tangta/FREE plan).
-- C27 prove-out FULL history ($0): 282 paper posts — astro 56% CI(46,66), Timeless 55%,
-  XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%. No edge
-  claimed; missing ingredient is n + selection, not modeling.
-- C25 full output chain CLOSED $0: signal→post+SVG+mermaid→PNG via mermaid.ink (verified 24KB).
+- C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
   Output machinery 100%; remaining gap is SIGNAL QUALITY (gate fails secret) + candle-PNG.
-- C20 A-loop run 2: ONBOARD_SOURCE adopts scout criteria · 5m fields wired (top-8 weights) ·
-  6 alt daily files, labels 485→501 · twobots.md wiring spec · trials regression stable ·
-  AuthorMix pairs (724) · blocked: A3 deps, A9 backfills, A11 VLM runner, PNG export
+- C26 APIFY_TOKEN rotated in vault (user-supplied, verified live: tangta/FREE plan).
+- C27 level-infill: 1,746 TIER1 levels; v0 beats spot, loses to swing; v1 grid FAILS;
+  75.9% levels on $1k grid → $500-snap in post.py; which-grid-point needs vision (H/M).
+- C28 prove-out FULL history ($0): 282 paper posts — astro 56% CI(46,66), Timeless 55%,
+  XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%.
+- C29 Bheem multi-asset (BTC+ETH+HYPE): 60 trades 47/47; strict gap found (Bheem has
+  zero strict rows — events-CALL fallback built); his 95/98 CALLs pre-date mock window.
