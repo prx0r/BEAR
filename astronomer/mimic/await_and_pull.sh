@@ -9,7 +9,7 @@ for i in $(seq 1 72); do
   if python3 -c "
 import os, urllib.request
 KEY=os.environ['GETXAPI_KEY']
-urllib.request.urlopen(urllib.request.Request('https://api.getxapi.com/twitter/account/me', headers={'Authorization': f'Bearer {KEY}'}), timeout=25).read()
+urllib.request.urlopen(urllib.request.Request('https://api.getxapi.com/account/me', headers={'Authorization': f'Bearer {KEY}'}), timeout=25).read()
 " 2>/dev/null; then
     echo "$(date -u +%FT%TZ) API UP after $((i*10))min — pulling remainder"
     python3 /home/ubuntu/BEAR/astronomer/mimic/range_pull.py Trader_XO 2025-05-11 2025-05-25
