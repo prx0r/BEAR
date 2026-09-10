@@ -31,20 +31,57 @@ def load_posts(handle):
 print("warming models...", flush=True)
 MS = MarketState()
 MODELS = {}
-for h in HANDLES:
-    ts = load_posts(h)
-    post_h = {datetime.fromtimestamp(t / 1000, tz=timezone.utc).replace(minute=0, second=0, microsecond=0) for t in ts}
-    m = AdaGradLogistic(lr=0.2, prior_p=PRIORS[h])
-    mem = {"hours_since_post": 24.0}
-    hh = min(post_h)
-    end = max(post_h)
-    while hh <= end:
-        y = 1 if hh in post_h else 0
-        m.learn_one(MS.vector(int(hh.timestamp() * 1000), mem), y)
-        mem["hours_since_post"] = 0.0 if y else mem["hours_since_post"] + 1.0
-        hh += timedelta(hours=1)
-    MODELS[h] = (m, {"hours_since_post": 24.0})
-    print(f"  {h} warmed ({len(ts)} posts)", flush=True)
+CACHE = os.path.join(ROOT, "astronomer", "data", "brain_warm.json")
+
+
+def _cache_fresh():
+    try:
+        c = json.load(open(CACHE))
+    except Exception:
+        return None
+    newest = 0
+    for f in ["backtest/raw/astronomer_zero_2yr.json", "backtest/raw/Timeless_Crypto_2yr.json",
+              "backtest/raw/Trader_XO_2yr.json"]:
+        try:
+            newest = max(newest, os.path.getmtime(os.path.join(ROOT, "astronomer", "data", f)))
+        except OSError:
+            pass
+    if c.get("data_mtime", 0) >= newest and set(c.get("models", {})) >= set(HANDLES):
+        return c
+    return None
+_cached = _cache_fresh()
+if _cached:
+    for h in HANDLES:
+        m = AdaGradLogistic(lr=0.2, prior_p=PRIORS[h])
+        m.w, m.g2 = _cached["models"][h]["w"], _cached["models"][h]["g2"]
+        MODELS[h] = (m, {"hours_since_post": 24.0})
+    print("  warmed from cache (fast boot)", flush=True)
+else:
+    for h in HANDLES:
+        ts = load_posts(h)
+        post_h = {datetime.fromtimestamp(t / 1000, tz=timezone.utc).replace(minute=0, second=0, microsecond=0) for t in ts}
+        m = AdaGradLogistic(lr=0.2, prior_p=PRIORS[h])
+        mem = {"hours_since_post": 24.0}
+        hh = min(post_h)
+        end = max(post_h)
+        while hh <= end:
+            y = 1 if hh in post_h else 0
+            m.learn_one(MS.vector(int(hh.timestamp() * 1000), mem), y)
+            mem["hours_since_post"] = 0.0 if y else mem.get("hours_since_post", 24.0) + 1.0
+            hh += timedelta(hours=1)
+        MODELS[h] = (m, {"hours_since_post": 24.0})
+        print(f"  {h} warmed ({len(ts)} posts)", flush=True)
+    try:
+        newest = 0
+        for f in ["backtest/raw/astronomer_zero_2yr.json", "backtest/raw/Timeless_Crypto_2yr.json",
+                  "backtest/raw/Trader_XO_2yr.json"]:
+            newest = max(newest, os.path.getmtime(os.path.join(ROOT, "astronomer", "data", f)))
+        json.dump({"data_mtime": newest,
+                   "models": {h: {"w": m.w, "g2": m.g2} for h, (m, _) in MODELS.items()}},
+                  open(CACHE, "w"))
+        print("  warm cache written", flush=True)
+    except Exception as e:
+        print(f"  cache write skipped: {type(e).__name__}", flush=True)
 
 try:
     import glob
