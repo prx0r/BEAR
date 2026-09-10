@@ -103,6 +103,23 @@ class MarketState:
             return 0.0
         return (max(self.m5_h[j:i + 1]) - min(self.m5_l[j:i + 1])) / self.m5_c[i]
 
+    def _swing_dist(self, t_ms, minutes=300):
+        """Signed distance to nearest 5m swing extreme, in units of range.
+        + = nearer highs (extended), - = nearer lows. 0 if unavailable."""
+        if not self.m5_t:
+            return 0.0
+        i = bisect.bisect_right(self.m5_t, t_ms) - 1
+        j = max(0, i - 60)
+        if i <= j or self.m5_c[i] == 0:
+            return 0.0
+        hi = max(self.m5_h[j:i + 1])
+        lo = min(self.m5_l[j:i + 1])
+        rng = hi - lo
+        if rng <= 0:
+            return 0.0
+        c = self.m5_c[i]
+        return ((c - lo) / rng) * 2.0 - 1.0
+
     def regime_at(self, t_ms) -> str:
         if not self.timeline:
             return "RANGE"
@@ -147,6 +164,7 @@ class MarketState:
             "m5_r15": self._mret(t_ms, 15),
             "m5_r60": self._mret(t_ms, 60),
             "m5_range60": self._mrange(t_ms, 60),
+            "swing_pos": self._swing_dist(t_ms),
             "trail_bull_frac": (sum(mem.get("trail", [])) / len(mem["trail"])
                                 if mem.get("trail") else 0.5),
         }

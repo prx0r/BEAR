@@ -189,6 +189,8 @@ def main():
             for window in ("val", "sec"):
                 tracks[(task, copying, window)] = ScoreTracker()
     j_ret, j_rerank, j_rnd, n_txt = 0.0, 0.0, 0.0, 0
+    jv_ret, jv_rerank, jv_n = 0.0, 0.0, 0  # validation-window text scores
+    use_rerank = False  # decided at val_cut: per-handle gate
     random.seed(7)
     mem_l = dict(mem)
     h = cut - (cut % 3600000)
@@ -207,9 +209,16 @@ def main():
             if train_vecs and actual:
                 top3 = nearest3(train_vecs, x)
                 j = top3[0]
-                j_ret += len(TOK(train_vecs[j][1]) & TOK(actual)) / max(1, len(TOK(train_vecs[j][1]) | TOK(actual)))
+                jk1 = len(TOK(train_vecs[j][1]) & TOK(actual)) / max(1, len(TOK(train_vecs[j][1]) | TOK(actual)))
                 rr = max(top3, key=lambda i: disc.proba(struct_feats(train_vecs[i][1])))
-                j_rerank += len(TOK(train_vecs[rr][1]) & TOK(actual)) / max(1, len(TOK(train_vecs[rr][1]) | TOK(actual)))
+                jrr = len(TOK(train_vecs[rr][1]) & TOK(actual)) / max(1, len(TOK(train_vecs[rr][1]) | TOK(actual)))
+                if w == "val":
+                    jv_ret += jk1
+                    jv_rerank += jrr
+                    jv_n += 1
+                    use_rerank = (jv_rerank / jv_n) > (jv_ret / jv_n)
+                j_ret += jk1
+                j_rerank += jrr if (use_rerank or w == "val") else jk1
                 r = train_vecs[random.randrange(len(train_vecs))][1]
                 j_rnd += len(TOK(r) & TOK(actual)) / max(1, len(TOK(r) | TOK(actual)))
                 n_txt += 1
@@ -252,7 +261,8 @@ def main():
         tracks[("dir", "froz", "sec")].brier, sec.n)
     print(f"GATE direction: {'PASS' if gate_pass else 'FAIL'} {gate_reasons}")
     if n_txt:
-        print(f"MOCK-LIVE text n={n_txt}: k1={j_ret/n_txt:.3f} rerank={j_rerank/n_txt:.3f} random={j_rnd/n_txt:.3f}")
+        print(f"MOCK-LIVE text n={n_txt}: k1={j_ret/n_txt:.3f} rerank={j_rerank/n_txt:.3f} random={j_rnd/n_txt:.3f} "
+              f"use_rerank={use_rerank} (val {jv_n}: k1={jv_ret/max(1,jv_n):.3f} rr={jv_rerank/max(1,jv_n):.3f})")
 
     report = {
         "seed": a.seed, "handle": a.handle, "split": cut_d.isoformat(), "n_posts": len(posts),
@@ -263,7 +273,8 @@ def main():
         "gate": {"pass": gate_pass, "reasons": gate_reasons, "scope": "direction-secret"},
         "text": {"n": n_txt, "retrieval": j_ret / n_txt if n_txt else None,
                  "rerank": j_rerank / n_txt if n_txt else None,
-                 "random": j_rnd / n_txt if n_txt else None},
+                 "random": j_rnd / n_txt if n_txt else None,
+                 "use_rerank": use_rerank},
     }
 
     if a.save_weights:
@@ -282,7 +293,7 @@ def main():
                 z = sum(astro_w.get(k, 0.0) * v for k, v in x.items())
                 s_tr.add(1.0 / (1.0 + math.exp(-max(-60.0, min(60.0, z)))), y)
                 n_tr += 1
-        print(f"TRANSFER astro-> {a.handle}: brier={s_tr.brier:.4f} n={n_tr} (vs own frozen {s_dir_froz.brier:.4f})")
+        print(f"TRANSFER astro-> {a.handle}: brier={s_tr.brier:.4f} n={n_tr} (vs own frozen {tracks[('dir', 'froz', 'sec')].brier:.4f})")
     except FileNotFoundError:
         print("TRANSFER: no astro weight file (run --handle astronomer_zero --save-weights first)")
 

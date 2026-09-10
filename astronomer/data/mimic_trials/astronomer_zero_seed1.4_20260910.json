@@ -1,0 +1,115 @@
+{
+ "seed": "seed1",
+ "handle": "astronomer_zero",
+ "split": "2026-06-30",
+ "n_posts": 786,
+ "val_cut": "2026-08-17T11:27:59.899000+00:00",
+ "train": {
+  "base_act": 0.045042979942693406,
+  "base_dir": 0.8326848249027238,
+  "train_posts": 316
+ },
+ "activity": {
+  "val": {
+   "live": {
+    "brier": 0.1525,
+    "n": 1153,
+    "logloss": 0.4743,
+    "ece": 0.0126
+   },
+   "froz": {
+    "brier": 0.1522,
+    "n": 1153,
+    "logloss": 0.4753,
+    "ece": 0.0235
+   },
+   "base": {
+    "brier": 0.1812,
+    "n": 1153,
+    "logloss": 0.6474,
+    "ece": 0.1469
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.148,
+    "n": 494,
+    "logloss": 0.4696,
+    "ece": 0.051
+   },
+   "froz": {
+    "brier": 0.1502,
+    "n": 494,
+    "logloss": 0.4804,
+    "ece": 0.049
+   },
+   "base": {
+    "brier": 0.1678,
+    "n": 494,
+    "logloss": 0.6025,
+    "ece": 0.1322
+   }
+  }
+ },
+ "direction": {
+  "val": {
+   "live": {
+    "brier": 0.1658,
+    "n": 150,
+    "logloss": 0.5161,
+    "ece": 0.0687
+   },
+   "froz": {
+    "brier": 0.2386,
+    "n": 150,
+    "logloss": 0.7889,
+    "ece": 0.214
+   },
+   "base": {
+    "brier": 0.2099,
+    "n": 150,
+    "logloss": 0.6217,
+    "ece": 0.1233
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.2338,
+    "n": 54,
+    "logloss": 0.7116,
+    "ece": 0.1907
+   },
+   "froz": {
+    "brier": 0.2649,
+    "n": 54,
+    "logloss": 0.8293,
+    "ece": 0.2389
+   },
+   "base": {
+    "brier": 0.2498,
+    "n": 54,
+    "logloss": 0.718,
+    "ece": 0.1833
+   }
+  }
+ },
+ "gate": {
+  "pass": false,
+  "reasons": [
+   "n=54 < 100",
+   "frozen 0.2648939018375644 !< base 0.24978425108631463"
+  ],
+  "scope": "direction-secret"
+ },
+ "text": {
+  "n": 317,
+  "retrieval": 0.09459758856277052,
+  "rerank": 0.08634919662264476,
+  "random": 0.09457627883683134,
+  "use_rerank": false
+ },
+ "receipt": {
+  "sha256": "cf5d4f7ce5e11c4ffbf0fbf090139d05a80f4470fc38d9f410bc9e9feaac26c5",
+  "git_head": "15f5f3322aa508d028e3c0e668f420c12d3007c9"
+ }
+}

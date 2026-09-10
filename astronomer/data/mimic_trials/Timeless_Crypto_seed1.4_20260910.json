@@ -1,0 +1,116 @@
+{
+ "seed": "seed1",
+ "handle": "Timeless_Crypto",
+ "split": "2025-06-02",
+ "n_posts": 2592,
+ "val_cut": "2026-04-17T19:54:55.700000+00:00",
+ "train": {
+  "base_act": 0.19774183704607873,
+  "base_dir": 0.6959459459459459,
+  "train_posts": 657
+ },
+ "activity": {
+  "val": {
+   "live": {
+    "brier": 0.0678,
+    "n": 7662,
+    "logloss": 0.2437,
+    "ece": 0.0116
+   },
+   "froz": {
+    "brier": 0.0686,
+    "n": 7662,
+    "logloss": 0.2474,
+    "ece": 0.0137
+   },
+   "base": {
+    "brier": 0.0875,
+    "n": 7662,
+    "logloss": 0.3326,
+    "ece": 0.0699
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.0481,
+    "n": 3284,
+    "logloss": 0.1877,
+    "ece": 0.017
+   },
+   "froz": {
+    "brier": 0.0501,
+    "n": 3284,
+    "logloss": 0.1947,
+    "ece": 0.0322
+   },
+   "base": {
+    "brier": 0.0706,
+    "n": 3284,
+    "logloss": 0.2932,
+    "ece": 0.0979
+   }
+  }
+ },
+ "direction": {
+  "val": {
+   "live": {
+    "brier": 0.2249,
+    "n": 187,
+    "logloss": 0.674,
+    "ece": 0.1174
+   },
+   "froz": {
+    "brier": 0.2283,
+    "n": 187,
+    "logloss": 0.6494,
+    "ece": 0.1024
+   },
+   "base": {
+    "brier": 0.2119,
+    "n": 187,
+    "logloss": 0.6149,
+    "ece": 0.0452
+   }
+  },
+  "sec": {
+   "live": {
+    "brier": 0.2608,
+    "n": 55,
+    "logloss": 0.7271,
+    "ece": 0.2391
+   },
+   "froz": {
+    "brier": 0.2332,
+    "n": 55,
+    "logloss": 0.66,
+    "ece": 0.1409
+   },
+   "base": {
+    "brier": 0.2136,
+    "n": 55,
+    "logloss": 0.6184,
+    "ece": 0.0409
+   }
+  }
+ },
+ "gate": {
+  "pass": false,
+  "reasons": [
+   "n=55 < 100",
+   "secret 0.26081939671827586 !< base 0.21357908891692676",
+   "frozen 0.2332028104601045 !< base 0.21357908891692676"
+  ],
+  "scope": "direction-secret"
+ },
+ "text": {
+  "n": 785,
+  "retrieval": 0.059841666018842166,
+  "rerank": 0.051223077360782535,
+  "random": 0.05378914791452568,
+  "use_rerank": false
+ },
+ "receipt": {
+  "sha256": "f09deec2c027bf219a7c46641c9cb33b909729922e8dc1a46d7aafdf85151d0e",
+  "git_head": "15f5f3322aa508d028e3c0e668f420c12d3007c9"
+ }
+}

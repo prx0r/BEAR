@@ -1,17 +1,7 @@
 {
- "seed": "seed1.4",
- "from": "seed1.3",
- "justification": "seed1.3 frozen still fails under drift (train prior != mock mix). Instead of better priors, calibrate OUTPUTS: train-fitted intercept (frozen) + trailing-20 recalibration (live). Tests whether miscalibration, not signal, is the failure.",
- "changes": [
-  "adaptive bias: frozen intercept refit on train; live trailing-20 residual correction",
-  "gate evaluated on corrected copies (originals kept as comparators)"
- ],
- "frozen_rest": [
-  "handles",
-  "split",
-  "priors",
-  "features",
-  "retrieval",
-  "protocol"
- ]
+  "seed": "seed1.4",
+  "from": "seed1.3",
+  "justification": "Per-handle rerank gate (rerank helped Timeless/Bheem only — gate on validation, default off); custom extractor v1 for Chase/DrProfit formats (8/8 clean); strict_NEW merged into prove-out sources; full-history trials (XO 4536/Bheem 1638 posts).",
+  "changes": ["rerank gated per-handle on val window (use_rerank flag)", "custom_rules.py v1", "proveout reads strict_NEW + outcomes_NEW", "trial reports carry use_rerank diagnostics"],
+  "frozen_rest": ["priors", "features", "protocol", "gates"]
 }

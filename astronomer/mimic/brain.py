@@ -47,9 +47,15 @@ for h in HANDLES:
     print(f"  {h} warmed ({len(ts)} posts)", flush=True)
 
 try:
-    TRIALS = {h: json.load(open(os.path.join(ROOT, "astronomer", "data", "mimic_trials", f"{h}_20260910.json")))
-              for h in HANDLES}
-except FileNotFoundError:
+    import glob
+    TRIALS = {}
+    for h in HANDLES:
+        cands = sorted(glob.glob(os.path.join(ROOT, "astronomer", "data", "mimic_trials", f"{h}_*.json")),
+                       key=os.path.getmtime)
+        cands = [c for c in cands if "proveout" not in c and "discriminator" not in c and "bridge" not in c]
+        if cands:
+            TRIALS[h] = json.load(open(cands[-1]))
+except Exception:
     TRIALS = {}
 
 
@@ -88,10 +94,13 @@ class H(BaseHTTPRequestHandler):
             now = datetime.now(tz=timezone.utc).replace(minute=0, second=0, microsecond=0)
             p = m.proba(MS.vector(int(now.timestamp() * 1000), mem))
             t = TRIALS.get(h, {})
+            act = (t.get("activity") or {})
+            sec_live = (act.get("sec") or {}).get("live", {})
             return self.send({
                 "handle": h, "p_post_next_hour": round(p, 4),
                 "gate": gate_now(),
-                "mocklive_brier": (t.get("activity") or {}).get("live"),
+                "mocklive_brier": (sec_live or {}).get("brier") if isinstance(sec_live, dict) else sec_live,
+                "trial_seed": t.get("seed"), "trial_report": t.get("receipt", {}).get("sha256", "")[:12] if isinstance(t.get("receipt"), dict) else None,
                 "model": "mimic-activity-v0", "note": "paper only, not financial advice",
             })
         return self.send({"error": "unknown route"}, 404)
