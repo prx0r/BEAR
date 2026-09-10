@@ -22,5 +22,13 @@
   "jaccard": 0.011,
   "total": 0.162,
   "n": 5
+ },
+ "conditional": {
+  "numbers": 1.0,
+  "direction": 0.4,
+  "struct": 1.0,
+  "jaccard": 0.056,
+  "total": 0.631,
+  "n": 5
  }
 }
