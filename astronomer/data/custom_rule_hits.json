@@ -50,6 +50,16 @@
   "published_at": "Thu Jul 09 12:46:44 +0000 2026"
  },
  {
+  "rule": "rule_short_around",
+  "direction": "BEARISH",
+  "asset": "BTC",
+  "entry": 115.0,
+  "target": null,
+  "handle": "DrProfitCrypto",
+  "post_id": "2084831555181052195",
+  "published_at": "Wed Aug 05 02:39:11 +0000 2026"
+ },
+ {
   "rule": "rule_buy_around",
   "direction": "BULLISH",
   "asset": "BTC",

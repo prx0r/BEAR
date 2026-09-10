@@ -179,7 +179,51 @@ def rule_full_tp(tx):
     return None
 
 
-RULES = [rule_buy_around, rule_move_to, rule_ath, rule_ready_for, rule_full_tp]
+def rule_short_around(tx):
+    """Mirror of buy_around: 'short(ing) (here|around|into) X' + $ASSET -> BEARISH.
+    Short language previously fell through (resolve_dir only flips BULLISH hits)."""
+    m = re.search(r"(?i)\b(short|shorting|shorted|redistribut\w*|fade|fadeing)\b.{0,60}(around|at|near|@|into|here)\b", tx)
+    if not m:
+        return None
+    lo, hi = max(0, m.start() - 20), m.end() + 60
+    window = tx[lo:hi]
+    a = assets(tx)
+    saved = []
+    for mm in NUM.finditer(window):
+        pre = window[max(0, mm.start() - 15):mm.start()]
+        post = window[mm.end():mm.end() + 20]
+        if TEMPORAL.search((pre.strip().split() or [""])[-1]) or re.search(r"(?i)\bMA$", pre):
+            continue
+        if MONTH.search(pre) or MONTH.search(window[mm.end():mm.end() + 12]):
+            continue
+        if re.match(r"\s?%", window[mm.end():mm.end() + 2]) or \
+           re.match(r"\s?(hours?|hrs|days?|minutes?|seconds?|weeks?|months?|years?)\b", window[mm.end():], re.IGNORECASE):
+            continue
+        if re.search(r"(?i)(s&p|spx|qqq|dji|index)\s*$", pre) or re.search(r"#\s*$", pre):
+            continue
+        dg = mm.group(0).strip()
+        if re.fullmatch(r"\$?\d{4}[.,;:!]?", dg) and not dg.startswith("$"):
+            abspos = lo + mm.start()
+            wide = tx[max(0, abspos - 40):abspos + 44]
+            if TEMPORAL.search(wide) or MONTH.search(wide):
+                continue
+        if re.search(r"(?i)(more than|over|under|about|around|nearly|almost|~)\s*$", pre) and \
+           re.search(r"(?i)^\s*(altcoin|trade|short|account|wallet|post|people|trader|follower)", post):
+            continue
+        if re.search(r"(?i)^\s*(billion|million|trillion)\b", post):
+            continue
+        if re.search(r"(?i)^\s*(percent|pct|purchases|trades)\b", post):
+            continue
+        v = num(dg)
+        if v and v > 0:
+            saved.append((abs(mm.start() - (m.end() - lo)), v))
+    if a and saved:
+        saved.sort()
+        return ("BEARISH", a[0], saved[0][1], None)
+    return None
+
+
+RULES = [rule_buy_around, rule_short_around, rule_move_to, rule_ath, rule_ready_for, rule_full_tp]
 
 
 def apply(text):
