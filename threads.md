@@ -76,7 +76,6 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
 - C24 mermaid diagrams (`mimic/diagram.py`): game-plan flowchart + round-trip timeline from
   signal JSON, deterministic, zero-dep. For API/agent/GitHub surfaces; X still needs PNG.
 - C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
-- C25 full output chain CLOSED $0 (signal→post+SVG+mermaid→PNG via mermaid.ink, verified 24KB).
   Output machinery 100%; remaining gap is SIGNAL QUALITY (gate fails secret) + candle-PNG.
 - C26 APIFY_TOKEN rotated in vault (user-supplied, verified live: tangta/FREE plan).
 - C27 level-infill: 1,746 TIER1 levels; v0 beats spot, loses to swing; v1 grid FAILS;
@@ -85,3 +84,5 @@ Full spec (definitions, classifier, prioritizer, approval protocol): `TASKSPEC.m
   XO 44%. Model matches man, OOS=in-sample (stable), no lower bound clears 50%.
 - C29 Bheem multi-asset (BTC+ETH+HYPE): 60 trades 47/47; strict gap found (Bheem has
   zero strict rows — events-CALL fallback built); his 95/98 CALLs pre-date mock window.
+- C20 A-loop run 2 (kept for history): ONBOARD_SOURCE adopts scout criteria · 5m fields wired ·
+  6 alt daily files, labels 485→501 · twobots.md · trials regression stable · AuthorMix pairs (724).
