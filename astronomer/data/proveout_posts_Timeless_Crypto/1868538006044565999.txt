@@ -1,7 +1,7 @@
 $BTC LONG ▲
 Entry: 105196.0
-Target: 107692.0
-Invalidation: 102700.0
+Target: 107500
+Invalidation: 102500
 Regime: RANGE
 Model P: 0.73
 Horizon: 24h

@@ -1,7 +1,7 @@
 $ETH LONG ▲
 Entry: 60250.0
-Target: 61613.0
-Invalidation: 58887.0
+Target: 61500
+Invalidation: 59000
 Regime: RANGE
 Model P: 0.91
 Horizon: 24h

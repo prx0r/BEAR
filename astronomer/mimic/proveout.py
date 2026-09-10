@@ -47,9 +47,22 @@ def main():
     strict = [x for x in json.load(open(os.path.join(
         ROOT, "astronomer", "data", "core3", "normalized", "strict_calls.json")))
         if x["handle"] == H]
+    try:
+        strict += [x for x in json.load(open(os.path.join(
+            ROOT, "astronomer", "data", "core3", "normalized", "strict_NEW.json")))
+            if x["handle"] == H]
+    except FileNotFoundError:
+        pass
     strict.sort(key=lambda x: x["published_at"])
     out = json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized",
                                       "all_outcomes_EXPANDED.json")))
+    try:
+        _new = json.load(open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized",
+                                           "outcomes_NEW.json")))
+        _have = {o.get("event_id") for o in out}
+        out = out + [o for o in _new if o.get("event_id") not in _have]
+    except FileNotFoundError:
+        pass
     ret24 = {}
     for o in out:
         if o.get("author_handle") == H and o.get("return_24h") is not None:

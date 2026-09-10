@@ -1,0 +1,8 @@
+$TAO LONG ▲
+Entry: 63496.0
+Target: 64000
+Invalidation: 63000
+Regime: RANGE
+Model P: 0.86
+Horizon: 24h
+Not financial advice. Paper signal.

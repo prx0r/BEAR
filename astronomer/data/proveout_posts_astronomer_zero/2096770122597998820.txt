@@ -1,7 +1,7 @@
 $BTC SHORT ▼
 Entry: 79922.0
-Target: 79428.0
-Invalidation: 80416.0
+Target: 79500
+Invalidation: 80500
 Regime: RANGE
 Model P: 0.39
 Horizon: 24h

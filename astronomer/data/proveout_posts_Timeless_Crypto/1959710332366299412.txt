@@ -1,7 +1,7 @@
 $SOL LONG ▲
 Entry: 112563.0
-Target: 114306.0
-Invalidation: 110820.0
+Target: 114500
+Invalidation: 111000
 Regime: RANGE
 Model P: 0.83
 Horizon: 24h

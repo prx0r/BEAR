@@ -1,0 +1,9 @@
+flowchart LR
+    sig[["$SOL LONG @ 101292.0"]]
+    sig -->|"hold above 97000"| tgt[["TARGET 105500"]]
+    sig -->|"lose 97000"| stp[["STOPPED · max loss 4292"]]
+    tgt -->|"partial 50%"| t2[["runner to measured move"]]
+    style sig fill:#f0b429,stroke:#333
+    style tgt fill:#26a69a,stroke:#333
+    style stp fill:#ef5350,stroke:#333
+    sub["regime RANGE" ]

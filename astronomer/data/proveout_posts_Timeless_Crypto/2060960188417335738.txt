@@ -1,7 +1,7 @@
 $HYPE LONG ▲
 Entry: 74098.0
-Target: 74487.0
-Invalidation: 73708.0
+Target: 74500
+Invalidation: 73500
 Regime: RANGE
 Model P: 0.86
 Horizon: 24h

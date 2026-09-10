@@ -1,0 +1,82 @@
+[
+ {
+  "rule": "rule_ath",
+  "direction": "BULLISH",
+  "asset": "BTC",
+  "entry": null,
+  "target": null,
+  "handle": "Crypto_Chase",
+  "post_id": "2083927409380774156",
+  "published_at": "Sun Aug 02 14:46:26 +0000 2026"
+ },
+ {
+  "rule": "rule_buy_around",
+  "direction": "BULLISH",
+  "asset": "SNDK",
+  "entry": 1350.0,
+  "target": null,
+  "handle": "Crypto_Chase",
+  "post_id": "2077392182772662626",
+  "published_at": "Wed Jul 15 13:57:47 +0000 2026"
+ },
+ {
+  "rule": "rule_buy_around",
+  "direction": "BULLISH",
+  "asset": "GC",
+  "entry": 3820.0,
+  "target": null,
+  "handle": "Crypto_Chase",
+  "post_id": "2076713603365749075",
+  "published_at": "Mon Jul 13 17:01:21 +0000 2026"
+ },
+ {
+  "rule": "rule_ath",
+  "direction": "BULLISH",
+  "asset": "SPX",
+  "entry": null,
+  "target": null,
+  "handle": "Crypto_Chase",
+  "post_id": "2076306184437436551",
+  "published_at": "Sun Jul 12 14:02:24 +0000 2026"
+ },
+ {
+  "rule": "rule_full_tp",
+  "direction": "EXIT",
+  "asset": "SNDK",
+  "entry": null,
+  "target": 1830.0,
+  "handle": "Crypto_Chase",
+  "post_id": "2075199978981441768",
+  "published_at": "Thu Jul 09 12:46:44 +0000 2026"
+ },
+ {
+  "rule": "rule_buy_around",
+  "direction": "BULLISH",
+  "asset": "BTC",
+  "entry": 54.0,
+  "target": null,
+  "handle": "DrProfitCrypto",
+  "post_id": "2089040943819157885",
+  "published_at": "Sun Aug 16 17:25:48 +0000 2026"
+ },
+ {
+  "rule": "rule_ready_for",
+  "direction": "BULLISH",
+  "asset": "ETH",
+  "entry": null,
+  "target": 4000.0,
+  "handle": "DrProfitCrypto",
+  "post_id": "2081516735815967155",
+  "published_at": "Sun Jul 26 23:07:17 +0000 2026"
+ },
+ {
+  "rule": "rule_ath",
+  "direction": "BULLISH",
+  "asset": "BTC",
+  "entry": null,
+  "target": null,
+  "handle": "DrProfitCrypto",
+  "post_id": "2078530408724201641",
+  "published_at": "Sat Jul 18 17:20:41 +0000 2026"
+ }
+]
