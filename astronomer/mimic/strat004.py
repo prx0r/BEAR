@@ -105,6 +105,14 @@ def main():
         n = w = 0
         ret_sum = 0.0
         lp = os.path.join(DATA, "paper_ledger.jsonl")
+        seen = set()
+        if os.path.exists(lp):
+            for l in open(lp):
+                try:
+                    r = json.loads(l)
+                    seen.add((r.get("date"), r.get("handle"), r.get("direction"), r.get("entry")))
+                except Exception:
+                    pass
         for t_ms, r in calls:
             if t_ms < start:
                 continue
@@ -123,6 +131,10 @@ def main():
                    "target": round(lv["target"], 1), "stop": round(lv["stop"], 1),
                    "horizon_h": hz, "result": out["result"], "ret": round(out["ret"], 5)}
             rec["receipt"] = hashlib.sha256(json.dumps(rec, sort_keys=True).encode()).hexdigest()[:16]
+            key = (rec["date"], rec["handle"], rec["direction"], rec["entry"])
+            if key in seen:
+                continue
+            seen.add(key)
             open(lp, "a").write(json.dumps(rec) + "\n")
             n += 1
             w += out["result"] == "target"
