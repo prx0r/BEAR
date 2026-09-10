@@ -70,6 +70,8 @@ def main():
     evts = {}
     for l in open(os.path.join(ROOT, "astronomer", "data", "core3", "normalized",
                                f"{H}_events.jsonl")):
+        if not l.strip():
+            continue
         r = json.loads(l)
         evts[(r["author_handle"], r["published_at"])] = r
 

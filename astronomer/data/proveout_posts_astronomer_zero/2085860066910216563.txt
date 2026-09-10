@@ -3,6 +3,6 @@ Entry: 64879.0
 Target: 65500
 Invalidation: 64500
 Regime: RANGE
-Model P: 0.60
+Model P: 0.69
 Horizon: 24h
 Not financial advice. Paper signal.
