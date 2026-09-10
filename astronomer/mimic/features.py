@@ -147,4 +147,6 @@ class MarketState:
             "m5_r15": self._mret(t_ms, 15),
             "m5_r60": self._mret(t_ms, 60),
             "m5_range60": self._mrange(t_ms, 60),
+            "trail_bull_frac": (sum(mem.get("trail", [])) / len(mem["trail"])
+                                if mem.get("trail") else 0.5),
         }

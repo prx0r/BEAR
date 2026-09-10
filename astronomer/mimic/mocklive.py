@@ -100,7 +100,8 @@ def main():
     train_strict = [(t, y) for t, y in strict if t < cut]
     base_dir_train = sum(y for _, y in train_strict) / max(1, len(train_strict))
     act = AdaGradLogistic(lr=0.2, prior_p=a.prior or (sum(1 for t, _ in posts if t < cut) / max(1, (cut - t0) / 3600000)))
-    dmodel = AdaGradLogistic(lr=0.3, prior_p=base_dir_train)
+    dmodel = AdaGradLogistic(lr=0.3, prior_p=0.5)
+    trail = []  # trailing (up to 20) train labels, causal recency memory
     disc = AdaGradLogistic(lr=0.1, prior_p=0.5)  # structural authorship: this handle vs others
     others = []
     for h in ["astronomer_zero", "Timeless_Crypto", "Trader_XO", "CryptoBheem"]:
@@ -147,6 +148,8 @@ def main():
             mem["bull_streak"] = mem.get("bull_streak", 0) + 1 if y else 0
             mem["bear_streak"] = mem.get("bear_streak", 0) + 1 if not y else 0
             mem["last_dir"] = 1 if y else -1
+            trail.append(y)
+            mem["trail"] = trail[-20:]
     # train-window base rates (frozen baselines)
     train_hours = max(1, int((cut - t0) / 3600000))
     base_act = sum(1 for t, _ in posts if t < cut) / train_hours
@@ -198,6 +201,9 @@ def main():
             tracks[("dir", "froz", w)].add(frozen_dir.proba(x), y)
             tracks[("dir", "base", w)].add(base_dir, y)
             n_dir += 1
+            mem_l.setdefault("trail", [])
+            mem_l["trail"].append(y)
+            mem_l["trail"] = mem_l["trail"][-20:]
 
     def rep(task, copying, window):
         s = tracks[(task, copying, window)]
