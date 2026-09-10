@@ -1,0 +1,1 @@
+{"seed": "seed1", "cells": {"('BULLISH', 'DOWN')": [66, 126], "('BULLISH', 'UP')": [49, 98], "('BULLISH', 'RANGE')": [55, 100], "('BEARISH', 'RANGE')": [20, 38], "('BEARISH', 'UP')": [22, 43], "('BEARISH', 'DOWN')": [31, 55], "('BEARISH', 'UNK')": [4, 10], "('BULLISH', 'UNK')": [14, 38]}}

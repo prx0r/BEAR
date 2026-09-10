@@ -6,5 +6,6 @@ set -e
 cd "$(dirname "$0")/.."
 HANDLE="${1:-astronomer_zero}"
 STAMP="$(date -u +%Y%m%d)"
-OUT="data/mimic_trials/${HANDLE}_${STAMP}.json"
+SEED="$(python3 -c "import json; print(json.load(open('mimic/seed.json')).get('seed','seed1'))")"
+OUT="data/mimic_trials/${HANDLE}_${SEED}_${STAMP}.json"
 python3 -m mimic.mocklive --handle "$HANDLE" --json-out "$OUT" 2>&1 | tail -n 12
